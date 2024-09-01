@@ -157,7 +157,7 @@ set_stability = 0.83
 #Submod#
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart
-#Submod#
+
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite

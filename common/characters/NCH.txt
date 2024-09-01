@@ -1,30 +1,34 @@
 characters={
 
     # Submod #
-#dddd
+
 	# Advisors #
 	NCH_scientist_celarl={
-		name="NCH_celarl"
-				portraits={
-				army={
-					small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
-					}
-				}
-				advisor={
-					slot = theorist
-					idea_token = NCH_celarl
-					ledger = army
-					cost = 150
-					allowed = {
-					original_tag = NCH
-					}
-					research_bonus = {
-					nuclear = 0.15
-					}
-					traits = { nuclear_scientist }
-				}
-				
-			}
+        name=NCH_celarl
+        portraits={
+            army={
+                small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
+            }
+        }
+        advisor={
+            slot = theorist
+            idea_token = NCH_celarl
+            ledger = army
+            cost = 150
+            removal_cost = -1
+            allowed = {
+                original_tag = NCH
+            }
+            research_bonus = {
+                nuclear = 0.15
+            }
+            traits = { nuclear_scientist }
+    
+            available = { 
+                has_completed_focus = NCH_aerial_experiments
+            }             
+        }
+    }
 
 	 # Admirals #
 	 NCH_admiral_hart={
