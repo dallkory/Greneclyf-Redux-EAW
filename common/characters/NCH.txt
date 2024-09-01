@@ -4,7 +4,7 @@ characters={
 
 	# Advisors #
 	NCH_scientist_celarl={
-        name=NCH_celarl
+        name=Celarl
         portraits={
             army={
                 small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
@@ -40,10 +40,10 @@ characters={
                     small="gfx/interface/ideas/Advisors/NCH/Hart.dds"
                 }
             }
-            advisor={
+			advisor={
                 slot = navy_chief
-                cost = 100
-				ledger = navy
+                idea_token = NCH_navy_chief_3
+                cost = 200
                 allowed = {
                     original_tag = NCH
                 }
@@ -51,7 +51,7 @@ characters={
                     has_country_flag = NCH_navy_advisor_flag
                 }
                 traits = {
-                    navy_chief_decisive_battle_2 
+                    navy_chief_decisive_battle_3 
                 }
                 ai_will_do = {
                     factor = 1
@@ -59,13 +59,17 @@ characters={
             }
         navy_leader={
             traits = {
-                changeling_race_trait changeling_race_trait
+                changeling_race_trait superior_tactician ironside
             }
             skill=3
             attack_skill=3
             defense_skill=2
             maneuvering_skill=2
             coordination_skill=4
+
+			available = {
+				has_country_flag = NCH_navy_advisor_flag
+			}
         }
     }
 
