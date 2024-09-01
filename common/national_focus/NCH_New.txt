@@ -3058,6 +3058,7 @@ focus_tree = {
 			show_ideas_tooltip = NCH_navy_chief_1
 			show_ideas_tooltip = NCH_navy_chief_2
 			show_ideas_tooltip = NCH_navy_Hart
+			show_ideas_tooltip = NCH_navy_Lorri
 			set_country_flag = NCH_navy_advisor_flag
 
 			add_naval_commander_role = {
@@ -3069,8 +3070,23 @@ focus_tree = {
 				defense_skill=2
 				maneuvering_skill=2
 				coordination_skill=4
-			}custom_effect_tooltip = smugbughart_col
+			}
+			custom_effect_tooltip = smugbughart_col
 
+			add_naval_commander_role={
+				character = NCH_admiral_lorri
+				desc = "smugbuglorri_desc"
+				traits = {
+					changeling_race_trait seawolf
+				}
+				skill=4
+				attack_skill=4
+				defense_skill=1
+				maneuvering_skill=1
+				coordination_skill=2
+				
+			}
+			custom_effect_tooltip = smugbuglorri_col
 		}
 	}
 

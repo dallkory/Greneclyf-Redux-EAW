@@ -42,7 +42,7 @@ characters={
             }
 			advisor={
                 slot = navy_chief
-                idea_token = NCH_navy_chief_3
+                idea_token = NCH_Hart
                 cost = 200
                 allowed = {
                     original_tag = NCH
@@ -51,7 +51,7 @@ characters={
                     has_country_flag = NCH_navy_advisor_flag
                 }
                 traits = {
-                    navy_chief_decisive_battle_3 
+                    navy_chief_decisive_battle_3
                 }
                 ai_will_do = {
                     factor = 1
@@ -66,11 +66,41 @@ characters={
             defense_skill=2
             maneuvering_skill=2
             coordination_skill=4
+			desc = NCH_Desc_Hart
 
 			available = {
 				has_country_flag = NCH_navy_advisor_flag
 			}
         }
+    }
+
+	NCH_admiral_lorri={
+        #name=NCH_Lorri
+        name=Lorri
+            portraits={
+                navy={
+                    large="gfx/leaders/NCH/Lorri.tga"
+                    small="gfx/interface/ideas/Advisors/NCH/Lorri.tga"
+                }
+            }
+			advisor={
+                slot = navy_chief
+                idea_token = NCH_Lorri
+                cost = 150
+                allowed = {
+                    original_tag = NCH
+                }
+                available = {
+                    has_country_flag = NCH_navy_advisor_flag
+                }
+                traits = {
+                    navy_chief_commerce_raiding_3
+                }
+                ai_will_do = {
+                    factor = 0.4
+                }
+            }
+
     }
 
 	 # Admirals #
