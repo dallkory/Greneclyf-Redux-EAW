@@ -1,7 +1,7 @@
 characters={
 
     # Submod #
-dddd
+#dddd
 	# Advisors #
 	NCH_scientist_celarl={
 		name="NCH_celarl"
@@ -22,8 +22,6 @@ dddd
 					nuclear = 0.15
 					}
 					traits = { nuclear_scientist }
-	
-
 				}
 				
 			}
