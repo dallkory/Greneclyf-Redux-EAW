@@ -1,7 +1,11 @@
 characters={
 
     # Submod #
+<<<<<<< HEAD
 ввваааааавывы
+=======
+dddddввввв
+>>>>>>> d4caabadbfb00731e1f23f666267b4d37f6efd4b
 	# Advisors #
 	NCH_scientist_celarl={
 		name="NCH_celarl"
