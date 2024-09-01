@@ -3063,7 +3063,7 @@ focus_tree = {
 
 			add_naval_commander_role = {
 				character = NCH_admiral_hart
-				desc = "smugbughart_desc"
+				desc = "NCH_Desc_Hart"
 				traits = {  changeling_race_trait superior_tactician ironside }
 				skill=3
 				attack_skill=3
@@ -3075,7 +3075,7 @@ focus_tree = {
 
 			add_naval_commander_role={
 				character = NCH_admiral_lorri
-				desc = "smugbuglorri_desc"
+				desc = "NCH_desc_Lorri"
 				traits = {
 					changeling_race_trait seawolf
 				}
