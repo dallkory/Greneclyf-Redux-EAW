@@ -1,7 +1,7 @@
 characters={
 
     # Submod #
-
+ввваааааавывы
 	# Advisors #
 	NCH_scientist_celarl={
 		name="NCH_celarl"
@@ -23,9 +23,7 @@ characters={
 					}
 					traits = { nuclear_scientist }
 	
-					available = { 
-					  has_completed_focus = NCH_aerial_experiments
-					} 
+
 				}
 				
 			}
