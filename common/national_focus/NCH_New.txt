@@ -3071,7 +3071,7 @@ focus_tree = {
 				maneuvering_skill=2
 				coordination_skill=4
 			}
-			custom_effect_tooltip = smugbughart_col
+			custom_effect_tooltip = NCH_new_stats_hart
 
 			add_naval_commander_role={
 				character = NCH_admiral_lorri

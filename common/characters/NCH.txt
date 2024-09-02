@@ -23,12 +23,14 @@ characters={
                 nuclear = 0.15
             }
             traits = { nuclear_scientist }
-    
+    		desc = "Celarl_desc"
             available = { 
                 has_completed_focus = NCH_aerial_experiments
             }             
         }
     }
+
+	# Advisors #
 
 	 # Admirals #
 	 NCH_admiral_hart={
