@@ -7,46 +7,44 @@ add_namespace = greneclyf_crisis
 # jagers #
 country_event = {
 	id = greneclyf.412
-	title = greneclyf.412.t #сделать локализацию
-	desc = greneclyf.412.d #сделать локализацию
-	picture = "GFX_event_jager_mount" #сделать пикчу
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = greneclyf.412.a #сделать локализацию
-		custom_effect_tooltip = NCH_event_jag #сделать локализацию
-		set_technology = { 
-			infantry_weapons = 1
-			tech_jager = 1 
-		 	support_equipment = 1
-		}
-	}
-
-	hidden_effect = {
-		division_template = {
-			name = "Sons of the Mountains"
-			regiments = {
-				jager = { x = 0 y = 0 }
-				jager = { x = 1 y = 0 }
-				jager = { x = 0 y = 1 }
-				jager = { x = 1 y = 1 }
-				jager = { x = 0 y = 2 }
-				jager = { x = 1 y = 2 }
-				#можно позже добавить госпиталь, сигналку и т.д.
-			}
-		}
-		# Создание юнита в провинции 5131
-		units = {
-			division = {
-				name = "Sons of the Mountains Jager Special Forces"
-				location = 5131
-				division_template = "Sons of the Mountains"
-				start_experience_factor = 1.0
-				start_equipment_factor = 0.6 }
-		}
-	}
+    title = greneclyf.412.t #сделать локализацию
+    desc = greneclyf.412.d #сделать локализацию
+    picture = "GFX_event_jager_mount" #сделать пикчу
+    is_triggered_only = yes
+    #fire_only_once = yes
+    option = {
+            
+        name = greneclyf.412.a #сделать локализацию
+        custom_effect_tooltip = greneclyf.412_tooltip #сделать локализацию
+		set_technology = { tech_support = 1 }
+        set_technology = { infantry_weapons1 = 1 }
+        set_technology = { tech_jager = 1 }
+        hidden_effect = {
+            division_template = {
+                name = "Sons of the Mountains"
+                regiments = {
+                    jager = { x = 0 y = 0 }
+                    jager = { x = 1 y = 0 }
+                    jager = { x = 0 y = 1 }
+                    jager = { x = 1 y = 1 }
+                    jager = { x = 0 y = 2 }
+                    jager = { x = 1 y = 2 }
+                }
+				support = {
+					artillery = { x = 0 y = 0}
+					engineer = { x = 0 y = 1}
+					
+				}
+            }
+        }
+            669 = {
+                #limit = { ROOT = { has_full_control_of_state = PREV } } #to decide wether to limit it and how later
+				create_unit = {
+                    division = "name = \"Sons of the Mountains Jager Special Forces\" division_template = \"Sons of the Mountains\" start_experience_factor = 1"
+                    owner = ROOT
+                }       
+            }
+    }
 }
 
 # Hatcher #
