@@ -3055,8 +3055,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_an_admiralty"
 			custom_effect_tooltip = available_chief_of_navy
-			show_ideas_tooltip = NCH_navy_chief_1
-			show_ideas_tooltip = NCH_navy_chief_2
 			show_ideas_tooltip = NCH_Hart
 			show_ideas_tooltip = NCH_Lorri
 			set_country_flag = NCH_navy_advisor_flag
@@ -3080,13 +3078,12 @@ focus_tree = {
 					changeling_race_trait seawolf
 				}
 				skill=4
-				attack_skill=4
+				attack_skill=5
 				defense_skill=1
-				maneuvering_skill=1
+				maneuvering_skill=2
 				coordination_skill=2
-				
 			}
-			custom_effect_tooltip = smugbuglorri_col
+			custom_effect_tooltip = NCH_new_stats_lorri
 		}
 	}
 
@@ -3818,7 +3815,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = NCH_radical_design_bonus
-			add_ideas = NCH_Celarl
 			custom_effect_tooltip = NCH_tooltip_Celarl
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
