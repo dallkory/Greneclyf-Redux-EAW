@@ -14,10 +14,10 @@ Hart:0 "Адмирал Харт"
 
  NCH_new_stats_hart:0 "§gУровень§!: §Y3§!, (£trait_attack §Y3§!, £trait_defense §Y2§!, £trait_maneuvering §Y2§!, £trait_coordination §Y4§!)\n§gЧерты§!: §C$superior_tactician$§!, §C$ironside$§!\n\n"
 
-NCH_new_stats_lorri:0 "§gУровень§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gЧерты§!: §C$seawolf$§!\n\n"
-
 #Lorri
 Lorri:0 "Адмирал Лорри"
+NCH_desc_Lorri:0 ""
+NCH_new_stats_lorri:0 "§gУровень§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gЧерты§!: §C$seawolf$§!\n\n"
 
 # Generals #
 Moronlan:0 "Моронлан"

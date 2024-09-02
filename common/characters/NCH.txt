@@ -183,7 +183,35 @@ characters={
 		}
 	}
 
+	NCH_Merelay={
+		name=Marelay
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Merelay.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Merelay.tga"
+			}
+		}
+	}
 
+	NCH_Coilholt={
+		name=Coilholt
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Coilholt.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Coilholt.tga"
+			}
+		}
+		corps_commander={
+			desc="NCH_Desc_Moronlan"
+			traits={ changeling_race_trait old_guard Organizer winter_specialist }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
    	 # Submod #
     
 	NCH_queen_gytha={
