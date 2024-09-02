@@ -5,6 +5,8 @@ Celarl:0 "Целарл"
 Celarl_desc:0 "11"
 # Advisors #
 
+### TOOLTIPS ###
+NCH_tooltip_Celarl:0 "Целарл становится ведущим специалистом нашей ядерной программы"
 # Admirals #
 #Hart
 Hart:0 "Адмирал Харт"

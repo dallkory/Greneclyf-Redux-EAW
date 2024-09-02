@@ -76,9 +76,10 @@ characters={
 			}
 		}
 	}
+
 	# Advisors #
 
-	 # Admirals #
+	# Admirals #
 	 NCH_admiral_hart={
         #name=NCH_Hart
         name=Hart
@@ -135,8 +136,39 @@ characters={
             }
 
     }
-
 	 # Admirals #
+
+	 # Generals #
+
+	NCH_Moronlan={
+		name=Moronlan
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Moronlan.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
+			}
+		}
+		corps_commander={
+			desc="NCH_Desc_Moronlan"
+			traits={ brilliant_strategist changeling_race_trait }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+		field_marshal = {
+			desc="NCH_Desc_Moronlan"
+			traits={  changeling_race_trait brilliant_strategist old_guard army_organisation }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
 
    	 # Submod #
     
@@ -288,56 +320,7 @@ characters={
 			}
 		}
 	}
-	NCH_admiral_poethgils={
-		name=NCH_navy_chief_1
-		portraits={
-			army={
-				small=GFX_idea_unknown_advisor_bug
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = NCH_navy_chief_1
-			cost = 100
-			allowed = {
-				original_tag = NCH
-			}
-			available = {
-				has_country_flag = NCH_navy_advisor_flag
-			}
-			traits = {
-				navy_chief_decisive_battle_2
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	NCH_admiral_fallon={
-		name=NCH_navy_chief_2
-		portraits={
-			army={
-				small=GFX_idea_unknown_advisor_bug
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = NCH_navy_chief_2
-			cost = 50
-			allowed = {
-				original_tag = NCH
-			}
-			available = {
-				has_country_flag = NCH_navy_advisor_flag
-			}
-			traits = {
-				alt_navy_submarine_1
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+
 	NCH_air_chief_1={
 		#name=NCH_air_chief_1
 		portraits={
