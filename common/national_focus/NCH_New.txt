@@ -3021,57 +3021,16 @@ focus_tree = {
                 legacy_id=941
             } 
 			custom_effect_tooltip = NCH_new_stats_Merelay
-                
+			
             add_tech_bonus = {
                 name = race_tech_bonus
                 bonus = 0.50
                 uses = 2
                 category = jager_tech
             }
-
 			country_event = {
-				ROOT = { 
-				country_event = { 
-					  id =  NCH_jag_mount.1
-					  days = 1 #0 сразу же его вызывает при выполненини фокуса, лучше на день ставить если ты хочешь почти сразу эффект дать без засирания экрана уведомлениями
-					 }
-			 	 }
-	
-   				id = NCH_jag_mount.1
-    			immediate = {log = "[GetDateText]: [Root.GetName]: event brodfeld_rework.6"}
-   				title = NCH_jag_mount.1.t #сделать локализацию
-   				desc = NCH_jag_mount.1.d #сделать локализацию
-   				picture = "GFX_event_jager_mount" #сделать пикчу
-    			is_triggered_only = yes
-    			fire_only_once = yes
-
-   				option = {
-       	 		name = greneclyf_jag.1.a #сделать локализацию
-      	  		custom_effect_tooltip = NCH_jaggers #сделать локализацию
-        		set_technology = { infantry_weapons1 = 1 }
-        		set_technology = { tech_jager = 1 }
-				set_technology = { support_equipment }
-       			hidden_effect = {
-            	division_template = {
-                	name = "Sons of the Mountains"
-               		 regiments = {
-                   		jager = { x = 0 y = 0 }
-                   		jager = { x = 1 y = 0 }
-                    	jager = { x = 0 y = 1 }
-                  		jager = { x = 1 y = 1 }
-                    	jager = { x = 0 y = 2 }
-                    	jager = { x = 1 y = 2 }
-                    	#maybe add later field hospital, signal company etc
-              	  		}
-           			 }
-       	 		}
-            	669 = {
-                create_unit = {
-                    division = "name = \"Sons of the Mountains Jager Special Forces\" division_template = \"Sons of the Mountains\" start_experience_factor = 1"
-                    owner = ROOT
-                		}       
-          	 		 }
-   		 		}
+				id = greneclyf.412
+				days = 1
 			}
 		}
 	}

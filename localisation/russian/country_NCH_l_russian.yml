@@ -23,6 +23,12 @@ NCH_new_stats_lorri:0 "§gУровень§!: §Y4§!, (£trait_attack §Y5§!, �
 Moronlan:0 "Моронлан"
 NCH_Desc_Moronlan:0 "111"
 
+Merelay:0 "Мерелей"
+NCH_new_stats_Merelay:0 "§gУровень§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gЧерты§!: §C$trickster$§!, §C$media_personality$§!\n\n"
+
+Hailman:0 "Хейлман"
+NCH_Desc_Hailman:0 "Человек град"
+
 # Submod #
 
  ### FOCUS LOCALISATION ###

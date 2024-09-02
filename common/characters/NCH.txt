@@ -193,6 +193,26 @@ characters={
 		}
 	}
 
+		NCH_Hailman={
+		name=Hailman
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Hailman.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Hailman.tga"
+			}
+		}
+		corps_commander={
+			desc="NCH_Desc_Hailman"
+			traits={ changeling_race_trait winter_specialist army_artillery_1 }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	NCH_Coilholt={
 		name=Coilholt
 		portraits={
@@ -202,7 +222,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="NCH_Desc_Moronlan"
+			desc="NCH_Desc_Coilholt"
 			traits={ changeling_race_trait old_guard Organizer winter_specialist }
 			skill=2
 			attack_skill=2

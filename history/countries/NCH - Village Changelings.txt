@@ -162,6 +162,7 @@ recruit_character = NCH_Derkliones
 recruit_character = NCH_Moronlan
 recruit_character = NCH_Coilholt
 recruit_character = NCH_Merelay
+recruit_character = NCH_Hailman
 
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
