@@ -3364,8 +3364,21 @@ focus_tree = {
 					}
 				}
 			}
+			
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
+		country_event = {
+			id = greneclyf.512
+			days = 10
+		}
+		country_event = {
+			id = greneclyf.513
+			days = 28
+		}
+		country_event = {
+			id = greneclyf.514
+			days = 49
+		}
 	}
 
 	focus = {

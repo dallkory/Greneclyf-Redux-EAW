@@ -3,8 +3,10 @@ add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
 # Submod #
+
+# jagers #
 country_event = {
-	id =  greneclyf.412
+	id = greneclyf.412
 	title = greneclyf.412.t #сделать локализацию
 	desc = greneclyf.412.d #сделать локализацию
 	picture = "GFX_event_jager_mount" #сделать пикчу
@@ -12,38 +14,94 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	 option = {
+	option = {
 		name = greneclyf.412.a #сделать локализацию
 		custom_effect_tooltip = NCH_event_jag #сделать локализацию
-		set_technology = { infantry_weapons = 1 }
-		set_technology = { tech_jager = 1 }
-		set_technology = { support_equipment = 1 }
+		set_technology = { 
+			infantry_weapons = 1
+			tech_jager = 1 
+		 	support_equipment = 1
+		}
+	}
 
 	hidden_effect = {
 		division_template = {
-		name = "Sons of the Mountains"
+			name = "Sons of the Mountains"
 			regiments = {
-			jager = { x = 0 y = 0 }
-			jager = { x = 1 y = 0 }
-			jager = { x = 0 y = 1 }
-			jager = { x = 1 y = 1 }
-			jager = { x = 0 y = 2 }
-			jager = { x = 1 y = 2 }
-			#maybe add later field hospital, signal company etc
-				}
-			}
-			}
-			669 = {
-				create_unit = {
-					division = {
-						name = "Sons of the Mountains Jager Special Forces"
-						division_template = "Sons of the Mountains"
-						start_experience_factor = 1
-					}
-			owner = ROOT
-				}       
+				jager = { x = 0 y = 0 }
+				jager = { x = 1 y = 0 }
+				jager = { x = 0 y = 1 }
+				jager = { x = 1 y = 1 }
+				jager = { x = 0 y = 2 }
+				jager = { x = 1 y = 2 }
+				#можно позже добавить госпиталь, сигналку и т.д.
 			}
 		}
+		# Создание юнита в провинции 5131
+		units = {
+			division = {
+				name = "Sons of the Mountains Jager Special Forces"
+				location = 5131
+				division_template = "Sons of the Mountains"
+				start_experience_factor = 1.0
+				start_equipment_factor = 0.6 }
+		}
+	}
+}
+
+# Hatcher #
+
+# Resource
+country_event = {
+    id = greneclyf.512
+    title = "Ресурсы для войны"
+    desc = "Новые ресурсы были найдены в провинции!"
+    picture = ""
+    is_triggered_only = yes
+
+    option = {
+        name = "Отлично!"
+        add_resource = { province = 670 type = chromium amount = 50 }
+        add_resource = { province = 670 type = steel amount = 30 }
+        add_resource = { province = 670 type = oil amount = 15 }
+    }
+}
+
+# New base and docks
+country_event = {
+    id = greneclyf.513
+    title = "Новые верфи"
+    desc = "Были построены новые верфи и улучшены порты!"
+    picture = ""
+    is_triggered_only = yes
+
+    option = {
+        name = "Отлично!"
+        add_building_construction = {
+            type = naval_base
+            level = 2
+            state = 5188
+        }
+        add_building_construction = {
+            type = dockyard
+            level = 4
+            state = 670
+        }
+    }
+}
+
+# Mp + 2000
+country_event = {
+    id = greneclyf.514
+    title = "NCH_hetcher_add_manpower"
+    desc = "NCH_hetcher_desc_manpower!"
+    picture = ""
+    is_triggered_only = yes
+
+    option = {
+        name = "Вперёд!"
+        add_manpower = 2000
+    }
 }
 
 # Submod #
