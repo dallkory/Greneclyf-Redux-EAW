@@ -3057,8 +3057,8 @@ focus_tree = {
 			custom_effect_tooltip = available_chief_of_navy
 			show_ideas_tooltip = NCH_navy_chief_1
 			show_ideas_tooltip = NCH_navy_chief_2
-			show_ideas_tooltip = NCH_navy_Hart
-			show_ideas_tooltip = NCH_navy_Lorri
+			show_ideas_tooltip = NCH_Hart
+			show_ideas_tooltip = NCH_Lorri
 			set_country_flag = NCH_navy_advisor_flag
 
 			add_naval_commander_role = {

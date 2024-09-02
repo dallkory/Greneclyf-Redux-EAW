@@ -158,6 +158,7 @@ set_stability = 0.83
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart
 recruit_character = NCH_admiral_lorri
+recruit_character = NCH_Derkliones
 
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
