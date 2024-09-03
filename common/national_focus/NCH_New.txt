@@ -3306,6 +3306,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_proficient_packs"
 			add_ideas = NCH_submarine_buff_idea
+			set_technology = {
+				cruiser_submarines_nomtg = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
 	}
@@ -3364,21 +3367,8 @@ focus_tree = {
 					}
 				}
 			}
-			
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
-		country_event = {
-			id = greneclyf.512
-			days = 10
-		}
-		country_event = {
-			id = greneclyf.513
-			days = 28
-		}
-		country_event = {
-			id = greneclyf.514
-			days = 49
-		}
 	}
 
 	focus = {
@@ -3742,6 +3732,12 @@ focus_tree = {
 				}
 			}
 			add_ideas = NCH_sound_design_bonus
+
+			country_event = {
+				id = greneclyf.512
+				days = 7
+			}
+
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
 	}

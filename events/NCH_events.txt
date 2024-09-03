@@ -2,9 +2,38 @@
 add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
+add_research_slot = 1
 # Submod #
+# Celarl - Nuke program #
+country_event = {
+	id = greneclyf.512
+	title = greneclyf.512.t
+	desc = "greneclyf.512.d"
+	picture = ""
+    is_triggered_only = yes
+    #fire_only_once = yes
+	option={
+		name = greneclyf.512.a 
+        custom_effect_tooltip = greneclyf.512_tooltip 
 
-# jagers #
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			technology = atomic_research
+			technology = nuclear_reactor
+		}
+		
+	}
+}
+
+
+# Navy #
+country_event = {
+	
+}
+
+# Jagers #
 country_event = {
 	id = greneclyf.412
     title = greneclyf.412.t #сделать локализацию
@@ -48,59 +77,6 @@ country_event = {
 }
 
 # Hatcher #
-
-# Resource
-country_event = {
-    id = greneclyf.512
-    title = "Ресурсы для войны"
-    desc = "Новые ресурсы были найдены в провинции!"
-    picture = ""
-    is_triggered_only = yes
-
-    option = {
-        name = "Отлично!"
-        add_resource = { province = 670 type = chromium amount = 50 }
-        add_resource = { province = 670 type = steel amount = 30 }
-        add_resource = { province = 670 type = oil amount = 15 }
-    }
-}
-
-# New base and docks
-country_event = {
-    id = greneclyf.513
-    title = "Новые верфи"
-    desc = "Были построены новые верфи и улучшены порты!"
-    picture = ""
-    is_triggered_only = yes
-
-    option = {
-        name = "Отлично!"
-        add_building_construction = {
-            type = naval_base
-            level = 2
-            state = 5188
-        }
-        add_building_construction = {
-            type = dockyard
-            level = 4
-            state = 670
-        }
-    }
-}
-
-# Mp + 2000
-country_event = {
-    id = greneclyf.514
-    title = "NCH_hetcher_add_manpower"
-    desc = "NCH_hetcher_desc_manpower!"
-    picture = ""
-    is_triggered_only = yes
-
-    option = {
-        name = "Вперёд!"
-        add_manpower = 2000
-    }
-}
 
 # Submod #
 

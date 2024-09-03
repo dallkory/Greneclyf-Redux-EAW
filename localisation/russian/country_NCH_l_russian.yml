@@ -1,6 +1,10 @@
 ﻿l_russian:
 # Submod #
+# Traits #
+silent_workbug2:0 "Трудоголик"
+
 # Advisors #
+
 Celarl:0 "Целарл"
 Celarl_desc:0 "11"
 

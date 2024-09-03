@@ -232,6 +232,67 @@ characters={
 			legacy_id=-1
 		}
 	}
+
+	NCH_Goulen={
+		name=Goulen
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Goulen.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Goulen.tga"
+			}
+		}
+		corps_commander={
+			desc="NCH_Desc_Goulen"
+			traits={ changeling_race_trait  trait_engineer commando }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = NCH_Goulen
+			cost = 100
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				army_regrouping_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	NCH_Floppa={
+		name=Floppa
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Floppa.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Floppa
+			desc = "Floppa"
+			cost =  150
+			allowed = {
+				original_tag = NCH
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			traits = {
+				silent_workbug2
+			 }
+		}
+	}
+
    	 # Submod #
     
 	NCH_queen_gytha={

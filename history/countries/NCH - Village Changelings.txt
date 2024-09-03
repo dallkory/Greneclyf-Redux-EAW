@@ -163,6 +163,8 @@ recruit_character = NCH_Moronlan
 recruit_character = NCH_Coilholt
 recruit_character = NCH_Merelay
 recruit_character = NCH_Hailman
+recruit_character = NCH_Goulen
+recruit_character = NCH_Floppa
 
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
