@@ -4,7 +4,8 @@ add_namespace = greneclyf_crisis
 
 add_research_slot = 1
 # Submod #
-# Celarl - Nuke program #
+
+# Celarl - start Nuke program #
 country_event = {
 	id = greneclyf.512
 	title = greneclyf.512.t
@@ -26,6 +27,46 @@ country_event = {
 		
 	}
 }
+# Resources 
+country_event = {
+	id = greneclyf.513
+	title = greneclyf.513.t
+	desc = "greneclyf.513.d"
+	picture = ""
+    is_triggered_only = yes
+    #fire_only_once = yes
+	option={
+		name = greneclyf.513.a 
+        custom_effect_tooltip = greneclyf.512_tooltip 
+
+		668 = {
+			add_resource = {
+				type = crystals
+				amount = 16
+				}
+			}
+			
+		}
+	}
+	# Nukereactor
+	country_event = {
+		id = greneclyf.514
+		title = greneclyf.514.t
+		desc = "greneclyf.514.d"
+		picture = ""
+		is_triggered_only = yes
+		#fire_only_once = yes
+		option={
+			name = greneclyf.514.a 
+			custom_effect_tooltip = greneclyf.514_tooltip 
+			668 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+				}
+			}
+		}
+	}
 
 
 # Navy #
