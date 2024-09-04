@@ -25,8 +25,15 @@ characters={
             traits = { nuclear_scientist }
     		desc = "Celarl_desc"
             available = { 
-                has_completed_focus = NCH_aerial_experiments
-            }             
+                has_completed_focus = NCH_radical_designs
+            }       
+			on_add = {
+				is_hired_as_advisor = yes
+				country_event = {
+					id = greneclyf.511
+					days = 1
+				}
+			}      
         }
     }
 	# Spymaster #

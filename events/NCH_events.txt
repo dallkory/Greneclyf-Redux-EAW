@@ -6,6 +6,25 @@ add_research_slot = 1
 # Submod #
 
 # Celarl - start Nuke program #
+
+country_event = {
+	id = greneclyf.511
+	title = greneclyf.511.t
+	desc = "Старт нашей ядерной программы"
+	picture = ""
+	is_triggered_only = yes
+	fire_only_once = yes
+	option={
+		name = greneclyf.511.a 
+        custom_effect_tooltip = greneclyf.511_tooltip 
+		country_event = {
+			id = greneclyf.512
+			days = 1
+		}
+	}
+}
+
+# Add bonus tech
 country_event = {
 	id = greneclyf.512
 	title = greneclyf.512.t
@@ -17,17 +36,20 @@ country_event = {
 		name = greneclyf.512.a 
         custom_effect_tooltip = greneclyf.512_tooltip 
 
+		add_country_flag = greneclyf.512_triggered
+
 		add_tech_bonus = {
 			name = secret_bonus
 			bonus = 1.0
 			uses = 1
 			technology = atomic_research
 			technology = nuclear_reactor
+			add_country_flag = greneclyf.512_triggered
 		}
-		
 	}
 }
-# Resources 
+# After tech & decision
+# Bugs.......
 country_event = {
 	id = greneclyf.513
 	title = greneclyf.513.t
@@ -35,10 +57,31 @@ country_event = {
 	picture = ""
     is_triggered_only = yes
     #fire_only_once = yes
+
+	trigger = {
+		has_country_flag = greneclyf.512
+		has_tech = nuclear_power
+		has_tech = nuclear_reactor
+	}
 	option={
 		name = greneclyf.513.a 
-        custom_effect_tooltip = greneclyf.512_tooltip 
+		add_country_flag = greneclyf.513_triggered
+        add_decision = nch_build_reactor_decision
+	}
+}
 
+# Resources 
+country_event = {
+	id = greneclyf.515
+	title = greneclyf.515.t
+	desc = "greneclyf.515.d"
+	picture = ""
+    is_triggered_only = yes
+    #fire_only_once = yes
+	option={
+		name = greneclyf.515.a 
+        custom_effect_tooltip = greneclyf.512_tooltip 
+		add_manpower = -2000
 		668 = {
 			add_resource = {
 				type = crystals
@@ -48,31 +91,54 @@ country_event = {
 			
 		}
 	}
+
+	# Choise slot / civ / military
 	# Nukereactor
-	country_event = {
-		id = greneclyf.514
-		title = greneclyf.514.t
-		desc = "greneclyf.514.d"
+		country_event = {
+		id = greneclyf.516
+		title = greneclyf.516.t
+		desc = "greneclyf.516.d"
 		picture = ""
 		is_triggered_only = yes
 		#fire_only_once = yes
+		
+		trigger = {
+			has_advisor = "character_id"
+		}
+
+		option = {
+			name = greneclyf.516.slot.a 
+			add_research_slot = 1
+		}
+
 		option={
-			name = greneclyf.514.a 
+			name = greneclyf.516.war.a 
 			custom_effect_tooltip = greneclyf.514_tooltip 
-			668 = {
+			670 = {
 				add_building_construction = {
-					type = nuclear_reactor
-					level = 1
+					type = arms_factory
+					level = 4
 				}
 			}
+		}
+
+		option={
+			name = greneclyf.516.civ.a 
+			custom_effect_tooltip = greneclyf.514_tooltip 
+			669 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+			}
+			add_political_power = 150
+			add_stability = 0.10
+			add_war_support = 0.05
 		}
 	}
 
 
 # Navy #
-country_event = {
-	
-}
 
 # Jagers #
 country_event = {
