@@ -134,7 +134,7 @@ country_event = {
 					level = 4
 				}
 			}
-			add_political_power = 100
+			add_political_power = 75
 			add_war_support = 0.15
 		}
 
