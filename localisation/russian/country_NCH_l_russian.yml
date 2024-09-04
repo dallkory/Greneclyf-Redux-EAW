@@ -1,5 +1,9 @@
 ﻿l_russian:
 # Submod #
+# Decision
+NCH_nuke_category:0 "Ядерная программа Гринклифа"
+NCH_build_reactor:0 "Мы должны начать строительство ядерного реактора"
+
 # Traits #
 silent_workbug2:0 "Трудоголик"
 

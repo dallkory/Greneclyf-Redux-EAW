@@ -5,7 +5,6 @@ NCH_nuke_category = {
 	priority = {
 		base = 100
 	}
-
 }
 
 NCH_submarine_category = {
