@@ -21,15 +21,9 @@ NCH_nuke_category = {
 					NCH_scientist_celarl = {
 						is_hired_as_advisor = yes
 					}
-  					has_country_flag = reactor_built
-					}
+					has_country_flag = reactor_has_built
+				}
 			}
-
-	#	available = {
-	#			NCH_scientist_celarl = {
-	#				is_hired_as_advisor = yes
-	#			}
-	#	}
 
 		complete_effect = {
 			add_political_power = 100

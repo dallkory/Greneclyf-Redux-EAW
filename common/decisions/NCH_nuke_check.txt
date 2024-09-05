@@ -1,7 +1,6 @@
 count_nuclear_reactors = {
-    trigger = {
         has_building = nuclear_reactor
-    }
+		
     set_variable = {
         name = nuclear_reactor_count
     }

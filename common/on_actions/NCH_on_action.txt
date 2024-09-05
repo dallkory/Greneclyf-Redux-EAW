@@ -1,0 +1,18 @@
+on_actions = {
+    on_daily_NCH = {
+        effect = {
+            if = {
+                limit = {
+                    has_built = {
+                        type = nuclear_reactor
+                        value > 0
+                    }
+                }
+                country_event = {
+                    id = greneclyf.590
+                    days = 0
+                }
+            }
+        }
+    }
+}

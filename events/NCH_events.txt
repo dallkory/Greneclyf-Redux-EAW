@@ -14,6 +14,9 @@ country_event = {
 	picture = ""
 	is_triggered_only = yes
 	fire_only_once = yes
+	immediate = {
+        set_country_flag = reactor_built
+    }
 	option={
 		name = greneclyf.511.a 
         custom_effect_tooltip = greneclyf.511_tooltip 
@@ -28,12 +31,13 @@ country_event = {
     id = greneclyf.590
     title = "Check Reactor"
     desc = "Check if a nuclear reactor is built."
-    trigger = {
-        has_built = nuclear_reactor
-    }
-    immediate = {
-        set_country_flag = reactor_built
-    }
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+    option = {
+		name = ok
+		set_country_flag = reactor_has_built
+	} 
 }
 
 # Add bonus tech
@@ -44,10 +48,12 @@ country_event = {
 	picture = ""
 	is_triggered_only = yes
     #fire_only_once = yes
+	immediate = {
+        set_country_flag = gr.522
+    }
 	option={
 		name = greneclyf.522.a 
         custom_effect_tooltip = greneclyf.522_tooltip 
-
 		add_tech_bonus = {
 			name = secret_bonus
 			bonus = 1.0
@@ -61,6 +67,7 @@ country_event = {
 		}
 	}
 }
+
 # After tech & decision
 # Bugs.......
 country_event = {
@@ -68,18 +75,14 @@ country_event = {
 	title = greneclyf.513.t
 	desc = "greneclyf.513.d"
 	picture = ""
+	is_triggered_only = yes
     #fire_only_once = yes
-
-	trigger = {
-		has_tech = nuclear_power
-		has_tech = nuclear_reactor
-	}
 	option={
 		name = greneclyf.513.a 
         activate_mission = NCH_nuce_mission
 		country_event = {
 			id = greneclyf.515
-			days = 100
+			days = 90
 		}
 	}
 }
