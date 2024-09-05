@@ -17,26 +17,36 @@ country_event = {
 	option={
 		name = greneclyf.511.a 
         custom_effect_tooltip = greneclyf.511_tooltip 
+		
 		country_event = {
-			id = greneclyf.512
+			id = greneclyf.522
 			days = 1
 		}
 	}
 }
+country_event = {
+    id = greneclyf.590
+    title = "Check Reactor"
+    desc = "Check if a nuclear reactor is built."
+    trigger = {
+        has_built = nuclear_reactor
+    }
+    immediate = {
+        set_country_flag = reactor_built
+    }
+}
 
 # Add bonus tech
 country_event = {
-	id = greneclyf.512
-	title = greneclyf.512.t
-	desc = "greneclyf.512.d"
+	id = greneclyf.522
+	title = greneclyf.522.t
+	desc = "greneclyf.522.d"
 	picture = ""
-    is_triggered_only = yes
+	is_triggered_only = yes
     #fire_only_once = yes
 	option={
-		name = greneclyf.512.a 
-        custom_effect_tooltip = greneclyf.512_tooltip 
-
-		add_country_flag = greneclyf.512_triggered
+		name = greneclyf.522.a 
+        custom_effect_tooltip = greneclyf.522_tooltip 
 
 		add_tech_bonus = {
 			name = secret_bonus
@@ -44,7 +54,10 @@ country_event = {
 			uses = 1
 			technology = atomic_research
 			technology = nuclear_reactor
-			add_country_flag = greneclyf.512_triggered
+		}
+		country_event = {
+			id = greneclyf.513
+			days = 1
 		}
 	}
 }
@@ -55,18 +68,19 @@ country_event = {
 	title = greneclyf.513.t
 	desc = "greneclyf.513.d"
 	picture = ""
-    is_triggered_only = yes
     #fire_only_once = yes
 
 	trigger = {
-		has_country_flag = greneclyf.512
 		has_tech = nuclear_power
 		has_tech = nuclear_reactor
 	}
 	option={
 		name = greneclyf.513.a 
-		add_country_flag = greneclyf.513_triggered
-        add_decision = NCH_build_reactor
+        activate_mission = NCH_nuce_mission
+		country_event = {
+			id = greneclyf.515
+			days = 100
+		}
 	}
 }
 
@@ -94,14 +108,13 @@ country_event = {
 	option={
 		name = greneclyf.515.a 
         custom_effect_tooltip = greneclyf.512_tooltip 
-		add_manpower = -2000
+		add_manpower = -500
 		668 = {
 			add_resource = {
 				type = crystals
 				amount = 16
 				}
 			}
-			
 		}
 	}
 
@@ -150,6 +163,19 @@ country_event = {
 			add_political_power = 150
 			add_stability = 0.10
 			add_war_support = 0.05
+		}
+	}
+# Development of science and society
+	country_event = {
+		id = greneclyf.517
+		title = greneclyf.517.t
+		desc = greneclyf.517.d 
+		picture = "" 
+		is_triggered_only = yes
+		#fire_only_once = yes
+		option = {
+			add_ideas = modern_society 
+			add_ideas = proper_science_base
 		}
 	}
 
