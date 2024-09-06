@@ -3309,6 +3309,12 @@ focus_tree = {
 			set_technology = {
 				cruiser_submarines_nomtg = 1
 			}
+			hidden_effect = {
+				country_event = {
+					id = greneclyf.621
+					days = 10
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
 	}
@@ -3365,12 +3371,6 @@ focus_tree = {
 						}
 						load_oob = "NCH_battleship_oob_legacy"
 					}
-				}
-			}
-			hidden_effect = {
-				country_event = {
-					id = greneclyf.611
-					days = 1
 				}
 			}
 		}

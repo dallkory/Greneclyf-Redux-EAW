@@ -2,11 +2,9 @@
 add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
-add_research_slot = 1
 # Submod #
 
 # Celarl - start Nuke program #
-
 country_event = {
 	id = greneclyf.511
 	title = greneclyf.511.t
@@ -27,6 +25,8 @@ country_event = {
 		}
 	}
 }
+
+# Check reactor
 country_event = {
     id = greneclyf.590
     title = "Check Reactor"
@@ -111,7 +111,7 @@ country_event = {
 	desc = "greneclyf.515.d"
 	picture = ""
     is_triggered_only = yes
-    #fire_only_once = yes
+    fire_only_once = yes
 	option={
 		name = greneclyf.515.a 
         custom_effect_tooltip = greneclyf.512_tooltip 
@@ -133,7 +133,7 @@ country_event = {
 		desc = "greneclyf.516.d"
 		picture = ""
 		is_triggered_only = yes
-		#fire_only_once = yes
+		fire_only_once = yes
 
 		option = {
 			name = greneclyf.516.slot.a 
@@ -168,6 +168,7 @@ country_event = {
 			add_war_support = 0.05
 		}
 	}
+
 # Development of science and society
 	country_event = {
 		id = greneclyf.517
@@ -183,7 +184,6 @@ country_event = {
 		}
 	}
 
-
 # Navy #
 country_event = {
 	id = greneclyf.611
@@ -194,10 +194,93 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = greneclyf.611
-		add_ideas = modern_society 
-		add_ideas = proper_science_base
+		670 = {
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+		670 = {
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+				province = 5188
+			}
+		}
 	}
 }
+
+# Make decision find resource
+country_event = {
+	id = greneclyf.612
+	title = greneclyf.612.t
+	desc = greneclyf.612.d 
+	picture = "" 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		add_manpower = -1500
+		add_political_power = -200
+		name = greneclyf.612
+		669 = {
+			add_resource = {
+				type = oil
+				amount = 24
+				}
+			add_resource = {
+				type = steel
+				amount = 20
+			}	
+			add_resource = {
+				type = chromium
+				amount = 10
+			}
+		}
+	}
+}
+
+# Crew for Hatcher
+country_event = {
+	id = greneclyf.614
+	title = greneclyf.614.t
+	desc = greneclyf.614.d 
+	picture = "" 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = greneclyf.614
+		add_manpower = 2000
+	}
+}
+
+country_event = {
+	id = greneclyf.621
+	title = greneclyf.621.t
+	desc = greneclyf.621.d 
+	picture = "" 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = greneclyf.621
+
+		670 = {
+			add_resource = {
+				type = oil
+				amount = 12
+				}
+			add_resource = {
+				type = steel
+				amount = 40
+			}	
+			add_resource = {
+				type = tungsten
+				amount = 16
+			}
+		}
+	}
+}
+
 
 # Jagers #
 country_event = {

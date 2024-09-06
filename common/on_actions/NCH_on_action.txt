@@ -1,4 +1,5 @@
 on_actions = {
+
     on_daily_NCH = {
         effect = {
             if = {
@@ -9,6 +10,39 @@ on_actions = {
                     id = greneclyf.590
                     days = 0
                 }
+            }
+			if = {
+                limit = {
+					focus_progress = {
+						focus = NCH_lay_down_the_hatcher
+						progress > 0.25
+					}
+                }
+                country_event = {
+                    id = greneclyf.611
+                    days = 0
+                }
+            }
+			if = {
+                limit = {
+					focus_progress = {
+						focus = NCH_lay_down_the_hatcher
+						progress > 0.75
+					}
+                }
+                country_event = {
+                    id = greneclyf.612
+                    days = 0
+                } 
+            }
+			if = {
+                limit = {
+					has_completed_focus = NCH_lay_down_the_hatcher
+                }
+                country_event = {
+                    id = greneclyf.614
+                    days = 0
+                } 
             }
         }
     }
