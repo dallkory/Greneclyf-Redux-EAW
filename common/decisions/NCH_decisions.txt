@@ -3,6 +3,7 @@ NCH_nuke_category = {
 
 	NCH_nuce_mission = {
 		icon = gfx_decision_icon_default
+		is_good = yes
 		days_mission_timeout = 1100
 		mission_timeout = 1100
 		fire_only_once = yes
@@ -32,13 +33,13 @@ NCH_nuke_category = {
 				modifier = { monthly_population = 0.15 }
 			}
 			country_event = {
-				id = greneclyf.516 # успешный ивент
+				id = greneclyf.516 # success
 				days = 0
 			}
 
 			hidden_effect = {
 				country_event = {
-					id = greneclyf.517
+					id = greneclyf.517 # Modern
 					days = 100
 				}
 			}
@@ -48,7 +49,7 @@ NCH_nuke_category = {
 			add_political_power = -200
 			add_stability = -0.05
 			country_event = {
-				id = greneclyf.514 # провальный ивент
+				id = greneclyf.514 # faill
 				days = 0
 			}
 		}
