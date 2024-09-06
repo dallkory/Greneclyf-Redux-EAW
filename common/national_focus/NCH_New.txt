@@ -3367,6 +3367,12 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				country_event = {
+					id = greneclyf.611
+					days = 1
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
 	}

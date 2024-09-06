@@ -3,8 +3,8 @@ NCH_nuke_category = {
 
 	NCH_nuce_mission = {
 		icon = gfx_decision_icon_default
-		days_mission_timeout = 970
-		mission_timeout = 970
+		days_mission_timeout = 1100
+		mission_timeout = 1100
 		fire_only_once = yes
 		desc = ""
 		activation = {
@@ -34,6 +34,13 @@ NCH_nuke_category = {
 			country_event = {
 				id = greneclyf.516 # успешный ивент
 				days = 0
+			}
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf.517
+					days = 100
+				}
 			}
 		}
 

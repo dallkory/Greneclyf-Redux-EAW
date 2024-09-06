@@ -34,12 +34,6 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	trigger = {
-		has_built = {
-			type = nuclear_reactor
-			value > 0
-		}
-	}
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -140,10 +134,6 @@ country_event = {
 		picture = ""
 		is_triggered_only = yes
 		#fire_only_once = yes
-		
-		trigger = {
-			
-		}
 
 		option = {
 			name = greneclyf.516.slot.a 
@@ -187,6 +177,7 @@ country_event = {
 		is_triggered_only = yes
 		#fire_only_once = yes
 		option = {
+			name = greneclyf.517
 			add_ideas = modern_society 
 			add_ideas = proper_science_base
 		}
@@ -194,6 +185,19 @@ country_event = {
 
 
 # Navy #
+country_event = {
+	id = greneclyf.611
+	title = greneclyf.611.t
+	desc = greneclyf.611.d 
+	picture = "" 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = greneclyf.611
+		add_ideas = modern_society 
+		add_ideas = proper_science_base
+	}
+}
 
 # Jagers #
 country_event = {
