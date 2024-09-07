@@ -8,7 +8,7 @@ add_namespace = greneclyf_crisis
 country_event = {
 	id = greneclyf.511
 	title = greneclyf.511.t
-	desc = "Старт нашей ядерной программы"
+	desc = "greneclyf.511.d"
 	picture = ""
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -17,13 +17,17 @@ country_event = {
     }
 	option={
 		name = greneclyf.511.a 
-        custom_effect_tooltip = greneclyf.511_tooltip 
-		
-		country_event = {
-			id = greneclyf.522
-			days = 1
+		hidden_effect = {
+			country_event = {
+				id = greneclyf.522
+				days = 70
+			}
 		}
 	}
+	option = {
+		name = greneclyf.511.b
+		custom_effect_tooltip = greneclyf.511.b.tt
+		}
 }
 
 # Check reactor
@@ -37,7 +41,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-
     option = {
 		name = ok
 		set_country_flag = reactor_has_built
@@ -48,7 +51,7 @@ country_event = {
 country_event = {
 	id = greneclyf.522
 	title = greneclyf.522.t
-	desc = "greneclyf.522.d"
+	desc = greneclyf.522.d
 	picture = ""
 	is_triggered_only = yes
     #fire_only_once = yes
@@ -58,6 +61,7 @@ country_event = {
 	option={
 		name = greneclyf.522.a 
         custom_effect_tooltip = greneclyf.522_tooltip 
+		set_country_flag = ev.522.complete
 		add_tech_bonus = {
 			name = secret_bonus
 			bonus = 1.0
@@ -72,18 +76,18 @@ country_event = {
 	}
 }
 
-# After tech & decision
-# Bugs.......
+# Decision
+# After research
 country_event = {
 	id = greneclyf.513
 	title = greneclyf.513.t
-	desc = "greneclyf.513.d"
+	desc = greneclyf.513.d
 	picture = ""
 	is_triggered_only = yes
-    #fire_only_once = yes
+    fire_only_once = yes
 	option={
+		set_country_flag = NCH_start_nuce_program_fg
 		name = greneclyf.513.a 
-        activate_mission = NCH_nuce_mission
 		country_event = {
 			id = greneclyf.515
 			days = 90
@@ -95,7 +99,7 @@ country_event = {
 country_event = {
 	id = greneclyf.514
 	title = greneclyf.514.t
-	desc = "greneclyf.514.d"
+	desc = greneclyf.514.d
 	picture = ""
     is_triggered_only = yes
     #fire_only_once = yes
@@ -108,7 +112,7 @@ country_event = {
 country_event = {
 	id = greneclyf.515
 	title = greneclyf.515.t
-	desc = "greneclyf.515.d"
+	desc = greneclyf.515.d
 	picture = ""
     is_triggered_only = yes
     fire_only_once = yes
@@ -125,12 +129,12 @@ country_event = {
 		}
 	}
 
+	# Success
 	# Choise slot / civ / military
-	# Nukereactor
 		country_event = {
 		id = greneclyf.516
 		title = greneclyf.516.t
-		desc = "greneclyf.516.d"
+		desc = greneclyf.516.d
 		picture = ""
 		is_triggered_only = yes
 		fire_only_once = yes
@@ -185,6 +189,7 @@ country_event = {
 	}
 
 # Navy #
+# Dock's for Hatcher
 country_event = {
 	id = greneclyf.611
 	title = greneclyf.611.t
@@ -204,6 +209,7 @@ country_event = {
 }
 
 # Make decision find resource
+# Resources for navy
 country_event = {
 	id = greneclyf.612
 	title = greneclyf.612.t
@@ -246,6 +252,7 @@ country_event = {
 	}
 }
 
+# Submarines 
 country_event = {
 	id = greneclyf.621
 	title = greneclyf.621.t
@@ -273,6 +280,30 @@ country_event = {
 	}
 }
 
+# Hatcher News
+news_event = {
+	id = greneclyf.631
+	title = greneclyf.631.t
+	desc = greneclyf.631.d 
+	picture = GFX_news_hatcher
+	fire_only_once = yes
+
+	option = {
+		name = greneclyf.631.a
+	}
+}
+# Arctic subs News
+news_event = {
+	id = greneclyf.632
+	title = greneclyf.632.t
+	desc = greneclyf.632.d 
+	picture = GFX_news_arctic_submarines
+	fire_only_once = yes
+
+	option = {
+		name = greneclyf.631.a
+	}
+}
 
 # Jagers #
 country_event = {
@@ -316,8 +347,6 @@ country_event = {
             }
     }
 }
-
-# Hatcher #
 
 # Submod #
 

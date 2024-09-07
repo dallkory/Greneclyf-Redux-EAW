@@ -44,6 +44,17 @@ on_actions = {
                     days = 0
                 } 
             }
+            if = {
+                limit = {
+					has_tech = nuclear_reactor
+					has_tech = atomic_research
+					has_country_flag = ev.522.complete
+                country_event = {
+                    id = greneclyf.513
+                    days = 0
+                }
+            }
+
         }
     }
 }

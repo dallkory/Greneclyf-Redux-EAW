@@ -1,9 +1,18 @@
-# Submod
+# Submod #
 NCH_nuke_category = {
+	NCH_start_nuce_program = {
+		icon = gfx_decision_icon_default
+		fire_only_once = yes
+		visible = {
+			has_country_flag = NCH_start_nuce_program_fg
+		}
+		complete_effect = {
+			activate_mission = NCH_nuce_mission
+		}
+	}
 
 	NCH_nuce_mission = {
 		icon = gfx_decision_icon_default
-		is_good = yes
 		days_mission_timeout = 1100
 		mission_timeout = 1100
 		fire_only_once = yes
@@ -16,7 +25,6 @@ NCH_nuke_category = {
 		ai_will_do = {
 			factor = 1
 		}
-
 			available = {
 				AND = {
 					NCH_scientist_celarl = {
@@ -25,6 +33,7 @@ NCH_nuke_category = {
 					has_country_flag = reactor_has_built
 				}
 			}
+		is_good = yes
 
 		complete_effect = {
 			add_political_power = 100
@@ -56,6 +65,7 @@ NCH_nuke_category = {
 	}
 }
 
+# Submod #
 
 NCH_submarine_category = {
 

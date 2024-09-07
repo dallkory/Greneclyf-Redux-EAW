@@ -155,16 +155,6 @@ characters={
 				small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
 			}
 		}
-		corps_commander={
-			desc="NCH_Desc_Moronlan"
-			traits={ brilliant_strategist changeling_race_trait }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
 		field_marshal = {
 			desc="NCH_Desc_Moronlan"
 			traits={ changeling_race_trait brilliant_strategist old_guard }
@@ -286,7 +276,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = NCH_Floppa
-			desc = "Floppa"
+			desc = "Floppa_desc"
 			cost =  150
 			allowed = {
 				original_tag = NCH
