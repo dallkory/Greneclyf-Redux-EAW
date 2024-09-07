@@ -42,7 +42,7 @@ spriteTypes = {
 	# 516
 	spriteType = {
 		name = "GFX_event_mission_reward"
-		textureFile = "gfx/event_picture/event_crystal_mountain.dds"
+		textureFile = "gfx/event_picture/Nuce_event_tech_bonus.dds"
 	}
 	
 	# 517
@@ -56,8 +56,8 @@ spriteTypes = {
 		name = "GFX_event_docks_for_Hatcer"
 		textureFile = "gfx/event_picture/event_boat_in_runined_dock.dds"
 	}
+	
 	# 612
-
 	spriteType = {
 		name = "GFX_event_find_resources"
 		textureFile = "gfx/event_picture/Resources_event.dds"
