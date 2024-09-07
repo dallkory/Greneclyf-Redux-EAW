@@ -8,6 +8,7 @@ NCH_nuke_category = {
 		}
 		complete_effect = {
 			activate_mission = NCH_nuce_mission
+			custom_effect_tooltip = NCH_start_nc_pg
 		}
 	}
 
@@ -17,8 +18,8 @@ NCH_nuke_category = {
 		mission_timeout = 1100
 		fire_only_once = yes
 		desc = ""
+		is_good = no
 		activation = {
-			original_tag = NCH
 			has_tech = nuclear_reactor
 			has_active_mission = NCH_nuce_mission
 		}
@@ -33,7 +34,6 @@ NCH_nuke_category = {
 					has_country_flag = reactor_has_built
 				}
 			}
-		is_good = yes
 
 		complete_effect = {
 			add_political_power = 100

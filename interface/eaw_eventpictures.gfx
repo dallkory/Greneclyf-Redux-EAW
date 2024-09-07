@@ -5,6 +5,12 @@ spriteTypes = {
 		name = "GFX_news_hatcher"
 		textureFile = "gfx/event_picture/News_Hatcher.dds"
 	}
+# Head 
+	spriteType = {
+		name = "GFX_news_hatcher_head"
+		textureFile = "gfx/event_picture/PLB_headline.dds"
+	}
+
 # Arctic submarines #
 	spriteType = {
 	name = "GFX_news_arctic_submarines"

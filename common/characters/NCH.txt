@@ -143,10 +143,8 @@ characters={
             }
 
     }
-	 # Admirals #
 
 	 # Generals #
-
 	NCH_Moronlan={
 		name=Moronlan
 		portraits={
@@ -156,7 +154,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			desc="NCH_Desc_Moronlan"
+			desc = "NCH_Desc_Moronlan"
 			traits={ changeling_race_trait brilliant_strategist old_guard }
 			skill = 4
 			attack_skill = 3
@@ -199,7 +197,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="NCH_Desc_Hailman"
+			desc = "NCH_Desc_Hailman"
 			traits={ changeling_race_trait winter_specialist army_artillery_1 }
 			skill=2
 			attack_skill=2
