@@ -1,20 +1,72 @@
 spriteTypes = {
-# Submod #
-# Hatcher news #
+	# Submod #
+	# Hatcher news #
 	spriteType = {
 		name = "GFX_news_hatcher"
 		textureFile = "gfx/event_picture/News_Hatcher.dds"
 	}
-# Head 
-	spriteType = {
-		name = "GFX_news_hatcher_head"
-		textureFile = "gfx/event_picture/PLB_headline.dds"
-	}
 
-# Arctic submarines #
+	# Arctic submarines news #
 	spriteType = {
 	name = "GFX_news_arctic_submarines"
 	textureFile = "gfx/event_picture/News_Arctic_sub.dds"
+	}
+	# For events #
+	# 511
+	spriteType = {
+		name = "GFX_event_celarl"
+		textureFile = "gfx/event_picture/Celarl_event_511.dds"
+	}
+	# 590
+	spriteType = {
+		name = "GFX_event_reactor"
+		textureFile = "gfx/event_picture/event_eqc_nuclear_power.dds"
+	}
+	# 522
+	spriteType = {
+		name = "GFX_event_nuce_tech_bonus"
+		textureFile = "gfx/event_picture/Nuce_event_tech_bonus.dds"
+	}
+	# 513
+	spriteType = {
+		name = "GFX_event_reactor_has_research"
+		textureFile = "gfx/event_picture/event_eqc_nuclear_power.dds"
+	}
+
+	# 515
+	spriteType = {
+		name = "GFX_event_cristral_for_reactor"
+		textureFile = "gfx/event_picture/event_crystal_mountain.dds"
+	}	
+
+	# 516
+	spriteType = {
+		name = "GFX_event_mission_reward"
+		textureFile = "gfx/event_picture/event_crystal_mountain.dds"
+	}
+	
+	# 517
+	spriteType = {
+		name = "GFX_event_modernization"
+		textureFile = "gfx/event_picture/Nuce_event_tech_bonus.dds"
+	}
+
+	# 611
+	spriteType = {
+		name = "GFX_event_docks_for_Hatcer"
+		textureFile = "gfx/event_picture/event_boat_in_runined_dock.dds"
+	}
+	# 612
+
+	spriteType = {
+		name = "GFX_event_find_resources"
+		textureFile = "gfx/event_picture/Resources_event.dds"
+	}
+
+	# 412 
+	spriteType = {
+		name = "GFX_event_jager_mount"
+		textureFile = "gfx/event_picture/Mount_jaggers_event.dds"
 	}
 
 	spriteType = {

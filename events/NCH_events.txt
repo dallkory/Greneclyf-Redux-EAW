@@ -9,11 +9,13 @@ country_event = {
 	id = greneclyf.511
 	title = greneclyf.511.t
 	desc = greneclyf.511.d
-	picture = ""
+	picture = GFX_event_celarl
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	immediate = {
         set_country_flag = reactor_built
+		set_country_flag = celarl_is_hired_once
     }
 	option={
 		name = greneclyf.511.a 
@@ -22,7 +24,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = greneclyf.522
-				days = 140
+				days = 30
 			}
 		}
 	}
@@ -37,6 +39,7 @@ country_event = {
     id = greneclyf.590
     title = greneclyf.590.t
     desc = greneclyf.590.d
+	picture = GFX_event_reactor
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -54,15 +57,13 @@ country_event = {
 	id = greneclyf.522
 	title = greneclyf.522.t
 	desc = greneclyf.522.d
-	picture = ""
+	picture = GFX_event_nuce_tech_bonus
 	is_triggered_only = yes
-    #fire_only_once = yes
-	immediate = {
-        set_country_flag = gr.522
-    }
+    fire_only_once = yes
+
 	option={
 		name = greneclyf.522.a 
-		set_country_flag = ev.522.complete
+		set_country_flag = gr.522.complete
 		add_tech_bonus = {
 			name = secret_bonus
 			bonus = 1.0
@@ -79,15 +80,25 @@ country_event = {
 	id = greneclyf.513
 	title = greneclyf.513.t
 	desc = greneclyf.513.d
-	picture = ""
+	picture = GFX_event_reactor_has_research
 	is_triggered_only = yes
     fire_only_once = yes
-	option={
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
 		set_country_flag = NCH_start_nuce_program_fg
+	}
+
+	option={
 		name = greneclyf.513.a 
-		country_event = {
-			id = greneclyf.515
-			days = 90
+		hidden_effect = {
+			country_event = {
+				id = greneclyf.515
+				days = 90
+			}
 		}
 	}
 }
@@ -110,7 +121,7 @@ country_event = {
 	id = greneclyf.515
 	title = greneclyf.515.t
 	desc = greneclyf.515.d
-	picture = ""
+	picture = GFX_event_cristral_for_reactor
     is_triggered_only = yes
     fire_only_once = yes
 	option={
@@ -132,7 +143,7 @@ country_event = {
 		id = greneclyf.516
 		title = greneclyf.516.t
 		desc = greneclyf.516.d
-		picture = ""
+		picture = GFX_event_mission_reward
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -173,7 +184,7 @@ country_event = {
 		id = greneclyf.517
 		title = greneclyf.517.t
 		desc = greneclyf.517.d 
-		picture = "" 
+		picture = GFX_event_modernization
 		is_triggered_only = yes
 		#fire_only_once = yes
 		option = {
@@ -215,7 +226,7 @@ country_event = {
 	id = greneclyf.612
 	title = greneclyf.612.t
 	desc = greneclyf.612.d 
-	picture = "" 
+	picture = GFX_event_find_resources
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -244,7 +255,7 @@ country_event = {
 	id = greneclyf.614
 	title = greneclyf.614.t
 	desc = greneclyf.614.d 
-	picture = "" 
+	picture = GFX_event_docks_for_Hatcer
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -254,11 +265,12 @@ country_event = {
 }
 
 # Submarines 
+# Resources for navy
 country_event = {
 	id = greneclyf.621
 	title = greneclyf.621.t
 	desc = greneclyf.621.d 
-	picture = "" 
+	picture = GFX_event_find_resources
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -288,6 +300,7 @@ news_event = {
 	desc = greneclyf.631.d 
 	picture = GFX_news_hatcher
 	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
 
 	option = {
@@ -300,7 +313,9 @@ news_event = {
 	title = greneclyf.632.t
 	desc = greneclyf.632.d 
 	picture = GFX_news_arctic_submarines
+	major = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = greneclyf.631.a
@@ -310,18 +325,14 @@ news_event = {
 # Jagers #
 country_event = {
 	id = greneclyf.412
-    title = greneclyf.412.t #сделать локализацию
-    desc = greneclyf.412.d #сделать локализацию
-    picture = "GFX_event_jager_mount" #сделать пикчу
+    title = greneclyf.412.t 
+    desc = greneclyf.412.d 
+    picture = "GFX_event_jager_mount" 
     is_triggered_only = yes
-    #fire_only_once = yes
+    fire_only_once = yes
     option = {
             
-        name = greneclyf.412.a #сделать локализацию
-        custom_effect_tooltip = greneclyf.412_tooltip #сделать локализацию
-		set_technology = { tech_support = 1 }
-        set_technology = { infantry_weapons1 = 1 }
-        set_technology = { tech_jager = 1 }
+        name = greneclyf.412.a 
         hidden_effect = {
             division_template = {
                 name = "Sons of the Mountains"
@@ -339,6 +350,9 @@ country_event = {
 					
 				}
             }
+			set_technology = { tech_support = 1 }
+			set_technology = { infantry_weapons1 = 1 }
+			set_technology = { tech_jager = 1 }
         }
             669 = {
                 #limit = { ROOT = { has_full_control_of_state = PREV } } #to decide wether to limit it and how later
@@ -348,6 +362,10 @@ country_event = {
                 }       
             }
     }
+	option = {
+		name = greneclyf.412.b
+		add_manpower = 6000
+	}
 }
 
 # Submod #

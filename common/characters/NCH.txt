@@ -237,7 +237,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="NCH_Desc_Goulen"
+			desc = "NCH_Desc_Goulen"
 			traits={ changeling_race_trait  trait_engineer commando }
 			skill=2
 			attack_skill=2
