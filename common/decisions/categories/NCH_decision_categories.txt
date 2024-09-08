@@ -1,6 +1,6 @@
 # Submod
 NCH_nuke_category = {
-	picture = "GFX_event_mission_reward"
+	#picture = "GFX_event_mission_reward"
 	allowed = {
 		original_tag = NCH
 	}

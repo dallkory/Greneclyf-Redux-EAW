@@ -61,6 +61,7 @@ NCH_nuke_category = {
 				id = greneclyf.514 # faill
 				days = 0
 			}
+			
 		}
 	}
 }

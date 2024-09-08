@@ -1,6 +1,158 @@
 ﻿l_english:
  
+  # Submod #
+  # Decision
+  NCH_nuke_category:0 "Grenecliff's nuclear program"
+  NCH_build_reactor:0 "We need to start building a nuclear reactor"
+  NCH_start_nuce_program:0 "Begin construction of the reactor"
+  NCH_nuce_mission:0 "Build the reactor as soon as possible!"
+  reactor_has_built:0 "The reactor was built"
 
+  NCH_nuke_category_desc:0 "Grenecliff began his nuclear program in full confidence that he would be able to harness the power of the atom and channel it into his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
+
+  # Traits #
+  silent_workbug2:0 "Workaholic"
+
+  # Advisors #
+
+  Celarl:0 "Celarl"
+  Celarl_desc:0 "Franser Celarl was born in 977 and showed an interest in the exact sciences from an early age. He has devoted his entire life to physics and the study of magical crystals. He has a theory that almost infinite energy can be extracted from crystals. Maybe these crystals will help in the development of our country?"
+
+  Derkliones:0 "Derkliones"
+
+  Floppa:0 "Floppster"
+  Floppa_desc:0 "A very strange changeling. He's not like our brethren, though he thinks he is. No one asked him to transform, but he doesn't need to. Because of his unusual appearance, our kin took a liking to him. His hard work and desire to help Greencliffe has brought him into our government. Let's see how he fares as our political advisor..\n\n\§gP.S. I would like to express a special word of thanks to yuri for help and advice in the development of sabmod. Without his advice I would have drowned in the modding wiki. Thanks again!"
+
+  ### TOOLTIPS ###
+  NCH_tooltip_Celarl:0 "§HCelarl §Wbecomes a top scientist and starts a nuclear program"
+  NCH_start_nc_pg:0 "§tWe'll have 1,100 days to build the reactor. If we can't build it, all our efforts will be for nothing. After spending too many economic and human resources, the people will be disappointed in you.."
+
+  # Admirals #
+  #Hart
+  Hart:0 "Hart"
+  NCH_Desc_Hart:0 "§gHenrich Hart is a young and promising admiral, hailing from the high mountains of the northern part of the island. His attention to detail has always been noted by his commanders, as has his masterful planning in military exercises. His subordinates enjoy socializing with him, and Hart himself enjoys spending weekends with his battle buddies.\n\nAs an advocate of a large-capacity navy, he actively favors the development of powerful shipbuilding. In his opinion, only our huge cannons pointed at the seas and oceans can keep us safe from potential invaders.§!"
+
+  NCH_new_stats_hart:0 "§gLevel§!: §Y3§!, (£trait_attack §Y3§!, £trait_defense §Y2§!, £trait_maneuvering §Y2§!, £trait_coordination §Y4§!)\n§gTraits§!: §C$superior_tactician$§!, §C$ironside$§!\n\n"
+
+  #Lorri
+  Lorri:0 "Lorri"
+  NCH_desc_Lorri:0 "Admiral Lorellei Lorry is a bright star at Blossomport Naval Academy. Cunning and secretive is how his enemies would describe him. He always keeps his ears sharp, which is not surprising for a submariner, because every even the smallest sound in the depths of the sea can be a sign of either close prey or a change of role.\n\n\Lorrie began his journey on a coastal-type submarine. In his first campaigns as captain, he proposed an innovative tactic - the use of submarines in “shark packs”. Later, these formations became known as the sharks of Arctic waters. Lorry favored the expansion of the submarine fleet. In his view, Greencliffe does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to bet on small, but very effective submarines of a new type - submarine cruisers."
+  NCH_new_stats_lorri:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gTraits§!: §C$seawolf$§!\n\n"
+
+  # Army
+  # Generals #
+  Moronlan:0 "Moronlan"
+  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greencliffe's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Grenecliffe."
+
+  Merelay:0 "Merelay"
+  NCH_new_stats_Merelay:0 "§gLevel§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gTraits§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
+
+  Hailman:0 "Heilman"
+  NCH_Desc_Hailman:0 "Bayerr Heilman earned the nickname changeling grad for his ability to accomplish tasks under the most difficult conditions. His ability to get out of the most difficult situations is highly valued by the command and his subordinates"
+
+  Coilholt:0 "Coilholt"
+
+  Goulen:0 "Goulen"
+
+  # Jaggers
+  greneclyf.412.t:0 "Егери Гринклифа спускаются с гор"
+  greneclyf.412.d:0 "Rugged mountain beetles, living in isolation from their fellow beetles, arrive at the collection points at the first request of our government. They are hardened by harsh winters and a hard life in the mountains. Masters of survival, shooting, and mountain warfare. We'll have to decide where best to put them. They can make up the Sons of the Mountains Brigade, or we can send them as officers to our existing troops."
+
+  greneclyf.412.a:0 "Let's create a gamekeeper brigade"
+  greneclyf.412.b:0 "Let's direct them to the units we already have"
+
+  # Events #
+  # Nuke
+  greneclyf.511.t:0 "The start of Grenecliff's nuclear program"
+  greneclyf.511.d:0 "After his appointment as head of the science department, Cellarl proposes to start a nuclear program to take the country to the next stage of development. We will have to establish a nuclear energy research department as soon as possible, invite scientists, and provide full funding for the program.\n\nCelarl believes that building a nuclear reactor and curbing the power of the atom is worth all the effort. In the future, we may even have a new type of weapon never before seen. According to our scientists, this weapon could cause an explosion hotter than a thousand suns, incinerating everything within a 5 kilometer radius. Sounds like a gamble worth taking."
+
+  greneclyf.511.a:0 "We will gather all the resources we need. Now is the time to act!"
+  greneclyf.511.b:0 "It's probably too expensive for us..."
+  greneclyf.511.b.tt:0 "§tWe'll only get one chance to start this program"
+
+  # Built reactor
+  greneclyf.590.t:0 "The reactor is built"
+  greneclyf.590.d:0 "After long and hard nights, our builders, engineers and scientists have succeeded in completing our first nuclear reactor. Its unbridled power still needs to be explored, but it is certain that Greencliffe has a bright future ahead of it!"
+
+  greneclyf.590.a:0 "It's time to move on"
+
+  # Ad tech nuce bonus
+  greneclyf.522.t:0 "The research is yielding results"
+  greneclyf.522.d:0 "At eleven o'clock this morning Caelarl ran into the palace dropping blueprints and sheets of calculations.\n\n\Celarl: It's done! It's done! It's done! We have realized the essence of the atom! In fact, the atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! It contains endless energy! I've done a lot of research, used different materials, and only atoms of magic crystals have such power! Using fusion, splitting atoms and starting a chain reaction, we can produce almost endless energy! Our technology does not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\ \n\Celarl is insisting that we send every available scientist in the country to help him create a blueprint for a nuclear reactor. That seems to make sense.."
+
+  greneclyf.522.a:0 "§9Celarl will get all the resources he needs"
+
+  # Reactor research
+  greneclyf.513.t:0 "The research is yielding results"
+  greneclyf.513.d:0 "After developing the design of the nuclear reactor, we prepared the final drawings. Our nuclear reactor will include two power units, a spent material storage and reuse station, a fire station, and an employee housing complex."
+
+  greneclyf.513.a:0 "All that remains is to give the order to begin construction"
+
+  # Modern society 
+  # Proper science base
+  greneclyf.517.t:0 "Nuclear power is delivering results"
+  greneclyf.517.d:0 "Thanks to the power of the atom, we have been able to modernize our industries and provide the people of our country with the goods and resources they need. Factories and military plants no longer lack electricity. Our scientists, led by Tselarl, continue to research the power of the atom and prepare to create weapons we could only dream of. Our society has undergone significant changes. We seem to be heading in the right direction." 
+
+  greneclyf.517.a:0 "An era of prosperity is coming for Grenecliffe!"
+
+  # Resources
+  # For nuke
+  greneclyf.515.t:0 "Ресурсы для реактора"
+  greneclyf.515.d:0 "To continue the nuclear program and successfully start the reactor, we need magic crystals in large quantities. We have a small supply, but it won't last long enough. A recent expedition of geologists to the areas of zhukomir and eisling found reserves of magic crystals. There are not too many of them, but perhaps by creating a mine we can develop these deposits and find more crystals."
+
+  greneclyf.515.a:0 "Send a brood of drones to the mines of Icepick Mountain"
+
+
+  # Ractor has ... #
+  # Fail dec
+  greneclyf.514.t:0 "We failed to build a nuclear reactor"
+  greneclyf.514.d:0 "After many attempts, to begin with, our workers faced a lack of skills and experience in such complex projects. We were able to design the reactor itself, but we were unable to build the vessel, the cooling system, and the plant control complex"
+
+  greneclyf.514.a:0 "We'll try again, but next time..."
+
+  #Success dec
+  greneclyf.516.t:0 "Where to channel the resulting power?"
+  greneclyf.516.d:0 "After the construction of the reactor, we faced the question - where to direct the resulting energy?\n\The energy of the magic crystals is enough to power the entire island with electricity. We can channel the excess energy into one of the spheres, but only one."
+
+  greneclyf.516.slot.a:0 "Expand scientific laboratories"
+
+  greneclyf.516.war.a:0 "The military industrial complex will be energized"
+
+  greneclyf.516.civ.a:0 "We'll channel our energies into a peaceful direction."
+
+  # For navy
+  # Hatcher 
+  greneclyf.611.t:0 "Hatcher Construction"
+  greneclyf.611.d:0 "To build a ship that has never seen the light of day, we need to increase the production capacity of the Blossmport docks. We will build new shipyards, and expand the production base, hire more workers, and buy materials from abroad. We will do anything to build this ship!"
+
+  greneclyf.611.a:0 "Soon the world will see our greatest ship!"
+
+  greneclyf.612.t:0 "Resources for the fleet"
+  greneclyf.612.d:0 "Hatcher requires rare earth minerals as well as tons of steel. In ancient times, changeling settlers found strange-colored rocks in the interior of the island. They didn't know what they were. Our geologists suspect rich deposits in the mountains north of the capital. This may be our chance to not only build Hatcher, but to supply our industry with all the resources it needs."
+
+  greneclyf.612.a:0 "Get to work developing resources!"
+
+  greneclyf.614.t:0 "The team for Hatcher"
+  greneclyf.614.d:0 "As the ship was being built, we prepared a crew as well as the reservists who would be able to operate it. After grueling training, we have selected 2,000 worthy candidates who will enter service today."
+
+  greneclyf.614.a:0 "Hatcher will bring us glory!!"
+
+  # News Hatcher 
+  greneclyf.631.t:0 "Grenecliff is launching Hatcher."
+  greneclyf.631.d:0 "[This.GetNewspaperHeader]This morning we received news from Eastern Gryphonia. The small island nation inhabited by changeling beetles has built the line cruiser Hatcher.\n\n\The changeling assures us that the ship was designed, built, and launched in record time - the entire process took only 56 days. Our engineers continue to debate whether even a destroyer can be built in such a short period of time, and meanwhile, the new flagship of the Grenecliff fleet is hurtling into the cold Arctic waters of Eastern Gryphonia"
+
+  greneclyf.631.a:0 "Intresting..."
+
+  # Arctic subs 
+  greneclyf.621.t:0 "Resources for the submarine fleet"
+  greneclyf.621.d:0 "In the process of developing the design of submarine cruisers capable of traveling in harsh Arctic conditions, we did not expect that their production would turn out to be so expensive. To produce cruisers, we need resources that we don't have on the sharp end. Although, a group of geologists will rhapsodize about the potential development of scarce resources, we need to send a team of explorers to learn about the reserves and the possibility of extensive mining."
+
+  greneclyf.621.a:0 "Get to work developing resources!"
+  # News
+  greneclyf.632.t:0 "Акулы арактических вод выходят на охоту"
+  greneclyf.632.d:0 "[This.GetNewspaperHeader]Straight from Eastern Gryphonia, we hear rumors that the hermit beetles of Grenecliff have been able to develop a new type of submarine. It's amazing how, with their modest resources, the beetles managed to get their hands on this kind of technology. According to the engineers, the submarine cruiser is fully autonomous for 10 months, of which it can stay underwater for 7 months. It is a new type of submarine designed for long raids, as well as for operations in the harsh Arctic waters."
+
+  greneclyf.631.a:0 "Grenecliff's got fangs."
 
 
 ### FOCUS LOCALISATION ###
