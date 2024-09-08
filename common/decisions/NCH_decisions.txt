@@ -1,7 +1,7 @@
 # Submod #
 NCH_nuke_category = {
 	NCH_start_nuce_program = {
-		icon = gfx_decision_icon_default
+		#icon = gfx_decision_icon_default
 		fire_only_once = yes
 		visible = {
 			has_country_flag = NCH_start_nuce_program_fg
