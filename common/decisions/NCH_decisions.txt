@@ -1,17 +1,76 @@
 # Submod #
 NCH_nuke_category = {
+
+
 	NCH_start_nuce_program = {
-		#icon = gfx_decision_icon_default
+		icon = gfx_decision_icon_default
 		fire_only_once = yes
+
 		visible = {
 			has_country_flag = NCH_start_nuce_program_fg
 		}
 		complete_effect = {
 			activate_mission = NCH_nuce_mission
 			custom_effect_tooltip = NCH_start_nc_pg
+			set_country_flag = resource_for_nuclear
 		}
 	}
 
+	# Explore resource
+	NCH_mining_cristal_for_reactor_0 = {
+		icon = gfx_decision_icon_default
+		fire_only_once = yes
+		cost = 30 
+		visible = {
+			has_country_flag = resource_for_nuclear
+		}
+
+		available = {
+			has_tech = excavation1
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 668
+			}
+		}
+		complete_effect = {
+			add_manpower = -200
+			custom_effect_tooltip = nuke_clue
+			set_country_flag = mining_cristal_mission_0
+		}
+	}
+
+	# Infrastructure
+	NCH_mining_cristal_for_reactor_1 = {
+		icon = railroad
+		fire_only_once = yes
+		on_map_mode = map_only
+		highlight_states = { state = 668 }
+		cost = 50
+		visible = {
+			has_country_flag = mining_cristal_mission_0
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 668
+			}
+		}
+		available = {
+			has_tech = construction2
+		}
+
+		complete_effect = {
+			set_country_flag = mining_crystal_infrastructure
+			668 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+				}
+			}
+		}
+	}
+	
+	# Mission 
 	NCH_nuce_mission = {
 		icon = gfx_decision_icon_default
 		days_mission_timeout = 1100

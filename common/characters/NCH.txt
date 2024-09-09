@@ -188,7 +188,7 @@ characters={
 		}
 	}
 
-		NCH_Hailman={
+	NCH_Hailman={
 		name=Hailman
 		portraits={
 			army={

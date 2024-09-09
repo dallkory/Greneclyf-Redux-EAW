@@ -94,12 +94,6 @@ country_event = {
 
 	option={
 		name = greneclyf.513.a 
-		hidden_effect = {
-			country_event = {
-				id = greneclyf.515
-				days = 90
-			}
-		}
 	}
 }
 
@@ -116,29 +110,8 @@ country_event = {
 	}
 }
 
-# Resources 
-country_event = {
-	id = greneclyf.515
-	title = greneclyf.515.t
-	desc = greneclyf.515.d
-	picture = GFX_event_cristral_for_reactor
-    is_triggered_only = yes
-    fire_only_once = yes
-	option={
-		name = greneclyf.515.a 
-        custom_effect_tooltip = greneclyf.512_tooltip 
-		add_manpower = -500
-		668 = {
-			add_resource = {
-				type = crystals
-				amount = 16
-				}
-			}
-		}
-	}
-
-	# Success
-	# Choise slot / civ / military
+# Success
+# Choise slot / civ / military
 		country_event = {
 		id = greneclyf.516
 		title = greneclyf.516.t

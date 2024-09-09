@@ -2,13 +2,13 @@
  
   # Submod #
   # Decision
-  NCH_nuke_category:0 "Grenecliff's nuclear program"
+  NCH_nuke_category:0 "Greneclyf's nuclear program"
   NCH_build_reactor:0 "We need to start building a nuclear reactor"
   NCH_start_nuce_program:0 "Begin construction of the reactor"
   NCH_nuce_mission:0 "Build the reactor as soon as possible!"
   reactor_has_built:0 "The reactor was built"
 
-  NCH_nuke_category_desc:0 "Grenecliff began his nuclear program in full confidence that he would be able to harness the power of the atom and channel it into his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
+  NCH_nuke_category_desc:0 "Greneclyf began his nuclear program in full confidence that he would be able to harness the power of the atom and channel it into his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
 
   # Traits #
   silent_workbug2:0 "Workaholic"
@@ -42,7 +42,7 @@
   # Army
   # Generals #
   Moronlan:0 "Moronlan"
-  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greencliffe's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Grenecliffe."
+  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greencliffe's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Greneclyfe."
 
   Merelay:0 "Merelay"
   NCH_new_stats_Merelay:0 "§gLevel§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gTraits§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
@@ -55,7 +55,7 @@
   Goulen:0 "Goulen"
 
   # Jaggers
-  greneclyf.412.t:0 "Егери Гринклифа спускаются с гор"
+  greneclyf.412.t:0 "Egery Greneclyf descend from the mountains"
   greneclyf.412.d:0 "Rugged mountain beetles, living in isolation from their fellow beetles, arrive at the collection points at the first request of our government. They are hardened by harsh winters and a hard life in the mountains. Masters of survival, shooting, and mountain warfare. We'll have to decide where best to put them. They can make up the Sons of the Mountains Brigade, or we can send them as officers to our existing troops."
 
   greneclyf.412.a:0 "Let's create a gamekeeper brigade"
@@ -63,7 +63,7 @@
 
   # Events #
   # Nuke
-  greneclyf.511.t:0 "The start of Grenecliff's nuclear program"
+  greneclyf.511.t:0 "The start of Greneclyf's nuclear program"
   greneclyf.511.d:0 "After his appointment as head of the science department, Cellarl proposes to start a nuclear program to take the country to the next stage of development. We will have to establish a nuclear energy research department as soon as possible, invite scientists, and provide full funding for the program.\n\nCelarl believes that building a nuclear reactor and curbing the power of the atom is worth all the effort. In the future, we may even have a new type of weapon never before seen. According to our scientists, this weapon could cause an explosion hotter than a thousand suns, incinerating everything within a 5 kilometer radius. Sounds like a gamble worth taking."
 
   greneclyf.511.a:0 "We will gather all the resources we need. Now is the time to act!"
@@ -93,11 +93,11 @@
   greneclyf.517.t:0 "Nuclear power is delivering results"
   greneclyf.517.d:0 "Thanks to the power of the atom, we have been able to modernize our industries and provide the people of our country with the goods and resources they need. Factories and military plants no longer lack electricity. Our scientists, led by Tselarl, continue to research the power of the atom and prepare to create weapons we could only dream of. Our society has undergone significant changes. We seem to be heading in the right direction." 
 
-  greneclyf.517.a:0 "An era of prosperity is coming for Grenecliffe!"
+  greneclyf.517.a:0 "An era of prosperity is coming for Greneclyfe!"
 
   # Resources
   # For nuke
-  greneclyf.515.t:0 "Ресурсы для реактора"
+  greneclyf.515.t:0 "Resources for the reactor"
   greneclyf.515.d:0 "To continue the nuclear program and successfully start the reactor, we need magic crystals in large quantities. We have a small supply, but it won't last long enough. A recent expedition of geologists to the areas of zhukomir and eisling found reserves of magic crystals. There are not too many of them, but perhaps by creating a mine we can develop these deposits and find more crystals."
 
   greneclyf.515.a:0 "Send a brood of drones to the mines of Icepick Mountain"
@@ -138,8 +138,8 @@
   greneclyf.614.a:0 "Hatcher will bring us glory!!"
 
   # News Hatcher 
-  greneclyf.631.t:0 "Grenecliff is launching Hatcher."
-  greneclyf.631.d:0 "[This.GetNewspaperHeader]This morning we received news from Eastern Gryphonia. The small island nation inhabited by changeling beetles has built the line cruiser Hatcher.\n\n\The changeling assures us that the ship was designed, built, and launched in record time - the entire process took only 56 days. Our engineers continue to debate whether even a destroyer can be built in such a short period of time, and meanwhile, the new flagship of the Grenecliff fleet is hurtling into the cold Arctic waters of Eastern Gryphonia"
+  greneclyf.631.t:0 "Greneclyf is launching Hatcher."
+  greneclyf.631.d:0 "[This.GetNewspaperHeader]This morning we received news from Eastern Gryphonia. The small island nation inhabited by changeling beetles has built the line cruiser Hatcher.\n\n\The changeling assures us that the ship was designed, built, and launched in record time - the entire process took only 56 days. Our engineers continue to debate whether even a destroyer can be built in such a short period of time, and meanwhile, the new flagship of the Greneclyf fleet is hurtling into the cold Arctic waters of Eastern Gryphonia"
 
   greneclyf.631.a:0 "Intresting..."
 
@@ -149,10 +149,10 @@
 
   greneclyf.621.a:0 "Get to work developing resources!"
   # News
-  greneclyf.632.t:0 "Акулы арактических вод выходят на охоту"
-  greneclyf.632.d:0 "[This.GetNewspaperHeader]Straight from Eastern Gryphonia, we hear rumors that the hermit beetles of Grenecliff have been able to develop a new type of submarine. It's amazing how, with their modest resources, the beetles managed to get their hands on this kind of technology. According to the engineers, the submarine cruiser is fully autonomous for 10 months, of which it can stay underwater for 7 months. It is a new type of submarine designed for long raids, as well as for operations in the harsh Arctic waters."
+  greneclyf.632.t:0 "Arctic sharks are out on the hunt"
+  greneclyf.632.d:0 "[This.GetNewspaperHeader]Straight from Eastern Gryphonia, we hear rumors that the hermit beetles of Greneclyf have been able to develop a new type of submarine. It's amazing how, with their modest resources, the beetles managed to get their hands on this kind of technology. According to the engineers, the submarine cruiser is fully autonomous for 10 months, of which it can stay underwater for 7 months. It is a new type of submarine designed for long raids, as well as for operations in the harsh Arctic waters."
 
-  greneclyf.631.a:0 "Grenecliff's got fangs."
+  greneclyf.631.a:0 "Greneclyf's got fangs."
 
 
 ### FOCUS LOCALISATION ###
