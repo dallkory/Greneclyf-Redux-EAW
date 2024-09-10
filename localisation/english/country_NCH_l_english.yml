@@ -10,6 +10,8 @@
 
   NCH_nuke_category_desc:0 "Greneclyf began his nuclear program in full confidence that he would be able to harness the power of the atom and channel it into his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
 
+  nuke_clue:0 "§gWe need magic crystals to successfully start the reactor. Geologists report a potential deposit near Mt. Aspik. We need to learn the basics of industrial resource extraction so we can begin to develop the deposit."
+
   # Traits #
   silent_workbug2:0 "Workaholic"
 

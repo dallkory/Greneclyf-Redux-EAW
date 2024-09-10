@@ -25,7 +25,7 @@ characters={
             traits = { nuclear_scientist }
     		desc = "Celarl_desc"
             available = { 
-                has_completed_focus = NCH_radical_designs
+                has_completed_focus = NCH_nuce_program_first_step
             }       
 			on_add = {
 				is_hired_as_advisor = yes

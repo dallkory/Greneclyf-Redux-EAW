@@ -10,7 +10,337 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 100 y = 1300 }
 
+	# Submod #
+	# Industrialization #
 
+	# 0 line
+	focus = {
+		id = NCH_start_industrialization
+		icon = GFX_goal_generic_production2
+		cost = 8
+		x = 47
+		y = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = NCH_start_industrial
+			hidden_effect = {
+				OR = {
+					has_completed_focus = NCH_operation_lightspark
+					has_completed_focus = NCH_inaugurate_the_industrial_district
+					has_completed_focus = NCH_the_four_year_plan
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = start_industrialization #
+			set_country_flag = NCH_industrial_plan
+			add_political_power = 75
+			668 = {
+				add_manpower = 25000
+			}
+			669 = {
+				add_manpower = 25000
+			}
+			670 = {
+				add_manpower = 25000
+			}
+		 }
+	}
+
+	# First block
+	focus = {
+		id = NCH_school_of_engeneers
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		x = 46
+		y = 1
+
+		prerequisite = {
+			focus = NCH_start_industrialization
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+	# 2 line
+	focus = {
+		id = NCH_development_blosmport
+		icon = 
+		cost = 5
+		x = 46
+		y = 2
+
+		prerequisite = {
+			focus = NCH_school_of_engeneers
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_development_bugsmere
+		icon = 
+		cost = 5
+		x = 44
+		y = 2
+
+		prerequisite = {
+			focus = NCH_school_of_engeneers
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_development_iceling
+		icon = 
+		cost = 5
+		x = 48
+		y = 2
+
+		prerequisite = {
+			focus = NCH_school_of_engeneers
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+	# For iceling
+	focus = {
+		id = NCH_development_iceling_res
+		icon = 
+		cost = 5
+		x = 50
+		y = 3
+
+		prerequisite = {
+				focus = NCH_development_iceling
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_magical_crystal_dev
+		icon = 
+		cost = 5
+		x = 48
+		y = 4
+
+		prerequisite = {
+				focus = NCH_development_iceling
+		}
+		prerequisite = {
+			focus = NCH_development_iceling_res
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_island_rise
+		icon = 
+		cost = 5
+		x = 46
+		y = 3
+
+		prerequisite = {
+				focus = NCH_development_blosmport
+		}
+		prerequisite = {
+			focus = NCH_development_bugsmere
+		}
+		prerequisite = {
+				focus = NCH_development_iceling
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_development_iceling
+		icon = 
+		cost = 5
+		x = 46
+		y = 4
+
+		prerequisite = {
+				focus = NCH_island_rise
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	# Second block
+	focus = {
+		id = NCH_foregin_advisors
+		icon = 
+		cost = 5
+		x = 52
+		y = 1
+
+		prerequisite = {
+			focus = NCH_start_industrialization
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_development_production
+		icon = 
+		cost = 5
+		x = 52
+		y = 2
+
+		prerequisite = {
+			focus = NCH_foregin_advisors
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_establish_university
+		icon = 
+		cost = 5
+		x = 54
+		y = 2
+
+		prerequisite = {
+			focus = NCH_foregin_advisors
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+
+	focus = {
+		id = NCH_development_science_base
+		icon = 
+		cost = 5
+		x = 53
+		y = 3
+
+		prerequisite = {
+			focus = NCH_establish_university
+		}
+		prerequisite = {
+			focus = NCH_development_production
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			
+		 }
+	}
+	
+	focus = {
+		id = NCH_nuce_program_first_step
+		icon = 
+		cost = 10
+		x = 53
+		y = 5
+
+		prerequisite = {
+			focus = NCH_development_science_base
+		}
+		prerequisite = {
+			focus = NCH_magical_crystal_dev
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			set_country_flag = NCH_industrial_plan
+			custom_effect_tooltip = NCH_tooltip_Celarl
+		 }
+	}
+
+	# Submod #
 
 	### TRADE MAIN BRANCH ####
 
@@ -3855,7 +4185,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = NCH_radical_design_bonus
-			custom_effect_tooltip = NCH_tooltip_Celarl
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
