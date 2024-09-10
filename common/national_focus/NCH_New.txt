@@ -16,9 +16,9 @@ focus_tree = {
 	# 0 line
 	focus = {
 		id = NCH_start_industrialization
-		icon = GFX_goal_generic_production2
+		icon = GFX_goal_industrial_pony
 		cost = 8
-		x = 47
+		x = 48
 		y = 0
 
 		ai_will_do = {
@@ -55,7 +55,7 @@ focus_tree = {
 		id = NCH_school_of_engeneers
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
-		x = 46
+		x = 47
 		y = 1
 
 		prerequisite = {
@@ -74,9 +74,9 @@ focus_tree = {
 	# 2 line
 	focus = {
 		id = NCH_development_blosmport
-		icon = 
+		icon = GFX_focus_generic_industry_2
 		cost = 5
-		x = 46
+		x = 47
 		y = 2
 
 		prerequisite = {
@@ -95,9 +95,9 @@ focus_tree = {
 
 	focus = {
 		id = NCH_development_bugsmere
-		icon = 
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5
-		x = 44
+		x = 45
 		y = 2
 
 		prerequisite = {
@@ -116,9 +116,9 @@ focus_tree = {
 
 	focus = {
 		id = NCH_development_iceling
-		icon = 
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5
-		x = 48
+		x = 49
 		y = 2
 
 		prerequisite = {
@@ -137,9 +137,9 @@ focus_tree = {
 	# For iceling
 	focus = {
 		id = NCH_development_iceling_res
-		icon = 
+		icon = GFX_goal_generic_crystals
 		cost = 5
-		x = 50
+		x = 51
 		y = 3
 
 		prerequisite = {
@@ -158,9 +158,9 @@ focus_tree = {
 
 	focus = {
 		id = NCH_magical_crystal_dev
-		icon = 
+		icon = GFX_goal_magical_weapon_focus
 		cost = 5
-		x = 48
+		x = 49
 		y = 4
 
 		prerequisite = {
@@ -182,9 +182,9 @@ focus_tree = {
 
 	focus = {
 		id = NCH_island_rise
-		icon = 
+		icon = GFX_focus_generic_industry_3
 		cost = 5
-		x = 46
+		x = 47
 		y = 3
 
 		prerequisite = {
@@ -208,10 +208,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NCH_development_iceling
-		icon = 
+		id = NCH_development_production
+		icon = GFX_goal_generic_production2
 		cost = 5
-		x = 46
+		x = 47
 		y = 4
 
 		prerequisite = {
@@ -231,9 +231,9 @@ focus_tree = {
 	# Second block
 	focus = {
 		id = NCH_foregin_advisors
-		icon = 
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5
-		x = 52
+		x = 53
 		y = 1
 
 		prerequisite = {
@@ -251,10 +251,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NCH_development_production
-		icon = 
+		id = NCH_development_civil
+		icon = GFX_goal_constitutional_guarantees
 		cost = 5
-		x = 52
+		x = 53
 		y = 2
 
 		prerequisite = {
@@ -273,9 +273,9 @@ focus_tree = {
 
 	focus = {
 		id = NCH_establish_university
-		icon = 
+		icon = GFX_goal_supremacy_of_will
 		cost = 5
-		x = 54
+		x = 55
 		y = 2
 
 		prerequisite = {
@@ -294,16 +294,16 @@ focus_tree = {
 
 	focus = {
 		id = NCH_development_science_base
-		icon = 
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 5
-		x = 53
+		x = 54
 		y = 3
 
 		prerequisite = {
 			focus = NCH_establish_university
 		}
 		prerequisite = {
-			focus = NCH_development_production
+			focus = NCH_development_civil
 		}
 
 		ai_will_do = {
@@ -318,9 +318,9 @@ focus_tree = {
 	
 	focus = {
 		id = NCH_nuce_program_first_step
-		icon = 
+		icon = GFX_focus_wonderweapons
 		cost = 10
-		x = 53
+		x = 54
 		y = 5
 
 		prerequisite = {
