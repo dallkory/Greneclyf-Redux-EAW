@@ -48,6 +48,9 @@ focus_tree = {
 				add_manpower = 25000
 			}
 		 }
+		 search_filters = {
+			FOCUS_FILTER_MANPOWER
+		 }
 	}
 
 	# First block
@@ -57,6 +60,12 @@ focus_tree = {
 		cost = 5
 		x = 47
 		y = 1
+
+		available = {
+			has_full_control_of_state = 668
+			has_full_control_of_state = 669
+			has_full_control_of_state = 670
+		}
 
 		prerequisite = {
 			focus = NCH_start_industrialization
@@ -68,7 +77,25 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			668 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			669 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			670 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			add_ideas = NCH_island_rise_idea
 		 }
 	}
 	# 2 line
@@ -89,13 +116,24 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
+			670 = {
+				add_manpower = 5000
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
 			
 		 }
 	}
 
 	focus = {
 		id = NCH_development_bugsmere
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5
 		x = 45
 		y = 2
@@ -110,7 +148,24 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			669 = {
+				add_resource = {
+					type = aluminium
+					amount = 14
+					state = THIS
+				}
+			}
+			669 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+					state = THIS
+				}
+			}
 		 }
 	}
 
@@ -152,7 +207,13 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			custom_effect_tooltip = mining_iceling_start
+			668 = {
+				add_resource = {
+					type = crystals
+					amount = 8
+				}
+			}
 		 }
 	}
 
@@ -203,7 +264,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			#add_ideas = BRZ_nu_good_industry
 		 }
 	}
 
@@ -246,7 +307,13 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_political_power = 100
+			670 = {
+				add_manpower = 1000
+			}
+			add_stability = -0.03
+			add_war_support = -0.05
+			add_ideas = NCH_foregin_researches
 		 }
 	}
 
@@ -267,7 +334,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_stability = 0.05
+			add_ideas = NCH_civil_laws
 		 }
 	}
 
@@ -288,7 +356,20 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_tech_bonus = {
+				name = tech_changeling
+				bonus = 0.5
+				uses = 2
+				category = race_tech
+			}
+			add_tech_bonus = {
+				name = electronic_mechanical_engineering
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_research_slot = 1
+			custom_effect_tooltip = NCH_esteblish_university_tt
 		 }
 	}
 
@@ -312,6 +393,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
+			add_ideas = big_science_base
 			
 		 }
 	}

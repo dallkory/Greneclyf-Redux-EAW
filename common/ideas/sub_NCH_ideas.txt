@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		NCH_island_rise_idea = {
+			picture = no
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				
+			}
+		}
+
+		NCH_foregin_researches = {
+			picture = no
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		NCH_civil_laws = {
+			picture = no
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.5
+			}
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+
+	}
+}
