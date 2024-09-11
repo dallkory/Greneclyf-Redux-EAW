@@ -41,10 +41,27 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = 0.5
+				political_power_gain = 0.1
 			}
 			modifier = {
 				monthly_population = 0.1
+			}
+		}
+
+		NCH_island_now_rise = {
+			picture = no
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.1
 			}
 		}
 

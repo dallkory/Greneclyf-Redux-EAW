@@ -31,6 +31,7 @@ focus_tree = {
 					has_completed_focus = NCH_operation_lightspark
 					has_completed_focus = NCH_inaugurate_the_industrial_district
 					has_completed_focus = NCH_the_four_year_plan
+					has_completed_focus = NCH_foregin_advisors
 				}
 			}
 		}
@@ -77,6 +78,12 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
 			668 = {
 				add_building_construction = {
 					type = infrastructure
@@ -97,7 +104,11 @@ focus_tree = {
 			}
 			add_ideas = NCH_island_rise_idea
 		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		 }
 	}
+
 	# 2 line
 	focus = {
 		id = NCH_development_blosmport
@@ -127,7 +138,10 @@ focus_tree = {
 					level = 2
 				}
 			}
-			
+		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_MANPOWER
 		 }
 	}
 
@@ -148,24 +162,26 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-			}
+
 			669 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
 				add_resource = {
 					type = aluminium
 					amount = 14
 					state = THIS
 				}
-			}
-			669 = {
 				add_resource = {
 					type = tungsten
 					amount = 8
 					state = THIS
 				}
 			}
+		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		 }
 	}
 
@@ -186,7 +202,22 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			custom_effect_tooltip = NCH_migration_undev_region
+			668 = {
+				add_manpower = 15000
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_MANPOWER
 		 }
 	}
 	# For iceling
@@ -237,9 +268,24 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1.0
+				uses = 2
+				technology = magical_weapons
+				technology = magical_weapons1
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus2
+				bonus = 0.5
+				uses = 2
+				category = magical_tech
+				}
+			}
+			search_filters = {
+				FOCUS_FILTER_RESEARCH
+			 }
 		 }
-	}
 
 	focus = {
 		id = NCH_island_rise
@@ -264,14 +310,17 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			#add_ideas = BRZ_nu_good_industry
+			add_ideas = NCH_island_now_rise
+		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		 }
 	}
 
 	focus = {
 		id = NCH_development_production
 		icon = GFX_goal_generic_production2
-		cost = 5
+		cost = 8
 		x = 47
 		y = 4
 
@@ -285,7 +334,10 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
-			
+			add_ideas = outdated_industry2
+		 }
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		 }
 	}
 
@@ -315,6 +367,9 @@ focus_tree = {
 			add_war_support = -0.05
 			add_ideas = NCH_foregin_researches
 		 }
+		 search_filters = {
+			FOCUS_FILTER_RESEARCH
+		 }
 	}
 
 	focus = {
@@ -336,6 +391,9 @@ focus_tree = {
 			set_country_flag = NCH_industrial_plan
 			add_stability = 0.05
 			add_ideas = NCH_civil_laws
+		 }
+		 search_filters = {
+			FOCUS_FILTER_STABILITY
 		 }
 	}
 
@@ -371,6 +429,9 @@ focus_tree = {
 			add_research_slot = 1
 			custom_effect_tooltip = NCH_esteblish_university_tt
 		 }
+		 search_filters = {
+			FOCUS_FILTER_RESEARCH
+		 }
 	}
 
 	focus = {
@@ -379,7 +440,14 @@ focus_tree = {
 		cost = 5
 		x = 54
 		y = 3
-
+		available = {
+			or = {
+				has_completed_focus = NCH_operation_farseer
+				has_completed_focus = NCH_found_the_elder_academy
+				has_completed_focus = NCH_a_red_academy
+				has_completed_focus = NCH_set_up_an_academic_exchange
+			}
+		}
 		prerequisite = {
 			focus = NCH_establish_university
 		}
@@ -394,7 +462,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
 			add_ideas = big_science_base
-			
+		 }
+		 search_filters = {
+			FOCUS_FILTER_RESEARCH
 		 }
 	}
 	
@@ -419,6 +489,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = NCH_industrial_plan
 			custom_effect_tooltip = NCH_tooltip_Celarl
+		 }
+		 search_filters = {
+			FOCUS_FILTER_RESEARCH
 		 }
 	}
 
