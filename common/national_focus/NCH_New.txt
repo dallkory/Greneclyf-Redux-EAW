@@ -3842,7 +3842,6 @@ focus_tree = {
 			add_ideas = NCH_submarine_buff_idea
 			set_technology = {
 				cruiser_submarines_nomtg = 1
-				}
 			}
 			news_event = {
 				id = greneclyf.632

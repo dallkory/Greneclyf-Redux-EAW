@@ -2,15 +2,22 @@ on_actions = {
 
     on_daily_NCH = {
         effect = {
-            if = {
-                limit = {
-					nuclear_reactor > 0
-                }
-                country_event = {
-                    id = greneclyf.590
-                    days = 0
-                }
-            }
+			
+			if = {
+				NOT = {
+					has_country_flag = nuclear_reactor_on_act_build
+				}
+				if = {
+					limit = {
+						nuclear_reactor > 0
+					}
+					set_country_flag = nuclear_reactor_on_act_build
+					country_event = {
+						id = greneclyf.590
+						days = 0
+					}
+				}
+			}
 			
 			if = {
                 limit = {
