@@ -6,6 +6,17 @@
   NCH_start_nuce_program:0 "Начать строительство реактора"
   NCH_nuce_mission:0 "Построить реактор как можно скорее!"
   reactor_has_built:0 "Реактор был построен"
+  # Resources
+  resources_for_navy_steel_1:0 "Сталь для флота 1"
+  resources_for_navy_steel_2:0 "Сталь для флота 2"
+  resources_for_navy_steel_3:0 "Сталь для флота 3"
+
+  resources_for_navy_chromium_1:0 "Хром для флота 1"
+  resources_for_navy_chromium_2:0 "Хром для флота 2"
+
+  resources_for_navy_oil_1:0 "Топливо для флота 1"
+  resources_for_navy_oil_2:0 "Топливо для флота 2"
+
  # New
   NCH_mining_cristal_for_reactor_0:0 "Отправить геологов на исследование месторождений кристалов"
   NCH_mining_cristal_for_reactor_1:0 "Создать инфраструктуру для добычи кристалов"
