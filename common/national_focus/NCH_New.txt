@@ -54,10 +54,51 @@ focus_tree = {
 		 }
 	}
 
+	focus = {
+		id = NCH_nationa_railways_network
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 51
+		y = 1
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = NCH_start_industrialization
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = basic_train
+				bonus = 1.0
+				uses = 1
+				category = train_tech
+			}
+			build_railway = {
+					level = 1
+					start_state = 670
+					target_state = 669
+					build_only_on_allied = yes
+				}
+				build_railway = {
+					level = 1
+					start_state = 670
+					target_state = 668
+					build_only_on_allied = yes
+				}
+
+			}
+		 search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		 }
+	}
+
 	# First block
 	focus = {
 		id = NCH_school_of_engeneers
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_constitutional_guarantees
 		cost = 8
 		x = 47
 		y = 1
