@@ -25,18 +25,19 @@ on_actions = {
                 }
             }
 
-			if = {
-                limit = {
-					focus_progress = {
-						focus = NCH_lay_down_the_hatcher
-						progress > 0.75
-					}
-                }
-                country_event = {
-                    id = greneclyf.612
-                    days = 0
-                } 
-            }
+			# Resource ev -> resource dec
+			#if = {
+            #    limit = {
+			#		focus_progress = {
+			#			focus = NCH_lay_down_the_hatcher
+			#			progress > 0.75
+			#		}
+             #   }
+             #   country_event = {
+              #      id = greneclyf.612
+               #     days = 0
+                #} 
+            #}
 
 			if = {
                 limit = {

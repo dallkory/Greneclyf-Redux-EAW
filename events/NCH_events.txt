@@ -193,36 +193,6 @@ country_event = {
 	}
 }
 
-# Make decision find resource
-# Resources for navy
-country_event = {
-	id = greneclyf.612
-	title = greneclyf.612.t
-	desc = greneclyf.612.d 
-	picture = GFX_event_find_resources
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		add_manpower = -1500
-		add_political_power = -200
-		name = greneclyf.612.a
-		669 = {
-			add_resource = {
-				type = oil
-				amount = 24
-				}
-			add_resource = {
-				type = steel
-				amount = 20
-			}	
-			add_resource = {
-				type = chromium
-				amount = 10
-			}
-		}
-	}
-}
-
 # Crew for Hatcher
 country_event = {
 	id = greneclyf.614
@@ -234,35 +204,6 @@ country_event = {
 	option = {
 		name = greneclyf.614.a
 		add_manpower = 2000
-	}
-}
-
-# Submarines 
-# Resources for navy
-country_event = {
-	id = greneclyf.621
-	title = greneclyf.621.t
-	desc = greneclyf.621.d 
-	picture = GFX_event_find_resources
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = greneclyf.621.a
-
-		670 = {
-			add_resource = {
-				type = oil
-				amount = 12
-				}
-			add_resource = {
-				type = steel
-				amount = 40
-			}	
-			add_resource = {
-				type = tungsten
-				amount = 16
-			}
-		}
 	}
 }
 
