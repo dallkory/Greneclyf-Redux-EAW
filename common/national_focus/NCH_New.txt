@@ -3813,6 +3813,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_found_the_naval_academy"
+			add_ideas = NCH_grand_fleet
 			add_doctrine_cost_reduction = {
 				name = navdoc_bonus
 				cost_reduction = 0.5
