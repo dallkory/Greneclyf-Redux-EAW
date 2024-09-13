@@ -1,7 +1,24 @@
 ideas = {
 	country = {
-		NCH_island_rise_idea = {
-			picture = no
+
+		NCH_grand_fleet = {
+			picture = grand_navy
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy = 0.05
+				naval_speed_factor = 0.1
+				navy_weather_penalty = -0.15
+			}
+		}
+
+		NCH_school_of_engeneers_idea = {
+			picture = bug_school
 			allowed = {
 				always = no
 			}
@@ -16,7 +33,7 @@ ideas = {
 		}
 
 		NCH_foregin_researches = {
-			picture = no
+			picture = science_up
 			allowed = {
 				always = no
 			}
@@ -31,7 +48,7 @@ ideas = {
 		}
 
 		NCH_civil_laws = {
-			picture = no
+			picture = civil_laws
 			allowed = {
 				always = no
 			}
@@ -49,7 +66,7 @@ ideas = {
 		}
 
 		NCH_island_now_rise = {
-			picture = no
+			picture = medium_industry
 			allowed = {
 				always = no
 			}

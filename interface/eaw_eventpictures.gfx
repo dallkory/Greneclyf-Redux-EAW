@@ -1,6 +1,7 @@
 spriteTypes = {
 	# Submod #
 	# Hatcher news #
+
 	spriteType = {
 		name = "GFX_news_hatcher"
 		textureFile = "gfx/event_picture/News_Hatcher.dds"
@@ -11,6 +12,7 @@ spriteTypes = {
 	name = "GFX_news_arctic_submarines"
 	textureFile = "gfx/event_picture/News_Arctic_sub.dds"
 	}
+
 	# For events #
 	# 511
 	spriteType = {
@@ -56,7 +58,7 @@ spriteTypes = {
 		name = "GFX_event_docks_for_Hatcer"
 		textureFile = "gfx/event_picture/event_boat_in_runined_dock.dds"
 	}
-	
+
 	# 612
 	spriteType = {
 		name = "GFX_event_find_resources"
