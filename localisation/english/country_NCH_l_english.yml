@@ -32,7 +32,7 @@
   crystals_for_ractor_iceling_mounts_2:0 "Industrial crystal mining"
   crystals_for_ractor_iceling_mounts_3:0 "Deep crystal development"
 
-  NCH_nuke_category_desc:0 "Greencliffe started the nuclear program in the full confidence that he would be able to curb the power of the atom in the shortest possible time and direct it to his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
+  NCH_nuke_category_desc:0 "Greneclyf started the nuclear program in the full confidence that he would be able to curb the power of the atom in the shortest possible time and direct it to his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
 
   nuke_clue:0 "§gWe need magic crystals to successfully start the reactor. Geologists report a potential deposit near Mt. Aspik. We need to learn the basics of industrial resource extraction so we can begin to develop the deposit."
 
@@ -52,7 +52,7 @@
   NCH_development_bugsmere_desc:0 "The mountains near Bugsmere have always been famous for their impregnability. We are going to locate the main facilities of our military-industrial complex in the gorges of these impregnable mountains. The resource base of the region will help increase production and reduce costs."
 
   NCH_development_iceling:0 "Aisling's development"
-  NCH_development_iceling_desc:0 "Aisling was traditionally the most uninhabited and untouched part of the island. Only the bravest and staunchest changlings settled there in the early days when we first set foot on Greencliffe. The region is rich in natural resources and relic forests. We will send a group of settlers, and support migration to Aisling to encourage its development."
+  NCH_development_iceling_desc:0 "Aisling was traditionally the most uninhabited and untouched part of the island. Only the bravest and staunchest changlings settled there in the early days when we first set foot on Greneclyf. The region is rich in natural resources and relic forests. We will send a group of settlers, and support migration to Aisling to encourage its development."
 
   NCH_development_iceling_res:0 "Resource extraction near Mount Aspic"
   NCH_development_iceling_res_desc:0 "Our geologists have discovered deposits of magical crystals near Mount Aspik. It seems they may be even larger than we realize. Although we may not use them in our daily lives yet, they may come in handy in the future."
@@ -78,7 +78,7 @@
   NCH_development_civil_desc:0 "Social State - Utopia or Reality? We will carry out reforms in the civil, social and legal sectors to see how changing laws will affect the state system. We will ban forced labor, introduce social benefits and a social insurance system for citizens."
 
   NCH_establish_university:0 "The founding of Capital University"
-  NCH_establish_university_desc:0 "Blossport University will be Greencliffe's largest educational, scientific, cultural and outreach base. Only science can change the world. Only science in the broadest sense can answer how to split the atom and how to raise changelings."
+  NCH_establish_university_desc:0 "Blossport University will be Greneclyf's largest educational, scientific, cultural and outreach base. Only science can change the world. Only science in the broadest sense can answer how to split the atom and how to raise changelings."
 
   NCH_development_science_base:0 "Modernization of society"
   NCH_development_science_base_desc:0 "We have made significant progress in the development and implementation of educational programs. The literacy of the population is growing, the university is producing undergraduate and postgraduate students, and research is yielding its first results. Modernization of society is a long process. The scientific base cannot be formed in a few years, but we are on the right path."
@@ -116,7 +116,7 @@
   Derkliones:0 "Derkliones"
 
   Floppa:0 "Floppster"
-  Floppa_desc:0 "A very strange changeling. He's not like our brethren, though he thinks he is. No one asked him to transform, but he doesn't need to. Because of his unusual appearance, our kin took a liking to him. His hard work and desire to help Greencliffe has brought him into our government. Let's see how he fares as our political advisor..\n\n\§gP.S. I would like to express a special word of thanks to yuri for help and advice in the development of sabmod. Without his advice I would have drowned in the modding wiki. Thanks again!"
+  Floppa_desc:0 "A very strange changeling. He's not like our brethren, though he thinks he is. No one asked him to transform, but he doesn't need to. Because of his unusual appearance, our kin took a liking to him. His hard work and desire to help Greneclyf has brought him into our government. Let's see how he fares as our political advisor..\n\n\§gP.S. I would like to express a special word of thanks to yuri for help and advice in the development of sabmod. Without his advice I would have drowned in the modding wiki. Thanks again!"
 
   ### TOOLTIPS ###
   NCH_tooltip_Celarl:0 "§HCelarl §Wbecomes a top scientist and starts a nuclear program"
@@ -131,13 +131,13 @@
 
   #Lorri
   Lorri:0 "Lorri"
-  NCH_desc_Lorri:0 "Admiral Lorellei Lorry is a bright star at Blossomport Naval Academy. Cunning and secretive is how his enemies would describe him. He always keeps his ears sharp, which is not surprising for a submariner, because every even the smallest sound in the depths of the sea can be a sign of either close prey or a change of role.\n\n\Lorrie began his journey on a coastal-type submarine. In his first campaigns as captain, he proposed an innovative tactic - the use of submarines in “shark packs”. Later, these formations became known as the sharks of Arctic waters. Lorry favored the expansion of the submarine fleet. In his view, Greencliffe does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to bet on small, but very effective submarines of a new type - submarine cruisers."
+  NCH_desc_Lorri:0 "Admiral Lorellei Lorry is a bright star at Blossomport Naval Academy. Cunning and secretive is how his enemies would describe him. He always keeps his ears sharp, which is not surprising for a submariner, because every even the smallest sound in the depths of the sea can be a sign of either close prey or a change of role.\n\n\Lorrie began his journey on a coastal-type submarine. In his first campaigns as captain, he proposed an innovative tactic - the use of submarines in “shark packs”. Later, these formations became known as the sharks of Arctic waters. Lorry favored the expansion of the submarine fleet. In his view, Greneclyf does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to bet on small, but very effective submarines of a new type - submarine cruisers."
   NCH_new_stats_lorri:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gTraits§!: §C$seawolf$§!\n\n"
 
   # Army
   # Generals #
   Moronlan:0 "Moronlan"
-  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greencliffe's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Greneclyfe."
+  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greneclyf's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Greneclyfe."
 
   Merelay:0 "Merelay"
   NCH_new_stats_Merelay:0 "§gLevel§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gTraits§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
@@ -167,7 +167,7 @@
 
   # Built reactor
   greneclyf.590.t:0 "The reactor is built"
-  greneclyf.590.d:0 "After long and hard nights, our builders, engineers and scientists have succeeded in completing our first nuclear reactor. Its unbridled power still needs to be explored, but it is certain that Greencliffe has a bright future ahead of it!"
+  greneclyf.590.d:0 "After long and hard nights, our builders, engineers and scientists have succeeded in completing our first nuclear reactor. Its unbridled power still needs to be explored, but it is certain that Greneclyf has a bright future ahead of it!"
 
   greneclyf.590.a:0 "It's time to move on"
 
