@@ -2,198 +2,197 @@
  
   # Submod #
   # Decision
-  NCH_nuke_category:0 "Greneclyf's nuclear program"
-  NCH_build_reactor:0 "We need to start building a nuclear reactor"
-  NCH_start_nuce_program:0 "Begin construction of the reactor"
+  NCH_nuke_category:0 "Greneclyf Nuclear Program"
+  NCH_build_reactor:0 "We have to start building a nuclear reactor"
+  NCH_start_nuce_program:0 "Start reactor construction"
   NCH_nuce_mission:0 "Build the reactor as soon as possible!"
-  reactor_has_built:0 "The reactor was built"
+  reactor_has_built:0 "The reactor has been built"
+  mining_crystal_infrastructure:0 "We have created an infrastructure for crystal mining"
 
   # Resources
-  resources_for_navy_steel_1:0 "Steel for navy 1"
-  resources_for_navy_steel_2:0 "Steel for navy 2"
-  resources_for_navy_steel_3:0 "Steel for navy 3"
+  resources_for_navy_steel_1:0 "Steel for Fleet 1"
+  resources_for_navy_steel_2:0 "Steel for Fleet 2"
+  resources_for_navy_steel_3:0 "Steel for Fleet 3"
 
-  resources_for_navy_chromium_1:0 "Chromium for navy 1"
-  resources_for_navy_chromium_2:0 "Chromium for navy 2"
+  resources_for_navy_chromium_1:0 "Chrome for Fleet 1"
+  resources_for_navy_chromium_2:0 "Chrome for Fleet 2"
 
-  resources_for_navy_oil_1:0 "Oil for navy 1"
-  resources_for_navy_oil_2:0 "Oil for navy 2"
+  resources_for_navy_oil_1:0 "Fuel for fleet 1"
+  resources_for_navy_oil_2:0 "Fuel for the fleet 2"
 
   NCH_nuke_category_desc:0 "Greneclyf began his nuclear program in full confidence that he would be able to harness the power of the atom and channel it into his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
 
   nuke_clue:0 "§gWe need magic crystals to successfully start the reactor. Geologists report a potential deposit near Mt. Aspik. We need to learn the basics of industrial resource extraction so we can begin to develop the deposit."
 
-   # New
+  # New
   NCH_mining_cristal_for_reactor_0:0 "Send geologists to explore crystal deposits"
-  NCH_mining_cristal_for_reactor_1:0 "Create infrastructure for crystal mining"
-  mining_crystal_infrastructure:0 "The infrastructure for crystal mining is in place"
 
-  crystals_for_ractor_iceling_mounts_1:0 "Surface mining of crystals"
+  NCH_mining_cristal_for_reactor_1:0 "Create an infrastructure for crystal mining" mining_crystal_infrastructure:0 "Infrastructure for crystal mining has been created"
+
+  crystals_for_ractor_iceling_mounts_1:0 "Surface crystal mining"
   crystals_for_ractor_iceling_mounts_2:0 "Industrial crystal mining"
-  crystals_for_ractor_iceling_mounts_3:0 "Deep crystal development"
+  crystals_for_ractor_iceling_mounts_3:0 "Deep crystal mining"
 
-  NCH_nuke_category_desc:0 "Greneclyf started the nuclear program in the full confidence that he would be able to curb the power of the atom in the shortest possible time and direct it to his own development. The prospect of acquiring a new type of weapon and providing resources for the island's population is exciting. Let's see if we can meet the deadline without wasting too many resources building the reactor."
+  NCH_nuke_category_desc:0 "Greneclyf began the nuclear program in full confidence that he would be able to curb the power of the atom in the shortest possible time and direct it to his development.\n\n\The government is making a big bet on the Celarla project. The prospect of mastering a new type of weapon and providing resources to the island's population is exciting. Let's see if we can meet the deadlines and not spend too many resources on the construction of the reactor."
 
-  nuke_clue:0 "§gWe need magic crystals to successfully start the reactor. Geologists report a potential deposit near Mt. Aspik. We need to learn the basics of industrial resource extraction so we can begin to develop the deposit."
+  nuke_clue:0 "§To successfully start the reactor, we need magic crystals. Geologists report on a potential deposit near Mount Eispik. It is necessary to study the basics of industrial resource extraction so that we can start developing the field."
 
   # Focus #
   # New
-
   NCH_start_industrialization:0 "The beginning of industrialization"
-  NCH_start_industrialization_desc:0 "We must embark on a program of industrialization to bring our society and economy out of stagnation. On this path, we will try to catch up with our neighbors and, if we succeed, surpass them."
+  NCH_start_industrialization_desc:0 "We must begin an industrialization program to bring our society and economy out of stagnation. By taking this path, we will try to catch up with our neighbors, and if we succeed, we will be able to surpass them."
 
-  NCH_school_of_engeneers:0 "Schools of Engineering"
-  NCH_school_of_engeneers_desc:0 "A new brood of engineering beetles is set to become a mainstay in the upcoming rebuilding of our cities for modern needs. Some of them show extraordinary abilities to learn. We have established special engineering schools in the capital, where we will teach them the basics of copromat, physics, masonry, and a number of other disciplines."
+  NCH_school_of_engeneers:0 "Engineering schools"
+  NCH_school_of_engeneers_desc:0 "A new brood of engineering beetles should become a pillar in the upcoming restructuring of our cities to meet modern needs. Some of them show extraordinary learning abilities. We have established special engineering schools in the capital, where we will teach them the basics of copromat, physics, masonry, as well as a number of other disciplines."
 
-  NCH_development_blosmport:0 "Development of Blossmport"
-  NCH_development_blosmport_desc:0 "Blossport, our capital, should be the jewel of the island. We will widen the streets, create a new commercial zone, a port, and integrate new industrial enterprises into the urban environment. The city will have a full-fledged government district as well as a free economic zone."
+  NCH_development_blosmport:0 "Blossomport Development"
+  NCH_development_blosmport_desc:0 "Blosmport, our capital, should become the pearl of the island. We will expand the streets, create a new commercial zone, a port, and integrate new industrial enterprises into the urban environment. A full-fledged government district will appear in the city, as well as a free economic zone. "
 
-  NCH_development_bugsmere:0 "Bugsmere development"
-  NCH_development_bugsmere_desc:0 "The mountains near Bugsmere have always been famous for their impregnability. We are going to locate the main facilities of our military-industrial complex in the gorges of these impregnable mountains. The resource base of the region will help increase production and reduce costs."
+  NCH_development_bugsmere:0 "Development of the Beetle World"
+  NCH_development_bugsmere_desc:0 "The mountains near Zhukomir have always been famous for their invincibility. We are going to place the main capacities of our military-industrial complex in the gorges of these inaccessible mountains. The resource base of the region will contribute to increasing production volumes and reducing costs. "
 
-  NCH_development_iceling:0 "Aisling's development"
-  NCH_development_iceling_desc:0 "Aisling was traditionally the most uninhabited and untouched part of the island. Only the bravest and staunchest changlings settled there in the early days when we first set foot on Greneclyf. The region is rich in natural resources and relic forests. We will send a group of settlers, and support migration to Aisling to encourage its development."
+  NCH_development_iceling:0 "The development of Aisling"
+  NCH_development_iceling_desc:0 "Aisling has traditionally been the most uninhabited and untouched part of the island. Only the bravest and most persistent Changelings settled there at the dawn of time, when we first set foot on the lands of Greneclyf. The region is rich in natural resources and relict forests. We will send a group of migrants, as well as support migration to Aisling to stimulate its development."
 
-  NCH_development_iceling_res:0 "Resource extraction near Mount Aspic"
-  NCH_development_iceling_res_desc:0 "Our geologists have discovered deposits of magical crystals near Mount Aspik. It seems they may be even larger than we realize. Although we may not use them in our daily lives yet, they may come in handy in the future."
+  NCH_development_iceling_res:0 "Resource extraction near Mount Eispik"
+  NCH_development_iceling_res_desc:0 "Our geologists have discovered deposits of magical crystals near Mount Eispik. It seems that they may be even bigger than we think. Even though we don't use them in everyday life yet, they may come in handy in the future."
 
   NCH_magical_crystal_dev:0 "Crystals for the army"
-  NCH_magical_crystal_dev_desc:0 "We seem to have found a use for crystals in our economy. They make very powerful ammunition, far superior to gunpowder analogs. We have developed several prototypes of magic projectile carbines and are about to launch their production to the masses. Further research into magic crystals is becoming more and more promising."
+  NCH_magical_crystal_dev_desc:0 "It seems that we have found a use for crystals in our economy. They make very powerful ammunition, significantly superior to powder analogues. We have developed several prototypical carbines based on magic projectiles and are already going to launch their production to the masses. Further research on magic crystals is becoming more promising."
 
   NCH_island_rise:0 "Economic growth"
-  NCH_island_rise_desc:0 "Now that we've modernized Stalitsa and the major cities, the industrial plan is paying off. With a low base, our economy is gaining momentum quite quickly. According to forecasts, after overcoming the effect of the low base, we will reach a stable annual growth rate of 4-8%."
+  NCH_island_rise_desc:0 "Now that we have modernized Stalitsa and large cities, the industrial plan is giving its results. Having a low base, our economy is gaining momentum quite quickly. According to forecasts, after overcoming the effect of a low base, we will achieve stable annual growth in the region of 4-8%."
 
-  NCH_development_production:0 "Increase in the pace of industrialization"
-  NCH_development_production_desc:0 "We have adopted not only the material and technical base from our more developed neighbors, but also adapted the methods, techniques and tools of production to our needs. Having made a rapid leap, we can talk about the transition to a rapid industrial milestone. Our production has not yet reached the level of developed countries, but we have already overcome a significant path."
-
+  NCH_development_production:0 "Increasing the pace of industrialization"
+  NCH_development_production_desc:0 "We have adopted not only the material and technical base from our more developed neighbors, but also adapted production methods, methods and tools to suit our needs. If we make a rapid leap, we can talk about moving into a stormy industrial milestone. Our production has not yet reached the level of developed countries, but we have already overcome a significant path."
 
   # Right side
-  NCH_nationa_railways_network:0 "National railroad network"
-  NCH_nationa_railways_network_desc:0 "The development of industrial potential is impossible without a well-developed transportation infrastructure. In harsh geographical and climatic conditions, trains and railroads can become the arteries of our economy through which industrial goods and resources will flow."
+  NCH_nationa_railways_network:0 "National Railway Network"
+NCH_nationa_railways_network_desc:0 "The development of industrial potential is impossible without a developed transport infrastructure. In difficult geographical and climatic conditions, trains and railways can become the arteries of our economy through which industrial goods and resources will pass."
 
-  NCH_foregin_advisors:0 "Inviting foreign specialists"
-  NCH_foregin_advisors_desc:0 "Our view of the world is long outdated, and the scientific base is not fully developed. All science in Greencliff is currently based on experimenters and enthusiasts. By inviting or kidnapping scientists from all over the world, we will give our science a boost."
+  NCH_foregin_advisors:0 "Invitation of foreign specialists"
+  NCH_foregin_advisors_desc:0 "Our understanding of the world has long been outdated, and the scientific base has not been fully formed. All the science in Greneclyf, at the moment, rests only on experimenters and enthusiasts. By inviting or abducting scientists from all over the world, we will give an impetus to the development of our science."
 
-  NCH_development_civil:0 "Updating the civil laws"
-  NCH_development_civil_desc:0 "Social State - Utopia or Reality? We will carry out reforms in the civil, social and legal sectors to see how changing laws will affect the state system. We will ban forced labor, introduce social benefits and a social insurance system for citizens."
+  NCH_development_civil:0 "Updating civil laws"
+  NCH_development_civil_desc:0 "Is the welfare state a utopia or a reality? We will carry out reforms in the civil, social and legal sectors to see how the change in laws will affect the state system. We will ban forced labor, introduce social benefits and a social insurance system for citizens."
 
-  NCH_establish_university:0 "The founding of Capital University"
-  NCH_establish_university_desc:0 "Blossport University will be Greneclyf's largest educational, scientific, cultural and outreach base. Only science can change the world. Only science in the broadest sense can answer how to split the atom and how to raise changelings."
+  NCH_establish_university:0 "Foundation of the capital University"
+  NCH_establish_university_desc:0 "The University of Blosmport will become the largest educational, scientific, cultural and educational base of Greneclyf. Only science can change the world. Only science in the broadest sense can answer how to split an atom and how to educate changelings."
 
   NCH_development_science_base:0 "Modernization of society"
-  NCH_development_science_base_desc:0 "We have made significant progress in the development and implementation of educational programs. The literacy of the population is growing, the university is producing undergraduate and postgraduate students, and research is yielding its first results. Modernization of society is a long process. The scientific base cannot be formed in a few years, but we are on the right path."
+  NCH_development_science_base_desc:0 "We have achieved significant success in the preparation and introduction of educational programs. The literacy rate of the population is growing, the university is graduating students and postgraduates, and research is giving the first results. The modernization of society is a long process. The scientific base cannot be formed in a few years, but we are on the right track."
 
-  NCH_nuce_program_first_step:0 "A small step for a bug, but a huge step for the whole brood"
-  NCH_nuce_program_first_step_desc:0 "Magic crystals seem to have attracted the interest of a group of extraordinary scientists from Blossomport University. We can give them full funding and see what happens....."
+  NCH_nuce_program_first_step:0 "A small step for a beetle, but a huge step for the whole brood"
+  NCH_nuce_program_first_step_desc:0 "Magic crystals seem to have interested a group of extraordinary scientists from the University of Blosmport. We can provide them with full funding and see what happens..."
 
 
   # tooltips & ideas
   # tt for focus
-  NCH_start_industrial:0 "Greneclyf took steps towards industrialization"
-  start_industrialization:0 "We need workers for successful industrialization. We will try to artificially accelerate urbanization by encouraging changelings to move to large cities. We will help them relocate and provide jobs for those in need.\n\n"
+  NCH_start_industrial:0 "Greneclyf has taken steps towards industrialization"
+  start_industrialization:0 "We need workers for successful industrialization. We will try to artificially disperse urbanization by encouraging changelings to move to large cities. We will help them with moving, as well as provide jobs for those in need.\n\n"
 
-  mining_iceling_start:0 "It seems we have managed to find small deposits of magic crystals near Mount Aispik. Perhaps these deposits are larger than we think, but we don't have a need for mass mining yet.\n\n"
+  mining_iceling_start:0 "It seems that we have managed to find small deposits of magic crystals near Mount Eispik. Perhaps these deposits are larger than we think, but we do not yet have a need for mass production.\n\n"
 
-  NCH_esteblish_university_tt:0 "\nBy founding Blossmport University we will greatly advance scientific and industrial research!"
+  NCH_esteblish_university_tt:0 "After visiting the University of Blosmport, we will make significant progress in scientific and industrial research!"
 
-  NCH_migration_undev_region:0 "We will start supporting migration to underdeveloped eastern areas"
+  NCH_migration_undev_region:0 "We will start supporting migration to underdeveloped eastern regions"
 
   # ideas for focus
-  NCH_school_of_engeneers_idea:0 "Schools of Engineering" # construction
+  NCH_school_of_engeneers_idea:0 "Engineering schools" # construction
   NCH_foregin_researches:0 "Foreign researchers"
-  NCH_civil_laws:0 "New legislation"
-  NCH_island_now_rise:0 "The dawn of the island"
-  NCH_grand_fleet:0 "Greneclyf's fleet"
+  NCH_civil_laws:0 "New legislation"  
+  NCH_island_now_rise:0 "Dawn of the Island"
+  NCH_grand_fleet:0 "The Greneclyf Fleet"
 
   # Traits #
   silent_workbug2:0 "Workaholic"
 
   # Advisors #
 
-  Celarl:0 "Celarl"
-  Celarl_desc:0 "Franser Celarl was born in 977 and showed an interest in the exact sciences from an early age. He has devoted his entire life to physics and the study of magical crystals. He has a theory that almost infinite energy can be extracted from crystals. Maybe these crystals will help in the development of our country?"
+  Celal:0 "Celarl"
+  Color_desc:0 "Franz Karl was born in 977 and from early childhood showed an interest in the exact sciences. He devoted his whole life to physics and the study of magic crystals. He has a theory that practically infinite energy can be extracted from crystals. Maybe these crystals will help in the development of our country?"
 
   Derkliones:0 "Derkliones"
 
-  Floppa:0 "Floppster"
-  Floppa_desc:0 "A very strange changeling. He's not like our brethren, though he thinks he is. No one asked him to transform, but he doesn't need to. Because of his unusual appearance, our kin took a liking to him. His hard work and desire to help Greneclyf has brought him into our government. Let's see how he fares as our political advisor..\n\n\§gP.S. I would like to express a special word of thanks to yuri for help and advice in the development of sabmod. Without his advice I would have drowned in the modding wiki. Thanks again!"
+  Floppa:0 "Flopster"
+  Floppa_desc:0 "Very strange changeling. He is not like our brethren, although he considers himself to be one. No one asked him to reincarnate, but it's not necessary. Because of his unusual appearance, he was liked by our relatives. His hard work and desire to help Greneclyfleaf allowed him to enter our government. Let's see how he handles the role of our political adviser.\n\n\§gP.S. I want to say a few words of gratitude to yuri for his help and advice in developing the submode. Without his advice, I would have drowned in the modding wiki. Thanks again!"
 
   ### TOOLTIPS ###
-  NCH_tooltip_Celarl:0 "§HCelarl §Wbecomes a top scientist and starts a nuclear program"
-  NCH_start_nc_pg:0 "§tWe'll have 1,100 days to build the reactor. If we can't build it, all our efforts will be for nothing. After spending too many economic and human resources, the people will be disappointed in you.."
+  NCH_tooltip_Celarl:0 "§NCelarl §Becomes a leading scientific specialist and begins the nuclear program"
+  NC_start_nc_pg:0 "§We will have 1100 days to build the reactor. If we can't build it, all our efforts will be in vain. Having spent too much economic and human resources, the people will be disappointed in you."
 
   # Admirals #
   #Hart
   Hart:0 "Hart"
-  NCH_Desc_Hart:0 "§gHenrich Hart is a young and promising admiral, hailing from the high mountains of the northern part of the island. His attention to detail has always been noted by his commanders, as has his masterful planning in military exercises. His subordinates enjoy socializing with him, and Hart himself enjoys spending weekends with his battle buddies.\n\nAs an advocate of a large-capacity navy, he actively favors the development of powerful shipbuilding. In his opinion, only our huge cannons pointed at the seas and oceans can keep us safe from potential invaders.§!"
+  NCH_Desc_Start:0 "§Heinrich Hart is a young and promising admiral, originally from the high mountains of the northern part of the island. His attention to detail has always been noted by commanders, as well as his masterful planning in military exercises. His subordinates are happy to communicate with him, and Hart himself enjoys spending weekends with his comrades in arms. Being a supporter of the creation of a large-tonnage fleet, he actively advocates the development of powerful shipbuilding. In his opinion, only our huge guns aimed at the seas and oceans can protect us from potential invaders.§!"
 
   NCH_new_stats_hart:0 "§gLevel§!: §Y3§!, (£trait_attack §Y3§!, £trait_defense §Y2§!, £trait_maneuvering §Y2§!, £trait_coordination §Y4§!)\n§gTraits§!: §C$superior_tactician$§!, §C$ironside$§!\n\n"
 
   #Lorri
   Lorri:0 "Lorri"
-  NCH_desc_Lorri:0 "Admiral Lorellei Lorry is a bright star at Blossomport Naval Academy. Cunning and secretive is how his enemies would describe him. He always keeps his ears sharp, which is not surprising for a submariner, because every even the smallest sound in the depths of the sea can be a sign of either close prey or a change of role.\n\n\Lorrie began his journey on a coastal-type submarine. In his first campaigns as captain, he proposed an innovative tactic - the use of submarines in “shark packs”. Later, these formations became known as the sharks of Arctic waters. Lorry favored the expansion of the submarine fleet. In his view, Greneclyf does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to bet on small, but very effective submarines of a new type - submarine cruisers."
+  NCH_desc_Lorri:0 "Admiral Lorelei Lorri is the bright star of the Bloosmport Naval Academy. Cunning and secretive-that's how his enemies would describe him. He always keeps his ears sharp, which is no wonder for a submariner, because every, even the most insignificant sound at sea depth can indicate either a close prey or a change of role.\n\n\Lorry began his journey on a coastal-type submarine. In his first campaigns, as a captain, he proposed innovative tactics - the use of submarines in "shark packs". Later, these formations became known as the sharks of the Arctic waters. Lorry is in favor of expanding the submarine fleet. In his view, Greneclyf does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to rely on inconspicuous, but very effective submarines of a new type - submarine cruisers."
   NCH_new_stats_lorri:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gTraits§!: §C$seawolf$§!\n\n"
 
   # Army
   # Generals #
   Moronlan:0 "Moronlan"
-  NCH_Desc_Moronlan:0 "ФField Marshal Moronlan is an old changeling, hardened by years of service. He started out as a royal guard and has served the crown faithfully all his life. His steely stamina and the respect of his comrades and superiors contributed to his career. In 994, Greneclyf's armed forces adopted the organizational model from the Riverlands. The title of Field Marshal was introduced into the army and no one doubted that Moronlan would become the first changeling on the island with this title.\n\n\Moronlan may be loyal to the crown, but he certainly has his game. Perhaps in the future, his ambition could be a problem for us. Or perhaps we should support the old field marshal. I wonder what future he sees for Greneclyfe."
+  NCH_Desc_Moronlan:0 "Field Marshal Moronlan is an old changeling hardened by years of service. He started out as a royal guardsman and served the Crown faithfully all his life. His steely self-control, the respect of his comrades and superiors contributed to his career. In 994, Greneclyf's armed forces adopted an organizational model from the riverlands. The rank of field marshal appeared in the army and no one doubted that Moronlan would become the first changeling of the island with this title.\n\n\Moronlan may be loyal to the crown, but he's definitely playing his game. Perhaps in the future his ambitions may become a problem for us. Or maybe we'll support the old field marshal? I wonder what kind of future he sees for Greneclyf."
 
-  Merelay:0 "Merelay"
-  NCH_new_stats_Merelay:0 "§gLevel§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gTraits§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
+  Marelay:0 "Merelay"
+  NCH_new_stats_Merelay:0 "§Level §!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§DCHERTS§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
 
   Hailman:0 "Heilman"
-  NCH_Desc_Hailman:0 "Bayerr Heilman earned the nickname changeling grad for his ability to accomplish tasks under the most difficult conditions. His ability to get out of the most difficult situations is highly valued by the command and his subordinates"
+  NCH_Desc_Hailman:0 "Bayerr Heilman was nicknamed the changeling Grad for his ability to perform tasks in the most difficult conditions. His ability to get out of the most difficult situations is highly appreciated by the command and his subordinates."
 
   Coilholt:0 "Coilholt"
 
-  Goulen:0 "Goulen"
+  Goulen:0 "Goylen"
 
   # Jaggers
-  greneclyf.412.t:0 "Egery Greneclyf descend from the mountains"
-  greneclyf.412.d:0 "Rugged mountain beetles, living in isolation from their fellow beetles, arrive at the collection points at the first request of our government. They are hardened by harsh winters and a hard life in the mountains. Masters of survival, shooting, and mountain warfare. We'll have to decide where best to put them. They can make up the Sons of the Mountains Brigade, or we can send them as officers to our existing troops."
+  greneclyf.412.t:0 "Greneclyf rangers descend from the mountains"
+  greneclyf.412.d:0 "Harsh mountain beetles living apart from other fellows arrive at the collection points at the first request of our government. They are beset by harsh winters and hard life in the mountains. Masters of survival, shooting, and fighting in mountainous terrain. We have to decide where to send them best. They can make the Sons of the Mountains brigade, or we can send them as officers to the existing troops."
 
-  greneclyf.412.a:0 "Let's create a gamekeeper brigade"
-  greneclyf.412.b:0 "Let's direct them to the units we already have"
+  greneclyf.412.a:0 "Let's create a hunting brigade"
+  greneclyf.412.b:0 "We will send them to the existing units"
 
   # Events #
   # Nuke
-  greneclyf.511.t:0 "The start of Greneclyf's nuclear program"
-  greneclyf.511.d:0 "After his appointment as head of the science department, Cellarl proposes to start a nuclear program to take the country to the next stage of development. We will have to establish a nuclear energy research department as soon as possible, invite scientists, and provide full funding for the program.\n\nCelarl believes that building a nuclear reactor and curbing the power of the atom is worth all the effort. In the future, we may even have a new type of weapon never before seen. According to our scientists, this weapon could cause an explosion hotter than a thousand suns, incinerating everything within a 5 kilometer radius. Sounds like a gamble worth taking."
+  greneclyf.511.t:0 "The beginning of the Greneclyf nuclear program"
+  greneclyf.511.d:0 "After being appointed head of the scientific department, Celarl proposes to start a nuclear program to move the country to the next stage of development. We will have to create a department for the study of nuclear energy in the shortest possible time, invite scientists, and provide full funding for this program.pSelarl believes that building a nuclear reactor and harnessing the power of the atom is worth all the effort. In the future, we may even be able to get a new type of weapon that has never been seen before. According to the calculations of our scientists, this weapon can cause an explosion hotter than a thousand suns, incinerating everything within a radius of 5 kilometers. It seems like the game is worth the candle."
 
-  greneclyf.511.a:0 "We will gather all the resources we need. Now is the time to act!"
-  greneclyf.511.b:0 "It's probably too expensive for us..."
-  greneclyf.511.b.tt:0 "§tWe'll only get one chance to start this program"
+  greneclyf.511.a:0 "We will gather all the necessary resources. It's time to act!"
+  greneclyf.511.b:0 "Perhaps this is too expensive for us..."
+  greneclyf.511.b.tt:0 "§T we will only have one chance to start this program "
 
   # Built reactor
-  greneclyf.590.t:0 "The reactor is built"
-  greneclyf.590.d:0 "After long and hard nights, our builders, engineers and scientists have succeeded in completing our first nuclear reactor. Its unbridled power still needs to be explored, but it is certain that Greneclyf has a bright future ahead of it!"
+  greneclyf.590.t:0 "Reactor is built"
+  greneclyf.590.d:0 "After long and hard nights, our builders, engineers and scientists managed to complete the construction of our first nuclear reactor. His unbridled power still needs to be studied, but we can confidently say that Greneclyf has a bright future ahead!"
 
-  greneclyf.590.a:0 "It's time to move on"
+  greneclyf.590.a:0 "Time to move on"
 
   # Ad tech nuce bonus
-  greneclyf.522.t:0 "The research is yielding results"
-  greneclyf.522.d:0 "At eleven o'clock this morning Caelarl ran into the palace dropping blueprints and sheets of calculations.\n\n\Celarl: It's done! It's done! It's done! We have realized the essence of the atom! In fact, the atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! It contains endless energy! I've done a lot of research, used different materials, and only atoms of magic crystals have such power! Using fusion, splitting atoms and starting a chain reaction, we can produce almost endless energy! Our technology does not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\ \n\Celarl is insisting that we send every available scientist in the country to help him create a blueprint for a nuclear reactor. That seems to make sense.."
+  greneclyf.522.t:0 "Research gives results"
+  greneclyf.522.d:0 "Today at 11 a.m., Celarl ran into the palace dropping drawings and calculation sheets.\n\\n\Celarl: It's happened! It's happened! It's happened! We have understood the essence of the atom! In fact, an atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! Endless energy is trapped in it! I've done a lot of research, used different materials, and only the atoms of magic crystals have such power! Using thermonuclear fusion, splitting atoms and starting a chain reaction, we will be able to produce almost endless energy! Our technologies do not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\\n\Celarl insists that we send all available scientists in the country to help him create a blueprint for a nuclear reactor. It seems to make sense..."
 
-  greneclyf.522.a:0 "§9Celarl will get all the resources he needs"
+  greneclyf.522.a:0 "§9CELL will receive all necessary resources"
 
   # Reactor research
-  greneclyf.513.t:0 "The research is yielding results"
-  greneclyf.513.d:0 "After developing the design of the nuclear reactor, we prepared the final drawings. Our nuclear reactor will include two power units, a spent material storage and reuse station, a fire station, and an employee housing complex."
+  greneclyf.513.t:0 "Research gives results"
+  greneclyf.513.d:0 "After developing the nuclear reactor design, we have prepared the final drawings. Our nuclear reactor will include 2 power units, a station for waste material storage and reuse, a fire station, as well as a residential complex for employees."
 
-  greneclyf.513.a:0 "All that remains is to give the order to begin construction"
+  greneclyf.513.a:0 "All that remains is to give the order to start construction"
 
   # Modern society 
   # Proper science base
-  greneclyf.517.t:0 "Nuclear power is delivering results"
-  greneclyf.517.d:0 "Thanks to the power of the atom, we have been able to modernize our industries and provide the people of our country with the goods and resources they need. Factories and military plants no longer lack electricity. Our scientists, led by Tselarl, continue to research the power of the atom and prepare to create weapons we could only dream of. Our society has undergone significant changes. We seem to be heading in the right direction." 
+  greneclyf.517.t:0 "Nuclear power produces results"
+  greneclyf.517.d:0 "Thanks to the power of the atom, we were able to modernize our production facilities and provide the inhabitants of our country with the necessary goods and resources. Factories and military plants no longer lack electricity. Our scientists, led by Celarl, continue to research the power of the atom and are preparing to create a weapon that we could only dream of. Our society has undergone significant changes. It seems we are heading in the right direction." 
 
-  greneclyf.517.a:0 "An era of prosperity is coming for Greneclyfe!"
+  greneclyf.517.a:0 "An era of prosperity is coming for Greneclyf!"
 
   # Resources
   # For nuke
-  greneclyf.515.t:0 "Resources for the reactor"
-  greneclyf.515.d:0 "To continue the nuclear program and successfully start the reactor, we need magic crystals in large quantities. We have a small supply, but it won't last long enough. A recent expedition of geologists to the areas of Bugsmere and eisling found reserves of magic crystals. There are not too many of them, but perhaps by creating a mine we can develop these deposits and find more crystals."
+  greneclyf.515.t:0 "Reactor resources"
+  greneclyf.515.d:0 "In order to continue the nuclear program and successfully launch the reactor, we need magic crystals in large quantities. We have small reserves, but they will not be enough for a long period. A recent expedition of geologists to the areas of Zhukomir and Aisling found reserves of magic crystals. There are not too many of them, but perhaps by creating a mine we can develop these deposits and find more crystals."
 
   greneclyf.515.a:0 "Send a brood of drones to the mines of Icepick Mountain"
 
@@ -201,53 +200,53 @@
   # Ractor has ... #
   # Fail dec
   greneclyf.514.t:0 "We failed to build a nuclear reactor"
-  greneclyf.514.d:0 "After many attempts, to begin with, our workers faced a lack of skills and experience in such complex projects. We were able to design the reactor itself, but we were unable to build the vessel, the cooling system, and the plant control complex"
+  greneclyf.514.d:0 "After many attempts to start, our workers are faced with a lack of qualifications and experience in such complex projects. We were able to design the reactor itself, but we were unable to build the hull, cooling system and control complex of the station."
 
-  greneclyf.514.a:0 "We'll try again, but next time..."
+  greneclyf.514.a:0 "We will try again, but next time..."
 
   #Success dec
-  greneclyf.516.t:0 "Where to channel the resulting power?"
-  greneclyf.516.d:0 "After the construction of the reactor, we faced the question - where to direct the resulting energy?\n\The energy of the magic crystals is enough to power the entire island with electricity. We can channel the excess energy into one of the spheres, but only one."
+  greneclyf.516.t:0 "Where to direct the received power?"
+  greneclyf.516.d:0 "After the construction of the reactor, the question arose before us - where to direct the received energy?\n\The energy of the magic crystals is enough to power the entire island with electricity. We can channel the excess energy into one of the spheres, but only one."
 
   greneclyf.516.slot.a:0 "Expand scientific laboratories"
 
-  greneclyf.516.war.a:0 "The military industrial complex will be energized"
+  greneclyf.516.war.a:0 "The military industrial complex will receive energy"
 
-  greneclyf.516.civ.a:0 "We'll channel our energies into a peaceful direction."
+  greneclyf.516.civ.a:0 "We will direct energy in a peaceful direction"
 
   # For navy
   # Hatcher 
-  greneclyf.611.t:0 "Hatcher Construction"
-  greneclyf.611.d:0 "To build a ship that has never seen the light of day, we need to increase the production capacity of the Blossmport docks. We will build new shipyards, and expand the production base, hire more workers, and buy materials from abroad. We will do anything to build this ship!"
+  greneclyf.611.t:0 "Building a Hatcher"
+  greneclyf.611.d:0 "To create a ship that has not yet seen this light, we need to increase the production capacity of the Blosmport docks. We will build new shipyards, as well as expand our production base, hire more workers, and purchase materials abroad. We will do everything to build this ship!"
 
   greneclyf.611.a:0 "Soon the world will see our greatest ship!"
 
   greneclyf.612.t:0 "Resources for the fleet"
-  greneclyf.612.d:0 "Hatcher requires rare earth minerals as well as tons of steel. In ancient times, changeling settlers found strange-colored rocks in the interior of the island. They didn't know what they were. Our geologists suspect rich deposits in the mountains north of the capital. This may be our chance to not only build Hatcher, but to supply our industry with all the resources it needs."
+  greneclyf.612.d:0 "The Hatcher requires rare earth minerals, as well as tons of steel. Even in ancient times, the Changeling settlers found strange-colored stones in the depths of the island. Then they didn't understand what it was. Our geologists are aware of the rich deposits in the mountains north of the capital. Perhaps this is our chance not only to build a Hatchery, but also to provide our industry with all the necessary resources."
 
-  greneclyf.612.a:0 "Get to work developing resources!"
+  greneclyf.612.a:0 "Start developing resources!"
 
-  greneclyf.614.t:0 "The team for Hatcher"
-  greneclyf.614.d:0 "As the ship was being built, we prepared a crew as well as the reservists who would be able to operate it. After grueling training, we have selected 2,000 worthy candidates who will enter service today."
+  greneclyf.614.t:0 "The team for the Hatcher"
+  greneclyf.614.d:0 "As the ship was being built, we prepared the crew, as well as reservists capable of operating it. After grueling training, we have selected 2,000 worthy candidates who will join the service today."
 
-  greneclyf.614.a:0 "Hatcher will bring us glory!!"
+  greneclyf.614.a:0 "Hatcher will bring us glory!"
 
   # News Hatcher 
-  greneclyf.631.t:0 "Greneclyf is launching Hatcher."
-  greneclyf.631.d:0 "[This.GetNewspaperHeader]This morning we received news from Eastern Gryphonia. The small island nation inhabited by changeling beetles has built the line cruiser Hatcher.\n\n\The changeling assures us that the ship was designed, built, and launched in record time - the entire process took only 56 days. Our engineers continue to debate whether even a destroyer can be built in such a short period of time, and meanwhile, the new flagship of the Greneclyf fleet is hurtling into the cold Arctic waters of Eastern Gryphonia"
+  greneclyf.631.t:0 "Greneclyf launches the Hatcher"
+  greneclyf.631.d:0 "[This.GetNewspaperHeader]We got the news this morning, from East Gryphonia. A small island country inhabited by shifter beetles has built the battlecruiser Hatcher.\n\n\According to the changelings, the ship was designed, built, and launched in record time - the whole process took only 56 days. Our engineers continue to argue whether it is possible to build even a destroyer in such a short time, and meanwhile, a new flagship of the Greneclyf fleet is sailing into the cold Arctic waters of Eastern Gryphonia."
 
-  greneclyf.631.a:0 "Intresting..."
+  greneclyf.631.a:0 "Interesting"
 
   # Arctic subs 
   greneclyf.621.t:0 "Resources for the submarine fleet"
-  greneclyf.621.d:0 "In the process of developing the design of submarine cruisers capable of traveling in harsh Arctic conditions, we did not expect that their production would turn out to be so expensive. To produce cruisers, we need resources that we don't have on the sharp end. Although, a group of geologists will rhapsodize about the potential development of scarce resources, we need to send a team of explorers to learn about the reserves and the possibility of extensive mining."
+  greneclyf.621.d:0 "In the process of developing a project for submarines capable of navigating in harsh Arctic conditions, we did not expect that their production would be so expensive. For the production of cruisers, we need resources that are not available at the sharp. Although a group of geologists is reporting on the potential development of scarce resources, we need to send a group of researchers to learn about reserves and the possibility of extensive mining."
 
-  greneclyf.621.a:0 "Get to work developing resources!"
-  # News
-  greneclyf.632.t:0 "Arctic sharks are out on the hunt"
-  greneclyf.632.d:0 "[This.GetNewspaperHeader]Straight from Eastern Gryphonia, we hear rumors that the hermit beetles of Greneclyf have been able to develop a new type of submarine. It's amazing how, with their modest resources, the beetles managed to get their hands on this kind of technology. According to the engineers, the submarine cruiser is fully autonomous for 10 months, of which it can stay underwater for 7 months. It is a new type of submarine designed for long raids, as well as for operations in the harsh Arctic waters."
+  greneclyf.621.a:0 "Start developing resources!"
+# News
+  greneclyf.632.t:0 "Sharks of Arctic waters go hunting"
+  greneclyf.632.d:0 "[This.GetNewspaperHeader]Straight from the Eastern Griffin, we hear rumors that the hermit beetles from Greneclyf were able to develop a new type of submarine. It's amazing how, with modest resources, the beetles managed to get hold of this kind of technology?\n\n\According to engineers, the submarine has full autonomy for 10 months, of which it can stay 7 months underwater. This is a new type of submarine designed for long-term raids, as well as for activities in harsh Arctic waters."
 
-  greneclyf.631.a:0 "Greneclyf's got fangs."
+  greneclyf.631.a:0 "Greneclyf has fangs"
 
 
 ### FOCUS LOCALISATION ###

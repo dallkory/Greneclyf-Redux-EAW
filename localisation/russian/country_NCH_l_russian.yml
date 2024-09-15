@@ -6,6 +6,8 @@
   NCH_start_nuce_program:0 "Начать строительство реактора"
   NCH_nuce_mission:0 "Построить реактор как можно скорее!"
   reactor_has_built:0 "Реактор был построен"
+  mining_crystal_infrastructure:0 "Мы создали инфраструктуру для добычи кристалов"
+
   # Resources
   resources_for_navy_steel_1:0 "Сталь для флота 1"
   resources_for_navy_steel_2:0 "Сталь для флота 2"
