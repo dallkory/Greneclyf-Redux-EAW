@@ -25,12 +25,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-				OR = {
-					has_completed_focus = NCH_operation_lightspark
-					has_completed_focus = NCH_inaugurate_the_industrial_district
-					has_completed_focus = NCH_the_four_year_plan
-					has_completed_focus = NCH_foreign_advisors # don't rename
-				}
+				has_country_flag = NCH_start_industrial
 		}
 		completion_reward = {
 			custom_effect_tooltip = start_industrialization #
