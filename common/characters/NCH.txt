@@ -5,6 +5,7 @@ characters={
 	# Advisors #
 	NCH_scientist_celarl={
         name=Celarl
+		desc = Celarl_desc
         portraits={
             army={
                 small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
@@ -23,7 +24,7 @@ characters={
                 nuclear = 0.15
             }
             traits = { nuclear_scientist }
-    		desc = "Celarl_desc"
+    		desc = Celarl_desc
             available = { 
                 has_completed_focus = NCH_nuce_program_first_step
             }       

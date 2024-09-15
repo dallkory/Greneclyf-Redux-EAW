@@ -118,7 +118,7 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
   Floppa_desc:0 "Very strange changeling. He is not like our brethren, although he considers himself to be one. No one asked him to reincarnate, but it's not necessary. Because of his unusual appearance, he was liked by our relatives. His hard work and desire to help Greneclyfleaf allowed him to enter our government. Let's see how he handles the role of our political adviser.\n\n\§gP.S. I want to say a few words of gratitude to yuri for his help and advice in developing the submode. Without his advice, I would have drowned in the modding wiki. Thanks again!"
 
   ### TOOLTIPS ###
-  NCH_tooltip_Celarl:0 "§NCelarl §Becomes a leading scientific specialist and begins the nuclear program"
+  NCH_tooltip_Celarl:0 "§CCelarl Becomes a leading scientific specialist and begins the nuclear program"
   NC_start_nc_pg:0 "§We will have 1100 days to build the reactor. If we can't build it, all our efforts will be in vain. Having spent too much economic and human resources, the people will be disappointed in you."
 
   # Admirals #
