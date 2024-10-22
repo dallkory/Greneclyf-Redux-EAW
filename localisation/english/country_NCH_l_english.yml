@@ -48,7 +48,7 @@
   NCH_development_blosmport:0 "Blosomport Development"
   NCH_development_blosmport_desc:0 "Blosmport, our capital, should become the pearl of the island. We will expand the streets, create a new commercial zone, a port, and integrate new industrial enterprises into the urban environment. A full-fledged government district will appear in the city, as well as a free economic zone. "
 
-  NCH_development_bugsmere:0 "Development of the Beetle World"
+  NCH_development_bugsmere:0 "Development of the Bugsmere"
   NCH_development_bugsmere_desc:0 "The mountains near Zhukomir have always been famous for their invincibility. We are going to place the main capacities of our military-industrial complex in the gorges of these inaccessible mountains. The resource base of the region will contribute to increasing production volumes and reducing costs. "
 
   NCH_development_iceling:0 "The development of Aisling"
@@ -172,9 +172,9 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
 
   # Ad tech nuce bonus
   greneclyf.522.t:0 "Research gives results"
-  greneclyf.522.d:0 "Today at 11 a.m., Celarl ran into the palace dropping drawings and calculation sheets.\n\\n\Celarl: It's happened! It's happened! It's happened! We have understood the essence of the atom! In fact, an atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! Endless energy is trapped in it! I've done a lot of research, used different materials, and only the atoms of magic crystals have such power! Using thermonuclear fusion, splitting atoms and starting a chain reaction, we will be able to produce almost endless energy! Our technologies do not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\\n\Celarl insists that we send all available scientists in the country to help him create a blueprint for a nuclear reactor. It seems to make sense..."
+  greneclyf.522.d:0 "Today at 11 a.m., Celarl ran into the palace dropping drawings and calculation sheets.\n\n\ Celarl: It's happened! It's happened! It's happened! We have understood the essence of the atom! In fact, an atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! Endless energy is trapped in it! I've done a lot of research, used different materials, and only the atoms of magic crystals have such power! Using thermonuclear fusion, splitting atoms and starting a chain reaction, we will be able to produce almost endless energy! Our technologies do not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\\n\Celarl insists that we send all available scientists in the country to help him create a blueprint for a nuclear reactor. It seems to make sense..."
 
-  greneclyf.522.a:0 "§9CELL will receive all necessary resources"
+  greneclyf.522.a:0 "§9Celarl will receive all necessary resources"
 
   # Reactor research
   greneclyf.513.t:0 "Research gives results"

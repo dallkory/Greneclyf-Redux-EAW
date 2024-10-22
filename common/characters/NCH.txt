@@ -1,7 +1,25 @@
 characters={
 
     # Submod #
+	# New Leaders #
 	
+	NCH_Gytha_iron_lady = {
+		name = Gytha_iron_lady
+		portraits = {
+			civilian={ 
+				large=""
+			}
+		}
+		country_leader = {
+			desc = "Gytha_iron_lady_desc"
+			ideology =
+			expire = 
+			id = -1
+		}
+		gender = female
+	}
+
+
 	# Advisors #
 	NCH_scientist_celarl={
         name=Celarl

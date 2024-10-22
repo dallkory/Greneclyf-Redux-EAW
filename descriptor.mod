@@ -1,4 +1,4 @@
-version="1.04"
+version="1.05"
 tags={
 	"Events"
 	"Graphics"
