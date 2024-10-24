@@ -4,6 +4,23 @@ add_namespace = greneclyf_crisis
 
 # Submod #
 
+# Music event #
+country_event = {
+	id = greneclyf.523
+	title = ggreneclyf.523.t
+	desc = greneclyf.523.d
+	picture = GFX_event_gytha
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = NCH_start_music_flag
+	}
+	option = {
+		name = ok
+	}
+}
+
 # Celarl - start Nuke program #
 country_event = {
 	id = greneclyf.511

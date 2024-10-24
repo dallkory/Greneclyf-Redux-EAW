@@ -1,7 +1,20 @@
 on_actions = {
 
+
     on_daily_NCH = {
         effect = {
+
+			if = {
+				limit = {
+					NCH = {
+						has_game_started = yes
+					}
+				}
+				country_event = {
+					id = greneclyf.523
+					days = 0
+				}
+			}
 
 			if = {
 				limit = {

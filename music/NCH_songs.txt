@@ -1,0 +1,14 @@
+music_station = "base_music"
+
+music = {
+	song = "Radiarc_Carry_On"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			NCH = {
+				has_game_started = yes
+			}
+		}
+	}
+}
