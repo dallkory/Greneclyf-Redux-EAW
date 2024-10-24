@@ -64,7 +64,7 @@ bookmarks = {
 		}
 
 		"NCH" = {
-			history = "RCT_GATHERING_STORM_DESC"
+			history = "NCH_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				NCH_FBK_pact
