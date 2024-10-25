@@ -3,11 +3,7 @@
 
 ## Equestria Peace ###
 # Submod #
-music = {
-	name = "Radiarc_Carry_On"
-	file = "Radiarc_Carry_On.ogg"
-	volume = 0.9
-}
+
 
 music = {
 	name = "Neighsayer_Equestrias_Finest"

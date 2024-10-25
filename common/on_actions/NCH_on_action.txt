@@ -6,18 +6,6 @@ on_actions = {
 
 			if = {
 				limit = {
-					NCH = {
-						has_game_started = yes
-					}
-				}
-				country_event = {
-					id = greneclyf.523
-					days = 0
-				}
-			}
-
-			if = {
-				limit = {
 					OR = {
 						has_completed_focus = NCH_operation_lightspark
 						has_completed_focus = NCH_inaugurate_the_industrial_district

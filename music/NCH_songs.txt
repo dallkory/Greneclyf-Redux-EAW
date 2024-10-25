@@ -1,4 +1,4 @@
-music_station = "base_music"
+music_station = "eaw"
 
 music = {
 	song = "Radiarc_Carry_On"
@@ -6,9 +6,7 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 100
-			NCH = {
-				has_game_started = yes
-			}
+			original_tag = NCH
 		}
 	}
 }
