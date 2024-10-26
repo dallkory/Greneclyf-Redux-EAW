@@ -1130,18 +1130,26 @@ country_event = { #Council Convenes
 					country_event = greneclyf.31
 				}
 				40 = {
-					country_event = greneclyf.69
+					country_event = greneclyf.69 #Gytha death
 				}
 			}
 		}
+		ai_chance = {
+			base = 0
+			factor = 0
+		}
 	}
 	option = {
+		ai_chance = {
+			base = 1
+			factor = 10
+		}
 		name = greneclyf.30.b
 		country_event = greneclyf.68
 	}
 }
 
-country_event = { #Keep Gytha
+country_event = { #Keep Gytha 
 	id = greneclyf.31
 	immediate = {log = "[GetDateText]: [Root.GetName]: event greneclyf.31"}
 	title = greneclyf.31.t

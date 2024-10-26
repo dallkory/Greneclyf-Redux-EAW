@@ -108,6 +108,7 @@ NCH_alternate_facism = {
 
 	allowed = {
 		original_tag = NCH
+		has_country_flag = NCH_AI_FASCISM
 	}
 
 	enable = {

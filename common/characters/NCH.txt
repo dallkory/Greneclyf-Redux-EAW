@@ -320,6 +320,7 @@ characters={
 			desc="QUEEN_G_POLITICS_DESC"
 			ideology=conservatism
 			expire="1965.1.1.1"
+			traits = { The_naive_reformer }
 			id=-1
 		}
 		country_leader={

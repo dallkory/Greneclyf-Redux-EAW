@@ -1,5 +1,8 @@
 ﻿l_russian:
   # Submod #
+  # leaders desc #
+  QUEEN_G_POLITICS_DESC:0 "§YАвтор портрета:§! dallkory"
+  The_naive_reformer:0 "Наивный реформатор"
   # Decision
   NCH_nuke_category:0 "Ядерная программа Гринклифа"
   NCH_build_reactor:0 "Мы должны начать строительство ядерного реактора"
@@ -1905,7 +1908,6 @@
 
  
  ### LEADERS DESC AND OTHER ###
- #QUEEN_G_POLITICS_DESC:0 "#TO BE ADDED"
 
  #QUEEN_GF_POLITICS_DESC:0 "#TO BE ADDED"
 
