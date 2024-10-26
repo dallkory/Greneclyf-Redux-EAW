@@ -165,6 +165,7 @@ recruit_character = NCH_Merelay
 recruit_character = NCH_Hailman
 recruit_character = NCH_Goulen
 recruit_character = NCH_Floppa
+recruit_character = NCH_Farris_Fork
 
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
@@ -176,13 +177,13 @@ recruit_character = NCH_general_1
 recruit_character = NCH_general_2
 #recruit_character = NCH_admiral_poethgils
 #recruit_character = NCH_admiral_fallon
-recruit_character = NCH_air_chief_1
-recruit_character = NCH_air_chief_2
+#recruit_character = NCH_air_chief_1
+#recruit_character = NCH_air_chief_2
 recruit_character = NCH_generic_army_art
 recruit_character = NCH_generic_army_inf
 recruit_character = NCH_generic_army_log
 recruit_character = NCH_generic_navy_fleet_log
-recruit_character = NCH_generic_air_trainer
+#recruit_character = NCH_generic_air_trainer
 recruit_character = NCH_generic_military_theorist
 recruit_character = NCH_captain_of_industry
 recruit_character = NCH_war_industrialist
@@ -194,7 +195,7 @@ NCH_generic_army_art = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_army_inf = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_navy_fleet_log = { set_character_flag = RIV_advisor_from_NCH }
-NCH_generic_air_trainer = { set_character_flag = RIV_advisor_from_NCH }
+#NCH_generic_air_trainer = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_military_theorist = { set_character_flag = RIV_advisor_from_NCH }
 NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
 NCH_war_industrialist = { set_character_flag = RIV_advisor_from_NCH }

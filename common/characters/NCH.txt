@@ -307,6 +307,32 @@ characters={
 		}
 	}
 
+	# Air chiefs #
+	NCH_Farris_Fork={
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = NCH_air_chief_1
+			cost = 200
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_air_advisor_flag
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
    	 # Submod #
     
 	NCH_queen_gytha={
@@ -452,32 +478,6 @@ characters={
 			}
 			traits = {
 				army_chief_offensive_1
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	NCH_air_chief_1={
-		#name=NCH_air_chief_1
-		portraits={
-			army={
-				small=GFX_idea_unknown_advisor_bug
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = NCH_air_chief_1
-			cost = 200
-			allowed = {
-				original_tag = NCH
-			}
-			available = {
-				has_country_flag = NCH_air_advisor_flag
-			}
-			traits = {
-				air_chief_ground_support_3
 			}
 			ai_will_do = {
 				factor = 1
