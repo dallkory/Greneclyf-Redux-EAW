@@ -3,14 +3,14 @@ NCH_alternate_communist = {
 	desc = ""
 
 	allowed = {
-		original_tag = ANG
+		original_tag = NCH
 	}
 
 	enable = {
 		OR = {
 			has_country_flag = NCH_AI_COMMUNIST
 			has_game_rule = {
-				rule = ANG_ai_behavior
+				rule = NCH_ai_behavior
 				option = COMMUNIST
 			}
 		}
@@ -20,7 +20,10 @@ NCH_alternate_communist = {
 	}
 
 	ai_national_focuses = {
-		
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_a_new_path
+		NCH_invite_cader_sclerite
 	}
 
 	research = {
@@ -53,14 +56,14 @@ NCH_alternate_neutrality = {
 	desc = ""
 
 	allowed = {
-		original_tag = ANG
+		original_tag = NCH
 	}
 
 	enable = {
 		OR = {
-			has_country_flag = ANG_AI_NEUTRALITY
+			has_country_flag = NCH_AI_NEUTRALITY
 			has_game_rule = {
-				rule = ANG_ai_behavior
+				rule = NCH_ai_behavior
 				option = NEUTRALITY
 			}
 		}
@@ -70,7 +73,9 @@ NCH_alternate_neutrality = {
 	}
 
 	ai_national_focuses = {
-		
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_maintain_the_status_quo
 	}
 
 	research = {
@@ -119,7 +124,10 @@ NCH_alternate_facism = {
 	}
 
 	ai_national_focuses = {
-		
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_a_new_path
+		NCH_the_old_ways
 	}
 
 	research = {

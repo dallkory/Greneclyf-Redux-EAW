@@ -13,9 +13,10 @@ on_actions = {
 						}
 					}
 					random_list = {
-						34 = { NCH = { set_country_flag = NCH_AI_historical_patch } }
-						33 = { NCH = { set_country_flag = NCH_AI_FASCISM } }
-						33 = {NCH = { set_country_flag = NCH_AI_COMMUNIST }}
+						25 = { NCH = { set_country_flag = NCH_AI_historical_patch } }
+						25 = { NCH = { set_country_flag = NCH_AI_FASCISM } }
+						25 = { NCH = { set_country_flag = NCH_AI_NEUTRALITY }}
+						25 = {NCH = { set_country_flag = NCH_AI_COMMUNIST }}
 					}
 				}
 			}

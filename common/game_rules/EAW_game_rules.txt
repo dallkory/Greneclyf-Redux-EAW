@@ -29,6 +29,13 @@ NCH_ai_behavior = {
 	}
 
 	option = {
+		name = NEUTRALITY
+		text = "RULE_OPTION_NCH_NEUTRALITY"
+		desc = "RULE_OPTION_THORAX_CHN_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
