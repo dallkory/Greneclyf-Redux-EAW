@@ -2503,8 +2503,16 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
 	
+	
 	immediate = {
-		set_country_flag = NCH_having_crisis_flag
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = NCH_ai_behavior_Gytha
+				}
+			}
+			set_country_flag = NCH_having_crisis_flag
+		}
 	}
 
 	option = {

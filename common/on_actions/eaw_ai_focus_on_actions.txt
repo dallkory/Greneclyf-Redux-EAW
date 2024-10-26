@@ -7,6 +7,11 @@ on_actions = {
 			NCH = {
 				if = {
 					limit = {
+						is_ai = yes
+					}
+					set_country_flag = NCH_ai_behavior_Gytha
+
+					limit = {
 						has_game_rule = {
 							rule = NCH_ai_behavior
 							option = RANDOM

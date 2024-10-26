@@ -855,10 +855,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = NCH_a_different_kind_of_changeling
-		}
-		prerequisite = {
 			focus = NCH_invite_the_equestrians
 		}
+
 		x = 4
 		y = 5
 		completion_reward = {
