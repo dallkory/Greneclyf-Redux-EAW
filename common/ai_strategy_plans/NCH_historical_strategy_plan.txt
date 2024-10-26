@@ -13,13 +13,13 @@ NCH_historical = {
 					is_historical_focus_on = yes
 					has_game_rule = {
 						rule = NCH_ai_behavior
-						option = DEFAULT
+						option = GYTHA
 					}
 				}
 				has_country_flag = NCH_AI_historical_patch
 				has_game_rule = {
 					rule = NCH_ai_behavior
-					option = NCH_historical_patch
+					option = GYTHA
 				}
 			}
 		}

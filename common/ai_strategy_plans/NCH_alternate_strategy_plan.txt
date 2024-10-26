@@ -1,5 +1,5 @@
 NCH_alternate_communist = {
-	name = "COMPLETE ANARCHY"
+	name = "Island communism"
 	desc = ""
 
 	allowed = {

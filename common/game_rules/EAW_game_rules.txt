@@ -14,22 +14,30 @@ NCH_ai_behavior = {
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
+
 	option = {
-		name = OIREN
+		name = GYTHA
+		text = "RULE_OPTION_GYTHA"
+		desc = "RULE_OPTION_THORAX_CHN_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = NCH_alternate_facism
 		text = "RULE_OPTION_OIREN"
 		desc = "RULE_OPTION_THORAX_CHN_AI_DESC"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = COMMUNIST
+		name = NCH_alternate_communist
 		text = "RULE_OPTION_NCH_COMMUNIST"
 		desc = "RULE_OPTION_THORAX_CHN_AI_DESC"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = NEUTRALITY
+		name = NCH_alternate_neutrality
 		text = "RULE_OPTION_NCH_NEUTRALITY"
 		desc = "RULE_OPTION_THORAX_CHN_AI_DESC"
 		allow_achievements = yes
