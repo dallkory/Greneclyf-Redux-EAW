@@ -166,6 +166,7 @@ recruit_character = NCH_Hailman
 recruit_character = NCH_Goulen
 recruit_character = NCH_Floppa
 recruit_character = NCH_Farris_Fork
+recruit_character = NCH_Zaliack
 
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
@@ -173,7 +174,7 @@ recruit_character = NCH_cader_sclerite
 recruit_character = NCH_feilean
 recruit_character = NCH_airann
 recruit_character = NCH_garran_of_leamhan
-recruit_character = NCH_general_1
+#recruit_character = NCH_general_1
 recruit_character = NCH_general_2
 #recruit_character = NCH_admiral_poethgils
 #recruit_character = NCH_admiral_fallon

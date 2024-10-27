@@ -18,8 +18,7 @@ characters={
 		}
 		gender = female
 	}
-
-
+	
 	# Advisors #
 	NCH_scientist_celarl={
         name=Celarl
@@ -164,6 +163,44 @@ characters={
     }
 
 	 # Generals #
+	 NCH_Zaliack={
+		name=Zaliack
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Zaliack.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Zaliack.tga"
+			}
+		}
+		corps_commander={
+			desc = "NCH_Desc_Zaliack"
+			traits={ changeling_race_trait winter_specialist }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = NCH_general_1
+			cost = 100
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_generals_flag
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	NCH_Moronlan={
 		name=Moronlan
 		portraits={
@@ -434,31 +471,7 @@ characters={
 			}
 		}
 	}
-	NCH_general_1={
-		#name=NCH_general_1
-		portraits={
-			army={
-				small=GFX_idea_NCH_general_1
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = NCH_general_1
-			cost = 100
-			allowed = {
-				original_tag = NCH
-			}
-			available = {
-				has_country_flag = NCH_generals_flag
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	
 	NCH_general_2={
 		#name=NCH_general_2
 		portraits={
