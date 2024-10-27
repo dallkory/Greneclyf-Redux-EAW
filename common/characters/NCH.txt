@@ -30,12 +30,12 @@ characters={
 				small="gfx/interface/ideas/Advisors/NCH/Basalt_Shaw.tga"
 			}
 		}
-		allowed = {
-			NOT = {
-				rulling_party = communism
-			}
-		}
 		advisor={
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
 			slot = theorist
 			idea_token = NCH_generic_military_theorist
 			ledger = army
@@ -317,7 +317,7 @@ characters={
 	}
 	
 	 NCH_Realta_Dearg={
-		name=Realta_Dearg
+		name = Realta_Dearg
 		portraits={
 			army={
 				large="gfx/leaders/NCH/Realta_Dearg.tga"
@@ -359,7 +359,7 @@ characters={
 	}
 	 
 	 NCH_Zaliack={
-		name=Zaliack
+		name = Zaliack
 		portraits={
 			army={
 				large="gfx/leaders/NCH/Zaliack.tga"
@@ -397,7 +397,7 @@ characters={
 	}
 
 	NCH_Moronlan={
-		name=Moronlan
+		name = Moronlan
 		portraits={
 			army={
 				large="gfx/leaders/NCH/Moronlan.tga"

@@ -1,6 +1,12 @@
 spriteTypes = {
 
 	# Submod #
+
+	spriteType = {
+		name = "GFX_idea_Basalt_Shaw_Idea"
+		textureFile = "gfx/interface/ideas/NCH/Basalt_Shaw.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_grand_navy"
 		textureFile = "gfx/interface/ideas/NCH/shipwaves.dds"

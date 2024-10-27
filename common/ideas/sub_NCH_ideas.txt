@@ -1,6 +1,25 @@
 ideas = {
 	country = {
 
+		NCH_Basalt_Shaw = {
+			picture = Basalt_Shaw_Idea
+			allowed = {
+					NOT = {
+						has_government = communism
+					}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+				army_defence_factor = 0.075
+				army_org_factor = 0.05
+			}
+		}
+
 		NCH_grand_fleet = {
 			picture = grand_navy
 			allowed = {

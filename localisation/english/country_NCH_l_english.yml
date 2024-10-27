@@ -3,6 +3,9 @@
   # Leaders desc #
   QUEEN_G_POLITICS_DESC:0 "§YThe author of the portrait:§! dallkory"
   The_naive_reformer:0 "The naive reformer"
+
+  OIREN_POLITICS_DESC:0 "§YThe author of the portrait:§! dallkory"
+
   # Decision
   NCH_nuke_category:0 "Greneclyf Nuclear Program"
   NCH_build_reactor:0 "We have to start building a nuclear reactor"
@@ -89,6 +92,9 @@
 
 
   # tooltips & ideas
+  # ideas #
+  NCH_Basalt_Shaw:0 "Lord Protector Basalt Shaw"
+
   # tt for focus
   NCH_start_industrial:0 "Greneclyf has taken steps towards industrialization"
   start_industrialization:0 "We need workers for successful industrialization. We will try to artificially disperse urbanization by encouraging changelings to move to large cities. We will help them with moving, as well as provide jobs for those in need.\n\n"
@@ -111,6 +117,12 @@
 
   # Advisors #
 
+  Basalt_Shaw:0 "Basalt Shaw"
+  Marikel:0 "Marikel"
+  Ludas:0 "Ludas"
+  Arachi:0 "Arachi"
+  Yorilos:0 "Yorilos"
+  Tornus:0 "Tornus"
   NCH_Farris_Fork:0 "Farris Fork"
 
   Celal:0 "Celarl"
@@ -139,6 +151,11 @@
 
   # Army
   # Generals #
+
+  Furrelion:0 "Furrelion"
+  Realta_Dearg:0 "Realta Dearg"
+  Zaliack:0 "Zaliack"
+
   Turnus:0 "Turnus"
   Zaliack:0 "Zaliack"
 
