@@ -90,7 +90,7 @@ focus_tree = {
 	# First block
 	focus = {
 		id = NCH_school_of_engeneers
-		icon = GFX_goal_constitutional_guarantees
+		icon = GFX_school_for_engeneers
 		cost = 8
 		x = 47
 		y = 1

@@ -583,12 +583,6 @@ characters={
 			traits = { The_naive_reformer }
 			id=-1
 		}
-		country_leader={
-			desc="QUEEN_GF_POLITICS_DESC"
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
 		gender = female
 	}
 	NCH_oiren_of_oir={
@@ -604,6 +598,13 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			desc="QUEEN_GF_POLITICS_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+
 		gender = female
 	}
 	NCH_cader_sclerite={
