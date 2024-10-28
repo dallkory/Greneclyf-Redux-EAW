@@ -1,4 +1,5 @@
 focus_tree = {
+
 	id = greneclyf
 	country = {
 		factor = 0
@@ -11,6 +12,7 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 1300 }
 
 	# Submod #
+
 	# Industrialization #
 
 	# 0 line
@@ -4393,8 +4395,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
 	}
-
-
 
 
 

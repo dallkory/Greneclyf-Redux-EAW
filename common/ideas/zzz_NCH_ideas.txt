@@ -719,7 +719,7 @@ ideas = {
 		}
 
 		NCH_Military_Infiltration_idea = {
-			picture = NCH_changeling_submarine
+			picture = idea_NCH_changeling_submarine
 			allowed = {
 				always = no
 			}

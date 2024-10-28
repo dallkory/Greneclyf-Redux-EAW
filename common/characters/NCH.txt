@@ -577,7 +577,7 @@ characters={
 			}
 		}
 		country_leader={
-			desc="QUEEN_G_POLITICS_DESC"
+			desc="QUEEN_GYTHA_DESC"
 			ideology=conservatism
 			expire="1965.1.1.1"
 			traits = { The_naive_reformer }
