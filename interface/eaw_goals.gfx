@@ -3,9 +3,20 @@ spriteTypes = {
 	#### Equestria At War
 
 	# Submod #
+
+	spriteType = {
+		name = "GFX_goal_hart_side"
+		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_lorri_side"
+		textureFile = "gfx/interface/goals/NCH/goal_nch_lorri.dds"
+	}
+
 	spriteType = {
 		name = "GFX_school_for_engeneers"
-		textureFile = "gfx/interface/goals/NCH/school_for_engeeners.dds"
+		textureFile = "gfx/interface/goals/NCH/goal_school_for_engeeners.dds"
 	}
 
 	SpriteType = {
