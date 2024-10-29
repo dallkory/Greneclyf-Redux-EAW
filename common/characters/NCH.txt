@@ -286,7 +286,7 @@ characters={
 			desc = "NCH_Desc_Zaliack"
 			traits={ 
 				changeling_race_trait 
-				artillery
+				artillery_officer
 				inspiring_commissar
 			}
 			skill=2
