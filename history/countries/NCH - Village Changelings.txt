@@ -175,7 +175,8 @@ recruit_character = NCH_Yorilos
 recruit_character = NCH_Realta_Dearg
 recruit_character = NCH_Furrelion
 recruit_character = NCH_Marikel
-recruit_character = NCH_Tornus
+#recruit_character = NCH_Tornus
+recruit_character = NCH_Sul_Oraiste
 
 # leaders #
 recruit_character = NCH_queen_gytha

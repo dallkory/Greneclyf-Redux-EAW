@@ -21,6 +21,7 @@ characters={
 
 	# Advisors #
 
+	# lord - protecttor
 	NCH_Basalt_Shaw={
 		#name=NCH_theorist
 		name = Basalt_Shaw
@@ -131,6 +132,22 @@ characters={
 
 	# Political Advisors sub #
 
+	NCH_Sul_Oraiste = {
+		name = Sul_Oraiste
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Sul_Oraiste.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Sul_Oraiste
+			traits= {
+				fortification_engineer
+			}
+		}
+	}
+
 	NCH_Marikel={
 		name = Marikel
 		portraits={
@@ -191,22 +208,6 @@ characters={
 			slot = political_advisor
 			traits = { 
 				war_industrialist 
-			}
-		}
-	}
-
-	NCH_Tornus={
-		name = Tornus
-		portraits={
-			army={
-				small="gfx/interface/ideas/Advisors/NCH/Tornus.tga"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = NCH_fortification_engineer
-			traits = {
-				fortification_engineer
 			}
 		}
 	}
