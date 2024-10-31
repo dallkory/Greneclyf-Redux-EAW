@@ -2,6 +2,31 @@ spriteTypes = {
 
 	# Submod #
 	spriteType = {
+		name = "GFX_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_CZE_planning_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_tfv_can_conscription_crisis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Basalt_Shaw_Idea"
+		textureFile = "gfx/interface/ideas/NCH/Basalt_Shaw.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_grand_navy"
 		textureFile = "gfx/interface/ideas/NCH/shipwaves.dds"
 	}

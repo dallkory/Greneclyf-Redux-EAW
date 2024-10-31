@@ -1,0 +1,12 @@
+music_station = "eaw"
+
+music = {
+	song = "Radiarc_Carry_On"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			original_tag = NCH
+		}
+	}
+}

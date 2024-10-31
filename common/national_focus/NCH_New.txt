@@ -1,4 +1,5 @@
 focus_tree = {
+
 	id = greneclyf
 	country = {
 		factor = 0
@@ -11,6 +12,7 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 1300 }
 
 	# Submod #
+
 	# Industrialization #
 
 	# 0 line
@@ -90,7 +92,7 @@ focus_tree = {
 	# First block
 	focus = {
 		id = NCH_school_of_engeneers
-		icon = GFX_goal_constitutional_guarantees
+		icon = GFX_school_for_engeneers
 		cost = 8
 		x = 47
 		y = 1
@@ -855,10 +857,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = NCH_a_different_kind_of_changeling
-		}
-		prerequisite = {
 			focus = NCH_invite_the_equestrians
 		}
+
 		x = 4
 		y = 5
 		completion_reward = {
@@ -3743,7 +3744,7 @@ focus_tree = {
 	focus = {
 		id = NCH_support_admiral_petiole
 		text = NCH_support_admiral_petiole
-		icon = GFX_goal_nch_farris
+		icon = GFX_goal_lorri_side # New GFX+
 		cost = 10.00
 		prerequisite = {
 			focus = NCH_expand_the_naval_yards
@@ -3769,7 +3770,7 @@ focus_tree = {
 	focus = {
 		id = NCH_go_all_in
 		text = NCH_go_all_in
-		icon = GFX_goal_nch_petiole
+		icon = GFX_goal_hart_side # New GFX+
 		cost = 10.00
 		prerequisite = {
 			focus = NCH_expand_the_naval_yards
@@ -4394,8 +4395,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
 	}
-
-
 
 
 

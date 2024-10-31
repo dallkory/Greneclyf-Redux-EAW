@@ -1,6 +1,11 @@
 ﻿l_english:
- 
   # Submod #
+  # Leaders desc #
+  QUEEN_GYTHA_DESC:0 "§YThe author of the portrait:§! dallkory"
+  The_naive_reformer:0 "The naive reformer"
+
+  OIREN_POLITICS_DESC:0 "§YThe author of the portrait:§! dallkory"
+
   # Decision
   NCH_nuke_category:0 "Greneclyf Nuclear Program"
   NCH_build_reactor:0 "We have to start building a nuclear reactor"
@@ -38,6 +43,12 @@
   nuke_clue:0 "§To successfully start the reactor, we need magic crystals. Geologists report on a potential deposit near Mount Eispik. It is necessary to study the basics of industrial resource extraction so that we can start developing the field."
 
   # Focus #
+  # Old 
+  # Navy #
+
+  NCH_support_admiral_petiole:0 "Support Admiral Lorri's Plan"
+  NCH_go_all_in:0 "Accept Admiral Hart's Petition"
+
   # New
   NCH_start_industrialization:0 "The beginning of industrialization"
   NCH_start_industrialization_desc:0 "We must begin an industrialization program to bring our society and economy out of stagnation. By taking this path, we will try to catch up with our neighbors, and if we succeed, we will be able to surpass them."
@@ -48,7 +59,7 @@
   NCH_development_blosmport:0 "Blosomport Development"
   NCH_development_blosmport_desc:0 "Blosmport, our capital, should become the pearl of the island. We will expand the streets, create a new commercial zone, a port, and integrate new industrial enterprises into the urban environment. A full-fledged government district will appear in the city, as well as a free economic zone. "
 
-  NCH_development_bugsmere:0 "Development of the Beetle World"
+  NCH_development_bugsmere:0 "Development of the Bugsmere"
   NCH_development_bugsmere_desc:0 "The mountains near Zhukomir have always been famous for their invincibility. We are going to place the main capacities of our military-industrial complex in the gorges of these inaccessible mountains. The resource base of the region will contribute to increasing production volumes and reducing costs. "
 
   NCH_development_iceling:0 "The development of Aisling"
@@ -68,7 +79,7 @@
 
   # Right side
   NCH_nationa_railways_network:0 "National Railway Network"
-NCH_nationa_railways_network_desc:0 "The development of industrial potential is impossible without a developed transport infrastructure. In difficult geographical and climatic conditions, trains and railways can become the arteries of our economy through which industrial goods and resources will pass."
+  NCH_nationa_railways_network_desc:0 "The development of industrial potential is impossible without a developed transport infrastructure. In difficult geographical and climatic conditions, trains and railways can become the arteries of our economy through which industrial goods and resources will pass."
 
   NCH_foregin_advisors:0 "Invitation of foreign specialists"
   NCH_foregin_advisors_desc:0 "Our understanding of the world has long been outdated, and the scientific base has not been fully formed. All the science in Greneclyf, at the moment, rests only on experimenters and enthusiasts. By inviting or abducting scientists from all over the world, we will give an impetus to the development of our science."
@@ -87,6 +98,10 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
 
 
   # tooltips & ideas
+  # ideas #
+  NCH_Basalt_Shaw:0 "Lord Protector Basalt Shaw"
+  NCH_Basalt_Shaw_desc:0 "A living symbol of the unity of the noble families of Greneclyf. It's origin comes from both branches at the same time. A brave career officer and a dangerous duelist. He has established himself as the best swordsman in the country, but his main advantage is his selfless devotion to the royal families of Oir and Lehmann. The Queen's personal bodyguard."
+
   # tt for focus
   NCH_start_industrial:0 "Greneclyf has taken steps towards industrialization"
   start_industrialization:0 "We need workers for successful industrialization. We will try to artificially disperse urbanization by encouraging changelings to move to large cities. We will help them with moving, as well as provide jobs for those in need.\n\n"
@@ -109,8 +124,17 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
 
   # Advisors #
 
+  NCH_Sul_Oraiste:0 "Sul Oraiste"
+  Basalt_Shaw:0 "Basalt Shaw"
+  Marikel:0 "Marikel"
+  Ludas:0 "Ludas"
+  Arachi:0 "Arachi"
+  Yorilos:0 "Yorilos"
+  Tornus:0 "Tornus"
+  NCH_Farris_Fork:0 "Farris Fork"
+
   Celal:0 "Celarl"
-  Color_desc:0 "Franz Karl was born in 977 and from early childhood showed an interest in the exact sciences. He devoted his whole life to physics and the study of magic crystals. He has a theory that practically infinite energy can be extracted from crystals. Maybe these crystals will help in the development of our country?"
+  Color_desc:0 "Franz Karl was born in 977 and from early childhood showed an interest in the exact sciences. He devoted his whole life to physics and the study of magic crystals. He has a theory that practically infinite energy can be extracted from crystals. Maybe these crystals will help in the development of our country?\n\n§YThe author of the portrait:§! dallkory"
 
   Derkliones:0 "Derkliones"
 
@@ -124,25 +148,33 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
   # Admirals #
   #Hart
   Hart:0 "Hart"
-  NCH_Desc_Start:0 "§Heinrich Hart is a young and promising admiral, originally from the high mountains of the northern part of the island. His attention to detail has always been noted by commanders, as well as his masterful planning in military exercises. His subordinates are happy to communicate with him, and Hart himself enjoys spending weekends with his comrades in arms. Being a supporter of the creation of a large-tonnage fleet, he actively advocates the development of powerful shipbuilding. In his opinion, only our huge guns aimed at the seas and oceans can protect us from potential invaders.§!"
+  NCH_Desc_Start:0 "§Heinrich Hart is a young and promising admiral, originally from the high mountains of the northern part of the island. His attention to detail has always been noted by commanders, as well as his masterful planning in military exercises. His subordinates are happy to communicate with him, and Hart himself enjoys spending weekends with his comrades in arms. Being a supporter of the creation of a large-tonnage fleet, he actively advocates the development of powerful shipbuilding. In his opinion, only our huge guns aimed at the seas and oceans can protect us from potential invaders.§!\n\n§YThe author of the portrait:§! dallkory"
 
   NCH_new_stats_hart:0 "§gLevel§!: §Y3§!, (£trait_attack §Y3§!, £trait_defense §Y2§!, £trait_maneuvering §Y2§!, £trait_coordination §Y4§!)\n§gTraits§!: §C$superior_tactician$§!, §C$ironside$§!\n\n"
 
   #Lorri
   Lorri:0 "Lorri"
-  NCH_desc_Lorri:0 "Admiral Lorelei Lorri is the bright star of the Bloosmport Naval Academy. Cunning and secretive-that's how his enemies would describe him. He always keeps his ears sharp, which is no wonder for a submariner, because every, even the most insignificant sound at sea depth can indicate either a close prey or a change of role.\n\n\Lorry began his journey on a coastal-type submarine. In his first campaigns, as a captain, he proposed innovative tactics - the use of submarines in "shark packs". Later, these formations became known as the sharks of the Arctic waters. Lorry is in favor of expanding the submarine fleet. In his view, Greneclyf does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to rely on inconspicuous, but very effective submarines of a new type - submarine cruisers."
+  NCH_desc_Lorri:0 "Admiral Lorelei Lorri is the bright star of the Bloosmport Naval Academy. Cunning and secretive-that's how his enemies would describe him. He always keeps his ears sharp, which is no wonder for a submariner, because every, even the most insignificant sound at sea depth can indicate either a close prey or a change of role.\n\n\Lorry began his journey on a coastal-type submarine. In his first campaigns, as a captain, he proposed innovative tactics - the use of submarines in "shark packs". Later, these formations became known as the sharks of the Arctic waters. Lorry is in favor of expanding the submarine fleet. In his view, Greneclyf does not have sufficient resources and material and technical base for the maintenance and construction of a large-tonnage fleet, therefore, it is necessary to rely on inconspicuous, but very effective submarines of a new type - submarine cruisers.\n\n§YThe author of the portrait:§! dallkory"
   NCH_new_stats_lorri:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y1§!, £trait_maneuvering §Y2§!, £trait_coordination §Y2§!)\n§gTraits§!: §C$seawolf$§!\n\n"
 
   # Army
   # Generals #
+
+  Furrelion:0 "Furrelion"
+  Realta_Dearg:0 "Realta Dearg"
+  Zaliack:0 "Zaliack"
+
+  Turnus:0 "Turnus"
+  Zaliack:0 "Zaliack"
+
   Moronlan:0 "Moronlan"
-  NCH_Desc_Moronlan:0 "Field Marshal Moronlan is an old changeling hardened by years of service. He started out as a royal guardsman and served the Crown faithfully all his life. His steely self-control, the respect of his comrades and superiors contributed to his career. In 994, Greneclyf's armed forces adopted an organizational model from the riverlands. The rank of field marshal appeared in the army and no one doubted that Moronlan would become the first changeling of the island with this title.\n\n\Moronlan may be loyal to the crown, but he's definitely playing his game. Perhaps in the future his ambitions may become a problem for us. Or maybe we'll support the old field marshal? I wonder what kind of future he sees for Greneclyf."
+  NCH_Desc_Moronlan:0 "Field Marshal Moronlan is an old changeling hardened by years of service. He started out as a royal guardsman and served the Crown faithfully all his life. His steely self-control, the respect of his comrades and superiors contributed to his career. In 994, Greneclyf's armed forces adopted an organizational model from the riverlands. The rank of field marshal appeared in the army and no one doubted that Moronlan would become the first changeling of the island with this title.\n\n\Moronlan may be loyal to the crown, but he's definitely playing his game. Perhaps in the future his ambitions may become a problem for us. Or maybe we'll support the old field marshal? I wonder what kind of future he sees for Greneclyf.\n\n§YThe author of the portrait:§! dallkory"
 
   Marelay:0 "Merelay"
   NCH_new_stats_Merelay:0 "§Level §!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§DCHERTS§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
 
   Hailman:0 "Heilman"
-  NCH_Desc_Hailman:0 "Bayerr Heilman was nicknamed the changeling Grad for his ability to perform tasks in the most difficult conditions. His ability to get out of the most difficult situations is highly appreciated by the command and his subordinates."
+  NCH_Desc_Hailman:0 "Bayerr Heilman was nicknamed the changeling Grad for his ability to perform tasks in the most difficult conditions. His ability to get out of the most difficult situations is highly appreciated by the command and his subordinates.\n\n§YThe author of the portrait:§! dallkory"
 
   Coilholt:0 "Coilholt"
 
@@ -172,9 +204,9 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
 
   # Ad tech nuce bonus
   greneclyf.522.t:0 "Research gives results"
-  greneclyf.522.d:0 "Today at 11 a.m., Celarl ran into the palace dropping drawings and calculation sheets.\n\\n\Celarl: It's happened! It's happened! It's happened! We have understood the essence of the atom! In fact, an atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! Endless energy is trapped in it! I've done a lot of research, used different materials, and only the atoms of magic crystals have such power! Using thermonuclear fusion, splitting atoms and starting a chain reaction, we will be able to produce almost endless energy! Our technologies do not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\\n\Celarl insists that we send all available scientists in the country to help him create a blueprint for a nuclear reactor. It seems to make sense..."
+  greneclyf.522.d:0 "Today at 11 a.m., Celarl ran into the palace dropping drawings and calculation sheets.\n\n\ Celarl: It's happened! It's happened! It's happened! We have understood the essence of the atom! In fact, an atom is not the balls that make up everything in the world, as the ancient Changelings thought, but something more! Endless energy is trapped in it! I've done a lot of research, used different materials, and only the atoms of magic crystals have such power! Using thermonuclear fusion, splitting atoms and starting a chain reaction, we will be able to produce almost endless energy! Our technologies do not yet allow us to use the energy of crystals to the maximum, but we have already made an important discovery!\n\\n\Celarl insists that we send all available scientists in the country to help him create a blueprint for a nuclear reactor. It seems to make sense..."
 
-  greneclyf.522.a:0 "§9CELL will receive all necessary resources"
+  greneclyf.522.a:0 "§9Celarl will receive all necessary resources"
 
   # Reactor research
   greneclyf.513.t:0 "Research gives results"
@@ -627,10 +659,8 @@ NCH_nationa_railways_network_desc:0 "The development of industrial potential is 
  NCH_an_admiralty:0 "An Admiralty"
  NCH_an_admiralty_desc:0 "Being an island nation, Greneclyf will need to build up a maritime force. Before we can start however, we must have a structure with a dedicated naval corps of officers and theoriticians to get us started."
 
- NCH_support_admiral_petiole:0 "Support Admiral Fallon's Plan"
  NCH_support_admiral_petiole_desc:0 "Changelings have the innate talent for subterfuge, and while its use in greater society can be discussed at length, Fallon's plan for the seas applies that same philosophy to our vessels. Instead of the traditional surface ship, our main naval force should be underwater boats that can avoid detection and strike from below. Submarine warfare may be unorthodox, but it is both efficient and effective."
 
- NCH_go_all_in:0 "Accept Admiral Poethgils's Petition"
  NCH_go_all_in_desc:0 "Adapting our navy to modern warfare will not be enough, and Admiral Poethgils's petition goes into great technical detail on how Greneclyf can do better. He envisions the largest warship to have ever sailed the seas, based off of the great ships produced by Skyfall's naval yards, but larger, with more guns and armour. It will be a costly endeavour, but an unsinkable ship may very well be worth it."
 
  NCH_found_the_naval_academy:0 "Found the Naval Academy"

@@ -1,7 +1,15 @@
 on_actions = {
 
+
     on_daily_NCH = {
         effect = {
+
+			if = {
+				limit = { 
+					has_government = communism
+				}
+				remove_ideas = NCH_Basalt_Shaw
+			}
 
 			if = {
 				limit = {

@@ -755,6 +755,7 @@ can_form_river_fed = {
 	OR = {
 		is_riverlands_country_tag = yes
 		original_tag = GRY
+		original_tag = NCH
 	}
 }
 

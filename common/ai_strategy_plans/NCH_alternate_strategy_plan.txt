@@ -1,0 +1,157 @@
+NCH_alternate_communist = {
+	name = "Island communism"
+	desc = ""
+
+	allowed = {
+		original_tag = NCH
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = NCH_AI_COMMUNIST
+			has_game_rule = {
+				rule = NCH_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_a_new_path
+		NCH_invite_cader_sclerite
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+NCH_alternate_neutrality = {
+	name = "Little kemerskai tries to impress his idol"
+	desc = ""
+
+	allowed = {
+		original_tag = NCH
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = NCH_AI_NEUTRALITY
+			has_game_rule = {
+				rule = NCH_ai_behavior
+				option = NEUTRALITY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_maintain_the_status_quo
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+NCH_alternate_facism = {
+	name = "Wholesome reactionary?!"
+	desc = ""
+
+	allowed = {
+		original_tag = NCH
+		has_country_flag = NCH_AI_FASCISM
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = NCH_AI_FASCISM
+			has_game_rule = {
+				rule = NCH_ai_behavior
+				option = FASCISM
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		NCH_crisis_of_faith
+		NCH_convene_the_council
+		NCH_a_new_path
+		NCH_the_old_ways
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

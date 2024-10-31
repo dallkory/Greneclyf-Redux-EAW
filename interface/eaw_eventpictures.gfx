@@ -32,7 +32,13 @@ spriteTypes = {
 	# 513
 	spriteType = {
 		name = "GFX_event_reactor_has_research"
-		textureFile = "gfx/event_picture/event_eqc_nuclear_power.dds"
+		textureFile = "gfx/event_picture/event_research_gives_results_513.dds"
+	}
+
+	# 514 
+	spriteType = {
+		name = "GFX_event_reactor_has_not_built"
+		textureFile = "gfx/event_picture/event_reactor_has_not_built_514.dds"
 	}
 
 	# 515
@@ -50,7 +56,7 @@ spriteTypes = {
 	# 517
 	spriteType = {
 		name = "GFX_event_modernization"
-		textureFile = "gfx/event_picture/Nuce_event_tech_bonus.dds"
+		textureFile = "gfx/event_picture/event_modernization_517.dds"
 	}
 
 	# 611
@@ -63,6 +69,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_find_resources"
 		textureFile = "gfx/event_picture/Resources_event.dds"
+	}
+
+	# 614
+	spriteType = {
+		name = "GFX_event_crew_for_hatcher"
+		textureFile = "gfx/event_picture/event_crew_for_hatcher_614.dds"
 	}
 
 	# 412 
