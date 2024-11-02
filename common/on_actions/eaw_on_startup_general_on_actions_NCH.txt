@@ -1,0 +1,35 @@
+on_actions = {
+
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			
+		# Submod #
+		# Operative setup
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				set_global_flag = starting_operatives
+				set_variable = { global.onstartup_operative = 0 }
+				NCH = {
+					create_operative_leader = {
+						name = "Tribbie"
+						GFX = GFX_NCH_operative_Tribbie
+						bypass_recruitment = yes
+						available_to_spy_master = yes
+						female = no
+						nationalities = {
+						NCH CCN MAN CHN
+						}
+						traits = {
+							operative_linguist
+							operative_spyhunter
+							changeling_race_trait
+						}
+					}
+				}
+			}
+		}
+	}
+}
