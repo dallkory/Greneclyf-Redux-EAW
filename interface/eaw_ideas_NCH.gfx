@@ -1,0 +1,51 @@
+spriteTypes = {
+
+	# Submod #
+	spriteType = {
+		name = "GFX_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_CZE_planning_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_tfv_can_conscription_crisis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Basalt_Shaw_Idea"
+		textureFile = "gfx/interface/ideas/NCH/Basalt_Shaw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_grand_navy"
+		textureFile = "gfx/interface/ideas/NCH/shipwaves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bug_school"
+		textureFile = "gfx/interface/ideas/NCH/school_for_engeneers.dds"
+		}
+	spriteType = {
+		name = "GFX_idea_civil_laws" 
+		textureFile = "gfx/interface/ideas/NCH/generic_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_science_up"
+		textureFile = "gfx/interface/ideas/NCH/BAR_science_party2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_medium_industry"
+		textureFile = "gfx/interface/ideas/NCH/IRE_medium_industry.dds"
+	}
+}
+
+

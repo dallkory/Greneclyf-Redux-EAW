@@ -1,0 +1,90 @@
+spriteTypes = {
+
+	#### Equestria At War
+
+	# Submod #
+
+	spriteType = {
+		name = "GFX_goal_hart_side"
+		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_lorri_side"
+		textureFile = "gfx/interface/goals/NCH/goal_nch_lorri.dds"
+	}
+
+	spriteType = {
+		name = "GFX_school_for_engeneers"
+		textureFile = "gfx/interface/goals/NCH/goal_school_for_engeeners.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_nightmare_moon"
+		texturefile = "gfx/interface/goals/BUF/goal_nightmare_moon.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_night_supporters"
+		texturefile = "gfx/interface/goals/BUF/goal_night_supporters.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_celestia_raising_the_sun"
+		texturefile = "gfx/interface/goals/EQS/goal_celestia_raising_the_sun.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_equestria_divide"
+		texturefile = "gfx/interface/goals/EQS/goal_equestria_divide.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_shadowbolts"
+		texturefile = "gfx/interface/goals/NLR/goal_shadowbolts.tga"
+	}
+	SpriteType = {
+		name = "GFX_goal_crystal_empire"
+		texturefile = "gfx/interface/goals/EQS/goal_crystal_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_crystal_empire_sub"
+		texturefile = "gfx/interface/goals/EQS/goal_crystal_empire_sub.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_crush_stalliongrad"
+		texturefile = "gfx/interface/goals/STL/goal_crush_stalliongrad.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_nlr"
+		texturefile = "gfx/interface/goals/NLR/goal_nlr.tga"
+	}
+	SpriteType = {
+		name = "GFX_goal_unicorn_academy"
+		texturefile = "gfx/interface/goals/EQS/goal_unicorn_academy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_luna_nova"
+		texturefile = "gfx/interface/goals/EQS/goal_luna_nova.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_news"
+		texturefile = "gfx/interface/goals/EQS/goal_news.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_crystal_heart"
+		texturefile = "gfx/interface/goals/EQS/goal_crystal_heart.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_stg_palace"
+		texturefile = "gfx/interface/goals/STG/goal_stg_palace.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_industry_stg"
+		texturefile = "gfx/interface/goals/STG/goal_industry_stg.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_stg_propaganda"
+		texturefile = "gfx/interface/goals/STG/goal_stg_propaganda.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_railway_stg"
+		texturefile = "gfx/interface/goals/STG/goal_railway_stg.dds"
+	}
+}

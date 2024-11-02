@@ -1,0 +1,13 @@
+spriteTypes = {
+	####################################################################
+	#################### GENERIC #######################################
+	####################################################################
+	##### Generic Pony #####
+	### Leaders ###
+
+	# Submod #
+	spriteType = {
+		name = "GFX_NCH_operative_Tribbie"
+		textureFile = "gfx/leaders/NCH/Tribbie.tga"
+	}
+}

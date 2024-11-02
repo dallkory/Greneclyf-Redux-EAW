@@ -1,0 +1,69 @@
+on_actions = {
+	on_startup = {
+		effect = {
+
+			# Submod #
+
+			NCH = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = NCH_ai_behavior
+							option = RANDOM
+						}
+					}
+					random_list = {
+						25 = { NCH = { set_country_flag = NCH_AI_historical_patch }}
+						25 = { NCH = { set_country_flag = NCH_AI_FASCISM }}
+						25 = { NCH = { set_country_flag = NCH_AI_NEUTRALITY }}
+						25 = {NCH = { set_country_flag = NCH_AI_COMMUNIST }}
+					}
+				}
+
+				 if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = {
+							rule = NCH_AI_BEHAVIOR
+							option = GYTHA  
+						}
+					}
+					set_country_flag = NCH_Gytha_path_flag  
+				 }
+
+				 if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = {
+							rule = NCH_AI_BEHAVIOR
+							option = NCH_alternate_facism  
+						}
+					}
+					set_country_flag = NCH_AI_FASCISM
+				 }
+
+				 if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = {
+							rule = NCH_AI_BEHAVIOR
+							option = NCH_alternate_communist
+						}
+					}
+					set_country_flag = NCH_AI_COMMUNIST
+				 }
+
+				 if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = {
+							rule = NCH_AI_BEHAVIOR
+							option = NCH_alternate_neutrality
+						}
+					}
+					set_country_flag = NCH_AI_NEUTRALITY
+				 }
+			}
+		}
+	}
+}
