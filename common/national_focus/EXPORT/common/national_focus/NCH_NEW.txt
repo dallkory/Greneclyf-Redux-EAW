@@ -1,16 +1,9 @@
 focus_tree = {
-	
-	id = greneclyf
+	id = NCH_NEW
 	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = NCH
-		}
+		factor = 1
 	}
-	default = no
-	continuous_focus_position = { x = 100 y = 1300 }
-
+	default = yes
 	focus = {
 		id = Legacy
 		icon = GFX_goal_unknown
