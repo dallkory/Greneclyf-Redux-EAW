@@ -1,4 +1,4 @@
-version="1.1"
+version="1.11"
 tags={
 	"Events"
 	"Graphics"
@@ -7,11 +7,7 @@ tags={
 dependencies={
 	"Equestria at War"
 }
-dependency = {
-	"Equestria at War"
-}
-
 picture="thumbnail.png"
 name="Submod for Greneclyf | Equestria At War"
-supported_version="1.14.10"
+supported_version="1.15.0"
 remote_file_id="3330541760"
