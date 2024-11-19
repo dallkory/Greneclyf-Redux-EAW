@@ -22,23 +22,7 @@ on_actions = {
 				 }
 				 set_country_flag = NCH_start_industrial
 			}
-
-			if = {
-				NOT = {
-					has_country_flag = nuclear_reactor_on_act_build
-				}
-				if = {
-					limit = {
-						nuclear_reactor > 0
-					}
-					set_country_flag = nuclear_reactor_on_act_build
-					country_event = {
-						id = greneclyf.590
-						days = 0
-					}
-				}
-			}
-			
+	
 			if = {
                 limit = {
 					focus_progress = {
@@ -75,28 +59,6 @@ on_actions = {
                     days = 0
                 } 
             }
-
-            if = {
-                limit = {
-					has_tech = nuclear_reactor 
-					has_tech = atomic_research
-              	 	}
-
-					set_country_flag = has_tech_nuce
-           		 }
-        	
-            if = {
-				
-                limit = {
-					has_country_flag = has_tech_nuce
-					has_country_flag = gr.522.complete
-
-           		 }
-					country_event = {
-						id = greneclyf.513
-						days = 0
-						   }
-        	}
 		}
 	}
 }
