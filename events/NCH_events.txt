@@ -5,24 +5,24 @@ add_namespace = greneclyf_crisis
 
 # Example #
 
-country_event = {
-	id = greneclyf.1
-	title = greneclyf.511.t
-	desc = greneclyf.511.d
-	picture = GFX_event_celarl
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option={
-		name = greneclyf.1.a 
-		add_political_power = -150
-		add_manpower = -200
-	}
-	option = {
-		name = greneclyf.511.b
-		custom_effect_tooltip = greneclyf.511.b.tt
-		}
-}
+#country_event = {
+#	id = greneclyf.1
+#	title = greneclyf.511.t
+#	desc = greneclyf.511.d
+#	picture = GFX_event_celarl
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option={
+#		name = greneclyf.1.a 
+#		add_political_power = -150
+#		add_manpower = -200
+#	}
+#	option = {
+#		name = greneclyf.511.b
+#		custom_effect_tooltip = greneclyf.511.b.tt
+#		}
+#}
 
 country_event = {
 	id = greneclyf.1
