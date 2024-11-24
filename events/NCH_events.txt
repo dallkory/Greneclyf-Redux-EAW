@@ -1,4 +1,4 @@
-﻿add_namespace = greneclyf
+﻿add_namespace = greneclyf_redux
 add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
@@ -6,7 +6,7 @@ add_namespace = greneclyf_crisis
 # Example #
 
 #country_event = {
-#	id = greneclyf.1
+#	id = greneclyf.1000
 #	title = greneclyf.511.t
 #	desc = greneclyf.511.d
 #	picture = GFX_event_celarl
@@ -25,16 +25,16 @@ add_namespace = greneclyf_crisis
 #}
 
 country_event = {
-	id = greneclyf.1
-	title = greneclyf.1.t
-	desc = greneclyf.1.d
+	id = greneclyf_redux.1
+	title = greneclyf_redux.1.t
+	desc = greneclyf_redux.1.d
 	picture = GFX_unknow
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option={
-		name = greneclyf.1.a 
-		add_political_power = -150
-		add_manpower = -200
+		name = greneclyf_redux.1.a 
+		add_political_power = 50
+		add_ideas = NCH_Basalt_Shaw
 	}
 }

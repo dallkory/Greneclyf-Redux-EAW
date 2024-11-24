@@ -137,7 +137,8 @@ add_ideas = {
 	NCH_FBK_pact
 	lack_of_scientists
 	NCH_idyllic_society
-	NCH_Basalt_Shaw
+	#NCH_Basalt_Shaw
+	NCH_Overpopulation
 }
 
 add_tech_bonus = {
@@ -155,6 +156,8 @@ add_tech_bonus = {
 add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.83
+
+
 # Submod #
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart

@@ -1,5 +1,11 @@
 spriteTypes = {
 
+	### REDUX ###
+	spriteType = {
+		name = "GFX_idea_overpopulation"
+		textureFile = "gfx/interface/ideas/NCH/idea_Overpopulation.tga"
+	}
+
 	# Submod #
 	spriteType = {
 		name = "GFX_idea_NCH_changeling_submarine"

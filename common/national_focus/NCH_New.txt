@@ -11,16 +11,171 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 100 y = 1300 }
 
-# PRE CRISIS BRANCH #
+	# PRE CRISIS BRANCH #
 
 	focus = {
 		id = NCH_legacy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		x = 33
 		y = 2
 
+		completion_reward = {
+			
+			country_event = {
+				id = greneclyf_redux.1
+			}
+		}
+	}	
+
+	focus = {
+		id = NCH_divided_house_Copy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_legacy
+		}
+		x = 31
+		y = 3
+
 	}
+
+	focus = {
+		id = NCH_parliament_convocation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_legacy
+		}
+		x = 35
+		y = 3
+
+	}
+
+	focus = {
+		id = NCH_Spy_experience
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_divided_house_Copy
+		}
+		x = 30
+		y = 4
+
+	}
+
+	focus = {
+		id = NCH_new_housing
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_divided_house_Copy
+		}
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 33
+		y = 4
+
+	}
+
+	focus = {
+		id = NCH_lift_the_veil
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 36
+		y = 4
+
+	}
+
+	focus = {
+		id = NCH_find_they_job
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 29
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_new_hives
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 31
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_learn_from_mistakes
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_housing
+		}
+		x = 33
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_Esteblish_trade_guild
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 35
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_take_look_around
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = NCH_time_to_look_further
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_learn_from_mistakes
+		}
+		prerequisite = {
+			focus = NCH_Esteblish_trade_guild
+		}
+		prerequisite = {
+			focus = NCH_new_hives
+		}
+		prerequisite = {
+			focus = NCH_find_they_job
+		}
+		prerequisite = {
+			focus = NCH_take_look_around
+		}
+		x = 33
+		y = 6
+
+	}
+
+	# CRISIS BRANCH #
+
 	focus = {
 		id = NCH_beginning_of_crisis
 		icon = GFX_goal_unknown
@@ -68,7 +223,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NCH_take_a_mpment
+		id = NCH_take_a_equipment
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -125,7 +280,7 @@ focus_tree = {
 			focus = NCH_equipment_suppporter
 		}
 		prerequisite = {
-			focus = NCH_take_a_mpment
+			focus = NCH_take_a_equipment
 		}
 		x = 7
 		y = 6
@@ -361,50 +516,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
-		id = NCH_divided_house_Copy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_legacy
-		}
-		x = 31
-		y = 3
 
-	}
-	focus = {
-		id = NCH_Spy_experience
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_divided_house_Copy
-		}
-		x = 30
-		y = 4
 
-	}
-	focus = {
-		id = NCH_find_they_job
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_Spy_experience
-		}
-		x = 29
-		y = 5
 
-	}
-	focus = {
-		id = NCH_new_hives
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_Spy_experience
-		}
-		x = 31
-		y = 5
 
-	}
 	focus = {
 		id = NCH_emergacy_plan
 		icon = GFX_goal_unknown
@@ -427,42 +542,9 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
-		id = NCH_parliament_convocation
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_legacy
-		}
-		x = 35
-		y = 3
 
-	}
-	focus = {
-		id = NCH_new_housing
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_divided_house_Copy
-		}
-		prerequisite = {
-			focus = NCH_parliament_convocation
-		}
-		x = 33
-		y = 4
 
-	}
-	focus = {
-		id = NCH_learn_from_mistakes
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_new_housing
-		}
-		x = 33
-		y = 5
 
-	}
 	focus = {
 		id = NCH_call_for_unity
 		icon = GFX_goal_unknown
@@ -474,62 +556,8 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
-		id = NCH_lift_the_veil
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_parliament_convocation
-		}
-		x = 36
-		y = 4
 
-	}
-	focus = {
-		id = NCH_Esteblish_trade_guild
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_lift_the_veil
-		}
-		x = 35
-		y = 5
 
-	}
-	focus = {
-		id = NCH_take_look_around
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_lift_the_veil
-		}
-		x = 37
-		y = 5
-
-	}
-	focus = {
-		id = NCH_time_to_look_further
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_learn_from_mistakes
-		}
-		prerequisite = {
-			focus = NCH_Esteblish_trade_guild
-		}
-		prerequisite = {
-			focus = NCH_new_hives
-		}
-		prerequisite = {
-			focus = NCH_find_they_job
-		}
-		prerequisite = {
-			focus = NCH_take_look_around
-		}
-		x = 33
-		y = 6
-
-	}
 	focus = {
 		id = NCH_to_neighbors
 		icon = GFX_goal_unknown

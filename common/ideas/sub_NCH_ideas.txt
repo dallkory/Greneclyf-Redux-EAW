@@ -1,6 +1,24 @@
 ideas = {
 	country = {
 
+		# REDUX #
+		NCH_Overpopulation = {
+			picture = GFX_idea_overpopulation
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				monthly_population = 1.0
+				communism_drift = 0.02
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+			}
+		}
+
+
+
 		NCH_Basalt_Shaw = {
 			picture = Basalt_Shaw_Idea
 			allowed = {

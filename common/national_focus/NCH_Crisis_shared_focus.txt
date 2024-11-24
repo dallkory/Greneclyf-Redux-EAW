@@ -1,0 +1,6 @@
+shared_focus = {
+	id = NCH_
+	cost = x
+	x = x
+	y = x
+}
