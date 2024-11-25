@@ -3,7 +3,7 @@ ideas = {
 
 		# REDUX #
 		NCH_Overpopulation = {
-			picture = GFX_idea_overpopulation
+			picture = overpopulation
 			allowed = {
 				always = yes
 			}

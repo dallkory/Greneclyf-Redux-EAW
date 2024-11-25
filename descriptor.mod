@@ -7,9 +7,6 @@ tags={
 dependencies={
 	"Equestria at War"
 }
-dependency = {
-	"Equestria at War"
-}
 
 picture="thumbnail.png"
 name="Greneclyf Redux | Equestria At War"

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = NCH_legacy
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 1
 		x = 33
 		y = 2
 
@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = NCH_divided_house_Copy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_legacy
 		}
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = NCH_parliament_convocation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_legacy
 		}
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Spy_experience
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_divided_house_Copy
 		}
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = NCH_new_housing
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_divided_house_Copy
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = NCH_lift_the_veil
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_parliament_convocation
 		}
@@ -94,7 +94,7 @@ focus_tree = {
 	focus = {
 		id = NCH_find_they_job
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_Spy_experience
 		}
@@ -106,7 +106,7 @@ focus_tree = {
 	focus = {
 		id = NCH_new_hives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_Spy_experience
 		}
@@ -118,7 +118,7 @@ focus_tree = {
 	focus = {
 		id = NCH_learn_from_mistakes
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_new_housing
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Esteblish_trade_guild
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
 		}
@@ -142,7 +142,7 @@ focus_tree = {
 	focus = {
 		id = NCH_take_look_around
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
 		}
@@ -150,10 +150,12 @@ focus_tree = {
 		y = 5
 
 	}
+
 	focus = {
 		id = NCH_time_to_look_further
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
+
 		prerequisite = {
 			focus = NCH_learn_from_mistakes
 		}
