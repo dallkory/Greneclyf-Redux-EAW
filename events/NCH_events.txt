@@ -38,3 +38,32 @@ country_event = {
 		add_ideas = NCH_Basalt_Shaw
 	}
 }
+
+country_event = {
+	id = greneclyf_redux.2
+	title = greneclyf_redux.2.t
+	desc = greneclyf_redux.2.d
+	picture = GFX_unknow
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option={
+		name = greneclyf_redux.2.a 
+		#add_political_power = 50
+		set_country_flag = pairlament_convenction_completed
+	}
+}
+
+# Gytha Jorney #
+country_event = {
+	id = greneclyf_redux.3
+	title = greneclyf_redux.3.t
+	desc = greneclyf_redux.3.d
+	picture = GFX_unknow
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option={
+		name = greneclyf_redux.3.a 
+	}
+}

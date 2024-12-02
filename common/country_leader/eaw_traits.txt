@@ -10,8 +10,11 @@
 @chief_experience_gain_medium = 0.30
 @chief_experience_gain_high = 0.40
 
+
 leader_traits = {
-	# Submod #
+
+	# REDUX #
+
 	The_naive_reformer = {
 		random = no
 		political_power_factor = 0.05
@@ -20,6 +23,7 @@ leader_traits = {
 		democratic_acceptance = 50
 	}
 
+	# Submod #
 	silent_workbug2 = {
 		random = no
 		political_power_factor = 0.1

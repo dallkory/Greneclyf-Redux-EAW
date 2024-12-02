@@ -2,6 +2,20 @@ ideas = {
 	country = {
 
 		# REDUX #
+
+		NCH_luddites = {
+			picture
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05 
+				local_resources_factor = -0.2
+				stability_factor = -0.05
+			}
+		}
+
 		NCH_Overpopulation = {
 			picture = overpopulation
 			allowed = {
@@ -17,8 +31,6 @@ ideas = {
 			}
 		}
 
-
-
 		NCH_Basalt_Shaw = {
 			picture = Basalt_Shaw_Idea
 			allowed = {
@@ -32,11 +44,15 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_gain = -0.5
+				political_power_gain = -0.35
 				army_defence_factor = 0.075
 				army_org_factor = 0.05
 			}
 		}
+
+		
+
+		# SUBMOD #
 
 		NCH_submarine_buff_idea = {
 			picture = NCH_changeling_submarine

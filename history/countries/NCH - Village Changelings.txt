@@ -117,12 +117,13 @@ if = {
 }
 # End of ship stuff
 
+# REDUX #
 set_convoys = 20
 set_popularities = {
-	democratic = 94
-	fascism = 0
+	democratic = 90
+	fascism = 3
 	communism = 6
-	neutrality = 0
+	neutrality = 1
 }
 set_politics = {
 	ruling_party = democratic
@@ -134,9 +135,11 @@ set_politics = {
 add_ideas = {
 	isolation
 	agrarian_society
-	NCH_FBK_pact
 	lack_of_scientists
+
 	NCH_idyllic_society
+	NCH_luddites
+	NCH_FBK_pact
 	#NCH_Basalt_Shaw
 	NCH_Overpopulation
 }
@@ -147,12 +150,14 @@ add_tech_bonus = {
 	uses = 1
 	technology = tech_changeling_a
 }
+
 add_tech_bonus = {
 	name = specialised_drones
 	bonus = 1
 	uses = 1
 	technology = tech_changeling_a2
 }
+
 add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.83
@@ -224,5 +229,3 @@ set_rule = {
 	can_generate_female_unit_leaders  = yes
 	can_generate_female_country_leaders = yes
 }
-
-#	name = "P. Syntrophy"

@@ -11,6 +11,10 @@ on_actions = {
 				remove_ideas = NCH_Basalt_Shaw
 			}
 
+
+
+			# SUB MOD EXAMPLE #
+
 			if = {
 				limit = {
 					OR = {

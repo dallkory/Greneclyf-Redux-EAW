@@ -1,6 +1,8 @@
 # Submod #
 NCH_nuke_category = {
 
+	# REDUX #
+
 
 	NCH_start_nuce_program = {
 		icon = gfx_decision_icon_default

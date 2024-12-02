@@ -22,14 +22,16 @@ focus_tree = {
 
 		completion_reward = {
 			
-			country_event = {
-				id = greneclyf_redux.1
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_redux.1
+				}
 			}
 		}
 	}	
 
 	focus = {
-		id = NCH_divided_house_Copy
+		id = NCH_divided_house
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
@@ -50,6 +52,13 @@ focus_tree = {
 		x = 35
 		y = 3
 
+		completion_reward = {
+			country_event = {
+				days = 3
+				id = greneclyf_redux.2
+			}
+		}
+
 	}
 
 	focus = {
@@ -57,7 +66,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = NCH_divided_house_Copy
+			focus = NCH_divided_house
 		}
 		x = 30
 		y = 4
@@ -69,7 +78,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = NCH_divided_house_Copy
+			focus = NCH_divided_house
 		}
 		prerequisite = {
 			focus = NCH_parliament_convocation
@@ -732,6 +741,6 @@ focus_tree = {
 		x = 39
 		y = 12
 
-		}
 	}
 }
+
