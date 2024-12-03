@@ -352,18 +352,6 @@ ideas = {
 			modifier = { fascism_drift = 0.01 }
 		}
 
-		NCH_idyllic_society = {
-			picture = EQS_friendly_harmony
-			allowed = { always = no }
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			research_bonus = {
-				race_tech = -0.1
-			}
-		}
-
 		NCH_trade_1 = { #these ideas are for NCH
 			picture = chi_hyper_inflation
 			allowed = {
