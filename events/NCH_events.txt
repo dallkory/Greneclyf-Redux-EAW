@@ -24,6 +24,7 @@ add_namespace = greneclyf_crisis
 #		}
 #}
 
+# LEGACY #
 country_event = {
 	id = greneclyf_redux.1
 	title = greneclyf_redux.1.t
@@ -36,9 +37,11 @@ country_event = {
 		name = greneclyf_redux.1.a 
 		add_political_power = 50
 		add_ideas = NCH_Basalt_Shaw
+		set_country_flag = NCH_Moronlan_Legacy
 	}
 }
 
+#PAIRLAMENT#
 country_event = {
 	id = greneclyf_redux.2
 	title = greneclyf_redux.2.t
@@ -51,6 +54,7 @@ country_event = {
 		name = greneclyf_redux.2.a 
 		#add_political_power = 50
 		set_country_flag = pairlament_convenction_completed
+
 	}
 }
 
@@ -65,5 +69,87 @@ country_event = {
 
 	option={
 		name = greneclyf_redux.3.a 
+		custom_effect_tooltip = NCH_lay_down_LNG_Gytha
+		set_country_flag = NCH_Jorney_started
+
+		country_event = {
+			id = greneclyf_redux.4
+			days = 7
+		}
+
+		create_ship = {
+
+			name = "LnG Gytha"
+			type = battleship
+			equipment_variant = 1
+			start_experience_factor = 0.07
+			
+			equipment_variant =  {
+				ship_hull_pre_dreadnought = {
+                    amount = 1
+                    owner = NCH 
+                    version_name = "Queen Class"
+				}
+			}
+		}
 	}
 }
+
+# ACELING JORNEY #
+country_event = {
+	id = greneclyf_redux.4
+	title = greneclyf_redux.4.t
+	desc = greneclyf_redux.4.d
+	picture = GFX_unknow
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option={
+		name = greneclyf_redux.4.a 
+		#add_political_power = 50
+
+		country_event = {
+			id = greneclyf_redux.5
+			days = 7
+		}
+	}
+}
+
+# BUGSMERE JORNEY #
+country_event = {
+	id = greneclyf_redux.5
+	title = greneclyf_redux.5.t
+	desc = greneclyf_redux.5.d
+	picture = GFX_unknow
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option={
+		name = greneclyf_redux.5.a 
+		#add_political_power = 50
+
+		country_event = {
+			id = greneclyf_redux.6
+			days = 7
+		}
+	}
+}
+
+# WAY TO HOME JORNEY #
+country_event = {
+	id = greneclyf_redux.6
+	title = greneclyf_redux.6.t
+	desc = greneclyf_redux.6.d
+	picture = GFX_unknow
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option={
+		name = greneclyf_redux.6.a 
+		#add_political_power = 50
+		set_country_flag = NCH_Jorney_completed
+		clr_country_flag = NCH_Jorney_started
+	}
+}
+
+#ship = { name = "LnG Gytha" definition = battleship start_experience_factor = 0.07 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = NCH version_name = "Queen Class" } } }

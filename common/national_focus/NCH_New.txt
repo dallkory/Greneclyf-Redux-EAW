@@ -21,14 +21,50 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_political_power = 50
+
 			hidden_effect = {
 				country_event = {
 					id = greneclyf_redux.1
 				}
 			}
+			set_country_flag = NCH_Jorney_not_started
 		}
 	}	
+
+	focus = {
+		id = NCH_parliament_convocation
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = NCH_legacy
+		}
+
+			available = {
+				
+				custom_effect_tooltip = NCH_Jorney_finish_or_not_started
+					and = {
+						NOT = {
+							has_country_flag = NCH_Jorney_started # Приключение началось
+						}
+							or = {
+								has_country_flag = NCH_Jorney_completed
+								has_country_flag = NCH_Jorney_not_started
+							}
+					}
+			}
+
+		x = 35
+		y = 3
+
+		completion_reward = {
+			country_event = {
+			days = 0
+			id = greneclyf_redux.2
+			}
+		}
+	}
 
 	focus = {
 		id = NCH_divided_house
@@ -40,25 +76,12 @@ focus_tree = {
 		x = 31
 		y = 3
 
-	}
-
-	focus = {
-		id = NCH_parliament_convocation
-		icon = GFX_goal_unknown
-		cost = 2
-		prerequisite = {
-			focus = NCH_legacy
-		}
-		x = 35
-		y = 3
-
 		completion_reward = {
 			country_event = {
-				days = 3
-				id = greneclyf_redux.2
+				id = greneclyf_redux.3
+				days = 1
 			}
 		}
-
 	}
 
 	focus = {

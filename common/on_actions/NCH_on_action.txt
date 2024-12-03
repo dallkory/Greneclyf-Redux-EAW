@@ -11,6 +11,30 @@ on_actions = {
 				remove_ideas = NCH_Basalt_Shaw
 			}
 
+			if = {
+				limit = {
+					has_country_flag = NCH_Moronlan_Legacy
+				}
+				add_field_marshal_role = {
+					id = NCH_Moronlan
+					name = Moronlan
+					portraits={
+						army={
+							large="gfx/leaders/NCH/Moronlan.tga"
+							small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
+						}
+					}
+
+					desc = "NCH_Desc_Moronlan"
+					traits={ changeling_race_trait brilliant_strategist old_guard }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}
+			}
+			
 
 
 			# SUB MOD EXAMPLE #
