@@ -412,12 +412,9 @@ characters={
 			slot = army_chief
 			idea_token = NCH_Moronlan
 			cost = 100
+
 			available = {
 				has_country_flag = NCH_Moronlan_Legacy
-			}
-
-			allowed = {
-				original_tag = NCH
 			}
 
 			traits = {

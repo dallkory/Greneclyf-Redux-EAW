@@ -1,4 +1,7 @@
 prospect_for_resources = {
+
+	### REDUX ###
+
 	# Submod #
 	# Resources for fleet
 
@@ -423,6 +426,20 @@ prospect_for_resources = {
 	# Submod #
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 	develop_baltimare_aluminium = { #13
 

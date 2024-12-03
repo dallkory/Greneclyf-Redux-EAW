@@ -1,7 +1,8 @@
 ideas = {
 	country = {
 
-		# REDUX #
+		### REDUX ###
+
 		NCH_idyllic_society = {
 			picture = EQS_friendly_harmony
 			allowed = { always = no }
@@ -39,7 +40,8 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				monthly_population = 1.0
+				weekly_manpower = 250
+				monthly_population = 2.5
 				communism_drift = 0.02
 				stability_weekly = -0.001
 				war_support_weekly = -0.001
