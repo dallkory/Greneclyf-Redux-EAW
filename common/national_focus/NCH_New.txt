@@ -100,7 +100,6 @@ focus_tree = {
 				days = 0
 			}
 		}
-
 	}
 
 	focus = {

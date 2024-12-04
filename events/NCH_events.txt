@@ -188,4 +188,18 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	country_event = {
+		id = greneclyf_redux.8
+		title = greneclyf_redux.8.t
+		desc = greneclyf_redux.8.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.8.a
+			add_ideas = NCH_economic_status_protect #Economic type
+		}
+	}
+
 #ship = { name = "LnG Gytha" definition = battleship start_experience_factor = 0.07 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = NCH version_name = "Queen Class" } } }

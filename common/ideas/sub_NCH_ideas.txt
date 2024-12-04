@@ -13,16 +13,39 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				resources_to_market = -0.25
-				industrial_capacity_factory = 0.10 
-				trade_cost_factor = 0.15
-				trade_opinion_factor = 0.30
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				resource_gain_efficiency = 0.05
+				trade_opinion_factor = -0.30 
 				consumer_goods_factor = -0.075
+				research_speed_factor = -0.05
 			}
 		}
 
 		## ##
 
+		NCH_FBK_pact = {
+			picture = FAR_NCH_trade
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				country_exists = FBK
+				NOT = {
+					has_war_with = FBK
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		
 		NCH_idyllic_society = {
 			picture = EQS_friendly_harmony
 			allowed = { always = no }
