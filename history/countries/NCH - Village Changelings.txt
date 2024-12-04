@@ -133,14 +133,13 @@ set_politics = {
 }
 
 add_ideas = {
+	pre_industrial_society
 	isolation
-	agrarian_society
 	lack_of_scientists
 
 	NCH_idyllic_society
 	NCH_luddites
 	NCH_FBK_pact
-	#NCH_Basalt_Shaw
 	NCH_Overpopulation
 }
 
@@ -164,6 +163,7 @@ set_stability = 0.83
 
 
 # Submod #
+recruit_character = NCH_Oiren_Judge
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart
 recruit_character = NCH_admiral_lorri

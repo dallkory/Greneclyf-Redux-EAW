@@ -94,6 +94,13 @@ focus_tree = {
 		x = 30
 		y = 4
 
+		completion_reward = {
+			country_event = {
+				id = geneclyf_redux.7
+				days = 0
+			}
+		}
+
 	}
 
 	focus = {

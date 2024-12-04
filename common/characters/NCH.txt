@@ -1,8 +1,7 @@
 characters={
 
-	# REDUX #
+	### REDUX ###
 
-    # Submod #
 	# New Leaders #
 	
 	NCH_Gytha_iron_lady = {
@@ -22,6 +21,38 @@ characters={
 	}
 
 	# Advisors #
+	# Oiren judge #
+
+	NCH_Oiren_Judge = {
+		name = Oiren_Judge
+		portraits = {
+			small = "gfx/interface/ideas/Advisors/NCH/Oiren_judge.tga"
+		}
+		visible = {
+			has_country_flag = NCH_Jorney_completed
+		}
+		advisor = {
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Oiren_Judge_itoken
+			large = army
+			cost = 150
+			traits = {
+				political_power_factor = 0.10
+				party_popularity_stability_factor = 0.3
+				compliance_gain = 0.02
+				resistance_growth = -0.05  
+				#power_balance_daily = 0.03
+				#subjects_autonomy_gain = 0.5
+				#compliance_growth_on_our_occupied_states = 0.05
+			}
+		}
+	}
 
 	# lord - protecttor
 	NCH_Basalt_Shaw={
@@ -48,6 +79,7 @@ characters={
 			}
 		}
 	}
+
 
 	NCH_scientist_celarl={
         name=Celarl
@@ -413,6 +445,9 @@ characters={
 			idea_token = NCH_Moronlan
 			cost = 100
 
+			allowed = {
+				original_tag = NCH
+			}
 			available = {
 				has_country_flag = NCH_Moronlan_Legacy
 			}
