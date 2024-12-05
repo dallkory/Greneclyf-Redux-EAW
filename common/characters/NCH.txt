@@ -36,6 +36,7 @@ characters={
 				NOT = {
 					has_government = communism
 				}
+				has_country_flag = NCH_Jorney_completed
 			}
 
 			slot = political_advisor
@@ -47,6 +48,7 @@ characters={
 				party_popularity_stability_factor = 0.3
 				compliance_gain = 0.02
 				resistance_growth = -0.05  
+				#power_balance_weakly = 0.02
 				#power_balance_daily = 0.03
 				#subjects_autonomy_gain = 0.5
 				#compliance_growth_on_our_occupied_states = 0.05

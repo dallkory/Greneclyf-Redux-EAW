@@ -45,7 +45,7 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
-		
+
 		NCH_idyllic_society = {
 			picture = EQS_friendly_harmony
 			allowed = { always = no }
@@ -60,7 +60,7 @@ ideas = {
 				war_support_factor = -0.25
 			}
 		}
-
+######
 		NCH_luddites = {
 			picture
 			allowed = {
@@ -83,7 +83,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = 250
-				monthly_population = 2.5
+				monthly_population = 1.0
 				communism_drift = 0.02
 				stability_weekly = -0.001
 				war_support_weekly = -0.001
@@ -108,8 +108,23 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-
+######
+		NCH_urbanization_idea = {
+			picture =
+			allowed = {
+				always = yes
+			}
 		
+			modifier = {
+				research_speed_factor = 0.05
+				monthly_population = 0.15  
+				stability_factor = -0.05
+				construction_speed_factor = 0.05  
+				consumer_goods_factor = 0.1
+			}
+			timeout = 210
+			removal_cost = -1
+		}
 
 		# SUBMOD #
 
