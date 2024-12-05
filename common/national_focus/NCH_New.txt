@@ -96,7 +96,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = geneclyf_redux.7
+				id = greneclyf_redux.7
 				days = 0
 			}
 		}
@@ -114,7 +114,17 @@ focus_tree = {
 		}
 		x = 33
 		y = 4
+		
+		completion_reward = {
 
+			# Up urbanization in random provinces #
+			random_province = {
+
+			}
+			construct_building_in_random_province = {
+				
+			}
+		}
 	}
 
 	focus = {

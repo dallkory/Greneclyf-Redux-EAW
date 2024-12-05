@@ -198,7 +198,6 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.8.a
-			add_ideas = NCH_economic_status_protect #Economic type
 		}
 	}
 
