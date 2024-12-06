@@ -9,9 +9,3 @@
 #	air_bombing_targetting = -0.1
 #	army_speed_factor = -0.5
 #}
-
-NCH_cold_trade = {
-	opinion = -20
-	trade_opinion_factor = -0.1
-	desc = "Cold Trade"
-}
