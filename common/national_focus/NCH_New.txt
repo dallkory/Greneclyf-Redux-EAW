@@ -256,7 +256,18 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
+		
+		completion_reward = {
 
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
+				add_opinion_modifier = {
+					modifier = NCH_trade_with_riverlands
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -1206,42 +1217,7 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
-		id = NCH_parliament_convocation
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_legacy
-		}
-		x = 35
-		y = 3
 
-	}
-	focus = {
-		id = NCH_new_housing
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_divided_house
-		}
-		prerequisite = {
-			focus = NCH_parliament_convocation
-		}
-		x = 33
-		y = 4
-
-	}
-	focus = {
-		id = NCH_learn_from_mistakes
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_new_housing
-		}
-		x = 33
-		y = 5
-
-	}
 	focus = {
 		id = NCH_call_for_unity
 		icon = GFX_goal_unknown
