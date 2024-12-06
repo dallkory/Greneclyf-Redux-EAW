@@ -8,7 +8,6 @@ opinion_modifiers = {
 
 	NCH_trade_with_riverlands = {
 		value = 30
-		trade = yes
 		months = 12
 	}
 }

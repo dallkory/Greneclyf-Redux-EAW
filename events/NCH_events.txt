@@ -197,6 +197,54 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.8.a
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 2  
+					 }
+					# static_modifiers = { NCH_urbanization_modifier }
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 2  
+					 }
+					# static_modifiers = { NCH_urbanization_modifier }
+				}
+			}
+		}
+	}
+
+	country_event = {
+		id = greneclyf_redux.9
+		title = greneclyf_redux.9.t
+		desc = greneclyf_redux.9.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			add_ideas = NCH_second_hunger
+			name = greneclyf_redux.9.a
 		}
 	}
 

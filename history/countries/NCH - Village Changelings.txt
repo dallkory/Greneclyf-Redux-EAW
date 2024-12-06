@@ -159,7 +159,7 @@ add_tech_bonus = {
 
 add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
-set_stability = 0.83
+set_stability = 0.73
 
 
 # Submod #

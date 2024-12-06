@@ -109,44 +109,15 @@ focus_tree = {
 		y = 4
 		
 		completion_reward = {
+			
+			country_event = {
+				id = greneclyf_redux.8
+				days = 0
+			}
 
 			add_timed_idea = {
 				idea = NCH_urbanization_idea
 				days = 210
-			}
-
-			random_state = {
-				limit = {
-					is_owned_by = NCH
-				}
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_state_modifier = {
-					modifier = { 
-						local_building_slots = 2  
-					 }
-					# static_modifiers = { NCH_urbanization_modifier }
-				}
-			}
-
-			random_state = {
-				limit = {
-					is_owned_by = NCH
-				}
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_state_modifier = {
-					modifier = { 
-						local_building_slots = 2  
-					 }
-					# static_modifiers = { NCH_urbanization_modifier }
-				}
 			}
 		}
 	}
@@ -245,6 +216,20 @@ focus_tree = {
 		x = 35
 		y = 5
 
+		completion_reward = {
+			add_stability = 0.05
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 25 
+			}
+
+			670 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -258,13 +243,14 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-
+			custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
 			every_country = {
 				limit = {
 					is_riverlands_country = yes
 				}
 				add_opinion_modifier = {
-					modifier = NCH_trade_with_riverlands
+					#modifier = NCH_trade_with_riverlands
+					modifier = trading
 				}
 			}
 		}
@@ -293,9 +279,17 @@ focus_tree = {
 		x = 33
 		y = 6
 
+		completion_reward = {
+			set_country_flag = NCH_great_hunger_started
+			country_event = {
+				id = greneclyf_redux.9
+				days = 70
+			}
+		}
 	}
 
-	# CRISIS BRANCH #
+
+	### CRISIS BRANCH ###
 
 	focus = {
 		id = NCH_beginning_of_crisis
@@ -303,6 +297,10 @@ focus_tree = {
 		cost = 10,00
 		x = 33
 		y = 8
+
+		available = {
+			has_country_flag = NCH_great_hunger_started
+		}
 
 	}
 	focus = {
@@ -1230,29 +1228,6 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = NCH_time_to_look_further
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_learn_from_mistakes
-		}
-		prerequisite = {
-			focus = NCH_Esteblish_trade_guild
-		}
-		prerequisite = {
-			focus = NCH_new_hives
-		}
-		prerequisite = {
-			focus = NCH_find_they_job
-		}
-		prerequisite = {
-			focus = NCH_take_look_around
-		}
-		x = 33
-		y = 6
-
-	}
 	focus = {
 		id = NCH_to_neighbors
 		icon = GFX_goal_unknown
