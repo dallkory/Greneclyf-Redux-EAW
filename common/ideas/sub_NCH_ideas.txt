@@ -85,8 +85,8 @@ ideas = {
 				weekly_manpower = 250
 				monthly_population = 1.0
 				communism_drift = 0.02
-				stability_weekly = -0.001
-				war_support_weekly = -0.001
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
 			}
 		}
 
@@ -114,7 +114,8 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-		
+			removal_cost = -1
+
 			modifier = {
 				research_speed_factor = 0.05
 				monthly_population = 0.15  
@@ -122,8 +123,20 @@ ideas = {
 				construction_speed_factor = 0.05  
 				consumer_goods_factor = 0.1
 			}
-			timeout = 210
+		}
+
+		NCH_rise_nation_movement = {
+			picture = 
+			allowed = {
+				always = yes
+			}
 			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.075
+				stability_weekly = 0.1
+				democratic_drift = 0.02
+			}
 		}
 
 		# SUBMOD #

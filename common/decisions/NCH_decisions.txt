@@ -3,20 +3,104 @@ NCH_debug_decision = {
 
 }
 
-
 NCH_typography_category = {
 	NCH_propaganda_company = {
 		icon = 
 		cost = 30
 		days_remove = 56
 
-	}
-	NCH_defeat_scientlist = {
+		available = {
+			has_government = democratic
+		}
 
+		modifier = {
+			stability_weekly = 0.001
+			political_power_factor = 0.075
+		}
 	}
+
+	# Программа просвещения #
+	#3 решения -> решение на начало программы борьбы с безграматностью 
+	NCH_defeat_scientlist_1 = {
+		icon = 
+		cost = 50
+		fire_only_once = yes
+		days_remove = 56
+
+		modifier = {
+			research_speed_factor = 0.07
+			communism_drift = 0.03
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			set_country_flag = NCH_ds_1
+		}
+	}
+
+	NCH_defeat_scientlist_2 = {
+		icon = 
+		cost = 50
+		fire_only_once = yes
+		days_remove = 56
+		visible = {
+			has_country_flag = NCH_ds_1
+		}
+
+		modifier = {
+			research_speed_factor = 0.07
+			communism_drift = 0.03
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			set_country_flag = NCH_ds_2
+		}
+	}
+
+	NCH_defeat_scientlist_3 = {
+		icon = 
+		cost = 50
+		fire_only_once = yes
+		days_remove = 56
+		visible = {
+			has_country_flag = NCH_ds_2
+		}
+
+		modifier = {
+			research_speed_factor = 0.07
+			communism_drift = 0.03
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			set_country_flag = NCH_ds_3
+		}
+	}
+
+	NCH_defeat_scientlist_final = {
+		icon =
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_country_flag = NCH_ds_3
+		}
+		remove_effect = {
+
+		}
+	}
+
+
+	NCH_anti_spy_operation = {
+		icon 
+		cost = 50
+
+		days_remove = 35
+		
+	}
+
 	NCH_foregien_propaganda = {
 
 	}
+
 	NCH_support_army = {
 
 	}
