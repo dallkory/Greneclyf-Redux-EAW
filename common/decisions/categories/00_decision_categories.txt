@@ -1,13 +1,4 @@
 ### REDUX ###
-NCH_debug_decision = {
-	icon = GFX_unknow
-
-	allowed = {
-		original_tag = NCH
-		is_debug = yes
-	}
-	priority = { base = 151 }
-}
 
 # For submod #
 

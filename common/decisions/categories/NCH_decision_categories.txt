@@ -1,3 +1,27 @@
+### REDUX ### 
+NCH_debug_decision = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+		is_debug = yes
+	}
+	priority = { base = 151 }
+}
+
+NCH_typography_category = {
+	icon = GFX_unknow
+	
+	visible = {
+		has_country_flag = NCH_typography_create
+	}
+	priority = {
+		base = 151
+	}
+}
+
+
+
 # Submod
 NCH_nuke_category = {
 	#picture = "GFX_event_mission_reward" #add later

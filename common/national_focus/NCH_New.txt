@@ -42,23 +42,16 @@ focus_tree = {
 		}
 
 			available = {
-				
-				custom_effect_tooltip = NCH_Jorney_finish_or_not_started
-					and = {
-						NOT = {
-							has_country_flag = NCH_Jorney_started # Приключение началось
-						}
-							or = {
-								has_country_flag = NCH_Jorney_completed
-								has_country_flag = NCH_Jorney_not_started
-							}
-					}
+				NOT = {
+					has_country_flag = NCH_Jorney_started
+				}
 			}
 
 		x = 35
 		y = 3
 
 		completion_reward = {
+			custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
 			country_event = {
 			days = 0
 			id = greneclyf_redux.2
@@ -135,6 +128,7 @@ focus_tree = {
 					modifier = { 
 						local_building_slots = 2  
 					 }
+					# static_modifiers = { NCH_urbanization_modifier }
 				}
 			}
 
@@ -151,6 +145,7 @@ focus_tree = {
 					modifier = { 
 						local_building_slots = 2  
 					 }
+					# static_modifiers = { NCH_urbanization_modifier }
 				}
 			}
 		}
@@ -170,7 +165,7 @@ focus_tree = {
 
 			add_opinion_modifier = {
 				target = FBK
-				modifier = -30
+				modifier = NCH_cold_trade
 			}
 		}
 	}
@@ -186,11 +181,23 @@ focus_tree = {
 		x = 29
 		y = 5
 
+		completion_reward = {
+			add_ideas = lack_of_scientists1
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
 	}
 
-	# Tipograf #
+	# Agitprom #
 	focus = {
-		id = NCH_new_hives
+		id = NCH_typography
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -200,7 +207,8 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			
+			custom_effect_tooltip = NCH_typography_create_ttip
+			set_country_flag = NCH_typography_create
 		}
 	}
 
@@ -252,7 +260,7 @@ focus_tree = {
 			focus = NCH_Esteblish_trade_guild
 		}
 		prerequisite = {
-			focus = NCH_new_hives
+			focus = NCH_typography
 		}
 		prerequisite = {
 			focus = NCH_find_they_job

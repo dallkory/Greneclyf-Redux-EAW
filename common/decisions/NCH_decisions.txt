@@ -1,9 +1,30 @@
+### REDUX ###
+NCH_debug_decision = {
+
+}
+
+
+NCH_typography_category = {
+	NCH_propaganda_company = {
+		icon = 
+		cost = 30
+		days_remove = 56
+
+	}
+	NCH_defeat_scientlist = {
+
+	}
+	NCH_foregien_propaganda = {
+
+	}
+	NCH_support_army = {
+
+	}
+}
+
+
 # Submod #
 NCH_nuke_category = {
-
-	# REDUX #
-
-
 	NCH_start_nuce_program = {
 		icon = gfx_decision_icon_default
 		fire_only_once = yes

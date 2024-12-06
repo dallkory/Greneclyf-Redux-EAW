@@ -167,9 +167,7 @@ add_namespace = greneclyf_crisis
 			name = greneclyf_redux.6.a 
 			#add_political_power = 50
 			#add_ideas = NCH_Oiren_Judge
-
-			set_country_flag = NCH_Jorney_completed
-			set_country_flag = NCH_Jorney_started
+			clr_country_flag = NCH_Jorney_started
 
 		}
 	}
