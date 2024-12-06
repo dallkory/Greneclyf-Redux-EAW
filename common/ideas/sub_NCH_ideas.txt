@@ -85,8 +85,8 @@ ideas = {
 				weekly_manpower = 250
 				monthly_population = 1.0
 				communism_drift = 0.02
-				stability_weekly = -0.0025
-				war_support_weekly = -0.0025
+				stability_weekly = -0.0015
+				war_support_weekly = -0.0015
 			}
 		}
 
@@ -108,7 +108,7 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-######
+
 		NCH_urbanization_idea = {
 			picture =
 			allowed = {
@@ -138,6 +138,35 @@ ideas = {
 				democratic_drift = 0.02
 			}
 		}
+		# grad? #
+		NCH_second_hunger = {
+			picture = 
+			allowed = {
+				has_country_flag = NCH_great_hunger_started
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.5
+				monthly_population = -3.0
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.25
+
+				offence = -0.1
+				defence = -0.1
+
+				fascism_drift = 0.03
+				communism_drift = 0.03
+			}
+		}
+
+
+######
+
+
+
 
 		# SUBMOD #
 

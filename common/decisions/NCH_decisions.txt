@@ -98,6 +98,25 @@ NCH_typography_category = {
 		}
 	}
 
+	NCH_calm_down_people = {
+		icon =
+		cost = 75
+		days_remove = 30
+
+		visible = {
+			and = {
+				has_country_flag = NCH_second_hunger
+				not = {
+					has_country_flag = NCH_secong_hunger_finished
+				}
+			}
+		}
+
+		modifier = {
+
+		}
+	}
+
 
 	NCH_anti_spy_operation = {
 		icon =
