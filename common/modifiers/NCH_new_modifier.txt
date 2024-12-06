@@ -9,7 +9,3 @@
 #	air_bombing_targetting = -0.1
 #	army_speed_factor = -0.5
 #}
-
-countrty_modifier = {
-	
-}

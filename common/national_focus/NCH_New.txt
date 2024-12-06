@@ -283,7 +283,7 @@ focus_tree = {
 			set_country_flag = NCH_great_hunger_started
 			country_event = {
 				id = greneclyf_redux.9
-				days = 70
+				days = 56
 			}
 		}
 	}
