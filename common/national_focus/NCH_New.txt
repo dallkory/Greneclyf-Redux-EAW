@@ -218,6 +218,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			add_ideas = civilian_economy
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 25 
@@ -301,7 +302,7 @@ focus_tree = {
 	#		value = -0.16
 	#	}
 	#}
-	
+
 	### CRISIS BRANCH ###
 	focus = {
 		id = NCH_beginning_of_crisis
