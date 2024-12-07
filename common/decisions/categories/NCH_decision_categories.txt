@@ -20,6 +20,20 @@ NCH_typography_category = {
 	}
 }
 
+NCH_hunger_bop_category = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+
+	visible = {
+		has_power_balance = {
+			id = NCH_hunger_bop
+		}
+	}
+}
+
 
 
 # Submod

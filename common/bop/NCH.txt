@@ -1,0 +1,24 @@
+NCH_hunger_bop = {
+	intial_value = -0.1
+	left_side = NCH_hunger_acute_phase
+	right_side = NCH_hunger_hunger_end
+	decision_category = NCH_hunger_bop_category
+
+	range = {
+		id = NCH_hunger_bop_balanced
+		min = -0.1
+		max = 0.1
+
+		modifier = {
+
+		}
+	}
+
+	side = {
+		id = NCH_hunger_acute_phase
+		icon = 
+		range = {
+			
+		}
+	}
+}

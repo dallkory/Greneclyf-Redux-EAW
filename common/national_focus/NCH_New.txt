@@ -280,6 +280,7 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
+			set_country_flag = NCH_greet_future
 			set_country_flag = NCH_great_hunger_started
 			country_event = {
 				id = greneclyf_redux.9
@@ -289,8 +290,19 @@ focus_tree = {
 	}
 
 
+	#if = {
+	#	limit = {
+	#		has_power_balance = {
+	#			id = YAK_starting_bop
+	#		}
+	#	}
+	#	add_power_balance_value = {
+	#		id = YAK_starting_bop
+	#		value = -0.16
+	#	}
+	#}
+	
 	### CRISIS BRANCH ###
-
 	focus = {
 		id = NCH_beginning_of_crisis
 		icon = GFX_goal_unknown
@@ -863,6 +875,10 @@ focus_tree = {
 		x = 64
 		y = 2
 
+		available = {
+			has_country_flag = NCH_greet_future
+		}
+
 	}
 	focus = {
 		id = NCH_on_land
@@ -870,6 +886,10 @@ focus_tree = {
 		cost = 10,00
 		x = 64
 		y = 3
+
+		prerequisite = {
+			focus = NCH_rule_greneclyf
+		}
 
 	}
 	focus = {

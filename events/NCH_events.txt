@@ -166,7 +166,7 @@ add_namespace = greneclyf_crisis
 		option={
 			name = greneclyf_redux.6.a 
 			#add_political_power = 50
-			#add_ideas = NCH_Oiren_Judge
+			recruit_character = NCH_Oiren_Judge
 			clr_country_flag = NCH_Jorney_started
 			set_country_flag = NCH_Jorney_completed
 
@@ -234,6 +234,7 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	### HUNGER STARTED ###
 	country_event = {
 		id = greneclyf_redux.9
 		title = greneclyf_redux.9.t
@@ -243,8 +244,21 @@ add_namespace = greneclyf_crisis
 		fire_only_once = yes
 
 		option = {
-			#add_ideas = NCH_second_hunger
 			name = greneclyf_redux.9.a
+			add_ideas = NCH_second_hunger
+			add_political_power = -300
+
+			set_power_balance = {
+				id = NCH_hunger_bop
+				set_default = yes
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.9.b
+			hidden_effect = {
+				country_event = country_capitulated.1
+			}
 		}
 	}
 
