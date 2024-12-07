@@ -152,7 +152,7 @@ NCH_typography_category = {
 			enemy_operative_capture_chance_factor = 0.75
 		}
 	}
-
+# NCH_democratic_propaganda_1
 	NCH_foregien_propaganda = {
 		icon =d
 		cost = 75
@@ -165,24 +165,17 @@ NCH_typography_category = {
 			has_government = democratic
 		}
 
-		target_array = {
-			every_country = {
-				is_riverlands_country = yes
-			}
-			and = {
-				tag = FBK
-				tag = FIR
-				tag = WAT
-			}
-		}
 		modifier = {
 			political_power_cost = 0.3
 		}
 
 		complete_effect = {
-			from = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
 				add_timed_idea = {
-					idea = socialist_education
+					idea = NCH_democratic_propaganda_1
 					days = 90
 				}
 			}
@@ -211,7 +204,7 @@ NCH_typography_category = {
 			
 		}
 	}
-}
+
 
 
 	# Submod #

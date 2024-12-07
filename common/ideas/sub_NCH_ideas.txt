@@ -24,6 +24,27 @@ ideas = {
 		}
 
 		## ##
+		NCH_democratic_propaganda_1 = {
+			picture =d
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NCH = {
+					exists = yes
+					has_government = democratic
+				}
+				#is_river_fed_member = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
 
 		NCH_FBK_pact = {
 			picture = FAR_NCH_trade
