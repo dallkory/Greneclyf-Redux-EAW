@@ -1,10 +1,16 @@
 ### REDUX ###
 NCH_debug_decision = {
-
+	NCH_show_typographia = {
+		icon = d
+		
+		complete_effect = {
+			set_country_flag = NCH_typography_create
+		}
+	}
 }
 
 NCH_hunger_category = {
-	
+
 }
 
 NCH_typography_category = {
@@ -135,13 +141,59 @@ NCH_typography_category = {
 		cost = 50
 
 		days_remove = 35
+
+		visible = {
+			has_dlc = "La Resistance"
+		}
+
+		modifier = {
+			encryption = 1
+			enemy_operative_detection_chance_factor = 0.75
+			enemy_operative_capture_chance_factor = 0.75
+		}
 	}
 
 	NCH_foregien_propaganda = {
 		icon =d
 		cost = 75
+		days_remove = 90
 
+		available = {
+			has_completed_focus = NCH_final_crisis
+		}
+		visible = {
+			has_government = democratic
+		}
+
+		target_array = {
+			every_country = {
+				is_riverlands_country = yes
+			}
+			and = {
+				tag = FBK
+				tag = FIR
+				tag = WAT
+			}
+		}
+		modifier = {
+			political_power_cost = 0.3
+		}
+
+		complete_effect = {
+			from = {
+				add_timed_idea = {
+					idea = socialist_education
+					days = 90
+				}
+			}
+		}
+
+		ai_will_do = {
+			0.5
+		}
 	}
+
+
 
 	NCH_support_army = {
 		icon =d
