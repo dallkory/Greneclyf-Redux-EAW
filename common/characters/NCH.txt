@@ -79,6 +79,28 @@ characters={
 		}
 	}
 
+	NCH_Valha = {
+		name = Valha_Ksilokopa
+		desc = Valha_Ksilokopa_desc 
+		portraits = {
+			army = {
+				small = ""
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Valha
+			ledger = army
+			cost = 100
+			
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+
+			}
+		}
+	}
 
 	NCH_scientist_celarl={
         name=Celarl
@@ -97,14 +119,15 @@ characters={
             allowed = {
                 original_tag = NCH
             }
+			available = { 
+                has_completed_focus = NCH_nuce_program_first_step
+            } 
             research_bonus = {
                 nuclear = 0.15
             }
+			
             traits = { nuclear_scientist }
-    		desc = Celarl_desc
-            available = { 
-                has_completed_focus = NCH_nuce_program_first_step
-            }       
+    		desc = Celarl_desc      
 			on_add = {
 				is_hired_as_advisor = yes
 				country_event = {

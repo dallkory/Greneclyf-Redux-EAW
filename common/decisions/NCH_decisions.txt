@@ -63,6 +63,7 @@ NCH_typography_category = {
 		}
 		remove_effect = {
 			set_country_flag = NCH_ds_2
+			add_ideas = NCH_idyllic_society2
 		}
 	}
 
@@ -93,8 +94,15 @@ NCH_typography_category = {
 		visible = {
 			has_country_flag = NCH_ds_3
 		}
-		remove_effect = {
 
+		modifier = {
+			research_speed_factor = 0.1
+			communism_drift = 0.03
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			add_ideas = NCH_idyllic_society3
 		}
 	}
 
@@ -102,6 +110,7 @@ NCH_typography_category = {
 		icon =
 		cost = 75
 		days_remove = 30
+		fire_only_once = yes
 
 		visible = {
 			and = {
@@ -111,8 +120,7 @@ NCH_typography_category = {
 				}
 			}
 		}
-
-		modifier = {
+		complete_effect = {
 
 		}
 	}
