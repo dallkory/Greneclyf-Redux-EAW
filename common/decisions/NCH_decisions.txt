@@ -135,7 +135,6 @@ NCH_typography_category = {
 		}
 	}
 
-
 	NCH_anti_spy_operation = {
 		icon =d
 		cost = 50
@@ -152,7 +151,22 @@ NCH_typography_category = {
 			enemy_operative_capture_chance_factor = 0.75
 		}
 	}
-# NCH_democratic_propaganda_1
+
+	NCH_production_boost = {
+		icon =d
+		cost = 75
+		days_remove = 70
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05 
+			industrial_capacity_dockyard = 0.05
+			production_speed_buildings_factor = 0.075
+		}
+		remove_effect = {
+			
+		}
+	}
+
 	NCH_foregien_propaganda = {
 		icon =d
 		cost = 75
@@ -180,13 +194,7 @@ NCH_typography_category = {
 				}
 			}
 		}
-
-		ai_will_do = {
-			0.5
-		}
 	}
-
-
 
 	NCH_support_army = {
 		icon =d
@@ -204,6 +212,7 @@ NCH_typography_category = {
 			
 		}
 	}
+}	
 
 
 
