@@ -866,9 +866,7 @@ focus_tree = {
 
 
 
-
-
- 
+	### ARMY ###
 	focus = {
 		id = NCH_rule_greneclyf
 		icon = GFX_goal_unknown
@@ -877,7 +875,13 @@ focus_tree = {
 		y = 2
 
 		available = {
-			has_country_flag = NCH_greet_future
+			has_completed_focus = NCH_time_to_look_further
+		}
+
+		completion_reward = {
+			army_experience = 30
+			navy_experience = 30
+			air_experience = 30
 		}
 
 	}
