@@ -7,6 +7,15 @@ NCH_debug_decision = {
 			set_country_flag = NCH_typography_create
 		}
 	}
+	NCH_show_power_balance = {
+		icon = d
+		complete_effect = {
+			set_power_balance = {
+				id = NCH_hunger_bop
+				set_default = yes
+			}
+		}
+	}
 }
 
 NCH_hunger_category = {

@@ -2,7 +2,10 @@ NCH_hunger_bop = {
 	intial_value = -0.1
 	left_side = NCH_hunger_acute_phase
 	right_side = NCH_hunger_hunger_end
+	initial  = 0.25
 	decision_category = NCH_hunger_bop_category
+
+	step_values = { 0 10 20 30 40 50 60 70 80 90 100 }
 
 	range = {
 		id = NCH_hunger_bop_balanced
@@ -16,9 +19,59 @@ NCH_hunger_bop = {
 
 	side = {
 		id = NCH_hunger_acute_phase
-		icon = 
+		icon = d
 		range = {
-			
+			id = NCH_hunger_acute_phase_external
+			min = -1
+			max = -0.7
+			modifier = {
+
+			}
+		}
+
+		range = {
+			id = NCH_hunger_acute_phase_medium
+			min = -0.7
+			max = -0.4
+			modifier = {
+
+			}
+		}
+
+		range = {
+			id = NCH_hunger_acute_phase_just_finished
+			min = -0.4
+			max = -0.1
+			modifier = {
+
+			}
+		}
+
+	}
+
+	side = {
+		id = NCH_hunger_hunger_end
+		icon = d
+		range = {
+			id = NCH_hunger_hunger_end_done
+			min = 0.1
+			max = 0.5
+			modifier = {
+
+			}
+		}
+
+		range = {
+			id = NCH_hunger_hunger_end_never_more
+			min = 0.5
+			max = 1
+			modifier = {
+
+			}
 		}
 	}
+
+	
+
+
 }
