@@ -866,7 +866,7 @@ focus_tree = {
 
 
 
-	### ARMY ###
+	### FORCEING ###
 	focus = {
 		id = NCH_rule_greneclyf
 		icon = GFX_goal_unknown
@@ -885,6 +885,243 @@ focus_tree = {
 		}
 
 	}
+
+	## NAVY ##
+	focus = {
+		id = NCH_at_seas
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_rule_greneclyf
+		}
+		x = 51
+		y = 3
+
+	}
+
+	focus = {
+		id = NCH_assing_new_command
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_at_seas
+		}
+		x = 47
+		y = 4
+
+	}
+
+	focus = {
+		id = NCH_hard_armor
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_assing_new_command
+		}
+		mutually_exclusive = {
+			focus = NCH_silent_hunters
+		}
+		x = 46
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_silent_hunters
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_assing_new_command
+		}
+		mutually_exclusive = {
+			focus = NCH_hard_armor
+		}
+		x = 48
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_Greneclyf_pride
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hard_armor
+		}
+		x = 46
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_sharks_ice_waters
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_silent_hunters
+		}
+		x = 48
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_experomental_developments
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Greneclyf_pride
+			focus = NCH_sharks_ice_waters
+		}
+		x = 47
+		y = 7
+
+	}
+	
+	focus = {
+		id = NCH_expand_blosmport_shipyards
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_at_seas
+		}
+		x = 51
+		y = 5
+
+	}
+	
+	focus = {
+		id = NCH_marine_corp
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_expand_blosmport_shipyards
+		}
+		x = 50
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_naval_academy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_expand_blosmport_shipyards
+		}
+		x = 52
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_Blosmport_navy_institute
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_marine_corp
+		}
+		prerequisite = {
+			focus = NCH_naval_academy
+		}
+		x = 51
+		y = 7
+
+	}
+
+	focus = {
+		id = NCH_security_trade
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_at_seas
+		}
+		x = 55
+		y = 4
+
+	}
+
+	focus = {
+		id = NCH_break_ice
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_security_trade
+		}
+		x = 54
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_merchant_navy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_security_trade
+		}
+		x = 56
+		y = 5
+
+	}
+
+	focus = {
+		id = NCH_resources_for_fleet
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_break_ice
+			focus = NCH_merchant_navy
+		}
+		x = 54
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_investing_in_shipbuildings
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_break_ice
+			focus = NCH_merchant_navy
+		}
+		x = 56
+		y = 6
+
+	}
+
+	focus = {
+		id = NCH_domestic_development
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_resources_for_fleet
+			focus = NCH_investing_in_shipbuildings
+		}
+		x = 55
+		y = 7
+
+	}
+
+	focus = {
+		id = NCH_our_future_at_sea
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_experomental_developments
+			focus = NCH_domestic_development
+		}
+		prerequisite = {
+			focus = NCH_Blosmport_navy_institute
+		}
+		x = 51
+		y = 8
+
+	}
+
+
+	## ARMY ##
 	focus = {
 		id = NCH_on_land
 		icon = GFX_goal_unknown
@@ -897,6 +1134,7 @@ focus_tree = {
 		}
 
 	}
+
 	focus = {
 		id = NCH_dreems_of_more
 		icon = GFX_goal_unknown
@@ -1361,210 +1599,7 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
-		id = NCH_assing_new_command
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_at_seas
-		}
-		x = 47
-		y = 4
 
-	}
-	focus = {
-		id = NCH_hard_armor
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_assing_new_command
-		}
-		mutually_exclusive = {
-			focus = NCH_silent_hunters
-		}
-		x = 46
-		y = 5
-
-	}
-	focus = {
-		id = NCH_Greneclyf_pride
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_hard_armor
-		}
-		x = 46
-		y = 6
-
-	}
-	focus = {
-		id = NCH_silent_hunters
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_assing_new_command
-		}
-		mutually_exclusive = {
-			focus = NCH_hard_armor
-		}
-		x = 48
-		y = 5
-
-	}
-	focus = {
-		id = NCH_sharks_ice_waters
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_silent_hunters
-		}
-		x = 48
-		y = 6
-
-	}
-	focus = {
-		id = NCH_experomental_developments
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_Greneclyf_pride
-			focus = NCH_sharks_ice_waters
-		}
-		x = 47
-		y = 7
-
-	}
-	focus = {
-		id = NCH_expand_blosmport_shipyards
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_at_seas
-		}
-		x = 51
-		y = 5
-
-	}
-	focus = {
-		id = NCH_marine_corp
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
-		}
-		x = 50
-		y = 6
-
-	}
-	focus = {
-		id = NCH_naval_academy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
-		}
-		x = 52
-		y = 6
-
-	}
-	focus = {
-		id = NCH_Blosmport_navy_institute
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_marine_corp
-		}
-		prerequisite = {
-			focus = NCH_naval_academy
-		}
-		x = 51
-		y = 7
-
-	}
-	focus = {
-		id = NCH_security_trade
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_at_seas
-		}
-		x = 55
-		y = 4
-
-	}
-	focus = {
-		id = NCH_break_ice
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_security_trade
-		}
-		x = 54
-		y = 5
-
-	}
-	focus = {
-		id = NCH_merchant_navy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_security_trade
-		}
-		x = 56
-		y = 5
-
-	}
-	focus = {
-		id = NCH_resources_for_fleet
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_break_ice
-			focus = NCH_merchant_navy
-		}
-		x = 54
-		y = 6
-
-	}
-	focus = {
-		id = NCH_investing_in_shipbuildings
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_break_ice
-			focus = NCH_merchant_navy
-		}
-		x = 56
-		y = 6
-
-	}
-	focus = {
-		id = NCH_domestic_development
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_resources_for_fleet
-			focus = NCH_investing_in_shipbuildings
-		}
-		x = 55
-		y = 7
-
-	}
-	focus = {
-		id = NCH_our_future_at_sea
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_experomental_developments
-			focus = NCH_domestic_development
-		}
-		prerequisite = {
-			focus = NCH_Blosmport_navy_institute
-		}
-		x = 51
-		y = 8
-
-	}
 	focus = {
 		id = NCH_auxiliary_battalions
 		icon = GFX_goal_unknown
@@ -1898,6 +1933,8 @@ focus_tree = {
 		y = 6
 
 	}
+
+	## FIX THIS ID ##
 	focus = {
 		id = NCH_experom,ental_developments
 		icon = GFX_goal_unknown

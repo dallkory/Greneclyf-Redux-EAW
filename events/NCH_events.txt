@@ -298,5 +298,3 @@ add_namespace = greneclyf_crisis
 			}
 		}
 	}
-
-#ship = { name = "LnG Gytha" definition = battleship start_experience_factor = 0.07 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = NCH version_name = "Queen Class" } } }
