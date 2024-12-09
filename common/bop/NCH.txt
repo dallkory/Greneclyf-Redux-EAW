@@ -1,10 +1,10 @@
 NCH_hunger_bop = {
-	intial_value = -0.1
 	left_side = NCH_hunger_acute_phase
 	right_side = NCH_hunger_hunger_end
-    initial_value = 0.25 
+    initial_value = -1
 	decision_category = NCH_hunger_bop_category
 
+	# midle #
 	range = {
 		id = NCH_hunger_bop_balanced
 		min = -0.1
@@ -15,6 +15,7 @@ NCH_hunger_bop = {
 		}
 	}
 
+	# left #
 	side = {
 		id = NCH_hunger_acute_phase
 		icon = d
@@ -47,6 +48,7 @@ NCH_hunger_bop = {
 
 	}
 
+	# right #
 	side = {
 		id = NCH_hunger_hunger_end
 		icon = d

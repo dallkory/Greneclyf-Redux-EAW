@@ -197,7 +197,8 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.8.a
-			recruit_character = NCH_Valha
+			set_country_flag = NCH_valha_hired
+			custom_effect_tooltip = NCH_valha_hired
 
 			random_state = {
 				limit = {

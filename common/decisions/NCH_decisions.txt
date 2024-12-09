@@ -24,8 +24,14 @@ NCH_debug_decision = {
 	}
 }
 
-NCH_hunger_category = {
-
+## POWER BALANCE DECISIONS ##
+NCH_hunger_bop_category = {
+	NCH_help_cities = {
+		icon = d
+		complete_effect = {
+			
+		}
+	}
 }
 
 NCH_typography_category = {

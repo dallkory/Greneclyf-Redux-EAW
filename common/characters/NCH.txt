@@ -26,16 +26,18 @@ characters={
 	NCH_Oiren_Judge = {
 		name = Oiren_Judge
 		portraits = {
-			small = "gfx/interface/ideas/Advisors/NCH/Oiren_judge.tga"
+			civilian = {
+				small = "gfx/interface/ideas/Advisors/NCH/Oiren_judge.tga"
+			}
 		}
-		visible = {
-			has_country_flag = NCH_Jorney_completed
-		}
+
 		advisor = {
 			available = {
-				NOT = {
-					has_government = communism
-				}
+					has_government = democratic
+					has_country_flag = NCH_Jorney_completed
+			}
+
+			visible = {
 				has_country_flag = NCH_Jorney_completed
 			}
 
@@ -44,11 +46,7 @@ characters={
 			large = army
 			cost = 150
 			traits = {
-				stability = 0.05
-				political_power_factor = 0.10
-				party_popularity_stability_factor = 0.3
-				compliance_gain = 0.02
-				resistance_growth_bonus = -0.05  
+				higher_judge_oiren
 			}
 		}
 	}
@@ -87,7 +85,11 @@ characters={
 				small = ""
 			}
 		}
+
 		advisor = {
+			visible = {
+				has_country_flag = NCH_valha_hired
+			}
 			slot = political_advisor
 			idea_token = NCH_Valha
 			ledger = army
@@ -125,7 +127,7 @@ characters={
             research_bonus = {
                 nuclear = 0.15
             }
-			
+
             traits = { nuclear_scientist }
     		desc = Celarl_desc      
 			on_add = {

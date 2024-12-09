@@ -185,6 +185,7 @@ recruit_character = NCH_Furrelion
 recruit_character = NCH_Marikel
 #recruit_character = NCH_Tornus
 recruit_character = NCH_Sul_Oraiste
+recruit_character = NCH_Valha
 
 # leaders #
 recruit_character = NCH_queen_gytha
