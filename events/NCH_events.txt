@@ -165,8 +165,9 @@ add_namespace = greneclyf_crisis
 
 		option={
 			name = greneclyf_redux.6.a 
-			#add_political_power = 50
-			recruit_character = NCH_Oiren_Judge
+			custom_effect_tooltip = NCH_oiren_hired
+			add_political_power = 50
+			
 			clr_country_flag = NCH_Jorney_started
 			set_country_flag = NCH_Jorney_completed
 
@@ -187,6 +188,7 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	# Urbanization and Valha hire #
 	country_event = {
 		id = greneclyf_redux.8
 		title = greneclyf_redux.8.t
