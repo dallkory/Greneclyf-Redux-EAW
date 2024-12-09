@@ -866,11 +866,11 @@ focus_tree = {
 
 
 
-	### FORCEING ###
+	### FORCES ###
 	focus = {
 		id = NCH_rule_greneclyf
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 3
 		x = 64
 		y = 2
 
@@ -879,24 +879,33 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 30
-			navy_experience = 30
-			air_experience = 30
+			add_timed_idea = {
+				idea = NCH_rethinking_forces
+				days = 120
+			}
 		}
-
 	}
 
 	## NAVY ##
 	focus = {
 		id = NCH_at_seas
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_rule_greneclyf
 		}
 		x = 51
 		y = 3
 
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = navdoc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 
 	focus = {
@@ -989,7 +998,7 @@ focus_tree = {
 		y = 5
 
 	}
-	
+
 	focus = {
 		id = NCH_marine_corp
 		icon = GFX_goal_unknown
@@ -1586,17 +1595,6 @@ focus_tree = {
 		}
 		x = 39
 		y = 12
-
-	}
-	focus = {
-		id = NCH_at_seas
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_rule_greneclyf
-		}
-		x = 51
-		y = 3
 
 	}
 
