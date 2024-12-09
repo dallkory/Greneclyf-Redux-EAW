@@ -16,6 +16,12 @@ NCH_debug_decision = {
 			}
 		}
 	}
+	NCH_add_idea_great_hunger = {
+		icon = d
+		complete_effect = {
+			add_ideas = NCH_second_hunger
+		}
+	}
 }
 
 NCH_hunger_category = {

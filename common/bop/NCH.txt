@@ -2,10 +2,8 @@ NCH_hunger_bop = {
 	intial_value = -0.1
 	left_side = NCH_hunger_acute_phase
 	right_side = NCH_hunger_hunger_end
-	initial  = 0.25
+    initial_value = 0.25 
 	decision_category = NCH_hunger_bop_category
-
-	step_values = { 0 10 20 30 40 50 60 70 80 90 100 }
 
 	range = {
 		id = NCH_hunger_bop_balanced
