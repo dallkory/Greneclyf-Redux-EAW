@@ -244,9 +244,13 @@ NCH_typography_category = {
 	}
 }
 
-# add research slot & research speed factor & unique tech #
+# add research slot & research speed factor & unique tech (spy bonuses, debuffs )
 NCH_celarl_laboratory = {
-	NCH_
+	NCH_experimental_starts = {
+		icon = d
+		cost = 50
+		days_remove = 70
+	}
 }
 
 

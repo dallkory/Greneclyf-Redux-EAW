@@ -160,7 +160,21 @@ ideas = {
 				democratic_drift = 0.02
 			}
 		}
-		# grad? #
+
+		### CRISIS ###
+
+		NCH_protests_on_street = {
+
+		}
+
+		NCH_massive_unemployed = {
+
+		}
+
+		NCH_food_shortage = {
+			
+		}
+
 		NCH_second_hunger = {
 			picture = 
 			allowed = {
