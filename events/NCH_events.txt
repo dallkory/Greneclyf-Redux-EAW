@@ -330,25 +330,51 @@ add_namespace = greneclyf_crisis
 			name = greneclyf_redux.11.a
 
 		}
-		set_country_flag = NCH_hunger_defeat
 	}
 
 	# food limit #
-
-	
-	# unemployed #
-
-
-	# hunger defeat #
 	country_event = {
-		id = greneclyf_redux.11
-		title = greneclyf_redux.11.t
-		desc = greneclyf_redux.11.d
+		id = greneclyf_redux.12
+		title = greneclyf_redux.12.t
+		desc = greneclyf_redux.12.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.11.a
+			name = greneclyf_redux.12.a
+
 		}
 	}
+
+	# unemployed #
+	country_event = {
+		id = greneclyf_redux.13
+		title = greneclyf_redux.13.t
+		desc = greneclyf_redux.13.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.13.a
+
+		}
+	}
+
+	# hunger defeat #
+	country_event = {
+		id = greneclyf_redux.14
+		title = greneclyf_redux.14.t
+		desc = greneclyf_redux.14.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.14.a
+		}
+		set_country_flag = NCH_hunger_defeat
+	}
+
+	### HUNGER DEFEAT ###
