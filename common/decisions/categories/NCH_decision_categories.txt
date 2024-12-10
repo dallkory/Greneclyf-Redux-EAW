@@ -31,6 +31,21 @@ NCH_typography_category = {
 	}
 }
 
+NCH_celarl_laboratory = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+	visible = {
+		has_country_flag = NCH_celarl_laboratory_opend
+	}
+
+	priority = {
+		base = 149
+	}
+}
+
 NCH_hunger_bop_category = {
 	icon = GFX_unknow
 

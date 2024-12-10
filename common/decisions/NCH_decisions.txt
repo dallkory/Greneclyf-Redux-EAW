@@ -1,4 +1,7 @@
 ### REDUX ###
+
+
+### DEBUG ###
 NCH_debug_decision = {
 	NCH_show_typographia = {
 		icon = d
@@ -20,6 +23,12 @@ NCH_debug_decision = {
 		icon = d
 		complete_effect = {
 			add_ideas = NCH_second_hunger
+		}
+	}
+	NCH_show_celarl_laboratory = {
+		icon = d
+		complete_effect = {
+			set_country_flag = NCH_celarl_laboratory_opend
 		}
 	}
 }
@@ -233,7 +242,12 @@ NCH_typography_category = {
 			
 		}
 	}
-}	
+}
+
+# add research slot & research speed factor & unique tech #
+NCH_celarl_laboratory = {
+	NCH_
+}
 
 
 

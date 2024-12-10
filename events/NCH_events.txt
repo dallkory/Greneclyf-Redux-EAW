@@ -272,6 +272,7 @@ add_namespace = greneclyf_crisis
 	}
 
 	### HUNGER STARTED ###
+
 	country_event = {
 		id = greneclyf_redux.9
 		title = greneclyf_redux.9.t
@@ -282,6 +283,19 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.9.a
+		}
+	}
+
+	country_event = {
+		id = greneclyf_redux.10
+		title = greneclyf_redux.10.t
+		desc = greneclyf_redux.10.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.10.a
 			add_ideas = NCH_second_hunger
 			add_political_power = -300
 
@@ -292,7 +306,7 @@ add_namespace = greneclyf_crisis
 		}
 
 		option = {
-			name = greneclyf_redux.9.b
+			name = greneclyf_redux.10.b
 			hidden_effect = {
 				country_event = country_capitulated.1
 			}

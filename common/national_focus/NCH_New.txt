@@ -284,7 +284,7 @@ focus_tree = {
 			set_country_flag = NCH_greet_future
 			set_country_flag = NCH_great_hunger_started
 			country_event = {
-				id = greneclyf_redux.9
+				id = greneclyf_redux.10
 				days = 56
 			}
 		}
@@ -909,7 +909,7 @@ focus_tree = {
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = navdoc_bonus
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -917,7 +917,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NCH_expand_blosmport_shipyards
+		id = NCH_expand_blosmport_yards
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -946,7 +946,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
+			focus = NCH_expand_blosmport_yards
 		}
 		mutually_exclusive = {
 			focus = NCH_silent_hunters
@@ -954,6 +954,14 @@ focus_tree = {
 		x = 46
 		y = 5
 
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = navdoc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
 	}
 
 	focus = {
@@ -961,7 +969,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
+			focus = NCH_expand_blosmport_yards
 		}
 		mutually_exclusive = {
 			focus = NCH_hard_armor
@@ -969,6 +977,14 @@ focus_tree = {
 		x = 48
 		y = 5
 
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = cat_trade_interdiction
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
 	}
 
 	focus = {
@@ -1036,6 +1052,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = NCH_new_stats_hart
 
+			custom_effect_tooltip = available_chief_of_navy
 			add_naval_commander_role={
 				character = NCH_admiral_lorri
 				desc = "NCH_desc_Lorri"
