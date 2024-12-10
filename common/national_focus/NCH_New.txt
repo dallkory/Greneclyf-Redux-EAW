@@ -323,6 +323,10 @@ focus_tree = {
 		x = 13
 		y = 2
 
+		available = {
+			has_country_flag = NCH_queen_ambitions
+		}
+
 	}
 	focus = {
 		id = NCH_Queen_Gytha_Patch
@@ -897,6 +901,10 @@ focus_tree = {
 		x = 51
 		y = 3
 
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
 		completion_reward = {
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
@@ -909,7 +917,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NCH_assing_new_command
+		id = NCH_expand_blosmport_shipyards
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -918,6 +926,19 @@ focus_tree = {
 		x = 47
 		y = 4
 
+		completion_reward = {
+			add_ideas = NCH_blosmporn_dockyards
+
+			670 = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -925,7 +946,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_assing_new_command
+			focus = NCH_expand_blosmport_shipyards
 		}
 		mutually_exclusive = {
 			focus = NCH_silent_hunters
@@ -940,7 +961,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_assing_new_command
+			focus = NCH_expand_blosmport_shipyards
 		}
 		mutually_exclusive = {
 			focus = NCH_hard_armor
@@ -987,8 +1008,10 @@ focus_tree = {
 
 	}
 	
+
+
 	focus = {
-		id = NCH_expand_blosmport_shipyards
+		id = NCH_assing_new_command
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -997,6 +1020,36 @@ focus_tree = {
 		x = 51
 		y = 5
 
+		completion_reward = {
+			set_country_flag = NCH_navy_advisor_flag
+
+			custom_effect_tooltip = available_chief_of_navy
+			add_naval_commander_role = {
+				character = NCH_admiral_hart
+				desc = "NCH_Desc_Hart"
+				traits = {  changeling_race_trait superior_tactician ironside }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=4
+			}
+			custom_effect_tooltip = NCH_new_stats_hart
+
+			add_naval_commander_role={
+				character = NCH_admiral_lorri
+				desc = "NCH_desc_Lorri"
+				traits = {
+					changeling_race_trait seawolf
+				}
+				skill=4
+				attack_skill=5
+				defense_skill=1
+				maneuvering_skill=2
+				coordination_skill=2
+			}
+			custom_effect_tooltip = NCH_new_stats_lorri
+		}
 	}
 
 	focus = {
@@ -1004,7 +1057,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
+			focus = NCH_assing_new_command
 		}
 		x = 50
 		y = 6
@@ -1016,7 +1069,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_expand_blosmport_shipyards
+			focus = NCH_assing_new_command
 		}
 		x = 52
 		y = 6
@@ -1038,6 +1091,9 @@ focus_tree = {
 
 	}
 
+
+
+
 	focus = {
 		id = NCH_security_trade
 		icon = GFX_goal_unknown
@@ -1048,6 +1104,13 @@ focus_tree = {
 		x = 55
 		y = 4
 
+		completion_reward = {
+
+			country_event = {
+				id = greneclyf_redux.99
+				days = 0
+			}
+		}
 	}
 
 	focus = {

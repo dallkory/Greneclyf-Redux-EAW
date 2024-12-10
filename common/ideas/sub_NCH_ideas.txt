@@ -198,6 +198,23 @@ ideas = {
 			}
 		}
 
+		NCH_blosmporn_dockyards = {
+			picture = 
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				#production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_heavy = 10000
+				navy_fuel_consumption_factor = -0.05
+				industrial_capacity_dockyard = 0.1
+				naval_accidents_chance = -0.05
+				critical_receive_chance = -0.05
+			}
+		}
+
 
 ######
 
