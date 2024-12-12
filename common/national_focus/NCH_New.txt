@@ -933,6 +933,7 @@ focus_tree = {
 				limit = {
 					is_owned_by = NCH
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 3
@@ -1079,6 +1080,39 @@ focus_tree = {
 		x = 50
 		y = 6
 
+		completion_reward = {
+			research_bonus = {
+				name = marine_bonus
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = special_forces_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = cat_marines_doctrine
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.5
+					uses = 2
+					category = marine_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.5
+					uses = 2
+					category = marine_tech
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -1091,6 +1125,14 @@ focus_tree = {
 		x = 52
 		y = 6
 
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = NCH_naval_academy_establish
+		}
 	}
 
 	focus = {
@@ -1140,6 +1182,9 @@ focus_tree = {
 		x = 54
 		y = 5
 
+		completion_reward = {
+			add_ideas = NCH_break_ice_idea
+		}
 	}
 
 	focus = {
@@ -1152,6 +1197,29 @@ focus_tree = {
 		x = 56
 		y = 5
 
+		completion_reward = {
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -1165,6 +1233,9 @@ focus_tree = {
 		x = 54
 		y = 6
 
+		completion_reward = {
+			custom_effect_tooltip = NCH_resources_for_forces_decisions
+		}
 	}
 
 	focus = {
