@@ -101,6 +101,9 @@ ideas = {
 			allowed = {
 				always = yes
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			modifier = {
@@ -164,41 +167,81 @@ ideas = {
 		### CRISIS ###
 
 		NCH_protests_on_street = {
-
-		}
-
-		NCH_massive_unemployed = {
-
-		}
-
-		NCH_food_shortage = {
-
-		}
-
-		#################
-
-		NCH_second_hunger = {
-			picture = 
+			picture =
 			allowed = {
-				has_country_flag = NCH_great_hunger_started
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.5
-				monthly_population = -3.0
-				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				consumer_goods_factor = 0.25
-
-				offence = -0.1
-				defence = -0.1
-
-				fascism_drift = 0.03
-				communism_drift = 0.03
+				political_power_factor = -0.25
+				stability_weekly = -0.005
+				surrender_limit = -0.3
+				power_balance_weekly = -0.01
 			}
 		}
+
+		NCH_massive_unemployed = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.2
+				production_oil_factor = -0.5 
+				production_speed_buildings_factor = -0.25
+				power_balance_weekly = -0.01
+			}
+		}
+
+		NCH_food_shortage = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.003
+				consumer_goods_factor = 0.3
+				communism_drift = 0.03
+				power_balance_weekly = -0.03
+			}
+		}
+
+		#################
+
+		#NCH_second_hunger = {
+		#	picture = 
+		#	allowed = {
+		#		has_country_flag = NCH_great_hunger_started
+		#	}
+		#	removal_cost = -1
+		#
+		#	modifier = {
+		#		stability_factor = -0.5
+		#		monthly_population = -3.0
+		#		production_speed_buildings_factor = -0.15
+		#		industrial_capacity_factory = -0.1
+		#		industrial_capacity_dockyard = -0.1
+		#		consumer_goods_factor = 0.25
+		#
+		#		offence = -0.1
+		#		defence = -0.1
+		#
+		#		fascism_drift = 0.03
+		#		communism_drift = 0.03
+		#	}
+		#}
 
 
 		#####################

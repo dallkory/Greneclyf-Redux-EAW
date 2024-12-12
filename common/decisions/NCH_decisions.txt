@@ -22,7 +22,9 @@ NCH_debug_decision = {
 	NCH_add_idea_great_hunger = {
 		icon = d
 		complete_effect = {
-			add_ideas = NCH_second_hunger
+			add_ideas = NCH_protests_on_street
+			add_ideas = NCH_massive_unemployed
+			add_ideas = NCH_food_shortage
 		}
 	}
 	NCH_show_celarl_laboratory = {
