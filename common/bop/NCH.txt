@@ -100,6 +100,8 @@ NCH_hunger_bop = {
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
 				stability_weekly = 0.001
+				economy_cost_factor = -0.05
+				trade_laws_cost_factor = -0.05
 			}
 		}
 
@@ -114,6 +116,9 @@ NCH_hunger_bop = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
 				stability_weekly = 0.002
+				political_advisor_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
 			}
 		}
 	}
