@@ -162,9 +162,3 @@
   ### MODIFIERS ###
   NCH_urbanization_modifier:0 "Урбанизация в регионах"
 
-
-
-  ### STATES ###
-  STATE_1209:0 "Северный Бломспорт"
-  VICTORY_POINTS_5230:0 "Нью-Бломспорт"
-

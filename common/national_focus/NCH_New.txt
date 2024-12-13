@@ -109,7 +109,13 @@ focus_tree = {
 		y = 4
 		
 		completion_reward = {
-			
+			1209={
+				add_victory_points = {
+					province = 5230
+					value = 5
+				}
+
+			}
 			country_event = {
 				id = greneclyf_redux.8
 				days = 0
