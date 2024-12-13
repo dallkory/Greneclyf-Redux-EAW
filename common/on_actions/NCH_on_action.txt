@@ -6,6 +6,50 @@ on_actions = {
 
 			if = {
 				limit = {
+					and = {
+						focus_progress = {
+							focus = NCH_Blosmport_navy_institute
+							progress = 0.8
+						}
+						670 = {
+							OR = {
+								nuclear_facility > 0
+								air_facility > 0
+								land_facility > 0
+								magical_facility > 0
+							}
+						}
+					}
+				}
+
+				670 = {
+					remove_building = {
+						type = nuclear_facility
+						level = 1
+					}
+				}
+				670 = {
+					remove_building = {
+						type = air_facility
+						level = 1
+					}
+				}
+				670 = {
+					remove_building = {
+						type = land_facility
+						level = 1
+					}
+				}
+				670 = {
+					remove_building = {
+						type = magical_facility
+						level = 1
+					}
+				}
+			}
+
+			if = {
+				limit = {
 					no = {
 						and = {
 							has_idea = NCH_Overpopulation
@@ -58,7 +102,7 @@ on_actions = {
 			#			focus = NCH_lay_down_the_hatcher
 			#			progress > 0.75
 			#		}
-             #   }
+             #  # }
              #   country_event = {
               #      id = greneclyf.612
                #     days = 0

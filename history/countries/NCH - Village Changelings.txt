@@ -209,7 +209,7 @@ recruit_character = NCH_generic_navy_fleet_log #### WIP
 #recruit_character = NCH_generic_military_theorist
 #recruit_character = NCH_captain_of_industry
 #recruit_character = NCH_war_industrialist
-recruit_character = NCH_fortification_engineer
+#recruit_character = NCH_fortification_engineer
 #recruit_character = NCH_trade_advisor
 #recruit_character = NCH_ideological_crusader
 

@@ -272,7 +272,7 @@ add_namespace = greneclyf_crisis
 	}
 
 	### HUNGER STARTED ###
-
+	## ALL IS FINE ##
 	country_event = {
 		id = greneclyf_redux.9
 		title = greneclyf_redux.9.t
