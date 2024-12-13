@@ -963,12 +963,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_armor_priority
-			670 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
+
 			add_doctrine_cost_reduction = {
 				name = navdoc_bonus
 				cost_reduction = 0.25
