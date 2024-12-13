@@ -1,0 +1,697 @@
+focus_tree = {
+	id = NCH_NEW
+	country = {
+		factor = 1
+	}
+	default = yes
+	focus = {
+		id = NCH_legacy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = NCH_beginning_of_crisis
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = NCH_hive
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = NCH_Queen_Gytha_Patch
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 33
+		y = 15
+
+	}
+	focus = {
+		id = NCH_pressure_chrusalis
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hive
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = NCH_spy_everywhere
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_pressure_chrusalis
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = NCH_take_a_mpment
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_spy_everywhere
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = NCH_seek_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hive
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = NCH_Queen_Ditrisium
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_seek_support
+		}
+		prerequisite = {
+			focus = NCH_pressure_chrusalis
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = NCH_equipment_suppporter
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Ditrisium
+		}
+		prerequisite = {
+			focus = NCH_spy_everywhere
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = NCH_give_hope
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_equipment_suppporter
+		}
+		prerequisite = {
+			focus = NCH_take_a_mpment
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = NCH_idea_of_harmony_in_hives
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Ditrisium
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = NCH_fangs_dug
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_equipment_suppporter
+		}
+		prerequisite = {
+			focus = NCH_idea_of_harmony_in_hives
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = NCH_rethinking_history
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hive
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = NCH_accept_refugees
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_rethinking_history
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = NCH_loyal_elite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_rethinking_history
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = NCH_our_legarl_right
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_accept_refugees
+		}
+		prerequisite = {
+			focus = NCH_loyal_elite
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = NCH_all_or_nothing
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_our_legarl_right
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = NCH_unity_summit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hive
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = NCH_start_negotiations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_unity_summit
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = NCH_all_wars_ends
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_start_negotiations
+		}
+		mutually_exclusive = {
+			focus = NCH_menace_chrysalis
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = NCH_menace_chrysalis
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_start_negotiations
+		}
+		mutually_exclusive = {
+			focus = NCH_all_wars_ends
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = NCH_after_war_plans
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_menace_chrysalis
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = NCH_mre_cards
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_beginning_of_crisis
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = NCH_agroindustrial_mobilization
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_mre_cards
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = NCH_agroindustrial_programs
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agroindustrial_mobilization
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = NCH_limit_external_trade
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_mre_cards
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = NCH_industrial_cooperatives
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agroindustrial_mobilization
+		}
+		prerequisite = {
+			focus = NCH_limit_external_trade
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = NCH_modernization_industry
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_limit_external_trade
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = NCH_domestic_consumption
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agroindustrial_programs
+		}
+		prerequisite = {
+			focus = NCH_modernization_industry
+		}
+		prerequisite = {
+			focus = NCH_industrial_cooperatives
+		}
+		x = 27
+		y = 12
+
+	}
+	focus = {
+		id = NCH_divided_house_Copy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_legacy
+		}
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = NCH_Spy_experience
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_divided_house_Copy
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = NCH_find_they_job
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = NCH_new_hives
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = NCH_emergacy_plan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_beginning_of_crisis
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = NCH_consolidation_political
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emergacy_plan
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = NCH_parliament_convocation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_legacy
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = NCH_new_housing
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_divided_house_Copy
+		}
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = NCH_learn_from_mistakes
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_housing
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = NCH_call_for_unity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emergacy_plan
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = NCH_lift_the_veil
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = NCH_Esteblish_trade_guild
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = NCH_take_look_around
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = NCH_time_to_look_further
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_learn_from_mistakes
+		}
+		prerequisite = {
+			focus = NCH_Esteblish_trade_guild
+		}
+		prerequisite = {
+			focus = NCH_new_hives
+		}
+		prerequisite = {
+			focus = NCH_find_they_job
+		}
+		prerequisite = {
+			focus = NCH_take_look_around
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = NCH_to_neighbors
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_beginning_of_crisis
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = NCH_every_friend
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_neighbors
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = NCH_hoof_of_help
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_every_friend
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = NCH_some_love
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_every_friend
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = NCH_reguest_of_help
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_neighbors
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = NCH_army_concessions
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reguest_of_help
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = NCH_collective_management
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_all_wars_ends
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = NCH_burnings_they_hearts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_collective_management
+			focus = NCH_after_war_plans
+			focus = NCH_all_or_nothing
+			focus = NCH_fangs_dug
+			focus = NCH_give_hope
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = NCH_union_hives
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_burnings_they_hearts
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = NCH_clans_of_Greneclyf
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_consolidation_political
+		}
+		prerequisite = {
+			focus = NCH_call_for_unity
+		}
+		x = 33
+		y = 11
+
+	}
+	focus = {
+		id = NCH_suppression_of_unrest
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_clans_of_Greneclyf
+		}
+		x = 33
+		y = 12
+
+	}
+	focus = {
+		id = NCH_final_crisis
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_suppression_of_unrest
+		}
+		prerequisite = {
+			focus = NCH_suppression_of_unrest
+		}
+		x = 33
+		y = 13
+
+	}
+	focus = {
+		id = NCH_concessions_for_help
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reguest_of_help
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = NCH_overvise_great_packt
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_hoof_of_help
+		}
+		prerequisite = {
+			focus = NCH_some_love
+		}
+		prerequisite = {
+			focus = NCH_army_concessions
+		}
+		prerequisite = {
+			focus = NCH_concessions_for_help
+		}
+		x = 39
+		y = 12
+
+	}
+}

@@ -117,12 +117,13 @@ if = {
 }
 # End of ship stuff
 
+# REDUX #
 set_convoys = 20
 set_popularities = {
-	democratic = 94
-	fascism = 0
+	democratic = 90
+	fascism = 3
 	communism = 6
-	neutrality = 0
+	neutrality = 1
 }
 set_politics = {
 	ruling_party = democratic
@@ -132,12 +133,14 @@ set_politics = {
 }
 
 add_ideas = {
+	pre_industrial_society
 	isolation
-	agrarian_society
-	NCH_FBK_pact
 	lack_of_scientists
+
 	NCH_idyllic_society
-	NCH_Basalt_Shaw
+	NCH_luddites
+	NCH_FBK_pact
+	NCH_Overpopulation
 }
 
 add_tech_bonus = {
@@ -146,16 +149,21 @@ add_tech_bonus = {
 	uses = 1
 	technology = tech_changeling_a
 }
+
 add_tech_bonus = {
 	name = specialised_drones
 	bonus = 1
 	uses = 1
 	technology = tech_changeling_a2
 }
+
 add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
-set_stability = 0.83
+set_stability = 0.73
+
+
 # Submod #
+recruit_character = NCH_Oiren_Judge
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart
 recruit_character = NCH_admiral_lorri
@@ -177,6 +185,7 @@ recruit_character = NCH_Furrelion
 recruit_character = NCH_Marikel
 #recruit_character = NCH_Tornus
 recruit_character = NCH_Sul_Oraiste
+recruit_character = NCH_Valha
 
 # leaders #
 recruit_character = NCH_queen_gytha
@@ -200,7 +209,7 @@ recruit_character = NCH_generic_navy_fleet_log #### WIP
 #recruit_character = NCH_generic_military_theorist
 #recruit_character = NCH_captain_of_industry
 #recruit_character = NCH_war_industrialist
-recruit_character = NCH_fortification_engineer
+#recruit_character = NCH_fortification_engineer
 #recruit_character = NCH_trade_advisor
 #recruit_character = NCH_ideological_crusader
 
@@ -221,5 +230,3 @@ set_rule = {
 	can_generate_female_unit_leaders  = yes
 	can_generate_female_country_leaders = yes
 }
-
-#	name = "P. Syntrophy"

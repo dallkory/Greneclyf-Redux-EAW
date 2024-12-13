@@ -1,4 +1,10 @@
 prospect_for_resources = {
+
+	### REDUX ###
+	# FOR FORCES #
+
+	
+
 	# Submod #
 	# Resources for fleet
 
@@ -421,6 +427,20 @@ prospect_for_resources = {
 	}
 
 	# Submod #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

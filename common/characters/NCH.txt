@@ -1,6 +1,7 @@
 characters={
 
-    # Submod #
+	### REDUX ###
+
 	# New Leaders #
 	
 	NCH_Gytha_iron_lady = {
@@ -20,6 +21,35 @@ characters={
 	}
 
 	# Advisors #
+	# Oiren judge #
+
+	NCH_Oiren_Judge = {
+		name = Oiren_Judge
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/Advisors/NCH/Oiren_judge.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+					has_government = democratic
+					has_country_flag = NCH_Jorney_completed
+			}
+
+			visible = {
+				has_country_flag = NCH_Jorney_completed
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Oiren_Judge_itoken
+			large = army
+			cost = 150
+			traits = {
+				higher_judge_oiren
+			}
+		}
+	}
 
 	# lord - protecttor
 	NCH_Basalt_Shaw={
@@ -47,6 +77,33 @@ characters={
 		}
 	}
 
+	NCH_Valha = {
+		name = Valha_Ksilokopa
+		desc = Valha_Ksilokopa_desc 
+		portraits = {
+			army = {
+				small = ""
+			}
+		}
+
+		advisor = {
+			visible = {
+				has_country_flag = NCH_valha_hired
+			}
+			slot = political_advisor
+			idea_token = NCH_Valha
+			ledger = army
+			cost = 100
+			
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+
+			}
+		}
+	}
+
 	NCH_scientist_celarl={
         name=Celarl
 		desc = Celarl_desc
@@ -64,14 +121,15 @@ characters={
             allowed = {
                 original_tag = NCH
             }
+			available = { 
+                has_completed_focus = NCH_nuce_program_first_step
+            } 
             research_bonus = {
                 nuclear = 0.15
             }
+
             traits = { nuclear_scientist }
-    		desc = Celarl_desc
-            available = { 
-                has_completed_focus = NCH_nuce_program_first_step
-            }       
+    		desc = Celarl_desc      
 			on_add = {
 				is_hired_as_advisor = yes
 				country_event = {
@@ -405,22 +463,19 @@ characters={
 				small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
 			}
 		}
-		field_marshal = {
-			desc = "NCH_Desc_Moronlan"
-			traits={ changeling_race_trait brilliant_strategist old_guard }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-		}
+
 		advisor={
 			slot = army_chief
 			idea_token = NCH_Moronlan
 			cost = 100
+
 			allowed = {
 				original_tag = NCH
 			}
+			available = {
+				has_country_flag = NCH_Moronlan_Legacy
+			}
+
 			traits = {
 				army_chief_reform_2
 			}

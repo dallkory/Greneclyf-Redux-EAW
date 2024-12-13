@@ -1,3 +1,67 @@
+### REDUX ### 
+NCH_debug_decision = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+		is_debug = yes
+	}
+	priority = { base = 151 }
+}
+
+#NCH_hunger_category = {
+#	icon = GFX_unknow
+#
+#	visible = {
+#		has_power_balance = {
+#			id = NCH_hunger_bop
+#		}
+#	}
+#	priority = 152
+#}
+
+NCH_typography_category = {
+	icon = GFX_unknow
+	
+	visible = {
+		has_country_flag = NCH_typography_create
+	}
+	priority = {
+		base = 151
+	}
+}
+
+NCH_celarl_laboratory = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+	visible = {
+		has_country_flag = NCH_celarl_laboratory_opend
+	}
+
+	priority = {
+		base = 149
+	}
+}
+
+NCH_hunger_bop_category = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+
+	visible = {
+		has_power_balance = {
+			id = NCH_hunger_bop
+		}
+	}
+}
+
+
+
 # Submod
 NCH_nuke_category = {
 	#picture = "GFX_event_mission_reward" #add later

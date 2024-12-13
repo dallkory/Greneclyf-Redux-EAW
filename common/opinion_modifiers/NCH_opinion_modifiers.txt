@@ -1,0 +1,15 @@
+
+opinion_modifiers = {
+	NCH_cold_trade = {
+		value = -20
+		trade = yes
+		months = 9
+	}
+
+	NCH_trade_with_riverlands = {
+		value = 30
+		months = 12
+	}
+}
+
+

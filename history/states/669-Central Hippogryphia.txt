@@ -21,4 +21,8 @@ state={
 			industrial_complex = 1
 		}
 	}
+	
+	resources={
+		tungsten = 6.0
+	}
 }

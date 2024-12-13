@@ -1,0 +1,15 @@
+leader_traits = {
+	higher_judge_oiren = {
+		random = no
+		
+		stability = 0.05
+		political_power_factor = 0.10
+		party_popularity_stability_factor = 0.3
+		compliance_gain = 0.02
+		resistance_growth_bonus = -0.05  
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
