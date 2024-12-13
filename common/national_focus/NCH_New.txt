@@ -1995,12 +1995,20 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_rule_greneclyf
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = army_upgrades
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
 		x = 77
 		y = 3
 
 	}
 	focus = {
-		id = NCH_aisling_air_institute
+		id = NCH_flying_school 
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -2015,7 +2023,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_aisling_air_institute
+			focus = NCH_flying_school 
 		}
 		x = 72
 		y = 5
@@ -2026,7 +2034,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_aisling_air_institute
+			focus = NCH_flying_school 
 		}
 		x = 74
 		y = 5
@@ -2078,12 +2086,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NCH_flying_school
+		id = NCH_aisling_air_institute
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		prerequisite = {
 			focus = NCH_and_in_the_air
 		}
+		select_effect = {
+			
+		}
+		completion_reward = {
+			1209={
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 5230
+				}
+			}
+		}
+
 		x = 81
 		y = 4
 
@@ -2093,7 +2114,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
 		}
 		x = 78
 		y = 5
@@ -2140,7 +2161,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
 		}
 		mutually_exclusive = {
 			focus = NCH_figher_aircraft
@@ -2154,7 +2175,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
 		}
 		mutually_exclusive = {
 			focus = NCH_tactical_aviation
