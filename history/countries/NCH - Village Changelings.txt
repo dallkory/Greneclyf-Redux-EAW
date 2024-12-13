@@ -6,6 +6,7 @@ set_research_slots = 2
 
 set_country_flag = has_custom_advisors
 set_country_flag = has_custom_designers
+set_country_flag = has_custom_spymaster
 
 set_technology = {
 	changeling_race = 1
