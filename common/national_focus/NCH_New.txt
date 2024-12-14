@@ -1047,7 +1047,21 @@ focus_tree = {
 		y = 7
 
 		completion_reward = {
+			custom_effect_tooltip = NCH_unique_naval_experomental
 
+			if = {
+				limit = {
+					has_completed_focus = NCH_hard_armor					
+				}
+				add_ideas = NCH_grand_fleet 
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = NCH_silent_hunters					
+				}
+				add_ideas = NCH_submarine_fleet
+			}
 		}
 	}
 	
@@ -1353,7 +1367,13 @@ focus_tree = {
 			custom_effect_tooltip = NCH_our_navy_strategy
 			set_country_flag = NCH_sea_future
 			
-			add_ideas = NCH_navy_forces
+			hidden_effect = {
+				remove_idea = NCH_expand_blosmport_dockyards
+				remove_idea = NCH_naval_academy_establish
+				remove_idea = NCH_break_ice_idea
+			}
+			
+				add_ideas = NCH_navy_forces
 		}
 	}
 

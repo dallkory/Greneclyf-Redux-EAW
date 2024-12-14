@@ -261,7 +261,10 @@ NCH_celarl_laboratory = {
 		icon = d
 		cost = 50
 		days_remove = 45
-
+		
+		visible = {
+			has_completed_focus = NCH_experomental_developments
+		}
 		modifier = {
 			experience_gain_navy = 0.02
 			experience_gain_navy_factor = 0.1
