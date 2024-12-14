@@ -282,8 +282,10 @@ ideas = {
 				critical_receive_chance = -0.075
 				naval_accidents_chance = -0.075
 				naval_invasion_prep_speed = 0.3
-
-				signals_training_spirit_tt
+				
+				navy_leader_start_level = 1
+				navy_leader_start_attack_level = 1
+				navy_leader_start_maneuvering_level = 1
 			}
 			research_bonus = {
 				naval_equipment = 0.15
@@ -319,6 +321,7 @@ ideas = {
 				navy_chief_cost_factor = -0.15
 				naval_invasion_prep_speed = 0.25
 				navy_org_factor = 0.1
+				navy_leader_start_level = 1
 			}
 			research_bonus = {
 				naval_equipment = 0.05

@@ -970,6 +970,13 @@ focus_tree = {
 				uses = 2
 				category = cat_fleet_in_being
 			}
+
+			add_tech_bonus = {
+				name = battleship_tech
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 
@@ -993,6 +1000,13 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 2
 				category = cat_trade_interdiction
+			}
+
+			add_tech_bonus = {
+				name = submarine_tech
+				bonus = 1
+				uses = 1
+				category = ss_tech
 			}
 		}
 	}
@@ -1032,6 +1046,9 @@ focus_tree = {
 		x = 47
 		y = 7
 
+		completion_reward = {
+			set_country_flag = 
+		}
 	}
 	
 
