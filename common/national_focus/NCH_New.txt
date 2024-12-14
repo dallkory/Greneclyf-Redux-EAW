@@ -963,12 +963,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_armor_priority
-			670 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-				}
-			}
+
 			add_doctrine_cost_reduction = {
 				name = navdoc_bonus
 				cost_reduction = 0.25
@@ -1044,7 +1039,7 @@ focus_tree = {
 	focus = {
 		id = NCH_assing_new_command
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_at_seas
 		}
@@ -1087,7 +1082,7 @@ focus_tree = {
 	focus = {
 		id = NCH_marine_corp
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_assing_new_command
 		}
@@ -1132,7 +1127,7 @@ focus_tree = {
 	focus = {
 		id = NCH_naval_academy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_assing_new_command
 		}
@@ -1226,13 +1221,17 @@ focus_tree = {
 		x = 56
 		y = 5
 
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
 		completion_reward = {
-			limit = {
-				is_coastal = yes
+			set_technology = {
+				
 			}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 100
 			}
 		}
 	}

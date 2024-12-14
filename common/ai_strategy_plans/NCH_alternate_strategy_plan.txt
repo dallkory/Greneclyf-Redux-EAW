@@ -112,13 +112,13 @@ NCH_alternate_facism = {
 	}
 
 	enable = {
-		OR = {
-			has_country_flag = NCH_AI_FASCISM
-			has_game_rule = {
-				rule = NCH_ai_behavior
-				option = FASCISM
+			OR = {
+				has_country_flag = NCH_AI_FASCISM
+				has_game_rule = {
+					rule = NCH_ai_behavior
+					option = FASCISM
+				}
 			}
-		}
 	}
 	abort = {
 		

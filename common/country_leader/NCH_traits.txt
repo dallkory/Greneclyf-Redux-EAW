@@ -12,4 +12,11 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	great_architect = {
+		random = no
+
+		local_building_slots = 2
+		
+	}
 }
