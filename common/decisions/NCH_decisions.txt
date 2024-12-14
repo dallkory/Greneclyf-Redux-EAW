@@ -254,6 +254,15 @@ NCH_celarl_laboratory = {
 		days_remove = 70
 
 		modifier = {
+		}
+	}
+
+	NCH_navy_experimental = {
+		icon = d
+		cost = 50
+		days_remove = 45
+
+		modifier = {
 			experience_gain_navy = 0.02
 			experience_gain_navy_factor = 0.1
 		}

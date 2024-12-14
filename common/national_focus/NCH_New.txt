@@ -1047,7 +1047,7 @@ focus_tree = {
 		y = 7
 
 		completion_reward = {
-			set_country_flag = 
+
 		}
 	}
 	
