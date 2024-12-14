@@ -7,7 +7,7 @@ state={
 	}
 
 	manpower=1756089	#956089#
-	state_category=town
+	state_category=city
 	buildings_max_level_factor=1.00
 
 	history={
