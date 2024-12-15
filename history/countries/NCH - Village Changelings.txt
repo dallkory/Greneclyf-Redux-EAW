@@ -12,7 +12,10 @@ set_technology = {
 	changeling_race = 1
 	tech_support = 1
 	tech_jager = 1
-	
+	recon_1 = 1
+	engineer_1 = 1
+	military_police_1 = 1
+
 	melee_weapons = 1
 	melee_weapons1 = 1
 	infantry_weapons = 1
