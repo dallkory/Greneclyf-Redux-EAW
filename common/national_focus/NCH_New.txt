@@ -1067,7 +1067,19 @@ focus_tree = {
 						limit = {
 							has_dlc = "Man the Guns"
 						}
-					
+						set_technology = {
+							heavy_cruiser_1 = 1
+							light_cruiser_1 = 1
+							destroyer_1 = 1
+							destroyer_2 = 1
+	
+							ship_shields_1 = 1
+							secondary_battery_1 = 1
+							ship_armor_cruiser_1 = 1
+							ship_torpedo_1 = 1
+							ship_depth_charge_1 = 1
+						}
+
 					# BATTLESHIPS #
 						add_equipment_production = {
 							equipment = { 
@@ -1092,33 +1104,29 @@ focus_tree = {
 							progress = 0.6
 							amount = 1
 						}
-						##
-						# Craisers #
-		
-						set_technology = {
-							heavy_cruiser_1 = 1
-							light_cruiser = 1
-							armor_1 = 1
-							secondary_battery_1 = 1
-						}
-		
+					##
+					# Craisers #
 					create_equipment_variant = {
 						name = "Cineál 9"
 						type = heavy_cruiser_1
 						allow_without_tech = yes
 						name_group = NCH_BB_HISTORICAL
 						parent_version = 0
-						allow_without_tech = yes
 		
 						modules = {
-							slot1 = cruiser_battery_1
-							slot2 = secondary_battery_1
-							slot3 = fire_control_0
-							slot4 = engine_1
-							slot5 = armor_1
+							fixed_ship_battery_slot = ship_medium_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_1
+							mid_1_custom_slot = ship_torpedo_1
+							mid_2_custom_slot = ship_torpedo_1
+							fixed_ship_armor_slot = ship_armor_cruiser_1
+
+							rear_1_custom_slot = ship_medium_battery_1
+							rear_2_custom_slot = dp_light_battery_1
 						}
 					}
-		
 		
 					add_equipment_production = {
 						equipment = {
@@ -1126,9 +1134,144 @@ focus_tree = {
 							type = heavy_cruiser_1
 							creator = NCH
 						}
-						name = "LnG Amur"
+						name = "LnG Korry"
 						requested_factories = 5
-						progress = 0.6
+						progress = 0.65
+						amount = 1
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 9"
+							type = heavy_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Vega"
+						requested_factories = 5
+						progress = 0.65
+						amount = 1
+					}
+
+
+					create_equipment_variant = {
+						name = "Cineál 7"
+						type = light_cruiser_1
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_battery_slot = ship_light_medium_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_1
+							mid_1_custom_slot = ship_torpedo_1
+							mid_2_custom_slot = ship_torpedo_1
+							fixed_ship_armor_slot = ship_armor_cruiser_1
+
+							rear_0_custom_slot = ship_anti_air_1
+							rear_1_custom_slot = ship_light_medium_battery_1
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 7"
+							type = light_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Judge"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 7"
+							type = light_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Brave"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+					
+
+					create_equipment_variant = {
+						name = "Cineál 3"
+						type = destroyer_2
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+
+							mid_1_custom_slot = ship_depth_charge_1
+							rear_1_custom_slot = empty
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Gerda"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Bugsmere"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Hive"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Legend"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Sun"
+						requested_factories = 5
+						progress = 0.5
 						amount = 1
 					}
 				}
@@ -1139,33 +1282,200 @@ focus_tree = {
 				}
 			}
 
-			# NO DLC SUBMARINES #
+			# SUBMARINES #
 			if = {
 				limit = {
 					has_completed_focus = NCH_silent_hunters					
 				}
-		
 				add_ideas = NCH_submarine_fleet
 		
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
+
 					set_technology = {
 						cruiser_submarines = 1
+						early_submarine = 1
 					}
-						## PROD LINE
+					
+					create_equipment_variant = {
+						name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
 		
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							front_1_custom_slot = ship_torpedo_sub_1
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = ship_torpedo_sub_1
+
+							#fixed_ship_engine_slot = sub_ship_engine_1
+							#fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							#front_1_custom_slot = ship_extra_fuel_tank
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Tyrann"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Icepeak"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Snowball"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Dark"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Hero"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Bee"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Icebreaker"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Arktur"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Lier"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Free Bird"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Fury"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Great"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO First"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
 		
 					# NO DLC#
 					else = {
 						set_technology = {
 						cruiser_submarines_nomtg = 1
 						}
+
+
+						
 					}
 				}
 			}
 		}
+	}
 
 	focus = {
 		id = NCH_assing_new_command
