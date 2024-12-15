@@ -462,20 +462,7 @@ characters={
 				large="gfx/leaders/NCH/Moronlan.tga"
 				small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
 			}
-
 				desc = "NCH_Desc_Moronlan"
-				visible = {
-					has_country_flag = NCH_Moronlan_Legacy
-				}
-
-				add_field_marshal_role = {
-					traits={ changeling_race_trait brilliant_strategist old_guard }
-					skill = 2
-					attack_skill = 3
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
 		}
 
 		advisor={

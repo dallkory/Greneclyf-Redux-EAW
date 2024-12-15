@@ -38,24 +38,15 @@ add_namespace = greneclyf_crisis
 			add_political_power = 50
 			add_ideas = NCH_Basalt_Shaw
 			set_country_flag = NCH_Moronlan_Legacy
-
-			add_character_role = {
-				name = Moronlan
-				portraits={
-					army={
-						large="gfx/leaders/NCH/Moronlan.tga"
-						small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
-					}
-				}
-				desc = "NCH_Desc_Moronlan"
-				add_field_marshal_role = {
-					traits={ changeling_race_trait brilliant_strategist old_guard }
-					skill = 2
-					attack_skill = 3
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
+			
+			add_field_marshal_role = {
+				character = NCH_Moronlan
+				traits={ changeling_race_trait brilliant_strategist old_guard }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
 			}
 		}
 	}
