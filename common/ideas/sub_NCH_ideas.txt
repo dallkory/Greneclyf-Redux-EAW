@@ -342,8 +342,6 @@ ideas = {
 
 
 
-
-
 		# SUBMOD #
 		NCH_submarine_buff_idea = {
 			picture = NCH_changeling_submarine
@@ -440,6 +438,5 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
-
 	}
 }

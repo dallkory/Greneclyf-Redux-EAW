@@ -1056,24 +1056,116 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = NCH_unique_naval_experomental
-
+		
 			if = {
 				limit = {
 					has_completed_focus = NCH_hard_armor					
 				}
 				add_ideas = NCH_grand_fleet 
+				
+				if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+					
+					# BATTLESHIPS #
+						add_equipment_production = {
+							equipment = { 
+								version_name = "LnG Gytha"
+								type = ship_hull_heavy_1
+								creator = NCH
+							}
+							name = "LnG Oiren"
+							requested_factories = 5
+							progress = 0.7
+							amount = 1
+						}
+		
+						add_equipment_production = {
+							equipment = { 
+								version_name = "LnG Gytha"
+								type = ship_hull_heavy_1
+								creator = NCH
+							}
+							name = "LnG Basalt"
+							requested_factories = 5
+							progress = 0.6
+							amount = 1
+						}
+						##
+						# Craisers #
+		
+						set_technology = {
+							heavy_cruiser_1 = 1
+							light_cruiser = 1
+							armor_1 = 1
+							secondary_battery_1 = 1
+						}
+		
+					create_equipment_variant = {
+						name = "Cineál 9"
+						type = heavy_cruiser_1
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes
+		
+						modules = {
+							slot1 = cruiser_battery_1
+							slot2 = secondary_battery_1
+							slot3 = fire_control_0
+							slot4 = engine_1
+							slot5 = armor_1
+						}
+					}
+		
+		
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 9"
+							type = heavy_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Amur"
+						requested_factories = 5
+						progress = 0.6
+						amount = 1
+					}
+				}
+
+				# NO DLC#
+				else = {
+					
+				}
 			}
 
+			# NO DLC SUBMARINES #
 			if = {
 				limit = {
 					has_completed_focus = NCH_silent_hunters					
 				}
+		
 				add_ideas = NCH_submarine_fleet
+		
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						cruiser_submarines = 1
+					}
+						## PROD LINE
+		
+		
+					# NO DLC#
+					else = {
+						set_technology = {
+						cruiser_submarines_nomtg = 1
+						}
+					}
+				}
 			}
 		}
-	}
-	
-
 
 	focus = {
 		id = NCH_assing_new_command
@@ -1352,6 +1444,34 @@ focus_tree = {
 		x = 55
 		y = 7
 
+		available = {
+			FROM = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}  
+					has_tech = early_ship_hull_cruiser
+				}
+				else = {
+					has_tech = early_light_cruiser
+				}
+	
+			}
+				
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				set_technology = { torpedo_cruiser = 1 }
+			}
+
+			else = {
+				set_technology = { torpedo_cruiser_mtg = 1 }
+			}
+		}
 	}
 
 	focus = {
