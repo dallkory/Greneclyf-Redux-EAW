@@ -1,4 +1,23 @@
 leader_traits = {
+
+	The_naive_reformer = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		democratic_drift = 0.03
+		democratic_acceptance = 50
+	}
+	
+
+	silent_workbug2 = {
+		random = no
+		political_power_factor = 0.1
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	higher_judge_oiren = {
 		random = no
 		

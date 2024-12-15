@@ -283,6 +283,7 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.9.a
+			set_country_flag = NCH_celarl_laboratory_opend
 		}
 	}
 
@@ -373,8 +374,24 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.14.a
+			set_country_flag = NCH_hunger_defeat
 		}
-		set_country_flag = NCH_hunger_defeat
 	}
 
 	### HUNGER DEFEAT ###
+
+
+	### FORCES ###
+
+	country_event = {
+		id = greneclyf_redux.99
+		title = greneclyf_redux.99.t
+		desc = greneclyf_redux.99.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.99.a
+		}
+	}
