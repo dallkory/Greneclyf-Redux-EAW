@@ -159,7 +159,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.075
-				stability_weekly = 0.1
+				stability_weekly = 0.01
 				democratic_drift = 0.02
 			}
 		}
