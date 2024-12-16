@@ -1857,7 +1857,247 @@ focus_tree = {
 			focus = NCH_rule_greneclyf
 		}
 
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = navdoc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
+
+	focus = {
+		id = NCH_auxiliary_battalions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_on_land
+		}
+		mutually_exclusive = {
+			focus = NCH_priorize_integrity
+		}
+		x = 62
+		y = 4
+
+	}
+	focus = {
+		id = NCH_inspire_by_example
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 60
+		y = 5
+
+		completion_reward = {
+				add_corps_commander_role = {
+                character = NCH_Merelay
+                desc = "NCH_Merelay"
+                traits={changeling_race_trait infantry_leader hill_fighter}
+                skill=3
+                attack_skill=2
+                defense_skill=4
+                planning_skill=1
+                logistics_skill=3
+                legacy_id=941
+            } 
+		}
+	}
+	focus = {
+		id = NCH_anyone_can_be_hero
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 62
+		y = 5
+
+	}
+	focus = {
+		id = NCH_greuling_workouts
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+		}
+		prerequisite = {
+			focus = NCH_inspire_by_example
+		}
+		x = 61
+		y = 6
+
+	}
+	focus = {
+		id = NCH_best_of_the_best
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_inspire_by_example
+		}
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+		}
+		x = 59
+		y = 6
+
+	}
+	focus = {
+		id = NCH_faith_in_queen
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_best_of_the_best
+		}
+		prerequisite = {
+			focus = NCH_greuling_workouts
+		}
+		x = 60
+		y = 7
+
+	}
+	focus = {
+		id = NCH_priorize_integrity
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_on_land
+		}
+		mutually_exclusive = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 66
+		y = 4
+
+	}
+	focus = {
+		id = NCH_discipline_is_key_to_order
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_priorize_integrity
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = NCH_bugsmere_war_institute
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+			focus = NCH_discipline_is_key_to_order
+		}
+		x = 64
+		y = 6
+
+	}
+	focus = {
+		id = NCH_greneclyf_tanks
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_bugsmere_war_institute
+		}
+		mutually_exclusive = {
+			focus = NCH_mechanization_of_brigades
+		}
+		x = 63
+		y = 7
+
+	}
+	focus = {
+		id = NCH_mechanization_of_brigades
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_bugsmere_war_institute
+		}
+		mutually_exclusive = {
+			focus = NCH_greneclyf_tanks
+		}
+		x = 65
+		y = 7
+
+	}
+	focus = {
+		id = NCH_pass_law_on_consctiption
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_priorize_integrity
+		}
+		x = 68
+		y = 5
+
+	}
+	focus = {
+		id = NCH_queen_of_the_fields
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_discipline_is_key_to_order
+		}
+		prerequisite = {
+			focus = NCH_pass_law_on_consctiption
+		}
+		mutually_exclusive = {
+			focus = NCH_goddes_of_war
+		}
+		x = 67
+		y = 6
+
+	}
+	focus = {
+		id = NCH_goddes_of_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_discipline_is_key_to_order
+		}
+		prerequisite = {
+			focus = NCH_pass_law_on_consctiption
+		}
+		mutually_exclusive = {
+			focus = NCH_queen_of_the_fields
+		}
+		x = 69
+		y = 6
+
+	}
+	focus = {
+		id = NCH_expamd_production
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_queen_of_the_fields
+			focus = NCH_goddes_of_war
+		}
+		x = 68
+		y = 7
+
+	}
+	focus = {
+		id = NCH_greneclyf_school_of_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_faith_in_queen
+			focus = NCH_expamd_production
+		}
+		x = 64
+		y = 8
+
+	}
+
+
+
+	
+	
 
 	focus = {
 		id = NCH_dreems_of_more
@@ -2313,219 +2553,7 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = NCH_auxiliary_battalions
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_on_land
-		}
-		mutually_exclusive = {
-			focus = NCH_priorize_integrity
-		}
-		x = 62
-		y = 4
-
-	}
-	focus = {
-		id = NCH_inspire_by_example
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 60
-		y = 5
-
-		completion_reward = {
-				add_corps_commander_role = {
-                character = NCH_Merelay
-                desc = "NCH_Merelay"
-                traits={changeling_race_trait infantry_leader hill_fighter}
-                skill=3
-                attack_skill=2
-                defense_skill=4
-                planning_skill=1
-                logistics_skill=3
-                legacy_id=941
-            } 
-		}
-	}
-	focus = {
-		id = NCH_anyone_can_be_hero
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 62
-		y = 5
-
-	}
-	focus = {
-		id = NCH_greuling_workouts
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-		}
-		prerequisite = {
-			focus = NCH_inspire_by_example
-		}
-		x = 61
-		y = 6
-
-	}
-	focus = {
-		id = NCH_best_of_the_best
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_inspire_by_example
-		}
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-		}
-		x = 59
-		y = 6
-
-	}
-	focus = {
-		id = NCH_faith_in_queen
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_best_of_the_best
-		}
-		prerequisite = {
-			focus = NCH_greuling_workouts
-		}
-		x = 60
-		y = 7
-
-	}
-	focus = {
-		id = NCH_priorize_integrity
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_on_land
-		}
-		mutually_exclusive = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 66
-		y = 4
-
-	}
-	focus = {
-		id = NCH_discipline_is_key_to_order
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_priorize_integrity
-		}
-		x = 66
-		y = 5
-
-	}
-	focus = {
-		id = NCH_bugsmere_war_institute
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-			focus = NCH_discipline_is_key_to_order
-		}
-		x = 64
-		y = 6
-
-	}
-	focus = {
-		id = NCH_greneclyf_tanks
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_bugsmere_war_institute
-		}
-		mutually_exclusive = {
-			focus = NCH_mechanization_of_brigades
-		}
-		x = 63
-		y = 7
-
-	}
-	focus = {
-		id = NCH_mechanization_of_brigades
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_bugsmere_war_institute
-		}
-		mutually_exclusive = {
-			focus = NCH_greneclyf_tanks
-		}
-		x = 65
-		y = 7
-
-	}
-	focus = {
-		id = NCH_pass_law_on_consctiption
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_priorize_integrity
-		}
-		x = 68
-		y = 5
-
-	}
-	focus = {
-		id = NCH_queen_of_the_fields
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_discipline_is_key_to_order
-		}
-		prerequisite = {
-			focus = NCH_pass_law_on_consctiption
-		}
-		mutually_exclusive = {
-			focus = NCH_goddes_of_war
-		}
-		x = 67
-		y = 6
-
-	}
-	focus = {
-		id = NCH_goddes_of_war
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_discipline_is_key_to_order
-		}
-		prerequisite = {
-			focus = NCH_pass_law_on_consctiption
-		}
-		mutually_exclusive = {
-			focus = NCH_queen_of_the_fields
-		}
-		x = 69
-		y = 6
-
-	}
-	focus = {
-		id = NCH_expamd_production
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_queen_of_the_fields
-			focus = NCH_goddes_of_war
-		}
-		x = 68
-		y = 7
-
-	}
+	
 	focus = {
 		id = NCH_and_in_the_air
 		icon = GFX_goal_unknown
@@ -2833,18 +2861,6 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = NCH_greneclyf_school_of_war
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_faith_in_queen
-			focus = NCH_expamd_production
-		}
-		x = 64
-		y = 8
-
-	}
 	focus = {
 		id = NCH_angry_hive
 		icon = GFX_goal_unknown
