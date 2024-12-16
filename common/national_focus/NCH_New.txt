@@ -1033,6 +1033,15 @@ focus_tree = {
 		x = 46
 		y = 6
 
+		completion_reward = {
+			add_ideas = NCH_battleships_cruaiser_bonus
+			
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = naval_equipment
+			}
+		}
 	}
 
 	focus = {
@@ -1045,6 +1054,17 @@ focus_tree = {
 		x = 48
 		y = 6
 
+		completion_reward = {
+			add_ideas = NCH_submarines_bonus
+
+			add_tech_bonus = {
+				name = submarine_tech
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
 	}
 
 	focus = {
@@ -1282,7 +1302,14 @@ focus_tree = {
 
 				# NO DLC#
 				else = {
-					
+
+
+
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
 				}
 			}
 

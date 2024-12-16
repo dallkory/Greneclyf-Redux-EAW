@@ -263,11 +263,18 @@ NCH_celarl_laboratory = {
 		days_remove = 45
 		
 		visible = {
-			has_completed_focus = NCH_experomental_developments
+			and = {
+				has_completed_focus = NCH_hard_armor
+				has_completed_focus = NCH_experomental_developments
+			}
 		}
 		modifier = {
 			experience_gain_navy = 0.02
 			experience_gain_navy_factor = 0.1
+		}
+
+		complete_effect = {
+			add_ideas = NCH_battleships_cruaiser_bonus
 		}
 	}
 }
