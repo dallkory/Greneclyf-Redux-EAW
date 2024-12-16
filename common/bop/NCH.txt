@@ -44,6 +44,12 @@ NCH_hunger_bop = {
 				fascism_drift = 0.03
 				communism_drift = 0.03
 			}
+			on_activate = {
+				set_country_flag = NCH_bop_start_crisis
+			}
+			on_deactivate = {
+				clr_country_flag = NCH_bop_start_crisis
+			}
 		}
 
 		range = {
@@ -63,6 +69,12 @@ NCH_hunger_bop = {
 
 				fascism_drift = 0.02
 				communism_drift = 0.02
+			}
+			on_activate = {
+				set_country_flag = NCH_bop_medium_crisis
+			}
+			on_deactivate = {
+				clr_country_flag = NCH_bop_medium_crisis
 			}
 		}
 
@@ -84,6 +96,12 @@ NCH_hunger_bop = {
 				fascism_drift = 0.01
 				communism_drift = 0.01
 			}
+			on_activate = {
+				set_country_flag = NCH_bop_just_finished
+			}
+			on_deactivate = {
+				clr_country_flag = NCH_bop_just_finished
+			}
 		}
 	}
 
@@ -103,6 +121,12 @@ NCH_hunger_bop = {
 				economy_cost_factor = -0.05
 				trade_laws_cost_factor = -0.05
 			}
+			on_activate = {
+				set_country_flag = NCH_bop_end
+			}
+			on_deactivate = {
+				clr_country_flag = NCH_bop_end
+			}
 		}
 
 		range = {
@@ -119,6 +143,12 @@ NCH_hunger_bop = {
 				political_advisor_cost_factor = -0.15
 				economy_cost_factor = -0.15
 				trade_laws_cost_factor = -0.15
+			}
+			on_activate = {
+				set_country_flag = NCH_bop_never_more
+			}
+			on_deactivate = {
+				clr_country_flag = NCH_bop_never_more
 			}
 		}
 	}
