@@ -1796,12 +1796,12 @@ focus_tree = {
 				else = {
 					has_tech = early_light_cruiser
 				}
-	
 			}
-				
 		}
 
 		completion_reward = {
+			add_ideas = NCH_torpedo_attack 
+
 			if = {
 				limit = {
 					not = { has_dlc = "Man the Guns" }
@@ -1840,7 +1840,6 @@ focus_tree = {
 				remove_idea = NCH_naval_academy_establish
 				remove_idea = NCH_break_ice_idea
 			}
-
 				add_ideas = NCH_navy_forces
 		}
 	}

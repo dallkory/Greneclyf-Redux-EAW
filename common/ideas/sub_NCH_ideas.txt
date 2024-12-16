@@ -267,7 +267,7 @@ ideas = {
 
 		## NAVY ##
 		NCH_navy_forces = {
-			picture = 
+			picture = d
 			allowed = {
 				always = yes
 			}
@@ -293,14 +293,13 @@ ideas = {
 		}
 
 		NCH_blosmporn_dockyards = {
-			picture = 
+			picture = d
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 
 			modifier = {
-				#production_cost_max_ship_hull_heavy = 10000
 				production_cost_max_ship_hull_heavy = 10000
 				navy_fuel_consumption_factor = -0.05
 				industrial_capacity_dockyard = 0.1
@@ -310,7 +309,7 @@ ideas = {
 		}
 
 		NCH_naval_academy_establish = {
-			picture =
+			picture = d
 			allowed = {
 				always = yes
 			}
@@ -329,7 +328,7 @@ ideas = {
 		}
 
 		NCH_break_ice_idea = {
-			picture = 
+			picture = d
 			allowed = {
 				always = yes
 			}
@@ -340,7 +339,21 @@ ideas = {
 			}
 		}
 
-		# NAVY #
+		NCH_torpedo_attack = {
+			picture = d
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.2
+			}
+		}
+
 		NCH_submarine_buff_idea = {
 			picture = NCH_changeling_submarine
 			allowed = {
@@ -406,6 +419,12 @@ ideas = {
 			}
 		}
 
+
+
+
+
+
+		# SUBMOD #
 		NCH_school_of_engeneers_idea = {
 			picture = bug_school
 			allowed = {
