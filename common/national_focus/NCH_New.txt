@@ -2534,6 +2534,7 @@ focus_tree = {
 			focus = NCH_rule_greneclyf
 		}
 		completion_reward = {
+			air_experience = 50
 			add_tech_bonus = {
 				name = army_upgrades
 				bonus = 0.5
@@ -2552,6 +2553,16 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_and_in_the_air
 		}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = army_upgrades
+				bonus = 0.3
+				uses = 2
+				category = air_equipment
+			}
+			#Открывает советника на доктрину
+		}
 		x = 73
 		y = 4
 
@@ -2562,6 +2573,27 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = NCH_flying_school 
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				technology = radio
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				category = radar_tech
+				bonus = 0.5
+				uses = 2
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
 		}
 		x = 72
 		y = 5
@@ -2574,6 +2606,28 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_flying_school 
 		}
+		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+
+		}
 		x = 74
 		y = 5
 
@@ -2585,6 +2639,32 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_build_new_airbases
 		}
+		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+		}
 		x = 74
 		y = 6
 
@@ -2595,6 +2675,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = NCH_radar_development
+		}
+		completion_reward = {
+			add_ideas = air_night1
+			army_experience = 30
 		}
 		x = 72
 		y = 6
@@ -2608,6 +2692,22 @@ focus_tree = {
 			focus = NCH_night_training
 			focus = NCH_defense_island
 		}
+		completion_reward = {
+			add_ideas = x #air_night2+air_school
+			add_tech_bonus = {
+				name = x
+				category = air_doctrine
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				category = air_doctrine
+				bonus = 0.5
+				uses = 1
+			}
+			#Открывает советника 
+		}
 		x = 74
 		y = 7
 
@@ -2618,6 +2718,20 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = NCH_and_in_the_air
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				technology = paratroopers
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				technology = special_forces_paratroopers
+				bonus = 0.5
+				uses = 2
+			}
 		}
 		x = 77
 		y = 4
@@ -2638,6 +2752,11 @@ focus_tree = {
 					level = 1
 					province = 5230
 				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+				add_ideas = air_facility1
 			}
 		}
 
@@ -2652,6 +2771,21 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_aisling_air_institute
 		}
+		completion_reward = {
+			1209 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+			
+		}
+			add_ideas = air_production1
+		}
 		x = 78
 		y = 5
 
@@ -2662,6 +2796,22 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = NCH_domestic_parts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				category = rocketry
+				bonus = 0.4
+				uses = 3
+			}
+			669={
+				add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = rocket_site
+				level = 2
+				province = 10952
+			}
+		}
 		}
 		x = 77
 		y = 6
@@ -2674,19 +2824,54 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_domestic_parts
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				category = nuclear
+				bonus = 1
+				uses = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		}
 		x = 79
 		y = 6
 
 	}
-
-	## FIX THIS ID ##
 	focus = {
-		id = NCH_experomental_developments
+		id = NCH_experimental_developments
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
 			focus = NCH_rocket_science
 			focus = NCH_hotter_thousands_suns
+		}
+		completion_reward = {
+			add_ideas = air_production2
+			add_tech_bonus = {
+				name = x
+				category = rocketry
+				bonus = 0.35
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = x
+				category = cat_paratroopers_doctrine
+				bonus = 0.35
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = x
+				technology = jet_engines
+				bonus = 0.35
+				uses = 2
+			}
+			
 		}
 		x = 78
 		y = 7
@@ -2702,6 +2887,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_figher_aircraft
 		}
+		completion_reward = {
+			add_ideas = NCH_bomber1
+			add_tech_bonus = {
+				name = x
+				category = tactical_bomber
+				uses = 2
+				bonus = 0.7
+			}
+		}
 		x = 81
 		y = 5
 
@@ -2716,6 +2910,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_tactical_aviation
 		}
+		completion_reward = {
+				add_ideas = NCH_fighter1
+				add_tech_bonus = {
+					name = x
+					category = light_fighter
+					uses = 2
+					bonus = 0.7
+				}
+		}
 		x = 83
 		y = 5
 
@@ -2727,6 +2930,15 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_tactical_aviation
 			focus = NCH_figher_aircraft
+		}
+		completion_reward = {
+			add_ideas = NCH_bomber2
+			add_tech_bonus = {
+				name = x
+				category = naval_bomber
+				uses = 2
+				bonus = 0.6
+			}
 		}
 		x = 81
 		y = 6
@@ -2740,6 +2952,15 @@ focus_tree = {
 			focus = NCH_figher_aircraft
 			focus = NCH_tactical_aviation
 		}
+		completion_reward = {
+			add_ideas = NCH_fighter2
+			add_tech_bonus = {
+				name = x
+				category = cas_bomber
+				uses = 2
+				bonus = 0.7
+			}
+	}
 		x = 83
 		y = 6
 
@@ -2752,6 +2973,42 @@ focus_tree = {
 			focus = NCH_naval_bomber_project
 			focus = NCH_air_support
 		}
+		completion_reward = {
+			add_ideas = 1 #air_production2+NCH_bomber2/fighter2
+			air_experience = 50
+			add_tech_bonus = {
+				name = 1
+				category = air_doctrine
+				uses = 2
+				bonus = 0.5
+			}
+			add_timed_idea = {
+				idea = air_crew_surveys_spirit
+				days = 120
+			}
+			if = {
+				limit = {
+					has_completed_focus = NCH_tactical_aviation
+				}
+				add_ace = {
+					name = bomber
+					surname = Ace
+					callsign = Green
+					type = bomber_genius
+				}
+				else_if = {
+					limit = { 
+						has_completed_focus = NCH_figher_aircraft
+					}
+					add_ace = {
+						name = Fighter
+						surname = Ace
+						callsign = Green
+						type = fighter_genius
+					}
+				}
+			}
+		}
 		x = 81
 		y = 7
 
@@ -2762,6 +3019,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = NCH_all_wars_ends
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = air_crew_surveys_spirit
+				days = 120
+			}
 		}
 		x = 16
 		y = 6
@@ -2854,6 +3117,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = NCH_sorry_as_bee
+		}
+		completion_reward = {
+			add_ideas = x #содеинение всех идей
+			air_experience = 150
+			#Открывает имбового  советника
 		}
 		x = 77
 		y = 8
