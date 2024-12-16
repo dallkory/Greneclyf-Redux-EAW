@@ -1791,10 +1791,10 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}  
-					has_tech = early_ship_hull_cruiser
+					has_tech = basic_ship_hull_cruiser
 				}
 				else = {
-					has_tech = early_light_cruiser
+					has_tech = basic_light_cruiser
 				}
 			}
 		}
