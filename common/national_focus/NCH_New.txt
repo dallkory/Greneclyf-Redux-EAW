@@ -1882,6 +1882,7 @@ focus_tree = {
 		y = 4
 
 	}
+
 	focus = {
 		id = NCH_inspire_by_example
 		icon = GFX_goal_unknown
@@ -1906,6 +1907,7 @@ focus_tree = {
             } 
 		}
 	}
+
 	focus = {
 		id = NCH_anyone_can_be_hero
 		icon = GFX_goal_unknown
@@ -1917,6 +1919,7 @@ focus_tree = {
 		y = 5
 
 	}
+
 	focus = {
 		id = NCH_greuling_workouts
 		icon = GFX_goal_unknown
@@ -1931,6 +1934,7 @@ focus_tree = {
 		y = 6
 
 	}
+
 	focus = {
 		id = NCH_best_of_the_best
 		icon = GFX_goal_unknown
@@ -1945,6 +1949,7 @@ focus_tree = {
 		y = 6
 
 	}
+
 	focus = {
 		id = NCH_faith_in_queen
 		icon = GFX_goal_unknown
@@ -1959,6 +1964,7 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
 		id = NCH_priorize_integrity
 		icon = GFX_goal_unknown
@@ -1973,6 +1979,7 @@ focus_tree = {
 		y = 4
 
 	}
+
 	focus = {
 		id = NCH_discipline_is_key_to_order
 		icon = GFX_goal_unknown
@@ -1984,6 +1991,7 @@ focus_tree = {
 		y = 5
 
 	}
+
 	focus = {
 		id = NCH_bugsmere_war_institute
 		icon = GFX_goal_unknown
@@ -1996,6 +2004,7 @@ focus_tree = {
 		y = 6
 
 	}
+
 	focus = {
 		id = NCH_greneclyf_tanks
 		icon = GFX_goal_unknown
@@ -2010,6 +2019,7 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
 		id = NCH_mechanization_of_brigades
 		icon = GFX_goal_unknown
@@ -2024,6 +2034,7 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
 		id = NCH_pass_law_on_consctiption
 		icon = GFX_goal_unknown
@@ -2035,6 +2046,7 @@ focus_tree = {
 		y = 5
 
 	}
+
 	focus = {
 		id = NCH_queen_of_the_fields
 		icon = GFX_goal_unknown
@@ -2052,6 +2064,7 @@ focus_tree = {
 		y = 6
 
 	}
+
 	focus = {
 		id = NCH_goddes_of_war
 		icon = GFX_goal_unknown
@@ -2069,6 +2082,7 @@ focus_tree = {
 		y = 6
 
 	}
+	
 	focus = {
 		id = NCH_expamd_production
 		icon = GFX_goal_unknown
@@ -2081,6 +2095,7 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
 		id = NCH_greneclyf_school_of_war
 		icon = GFX_goal_unknown
@@ -2096,7 +2111,7 @@ focus_tree = {
 
 
 
-	
+
 	
 
 	focus = {
