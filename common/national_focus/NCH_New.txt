@@ -1894,17 +1894,17 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-				add_corps_commander_role = {
-                character = NCH_Merelay
-                desc = "NCH_Merelay"
-                traits={changeling_race_trait infantry_leader hill_fighter}
-                skill=3
-                attack_skill=2
-                defense_skill=4
-                planning_skill=1
-                logistics_skill=3
-                legacy_id=941
+			add_corps_commander_role = {
+             character = NCH_Merelay
+             desc = "NCH_Merelay"
+             traits={changeling_race_trait infantry_leader hill_fighter}
+             skill=3
+           	 attack_skill=2
+             defense_skill=4
+             planning_skill=1
+             logistics_skill=3
             } 
+			custom_effect_tooltip = NCH_Marelay_stats
 		}
 	}
 
@@ -2082,7 +2082,7 @@ focus_tree = {
 		y = 6
 
 	}
-	
+
 	focus = {
 		id = NCH_expamd_production
 		icon = GFX_goal_unknown
@@ -2576,8 +2576,11 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_rule_greneclyf
 		}
+		x = 77
+		y = 3
+
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			add_tech_bonus = {
 				name = army_upgrades
 				bonus = 0.5
@@ -2585,9 +2588,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		x = 77
-		y = 3
-
 	}
 	focus = {
 		id = NCH_flying_school 
@@ -2787,6 +2787,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_and_in_the_air
 		}
+		x = 81
+		y = 4
 
 		completion_reward = {
 			1209={
@@ -2802,10 +2804,6 @@ focus_tree = {
 				add_ideas = air_facility1
 			}
 		}
-
-		x = 81
-		y = 4
-
 	}
 	focus = {
 		id = NCH_domestic_parts
