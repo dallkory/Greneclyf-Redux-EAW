@@ -36,12 +36,12 @@ NCH_historical = {
 			NCH_invite_the_equestrians
 			NCH_a_different_kind_of_changeling
 			NCH_intercontinental_trade
+		}
 
 		research = {
 		}
 
 		ideas = {
-			
 		}
 
 		traits = {
@@ -55,11 +55,7 @@ NCH_historical = {
 				factor = 1.0
 			}
 		}
-
 		focus_factors = {
-			
-		}
-
 	}
 }
 
