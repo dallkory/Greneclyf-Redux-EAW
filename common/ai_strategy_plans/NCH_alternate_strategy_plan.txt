@@ -48,7 +48,6 @@ NCH_alternate_communist = {
 	focus_factors = {
 		
 	}
-
 }
 
 NCH_alternate_neutrality = {
@@ -100,8 +99,8 @@ NCH_alternate_neutrality = {
 	focus_factors = {
 		
 	}
-
 }
+
 NCH_alternate_facism = {
 	name = "Wholesome reactionary?!"
 	desc = ""

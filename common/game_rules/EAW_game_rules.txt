@@ -53,7 +53,7 @@ NCH_ai_behavior = {
 
 
 
-
+#  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
 
 EQS_ai_behavior = {
 	name = "EQS_AI_BEHAVIOR"
@@ -2794,7 +2794,6 @@ aby_april_fool = {
 		name = ABY_APRIL_FOOL
 		text = "RULE_OPTION_ABY_APRIL_FOOL"
 		desc = "RULE_OPTION_ABY_APRIL_FOOL_DESC"
-		
 	}
 }
 infunstructure = {
