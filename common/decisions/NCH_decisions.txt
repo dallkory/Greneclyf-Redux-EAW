@@ -206,6 +206,7 @@ NCH_typography_category = {
 
 		available = {
 			has_completed_focus = NCH_final_crisis
+			has_government = democratic
 		}
 		visible = {
 			has_government = democratic

@@ -671,9 +671,6 @@ focus_tree = {
 
 	}
 
-
-
-
 	focus = {
 		id = NCH_emergacy_plan
 		icon = GFX_goal_unknown
@@ -696,8 +693,6 @@ focus_tree = {
 		y = 10
 
 	}
-
-
 
 	focus = {
 		id = NCH_call_for_unity
@@ -766,6 +761,12 @@ focus_tree = {
 		x = 41
 		y = 10
 
+		completion_reward = {
+			country_event = {
+				id = 0
+				days = 0
+			}
+		}
 	}
 	focus = {
 		id = NCH_army_concessions
@@ -864,6 +865,12 @@ focus_tree = {
 		x = 42
 		y = 11
 
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.17
+				days = 15
+			}
+		}
 	}
 	focus = {
 		id = NCH_overvise_great_packt
@@ -2358,217 +2365,7 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
-		id = NCH_mre_cards
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_beginning_of_crisis
-		}
-		x = 27
-		y = 9
 
-	}
-	focus = {
-		id = NCH_agroindustrial_mobilization
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_mre_cards
-		}
-		x = 26
-		y = 10
-
-	}
-	focus = {
-		id = NCH_agroindustrial_programs
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_agroindustrial_mobilization
-		}
-		x = 24
-		y = 11
-
-	}
-	focus = {
-		id = NCH_limit_external_trade
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_mre_cards
-		}
-		x = 28
-		y = 10
-
-	}
-	focus = {
-		id = NCH_industrial_cooperatives
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_agroindustrial_mobilization
-		}
-		prerequisite = {
-			focus = NCH_limit_external_trade
-		}
-		x = 27
-		y = 11
-
-	}
-	focus = {
-		id = NCH_modernization_industry
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_limit_external_trade
-		}
-		x = 30
-		y = 11
-
-	}
-	focus = {
-		id = NCH_domestic_consumption
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_agroindustrial_programs
-		}
-		prerequisite = {
-			focus = NCH_modernization_industry
-		}
-		prerequisite = {
-			focus = NCH_industrial_cooperatives
-		}
-		x = 27
-		y = 12
-
-	}
-
-
-	focus = {
-		id = NCH_consolidation_political
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_emergacy_plan
-		}
-		x = 32
-		y = 10
-
-	}
-
-	focus = {
-		id = NCH_call_for_unity
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_emergacy_plan
-		}
-		x = 34
-		y = 10
-
-	}
-
-	focus = {
-		id = NCH_to_neighbors
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_beginning_of_crisis
-		}
-		x = 39
-		y = 9
-
-	}
-	focus = {
-		id = NCH_every_friend
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_to_neighbors
-		}
-		x = 37
-		y = 10
-
-	}
-	focus = {
-		id = NCH_hoof_of_help
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_every_friend
-		}
-		x = 36
-		y = 11
-
-	}
-	focus = {
-		id = NCH_some_love
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_every_friend
-		}
-		x = 38
-		y = 11
-
-	}
-	focus = {
-		id = NCH_reguest_of_help
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_to_neighbors
-		}
-		x = 41
-		y = 10
-
-	}
-	focus = {
-		id = NCH_army_concessions
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_reguest_of_help
-		}
-		x = 40
-		y = 11
-
-	}
-	focus = {
-		id = NCH_concessions_for_help
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_reguest_of_help
-		}
-		x = 42
-		y = 11
-
-	}
-	focus = {
-		id = NCH_overvise_great_packt
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_hoof_of_help
-		}
-		prerequisite = {
-			focus = NCH_some_love
-		}
-		prerequisite = {
-			focus = NCH_army_concessions
-		}
-		prerequisite = {
-			focus = NCH_concessions_for_help
-		}
-		x = 39
-		y = 12
-
-	}
-
-	
 	focus = {
 		id = NCH_and_in_the_air
 		icon = GFX_goal_unknown
@@ -3095,45 +2892,6 @@ focus_tree = {
 		}
 		x = 13
 		y = 8
-
-	}
-	focus = {
-		id = NCH_clans_of_Greneclyf
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_consolidation_political
-		}
-		prerequisite = {
-			focus = NCH_call_for_unity
-		}
-		x = 33
-		y = 11
-
-	}
-	focus = {
-		id = NCH_suppression_of_unrest
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_clans_of_Greneclyf
-		}
-		x = 33
-		y = 12
-
-	}
-	focus = {
-		id = NCH_final_crisis
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = NCH_suppression_of_unrest
-		}
-		prerequisite = {
-			focus = NCH_suppression_of_unrest
-		}
-		x = 33
-		y = 13
 
 	}
 

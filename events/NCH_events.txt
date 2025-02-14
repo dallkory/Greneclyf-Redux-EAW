@@ -212,6 +212,23 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	# Typography #
+	country_event = {
+		id = greneclyf_redux.700
+		title = greneclyf_redux.700.t
+		desc = greneclyf_redux.700.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.700.a
+			add_political_power = 25
+			custom_effect_tooltip = NCH_typography_create_ttip
+			set_country_flag = NCH_typography_create
+		}
+	}
+
 	# Urbanization and Valha hire #
 	country_event = {
 		id = greneclyf_redux.8
@@ -371,6 +388,46 @@ add_namespace = greneclyf_crisis
 
 	### HUNGER DEFEAT ###
 
+	### CRISIS ###
+	# Meet with trade emissars #
+	country_event = {
+		id = greneclyf_redux.15
+		title = greneclyf_redux.15.t
+		desc = greneclyf_redux.15.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.15.a
+		}
+	}
+	# SAOR liberty trade zone #
+	country_event = {
+		id = greneclyf_redux.16
+		title = greneclyf_redux.16.t
+		desc = greneclyf_redux.16.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.16.a
+		}
+	}
+	# ALONE CAPITAN#
+	country_event = {
+		id = greneclyf_redux.17
+		title = greneclyf_redux.17.t
+		desc = greneclyf_redux.17.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.17.a
+		}
+	}
 
 	### FORCES ###
 
