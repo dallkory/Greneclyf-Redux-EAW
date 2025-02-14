@@ -296,6 +296,21 @@ add_namespace = greneclyf_crisis
 	}
 
 	country_event = {
+		id = greneclyf_redux.18
+		title = greneclyf_redux.18.t
+		desc = greneclyf_redux.18.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.18.a
+			set_country_flag = NCH_celarl_laboratory_opend
+		}
+	}
+
+
+	country_event = {
 		id = greneclyf_redux.10
 		title = greneclyf_redux.10.t
 		desc = greneclyf_redux.10.d

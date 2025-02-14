@@ -192,8 +192,10 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			custom_effect_tooltip = NCH_typography_create_ttip
-			set_country_flag = NCH_typography_create
+			country_event = {
+				id = greneclyf_redux.700
+				days = 0
+			}
 		}
 	}
 
@@ -594,7 +596,11 @@ focus_tree = {
 		x = 27
 		y = 9
 
+		completion_reward = {
+			
+		}
 	}
+
 	focus = {
 		id = NCH_agroindustrial_mobilization
 		icon = GFX_goal_unknown
@@ -681,6 +687,9 @@ focus_tree = {
 		x = 33
 		y = 9
 
+		available = {
+			has_completed_focus = NCH_mre_cards
+		}
 	}
 	focus = {
 		id = NCH_consolidation_political
@@ -717,7 +726,11 @@ focus_tree = {
 		x = 39
 		y = 9
 
+		available = {
+			has_completed_focus = NCH_mre_cards
+		}
 	}
+
 	focus = {
 		id = NCH_every_friend
 		icon = GFX_goal_unknown
@@ -2912,6 +2925,820 @@ focus_tree = {
 		}
 		x = 77
 		y = 8
+
+	}
+
+	### MAIN PATCH ###
+
+	
+	focus = {
+		id = NCH_Queen_Gytha_Patch
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 33
+		y = 15
+
+	}
+
+	focus = {
+		id = NCH_reforms_after_storm
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = NCH_patch_to_prosperty
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reforms_after_storm
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = NCH_education_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = NCH_civil_rights_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		x = 15
+		y = 19
+
+	}
+	focus = {
+		id = NCH_health_care_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+		}
+		x = 19
+		y = 18
+
+	}
+	focus = {
+		id = NCH_birth_control
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_health_care_reform
+		}
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		x = 19
+		y = 19
+
+	}
+	focus = {
+		id = NCH_economic_revival
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reforms_after_storm
+		}
+		x = 25
+		y = 17
+
+	}
+	focus = {
+		id = NCH_first_constitution
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+			focus = NCH_economic_revival
+		}
+		x = 22
+		y = 18
+
+	}
+	focus = {
+		id = NCH_from_chaos
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_first_constitution
+		}
+		x = 22
+		y = 19
+
+	}
+	focus = {
+		id = NCH_form_new_govermant
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_from_chaos
+		}
+		x = 21
+		y = 20
+
+	}
+	focus = {
+		id = NCH_reflecting_the_past
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_from_chaos
+		}
+		x = 23
+		y = 20
+
+	}
+	focus = {
+		id = NCH_to_the_new_order
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_form_new_govermant
+		}
+		prerequisite = {
+			focus = NCH_reflecting_the_past
+		}
+		x = 22
+		y = 21
+
+	}
+	focus = {
+		id = NCH_bee_productivity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_economic_revival
+		}
+		x = 25
+		y = 18
+
+	}
+	focus = {
+		id = NCH_businesses_do_not_stand_idle
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_economic_revival
+		}
+		x = 27
+		y = 18
+
+	}
+	focus = {
+		id = NCH_brood_of_working_drones
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		x = 25
+		y = 19
+
+	}
+
+	focus = {
+		id = NCH_gaining_economic_power
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		x = 27
+		y = 19
+
+	}
+	focus = {
+		id = NCH_economics_of_friendship
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_brood_of_working_drones
+		}
+		prerequisite = {
+			focus = NCH_gaining_economic_power
+		}
+		mutually_exclusive = {
+			focus = NCH_mobilizing_the_economy
+		}
+		x = 26
+		y = 20
+
+	}
+
+
+	focus = {
+		id = NCH_ensure_full_employment
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		x = 29
+		y = 19
+
+	}
+	focus = {
+		id = NCH_mobilizing_the_economy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_ensure_full_employment
+		}
+		prerequisite = {
+			focus = NCH_gaining_economic_power
+		}
+		mutually_exclusive = {
+			focus = NCH_economics_of_friendship
+		}
+		x = 28
+		y = 20
+
+	}
+
+	focus = {
+		id = NCH_dreems_of_more
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+		}
+		x = 33
+		y = 16
+
+	}
+
+		focus = {
+		id = NCH_friends_and_allies
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_dreems_of_more
+		}
+		x = 34
+		y = 17
+
+	}
+	focus = {
+		id = NCH_agents_stand_by
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_dreems_of_more
+		}
+		x = 32
+		y = 17
+
+	}
+	focus = {
+		id = NCH_under_the_flag_of_freedom
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agents_stand_by
+		}
+		x = 31
+		y = 18
+
+	}
+
+
+	focus = {
+		id = NCH_act
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_friends_and_allies
+		}
+		x = 35
+		y = 18
+
+	}
+
+	focus = {
+		id = NCH_we_are_not_alone
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+		}
+		x = 44
+		y = 16
+
+	}
+	focus = {
+		id = NCH_new_opportunities
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_we_are_not_alone
+		}
+		x = 43
+		y = 17
+
+	}
+	focus = {
+		id = NCH_river_pf_opportunity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_opportunities
+		}
+		x = 40
+		y = 18
+
+	}
+	focus = {
+		id = NCH_trade_development
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_river_pf_opportunity
+		}
+		x = 38
+		y = 19
+
+	}
+	focus = {
+		id = NCH_visit_to_riverlands
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_trade_development
+		}
+		x = 37
+		y = 20
+
+	}
+	focus = {
+		id = NCH_our_mission
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_we_are_not_alone
+		}
+		x = 45
+		y = 17
+
+	}
+	focus = {
+		id = NCH_neighborhood
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_opportunities
+		}
+		prerequisite = {
+			focus = NCH_our_mission
+		}
+		x = 44
+		y = 18
+
+	}
+	focus = {
+		id = NCH_another_visit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_neighborhood
+		}
+		x = 43
+		y = 19
+
+	}
+	focus = {
+		id = NCH_pacts_exchange_for_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_neighborhood
+		}
+		x = 45
+		y = 19
+
+	}
+	focus = {
+		id = NCH_long_cooperation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_another_visit
+		}
+		prerequisite = {
+			focus = NCH_pacts_exchange_for_support
+		}
+		x = 44
+		y = 20
+
+	}
+	focus = {
+		id = NCH_not_so_different
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_long_cooperation
+		}
+		x = 45
+		y = 21
+
+	}
+
+	focus = {
+		id = NCH_their_light_beckons_us
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_our_mission
+		}
+		x = 48
+		y = 18
+
+	}
+
+	focus = {
+		id = NCH_emvassy_to_equestria
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_their_light_beckons_us
+		}
+		x = 48
+		y = 19
+
+	}
+	focus = {
+		id = NCH_beacon_harmony_in_the_east
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emvassy_to_equestria
+		}
+		x = 47
+		y = 20
+
+	}
+	focus = {
+		id = NCH_princess_in_a_high_castle
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_their_light_beckons_us
+		}
+		x = 50
+		y = 19
+
+	}
+	focus = {
+		id = NCH_our_best_qualities
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emvassy_to_equestria
+		}
+		prerequisite = {
+			focus = NCH_princess_in_a_high_castle
+		}
+		x = 49
+		y = 20
+
+	}
+	focus = {
+		id = NCH_lessons_in_friendship
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_beacon_harmony_in_the_east
+		}
+		prerequisite = {
+			focus = NCH_our_best_qualities
+		}
+		x = 48
+		y = 21
+
+	}
+	focus = {
+		id = NCH_harmpony_in_every_heart
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_princess_in_a_high_castle
+		}
+		x = 51
+		y = 20
+
+	}
+	focus = {
+		id = NCH_friendship_delegation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_our_best_qualities
+		}
+		prerequisite = {
+			focus = NCH_harmpony_in_every_heart
+		}
+		x = 50
+		y = 21
+
+	}
+	focus = {
+		id = NCH_our_values
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_harmpony_in_every_heart
+		}
+		x = 52
+		y = 21
+
+	}
+
+	focus = {
+		id = NCH_blosmport_hive
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		prerequisite = {
+			focus = NCH_health_care_reform
+		}
+		x = 17
+		y = 19
+
+	}
+	focus = {
+		id = NCH_new_instituts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_civil_rights_reform
+		}
+		prerequisite = {
+			focus = NCH_blosmport_hive
+		}
+		mutually_exclusive = {
+			focus = NCH_traditional_way_of_life
+		}
+		x = 16
+		y = 20
+
+	}
+	focus = {
+		id = NCH_traditional_way_of_life
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_blosmport_hive
+		}
+		prerequisite = {
+			focus = NCH_birth_control
+		}
+		mutually_exclusive = {
+			focus = NCH_new_instituts
+		}
+		x = 18
+		y = 20
+
+	}
+	focus = {
+		id = NCH_save_clans_system
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_the_new_order
+		}
+		mutually_exclusive = {
+			focus = NCH_hereditary_monarchy
+		}
+		x = 21
+		y = 22
+
+	}
+	focus = {
+		id = NCH_hereditary_monarchy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_the_new_order
+		}
+		mutually_exclusive = {
+			focus = NCH_save_clans_system
+		}
+		x = 23
+		y = 22
+
+	}
+	focus = {
+		id = NCH_we_are_ready
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agents_stand_by
+		}
+		prerequisite = {
+			focus = NCH_friends_and_allies
+		}
+		x = 33
+		y = 18
+
+	}
+	focus = {
+		id = NCH_light_f_fire_in_their_hearts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_under_the_flag_of_freedom
+		}
+		prerequisite = {
+			focus = NCH_we_are_ready
+		}
+		prerequisite = {
+			focus = NCH_act
+		}
+		x = 33
+		y = 19
+
+	}
+	focus = {
+		id = NCH_operation_raging_river
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_light_f_fire_in_their_hearts
+		}
+		x = 33
+		y = 20
+
+	}
+	focus = {
+		id = NCH_peaceful_coexistence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_river_pf_opportunity
+		}
+		x = 40
+		y = 19
+
+	}
+	focus = {
+		id = NCH_scout_the_situation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_trade_development
+		}
+		prerequisite = {
+			focus = NCH_peaceful_coexistence
+		}
+		x = 39
+		y = 20
+
+	}
+	focus = {
+		id = NCH_open_up_the_shopping_districts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_peaceful_coexistence
+		}
+		x = 41
+		y = 20
+
+	}
+	focus = {
+		id = NCH_shield_and_sword_harmony
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lessons_in_friendship
+		}
+		prerequisite = {
+			focus = NCH_friendship_delegation
+		}
+		x = 49
+		y = 22
+
+	}
+	focus = {
+		id = NCH_equestria_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_friendship_delegation
+		}
+		prerequisite = {
+			focus = NCH_our_values
+		}
+		x = 51
+		y = 22
+
+	}
+	focus = {
+		id = NCH_bring_them_harmony
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_long_cooperation
+		}
+		x = 43
+		y = 21
+
+	}
+	focus = {
+		id = NCH_new_great_agreement
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_bring_them_harmony
+		}
+		prerequisite = {
+			focus = NCH_not_so_different
+		}
+		x = 44
+		y = 22
+
+	}
+	focus = {
+		id = NCH_cit_thrpugh_the_bureaurcracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_open_up_the_shopping_districts
+		}
+		prerequisite = {
+			focus = NCH_scout_the_situation
+		}
+		x = 40
+		y = 21
+
+	}
+	focus = {
+		id = NCH_embed_agents_in_goverments
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_visit_to_riverlands
+		}
+		prerequisite = {
+			focus = NCH_scout_the_situation
+		}
+		x = 38
+		y = 21
+
+	}
+	focus = {
+		id = NCH_not_so_united
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_visit_to_riverlands
+		}
+		x = 36
+		y = 21
+
+	}
+	focus = {
+		id = NCH_finding_allies_in_coalition
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_not_so_united
+		}
+		prerequisite = {
+			focus = NCH_cit_thrpugh_the_bureaurcracy
+		}
+		prerequisite = {
+			focus = NCH_embed_agents_in_goverments
+		}
+		x = 39
+		y = 22
 
 	}
 }

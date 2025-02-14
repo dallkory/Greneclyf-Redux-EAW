@@ -198,7 +198,7 @@
   greneclyf_redux.10.a:0 "«Или я не королева из рода Леманн!» «Второй Великий Голод начался...»"
   greneclyf_redux.10.b:0 "§R«Возможно, сдаться не самый худший вариант?»"
 
-  greneclyf_redux.9.t:0 ""
+  greneclyf_redux.9.t:0 "Время смотреть дальше"
   greneclyf_redux.9.d:0 ""
 
   greneclyf_redux.9.a:0 ""
@@ -215,9 +215,10 @@
 
   ### TOOL TIPS ###
   NCH_Jorney_finish_or_not_started:0 "Путешествие Гиты закончилось, либо не началось"
-  NCH_resources_for_forces_decisions:0 "Открывает доступ к решения по добыче ресурсов для флота"
+  NCH_resources_for_forces_decisions:0 "§3Открывает доступ к решения по добыче ресурсов для флота§"
   NCH_unique_naval_experomental:0 "§3В зависимости от выбора нашей морской доктрины, наши учёные и рабочие начнут серийное производство новых типов кораблей"
 
+  NCH_typography_create_ttip:0 "Типография Блосмпорта начинает свою работу"
 
   ### IDEAS ###
   NCH_Basalt_Shaw:0 "Лорд-протектор Базальт Шоу"
