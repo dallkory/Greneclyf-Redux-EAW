@@ -71,6 +71,15 @@ on_actions = {
 				}
 				remove_ideas = NCH_Basalt_Shaw
 			}
+
+			if = {
+				limit = {
+					has_completed_focus = NCH_our_future_at_sea
+				}
+				remove_ideas = NCH_blosmporn_dockyards
+				remove_ideas = NCH_naval_academy_establish
+				remove_ideas = NCH_break_ice_idea
+			}
 			
 
 			# SUBMOD EXAMPLE #

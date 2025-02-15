@@ -2,7 +2,6 @@ ideas = {
 	country = {
 
 		### REDUX ###
-
 		## ECONOMIC TYPE ##
 		NCH_economic_status_protect = {
 			picture = GFX_unknow
@@ -84,7 +83,7 @@ ideas = {
 		}
 ######
 		NCH_luddites = {
-			picture
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -135,7 +134,7 @@ ideas = {
 		}
 
 		NCH_urbanization_idea = {
-			picture =
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -151,7 +150,7 @@ ideas = {
 		}
 
 		NCH_rise_nation_movement = {
-			picture = 
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -167,7 +166,7 @@ ideas = {
 		### CRISIS ###
 
 		NCH_protests_on_street = {
-			picture =
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -185,6 +184,7 @@ ideas = {
 		}
 
 		NCH_massive_unemployed = {
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -202,6 +202,7 @@ ideas = {
 		}
 
 		NCH_food_shortage = {
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -215,6 +216,7 @@ ideas = {
 				consumer_goods_factor = 0.3
 				communism_drift = 0.03
 				power_balance_weekly = -0.03
+				recruitable_population_factor = -0.05
 			}
 		}
 
@@ -246,11 +248,10 @@ ideas = {
 
 		#####################
 
-
 		### FORCES ###
 
 		NCH_rethinking_forces = {
-			picture = 
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -267,7 +268,7 @@ ideas = {
 
 		## NAVY ##
 		NCH_navy_forces = {
-			picture = d
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -293,7 +294,7 @@ ideas = {
 		}
 
 		NCH_blosmporn_dockyards = {
-			picture = d
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -309,7 +310,7 @@ ideas = {
 		}
 
 		NCH_naval_academy_establish = {
-			picture = d
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -328,7 +329,7 @@ ideas = {
 		}
 
 		NCH_break_ice_idea = {
-			picture = d
+			picture = GFX_unknow
 			allowed = {
 				always = yes
 			}
@@ -340,7 +341,7 @@ ideas = {
 		}
 
 		NCH_torpedo_attack = {
-			picture = d
+			picture = GFX_unknow
 			allowed = {
 				always = no
 			}
@@ -420,7 +421,42 @@ ideas = {
 		}
 
 
+		# LAND FORCES #
 
+		NCH_land_forces_everyone_can_be_hero = {
+			picture = NCH_changeling_submarine
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				special_forces_defence_factor = 0.05
+				special_forces_attack_factor = 0.05
+			}
+		}
+
+		#army_attack_against_major_factor = 0.075
+		#army_defence_against_major_factor = 0.05
+
+
+		NCH_Greneclyf_land_forces_intergrity_priorize = {
+			picture = NCH_changeling_submarine
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
 
 
 

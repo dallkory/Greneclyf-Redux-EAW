@@ -309,7 +309,7 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
-
+	# HUNGER STARTS #
 	country_event = {
 		id = greneclyf_redux.10
 		title = greneclyf_redux.10.t
@@ -331,6 +331,7 @@ add_namespace = greneclyf_crisis
 				id = greneclyf_redux.11
 				days = 15
 			}
+			set_country_flag = NCH_hunger_starts
 		}
 
 		option = {

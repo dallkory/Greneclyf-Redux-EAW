@@ -334,6 +334,9 @@ focus_tree = {
 		available = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		bypass = {
+			has_country_flag = NCH_hunger_starts
+		}
 
 	}
 	focus = {
@@ -675,6 +678,9 @@ focus_tree = {
 		x = 27
 		y = 12
 
+		completion_reward = {
+			remove_ideas = NCH_massive_unemployed
+		}
 	}
 
 	focus = {
@@ -776,7 +782,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = 0
+				id = greneclyf_redux.15
 				days = 0
 			}
 		}
@@ -853,6 +859,9 @@ focus_tree = {
 		x = 33
 		y = 12
 
+		completion_reward = {
+			remove_ideas = NCH_protests_on_street
+		}
 	}
 	focus = {
 		id = NCH_final_crisis
@@ -904,6 +913,9 @@ focus_tree = {
 		x = 39
 		y = 12
 
+		completion_reward = {
+			remove_ideas = NCH_food_shortage
+		}
 	}
 
 
@@ -965,7 +977,10 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
-			add_ideas = NCH_blosmporn_dockyards
+			add_timed_idea = {
+				idea = NCH_blosmporn_dockyards
+				days = 270
+			}
 
 			670 = {
 				limit = {
@@ -1855,6 +1870,7 @@ focus_tree = {
 			custom_effect_tooltip = NCH_our_navy_strategy
 			set_country_flag = NCH_sea_future
 			
+			# NOT WORKING WHY #
 			hidden_effect = {
 				remove_idea = NCH_expand_blosmport_dockyards
 				remove_idea = NCH_naval_academy_establish
@@ -1901,6 +1917,10 @@ focus_tree = {
 		x = 62
 		y = 4
 
+		completion_reward = {
+			army_experience = 25
+			add_ideas = NCH_land_forces_everyone_can_be_hero
+		}
 	}
 
 	focus = {
@@ -1925,6 +1945,18 @@ focus_tree = {
              logistics_skill=3
             } 
 			custom_effect_tooltip = NCH_Marelay_stats
+
+			add_corps_commander_role = {
+				character = NCH_Zaliack
+				desc = "NCH_Merelay"
+				traits={ changeling_race_trait winter_specialist }
+				skill=3
+				attack_skill=2
+				defense_skill=4
+				planning_skill=2
+				logistics_skill=3
+			}
+			custom_effect_tooltip = NCH_Marelay_stats
 		}
 	}
 
@@ -1937,7 +1969,15 @@ focus_tree = {
 		}
 		x = 62
 		y = 5
-
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				technology = racial_specforce_start
+				bonus = 0.5
+				uses = 1
+			}
+		}
 	}
 
 	focus = {
@@ -2565,8 +2605,9 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
-		id = NCH_wwho_else_but_us
+		id = NCH_who_else_but_us
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -2929,8 +2970,6 @@ focus_tree = {
 	}
 
 	### MAIN PATCH ###
-
-	
 	focus = {
 		id = NCH_Queen_Gytha_Patch
 		icon = GFX_goal_unknown
@@ -2938,6 +2977,9 @@ focus_tree = {
 		x = 33
 		y = 15
 
+		available = {
+			has_completed_focus = NCH_final_crisis
+		}
 	}
 
 	focus = {
@@ -2945,7 +2987,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+			focus = NCH_Queen_Gytha_Patch
 		}
 		x = 22
 		y = 16
@@ -3186,7 +3228,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+			focus = NCH_Queen_Gytha_Patch
 		}
 		x = 33
 		y = 16
@@ -3245,7 +3287,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = NCH_Queen_Gytha_Patch_Copy_Copy_Copy_Copy
+			focus = NCH_Queen_Gytha_Patch
 		}
 		x = 44
 		y = 16
