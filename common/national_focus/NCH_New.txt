@@ -864,6 +864,10 @@ focus_tree = {
 		available = {
 			has_completed_focus = NCH_mre_cards
 		}
+
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
