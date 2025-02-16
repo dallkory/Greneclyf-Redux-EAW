@@ -150,7 +150,7 @@ add_ideas = {
 	lack_of_scientists
 
 	NCH_idyllic_society
-	NCH_luddites
+	NCH_luddites_1
 	NCH_FBK_pact
 	NCH_Overpopulation
 }

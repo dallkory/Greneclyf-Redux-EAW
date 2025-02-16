@@ -295,6 +295,7 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	# CELARL LABORATORY #
 	country_event = {
 		id = greneclyf_redux.18
 		title = greneclyf_redux.18.t
@@ -442,6 +443,19 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.17.a
+		}
+	}
+
+	country_event = {
+		id = greneclyf_redux.19
+		title = greneclyf_redux.19.t
+		desc = greneclyf_redux.19.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.19.a
 		}
 	}
 

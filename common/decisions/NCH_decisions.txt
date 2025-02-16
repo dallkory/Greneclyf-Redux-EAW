@@ -44,8 +44,32 @@ NCH_hunger_bop_category = {
 		}
 	}
 }
+### ###
 
 NCH_typography_category = {
+
+	NCH_propaganda_anti_luddism = {
+		icon = d
+		cost = 50
+		days_remove = 70
+
+		visible = {
+			has_idea = NCH_luddites
+		}
+
+		modifier = {
+			production_factory_max_efficiency_factor = 0.02 
+			local_resources_factor = 0.1
+			stability_weekly = 0.03
+		}
+		remove_effect = {
+			news_event = {
+				id = d
+				days = 3
+			}
+		}
+	}
+
 	NCH_propaganda_company_party = {
 		icon = d
 		cost = 30
@@ -241,6 +265,27 @@ NCH_typography_category = {
 			experience_gain_navy_factor = 0.1
 			command_power_gain = 0.1
 		}
+		remove_effect = {
+			
+		}
+	}
+}
+
+### OBSIDIAN EXPORT ###
+NCH_obsidian_trade_category = {
+	NCH_find_importers = {
+		icon =d
+		cost = 75
+		days_remove = 45
+	
+		modifier = {
+			#offence = 0.05
+			#defence = 0.05
+			#experience_gain_army_factor = 0.1
+			#experience_gain_navy_factor = 0.1
+			#command_power_gain = 0.1
+		}
+		
 		remove_effect = {
 			
 		}

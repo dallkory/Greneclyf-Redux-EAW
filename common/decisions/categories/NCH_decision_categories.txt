@@ -31,6 +31,17 @@ NCH_typography_category = {
 	}
 }
 
+NCH_obsidian_trade_category = {
+	icon = GFX_unknow
+	
+	visible = {
+		has_country_flag = NCH_obsidian_export
+	}
+	priority = {
+		base = 150
+	}
+}
+
 NCH_celarl_laboratory = {
 	icon = GFX_unknow
 
