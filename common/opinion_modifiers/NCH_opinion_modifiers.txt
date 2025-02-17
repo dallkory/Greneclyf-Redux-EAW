@@ -16,6 +16,11 @@ opinion_modifiers = {
 		months = 12
 		decay = 0.5
 	}
+
+	NCH_FBK_friends = {
+		value = 30
+		months = 6
+	}
 }
 
 

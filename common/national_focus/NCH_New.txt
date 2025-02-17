@@ -658,7 +658,7 @@ focus_tree = {
 	focus = {
 		id = NCH_agroindustrial_programs
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 2
 		prerequisite = {
 			focus = NCH_agroindustrial_mobilization
 		}
@@ -826,7 +826,33 @@ focus_tree = {
 		available = {
 			has_completed_focus = NCH_mre_cards
 		}
+
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.1
+
+			if = {
+				limit = {
+					has_idea = civilian_economy
+					NOT = { has_idea = low_economic_mobilisation }
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = low_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_consolidation_political
 		icon = GFX_goal_unknown
@@ -837,6 +863,22 @@ focus_tree = {
 		x = 32
 		y = 10
 
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.075
+			country_event = {
+				id = greneclyf_redux.28
+				days = 0
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
 
 	focus = {
@@ -849,6 +891,21 @@ focus_tree = {
 		x = 34
 		y = 10
 
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			country_event = {
+				id = greneclyf_redux.27
+				days = 0
+			}
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
 
 
@@ -889,8 +946,21 @@ focus_tree = {
 		x = 37
 		y = 10
 
-		completion_reward = {
+		bypass = {
+			FBK = {
+				not = {
+					has_government = democratic
+				}
+			}
+		}
 
+		completion_reward = {
+			add_political_power = 30
+
+			add_opinion_modifier = {
+				target = FBK
+				modifier = NCH_FBK_friends
+			}
 		}
 	}
 
@@ -904,12 +974,23 @@ focus_tree = {
 		x = 36
 		y = 11
 
-		completion_reward = {
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = FBK
+					country_exists = FIR
+					country_exists = WAT
+				}
+			}
+		}
 
+		completion_reward = {
 			add_power_balance_value = {
 				id = NCH_hunger_bop
 				value = 0.05
 			}
+
+			custom_effect_tooltip = NCH_start_friendship_with_pony_hills
 		}
 	}
 
@@ -923,8 +1004,22 @@ focus_tree = {
 		x = 38
 		y = 11
 
+		bypass = {
+			Not = {
+				country_exists = FBK
+			}
+			FBK = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		}
+
 		completion_reward = {
-			
+			country_event = {
+				id = greneclyf_redux.25
+				days = 0
+			}
 		}
 	}
 
@@ -968,6 +1063,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 35
+
+			add_timed_idea = {
+				idea = NCH_zone_of_sin
+				days = 90
+			}
 
 			1210 = {
 				set_state_name = "SAOR"
@@ -1036,6 +1136,16 @@ focus_tree = {
 		x = 33
 		y = 11
 
+		available = {
+			has_completed_focus = NCH_domestic_consumption
+		}
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.29
+				days = 0
+			}
+		}
 	}
 
 	focus = {
@@ -1115,8 +1225,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = x
-				add_idea = xy
+				remove_idea = NCH_FBK_pact
+				add_idea = NCH_new_great_pact
 			}
 			remove_ideas = NCH_food_shortage
 

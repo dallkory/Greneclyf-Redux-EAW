@@ -285,9 +285,24 @@ NCH_obsidian_trade_category = {
 			#experience_gain_navy_factor = 0.1
 			#command_power_gain = 0.1
 		}
-		
+
 		remove_effect = {
 			
+		}
+	}
+}
+
+# PONY OF HILLS #
+NCH_trade_with_pony_of_hills = {
+	NCH_trade_with_FBK = {
+		icon =d
+		cost = 75
+		days_remove = 45
+	
+		modifier = {
+		}
+
+		remove_effect = {
 		}
 	}
 }
