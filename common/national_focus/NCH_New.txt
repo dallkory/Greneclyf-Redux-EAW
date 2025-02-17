@@ -267,6 +267,7 @@ focus_tree = {
 					is_riverlands_country = yes
 				}
 				add_opinion_modifier = {
+					target = ROOT
 					#modifier = NCH_trade_with_riverlands
 					modifier = trading
 				}
@@ -866,7 +867,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 25
+				}
 			
+			custom_effect_tooltip = NCH_end_hide_and_seek_tt
 		}
 	}
 
@@ -881,10 +890,7 @@ focus_tree = {
 		y = 10
 
 		completion_reward = {
-			add_power_balance_value = {
-				id = NCH_hunger_bop
-				value = 0.15
-			}
+
 		}
 	}
 
@@ -898,6 +904,13 @@ focus_tree = {
 		x = 36
 		y = 11
 
+		completion_reward = {
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
 
 	focus = {
@@ -910,6 +923,9 @@ focus_tree = {
 		x = 38
 		y = 11
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -928,9 +944,14 @@ focus_tree = {
 				days = 0
 			}			
 
-			add_power_balance_value = {
-				id = NCH_hunger_bop
-				value = 0.15
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = NCH_trade_with_riverlands_prey
+				}
 			}
 		}
 	}
@@ -945,6 +966,19 @@ focus_tree = {
 		x = 40
 		y = 11
 
+		completion_reward = {
+			1210 = {
+				set_state_name = "SAOR"
+			}
+			set_province_name = {
+				id = 10775
+				name = "SAOR"
+			}
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.075
+			}
+		}
 	}
 
 	focus = {
@@ -1078,10 +1112,15 @@ focus_tree = {
 		y = 12
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = x
+				add_idea = xy
+			}
 			remove_ideas = NCH_food_shortage
+
 			add_power_balance_value = {
 				id = NCH_hunger_bop
-				value = 0.2
+				value = 0.15
 			}
 		}
 	}

@@ -190,9 +190,9 @@ ideas = {
 
 			modifier = {
 				political_power_factor = -0.25
-				stability_weekly = -0.005
+				stability_weekly = -0.003
 				surrender_limit = -0.3
-				power_balance_daily = -0.01
+				power_balance_weekly = -0.001
 			}
 		}
 
@@ -210,7 +210,7 @@ ideas = {
 				local_resources_factor = -0.2
 				production_oil_factor = -0.5 
 				production_speed_buildings_factor = -0.25
-				power_balance_weekly = -0.01
+				power_balance_weekly = -0.001
 			}
 		}
 
@@ -228,8 +228,8 @@ ideas = {
 				war_support_weekly = 0.003
 				consumer_goods_factor = 0.3
 				communism_drift = 0.03
-				power_balance_weekly = -0.03
 				recruitable_population_factor = -0.05
+				power_balance_weekly = -0.002
 			}
 		}
 

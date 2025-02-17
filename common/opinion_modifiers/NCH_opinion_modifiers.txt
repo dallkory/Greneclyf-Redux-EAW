@@ -10,6 +10,12 @@ opinion_modifiers = {
 		value = 30
 		months = 12
 	}
+
+	NCH_trade_with_riverlands_prey = {
+		value = -50
+		months = 12
+		decay = 0.5
+	}
 }
 
 
