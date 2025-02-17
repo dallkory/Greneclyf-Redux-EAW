@@ -249,6 +249,43 @@ ideas = {
 			}
 		}
 
+		# NEW PACT #
+		NCH_new_great_pact = {
+			picture = FAR_NCH_trade
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				NOT = {
+					OR = {
+						has_war_with = RCT
+						has_war_with = BAK
+						has_war_with = DMT
+						has_war_with = DEP
+						has_war_with = LCT
+						has_war_with = NIM
+						has_war_with = WIT
+						has_war_with = FRE
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = -0.15
+				political_power_gain = -0.25
+				trade_laws_cost_factor = 1.75
+				cannot_change_trade_laws = yes
+			}
+		}
+
 		#################
 
 		#NCH_second_hunger = {

@@ -967,6 +967,8 @@ focus_tree = {
 		y = 11
 
 		completion_reward = {
+			add_political_power = 35
+
 			1210 = {
 				set_state_name = "SAOR"
 			}
