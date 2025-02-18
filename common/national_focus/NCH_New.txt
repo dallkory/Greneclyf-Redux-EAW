@@ -931,7 +931,7 @@ focus_tree = {
 					type = convoy
 					amount = 25
 				}
-			
+				
 			custom_effect_tooltip = NCH_end_hide_and_seek_tt
 		}
 	}
