@@ -2,7 +2,6 @@
 add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
-
 	# Example #
 
 	#country_event = {

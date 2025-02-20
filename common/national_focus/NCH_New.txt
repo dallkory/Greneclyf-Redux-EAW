@@ -1180,6 +1180,9 @@ focus_tree = {
 		x = 33
 		y = 13
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2312,6 +2315,9 @@ focus_tree = {
 		x = 61
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2327,6 +2333,9 @@ focus_tree = {
 		x = 59
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2342,6 +2351,9 @@ focus_tree = {
 		x = 60
 		y = 7
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2357,6 +2369,9 @@ focus_tree = {
 		x = 66
 		y = 4
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2369,6 +2384,9 @@ focus_tree = {
 		x = 66
 		y = 5
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2382,6 +2400,9 @@ focus_tree = {
 		x = 64
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2397,6 +2418,9 @@ focus_tree = {
 		x = 63
 		y = 7
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2412,6 +2436,9 @@ focus_tree = {
 		x = 65
 		y = 7
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2424,6 +2451,9 @@ focus_tree = {
 		x = 68
 		y = 5
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2442,6 +2472,9 @@ focus_tree = {
 		x = 67
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2460,6 +2493,9 @@ focus_tree = {
 		x = 69
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
@@ -2473,6 +2509,9 @@ focus_tree = {
 		x = 68
 		y = 7
 
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {
