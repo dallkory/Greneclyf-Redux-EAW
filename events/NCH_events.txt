@@ -191,11 +191,31 @@ add_namespace = greneclyf_crisis
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_redux.6
-				days = 5
+				id = greneclyf_redux.30
+				days = 0
 			}
 		}
 	}
+
+		# SAINT PLACE JORNEY X2 #
+		country_event = {
+			id = greneclyf_redux.30
+			title = greneclyf_redux.30.t
+			desc = greneclyf_redux.30.d
+			picture = GFX_unknow
+			is_triggered_only = yes
+			fire_only_once = yes
+	
+			option={
+				name = greneclyf_redux.30.a 
+				#add_political_power = 50
+	
+				country_event = {
+					id = greneclyf_redux.6
+					days = 5
+				}
+			}
+		}
 
 	# WAY TO HOME JORNEY #
 	country_event = {
