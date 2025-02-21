@@ -458,7 +458,7 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = NCH_Moronlan
-			cost = 100
+			cost = 200
 
 			allowed = {
 				original_tag = NCH

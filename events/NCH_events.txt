@@ -34,7 +34,7 @@ add_namespace = greneclyf_crisis
 
 		option={
 			name = greneclyf_redux.1.a 
-			add_political_power = 50
+			add_political_power = 30
 			add_ideas = NCH_Basalt_Shaw
 			set_country_flag = NCH_Moronlan_Legacy
 			
@@ -330,9 +330,36 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.9.a
-			set_country_flag = NCH_celarl_laboratory_opend
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_redux.32
+					days = 28
+				}
+			}
 		}
 	}
+
+	country_event = {
+		id = greneclyf_redux.32
+		title = greneclyf_redux.32.t
+		desc = greneclyf_redux.32.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.32.a
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_redux.10
+					days = 56
+				}
+			}
+		}
+	}
+	
 
 	# CELARL LABORATORY #
 	country_event = {
@@ -696,7 +723,7 @@ add_namespace = greneclyf_crisis
 	## ##
 	# SOLDIERS RISING #
 	country_event = {
-		id = greneclyf_redux.29
+		id = greneclyf_redux.30
 		title = greneclyf_redux.29.t
 		desc = greneclyf_redux.29.d
 		picture = GFX_unknow
@@ -711,7 +738,7 @@ add_namespace = greneclyf_crisis
 
 	# BLOOD IN THE STREETS #
 	country_event = {
-		id = greneclyf_redux.29
+		id = greneclyf_redux.31
 		title = greneclyf_redux.29.t
 		desc = greneclyf_redux.29.d
 		picture = GFX_unknow
