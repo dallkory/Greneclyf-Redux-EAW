@@ -387,6 +387,9 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.10.a
+			set_country_flag = NCH_greet_future
+			set_country_flag = NCH_great_hunger_started
+			
 			#add_ideas = NCH_second_hunger
 			add_political_power = -300
 
