@@ -727,14 +727,14 @@ add_namespace = greneclyf_crisis
 	### FORCES ###
 
 	country_event = {
-		id = greneclyf_redux.99
-		title = greneclyf_redux.99.t
-		desc = greneclyf_redux.99.d
+		id = greneclyf_forces.99
+		title = greneclyf_forces.99.t
+		desc = greneclyf_forces.99.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.99.a
+			name = greneclyf_forces.99.a
 		}
 	}

@@ -2019,7 +2019,7 @@ focus_tree = {
 		completion_reward = {
 
 			country_event = {
-				id = greneclyf_redux.99
+				id = greneclyf_forces.99
 				days = 0
 			}
 		}
