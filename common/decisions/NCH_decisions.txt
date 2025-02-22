@@ -16,6 +16,34 @@ NCH_debug_decision = {
 		complete_effect = {
 			NCH = {
 				set_cosmetic_tag = NCH_River
+				annex_country = {
+					target = RCT
+				}
+				annex_country = {
+					target = NIM
+				}
+				annex_country = {
+					target = DMT
+				}
+				annex_country = {
+					target = BAK
+				}
+				annex_country = {
+					target = DEP
+				}
+				annex_country = {
+					target = LCT
+				}
+				annex_country = {
+					target = FBK
+				}
+				annex_country = {
+					target = FIR
+				}
+				annex_country = {
+					target = WAT
+				}
+
 			}
 		}
 	}
