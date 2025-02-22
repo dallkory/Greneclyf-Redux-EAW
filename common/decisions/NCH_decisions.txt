@@ -10,6 +10,15 @@ NCH_debug_decision = {
 			set_country_flag = NCH_typography_create
 		}
 	}
+	NCH_create_country = {
+		icon = d
+		
+		complete_effect = {
+			NCH = {
+				set_cosmetic_tag = NCH_River
+			}
+		}
+	}
 	NCH_show_power_balance = {
 		icon = d
 		complete_effect = {
