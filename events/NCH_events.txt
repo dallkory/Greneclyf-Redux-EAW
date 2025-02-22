@@ -389,10 +389,13 @@ add_namespace = greneclyf_crisis
 			name = greneclyf_redux.10.a
 			set_country_flag = NCH_greet_future
 			set_country_flag = NCH_great_hunger_started
-			
+
 			#add_ideas = NCH_second_hunger
 			add_political_power = -300
-
+			add_ideas = NCH_protests_on_street
+			add_ideas = NCH_food_shortage
+			add_ideas = NCH_massive_unemployed
+			
 			set_power_balance = {
 				id = NCH_hunger_bop
 				set_default = yes
