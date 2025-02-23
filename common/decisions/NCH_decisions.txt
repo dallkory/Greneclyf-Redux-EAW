@@ -35,6 +35,13 @@ NCH_debug_decision = {
 					target = LCT
 				}
 				annex_country = {
+					target = WIT
+				}
+				annex_country = {
+					target = FRE
+				}
+
+				annex_country = {
 					target = FBK
 				}
 				annex_country = {

@@ -2231,6 +2231,12 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			
+			add_tech_bonus = {
+				name = x
+				technology = racial_specforce_start
+				bonus = 0.5
+				uses = 1
+			}
 		}
 	}
 
@@ -2284,12 +2290,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = x
+				#TITLE_SPECIAL_FORCES
+				#racial_specforce_start
 				technology = racial_specforce_start
 				bonus = 0.5
 				uses = 1
-
-				add_ideas = NCH_land_forces_everyone_can_be_hero
 			}
+			add_ideas = NCH_land_forces_everyone_can_be_hero
 		}
 	}
 
