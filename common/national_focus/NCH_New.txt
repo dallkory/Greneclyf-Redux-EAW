@@ -2232,10 +2232,10 @@ focus_tree = {
 			army_experience = 25
 			
 			add_tech_bonus = {
-				name = x
-				technology = racial_specforce_start
-				bonus = 0.5
-				uses = 1
+				name = special_forces_bonus
+				category = jager_tech
+				bonus = 0.15
+				uses = 2
 			}
 		}
 	}
@@ -2288,13 +2288,11 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = x
-				#TITLE_SPECIAL_FORCES
-				#racial_specforce_start
-				technology = racial_specforce_start
-				bonus = 0.5
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_racial_specforce_doctrine
 			}
 			add_ideas = NCH_land_forces_everyone_can_be_hero
 		}
