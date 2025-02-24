@@ -2657,29 +2657,40 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				has_country_flag = NCH_left_land_forces
+				limit = {
+					has_country_flag = NCH_left_land_forces
+				}
+				remove_ideas = {
+					NCH_land_forces_everyone_can_be_hero 
+				}
+				remove_ideas = {
+					NCH_greuling_training 
+				}
+				remove_ideas = {
+					NCH_faith_in_queen
+				}
+	
+				add_ideas = NCH_hero_land_forces
 			}
-			remove_ideas = {
-				NCH_land_forces_everyone_can_be_hero 
-			}
-			remove_ideas = {
-				NCH_greuling_training 
-			}
-			remove_ideas = {
-				NCH_faith_in_queen
-			}
+		
+			else_if = {
+				limit = { 
+					has_country_flag = NCH_right_land_forces 
+				}
+				remove_ideas = {
+					NCH_discipline_key
+				}
+				remove_ideas = {
+					NCH_artillery_fields
+				}
+				remove_ideas = {
+					NCH_goddes_war_inf
+				}
 
-			add_ideas = NCH_hero_land_forces
-
-			#if = {
-			#	has_country_flag = NCH_right_land_forces
-			#}
-			#hidden_effect = {
-			#	remove_ideas = d
-			#}
-			#add_ideas = NCH_org_land_forces
+			add_ideas = NCH_org_land_forces
+			}
 		}
-	}
+	}	
 
 
 

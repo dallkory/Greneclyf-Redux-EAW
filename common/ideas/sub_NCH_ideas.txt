@@ -644,7 +644,23 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
+		### HERO SIDE ###
+		NCH_hero_land_forces = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
 
+			modifier = {
+
+			}
+		}
+
+		## RIGHT SIDE ##
 		NCH_discipline_key = {
 			picture = GFX_goal_unknown
 			allowed = {
@@ -698,8 +714,26 @@ ideas = {
 			} 
 		}
 
+		### ORG SIDE ###
+		NCH_org_land_forces = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
 
-##### SUBMOD ######
+			}
+		}
+
+###################		#########################
+##### SUBMOD ######		#########################
+###################		#########################
+
 		NCH_school_of_engeneers_idea = {
 			picture = bug_school
 			allowed = {
