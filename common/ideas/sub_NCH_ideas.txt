@@ -531,6 +531,7 @@ ideas = {
 			modifier = {
 				special_forces_defence_factor = 0.05
 				special_forces_attack_factor = 0.05
+				special_forces_min = 250
 			}
 		}
 
@@ -644,8 +645,63 @@ ideas = {
 			}
 		}
 
+		NCH_discipline_key = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
 
-		# SUBMOD #
+			modifier = {
+				initiative_factor = 0.05
+				army_org_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+
+		NCH_artillery_fields = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_artillery_combat_factor = 0.3
+				army_artillery_defence_factor = 0.05
+				army_artillery_attack_factor = 0.075
+			}
+		}
+
+		NCH_goddes_war_inf = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				infantry_equipment_cost = -0.25
+				
+				equipment_bonus = {
+					infantry_equipment = {
+						reliability = -0.10
+					}
+				}
+			}
+		}
+
+
+##### SUBMOD ######
 		NCH_school_of_engeneers_idea = {
 			picture = bug_school
 			allowed = {

@@ -2423,6 +2423,14 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_right_land_forces
+			army_experience = 25
+
+			add_tech_bonus = {
+				name = army_upgrades
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -2437,7 +2445,7 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			
+			add_ideas = NCH_discipline_key
 		}
 	}
 
@@ -2510,7 +2518,39 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = volunteer_only_1 }
+				remove_ideas = { volunteer_only_1 }
+				add_ideas = { volunteer_only_1_5 }
+			}
+			else_if = {
+				limit = { has_idea = volunteer_only_1_5 }
+				remove_ideas = { volunteer_only_1_5 }
+				add_ideas = { limited_conscription }
+			}
+			else_if = {
+				limit = { has_idea = limited_conscription }
+				remove_ideas = { limited_conscription }
+				add_ideas = { extensive_conscription }
+			}
+			else_if = {
+				limit = { has_idea = extensive_conscription }
+				remove_ideas = { extensive_conscription }
+				add_ideas = { service_by_requirement }
+			}
+			else_if = {
+				limit = { has_idea = service_by_requirement }
+				remove_ideas = { service_by_requirement }
+				add_ideas = { all_adult_serve }
+			}
+			else_if = {
+				limit = { has_idea = all_adult_serve }
+				remove_ideas = { all_adult_serve }
+				add_ideas = { scraping_the_barrel }
+			}
+			else = {
+				add_ideas = { volunteer_only_1 }
+			}
 		}
 	}
 
@@ -2531,7 +2571,13 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
-			
+			add_ideas = NCH_artillery_fields
+
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+				producer = NCH
+			}
 		}
 	}
 
@@ -2552,7 +2598,7 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
-			
+			add_ideas = NCH_goddes_war_inf 
 		}
 	}
 
@@ -2607,11 +2653,16 @@ focus_tree = {
 			if = {
 				has_country_flag = NCH_left_land_forces
 			}
-				remove_ideas = {
-					NCH_land_forces_everyone_can_be_hero 
-					NCH_greuling_training 
-					NCH_faith_in_queen
-				}
+			remove_ideas = {
+				NCH_land_forces_everyone_can_be_hero 
+			}
+			remove_ideas = {
+				NCH_greuling_training 
+			}
+			remove_ideas = {
+				NCH_faith_in_queen
+			}
+
 			add_ideas = NCH_hero_land_forces
 
 			#if = {

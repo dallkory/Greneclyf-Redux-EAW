@@ -1,6 +1,6 @@
 ﻿add_namespace = greneclyf_redux
-add_namespace = greneclyf_FBK_coup
-add_namespace = greneclyf_crisis
+add_namespace = greneclyf_forces
+add_namespace = greneclyf_main
 
 	# Example #
 
@@ -769,8 +769,7 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.32.a
-
-			
+		}
 	}
 
 	### CHANGE ###
