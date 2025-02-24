@@ -1,0 +1,23 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			NCH = {
+				add_manpower = 41489
+			}
+			NCH = {
+				670 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				669 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				668 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				1212 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+}

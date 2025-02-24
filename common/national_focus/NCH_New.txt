@@ -109,7 +109,13 @@ focus_tree = {
 		y = 4
 		
 		completion_reward = {
-			
+			1209={
+				add_victory_points = {
+					province = 5230
+					value = 5
+				}
+
+			}
 			country_event = {
 				id = greneclyf_redux.8
 				days = 0
@@ -157,7 +163,16 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			add_ideas = lack_of_scientists1
+			swap_ideas = {
+				remove_idea = lack_of_scientists
+				add_idea = lack_of_scientists1
+			}
+
+			swap_ideas = {
+				remove_idea = NCH_luddites_1
+				add_idea = NCH_luddites_2
+			}
+
 			random_state = {
 				limit = {
 					is_owned_by = NCH
@@ -182,8 +197,10 @@ focus_tree = {
 		y = 5
 
 		completion_reward = {
-			custom_effect_tooltip = NCH_typography_create_ttip
-			set_country_flag = NCH_typography_create
+			country_event = {
+				id = greneclyf_redux.700
+				days = 0
+			}
 		}
 	}
 
@@ -250,6 +267,7 @@ focus_tree = {
 					is_riverlands_country = yes
 				}
 				add_opinion_modifier = {
+					target = ROOT
 					#modifier = NCH_trade_with_riverlands
 					modifier = trading
 				}
@@ -281,12 +299,11 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
-			set_country_flag = NCH_greet_future
-			set_country_flag = NCH_great_hunger_started
 			country_event = {
-				id = greneclyf_redux.10
-				days = 56
+				id = greneclyf_redux.9
+				days = 0
 			}
+			custom_effect_tooltip = NCH_army_development
 		}
 	}
 
@@ -307,19 +324,22 @@ focus_tree = {
 	focus = {
 		id = NCH_beginning_of_crisis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1
 		x = 33
 		y = 8
 
 		available = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		bypass = {
+			has_country_flag = NCH_hunger_starts
+		}
 
 	}
 	focus = {
 		id = NCH_hive
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 13
 		y = 2
 
@@ -331,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Queen_Gytha_Patch
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 33
 		y = 15
 
@@ -339,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = NCH_pressure_chrusalis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -350,7 +370,7 @@ focus_tree = {
 	focus = {
 		id = NCH_spy_everywhere
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_pressure_chrusalis
 		}
@@ -361,7 +381,7 @@ focus_tree = {
 	focus = {
 		id = NCH_take_a_equipment
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_spy_everywhere
 		}
@@ -372,7 +392,7 @@ focus_tree = {
 	focus = {
 		id = NCH_seek_support
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -383,7 +403,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Queen_Ditrisium
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_seek_support
 		}
@@ -397,7 +417,7 @@ focus_tree = {
 	focus = {
 		id = NCH_equipment_suppporter
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_Queen_Ditrisium
 		}
@@ -411,7 +431,7 @@ focus_tree = {
 	focus = {
 		id = NCH_give_hope
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_equipment_suppporter
 		}
@@ -425,7 +445,7 @@ focus_tree = {
 	focus = {
 		id = NCH_idea_of_harmony_in_hives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_Queen_Ditrisium
 		}
@@ -436,7 +456,7 @@ focus_tree = {
 	focus = {
 		id = NCH_fangs_dug
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_equipment_suppporter
 		}
@@ -450,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = NCH_rethinking_history
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -461,7 +481,7 @@ focus_tree = {
 	focus = {
 		id = NCH_accept_refugees
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rethinking_history
 		}
@@ -472,7 +492,7 @@ focus_tree = {
 	focus = {
 		id = NCH_loyal_elite
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rethinking_history
 		}
@@ -483,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = NCH_our_legarl_right
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_accept_refugees
 		}
@@ -497,7 +517,7 @@ focus_tree = {
 	focus = {
 		id = NCH_all_or_nothing
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_our_legarl_right
 		}
@@ -508,7 +528,7 @@ focus_tree = {
 	focus = {
 		id = NCH_unity_summit
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -519,7 +539,7 @@ focus_tree = {
 	focus = {
 		id = NCH_start_negotiations
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_unity_summit
 		}
@@ -530,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = NCH_all_wars_ends
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_start_negotiations
 		}
@@ -544,7 +564,7 @@ focus_tree = {
 	focus = {
 		id = NCH_menace_chrysalis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_start_negotiations
 		}
@@ -555,65 +575,133 @@ focus_tree = {
 		y = 5
 
 	}
+
 	focus = {
 		id = NCH_after_war_plans
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_menace_chrysalis
 		}
 		x = 18
 		y = 6
 
+		completion_reward = {
+			
+		}
 	}
+
 	focus = {
 		id = NCH_mre_cards
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_beginning_of_crisis
 		}
 		x = 27
 		y = 9
 
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = NCH_mre_cards_help
+				days = 90
+			}
+
+			custom_effect_tooltip = NCH_starts_mre_help
+		}
 	}
+
 	focus = {
 		id = NCH_agroindustrial_mobilization
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_mre_cards
 		}
 		x = 26
 		y = 10
 
+		completion_reward = {
+
+			country_event = {
+				id = greneclyf_redux.19
+				days = 0
+			}
+
+			1209 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_agroindustrial_programs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_agroindustrial_mobilization
 		}
 		x = 24
 		y = 11
 
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+
+			country_event = {
+				id = greneclyf_redux.20
+				days = 0
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.075
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_limit_external_trade
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_mre_cards
 		}
 		x = 28
 		y = 10
 
+		completion_reward = {
+			set_country_flag = NCH_obsidian_export
+
+			custom_effect_tooltip = NCH_start_obsisian_export
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_industrial_cooperatives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_agroindustrial_mobilization
 		}
@@ -623,22 +711,51 @@ focus_tree = {
 		x = 27
 		y = 11
 
+		completion_reward = {
+			add_research_slot = 1
+
+			remove_ideas = {
+				NCH_luddites_2
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_modernization_industry
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_limit_external_trade
 		}
 		x = 30
 		y = 11
 
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.1
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_domestic_consumption
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_agroindustrial_programs
 		}
@@ -651,119 +768,314 @@ focus_tree = {
 		x = 27
 		y = 12
 
+		available = {
+			has_completed_focus = NCH_overvise_great_packt
+		}
+
+		completion_reward = {
+			remove_ideas = NCH_massive_unemployed
+
+			if = {
+				limit = {
+					has_idea = civilian_economy
+					NOT = { has_idea = low_economic_mobilisation }
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = low_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.1
+			}
+		}
 	}
-
-
-
 
 	focus = {
 		id = NCH_emergacy_plan
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_beginning_of_crisis
 		}
 		x = 33
 		y = 9
 
+		available = {
+			has_completed_focus = NCH_mre_cards
+		}
+
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.1
+
+			if = {
+				limit = {
+					has_idea = civilian_economy
+					NOT = { has_idea = low_economic_mobilisation }
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = low_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = total_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_consolidation_political
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_emergacy_plan
 		}
 		x = 32
 		y = 10
 
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.075
+			country_event = {
+				id = greneclyf_redux.28
+				days = 0
+			}
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
-
-
 
 	focus = {
 		id = NCH_call_for_unity
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_emergacy_plan
 		}
 		x = 34
 		y = 10
 
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			country_event = {
+				id = greneclyf_redux.27
+				days = 0
+			}
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
 	}
 
 
 	focus = {
 		id = NCH_to_neighbors
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_beginning_of_crisis
 		}
 		x = 39
 		y = 9
 
+		available = {
+			has_completed_focus = NCH_mre_cards
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 25
+				}
+				
+			custom_effect_tooltip = NCH_end_hide_and_seek_tt
+		}
 	}
+
 	focus = {
 		id = NCH_every_friend
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_to_neighbors
 		}
 		x = 37
 		y = 10
 
+		bypass = {
+			FBK = {
+				not = {
+					has_government = democratic
+				}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 30
+
+			add_opinion_modifier = {
+				target = FBK
+				modifier = NCH_FBK_friends
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_hoof_of_help
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_every_friend
 		}
 		x = 36
 		y = 11
 
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = FBK
+					country_exists = FIR
+					country_exists = WAT
+				}
+			}
+		}
+
+		completion_reward = {
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+
+			custom_effect_tooltip = NCH_start_friendship_with_pony_hills
+		}
 	}
+
 	focus = {
 		id = NCH_some_love
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_every_friend
 		}
 		x = 38
 		y = 11
 
+		bypass = {
+			Not = {
+				country_exists = FBK
+			}
+			FBK = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.25
+				days = 0
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_reguest_of_help
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = NCH_to_neighbors
 		}
 		x = 41
 		y = 10
 
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.15
+				days = 0
+			}			
+
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = NCH_trade_with_riverlands_prey
+				}
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_army_concessions
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_reguest_of_help
 		}
 		x = 40
 		y = 11
 
+		completion_reward = {
+			add_political_power = 35
+
+			add_timed_idea = {
+				idea = NCH_zone_of_sin
+				days = 90
+			}
+
+			1210 = {
+				set_state_name = "SAOR"
+			}
+			set_province_name = {
+				id = 10775
+				name = "SAOR"
+			}
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.075
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_collective_management
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_all_wars_ends
 		}
@@ -771,10 +1083,11 @@ focus_tree = {
 		y = 6
 
 	}
+
 	focus = {
 		id = NCH_burnings_they_hearts
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_collective_management
 			focus = NCH_after_war_plans
@@ -786,10 +1099,11 @@ focus_tree = {
 		y = 7
 
 	}
+
 	focus = {
 		id = NCH_union_hives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_burnings_they_hearts
 		}
@@ -797,10 +1111,11 @@ focus_tree = {
 		y = 8
 
 	}
+
 	focus = {
 		id = NCH_clans_of_Greneclyf
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_consolidation_political
 		}
@@ -810,22 +1125,41 @@ focus_tree = {
 		x = 33
 		y = 11
 
+		available = {
+			has_completed_focus = NCH_domestic_consumption
+		}
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.29
+				days = 0
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_suppression_of_unrest
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_clans_of_Greneclyf
 		}
 		x = 33
 		y = 12
 
+		completion_reward = {
+			remove_ideas = NCH_protests_on_street
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.2
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_final_crisis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_suppression_of_unrest
 		}
@@ -835,22 +1169,37 @@ focus_tree = {
 		x = 33
 		y = 13
 
+		completion_reward = {
+			
+		}
 	}
+
 	focus = {
 		id = NCH_concessions_for_help
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_reguest_of_help
 		}
 		x = 42
 		y = 11
 
+		available = {
+			has_completed_focus = NCH_army_concessions
+		}
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.17
+				days = 15
+			}
+		}
 	}
+
 	focus = {
 		id = NCH_overvise_great_packt
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_hoof_of_help
 		}
@@ -866,6 +1215,18 @@ focus_tree = {
 		x = 39
 		y = 12
 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NCH_FBK_pact
+				add_idea = NCH_new_great_pact
+			}
+			remove_ideas = NCH_food_shortage
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.15
+			}
+		}
 	}
 
 
@@ -919,7 +1280,7 @@ focus_tree = {
 	focus = {
 		id = NCH_expand_blosmport_yards
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_at_seas
 		}
@@ -927,13 +1288,16 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
-			add_ideas = NCH_blosmporn_dockyards
+			add_timed_idea = {
+				idea = NCH_blosmporn_dockyards
+				days = 270
+			}
 
 			670 = {
 				limit = {
 					is_owned_by = NCH
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 3
@@ -945,7 +1309,7 @@ focus_tree = {
 	focus = {
 		id = NCH_hard_armor
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_expand_blosmport_yards
 		}
@@ -957,11 +1321,19 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = NCH_armor_priority
+
 			add_doctrine_cost_reduction = {
 				name = navdoc_bonus
 				cost_reduction = 0.25
 				uses = 2
 				category = cat_fleet_in_being
+			}
+
+			add_tech_bonus = {
+				name = battleship_tech
+				bonus = 1
+				uses = 1
+				category = bb_tech
 			}
 		}
 	}
@@ -969,7 +1341,7 @@ focus_tree = {
 	focus = {
 		id = NCH_silent_hunters
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_expand_blosmport_yards
 		}
@@ -987,37 +1359,64 @@ focus_tree = {
 				uses = 2
 				category = cat_trade_interdiction
 			}
+
+			add_tech_bonus = {
+				name = submarine_tech
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 
 	focus = {
 		id = NCH_Greneclyf_pride
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_hard_armor
 		}
 		x = 46
 		y = 6
 
+		completion_reward = {
+			add_ideas = NCH_battleships_cruaiser_bonus
+			
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = naval_equipment
+			}
+		}
 	}
 
 	focus = {
 		id = NCH_sharks_ice_waters
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_silent_hunters
 		}
 		x = 48
 		y = 6
 
+		completion_reward = {
+			add_ideas = NCH_submarines_bonus
+
+			add_tech_bonus = {
+				name = submarine_tech
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
 	}
 
 	focus = {
 		id = NCH_experomental_developments
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_Greneclyf_pride
 			focus = NCH_sharks_ice_waters
@@ -1025,14 +1424,440 @@ focus_tree = {
 		x = 47
 		y = 7
 
-	}
+		completion_reward = {
+			custom_effect_tooltip = NCH_unique_naval_experomental
+		
+			if = {
+				limit = {
+					has_completed_focus = NCH_hard_armor					
+				}
+				add_ideas = NCH_grand_fleet 
+				
+				if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						set_technology = {
+							heavy_cruiser_1 = 1
+							light_cruiser_1 = 1
+							destroyer_1 = 1
+							destroyer_2 = 1
 	
+							ship_shields_1 = 1
+							secondary_battery_1 = 1
+							ship_armor_cruiser_1 = 1
+							ship_torpedo_1 = 1
+							ship_depth_charge_1 = 1
+						}
 
+					# BATTLESHIPS #
+						add_equipment_production = {
+							equipment = { 
+								version_name = "LnG Gytha"
+								type = ship_hull_heavy_1
+								creator = NCH
+							}
+							name = "LnG Oiren"
+							requested_factories = 5
+							progress = 0.7
+							amount = 1
+						}
+		
+						add_equipment_production = {
+							equipment = { 
+								version_name = "LnG Gytha"
+								type = ship_hull_heavy_1
+								creator = NCH
+							}
+							name = "LnG Basalt"
+							requested_factories = 5
+							progress = 0.6
+							amount = 1
+						}
+					##
+					# Craisers #
+					create_equipment_variant = {
+						name = "Cineál 9"
+						type = heavy_cruiser_1
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_battery_slot = ship_medium_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_1
+							mid_1_custom_slot = ship_torpedo_1
+							mid_2_custom_slot = ship_torpedo_1
+							fixed_ship_armor_slot = ship_armor_cruiser_1
+
+							rear_1_custom_slot = ship_medium_battery_1
+							rear_2_custom_slot = dp_light_battery_1
+						}
+					}
+		
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 9"
+							type = heavy_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Korry"
+						requested_factories = 5
+						progress = 0.65
+						amount = 1
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 9"
+							type = heavy_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Vega"
+						requested_factories = 5
+						progress = 0.65
+						amount = 1
+					}
+
+
+					create_equipment_variant = {
+						name = "Cineál 7"
+						type = light_cruiser_1
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_battery_slot = ship_light_medium_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_1
+							mid_1_custom_slot = ship_torpedo_1
+							mid_2_custom_slot = ship_torpedo_1
+							fixed_ship_armor_slot = ship_armor_cruiser_1
+
+							rear_0_custom_slot = ship_anti_air_1
+							rear_1_custom_slot = ship_light_medium_battery_1
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 7"
+							type = light_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Judge"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 7"
+							type = light_cruiser_1
+							creator = NCH
+						}
+						name = "LnG Brave"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+					
+
+					create_equipment_variant = {
+						name = "Cineál 3"
+						type = destroyer_2
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+
+							mid_1_custom_slot = ship_depth_charge_1
+							rear_1_custom_slot = empty
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Gerda"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Bugsmere"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Hive"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Legend"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Cineál 3"
+							type = destroyer_2
+							creator = NCH
+						}
+						name = "LnG Sun"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+				}
+
+				# NO DLC#
+				else = {
+
+
+
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+			}
+
+			# SUBMARINES #
+			if = {
+				limit = {
+					has_completed_focus = NCH_silent_hunters					
+				}
+				add_ideas = NCH_submarine_fleet
+		
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+
+					set_technology = {
+						cruiser_submarines = 1
+						early_submarine = 1
+					}
+					
+					create_equipment_variant = {
+						name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						allow_without_tech = yes
+						name_group = NCH_BB_HISTORICAL
+						parent_version = 0
+		
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							front_1_custom_slot = ship_torpedo_sub_1
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = ship_torpedo_sub_1
+
+							#fixed_ship_engine_slot = sub_ship_engine_1
+							#fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							#front_1_custom_slot = ship_extra_fuel_tank
+						}
+					}
+
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Tyrann"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Icepeak"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Snowball"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Dark"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Hero"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Bee"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Icebreaker"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Arktur"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Lier"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Free Bird"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Fury"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO Great"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							version_name = "Siorc uiscí oighreata"
+							type = ship_hull_cruiser_submarine
+							creator = NCH
+						}
+						name = "SuO First"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+		
+					# NO DLC#
+					else = {
+						set_technology = {
+						cruiser_submarines_nomtg = 1
+						}
+
+
+
+					}
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = NCH_assing_new_command
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 8
 		prerequisite = {
 			focus = NCH_at_seas
 		}
@@ -1075,7 +1900,7 @@ focus_tree = {
 	focus = {
 		id = NCH_marine_corp
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_assing_new_command
 		}
@@ -1120,7 +1945,7 @@ focus_tree = {
 	focus = {
 		id = NCH_naval_academy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = NCH_assing_new_command
 		}
@@ -1140,7 +1965,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Blosmport_navy_institute
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_marine_corp
 		}
@@ -1173,7 +1998,7 @@ focus_tree = {
 	focus = {
 		id = NCH_security_trade
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_at_seas
 		}
@@ -1183,16 +2008,17 @@ focus_tree = {
 		completion_reward = {
 
 			country_event = {
-				id = greneclyf_redux.99
+				id = greneclyf_forces.99
 				days = 0
 			}
 		}
 	}
 
+	############
 	focus = {
 		id = NCH_break_ice
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_security_trade
 		}
@@ -1201,26 +2027,43 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = NCH_break_ice_idea
+			set_country_flag = NCH_break_the_ice_research
+
+			add
+
+			add_equipment_bonus = {
+				name = sp_mega_carrier_eq_bonus_strength
+				bonus = {
+					ship_hull_mega_carrier = {
+						build_cost_ic = -0.15
+						max_strength = 0.05
+						instant = yes
+					}
+				}
+			}		
 		}
 	}
+	############
+	
 
 	focus = {
 		id = NCH_merchant_navy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_security_trade
 		}
 		x = 56
 		y = 5
 
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
 		completion_reward = {
-			limit = {
-				is_coastal = yes
-			}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 100
 			}
 		}
 	}
@@ -1228,7 +2071,7 @@ focus_tree = {
 	focus = {
 		id = NCH_resources_for_fleet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_break_ice
 			focus = NCH_merchant_navy
@@ -1244,7 +2087,7 @@ focus_tree = {
 	focus = {
 		id = NCH_investing_in_shipbuildings
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_break_ice
 			focus = NCH_merchant_navy
@@ -1280,7 +2123,7 @@ focus_tree = {
 	focus = {
 		id = NCH_domestic_development
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_resources_for_fleet
 			focus = NCH_investing_in_shipbuildings
@@ -1288,12 +2131,40 @@ focus_tree = {
 		x = 55
 		y = 7
 
+		available = {
+			FROM = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}  
+					has_tech = basic_ship_hull_cruiser
+				}
+				else = {
+					has_tech = basic_light_cruiser
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = NCH_torpedo_attack 
+
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				set_technology = { torpedo_cruiser = 1 }
+			}
+
+			else = {
+				set_technology = { torpedo_cruiser_mtg = 1 }
+			}
+		}
 	}
 
 	focus = {
 		id = NCH_our_future_at_sea
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_experomental_developments
 		}
@@ -1309,7 +2180,14 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = NCH_our_navy_strategy
 			set_country_flag = NCH_sea_future
-
+			
+			# NOT WORKING WHY #
+			hidden_effect = {
+				remove_idea = NCH_expand_blosmport_dockyards
+				remove_idea = NCH_naval_academy_establish
+				remove_idea = NCH_break_ice_idea
+			}
+				add_ideas = NCH_navy_forces
 		}
 	}
 
@@ -1318,7 +2196,7 @@ focus_tree = {
 	focus = {
 		id = NCH_on_land
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 64
 		y = 3
 
@@ -1326,12 +2204,436 @@ focus_tree = {
 			focus = NCH_rule_greneclyf
 		}
 
+		completion_reward = {
+			army_experience = 25
+			remove_ideas = NCH_idyllic_society
+
+			add_doctrine_cost_reduction = {
+				name = navdoc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
+
+	focus = {
+		id = NCH_auxiliary_battalions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_on_land
+		}
+		mutually_exclusive = {
+			focus = NCH_priorize_integrity
+		}
+		x = 62
+		y = 4
+
+		completion_reward = {
+			army_experience = 25
+			set_country_flag = NCH_left_land_forces
+
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = jager_tech
+				bonus = 0.15
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_inspire_by_example
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 60
+		y = 5
+
+		completion_reward = {
+			add_corps_commander_role = {
+				character = NCH_Merelay
+				desc = "NCH_Merelay"
+				traits={changeling_race_trait infantry_leader hill_fighter}
+				skill=3
+				attack_skill=2
+				defense_skill=4
+				planning_skill=1
+				logistics_skill=3
+			   } 
+			   custom_effect_tooltip = NCH_Marelay_stats
+   
+			add_corps_commander_role = {
+			   character = NCH_Zaliack
+			   desc = "NCH_Merelay"
+			   traits={ changeling_race_trait winter_specialist }
+			   skill=3
+			   attack_skill=2
+			   defense_skill=4
+			   planning_skill=2
+			   logistics_skill=3
+			   }
+			   custom_effect_tooltip = NCH_Marelay_stats
+		}
+	}
+
+	focus = {
+		id = NCH_anyone_can_be_hero
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 62
+		y = 5
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = x
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_racial_specforce_doctrine
+			}
+			add_ideas = NCH_land_forces_everyone_can_be_hero
+		}
+	}
+
+	focus = {
+		id = NCH_greuling_workouts
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+		}
+		prerequisite = {
+			focus = NCH_inspire_by_example
+		}
+		x = 61
+		y = 6
+
+		completion_reward = {
+			add_ideas = NCH_greuling_training
+		}
+	}
+
+	focus = {
+		id = NCH_best_of_the_best
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_inspire_by_example
+		}
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+		}
+		x = 59
+		y = 6
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_redux.32
+				days = 0
+			}
+
+			division_template = {
+				name = "Changeling Veterans Brigade"
+				division_names_group = CHN_ALTINF_01
+				template_counter = 37
+				is_locked = yes
+				template_counter = 108
+				regiments = {
+					jager = { x = 0 y = 0 }
+					jager = { x = 0 y = 1 }
+					jager = { x = 0 y = 2 }
+					jager = { x = 0 y = 3 }
+					jager = { x = 1 y = 0 }
+					jager = { x = 1 y = 1 }
+					jager = { x = 1 y = 2 }
+					jager = { x = 1 y = 3 }
+					jager = { x = 2 y = 0 }
+					jager = { x = 2 y = 1 }
+					jager = { x = 2 y = 2 }
+					jager = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+				}
+				support = {
+					infiltrator_company = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+					artillery = { x = 0 y = 3 }
+				}
+				priority = 2
+			}
+
+			random_owned_controlled_state = {
+				create_unit = { division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+				owner = NCH }
+			}
+			random_owned_controlled_state = {
+				create_unit = { division = "name = \"Hiills Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+				owner = NCH }
+			}
+			random_owned_controlled_state = {
+				create_unit = { division = "name = \"Moon Sky Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+				owner = NCH }
+			}
+			random_owned_controlled_state = {
+				create_unit = { division = "name = \"Icebreaker Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+				owner = NCH }
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_faith_in_queen
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_best_of_the_best
+		}
+		prerequisite = {
+			focus = NCH_greuling_workouts
+		}
+		x = 60
+		y = 7
+
+		completion_reward = {
+			add_war_support = 0.15
+
+			add_ideas = NCH_faith_in_queen_idea
+		}
+	}
+
+	focus = {
+		id = NCH_priorize_integrity
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_on_land
+		}
+		mutually_exclusive = {
+			focus = NCH_auxiliary_battalions
+		}
+		x = 66
+		y = 4
+
+		completion_reward = {
+			set_country_flag = NCH_right_land_forces
+		}
+	}
+
+	focus = {
+		id = NCH_discipline_is_key_to_order
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_priorize_integrity
+		}
+		x = 66
+		y = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NCH_bugsmere_war_institute
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_anyone_can_be_hero
+			focus = NCH_discipline_is_key_to_order
+		}
+		x = 64
+		y = 6
+
+		completion_reward = {
+			 669 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = land_facility
+				level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_greneclyf_tanks
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_bugsmere_war_institute
+		}
+		mutually_exclusive = {
+			focus = NCH_mechanization_of_brigades
+		}
+		x = 63
+		y = 7
+
+		completion_reward = {
+			add_ideas = NCH_new_tank_idea
+		}
+	}
+
+	focus = {
+		id = NCH_mechanization_of_brigades
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_bugsmere_war_institute
+		}
+		mutually_exclusive = {
+			focus = NCH_greneclyf_tanks
+		}
+		x = 65
+		y = 7
+
+		completion_reward = {
+			add_ideas = NCH_mech_brigads
+		}
+	}
+
+	focus = {
+		id = NCH_pass_law_on_consctiption
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_priorize_integrity
+		}
+		x = 68
+		y = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NCH_queen_of_the_fields
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_discipline_is_key_to_order
+		}
+		prerequisite = {
+			focus = NCH_pass_law_on_consctiption
+		}
+		mutually_exclusive = {
+			focus = NCH_goddes_of_war
+		}
+		x = 67
+		y = 6
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NCH_goddes_of_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_discipline_is_key_to_order
+		}
+		prerequisite = {
+			focus = NCH_pass_law_on_consctiption
+		}
+		mutually_exclusive = {
+			focus = NCH_queen_of_the_fields
+		}
+		x = 69
+		y = 6
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NCH_expamd_production
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_queen_of_the_fields
+			focus = NCH_goddes_of_war
+		}
+		x = 68
+		y = 7
+
+		completion_reward = {
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_greneclyf_school_of_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = NCH_faith_in_queen
+			focus = NCH_expamd_production
+		}
+		x = 64
+		y = 8
+
+		completion_reward = {
+			if = {
+				has_country_flag = NCH_left_land_forces
+			}
+				remove_ideas = {
+					NCH_land_forces_everyone_can_be_hero 
+					NCH_greuling_training 
+					NCH_faith_in_queen
+				}
+			add_ideas = NCH_hero_land_forces
+
+			#if = {
+			#	has_country_flag = NCH_right_land_forces
+			#}
+			#hidden_effect = {
+			#	remove_ideas = d
+			#}
+			#add_ideas = NCH_org_land_forces
+		}
+	}
+
+
+
+
+
+	
 
 	focus = {
 		id = NCH_dreems_of_more
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 33
 		y = 16
 
@@ -1339,7 +2641,7 @@ focus_tree = {
 	focus = {
 		id = NCH_reforms_after_storm
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 22
 		y = 16
 
@@ -1347,7 +2649,7 @@ focus_tree = {
 	focus = {
 		id = NCH_we_are_not_alone
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 44
 		y = 16
 
@@ -1355,7 +2657,7 @@ focus_tree = {
 	focus = {
 		id = NCH_pressure_chrusalis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -1367,7 +2669,7 @@ focus_tree = {
 	focus = {
 		id = NCH_take_a_mpment
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_spy_everywhere
 		}
@@ -1378,7 +2680,7 @@ focus_tree = {
 	focus = {
 		id = NCH_seek_support
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -1389,7 +2691,7 @@ focus_tree = {
 	focus = {
 		id = NCH_Queen_Ditrisium
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_seek_support
 		}
@@ -1403,7 +2705,7 @@ focus_tree = {
 	focus = {
 		id = NCH_equipment_suppporter
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_Queen_Ditrisium
 		}
@@ -1417,7 +2719,7 @@ focus_tree = {
 	focus = {
 		id = NCH_give_hope
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_equipment_suppporter
 		}
@@ -1431,7 +2733,7 @@ focus_tree = {
 	focus = {
 		id = NCH_idea_of_harmony_in_hives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_Queen_Ditrisium
 		}
@@ -1442,7 +2744,7 @@ focus_tree = {
 	focus = {
 		id = NCH_fangs_dug
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_equipment_suppporter
 		}
@@ -1456,7 +2758,7 @@ focus_tree = {
 	focus = {
 		id = NCH_rethinking_history
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -1467,7 +2769,7 @@ focus_tree = {
 	focus = {
 		id = NCH_accept_refugees
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rethinking_history
 		}
@@ -1478,7 +2780,7 @@ focus_tree = {
 	focus = {
 		id = NCH_loyal_elite
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rethinking_history
 		}
@@ -1489,7 +2791,7 @@ focus_tree = {
 	focus = {
 		id = NCH_our_legarl_right
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_accept_refugees
 		}
@@ -1503,7 +2805,7 @@ focus_tree = {
 	focus = {
 		id = NCH_all_or_nothing
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_our_legarl_right
 		}
@@ -1514,7 +2816,7 @@ focus_tree = {
 	focus = {
 		id = NCH_unity_summit
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_hive
 		}
@@ -1525,7 +2827,7 @@ focus_tree = {
 	focus = {
 		id = NCH_start_negotiations
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_unity_summit
 		}
@@ -1536,7 +2838,7 @@ focus_tree = {
 	focus = {
 		id = NCH_all_wars_ends
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_start_negotiations
 		}
@@ -1550,7 +2852,7 @@ focus_tree = {
 	focus = {
 		id = NCH_menace_chrysalis
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_start_negotiations
 		}
@@ -1564,7 +2866,7 @@ focus_tree = {
 	focus = {
 		id = NCH_after_war_plans
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_menace_chrysalis
 		}
@@ -1572,433 +2874,43 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
-		id = NCH_mre_cards
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_beginning_of_crisis
-		}
-		x = 27
-		y = 9
 
-	}
-	focus = {
-		id = NCH_agroindustrial_mobilization
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_mre_cards
-		}
-		x = 26
-		y = 10
-
-	}
-	focus = {
-		id = NCH_agroindustrial_programs
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_agroindustrial_mobilization
-		}
-		x = 24
-		y = 11
-
-	}
-	focus = {
-		id = NCH_limit_external_trade
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_mre_cards
-		}
-		x = 28
-		y = 10
-
-	}
-	focus = {
-		id = NCH_industrial_cooperatives
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_agroindustrial_mobilization
-		}
-		prerequisite = {
-			focus = NCH_limit_external_trade
-		}
-		x = 27
-		y = 11
-
-	}
-	focus = {
-		id = NCH_modernization_industry
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_limit_external_trade
-		}
-		x = 30
-		y = 11
-
-	}
-	focus = {
-		id = NCH_domestic_consumption
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_agroindustrial_programs
-		}
-		prerequisite = {
-			focus = NCH_modernization_industry
-		}
-		prerequisite = {
-			focus = NCH_industrial_cooperatives
-		}
-		x = 27
-		y = 12
-
-	}
-
-
-	focus = {
-		id = NCH_consolidation_political
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_emergacy_plan
-		}
-		x = 32
-		y = 10
-
-	}
-
-	focus = {
-		id = NCH_call_for_unity
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_emergacy_plan
-		}
-		x = 34
-		y = 10
-
-	}
-
-	focus = {
-		id = NCH_to_neighbors
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_beginning_of_crisis
-		}
-		x = 39
-		y = 9
-
-	}
-	focus = {
-		id = NCH_every_friend
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_to_neighbors
-		}
-		x = 37
-		y = 10
-
-	}
-	focus = {
-		id = NCH_hoof_of_help
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_every_friend
-		}
-		x = 36
-		y = 11
-
-	}
-	focus = {
-		id = NCH_some_love
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_every_friend
-		}
-		x = 38
-		y = 11
-
-	}
-	focus = {
-		id = NCH_reguest_of_help
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_to_neighbors
-		}
-		x = 41
-		y = 10
-
-	}
-	focus = {
-		id = NCH_army_concessions
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_reguest_of_help
-		}
-		x = 40
-		y = 11
-
-	}
-	focus = {
-		id = NCH_concessions_for_help
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_reguest_of_help
-		}
-		x = 42
-		y = 11
-
-	}
-	focus = {
-		id = NCH_overvise_great_packt
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_hoof_of_help
-		}
-		prerequisite = {
-			focus = NCH_some_love
-		}
-		prerequisite = {
-			focus = NCH_army_concessions
-		}
-		prerequisite = {
-			focus = NCH_concessions_for_help
-		}
-		x = 39
-		y = 12
-
-	}
-
-	focus = {
-		id = NCH_auxiliary_battalions
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_on_land
-		}
-		mutually_exclusive = {
-			focus = NCH_priorize_integrity
-		}
-		x = 62
-		y = 4
-
-	}
-	focus = {
-		id = NCH_inspire_by_example
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 60
-		y = 5
-
-	}
-	focus = {
-		id = NCH_anyone_can_be_hero
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 62
-		y = 5
-
-	}
-	focus = {
-		id = NCH_greuling_workouts
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-		}
-		prerequisite = {
-			focus = NCH_inspire_by_example
-		}
-		x = 61
-		y = 6
-
-	}
-	focus = {
-		id = NCH_best_of_the_best
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_inspire_by_example
-		}
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-		}
-		x = 59
-		y = 6
-
-	}
-	focus = {
-		id = NCH_faith_in_queen
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_best_of_the_best
-		}
-		prerequisite = {
-			focus = NCH_greuling_workouts
-		}
-		x = 60
-		y = 7
-
-	}
-	focus = {
-		id = NCH_priorize_integrity
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_on_land
-		}
-		mutually_exclusive = {
-			focus = NCH_auxiliary_battalions
-		}
-		x = 66
-		y = 4
-
-	}
-	focus = {
-		id = NCH_discipline_is_key_to_order
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_priorize_integrity
-		}
-		x = 66
-		y = 5
-
-	}
-	focus = {
-		id = NCH_bugsmere_war_institute
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_anyone_can_be_hero
-			focus = NCH_discipline_is_key_to_order
-		}
-		x = 64
-		y = 6
-
-	}
-	focus = {
-		id = NCH_greneclyf_tanks
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_bugsmere_war_institute
-		}
-		mutually_exclusive = {
-			focus = NCH_mechanization_of_brigades
-		}
-		x = 63
-		y = 7
-
-	}
-	focus = {
-		id = NCH_mechanization_of_brigades
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_bugsmere_war_institute
-		}
-		mutually_exclusive = {
-			focus = NCH_greneclyf_tanks
-		}
-		x = 65
-		y = 7
-
-	}
-	focus = {
-		id = NCH_pass_law_on_consctiption
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_priorize_integrity
-		}
-		x = 68
-		y = 5
-
-	}
-	focus = {
-		id = NCH_queen_of_the_fields
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_discipline_is_key_to_order
-		}
-		prerequisite = {
-			focus = NCH_pass_law_on_consctiption
-		}
-		mutually_exclusive = {
-			focus = NCH_goddes_of_war
-		}
-		x = 67
-		y = 6
-
-	}
-	focus = {
-		id = NCH_goddes_of_war
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_discipline_is_key_to_order
-		}
-		prerequisite = {
-			focus = NCH_pass_law_on_consctiption
-		}
-		mutually_exclusive = {
-			focus = NCH_queen_of_the_fields
-		}
-		x = 69
-		y = 6
-
-	}
-	focus = {
-		id = NCH_expamd_production
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_queen_of_the_fields
-			focus = NCH_goddes_of_war
-		}
-		x = 68
-		y = 7
-
-	}
 	focus = {
 		id = NCH_and_in_the_air
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rule_greneclyf
 		}
 		x = 77
 		y = 3
 
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = army_upgrades
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
-		id = NCH_aisling_air_institute
+		id = NCH_flying_school 
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_and_in_the_air
+		}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = army_upgrades
+				bonus = 0.3
+				uses = 2
+				category = air_equipment
+			}
+			#Открывает советника на доктрину
 		}
 		x = 73
 		y = 4
@@ -2007,9 +2919,30 @@ focus_tree = {
 	focus = {
 		id = NCH_radar_development
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = NCH_aisling_air_institute
+			focus = NCH_flying_school 
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				technology = radio
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				category = radar_tech
+				bonus = 0.5
+				uses = 2
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
 		}
 		x = 72
 		y = 5
@@ -2018,9 +2951,31 @@ focus_tree = {
 	focus = {
 		id = NCH_build_new_airbases
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = NCH_aisling_air_institute
+			focus = NCH_flying_school 
+		}
+		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+
 		}
 		x = 74
 		y = 5
@@ -2029,9 +2984,35 @@ focus_tree = {
 	focus = {
 		id = NCH_defense_island
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_build_new_airbases
+		}
+		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
 		}
 		x = 74
 		y = 6
@@ -2040,9 +3021,13 @@ focus_tree = {
 	focus = {
 		id = NCH_night_training
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_radar_development
+		}
+		completion_reward = {
+			add_ideas = air_night1
+			army_experience = 30
 		}
 		x = 72
 		y = 6
@@ -2051,43 +3036,103 @@ focus_tree = {
 	focus = {
 		id = NCH_flying_like_butterfly
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_night_training
 			focus = NCH_defense_island
+		}
+		completion_reward = {
+			add_ideas = x #air_night2+air_school
+			add_tech_bonus = {
+				name = x
+				category = air_doctrine
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				category = air_doctrine
+				bonus = 0.5
+				uses = 1
+			}
+			#Открывает советника 
 		}
 		x = 74
 		y = 7
 
 	}
+
 	focus = {
-		id = NCH_wwho_else_but_us
+		id = NCH_who_else_but_us
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_and_in_the_air
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				technology = paratroopers
+				bonus = 0.7
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = x
+				technology = special_forces_paratroopers
+				bonus = 0.5
+				uses = 2
+			}
 		}
 		x = 77
 		y = 4
 
 	}
 	focus = {
-		id = NCH_flying_school
+		id = NCH_aisling_air_institute
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		prerequisite = {
 			focus = NCH_and_in_the_air
 		}
 		x = 81
 		y = 4
 
+		completion_reward = {
+			1209={
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 5230
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+				add_ideas = air_facility1
+			}
+		}
 	}
 	focus = {
 		id = NCH_domestic_parts
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
+		}
+		completion_reward = {
+			1209 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+			
+		}
+			add_ideas = air_production1
 		}
 		x = 78
 		y = 5
@@ -2096,9 +3141,25 @@ focus_tree = {
 	focus = {
 		id = NCH_rocket_science
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_domestic_parts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				category = rocketry
+				bonus = 0.4
+				uses = 3
+			}
+			669={
+				add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = rocket_site
+				level = 2
+				province = 10952
+			}
+		}
 		}
 		x = 77
 		y = 6
@@ -2107,23 +3168,58 @@ focus_tree = {
 	focus = {
 		id = NCH_hotter_thousands_suns
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_domestic_parts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = x
+				category = nuclear
+				bonus = 1
+				uses = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
 		}
 		x = 79
 		y = 6
 
 	}
-
-	## FIX THIS ID ##
 	focus = {
-		id = NCH_experom,ental_developments
+		id = NCH_experimental_developments
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_rocket_science
 			focus = NCH_hotter_thousands_suns
+		}
+		completion_reward = {
+			add_ideas = air_production2
+			add_tech_bonus = {
+				name = x
+				category = rocketry
+				bonus = 0.35
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = x
+				category = cat_paratroopers_doctrine
+				bonus = 0.35
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = x
+				technology = jet_engines
+				bonus = 0.35
+				uses = 2
+			}
+			
 		}
 		x = 78
 		y = 7
@@ -2132,12 +3228,21 @@ focus_tree = {
 	focus = {
 		id = NCH_tactical_aviation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
 		}
 		mutually_exclusive = {
 			focus = NCH_figher_aircraft
+		}
+		completion_reward = {
+			add_ideas = NCH_bomber1
+			add_tech_bonus = {
+				name = x
+				category = tactical_bomber
+				uses = 2
+				bonus = 0.7
+			}
 		}
 		x = 81
 		y = 5
@@ -2146,12 +3251,21 @@ focus_tree = {
 	focus = {
 		id = NCH_figher_aircraft
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = NCH_flying_school
+			focus = NCH_aisling_air_institute
 		}
 		mutually_exclusive = {
 			focus = NCH_tactical_aviation
+		}
+		completion_reward = {
+				add_ideas = NCH_fighter1
+				add_tech_bonus = {
+					name = x
+					category = light_fighter
+					uses = 2
+					bonus = 0.7
+				}
 		}
 		x = 83
 		y = 5
@@ -2160,10 +3274,19 @@ focus_tree = {
 	focus = {
 		id = NCH_naval_bomber_project
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_tactical_aviation
 			focus = NCH_figher_aircraft
+		}
+		completion_reward = {
+			add_ideas = NCH_bomber2
+			add_tech_bonus = {
+				name = x
+				category = naval_bomber
+				uses = 2
+				bonus = 0.6
+			}
 		}
 		x = 81
 		y = 6
@@ -2172,11 +3295,20 @@ focus_tree = {
 	focus = {
 		id = NCH_air_support
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_figher_aircraft
 			focus = NCH_tactical_aviation
 		}
+		completion_reward = {
+			add_ideas = NCH_fighter2
+			add_tech_bonus = {
+				name = x
+				category = cas_bomber
+				uses = 2
+				bonus = 0.7
+			}
+	}
 		x = 83
 		y = 6
 
@@ -2184,10 +3316,46 @@ focus_tree = {
 	focus = {
 		id = NCH_sorry_as_bee
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_naval_bomber_project
 			focus = NCH_air_support
+		}
+		completion_reward = {
+			add_ideas = 1 #air_production2+NCH_bomber2/fighter2
+			air_experience = 50
+			add_tech_bonus = {
+				name = 1
+				category = air_doctrine
+				uses = 2
+				bonus = 0.5
+			}
+			add_timed_idea = {
+				idea = air_crew_surveys_spirit
+				days = 120
+			}
+			if = {
+				limit = {
+					has_completed_focus = NCH_tactical_aviation
+				}
+				add_ace = {
+					name = bomber
+					surname = Ace
+					callsign = Green
+					type = bomber_genius
+				}
+				else_if = {
+					limit = { 
+						has_completed_focus = NCH_figher_aircraft
+					}
+					add_ace = {
+						name = Fighter
+						surname = Ace
+						callsign = Green
+						type = fighter_genius
+					}
+				}
+			}
 		}
 		x = 81
 		y = 7
@@ -2196,9 +3364,15 @@ focus_tree = {
 	focus = {
 		id = NCH_collective_management
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_all_wars_ends
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = air_crew_surveys_spirit
+				days = 120
+			}
 		}
 		x = 16
 		y = 6
@@ -2207,7 +3381,7 @@ focus_tree = {
 	focus = {
 		id = NCH_burnings_they_hearts
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_collective_management
 			focus = NCH_after_war_plans
@@ -2222,7 +3396,7 @@ focus_tree = {
 	focus = {
 		id = NCH_union_hives
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_burnings_they_hearts
 		}
@@ -2230,70 +3404,839 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = {
-		id = NCH_clans_of_Greneclyf
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_consolidation_political
-		}
-		prerequisite = {
-			focus = NCH_call_for_unity
-		}
-		x = 33
-		y = 11
 
-	}
-	focus = {
-		id = NCH_suppression_of_unrest
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_clans_of_Greneclyf
-		}
-		x = 33
-		y = 12
-
-	}
-	focus = {
-		id = NCH_final_crisis
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_suppression_of_unrest
-		}
-		prerequisite = {
-			focus = NCH_suppression_of_unrest
-		}
-		x = 33
-		y = 13
-
-	}
-
-	focus = {
-		id = NCH_greneclyf_school_of_war
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = NCH_faith_in_queen
-			focus = NCH_expamd_production
-		}
-		x = 64
-		y = 8
-
-	}
 	focus = {
 		id = NCH_angry_hive
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = NCH_flying_like_butterfly
 		}
 		prerequisite = {
 			focus = NCH_sorry_as_bee
 		}
+		completion_reward = {
+			add_ideas = x #содеинение всех идей
+			air_experience = 150
+			#Открывает имбового  советника
+		}
 		x = 77
 		y = 8
+
+	}
+
+	### MAIN PATCH ###
+	focus = {
+		id = NCH_Queen_Gytha_Patch
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 33
+		y = 15
+
+		available = {
+			has_completed_focus = NCH_final_crisis
+		}
+	}
+
+	focus = {
+		id = NCH_reforms_after_storm
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = NCH_patch_to_prosperty
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reforms_after_storm
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = NCH_education_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = NCH_civil_rights_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		x = 15
+		y = 19
+
+	}
+	focus = {
+		id = NCH_health_care_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+		}
+		x = 19
+		y = 18
+
+	}
+	focus = {
+		id = NCH_birth_control
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_health_care_reform
+		}
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		x = 19
+		y = 19
+
+	}
+	focus = {
+		id = NCH_economic_revival
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_reforms_after_storm
+		}
+		x = 25
+		y = 17
+
+	}
+	focus = {
+		id = NCH_first_constitution
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_patch_to_prosperty
+			focus = NCH_economic_revival
+		}
+		x = 22
+		y = 18
+
+	}
+	focus = {
+		id = NCH_from_chaos
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_first_constitution
+		}
+		x = 22
+		y = 19
+
+	}
+	focus = {
+		id = NCH_form_new_govermant
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_from_chaos
+		}
+		x = 21
+		y = 20
+
+	}
+	focus = {
+		id = NCH_reflecting_the_past
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_from_chaos
+		}
+		x = 23
+		y = 20
+
+	}
+	focus = {
+		id = NCH_to_the_new_order
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_form_new_govermant
+		}
+		prerequisite = {
+			focus = NCH_reflecting_the_past
+		}
+		x = 22
+		y = 21
+
+	}
+	focus = {
+		id = NCH_bee_productivity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_economic_revival
+		}
+		x = 25
+		y = 18
+
+	}
+	focus = {
+		id = NCH_businesses_do_not_stand_idle
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_economic_revival
+		}
+		x = 27
+		y = 18
+
+	}
+	focus = {
+		id = NCH_brood_of_working_drones
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		x = 25
+		y = 19
+
+	}
+
+	focus = {
+		id = NCH_gaining_economic_power
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		x = 27
+		y = 19
+
+	}
+	focus = {
+		id = NCH_economics_of_friendship
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_brood_of_working_drones
+		}
+		prerequisite = {
+			focus = NCH_gaining_economic_power
+		}
+		mutually_exclusive = {
+			focus = NCH_mobilizing_the_economy
+		}
+		x = 26
+		y = 20
+
+	}
+
+
+	focus = {
+		id = NCH_ensure_full_employment
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_businesses_do_not_stand_idle
+		}
+		prerequisite = {
+			focus = NCH_bee_productivity
+		}
+		x = 29
+		y = 19
+
+	}
+	focus = {
+		id = NCH_mobilizing_the_economy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_ensure_full_employment
+		}
+		prerequisite = {
+			focus = NCH_gaining_economic_power
+		}
+		mutually_exclusive = {
+			focus = NCH_economics_of_friendship
+		}
+		x = 28
+		y = 20
+
+	}
+
+	focus = {
+		id = NCH_dreems_of_more
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch
+		}
+		x = 33
+		y = 16
+
+	}
+
+		focus = {
+		id = NCH_friends_and_allies
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_dreems_of_more
+		}
+		x = 34
+		y = 17
+
+	}
+	focus = {
+		id = NCH_agents_stand_by
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_dreems_of_more
+		}
+		x = 32
+		y = 17
+
+	}
+	focus = {
+		id = NCH_under_the_flag_of_freedom
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agents_stand_by
+		}
+		x = 31
+		y = 18
+
+	}
+
+
+	focus = {
+		id = NCH_act
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_friends_and_allies
+		}
+		x = 35
+		y = 18
+
+	}
+
+	focus = {
+		id = NCH_we_are_not_alone
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_Queen_Gytha_Patch
+		}
+		x = 44
+		y = 16
+
+	}
+	focus = {
+		id = NCH_new_opportunities
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_we_are_not_alone
+		}
+		x = 43
+		y = 17
+
+	}
+	focus = {
+		id = NCH_river_pf_opportunity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_opportunities
+		}
+		x = 40
+		y = 18
+
+	}
+	focus = {
+		id = NCH_trade_development
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_river_pf_opportunity
+		}
+		x = 38
+		y = 19
+
+	}
+	focus = {
+		id = NCH_visit_to_riverlands
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_trade_development
+		}
+		x = 37
+		y = 20
+
+	}
+	focus = {
+		id = NCH_our_mission
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_we_are_not_alone
+		}
+		x = 45
+		y = 17
+
+	}
+	focus = {
+		id = NCH_neighborhood
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_new_opportunities
+		}
+		prerequisite = {
+			focus = NCH_our_mission
+		}
+		x = 44
+		y = 18
+
+	}
+	focus = {
+		id = NCH_another_visit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_neighborhood
+		}
+		x = 43
+		y = 19
+
+	}
+	focus = {
+		id = NCH_pacts_exchange_for_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_neighborhood
+		}
+		x = 45
+		y = 19
+
+	}
+	focus = {
+		id = NCH_long_cooperation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_another_visit
+		}
+		prerequisite = {
+			focus = NCH_pacts_exchange_for_support
+		}
+		x = 44
+		y = 20
+
+	}
+	focus = {
+		id = NCH_not_so_different
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_long_cooperation
+		}
+		x = 45
+		y = 21
+
+	}
+
+	focus = {
+		id = NCH_their_light_beckons_us
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_our_mission
+		}
+		x = 48
+		y = 18
+
+	}
+
+	focus = {
+		id = NCH_emvassy_to_equestria
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_their_light_beckons_us
+		}
+		x = 48
+		y = 19
+
+	}
+	focus = {
+		id = NCH_beacon_harmony_in_the_east
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emvassy_to_equestria
+		}
+		x = 47
+		y = 20
+
+	}
+	focus = {
+		id = NCH_princess_in_a_high_castle
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_their_light_beckons_us
+		}
+		x = 50
+		y = 19
+
+	}
+	focus = {
+		id = NCH_our_best_qualities
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_emvassy_to_equestria
+		}
+		prerequisite = {
+			focus = NCH_princess_in_a_high_castle
+		}
+		x = 49
+		y = 20
+
+	}
+	focus = {
+		id = NCH_lessons_in_friendship
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_beacon_harmony_in_the_east
+		}
+		prerequisite = {
+			focus = NCH_our_best_qualities
+		}
+		x = 48
+		y = 21
+
+	}
+	focus = {
+		id = NCH_harmpony_in_every_heart
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_princess_in_a_high_castle
+		}
+		x = 51
+		y = 20
+
+	}
+	focus = {
+		id = NCH_friendship_delegation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_our_best_qualities
+		}
+		prerequisite = {
+			focus = NCH_harmpony_in_every_heart
+		}
+		x = 50
+		y = 21
+
+	}
+	focus = {
+		id = NCH_our_values
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_harmpony_in_every_heart
+		}
+		x = 52
+		y = 21
+
+	}
+
+	focus = {
+		id = NCH_blosmport_hive
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_education_reform
+		}
+		prerequisite = {
+			focus = NCH_health_care_reform
+		}
+		x = 17
+		y = 19
+
+	}
+	focus = {
+		id = NCH_new_instituts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_civil_rights_reform
+		}
+		prerequisite = {
+			focus = NCH_blosmport_hive
+		}
+		mutually_exclusive = {
+			focus = NCH_traditional_way_of_life
+		}
+		x = 16
+		y = 20
+
+	}
+	focus = {
+		id = NCH_traditional_way_of_life
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_blosmport_hive
+		}
+		prerequisite = {
+			focus = NCH_birth_control
+		}
+		mutually_exclusive = {
+			focus = NCH_new_instituts
+		}
+		x = 18
+		y = 20
+
+	}
+	focus = {
+		id = NCH_save_clans_system
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_the_new_order
+		}
+		mutually_exclusive = {
+			focus = NCH_hereditary_monarchy
+		}
+		x = 21
+		y = 22
+
+	}
+	focus = {
+		id = NCH_hereditary_monarchy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_to_the_new_order
+		}
+		mutually_exclusive = {
+			focus = NCH_save_clans_system
+		}
+		x = 23
+		y = 22
+
+	}
+	focus = {
+		id = NCH_we_are_ready
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_agents_stand_by
+		}
+		prerequisite = {
+			focus = NCH_friends_and_allies
+		}
+		x = 33
+		y = 18
+
+	}
+	focus = {
+		id = NCH_light_f_fire_in_their_hearts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_under_the_flag_of_freedom
+		}
+		prerequisite = {
+			focus = NCH_we_are_ready
+		}
+		prerequisite = {
+			focus = NCH_act
+		}
+		x = 33
+		y = 19
+
+	}
+	focus = {
+		id = NCH_operation_raging_river
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_light_f_fire_in_their_hearts
+		}
+		x = 33
+		y = 20
+
+	}
+	focus = {
+		id = NCH_peaceful_coexistence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_river_pf_opportunity
+		}
+		x = 40
+		y = 19
+
+	}
+	focus = {
+		id = NCH_scout_the_situation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_trade_development
+		}
+		prerequisite = {
+			focus = NCH_peaceful_coexistence
+		}
+		x = 39
+		y = 20
+
+	}
+	focus = {
+		id = NCH_open_up_the_shopping_districts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_peaceful_coexistence
+		}
+		x = 41
+		y = 20
+
+	}
+	focus = {
+		id = NCH_shield_and_sword_harmony
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_lessons_in_friendship
+		}
+		prerequisite = {
+			focus = NCH_friendship_delegation
+		}
+		x = 49
+		y = 22
+
+	}
+	focus = {
+		id = NCH_equestria_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_friendship_delegation
+		}
+		prerequisite = {
+			focus = NCH_our_values
+		}
+		x = 51
+		y = 22
+
+	}
+	focus = {
+		id = NCH_bring_them_harmony
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_long_cooperation
+		}
+		x = 43
+		y = 21
+
+	}
+	focus = {
+		id = NCH_new_great_agreement
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_bring_them_harmony
+		}
+		prerequisite = {
+			focus = NCH_not_so_different
+		}
+		x = 44
+		y = 22
+
+	}
+	focus = {
+		id = NCH_cit_thrpugh_the_bureaurcracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_open_up_the_shopping_districts
+		}
+		prerequisite = {
+			focus = NCH_scout_the_situation
+		}
+		x = 40
+		y = 21
+
+	}
+	focus = {
+		id = NCH_embed_agents_in_goverments
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_visit_to_riverlands
+		}
+		prerequisite = {
+			focus = NCH_scout_the_situation
+		}
+		x = 38
+		y = 21
+
+	}
+	focus = {
+		id = NCH_not_so_united
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_visit_to_riverlands
+		}
+		x = 36
+		y = 21
+
+	}
+	focus = {
+		id = NCH_finding_allies_in_coalition
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NCH_not_so_united
+		}
+		prerequisite = {
+			focus = NCH_cit_thrpugh_the_bureaurcracy
+		}
+		prerequisite = {
+			focus = NCH_embed_agents_in_goverments
+		}
+		x = 39
+		y = 22
 
 	}
 }

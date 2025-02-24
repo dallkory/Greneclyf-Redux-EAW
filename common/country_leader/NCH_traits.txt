@@ -1,4 +1,23 @@
 leader_traits = {
+
+	The_naive_reformer = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		democratic_drift = 0.03
+		democratic_acceptance = 50
+	}
+	
+
+	silent_workbug2 = {
+		random = no
+		political_power_factor = 0.1
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	higher_judge_oiren = {
 		random = no
 		
@@ -11,5 +30,22 @@ leader_traits = {
 		ai_will_do = {
 			factor = 0
 		}
+	}
+
+	great_architect = {
+		random = no
+
+		local_building_slots = 2
+		construction_speed = 0.10
+        civilian_factory_construction_speed = 0.10
+        military_factory_construction_speed = 0.10
+        dockyard_construction_speed = 0.10
+        land_fort_construction_speed = 0.10
+        coastal_fort_construction_speed = 0.10
+        infrastructure_construction_speed = 0.10
+        fuel_silo_construction_speed = 0.10
+        radar_station_construction_speed = 0.10
+        nuclear_reactor_construction_speed = 0.10
+        build_cost_reduction = 0.05
 	}
 }

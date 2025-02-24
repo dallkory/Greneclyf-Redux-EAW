@@ -99,7 +99,7 @@ characters={
 				original_tag = NCH
 			}
 			traits = {
-
+				great_architect
 			}
 		}
 	}
@@ -342,7 +342,7 @@ characters={
 		}
 
 		corps_commander={
-			desc = "NCH_Desc_Zaliack"
+			desc = "NCH_Desc_Firrelion"
 			traits={ 
 				changeling_race_trait 
 				artillery_officer
@@ -425,17 +425,7 @@ characters={
 				small="gfx/interface/ideas/Advisors/NCH/Zaliack.tga"
 			}
 		}
-		corps_commander={
-			desc = "NCH_Desc_Zaliack"
-			traits={ changeling_race_trait winter_specialist }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-
+		
 		advisor={
 			slot = army_chief
 			idea_token = NCH_general_1
@@ -444,7 +434,7 @@ characters={
 				original_tag = NCH
 			}
 			available = {
-				has_country_flag = NCH_generals_flag
+				has_completed_focus = NCH_inspire_by_example
 			}
 			traits = {
 				army_chief_defensive_2
@@ -462,12 +452,13 @@ characters={
 				large="gfx/leaders/NCH/Moronlan.tga"
 				small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
 			}
+				desc = "NCH_Desc_Moronlan"
 		}
 
 		advisor={
 			slot = army_chief
 			idea_token = NCH_Moronlan
-			cost = 100
+			cost = 200
 
 			allowed = {
 				original_tag = NCH

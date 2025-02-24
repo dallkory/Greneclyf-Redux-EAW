@@ -4,14 +4,26 @@ oob = "NCH_1007"
 
 set_research_slots = 2
 
+set_country_flag = has_custom_advisors
+set_country_flag = has_custom_designers
+set_country_flag = has_custom_spymaster
+
 set_technology = {
 	changeling_race = 1
+	tech_support = 1
+	tech_jager = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+
 	melee_weapons = 1
 	melee_weapons1 = 1
 	infantry_weapons = 1
+
 	NCH_Marines_debuff = 1
 	pre_gw_artillery = 1
 	gw_artillery = 1
+	basic_train = 1
 }
 actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 
@@ -138,7 +150,7 @@ add_ideas = {
 	lack_of_scientists
 
 	NCH_idyllic_society
-	NCH_luddites
+	NCH_luddites_1
 	NCH_FBK_pact
 	NCH_Overpopulation
 }
@@ -195,35 +207,14 @@ recruit_character = NCH_cader_sclerite
 recruit_character = NCH_feilean
 recruit_character = NCH_airann
 recruit_character = NCH_garran_of_leamhan
-#recruit_character = NCH_general_1
-#recruit_character = NCH_general_2 #### offensive
-#recruit_character = NCH_admiral_poethgils
-#recruit_character = NCH_admiral_fallon
-#recruit_character = NCH_air_chief_1
-#recruit_character = NCH_air_chief_2
-#recruit_character = NCH_generic_army_art
-#recruit_character = NCH_generic_army_inf
 recruit_character = NCH_generic_army_log
 recruit_character = NCH_generic_navy_fleet_log #### WIP
-#recruit_character = NCH_generic_air_trainer
-#recruit_character = NCH_generic_military_theorist
-#recruit_character = NCH_captain_of_industry
-#recruit_character = NCH_war_industrialist
-#recruit_character = NCH_fortification_engineer
-#recruit_character = NCH_trade_advisor
-#recruit_character = NCH_ideological_crusader
 
-#NCH_generic_army_art = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_generic_army_inf = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_navy_fleet_log = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_generic_air_trainer = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_generic_military_theorist = { set_character_flag = RIV_advisor_from_NCH }
 NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_war_industrialist = { set_character_flag = RIV_advisor_from_NCH }
 NCH_fortification_engineer = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_trade_advisor = { set_character_flag = RIV_advisor_from_NCH }
-#NCH_ideological_crusader = { set_character_flag = RIV_advisor_from_NCH }
+
 
 set_rule = {
 	can_generate_female_aces = yes

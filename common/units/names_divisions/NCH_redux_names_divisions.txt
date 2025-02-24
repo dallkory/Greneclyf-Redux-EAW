@@ -1,0 +1,445 @@
+### REDUX ###
+NCH_INF_REDUX_01 = { 
+	#"Páirteanna Guard"
+	name = "Garda Teaghlach"
+
+	for_countries = { NCH }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "infantry" "magical_infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%dú Briogáid"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú 'Páirteanna an Dóiteáin" }
+		2 = { "%dú 'Briogáid an Tine" }
+		3 = { "%dú 'Briogáid 'Fia Rua'" }
+		4 = { "%dú 'Briogáid an Cheo" }
+		5 = { "%dú 'Mac Tíre' Briogáid" }
+		6 = { "%dú ''Eite Dubh' Briogáid" }
+		7 = { "%dú 'Páirteanna an Fhíorlaoch" }
+		8 = { "%dú 'Briogáid an Dorchadais" }
+		9 = { "%dú 'Briogáid 'An Chearc'" }
+		10 = { "%dú 'Briogáid an Tuile" }
+		11 = { "%dú 'Briogáid 'Púca'" }
+		12 = { "%dú 'Briogáid an Stoirm" }
+		13 = { "%dú 'Aintéine' Briogáid" }
+		14 = { "%dú 'Briogáid an Ciorcal" }
+		15 = { "%dú 'Páirteanna an Sceimhle" }
+		16 = { "%dú 'Briogáid 'Lóchrann'" }
+		17 = { "%dú 'Briogáid an Neamh" }
+		18 = { "%dú 'Briogáid an Gealach" }
+		19 = { "%dú 'Briogáid 'Scáth'" }
+		20 = { "%dú 'Briogáid an Aisling" }
+		21 = { "%dú 'Lú' Briogáid" }
+		22 = { "%dú 'An Liathróid' Briogáid" }
+		23 = { "%dú 'Briogáid an Fómhair" }
+		24 = { "%dú 'Deatach' Briogáid" }
+		25 = { "%dú 'Briogáid 'Rabharta'" }
+		26 = { "%dú 'Briogáid an Fhásaigh" }
+		27 = { "%dú 'Páirteanna an Análaigh" }
+		28 = { "%dú 'Briogáid an Mhachaire" }
+		29 = { "%dú 'Briogáid an Fhíoruisce" }
+		30 = { "%dú 'Briogáid 'Eala'" }
+	}
+}
+
+
+NCH_INF_REDUX_02 = { 
+	#"Sealgairí Ríoga"
+	name = "Garda Homeland"
+
+	for_countries = { NCH }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "special_forces" "mountaineers" }
+
+	fallback_name = "%dú Aonad turraing"
+	
+	ordered = { 
+		1 = { "%dú 'Sealgairí an Chnoic'" }  
+		2 = { "%dú 'Páirteanna an Fhíorfhulaingthe'" }  
+		3 = { "%dú 'Briogáid an Ghealach'" }  
+		4 = { "%dú 'Briogáid an Cheo'" }  
+		5 = { "%dú 'Mac Tíre' Briogáid" }  
+		6 = { "%dú 'Sealgairí an Fhásaigh'" }  
+		7 = { "%dú 'Sealgairí an Toraidh'" }  
+		8 = { "%dú 'Páirteanna an Sceimhle'" }  
+		9 = { "%dú 'Briogáid an Stoirm'" }  
+		10 = { "%dú 'Sealgairí an Dorchadais'" }  
+		11 = { "%dú 'Briogáid an Fómhair'" } 
+		12 = { "%dú 'Briogáid an Neamh'" }  
+		13 = { "%dú 'Fia Rua' Briogáid" }  
+		14 = { "%dú 'An Ciaróg' Briogáid" }  
+		15 = { "%dú 'Briogáid an Tíre'" }  
+		16 = { "%dú 'Lóchrann' Briogáid" }  
+		17 = { "%dú 'Sealgairí na Coille'" }  
+		18 = { "%dú 'Briogáid an Dúshláin'" } 
+		19 = { "%dú 'Briogáid an Fhírinne'" }  
+		20 = { "%dú 'Sealgairí an Rabharta'" }  
+		21 = { "%dú 'An Fiach Dubh' Briogáid" }  
+		22 = { "%dú 'An Liathróid' Briogáid" }  
+		23 = { "%dú 'Sealgairí na nDúlra'" }  
+		24 = { "%dú 'Deatach' Briogáid" }  
+		25 = { "%dú 'Sealgairí an Neart'" }  
+		26 = { "%dú 'Sealgairí an Chreagáin'" }  
+		27 = { "%dú 'Briogáid an Scáth'" }  
+		28 = { "%dú 'Briogáid an Earraigh'" }  
+		29 = { "%dú 'Sealgairí an Análaigh'" }  
+		30 = { "%dú 'Sealgairí an Talamh'" } 
+	}
+}
+
+NCH_INF_REDUX_03 = { 
+	#"Póilíní Militare"
+	name = "An Garda Ordaithe"
+
+	for_countries = { NCH }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dú Comhlacht"
+	
+	ordered = { 
+		1 = { "%dú 'Póilíní an Cheartais'" }  
+		2 = { "%dú 'Briogáid an Ordaithe'" }  
+		3 = { "%dú 'Póilíní an Dlí'" }  
+		4 = { "%dú 'Briogáid na Troda'" }  
+		5 = { "%dú 'Póilíní an Síochána'" } 
+		6 = { "%dú 'Sealgairí an Chirt'" } 
+		7 = { "%dú 'Póilíní na Rialacha'" } 
+		8 = { "%dú 'Briogáid an Fhíorlaoch'" }  
+		9 = { "%dú 'Briogáid an Fhírinne'" } 
+		10 = { "%dú 'Póilíní an Chosanta'" } 
+		11 = { "%dú 'Briogáid an Smachta'" }  
+		12 = { "%dú 'Briogáid an Bhagairt'" } 
+		13 = { "%dú 'Briogáid an Gheallta'" } 
+		14 = { "%dú 'Briogáid na nOrduithe'" } 
+		15 = { "%dú 'Póilíní an Chórais'" } 
+		16 = { "%dú 'Póilíní an Rialtais'" }  
+		17 = { "%dú 'Póilíní an Ceartais'" }  
+		18 = { "%dú 'Póilíní na Síochána'" }  
+		19 = { "%dú 'Briogáid an Cheo'" }  
+		20 = { "%dú 'Briogáid an Lámha'" }  
+		21 = { "%dú 'Póilíní an Fhórsa'" }  
+		22 = { "%dú 'Póilíní an Chirt'" }  
+		23 = { "%dú 'Briogáid an Fhreasúra'" }  
+		24 = { "%dú 'Briogáid na nAmhas'" }  
+		25 = { "%dú 'Briogáid an Fhionnaidh'" }  
+		26 = { "%dú 'Briogáid an Phionóis'" }  
+		27 = { "%dú 'Briogáid an Mhisin'" }  
+		28 = { "%dú 'Briogáid an Dorchadais'" }  
+		29 = { "%dú 'Briogáid an Tíre'" }  
+		30 = { "%dú 'Póilíní an Cheiliúra'" }  
+	}
+}
+
+
+
+
+
+### ORIGINAL EAW ###
+
+NCH_INF_01 = { 
+	#Household Guard
+	name = "Garda Teaghlach"
+
+	for_countries = { NCH }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "infantry" "magical_infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%dú Briogáid"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú Garda Ríoga" }
+		2 = { "%dú 'Féileacán' Briogáid" }
+		3 = { "%dú 'Bumbóg' Briogáid" }
+		4 = { "%dú 'Snáthaid Mhór' Briogáid" }
+		5 = { "%dú 'Tóracs' Briogáid" }
+		6 = { "%dú 'Seangán' Briogáid" }
+		7 = { "%dú 'Lócaiste' Briogáid" }
+		8 = { "%dú 'Ciaróg' Briogáid" }
+		9 = { "%dú 'Muiscít' Briogáid" }
+		10 = { "%dú 'Foiche' Briogáid" }
+		11 = { "%dú 'Beach' Briogáid" }
+		12 = { "%dú 'Bóín Dé' Briogáid" }
+		13 = { "%dú 'Aintéine' Briogáid" }
+		14 = { "%dú 'Mandabal' Briogáid" }
+		15 = { "%dú 'Seiriceán' Briogáid" }
+	}
+}
+
+NCH_INF_02 = { 
+	#Peasant Levies
+	name = "Tobhach"
+
+	for_countries = { NCH }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { NCH_INF_01 }
+
+	fallback_name = "%dú Ordú"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú Ordú (Blomsport)" }
+		2 = { "%dú Ordú (Bugsmere)" }
+		3 = { "%dú Ordú (Aisling)" }
+	}
+}
+
+NCH_INF_03 = { 
+	#Gommie bugs
+	name = "Rannán Oibrí"
+
+	for_countries = { NCH }
+
+	can_use = { has_government = communism }
+
+	division_types = { "infantry" "magical_infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%dú Rannán"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú Garda Réabhlóideach" }
+		2 = { "%dú 'Saoirse' Rannán" }
+		3 = { "%dú 'Comhionannas' Rannán" }
+		4 = { "%dú 'Réalta Dearg' Rannán" }
+		5 = { "%dú 'Crónán Saor' Rannán" }
+		6 = { "%dú 'Dlúthpháirtíocht' Rannán" }
+		7 = { "%dú 'Cóir' Rannán" }
+		8 = { "%dú 'Oibrí' Rannán" }
+		9 = { "%dú 'Bás Banríon' Rannán" }
+		10 = { "%dú 'Briseadh Slabhra' Rannán" }
+	}
+}
+
+#NCH_INF_04 =
+#{
+	# Super sekrit namelist for future use
+	#
+	#	name = "Infanterie Division"
+	#
+	#	for_countries = { NCH }
+	#
+	#	can_use = { always = no }
+	#
+	#	division_types = { "infantry" "magical_infantry" }
+	#
+	#	fallback_name = "%d. Infanterie-Division"
+	#
+	#	ordered =
+	#	{
+		#		1 = { "%d. Infanterie-Division 'Die Erste'" }
+		#		2 = { "%d. Infanterie-Division 'Tapfer Dabei'" }
+		#		3 = { "%d. Infanterie-Division 'Frontschweine'" }
+		#		4 = { "%d. Infanterie-Division 'Kameraden'" }
+		#		5 = { "%d. Infanterie-Division 'Liebsüchtig'" }
+		#		6 = { "%d. Infanterie-Division 'Steinhart'" }
+		#		7 = { "%d. Infanterie-Division 'Unberechenbar'" }
+		#		8 = { "%d. Infanterie-Division 'Stolz'" }
+		#		9 = { "%d. Infanterie-Division 'Waffenbrüder'" }
+		#		10 = { "%d. Infanterie-Division 'Ehrvoll'" }
+		#		11 = { "%d. Infanterie-Division 'Hauptschwarm'" }
+		#		12 = { "%d. Infanterie-Division 'Nordschwarm'" }
+		#		13 = { "%d. Infanterie-Division 'Schutztrupp'" }
+		#		14 = { "%d. Infanterie-Division 'Heißhunger'" }
+		#		15 = { "%d. Infanterie-Division 'Liebeskummer'" }
+		#		16 = { "%d. Grenadier-Division 'Schlagkräftig'" }
+		#		17 = { "%d. Infanterie-Division 'Alle für Einen'" }
+		#		18 = { "%d. Infanterie-Division 'Stärke in Einigkeit'" }
+		#		19 = { "%d. Infanterie-Division 'Die Windigos'" }
+		#		20 = { "%d. Infanterie-Division 'Kampfgeist'" }
+		#	}
+	#}
+
+NCH_SPC_01 = { 
+	#Special forces: jagers, mountaineers, marines and paratroopers
+	name = "Sciathán Fiannóglaigh an Airm"
+
+	for_countries = { NCH }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "jager" "marine" "amphibious_armor" "amphibious_mechanized" "mountaineers" "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%dú Aonad Tasc"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú 'Glas' Aonad Tasc" }
+		2 = { "%dú 'Dubh' Aonad Tasc" }
+		3 = { "%dú 'Dearg' Aonad Tasc" }
+		4 = { "%dú 'Buí' Aonad Tasc" }
+		5 = { "%dú 'Oráiste' Aonad Tasc" }
+		6 = { "%dú 'Gorm' Aonad Tasc" }
+		7 = { "%dú 'Corcra' Aonad Tasc" }
+		8 = { "%dú 'Bán' Aonad Tasc" }
+		9 = { "%dú 'Liath' Aonad Tasc" }
+		10 = { "%dú 'Cian' Aonad Tasc" }
+	}
+}
+
+#NCH_SPC_02 =
+#{
+	#	Super sekrit namelist for future use
+	#	name = "Kommando Spezialkräfte"
+	#
+	#	for_countries = { NCH }
+	#
+	#	can_use = { always = no }
+	#
+	#	division_types = { "jager" "marine" "amphibious_armor" "amphibious_mechanized" "mountaineers" "paratrooper" }
+	#
+	#	fallback_name = "%d. Kommando-Division"
+	#
+	#	ordered =
+	#	{
+		#		1 = { "%d. Kommando-Division 'Scharfschützen'" }
+		#		2 = { "%d. Kommando-Division 'Treffsicher'" }
+		#		3 = { "%d. Kommando-Division 'Geladen und Entsichert'" }
+		#		4 = { "%d. Kommando-Division 'Unsichtbar'" }
+		#		5 = { "%d. Kommando-Division 'Schwarzer Tod'" }
+		#		6 = { "%d. Kommando-Division 'Ein Schuss, Ein Treffer'" }
+		#		7 = { "%d. Kommando-Division 'Zielwasser'" }
+		#		8 = { "%d. Kommando-Division 'Im Visier'" }
+		#		9 = { "%d. Kommando-Division 'Geladen'" }
+		#		10 = { "%d. Kommando-Division 'Entsichert'" }
+		#	}
+	#}
+
+NCH_MOT_01 = { 
+	name = "Cór Marcra"
+
+	for_countries = { NCH }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "motorized" "mechanized"}
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { NCH_INF_01 }
+
+	fallback_name = "%dú Cór"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú Cór Thiar" }
+		2 = { "%dú Cór Thuaidh" }
+		3 = { "%dú Cór Thoir" }
+		4 = { "%dú Cór Theas" }
+	}
+}
+
+#NCH_MOT_02 =
+#{
+	#Super sekrit namelist for future use
+	#	name = "Panzergrenadier Divisions"
+	#
+	#	for_countries = { NCH }
+	#
+	#	can_use = { always = no }
+	#
+	#	division_types = { "motorized" "mechanized"}
+	#
+	#	fallback_name = "%d. Panzer-Grenadier-Division"
+	#
+	#	ordered =
+	#	{
+		#		1 = { "%d. Panzer-Grenadier-Division 'Großwechselbalgland'" }
+		#		2 = { "%d. Panzer-Grenadier-Division 'Die Tapferen'" }
+		#		3 = { "%d. Panzer-Grenadier-Division 'Königin'" }
+		#		4 = { "%d. Panzer-Grenadier-Division 'Auf und Davon'" }
+		#		5 = { "%d. Panzer-Grenadier-Division 'Motor läuft'" }
+		#		6 = { "%d. Panzer-Grenadier-Division 'Die Ehrgeizigen'" }
+		#		7 = { "%d. Panzer-Grenadier-Division 'Larx'" }
+		#		8 = { "%d. Panzer-Grenadier-Division 'Nordschwarm'" }
+		#		9 = { "%d. Panzer-Grenadier-Division 'Svarm'" }
+		#		10 = { "%d. Panzer-Grenadier-Division 'Feuer und Stahl'" }
+		#	}
+	#}
+
+NCH_ARM_01 = { 
+	name = "Cór Marcra Armúrtha"
+
+	for_countries = { NCH }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { NCH_MOT_01 }
+
+	fallback_name = "%dú Cór Armúrtha"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dú Cór Armúrtha Thiar" }
+		2 = { "%dú Cór Armúrtha Thuaidh" }
+		3 = { "%dú Cór Armúrtha Thoir" }
+		4 = { "%dú Cór Armúrtha Theas" }
+	}
+}
+
+#NCH_ARM_02 =
+#{
+	#Super sekrit namelist for future use
+	#	name = "Panzer Divisions"
+	#
+	#	for_countries = { NCH }
+	#
+	#	can_use = { always = no }
+	#
+	#	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	#
+	#	link_numbering_with = { NCH_MOT_02 }
+	#
+	#	fallback_name = "%d. Panzer-Division"
+	#
+	#	ordered =
+	#	{
+		#		1 = { "%d. Panzer-Division 'Trimmel'" }
+		#		2 = { "%d. Panzer-Division 'Pharynx'" }
+		#		3 = { "%d. Panzer-Division 'Vect'" }
+		#		4 = { "%d. Panzer-Division 'Panzerknacker'" }
+		#		5 = { "%d. Panzer-Division 'Stählernes Biest'" }
+		#		6 = { "%d. Panzer-Division 'Stählerne Gefahr'" }
+		#		7 = { "%d. Panzer-Division 'Feuer Frei'" }
+		#		8 = { "%d. Panzer-Division 'Chrysalis'" }
+		#		9 = { "%d. Panzer-Division 'Brummbären'" }
+		#		10 = { "%d. Panzer-Division 'Blitz und Donner'" }
+		#	}
+	#}

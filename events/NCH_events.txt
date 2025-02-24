@@ -2,7 +2,6 @@
 add_namespace = greneclyf_FBK_coup
 add_namespace = greneclyf_crisis
 
-
 	# Example #
 
 	#country_event = {
@@ -35,27 +34,18 @@ add_namespace = greneclyf_crisis
 
 		option={
 			name = greneclyf_redux.1.a 
-			add_political_power = 50
+			add_political_power = 30
 			add_ideas = NCH_Basalt_Shaw
 			set_country_flag = NCH_Moronlan_Legacy
-
-			add_character_role = {
-				name = Moronlan
-				portraits={
-					army={
-						large="gfx/leaders/NCH/Moronlan.tga"
-						small="gfx/interface/ideas/Advisors/NCH/Moronlan.tga"
-					}
-				}
-				desc = "NCH_Desc_Moronlan"
-				add_field_marshal_role = {
-					traits={ changeling_race_trait brilliant_strategist old_guard }
-					skill = 2
-					attack_skill = 3
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
+			
+			add_field_marshal_role = {
+				character = NCH_Moronlan
+				traits={ changeling_race_trait brilliant_strategist old_guard }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
 			}
 		}
 	}
@@ -181,11 +171,51 @@ add_namespace = greneclyf_crisis
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_redux.6
-				days = 7
+				id = greneclyf_redux.26
+				days = 5
 			}
 		}
 	}
+
+	# SAINT PLACE JORNEY #
+	country_event = {
+		id = greneclyf_redux.26
+		title = greneclyf_redux.26.t
+		desc = greneclyf_redux.26.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option={
+			name = greneclyf_redux.26.a 
+			#add_political_power = 50
+
+			country_event = {
+				id = greneclyf_redux.30
+				days = 0
+			}
+		}
+	}
+
+		# SAINT PLACE JORNEY X2 #
+		country_event = {
+			id = greneclyf_redux.30
+			title = greneclyf_redux.30.t
+			desc = greneclyf_redux.30.d
+			picture = GFX_unknow
+			is_triggered_only = yes
+			fire_only_once = yes
+	
+			option={
+				name = greneclyf_redux.30.a 
+				#add_political_power = 50
+	
+				country_event = {
+					id = greneclyf_redux.6
+					days = 5
+				}
+			}
+		}
 
 	# WAY TO HOME JORNEY #
 	country_event = {
@@ -218,6 +248,23 @@ add_namespace = greneclyf_crisis
 		option = {
 			name = greneclyf_redux.7.a
 			add_ideas = NCH_economic_status_protect #Economic type
+		}
+	}
+
+	# Typography #
+	country_event = {
+		id = greneclyf_redux.700
+		title = greneclyf_redux.700.t
+		desc = greneclyf_redux.700.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.700.a
+			add_political_power = 25
+			custom_effect_tooltip = NCH_typography_create_ttip
+			set_country_flag = NCH_typography_create
 		}
 	}
 
@@ -283,9 +330,53 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.9.a
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_redux.32
+					days = 28
+				}
+			}
 		}
 	}
 
+	country_event = {
+		id = greneclyf_redux.32
+		title = greneclyf_redux.32.t
+		desc = greneclyf_redux.32.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.32.a
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_redux.10
+					days = 56
+				}
+			}
+		}
+	}
+	
+
+	# CELARL LABORATORY #
+	country_event = {
+		id = greneclyf_redux.18
+		title = greneclyf_redux.18.t
+		desc = greneclyf_redux.18.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.18.a
+			set_country_flag = NCH_celarl_laboratory_opend
+		}
+	}
+
+	# HUNGER STARTS #
 	country_event = {
 		id = greneclyf_redux.10
 		title = greneclyf_redux.10.t
@@ -296,9 +387,15 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.10.a
+			set_country_flag = NCH_greet_future
+			set_country_flag = NCH_great_hunger_started
+
 			#add_ideas = NCH_second_hunger
 			add_political_power = -300
-
+			add_ideas = NCH_protests_on_street
+			add_ideas = NCH_food_shortage
+			add_ideas = NCH_massive_unemployed
+			
 			set_power_balance = {
 				id = NCH_hunger_bop
 				set_default = yes
@@ -307,6 +404,7 @@ add_namespace = greneclyf_crisis
 				id = greneclyf_redux.11
 				days = 15
 			}
+			set_country_flag = NCH_hunger_starts
 		}
 
 		option = {
@@ -373,8 +471,318 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.14.a
+			set_country_flag = NCH_hunger_defeat
 		}
-		set_country_flag = NCH_hunger_defeat
 	}
 
 	### HUNGER DEFEAT ###
+
+	### CRISIS ###
+	# Meet with trade emissars #
+	country_event = {
+		id = greneclyf_redux.15
+		title = greneclyf_redux.15.t
+		desc = greneclyf_redux.15.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.15.a
+		}
+	}
+	# SAOR liberty trade zone #
+	country_event = {
+		id = greneclyf_redux.16
+		title = greneclyf_redux.16.t
+		desc = greneclyf_redux.16.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.16.a
+		}
+	}
+	# ALONE CAPITAN - DMZ #
+	### SAOR ###
+	country_event = {
+		id = greneclyf_redux.17
+		title = greneclyf_redux.17.t
+		desc = greneclyf_redux.17.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		immediate = {
+			1210 = {
+				set_demilitarized_zone = yes
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.17.a
+			add_stability = -0.05
+			add_political_power = -50
+
+			transfer_resources = {
+				state = 1210
+				target = RCT
+			}
+
+			1210 = {
+				remove_core_of = NCH
+			}
+
+			country_event = {
+				id = greneclyf_redux.21
+				days = 50
+			}
+		}
+	}
+
+	# FEAR IN SAOR #
+	country_event = {
+		id = greneclyf_redux.21
+		title = greneclyf_redux.21.t
+		desc = greneclyf_redux.21.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+
+		option = {
+			name = greneclyf_redux.21.a
+
+			country_event = {
+				id = greneclyf_redux.22
+				days = 7
+			}
+		}
+	}
+
+	# BAD REPPORT #
+	country_event = {
+		id = greneclyf_redux.22
+		title = greneclyf_redux.22.t
+		desc = greneclyf_redux.22.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+
+		option = {
+			name = greneclyf_redux.22.a
+
+			country_event = {
+				id = greneclyf_redux.23
+				days = 50
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.22.b
+		}
+	}
+
+	# SAOR NOIER #
+	country_event = {
+		id = greneclyf_redux.23
+		title = greneclyf_redux.23.t
+		desc = greneclyf_redux.23.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+
+		option = {
+			name = greneclyf_redux.23.a
+
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.05
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.23.b
+			country_event = {
+				id = greneclyf_redux.24
+				days = 30
+			}
+		}
+	}
+
+	# VENDETTA #
+	country_event = {
+		id = greneclyf_redux.24
+		title = greneclyf_redux.24.t
+		desc = greneclyf_redux.24.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.24.a
+			add_political_power = 50
+			set_country_flag = NCH_Vendetta_choice
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = -0.05
+			}
+		}
+	}
+
+	### ###
+
+	country_event = {
+		id = greneclyf_redux.19
+		title = greneclyf_redux.19.t
+		desc = greneclyf_redux.19.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.19.a
+		}
+	}
+
+	# Stairs of unequal #
+	country_event = {
+		id = greneclyf_redux.20
+		title = greneclyf_redux.20.t
+		desc = greneclyf_redux.20.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.20.a
+		}
+	}
+
+	# LOVERS DEALS #
+	country_event = {
+		id = greneclyf_redux.25
+		title = greneclyf_redux.25.t
+		desc = greneclyf_redux.25.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.25.a
+		}
+	}
+
+	# TYPOGRAPHY PROPAGANDA #
+	country_event = {
+		id = greneclyf_redux.27
+		title = greneclyf_redux.27.t
+		desc = greneclyf_redux.27.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.27.a
+
+			set_country_flag = NCH_start_propaganda_company
+		}
+	}
+
+	# CHURCH SUPPORT #
+	country_event = {
+		id = greneclyf_redux.28
+		title = greneclyf_redux.28.t
+		desc = greneclyf_redux.28.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.28.a
+
+		}
+	}
+	### MILITARY SUSTAINABLE ###
+	# QUEEN SPEAKS #
+	# ACTUAL 1.2 #
+	country_event = {
+		id = greneclyf_redux.29
+		title = greneclyf_redux.29.t
+		desc = greneclyf_redux.29.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.29.a
+			add_political_power = 100
+			add_stability = 0.15
+		}
+	}
+
+	## ##
+	# SOLDIERS RISING #
+	country_event = {
+		id = greneclyf_redux.30
+		title = greneclyf_redux.29.t
+		desc = greneclyf_redux.29.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.29.a
+
+		}
+	}
+
+	# BLOOD IN THE STREETS #
+	country_event = {
+		id = greneclyf_redux.31
+		title = greneclyf_redux.31.t
+		desc = greneclyf_redux.31.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.31.a
+
+		}
+	}
+
+	### FORCES ###
+
+	country_event = {
+		id = greneclyf_redux.32
+		title = greneclyf_redux.32.t
+		desc = greneclyf_redux.32.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.32.a
+
+			
+	}
+
+	### CHANGE ###
+	country_event = {
+		id = greneclyf_forces.99
+		title = greneclyf_forces.99.t
+		desc = greneclyf_forces.99.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_forces.99.a
+		}
+	}

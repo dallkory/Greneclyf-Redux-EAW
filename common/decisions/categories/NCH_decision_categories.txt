@@ -31,6 +31,28 @@ NCH_typography_category = {
 	}
 }
 
+NCH_obsidian_trade_category = {
+	icon = GFX_unknow
+	
+	visible = {
+		has_country_flag = NCH_obsidian_export
+	}
+	priority = {
+		base = 150
+	}
+}
+
+NCH_trade_with_pony_of_hills = {
+	icon = GFX_unknow
+	
+	visible = {
+		has_completed_focus = NCH_hoof_of_help
+	}
+	priority = {
+		base = 149
+	}
+}
+
 NCH_celarl_laboratory = {
 	icon = GFX_unknow
 

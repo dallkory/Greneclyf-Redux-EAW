@@ -7,7 +7,7 @@ state={
 	}
 
 	manpower=1756089	#956089#
-	state_category=town
+	state_category=city
 	buildings_max_level_factor=1.00
 
 	history={
@@ -16,9 +16,12 @@ state={
 
 		victory_points = { 5131 10 }
 
+		victory_points = { 11001 5 }
+
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
 		}
 	}
 	

@@ -10,6 +10,50 @@ NCH_debug_decision = {
 			set_country_flag = NCH_typography_create
 		}
 	}
+	NCH_create_country = {
+		icon = d
+		
+		complete_effect = {
+			NCH = {
+				set_cosmetic_tag = NCH_River
+				annex_country = {
+					target = RCT
+				}
+				annex_country = {
+					target = NIM
+				}
+				annex_country = {
+					target = DMT
+				}
+				annex_country = {
+					target = BAK
+				}
+				annex_country = {
+					target = DEP
+				}
+				annex_country = {
+					target = LCT
+				}
+				annex_country = {
+					target = WIT
+				}
+				annex_country = {
+					target = FRE
+				}
+
+				annex_country = {
+					target = FBK
+				}
+				annex_country = {
+					target = FIR
+				}
+				annex_country = {
+					target = WAT
+				}
+
+			}
+		}
+	}
 	NCH_show_power_balance = {
 		icon = d
 		complete_effect = {
@@ -44,8 +88,32 @@ NCH_hunger_bop_category = {
 		}
 	}
 }
+### ###
 
 NCH_typography_category = {
+
+	NCH_propaganda_anti_luddism = {
+		icon = d
+		cost = 50
+		days_remove = 70
+
+		visible = {
+			has_idea = NCH_luddites
+		}
+
+		modifier = {
+			production_factory_max_efficiency_factor = 0.02 
+			local_resources_factor = 0.1
+			stability_weekly = 0.03
+		}
+		remove_effect = {
+			news_event = {
+				id = d
+				days = 3
+			}
+		}
+	}
+
 	NCH_propaganda_company_party = {
 		icon = d
 		cost = 30
@@ -206,6 +274,7 @@ NCH_typography_category = {
 
 		available = {
 			has_completed_focus = NCH_final_crisis
+			has_government = democratic
 		}
 		visible = {
 			has_government = democratic
@@ -246,12 +315,72 @@ NCH_typography_category = {
 	}
 }
 
+### OBSIDIAN EXPORT ###
+NCH_obsidian_trade_category = {
+	NCH_find_importers = {
+		icon =d
+		cost = 75
+		days_remove = 45
+	
+		modifier = {
+			#offence = 0.05
+			#defence = 0.05
+			#experience_gain_army_factor = 0.1
+			#experience_gain_navy_factor = 0.1
+			#command_power_gain = 0.1
+		}
+
+		remove_effect = {
+			
+		}
+	}
+}
+
+# PONY OF HILLS #
+NCH_trade_with_pony_of_hills = {
+	NCH_trade_with_FBK = {
+		icon =d
+		cost = 75
+		days_remove = 45
+	
+		modifier = {
+		}
+
+		remove_effect = {
+		}
+	}
+}
+
 # add research slot & research speed factor & unique tech (spy bonuses, debuffs )
 NCH_celarl_laboratory = {
 	NCH_experimental_starts = {
 		icon = d
 		cost = 50
 		days_remove = 70
+
+		modifier = {
+		}
+	}
+
+	NCH_navy_experimental = {
+		icon = d
+		cost = 50
+		days_remove = 45
+		
+		visible = {
+			and = {
+				has_completed_focus = NCH_hard_armor
+				has_completed_focus = NCH_experomental_developments
+			}
+		}
+		modifier = {
+			experience_gain_navy = 0.02
+			experience_gain_navy_factor = 0.1
+		}
+
+		complete_effect = {
+			add_ideas = NCH_battleships_cruaiser_bonus
+		}
 	}
 }
 

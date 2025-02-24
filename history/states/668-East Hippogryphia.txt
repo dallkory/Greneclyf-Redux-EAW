@@ -3,7 +3,7 @@ state={
 	name="STATE_668"
 
 	provinces={
-		1905 1964 1966 4909 5229 8094 10775 10891 10921 10924 12113 12814 12979
+		1905 1964 1966 4909 5229 8094 10891 10921 10924 12113 12814 12979
 	}
 
 	manpower = 378670	#295670
@@ -18,6 +18,7 @@ state={
 
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 
 			1964 = {
 				naval_base = 1

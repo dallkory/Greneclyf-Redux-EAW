@@ -1,0 +1,222 @@
+﻿### TEMPLATES ###
+division_template = {
+	name = "Páirteanna Guard"
+	division_names_group = NCH_INF_REDUX_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Sealgairí Ríoga"
+	division_names_group = NCH_INF_REDUX_02
+	regiments = { 
+		jager = { x = 0 y = 0 }
+		jager = { x = 1 y = 0 }
+		jager = { x = 0 y = 1 }
+		jager = { x = 1 y = 1 }
+		jager = { x = 0 y = 2 }
+		jager = { x = 1 y = 2 }
+	 }
+
+	 support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Póilíní Militare"
+	division_names_group = NCH_INF_REDUX_03
+
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1}
+	}
+}
+
+
+
+
+units = {
+
+	# REGULAR FORCES #
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 5188
+		division_template = "Páirteanna Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+
+		location = 8240
+		division_template = "Páirteanna Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+
+		location = 10818
+		division_template = "Páirteanna Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+
+		location = 10921
+		division_template = "Páirteanna Guard"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+
+		location = 5179
+		division_template = "Páirteanna Guard"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+
+	# JAGER FORCES #
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9099
+		division_template = "Sealgairí Ríoga"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+
+		location = 12979
+		division_template = "Sealgairí Ríoga"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1 
+	}
+
+	# MILITARY POLICE FORCES #
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 5188
+		division_template = "Póilíní Militare"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+
+		location = 5131
+		division_template = "Póilíní Militare"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+
+		location = 4909
+		division_template = "Póilíní Militare"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+
+		location = 5146
+		division_template = "Póilíní Militare"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+	}
+}
+
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NCH"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 20
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "NCH"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 20
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NCH"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 20
+	}
+}
