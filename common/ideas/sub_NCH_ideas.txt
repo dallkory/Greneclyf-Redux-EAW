@@ -628,6 +628,21 @@ ideas = {
 			}
 		}
 
+		NCH_faith_in_queen_idea = {
+			picture = GFX_goal_unknown
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.01
+				army_org_factor = 0.05
+			}
+		}
 
 
 		# SUBMOD #

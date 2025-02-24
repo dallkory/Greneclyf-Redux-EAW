@@ -770,46 +770,7 @@ add_namespace = greneclyf_crisis
 		option = {
 			name = greneclyf_redux.32.a
 
-			division_template = {
-				name = "Changeling Veterans Brigade"
-				is_locked = yes
-				template_counter = 108
-				regiments = {
-					jager = { x = 0 y = 0 }
-					jager = { x = 0 y = 1 }
-					jager = { x = 0 y = 2 }
-					jager = { x = 1 y = 0 }
-					jager = { x = 1 y = 1 }
-					jager = { x = 1 y = 2 }
-					jager = { x = 2 y = 0 }
-					jager = { x = 2 y = 1 }
-					jager = { x = 2 y = 2 }
-				}
-				support = {
-					infiltrator_company = { x = 0 y = 0 }
-					recon = { x = 0 y = 1 }
-					engineer = { x = 0 y = 2 }
-				}
-				priority = 2
-			}
-
-			random_owned_controlled_state = {
-				create_unit = { division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
-				owner = NCH }
-			}
-			random_owned_controlled_state = {
-				create_unit = { division = "name = \"Hiills Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
-				owner = NCH }
-			}
-			random_owned_controlled_state = {
-				create_unit = { division = "name = \"Moon Sky Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
-				owner = NCH }
-			}
-			random_owned_controlled_state = {
-				create_unit = { division = "name = \"Icebreaker Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
-				owner = NCH }
-			}
-		}
+			
 	}
 
 	### CHANGE ###
