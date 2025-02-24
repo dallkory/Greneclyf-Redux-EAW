@@ -2607,19 +2607,20 @@ focus_tree = {
 			if = {
 				has_country_flag = NCH_left_land_forces
 			}
-			swap_ideas = {
-				remove_idea = x
-				add_idea = NCH_economic_status_protect
-			}
+				remove_ideas = {
+					NCH_land_forces_everyone_can_be_hero 
+					NCH_greuling_training 
+					NCH_faith_in_queen
+				}
+			add_ideas = NCH_hero_land_forces
 
-
-			if = {
-				has_country_flag = NCH_right_land_forces
-			}
-			swap_ideas = {
-				remove_idea = x
-				add_idea = NCH_economic_status_protect
-			}
+			#if = {
+			#	has_country_flag = NCH_right_land_forces
+			#}
+			#hidden_effect = {
+			#	remove_ideas = d
+			#}
+			#add_ideas = NCH_org_land_forces
 		}
 	}
 
