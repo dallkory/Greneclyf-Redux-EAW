@@ -1,0 +1,288 @@
+Shared_focus = {
+	id = NCH_hive
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 13
+	y = 2
+
+	available = {
+		has_country_flag = NCH_queen_ambitions
+	}
+	allow_branch = {
+		has_completed_focus = NCH_time_to_look_further
+	}
+}
+
+Shared_focus = {
+	id = NCH_pressure_chrusalis
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 8
+	y = 3
+
+}
+Shared_focus = {
+	id = NCH_spy_everywhere
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_pressure_chrusalis
+	}
+	x = 7
+	y = 4
+
+}
+Shared_focus = {
+	id = NCH_take_a_equipment
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_spy_everywhere
+	}
+	x = 6
+	y = 5
+
+}
+Shared_focus = {
+	id = NCH_seek_support
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 10
+	y = 3
+
+}
+Shared_focus = {
+	id = NCH_Queen_Ditrisium
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_seek_support
+	}
+	prerequisite = {
+		focus = NCH_pressure_chrusalis
+	}
+	x = 9
+	y = 4
+
+}
+Shared_focus = {
+	id = NCH_equipment_suppporter
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
+	}
+	prerequisite = {
+		focus = NCH_spy_everywhere
+	}
+	x = 8
+	y = 5
+
+}
+Shared_focus = {
+	id = NCH_give_hope
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_equipment_suppporter
+	}
+	prerequisite = {
+		focus = NCH_take_a_equipment
+	}
+	x = 7
+	y = 6
+
+}
+Shared_focus = {
+	id = NCH_idea_of_harmony_in_hives
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
+	}
+	x = 10
+	y = 5
+
+}
+Shared_focus = {
+	id = NCH_fangs_dug
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_equipment_suppporter
+	}
+	prerequisite = {
+		focus = NCH_idea_of_harmony_in_hives
+	}
+	x = 9
+	y = 6
+
+}
+Shared_focus = {
+	id = NCH_rethinking_history
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 13
+	y = 3
+
+}
+Shared_focus = {
+	id = NCH_accept_refugees
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_rethinking_history
+	}
+	x = 12
+	y = 4
+
+}
+Shared_focus = {
+	id = NCH_loyal_elite
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_rethinking_history
+	}
+	x = 14
+	y = 4
+
+}
+Shared_focus = {
+	id = NCH_our_legarl_right
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_accept_refugees
+	}
+	prerequisite = {
+		focus = NCH_loyal_elite
+	}
+	x = 13
+	y = 5
+
+}
+Shared_focus = {
+	id = NCH_all_or_nothing
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_our_legarl_right
+	}
+	x = 13
+	y = 6
+
+}
+Shared_focus = {
+	id = NCH_unity_summit
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 17
+	y = 3
+
+}
+Shared_focus = {
+	id = NCH_start_negotiations
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_unity_summit
+	}
+	x = 17
+	y = 4
+
+}
+Shared_focus = {
+	id = NCH_all_wars_ends
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_start_negotiations
+	}
+	mutually_exclusive = {
+		focus = NCH_menace_chrysalis
+	}
+	x = 16
+	y = 5
+
+}
+Shared_focus = {
+	id = NCH_menace_chrysalis
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_start_negotiations
+	}
+	mutually_exclusive = {
+		focus = NCH_all_wars_ends
+	}
+	x = 18
+	y = 5
+
+}
+
+Shared_focus = {
+	id = NCH_after_war_plans
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_menace_chrysalis
+	}
+	x = 18
+	y = 6
+
+	completion_reward = {
+		
+	}
+}
+Shared_focus = {
+	id = NCH_collective_management
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_all_wars_ends
+	}
+	x = 16
+	y = 6
+
+}
+
+Shared_focus = {
+	id = NCH_burnings_they_hearts
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_collective_management
+		focus = NCH_after_war_plans
+		focus = NCH_all_or_nothing
+		focus = NCH_fangs_dug
+		focus = NCH_give_hope
+	}
+	x = 13
+	y = 7
+
+}
+
+Shared_focus = {
+	id = NCH_union_hives
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_burnings_they_hearts
+	}
+	x = 13
+	y = 8
+
+}

@@ -1,6 +1,619 @@
-#shared_focus = {
-#	id = NCH_
-#	cost = x
-#	x = x
-#	y = x
-#}
+Shared_focus = {
+	id = NCH_beginning_of_crisis
+	icon = GFX_goal_unknown
+	cost = 1
+	x = 33
+	y = 8
+
+	available = {
+		has_country_flag = NCH_great_hunger_started
+		has_completed_focus = NCH_time_to_look_further
+	}
+	bypass = {
+		has_country_flag = NCH_hunger_starts
+	}
+	allow_branch = {
+		has_completed_focus = NCH_time_to_look_further
+	}
+
+}
+
+Shared_focus = {
+	id = NCH_mre_cards
+	icon = GFX_goal_unknown
+	cost = 2
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 27
+	y = 9
+
+	completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = NCH_mre_cards_help
+			days = 90
+		}
+
+		custom_effect_tooltip = NCH_starts_mre_help
+	}
+}
+
+Shared_focus = {
+	id = NCH_agroindustrial_mobilization
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_mre_cards
+	}
+	x = 26
+	y = 10
+
+	completion_reward = {
+
+		country_event = {
+			id = greneclyf_redux.19
+			days = 0
+		}
+
+		1209 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_agroindustrial_programs
+	icon = GFX_goal_unknown
+	cost = 2
+	prerequisite = {
+		focus = NCH_agroindustrial_mobilization
+	}
+	x = 24
+	y = 11
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+
+		country_event = {
+			id = greneclyf_redux.20
+			days = 0
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.075
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_limit_external_trade
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_mre_cards
+	}
+	x = 28
+	y = 10
+
+	completion_reward = {
+		set_country_flag = NCH_obsidian_export
+
+		custom_effect_tooltip = NCH_start_obsisian_export
+
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 2
+			category = construction_tech
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_industrial_cooperatives
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_agroindustrial_mobilization
+	}
+	prerequisite = {
+		focus = NCH_limit_external_trade
+	}
+	x = 27
+	y = 11
+
+	completion_reward = {
+		add_research_slot = 1
+
+		remove_ideas = {
+			NCH_luddites_2
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_modernization_industry
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_limit_external_trade
+	}
+	x = 30
+	y = 11
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = -0.1
+
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_domestic_consumption
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_agroindustrial_programs
+	}
+	prerequisite = {
+		focus = NCH_modernization_industry
+	}
+	prerequisite = {
+		focus = NCH_industrial_cooperatives
+	}
+	x = 27
+	y = 12
+
+	available = {
+		has_completed_focus = NCH_overvise_great_packt
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_massive_unemployed
+
+		if = {
+			limit = {
+				has_idea = civilian_economy
+				NOT = { has_idea = low_economic_mobilisation }
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = low_economic_mobilisation
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.1
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_emergacy_plan
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 33
+	y = 9
+
+	available = {
+		has_completed_focus = NCH_mre_cards
+	}
+
+	completion_reward = {
+		add_political_power = 30
+		add_stability = -0.1
+
+		if = {
+			limit = {
+				has_idea = civilian_economy
+				NOT = { has_idea = low_economic_mobilisation }
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = low_economic_mobilisation
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_consolidation_political
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_emergacy_plan
+	}
+	x = 32
+	y = 10
+
+	available = {
+		
+	}
+
+	completion_reward = {
+		add_stability = 0.075
+		country_event = {
+			id = greneclyf_redux.28
+			days = 0
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_call_for_unity
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_emergacy_plan
+	}
+	x = 34
+	y = 10
+
+	available = {
+		
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+		country_event = {
+			id = greneclyf_redux.27
+			days = 0
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+
+Shared_focus = {
+	id = NCH_to_neighbors
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 39
+	y = 9
+
+	available = {
+		has_completed_focus = NCH_mre_cards
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 25
+
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 25
+			}
+			
+		custom_effect_tooltip = NCH_end_hide_and_seek_tt
+	}
+}
+
+Shared_focus = {
+	id = NCH_every_friend
+	icon = GFX_goal_unknown
+	cost = 2
+	prerequisite = {
+		focus = NCH_to_neighbors
+	}
+	x = 37
+	y = 10
+
+	bypass = {
+		FBK = {
+			not = {
+				has_government = democratic
+			}
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 30
+
+		add_opinion_modifier = {
+			target = FBK
+			modifier = NCH_FBK_friends
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_hoof_of_help
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_every_friend
+	}
+	x = 36
+	y = 11
+
+	bypass = {
+		NOT = {
+			OR = {
+				country_exists = FBK
+				country_exists = FIR
+				country_exists = WAT
+			}
+		}
+	}
+
+	completion_reward = {
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+
+		custom_effect_tooltip = NCH_start_friendship_with_pony_hills
+	}
+}
+
+Shared_focus = {
+	id = NCH_some_love
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = NCH_every_friend
+	}
+	x = 38
+	y = 11
+
+	bypass = {
+		Not = {
+			country_exists = FBK
+		}
+		FBK = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.25
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_reguest_of_help
+	icon = GFX_goal_unknown
+	cost = 2
+	prerequisite = {
+		focus = NCH_to_neighbors
+	}
+	x = 41
+	y = 10
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.15
+			days = 0
+		}			
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = NCH_trade_with_riverlands_prey
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_army_concessions
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_reguest_of_help
+	}
+	x = 40
+	y = 11
+
+	completion_reward = {
+		add_political_power = 35
+
+		add_timed_idea = {
+			idea = NCH_zone_of_sin
+			days = 90
+		}
+
+		1210 = {
+			set_state_name = "SAOR"
+		}
+		set_province_name = {
+			id = 10775
+			name = "SAOR"
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.075
+		}
+	}
+}
+
+
+
+Shared_focus = {
+	id = NCH_clans_of_Greneclyf
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_consolidation_political
+	}
+	prerequisite = {
+		focus = NCH_call_for_unity
+	}
+	x = 33
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_domestic_consumption
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.29
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_suppression_of_unrest
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_clans_of_Greneclyf
+	}
+	x = 33
+	y = 12
+
+	completion_reward = {
+		remove_ideas = NCH_protests_on_street
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.2
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_final_crisis
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_suppression_of_unrest
+	}
+	prerequisite = {
+		focus = NCH_suppression_of_unrest
+	}
+	x = 33
+	y = 13
+
+	completion_reward = {
+		
+	}
+}
+
+Shared_focus = {
+	id = NCH_concessions_for_help
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_reguest_of_help
+	}
+	x = 42
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_army_concessions
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.17
+			days = 15
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_overvise_great_packt
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_hoof_of_help
+	}
+	prerequisite = {
+		focus = NCH_some_love
+	}
+	prerequisite = {
+		focus = NCH_army_concessions
+	}
+	prerequisite = {
+		focus = NCH_concessions_for_help
+	}
+	x = 39
+	y = 12
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NCH_FBK_pact
+			add_idea = NCH_new_great_pact
+		}
+		remove_ideas = NCH_food_shortage
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.15
+		}
+	}
+}
