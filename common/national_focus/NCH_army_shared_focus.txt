@@ -1,0 +1,1969 @@
+shared_focus = {
+	id = NCH_rule_greneclyf
+	icon = GFX_goal_unknown
+	cost = 3
+	x = 64
+	y = 2
+
+	available = {
+		has_completed_focus = NCH_time_to_look_further
+	}
+	allow_branch = {
+		has_completed_focus = NCH_time_to_look_further
+	}
+	
+	completion_reward = {
+		add_timed_idea = {
+			idea = NCH_rethinking_forces
+			days = 120
+		}
+	}
+}
+
+## NAVY ##
+shared_focus = {
+	id = NCH_at_seas
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+	x = 51
+	y = 3
+
+	available = {
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		navy_experience = 25
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = naval_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_expand_blosmport_yards
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 47
+	y = 4
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = NCH_blosmporn_dockyards
+			days = 270
+		}
+
+		670 = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_hard_armor
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_expand_blosmport_yards
+	}
+	mutually_exclusive = {
+		focus = NCH_silent_hunters
+	}
+	x = 46
+	y = 5
+
+	completion_reward = {
+		set_country_flag = NCH_armor_priority
+
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = cat_fleet_in_being
+		}
+
+		add_tech_bonus = {
+			name = battleship_tech
+			bonus = 1
+			uses = 1
+			category = bb_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_silent_hunters
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_expand_blosmport_yards
+	}
+	mutually_exclusive = {
+		focus = NCH_hard_armor
+	}
+	x = 48
+	y = 5
+
+	completion_reward = {
+		set_country_flag = NCH_silent_priority
+		add_doctrine_cost_reduction = {
+			name = cat_trade_interdiction
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_trade_interdiction
+		}
+
+		add_tech_bonus = {
+			name = submarine_tech
+			bonus = 1
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_Greneclyf_pride
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_hard_armor
+	}
+	x = 46
+	y = 6
+
+	completion_reward = {
+		add_ideas = NCH_battleships_cruaiser_bonus
+		
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 2
+			category = naval_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_sharks_ice_waters
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_silent_hunters
+	}
+	x = 48
+	y = 6
+
+	completion_reward = {
+		add_ideas = NCH_submarines_bonus
+
+		add_tech_bonus = {
+			name = submarine_tech
+			bonus = 1
+			ahead_reduction = 2
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_experomental_developments
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_Greneclyf_pride
+		focus = NCH_sharks_ice_waters
+	}
+	x = 47
+	y = 7
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_unique_naval_experomental
+	
+		if = {
+			limit = {
+				has_completed_focus = NCH_hard_armor					
+			}
+			add_ideas = NCH_grand_fleet 
+			
+			if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						heavy_cruiser_1 = 1
+						light_cruiser_1 = 1
+						destroyer_1 = 1
+						destroyer_2 = 1
+
+						ship_shields_1 = 1
+						secondary_battery_1 = 1
+						ship_armor_cruiser_1 = 1
+						ship_torpedo_1 = 1
+						ship_depth_charge_1 = 1
+					}
+
+				# BATTLESHIPS #
+					add_equipment_production = {
+						equipment = { 
+							version_name = "LnG Gytha"
+							type = ship_hull_heavy_1
+							creator = NCH
+						}
+						name = "LnG Oiren"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+	
+					add_equipment_production = {
+						equipment = { 
+							version_name = "LnG Gytha"
+							type = ship_hull_heavy_1
+							creator = NCH
+						}
+						name = "LnG Basalt"
+						requested_factories = 5
+						progress = 0.6
+						amount = 1
+					}
+				##
+				# Craisers #
+				create_equipment_variant = {
+					name = "Cineál 9"
+					type = heavy_cruiser_1
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						mid_1_custom_slot = ship_torpedo_1
+						mid_2_custom_slot = ship_torpedo_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+
+						rear_1_custom_slot = ship_medium_battery_1
+						rear_2_custom_slot = dp_light_battery_1
+					}
+				}
+	
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 9"
+						type = heavy_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Korry"
+					requested_factories = 5
+					progress = 0.65
+					amount = 1
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 9"
+						type = heavy_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Vega"
+					requested_factories = 5
+					progress = 0.65
+					amount = 1
+				}
+
+
+				create_equipment_variant = {
+					name = "Cineál 7"
+					type = light_cruiser_1
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						mid_1_custom_slot = ship_torpedo_1
+						mid_2_custom_slot = ship_torpedo_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+
+						rear_0_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_light_medium_battery_1
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 7"
+						type = light_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Judge"
+					requested_factories = 5
+					progress = 0.7
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 7"
+						type = light_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Brave"
+					requested_factories = 5
+					progress = 0.7
+					amount = 1
+				}
+				
+
+				create_equipment_variant = {
+					name = "Cineál 3"
+					type = destroyer_2
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = ship_torpedo_1
+
+						mid_1_custom_slot = ship_depth_charge_1
+						rear_1_custom_slot = empty
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Gerda"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Bugsmere"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Hive"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Legend"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Sun"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+			}
+
+			# NO DLC#
+			else = {
+
+
+
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+
+		# SUBMARINES #
+		if = {
+			limit = {
+				has_completed_focus = NCH_silent_hunters					
+			}
+			add_ideas = NCH_submarine_fleet
+	
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+
+				set_technology = {
+					cruiser_submarines = 1
+					early_submarine = 1
+				}
+				
+				create_equipment_variant = {
+					name = "Siorc uiscí oighreata"
+					type = ship_hull_cruiser_submarine
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+						front_1_custom_slot = ship_torpedo_sub_1
+						mid_1_custom_slot = empty
+						rear_1_custom_slot = ship_torpedo_sub_1
+
+						#fixed_ship_engine_slot = sub_ship_engine_1
+						#fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						#front_1_custom_slot = ship_extra_fuel_tank
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Tyrann"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Icepeak"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Snowball"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Dark"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Hero"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Bee"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Icebreaker"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Arktur"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Lier"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Free Bird"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Fury"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Great"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO First"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+	
+				# NO DLC#
+				else = {
+					set_technology = {
+					cruiser_submarines_nomtg = 1
+					}
+
+
+
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_assing_new_command
+	icon = GFX_goal_unknown
+	cost = 8
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 51
+	y = 5
+
+	completion_reward = {
+		set_country_flag = NCH_navy_advisor_flag
+
+		custom_effect_tooltip = available_chief_of_navy
+		add_naval_commander_role = {
+			character = NCH_admiral_hart
+			desc = "NCH_Desc_Hart"
+			traits = {  changeling_race_trait superior_tactician ironside }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=4
+		}
+		custom_effect_tooltip = NCH_new_stats_hart
+
+		custom_effect_tooltip = available_chief_of_navy
+		add_naval_commander_role={
+			character = NCH_admiral_lorri
+			desc = "NCH_desc_Lorri"
+			traits = {
+				changeling_race_trait seawolf
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+		custom_effect_tooltip = NCH_new_stats_lorri
+	}
+}
+
+shared_focus = {
+	id = NCH_marine_corp
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_assing_new_command
+	}
+	x = 50
+	y = 6
+
+	completion_reward = {
+		research_bonus = {
+			name = marine_bonus
+			bonus = 1.0
+			uses = 2
+			category = tp_tech
+		}
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_doctrine_cost_reduction = {
+				name = special_forces_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_marines_doctrine
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_naval_academy
+	icon = GFX_goal_unknown
+	cost = 5
+	prerequisite = {
+		focus = NCH_assing_new_command
+	}
+	x = 52
+	y = 6
+
+	available = {
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		navy_experience = 50
+		add_ideas = NCH_naval_academy_establish
+	}
+}
+
+shared_focus = {
+	id = NCH_Blosmport_navy_institute
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_marine_corp
+	}
+	prerequisite = {
+		focus = NCH_naval_academy
+	}
+	x = 51
+	y = 7
+
+	available = {
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_naval_institute
+
+		670 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = naval_facility
+				level = 1
+			}
+		}
+	}
+}
+
+
+
+
+shared_focus = {
+	id = NCH_security_trade
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 55
+	y = 4
+
+	completion_reward = {
+
+		country_event = {
+			id = greneclyf_forces.99
+			days = 0
+		}
+	}
+}
+
+############
+shared_focus = {
+	id = NCH_break_ice
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_security_trade
+	}
+	x = 54
+	y = 5
+
+	completion_reward = {
+		add_ideas = NCH_break_ice_idea
+		set_country_flag = NCH_break_the_ice_research
+
+		add
+
+		add_equipment_bonus = {
+			name = sp_mega_carrier_eq_bonus_strength
+			bonus = {
+				ship_hull_mega_carrier = {
+					build_cost_ic = -0.15
+					max_strength = 0.05
+					instant = yes
+				}
+			}
+		}		
+	}
+}
+############
+
+
+shared_focus = {
+	id = NCH_merchant_navy
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_security_trade
+	}
+	x = 56
+	y = 5
+
+	available = {
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_resources_for_fleet
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_break_ice
+		focus = NCH_merchant_navy
+	}
+	x = 54
+	y = 6
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_resources_for_forces_decisions
+	}
+}
+
+shared_focus = {
+	id = NCH_investing_in_shipbuildings
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_break_ice
+		focus = NCH_merchant_navy
+	}
+	x = 56
+	y = 6
+
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_domestic_development
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_resources_for_fleet
+		focus = NCH_investing_in_shipbuildings
+	}
+	x = 55
+	y = 7
+
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}  
+				has_tech = basic_ship_hull_cruiser
+			}
+			else = {
+				has_tech = basic_light_cruiser
+			}
+		}
+	}
+
+	completion_reward = {
+		add_ideas = NCH_torpedo_attack 
+
+		if = {
+			limit = {
+				not = { has_dlc = "Man the Guns" }
+			}
+			set_technology = { torpedo_cruiser = 1 }
+		}
+
+		else = {
+			set_technology = { torpedo_cruiser_mtg = 1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_our_future_at_sea
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_experomental_developments
+	}
+	prerequisite = {
+		focus = NCH_domestic_development
+	}
+	prerequisite = {
+		focus = NCH_Blosmport_navy_institute
+	}
+	x = 51
+	y = 8
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_our_navy_strategy
+		set_country_flag = NCH_sea_future
+		
+		# NOT WORKING WHY #
+		hidden_effect = {
+			remove_idea = NCH_expand_blosmport_dockyards
+			remove_idea = NCH_naval_academy_establish
+			remove_idea = NCH_break_ice_idea
+		}
+			add_ideas = NCH_navy_forces
+	}
+}
+
+
+## ARMY ##
+shared_focus = {
+	id = NCH_on_land
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 64
+	y = 3
+
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+
+	completion_reward = {
+		army_experience = 25
+		remove_ideas = NCH_idyllic_society
+
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_auxiliary_battalions
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_on_land
+	}
+	mutually_exclusive = {
+		focus = NCH_priorize_integrity
+	}
+	x = 62
+	y = 4
+
+	completion_reward = {
+		army_experience = 25
+		set_country_flag = NCH_left_land_forces
+
+		add_tech_bonus = {
+			name = special_forces_bonus
+			category = jager_tech
+			bonus = 0.15
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_inspire_by_example
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 60
+	y = 5
+
+	completion_reward = {
+		add_corps_commander_role = {
+			character = NCH_Merelay
+			desc = "NCH_Merelay"
+			traits={changeling_race_trait infantry_leader hill_fighter}
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+		   } 
+		   custom_effect_tooltip = NCH_Marelay_stats
+
+		add_corps_commander_role = {
+		   character = NCH_Zaliack
+		   desc = "NCH_Merelay"
+		   traits={ changeling_race_trait winter_specialist }
+		   skill=3
+		   attack_skill=2
+		   defense_skill=4
+		   planning_skill=2
+		   logistics_skill=3
+		   }
+		   custom_effect_tooltip = NCH_Marelay_stats
+	}
+}
+
+shared_focus = {
+	id = NCH_anyone_can_be_hero
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 62
+	y = 5
+	
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = x
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_racial_specforce_doctrine
+		}
+		add_ideas = NCH_land_forces_everyone_can_be_hero
+	}
+}
+
+shared_focus = {
+	id = NCH_greuling_workouts
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+	}
+	prerequisite = {
+		focus = NCH_inspire_by_example
+	}
+	x = 61
+	y = 6
+
+	completion_reward = {
+		add_ideas = NCH_greuling_training
+	}
+}
+
+shared_focus = {
+	id = NCH_best_of_the_best
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_inspire_by_example
+	}
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+	}
+	x = 59
+	y = 6
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.32
+			days = 0
+		}
+
+		division_template = {
+			name = "Changeling Veterans Brigade"
+			division_names_group = CHN_ALTINF_01
+			template_counter = 37
+			is_locked = yes
+			template_counter = 108
+			regiments = {
+				jager = { x = 0 y = 0 }
+				jager = { x = 0 y = 1 }
+				jager = { x = 0 y = 2 }
+				jager = { x = 0 y = 3 }
+				jager = { x = 1 y = 0 }
+				jager = { x = 1 y = 1 }
+				jager = { x = 1 y = 2 }
+				jager = { x = 1 y = 3 }
+				jager = { x = 2 y = 0 }
+				jager = { x = 2 y = 1 }
+				jager = { x = 2 y = 2 }
+				jager = { x = 2 y = 3 }
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+			}
+			support = {
+				infiltrator_company = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				engineer = { x = 0 y = 2 }
+				artillery = { x = 0 y = 3 }
+			}
+			priority = 2
+		}
+
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Hiills Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Moon Sky Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Icebreaker Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_faith_in_queen
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_best_of_the_best
+	}
+	prerequisite = {
+		focus = NCH_greuling_workouts
+	}
+	x = 60
+	y = 7
+
+	completion_reward = {
+		add_war_support = 0.15
+
+		add_ideas = NCH_faith_in_queen_idea
+	}
+}
+
+shared_focus = {
+	id = NCH_priorize_integrity
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_on_land
+	}
+	mutually_exclusive = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 66
+	y = 4
+
+	completion_reward = {
+		set_country_flag = NCH_right_land_forces
+		army_experience = 25
+
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_discipline_is_key_to_order
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_priorize_integrity
+	}
+	x = 66
+	y = 5
+
+	completion_reward = {
+		add_ideas = NCH_discipline_key
+	}
+}
+
+shared_focus = {
+	id = NCH_bugsmere_war_institute
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+		focus = NCH_discipline_is_key_to_order
+	}
+	x = 64
+	y = 6
+
+	completion_reward = {
+		 669 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = land_facility
+			level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_greneclyf_tanks
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_bugsmere_war_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_mechanization_of_brigades
+	}
+	x = 63
+	y = 7
+
+	completion_reward = {
+		add_ideas = NCH_new_tank_idea
+	}
+}
+
+shared_focus = {
+	id = NCH_mechanization_of_brigades
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_bugsmere_war_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_greneclyf_tanks
+	}
+	x = 65
+	y = 7
+
+	completion_reward = {
+		add_ideas = NCH_mech_brigads
+	}
+}
+
+shared_focus = {
+	id = NCH_pass_law_on_consctiption
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_priorize_integrity
+	}
+	x = 68
+	y = 5
+
+	completion_reward = {
+		if = {
+			limit = { has_idea = volunteer_only_1 }
+			remove_ideas = { volunteer_only_1 }
+			add_ideas = { volunteer_only_1_5 }
+		}
+		else_if = {
+			limit = { has_idea = volunteer_only_1_5 }
+			remove_ideas = { volunteer_only_1_5 }
+			add_ideas = { limited_conscription }
+		}
+		else_if = {
+			limit = { has_idea = limited_conscription }
+			remove_ideas = { limited_conscription }
+			add_ideas = { extensive_conscription }
+		}
+		else_if = {
+			limit = { has_idea = extensive_conscription }
+			remove_ideas = { extensive_conscription }
+			add_ideas = { service_by_requirement }
+		}
+		else_if = {
+			limit = { has_idea = service_by_requirement }
+			remove_ideas = { service_by_requirement }
+			add_ideas = { all_adult_serve }
+		}
+		else_if = {
+			limit = { has_idea = all_adult_serve }
+			remove_ideas = { all_adult_serve }
+			add_ideas = { scraping_the_barrel }
+		}
+		else = {
+			add_ideas = { volunteer_only_1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_queen_of_the_fields
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_discipline_is_key_to_order
+	}
+	prerequisite = {
+		focus = NCH_pass_law_on_consctiption
+	}
+	mutually_exclusive = {
+		focus = NCH_goddes_of_war
+	}
+	x = 67
+	y = 6
+
+	completion_reward = {
+		add_ideas = NCH_artillery_fields
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 400
+			producer = NCH
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_goddes_of_war
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_discipline_is_key_to_order
+	}
+	prerequisite = {
+		focus = NCH_pass_law_on_consctiption
+	}
+	mutually_exclusive = {
+		focus = NCH_queen_of_the_fields
+	}
+	x = 69
+	y = 6
+
+	completion_reward = {
+		add_ideas = NCH_goddes_war_inf 
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4000
+			producer = NCH
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_expamd_production
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_queen_of_the_fields
+		focus = NCH_goddes_of_war
+	}
+	x = 68
+	y = 7
+
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_greneclyf_school_of_war
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_faith_in_queen
+		focus = NCH_expamd_production
+	}
+	x = 64
+	y = 8
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = NCH_left_land_forces
+			}
+			remove_ideas = {
+				NCH_land_forces_everyone_can_be_hero 
+			}
+			remove_ideas = {
+				NCH_greuling_training 
+			}
+			remove_ideas = {
+				NCH_faith_in_queen
+			}
+
+			add_ideas = NCH_hero_land_forces
+		}
+	
+		else_if = {
+			limit = { 
+				has_country_flag = NCH_right_land_forces 
+			}
+			remove_ideas = {
+				NCH_discipline_key
+			}
+			remove_ideas = {
+				NCH_artillery_fields
+			}
+			remove_ideas = {
+				NCH_goddes_war_inf
+			}
+
+		add_ideas = NCH_org_land_forces
+		}
+	}
+}	
+
+shared_focus = {
+	id = NCH_and_in_the_air
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+	x = 77
+	y = 3
+
+	completion_reward = {
+		air_experience = 25
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.5
+			uses = 2
+			category = air_doctrine
+		}
+	}
+}
+shared_focus = {
+	id = NCH_flying_school 
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+	completion_reward = {
+		air_experience = 25
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.3
+			uses = 2
+			category = air_equipment
+		}
+		#Открывает советника на доктрину
+	}
+	x = 73
+	y = 4
+
+}
+shared_focus = {
+	id = NCH_radar_development
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_flying_school 
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			technology = radio
+			bonus = 0.7
+			uses = 1
+		}
+		add_tech_bonus = {
+			name = x
+			category = radar_tech
+			bonus = 0.5
+			uses = 2
+		}
+		random_owned_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+		}
+	}
+	}
+	x = 72
+	y = 5
+
+}
+shared_focus = {
+	id = NCH_build_new_airbases
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_flying_school 
+	}
+	completion_reward = {
+		random_core_state = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+
+	}
+	x = 74
+	y = 5
+
+}
+shared_focus = {
+	id = NCH_defense_island
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_build_new_airbases
+	}
+	completion_reward = {
+		random_core_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+		random_core_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+		random_core_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+		random_core_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+	}
+	x = 74
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_night_training
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_radar_development
+	}
+	completion_reward = {
+		add_ideas = air_night1
+		army_experience = 30
+	}
+	x = 72
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_flying_like_butterfly
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_night_training
+		focus = NCH_defense_island
+	}
+	completion_reward = {
+		add_ideas = x #air_night2+air_school
+		add_tech_bonus = {
+			name = x
+			category = air_doctrine
+			bonus = 0.7
+			uses = 1
+		}
+		add_tech_bonus = {
+			name = x
+			category = air_doctrine
+			bonus = 0.5
+			uses = 1
+		}
+		#Открывает советника 
+	}
+	x = 74
+	y = 7
+
+}
+
+shared_focus = {
+	id = NCH_who_else_but_us
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			technology = paratroopers
+			bonus = 0.7
+			uses = 1
+		}
+		add_tech_bonus = {
+			name = x
+			technology = special_forces_paratroopers
+			bonus = 0.5
+			uses = 2
+		}
+	}
+	x = 77
+	y = 4
+
+}
+shared_focus = {
+	id = NCH_aisling_air_institute
+	icon = GFX_goal_unknown
+	cost = 15,00
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+	x = 81
+	y = 4
+
+	completion_reward = {
+		1209={
+			add_building_construction = {
+				type = air_facility
+				level = 1
+				province = 5230
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+			}
+			add_ideas = air_facility1
+		}
+	}
+}
+shared_focus = {
+	id = NCH_domestic_parts
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+	completion_reward = {
+		1209 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+		}
+		
+	}
+		add_ideas = air_production1
+	}
+	x = 78
+	y = 5
+
+}
+shared_focus = {
+	id = NCH_rocket_science
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_domestic_parts
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			category = rocketry
+			bonus = 0.4
+			uses = 3
+		}
+		669={
+			add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = rocket_site
+			level = 2
+			province = 10952
+		}
+	}
+	}
+	x = 77
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_hotter_thousands_suns
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_domestic_parts
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			category = nuclear
+			bonus = 1
+			uses = 2
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+	}
+	x = 79
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_experimental_developments
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_rocket_science
+		focus = NCH_hotter_thousands_suns
+	}
+	completion_reward = {
+		add_ideas = air_production2
+		add_tech_bonus = {
+			name = x
+			category = rocketry
+			bonus = 0.35
+			uses = 2
+		}
+		add_tech_bonus = {
+			name = x
+			category = cat_paratroopers_doctrine
+			bonus = 0.35
+			uses = 2
+		}
+		add_tech_bonus = {
+			name = x
+			technology = jet_engines
+			bonus = 0.35
+			uses = 2
+		}
+		
+	}
+	x = 78
+	y = 7
+
+}
+shared_focus = {
+	id = NCH_tactical_aviation
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_figher_aircraft
+	}
+	completion_reward = {
+		add_ideas = NCH_bomber1
+		add_tech_bonus = {
+			name = x
+			category = tactical_bomber
+			uses = 2
+			bonus = 0.7
+		}
+	}
+	x = 81
+	y = 5
+
+}
+shared_focus = {
+	id = NCH_figher_aircraft
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_tactical_aviation
+	}
+	completion_reward = {
+			add_ideas = NCH_fighter1
+			add_tech_bonus = {
+				name = x
+				category = light_fighter
+				uses = 2
+				bonus = 0.7
+			}
+	}
+	x = 83
+	y = 5
+
+}
+shared_focus = {
+	id = NCH_naval_bomber_project
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_tactical_aviation
+		focus = NCH_figher_aircraft
+	}
+	completion_reward = {
+		add_ideas = NCH_bomber2
+		add_tech_bonus = {
+			name = x
+			category = naval_bomber
+			uses = 2
+			bonus = 0.6
+		}
+	}
+	x = 81
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_air_support
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_figher_aircraft
+		focus = NCH_tactical_aviation
+	}
+	completion_reward = {
+		add_ideas = NCH_fighter2
+		add_tech_bonus = {
+			name = x
+			category = cas_bomber
+			uses = 2
+			bonus = 0.7
+		}
+}
+	x = 83
+	y = 6
+
+}
+shared_focus = {
+	id = NCH_sorry_as_bee
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_naval_bomber_project
+		focus = NCH_air_support
+	}
+	completion_reward = {
+		add_ideas = 1 #air_production2+NCH_bomber2/fighter2
+		air_experience = 50
+		add_tech_bonus = {
+			name = 1
+			category = air_doctrine
+			uses = 2
+			bonus = 0.5
+		}
+		add_timed_idea = {
+			idea = air_crew_surveys_spirit
+			days = 120
+		}
+		if = {
+			limit = {
+				has_completed_focus = NCH_tactical_aviation
+			}
+			add_ace = {
+				name = bomber
+				surname = Ace
+				callsign = Green
+				type = bomber_genius
+			}
+			else_if = {
+				limit = { 
+					has_completed_focus = NCH_figher_aircraft
+				}
+				add_ace = {
+					name = Fighter
+					surname = Ace
+					callsign = Green
+					type = fighter_genius
+				}
+			}
+		}
+	}
+	x = 81
+	y = 7
+
+}
+
+shared_focus = {
+	id = NCH_angry_hive
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = NCH_flying_like_butterfly
+	}
+	prerequisite = {
+		focus = NCH_sorry_as_bee
+	}
+	completion_reward = {
+		add_ideas = x #содеинение всех идей
+		air_experience = 150
+		#Открывает имбового  советника
+	}
+	x = 77
+	y = 8
+
+}

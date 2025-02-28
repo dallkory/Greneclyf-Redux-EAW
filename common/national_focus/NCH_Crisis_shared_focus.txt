@@ -559,8 +559,9 @@ Shared_focus = {
 	y = 13
 
 	completion_reward = {
-		
+		mark_focus_tree_layout_dirty = yes
 	}
+	
 }
 
 Shared_focus = {
