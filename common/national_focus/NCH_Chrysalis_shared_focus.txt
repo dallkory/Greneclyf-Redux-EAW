@@ -6,10 +6,16 @@ Shared_focus = {
 	y = 2
 
 	available = {
-		has_country_flag = NCH_queen_ambitions
+		or = {
+			has_country_flag = NCH_queen_hive_abmitions
+			has_completed_focus = NCH_time_to_look_further
+		}
 	}
 	allow_branch = {
-		has_completed_focus = NCH_time_to_look_further
+		or = {
+			has_country_flag = NCH_queen_hive_abmitions
+			has_completed_focus = NCH_time_to_look_further
+		}
 	}
 }
 

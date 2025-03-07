@@ -3,6 +3,17 @@
 
 ### DEBUG ###
 NCH_debug_decision = {
+	NCH_show_all_focuses = {
+		icon = d
+		
+		complete_effect = {
+			set_country_flag = NCH_hunger_starts
+			set_country_flag = NCH_crisis_end
+			set_country_flag = NCH_army_forces_allow
+			set_country_flag = NCH_queen_hive_abmitions
+		}
+	}
+
 	NCH_show_typographia = {
 		icon = d
 		

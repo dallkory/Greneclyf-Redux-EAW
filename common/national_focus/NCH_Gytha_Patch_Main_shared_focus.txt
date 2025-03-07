@@ -1,3 +1,13 @@
+
+#id = greneclyf
+#country = {
+#	factor = 0
+#	modifier = {
+#		add = 10
+#		tag = NCH
+#	}
+#}
+
 shared_focus = {
 	id = NCH_Queen_Gytha_Patch
 	icon = GFX_goal_unknown
@@ -6,10 +16,16 @@ shared_focus = {
 	y = 15
 
 	available = {
+		or = {
+		has_country_flag = NCH_crisis_end
 		has_completed_focus = NCH_final_crisis
+		}
 	}
 	allow_branch = {
-		has_completed_focus = NCH_final_crisis
+		or = {
+			has_country_flag = NCH_crisis_end
+			has_completed_focus = NCH_final_crisis
+		}
 	}
 }
 

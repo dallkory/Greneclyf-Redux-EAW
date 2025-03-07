@@ -6,16 +6,20 @@ Shared_focus = {
 	y = 8
 
 	available = {
-		has_country_flag = NCH_great_hunger_started
-		has_completed_focus = NCH_time_to_look_further
+		or = {
+			has_country_flag = NCH_hunger_starts
+			has_completed_focus = NCH_time_to_look_further
+		}
 	}
 	bypass = {
 		has_country_flag = NCH_hunger_starts
 	}
 	allow_branch = {
+		or = {
+		has_country_flag = NCH_hunger_starts
 		has_completed_focus = NCH_time_to_look_further
+		}
 	}
-
 }
 
 Shared_focus = {

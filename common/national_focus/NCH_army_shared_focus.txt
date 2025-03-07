@@ -6,10 +6,16 @@ shared_focus = {
 	y = 2
 
 	available = {
-		has_completed_focus = NCH_time_to_look_further
+		or = {
+			has_country_flag = NCH_army_forces_allow
+			has_completed_focus = NCH_time_to_look_further
+		}
 	}
 	allow_branch = {
+		or = {
 		has_completed_focus = NCH_time_to_look_further
+		has_country_flag = NCH_army_forces_allow
+		}
 	}
 	
 	completion_reward = {
@@ -1461,6 +1467,7 @@ shared_focus = {
 	}
 }	
 
+### AIR FORCES ###
 shared_focus = {
 	id = NCH_and_in_the_air
 	icon = GFX_goal_unknown
@@ -1481,6 +1488,7 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_flying_school 
 	icon = GFX_goal_unknown
@@ -1502,6 +1510,7 @@ shared_focus = {
 	y = 4
 
 }
+
 shared_focus = {
 	id = NCH_radar_development
 	icon = GFX_goal_unknown
@@ -1527,13 +1536,14 @@ shared_focus = {
 		add_building_construction = {
 			type = arms_factory
 			level = 1
+			}
 		}
-	}
 	}
 	x = 72
 	y = 5
 
 }
+
 shared_focus = {
 	id = NCH_build_new_airbases
 	icon = GFX_goal_unknown
@@ -1567,6 +1577,7 @@ shared_focus = {
 	y = 5
 
 }
+
 shared_focus = {
 	id = NCH_defense_island
 	icon = GFX_goal_unknown
@@ -1604,6 +1615,7 @@ shared_focus = {
 	y = 6
 
 }
+
 shared_focus = {
 	id = NCH_night_training
 	icon = GFX_goal_unknown
@@ -1619,6 +1631,7 @@ shared_focus = {
 	y = 6
 
 }
+
 shared_focus = {
 	id = NCH_flying_like_butterfly
 	icon = GFX_goal_unknown
@@ -1673,6 +1686,7 @@ shared_focus = {
 	y = 4
 
 }
+
 shared_focus = {
 	id = NCH_aisling_air_institute
 	icon = GFX_goal_unknown
@@ -1698,6 +1712,7 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_domestic_parts
 	icon = GFX_goal_unknown
@@ -1724,6 +1739,7 @@ shared_focus = {
 	y = 5
 
 }
+
 shared_focus = {
 	id = NCH_rocket_science
 	icon = GFX_goal_unknown
@@ -1740,12 +1756,12 @@ shared_focus = {
 		}
 		669={
 			add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-			type = rocket_site
-			level = 2
-			province = 10952
+			add_building_construction = {
+				type = rocket_site
+				level = 2
+				province = 10952
+			}
 		}
-	}
 	}
 	x = 77
 	y = 6
