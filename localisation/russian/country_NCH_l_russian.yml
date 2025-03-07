@@ -1,6 +1,10 @@
 ﻿l_russian:
 
  NCH_River:0 "Конкордат Восточной Грифонии"
+ 
+ # Traits #
+ The_Steel_lady:0 = "Стальная воля"
+ The_naive_reformer:0 = "Наивный реформатор"
 
  ### FOCUSES ###
  # Pre crisis #

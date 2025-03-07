@@ -3,7 +3,7 @@
 
 ### DEBUG ###
 NCH_debug_decision = {
-	NCH_show_all_focuses = {
+	NCH_show_all_focuses_GYTHA = {
 		icon = d
 		
 		complete_effect = {
@@ -23,8 +23,18 @@ NCH_debug_decision = {
 	}
 	NCH_create_country = {
 		icon = d
-		
 		complete_effect = {
+			remove_country_leader_role = yes
+
+			create_country_leader = {
+				name = NCH_Gytha_iron_lady
+				picture = GFX_NCH_Steel_Gytha
+				traits = {
+					The_Steel_lady
+				}
+				ideology = conservatism
+			}
+
 			NCH = {
 				set_cosmetic_tag = NCH_River
 				annex_country = {

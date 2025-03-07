@@ -21,6 +21,7 @@ shared_focus = {
 		has_completed_focus = NCH_final_crisis
 		}
 	}
+	
 	allow_branch = {
 		or = {
 			has_country_flag = NCH_crisis_end

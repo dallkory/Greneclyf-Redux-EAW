@@ -3,18 +3,36 @@ characters={
 	### REDUX ###
 
 	# New Leaders #
+
+	NCH_queen_gytha = {
+		name=NCH_queen_gytha
+		portraits={
+			civilian={
+				large="gfx/leaders/NCH/Queen.tga"
+			}
+		}
+		country_leader={
+			desc="QUEEN_GYTHA_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = { The_naive_reformer }
+			id=-1
+		}
+		gender = female
+	}
 	
 	NCH_Gytha_iron_lady = {
 		name = Gytha_iron_lady
 		portraits = {
 			civilian={ 
-				large=""
+				large = "gfx/leaders/NCH/Steel_Gytha.tga"
 			}
 		}
 		country_leader = {
 			desc = "Gytha_iron_lady_desc"
-			ideology =
-			expire = 
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits = { steel_lady }
 			id = -1
 		}
 		gender = female
@@ -616,22 +634,6 @@ characters={
 
    	 # Submod #
     
-	NCH_queen_gytha={
-		name=NCH_queen_gytha
-		portraits={
-			civilian={
-				large="gfx/leaders/NCH/Queen.tga"
-			}
-		}
-		country_leader={
-			desc="QUEEN_GYTHA_DESC"
-			ideology=conservatism
-			expire="1965.1.1.1"
-			traits = { The_naive_reformer }
-			id=-1
-		}
-		gender = female
-	}
 	NCH_oiren_of_oir={
 		name=NCH_oiren_of_oir
 		portraits={
