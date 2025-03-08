@@ -1,10 +1,13 @@
 ﻿l_russian:
-
- NCH_River:0 "Конкордат Восточной Грифонии"
+ # Leaders #
+  NCH_queen_gytha:0 "Королева Гита" 
+  NCH_Gytha_iron_lady:0 ""
+ # Cosmetic tag #
+  NCH_River:0 "Конкордат Восточной Грифонии"
  
  # Traits #
- The_Steel_lady:0 = "Стальная воля"
- The_naive_reformer:0 = "Наивный реформатор"
+  The_Steel_lady:0 "Стальная воля"
+  The_naive_reformer:0 "Наивный реформатор"
 
  ### FOCUSES ###
  # Pre crisis #
