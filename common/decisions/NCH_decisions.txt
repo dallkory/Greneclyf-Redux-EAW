@@ -11,6 +11,8 @@ NCH_debug_decision = {
 			set_country_flag = NCH_crisis_end
 			set_country_flag = NCH_army_forces_allow
 			set_country_flag = NCH_queen_hive_abmitions
+
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -541,11 +543,26 @@ NCH_typography_category = {
 			has_government = democratic
 		}
 		visible = {
-			has_government = democratic
+			and = {
+				has_government = democratic
+				or = {
+					country_exists = WAT
+					country_exists = FBK
+					country_exists = FIR
+					country_exists = DMT
+					country_exists = BAK
+					country_exists = DEP
+					country_exists = LCT
+					country_exists = RCT
+					country_exists = NIM
+					country_exists = WIT
+					country_exists = FRE
+				}
+			}
 		}
 
 		modifier = {
-			political_power_cost = 0.3
+			political_power_cost = 0.25
 		}
 
 		complete_effect = {
