@@ -100,7 +100,7 @@ characters={
 		desc = Valha_Ksilokopa_desc 
 		portraits = {
 			army = {
-				small = ""
+				small = "gfx/interface/ideas/Advisors/NCH/Valha.tga"
 			}
 		}
 
