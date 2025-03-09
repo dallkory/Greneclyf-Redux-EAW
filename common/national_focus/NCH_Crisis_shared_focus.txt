@@ -573,7 +573,7 @@ Shared_focus = {
 			id = greneclyf_redux.33
 			days = 0
 		}
-		
+
 		mark_focus_tree_layout_dirty = yes
 	}
 	

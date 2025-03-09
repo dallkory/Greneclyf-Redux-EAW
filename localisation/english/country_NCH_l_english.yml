@@ -251,11 +251,11 @@
   NCH_Basalt_Shaw:0 "Lord Protector Basalt Shaw"
   NCH_Basalt_Shaw_desc:0 "A living symbol of the unity of the noble families of Greencliffe. His origins come from both branches at the same time. A brave career officer and a dangerous duelist. He has established himself as the best swordsman in the country, but his greatest asset is his unswerving loyalty to the royal families of Oir and Lehmann. The queen's personal bodyguard."
 
-  NCH_Overpopulation:0 "Overpopulation"
-  NCH_Overpopulation_desc:0 ""
+  NCH_Overpopulation:0 "Overpopulation Crisis"
+  NCH_Overpopulation_desc:0 "The 990s brought a demographic explosion to the island, as Eithne’s reforms filled her subjects with newfound hope. Yet, years later, that wave of optimism has become a heavy burden: there are not enough schools for the growing generations — let alone jobs for the adults..."
 
-  NCH_luddites_1:0 "A strong Luddite movement"
-  NCH_luddites_1_desc:0 ""
+  NCH_luddites_1:0 "Luddite Riots"
+  NCH_luddites_1_desc:0 "Queen Eithne’s industrial revolution proved to be... somewhat hasty. Machines replaced workers with alarming speed, offering no new roles in return. As a result, our nation suffers not only from mass unemployment but also from the violent assaults of jobless drone gangs on manufactories."
 
   NCH_luddites_2:0 "A weak Luddite movement"
 
