@@ -181,6 +181,23 @@ ideas = {
 
 		### CRISIS ###
 
+		NCH_emergecy_plan_idea = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_weekly = 0.003
+				power_balance_weekly = 0.001
+			}
+		}
+
 		NCH_protests_on_street = {
 			picture = GFX_unknow
 			allowed = {
@@ -210,6 +227,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				#political_power_factor = -0.15
 				local_resources_factor = -0.2
 				production_oil_factor = -0.5 
 				production_speed_buildings_factor = -0.25

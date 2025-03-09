@@ -314,18 +314,6 @@ focus_tree = {
 	}
 }
 
-	#if = {
-	#	limit = {
-	#		has_power_balance = {
-	#			id = YAK_starting_bop
-	#		}
-	#	}
-	#	add_power_balance_value = {
-	#		id = YAK_starting_bop
-	#		value = -0.16
-	#	}
-	#}
-
 	### CRISIS BRANCH ###
 	
 

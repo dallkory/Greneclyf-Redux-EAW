@@ -33,6 +33,7 @@ Shared_focus = {
 	y = 9
 
 	completion_reward = {
+		add_political_power = 30
 		add_stability = 0.05
 		add_timed_idea = {
 			idea = NCH_mre_cards_help
@@ -250,6 +251,10 @@ Shared_focus = {
 	completion_reward = {
 		add_political_power = 30
 		add_stability = -0.1
+		add_timed_idea = {
+			idea = NCH_emergecy_plan_idea
+			days = 90
+		}
 
 		if = {
 			limit = {
@@ -316,6 +321,7 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_political_power = 30
 		add_stability = 0.05
 		country_event = {
 			id = greneclyf_redux.27
@@ -563,6 +569,11 @@ Shared_focus = {
 	y = 13
 
 	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.33
+			days = 0
+		}
+		
 		mark_focus_tree_layout_dirty = yes
 	}
 	

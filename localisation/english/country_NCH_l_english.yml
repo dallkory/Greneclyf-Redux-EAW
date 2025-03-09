@@ -1,8 +1,14 @@
 ﻿l_english:
+ # Leaders #
+  NCH_queen_gytha:0 "Queen Gytha" 
+  NCH_Gytha_iron_lady:0 "Iron lady Gytha"
 
- NCH_River:0 "River Union"
-
+ # Cosmetic tag #
   NCH_River:0 "Concordat of Eastern Gryphonia"
+ 
+ # Traits #
+  The_Steel_lady:0 "Steel will"
+  The_naive_reformer:0 "Naive reformer"
 
  ### FOCUSES ###
  # Pre crisis #

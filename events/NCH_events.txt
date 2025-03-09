@@ -757,6 +757,19 @@ add_namespace = greneclyf_main
 		}
 	}
 
+	country_event = {
+		id = greneclyf_redux.33
+		title = greneclyf_redux.33.t
+		desc = greneclyf_redux.33.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.33.a
+		}
+	}
+
 	### FORCES ###
 
 	country_event = {
