@@ -201,11 +201,11 @@
 
   greneclyf_redux.8.a:0 "«Miss Valga, congratulations — your project is approved.»"
 
-  greneclyf_redux.10.t:0 "Случилась реальность"
-  greneclyf_redux.10.d:0 "«Прости, не мог бы ты повторить?» – с дергающимся глазом обратилась Гита к своему лорду-протектору.\n\n«Голод, Ваше Величество. В Фарбруке был неудачный сезон рыбной ловли. Мы надеялись закупить того, чего нам не хватило, у Бакары, но пошлины Речной Коалиции наша казна потянуть не способна. Я боюсь, страна стоит на пороге того, что случилось 800 лет назад...»\n\nГита ударила копытами стол, гневно пыхтя: «У нас всё ещё есть время! Есть шанс для манёвра! Шоу, созови Эряхтас немедленно! Позови Ойрен!»\n\nБазальт нахмурил брови, понимая серьезность ситуации, и, откланявшись, поспешил связываться с первыми лицами государства.\n\nГита увалилась в кресло, смотря на свои трясущиеся копыта. Она знает, что такое голод, весь остров хорошо усвоил урок Первого Великого Голода 800 лет назад, убедившись, что потомки не забудут ужасные картины истощенных дронов, поедающих друг друга с отвращением на их лицах. Одна мысль о подобном заставила Гиту пролить слезу, жадно хватая воздух в панике, пока она не сделала большой вдох и выдох.\n\n«Я не дам этому ужасу повториться. Чего бы то ни стоило, мои маленькие подданные не будут свидетелями второго кошмара»"
+  greneclyf_redux.10.t:0 "Reality Strikes "
+  greneclyf_redux.10.d:0 ""I beg your pardon, could you repeat that?" Gytha asked her Lord Protector, her eye twitching.\n\n"Famine, Your Majesty. Farbrook had an unfortunate fishing season. We had hoped to purchase what we lacked from Bakara, but the River Coalition’s tariffs are beyond what our treasury can afford. I fear the country stands on the brink of what happened 800 years ago..."\n\nGytha slammed her hooves on the table, huffing angrily. "We still have time! There’s still room to maneuver! Shaw, summon the Oireachtas immediately! Bring Oiren!"\n\nBasalt nodded, grasping the gravity of the situation, and with a curt bow, he rushed to contact the kingdom’s key officials.\n\nGytha collapsed into her chair, staring at her trembling hooves. She knew what famine was. The entire island had learned the lesson of the First Great Famine 800 years ago, ensuring that future generations would never forget the horrific images of emaciated drones, devouring each other with disgust in their eyes. The mere thought of it made her tear up, gasping for breath in rising panic — until she forced herself to take a deep inhale and exhale.\n\n"I will not let this horror happen again. No matter the cost, my little subjects will not witness a second nightmare.""
 
-  greneclyf_redux.10.a:0 "«Или я не королева из рода Леманн!» «Второй Великий Голод начался...»"
-  greneclyf_redux.10.b:0 "§R«Возможно, сдаться не самый худший вариант?»"
+  greneclyf_redux.10.a:0 "«Or I am no queen of Clann Leamhan!» («The Second Great Famine has begun...»)"
+  greneclyf_redux.10.b:0 "§R«Perhaps giving up isn't the worst option?»"
 
   greneclyf_redux.9.t:0 "Время смотреть дальше"
   greneclyf_redux.9.d:0 ""
@@ -217,8 +217,8 @@
 
   greneclyf_redux.16.a:0 "«I'm just a broker...»"
 
-  greneclyf_redux.17.a:0 "Bored Captain"
-  greneclyf_redux.17.a:0 "The caped pony grinned as he noticed Her Majesty's Lord Protector approaching him. He finished his cider, removed his headdress, and nodded affably.\n\n“Lord Protector! It is a great honor to meet you. What can I do for you?”Basalt looked him over skeptically, but got to the point nonetheless:\n\n“Greetings, Captain Butler. I'm here on behalf of Her Excellency the Chief Justice. She wants to know why the ORC sent her police regiment here instead of relying on the Guard.”The captain's smile faded slightly.\n\n“To be honest, lord, they just don't trust you,” he pronounced, looking at the changeling. - “The formal reason is to ensure the safety of all international guests and other vague wording. But at its core, it's all about trust. Well, the lack of it, yee-haw, yee-haw.”\n\n“You are... quite frank, Captain. While that deserves respect, the situation itself is depressing.”\n\nThe pony nodded understandingly, looking lazily over the croup of passing citizens, then looked at Lord Shaw again.\n\n“Your nobility, I'll be honest: I don't give a damn about politics. I have three passions in my life - booze, mares, and military prowess. All three things I can easily find here. And I offer you, as a representative of the latter, friendship. I respect you as an officer respects a commander-in-chief, and I guarantee that I will keep you in the dark from the General Staff about what's going on in Saora. Unless, of course, you interfere in the affairs of the zone directly - so as not to scare off the peddlers, ee hee hee. Agreed?”\n\nThe pony grinned again, but Shaw saw no threat in that grin. He was more of a mischievous colt, eager to do a little mischief to his superiors for reasons unknown to him.\n\nBasalt exhaled.\n\n“Well, since the only alternative is for the Guard to storm this so-called zone and sever ties with the Coalition, I have no choice. But I expect the utmost honesty, Captain.”"
+  greneclyf_redux.17.t:0 "Bored Captain"
+  greneclyf_redux.17.d:0 "The caped pony grinned as he noticed Her Majesty's Lord Protector approaching him. He finished his cider, removed his headdress, and nodded affably.\n\n“Lord Protector! It is a great honor to meet you. What can I do for you?”Basalt looked him over skeptically, but got to the point nonetheless:\n\n“Greetings, Captain Butler. I'm here on behalf of Her Excellency the Chief Justice. She wants to know why the ORC sent her police regiment here instead of relying on the Guard.”The captain's smile faded slightly.\n\n“To be honest, lord, they just don't trust you,” he pronounced, looking at the changeling. - “The formal reason is to ensure the safety of all international guests and other vague wording. But at its core, it's all about trust. Well, the lack of it, yee-haw, yee-haw.”\n\n“You are... quite frank, Captain. While that deserves respect, the situation itself is depressing.”\n\nThe pony nodded understandingly, looking lazily over the croup of passing citizens, then looked at Lord Shaw again.\n\n“Your nobility, I'll be honest: I don't give a damn about politics. I have three passions in my life - booze, mares, and military prowess. All three things I can easily find here. And I offer you, as a representative of the latter, friendship. I respect you as an officer respects a commander-in-chief, and I guarantee that I will keep you in the dark from the General Staff about what's going on in Saora. Unless, of course, you interfere in the affairs of the zone directly - so as not to scare off the peddlers, ee hee hee. Agreed?”\n\nThe pony grinned again, but Shaw saw no threat in that grin. He was more of a mischievous colt, eager to do a little mischief to his superiors for reasons unknown to him.\n\nBasalt exhaled.\n\n“Well, since the only alternative is for the Guard to storm this so-called zone and sever ties with the Coalition, I have no choice. But I expect the utmost honesty, Captain.”"
 
   greneclyf_redux.17.a:0 "«From now on, there will be both overt and covert law here»"
   
@@ -258,6 +258,14 @@
   NCH_start_friendship_with_pony_hills:0 "§5Открывает доступ к решениям по улушчению отношений и торговле с пони холмов§"
 
   ### IDEAS ###
+ 
+  NCH_hunger_bop:0 "The Crisis of the Second Great Famine"
+  NCH_hunger_acute_phase:0 "Acute phase of the crisis"
+
+  NCH_protests_on_street:0 "Rioting in the streets"
+  NCH_massive_unemployed:0 "Rising unemployment"
+  NCH_food_shortage:0 "Food shortages"
+
   NCH_Basalt_Shaw:0 "Lord Protector Basalt Shaw"
   NCH_Basalt_Shaw_desc:0 "A living symbol of the unity of the noble families of Greencliffe. His origins come from both branches at the same time. A brave career officer and a dangerous duelist. He has established himself as the best swordsman in the country, but his greatest asset is his unswerving loyalty to the royal families of Oir and Lehmann. The queen's personal bodyguard."
 
