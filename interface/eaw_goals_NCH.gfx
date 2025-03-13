@@ -1,9 +1,20 @@
 spriteTypes = {
+	### REDUX ###
+	spriteType = {
+		name = "GFX_goal_Enyas_legacy"
+		textureFile = "gfx/interface/goals/NCH/Enyas_legacy.dds"
+	}
 
-	#### Equestria At War
+	spriteType = {
+		name = "GFX_goal_new_housing"
+		textureFile = "gfx/interface/goals/NCH/New_Housing.png"
+	}
 
+
+
+
+	### ###
 	# Submod #
-
 	spriteType = {
 		name = "GFX_goal_hart_side"
 		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"

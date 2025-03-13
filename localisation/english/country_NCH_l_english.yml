@@ -3,8 +3,12 @@
   NCH_queen_gytha:0 "Queen Gytha" 
   NCH_Gytha_iron_lady:0 "Iron lady Gytha"
 
+ # Characters #
+  Valha_Ksilokopa:0 "Ms. Valga"
+  great_architecter:0 "Hive Architect"
+
  # Cosmetic tag #
-  NCH_River:0 "Concordat of Eastern Gryphonia"
+  NCH_River:0 "Concordat of Eastern Griffonia"
  
  # Traits #
   The_Steel_lady:0 "Steel will"

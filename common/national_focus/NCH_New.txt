@@ -16,10 +16,11 @@ focus_tree = {
 	continuous_focus_position = { x = 150 y = 1300 }
 
 	# PRE CRISIS BRANCH #
+	
 
 	focus = {
 		id = NCH_legacy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Enyas_legacy
 		cost = 1
 		x = 33
 		y = 2
@@ -39,7 +40,8 @@ focus_tree = {
 
 	focus = {
 		id = NCH_parliament_convocation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Enyas_legacy
+	
 		cost = 2
 		prerequisite = {
 			focus = NCH_legacy
@@ -101,7 +103,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_new_housing
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_housing
 		cost = 5
 		prerequisite = {
 			focus = NCH_divided_house
