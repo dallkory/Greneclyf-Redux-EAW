@@ -9,6 +9,10 @@ focus_tree = {
 		}
 	}
 
+	#cancel_if_invalid = yes
+    #continue_if_invalid = no
+    #available_if_capitulated = no
+
 	shared_focus = NCH_beginning_of_crisis
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch
@@ -26,10 +30,6 @@ focus_tree = {
 		x = 33
 		y = 2
 
-        #cancel_if_invalid = yes
-        #continue_if_invalid = no
-        #available_if_capitulated = no
-
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
@@ -45,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_parliament_convocation
-		icon = GFX_unknow
+		icon = GFX_goal_unknown
 	
 		cost = 2
 		prerequisite = {
@@ -321,13 +321,4 @@ focus_tree = {
 		}
 	}
 }
-
-	### CRISIS BRANCH ###
-	
-
-
-
-	### FORCES ###
-	
-	### MAIN PATCH ###
 	
