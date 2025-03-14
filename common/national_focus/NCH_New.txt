@@ -8,22 +8,27 @@ focus_tree = {
 			tag = NCH
 		}
 	}
+
 	shared_focus = NCH_beginning_of_crisis
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch
 	shared_focus = NCH_rule_greneclyf
+
 	default = no
 	continuous_focus_position = { x = 150 y = 1300 }
 
 	# PRE CRISIS BRANCH #
-	
-
 	focus = {
 		id = NCH_legacy
-		icon = GFX_goal_Enyas_legacy
+		icon = GFX_goal_enyas_legacy
+
 		cost = 1
 		x = 33
 		y = 2
+
+        #cancel_if_invalid = yes
+        #continue_if_invalid = no
+        #available_if_capitulated = no
 
 		completion_reward = {
 			add_stability = 0.05
@@ -40,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_parliament_convocation
-		icon = GFX_goal_Enyas_legacy
+		icon = GFX_unknow
 	
 		cost = 2
 		prerequisite = {
@@ -64,6 +69,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = NCH_divided_house
@@ -283,7 +289,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_time_to_look_further
-		icon = GFX_goal_unknown
+		icon = GFX_unknow
 		cost = 8
 		
 

@@ -1,19 +1,19 @@
 spriteTypes = {
 	### REDUX ###
 	spriteType = {
-		name = "GFX_goal_Enyas_legacy"
-		textureFile = "gfx/interface/goals/NCH/Enyas_legacy.dds"
+		name = "GFX_goal_enyas_legacy"
+		textureFile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
 	}
 
 	spriteType = {
 		name = "GFX_goal_new_housing"
-		textureFile = "gfx/interface/goals/NCH/New_Housing.png"
+		textureFile = "gfx/interface/goals/NCH/goal_new_Housing.dds"
 	}
 
 
 
 
-	### ###
+
 	# Submod #
 	spriteType = {
 		name = "GFX_goal_hart_side"
