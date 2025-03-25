@@ -6,11 +6,12 @@ spriteTypes = {
 		name = "GFX_idea_overpopulation"
 		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
 	}
-
 	spriteType = {
-		name = x
-		textureFile = 
+		name = "GFX_goal_Enyas_legacy"
+		textureFile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
 	}
+
+
 
 
 	# Submod #

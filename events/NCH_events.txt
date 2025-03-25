@@ -400,10 +400,10 @@ add_namespace = greneclyf_main
 				id = NCH_hunger_bop
 				set_default = yes
 			}
-			country_event = {
-				id = greneclyf_redux.11
-				days = 15
-			}
+			#country_event = {
+			#	id = greneclyf_redux.11
+			#	days = 15
+			#}
 			set_country_flag = NCH_hunger_starts
 		}
 
@@ -491,6 +491,7 @@ add_namespace = greneclyf_main
 			name = greneclyf_redux.15.a
 		}
 	}
+	
 	# SAOR liberty trade zone #
 	country_event = {
 		id = greneclyf_redux.16

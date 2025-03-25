@@ -117,7 +117,7 @@ characters={
 				original_tag = NCH
 			}
 			traits = {
-				great_architect
+				great_architecter
 			}
 		}
 	}

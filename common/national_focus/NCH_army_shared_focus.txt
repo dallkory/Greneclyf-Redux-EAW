@@ -1198,6 +1198,7 @@ shared_focus = {
 
 	completion_reward = {
 		set_country_flag = NCH_right_land_forces
+		add_manpower = 20000
 		army_experience = 25
 
 		add_tech_bonus = {

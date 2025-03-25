@@ -506,6 +506,11 @@ Shared_focus = {
 			id = NCH_hunger_bop
 			value = 0.075
 		}
+
+		country_event = {
+			id = greneclyf_redux.16
+			days = 0
+		}
 	}
 }
 
