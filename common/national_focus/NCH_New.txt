@@ -45,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_parliament_convocation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Summoning_of_the_Oireachtas
 	
 		cost = 2
 		prerequisite = {
@@ -73,7 +73,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_divided_house
-		icon = GFX_goal_unknown
+		icon = GFX_goal_House_Divided
 		cost = 2
 		prerequisite = {
 			focus = NCH_legacy

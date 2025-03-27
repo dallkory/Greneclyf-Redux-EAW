@@ -10,9 +10,18 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/goal_new_Housing.dds"
 	}
 
+	spriteType = {
+		name = "GFX_goal_House_Divided"
+		textureFile = "gfx/interface/goals/NCH/A_House_Divided.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Summoning_of_the_Oireachtas"
+		textureFile = "gfx/interface/goals/NCH/goal_The_Summoning_of_the_Oireachtas.dds"
+	}
 
 
-
+	
 
 	# Submod #
 	spriteType = {
