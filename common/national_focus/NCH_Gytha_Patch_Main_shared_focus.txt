@@ -30,6 +30,7 @@ shared_focus = {
 	}
 }
 
+### LOCAL POLITICS ###
 shared_focus = {
 	id = NCH_reforms_after_storm
 	icon = GFX_goal_unknown
@@ -41,6 +42,7 @@ shared_focus = {
 	y = 16
 
 }
+
 shared_focus = {
 	id = NCH_patch_to_prosperty
 	icon = GFX_goal_unknown
@@ -52,6 +54,7 @@ shared_focus = {
 	y = 17
 
 }
+
 shared_focus = {
 	id = NCH_education_reform
 	icon = GFX_goal_unknown
@@ -63,6 +66,7 @@ shared_focus = {
 	y = 18
 
 }
+
 shared_focus = {
 	id = NCH_civil_rights_reform
 	icon = GFX_goal_unknown
@@ -74,6 +78,7 @@ shared_focus = {
 	y = 19
 
 }
+
 shared_focus = {
 	id = NCH_health_care_reform
 	icon = GFX_goal_unknown
@@ -85,6 +90,22 @@ shared_focus = {
 	y = 18
 
 }
+
+shared_focus = {
+	id = NCH_blosmport_hive
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_education_reform
+	}
+	prerequisite = {
+		focus = NCH_health_care_reform
+	}
+	x = 17
+	y = 19
+
+}
+
 shared_focus = {
 	id = NCH_birth_control
 	icon = GFX_goal_unknown
@@ -99,6 +120,44 @@ shared_focus = {
 	y = 19
 
 }
+
+shared_focus = {
+	id = NCH_new_instituts
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_civil_rights_reform
+	}
+	prerequisite = {
+		focus = NCH_blosmport_hive
+	}
+	mutually_exclusive = {
+		focus = NCH_traditional_way_of_life
+	}
+	x = 16
+	y = 20
+
+}
+
+shared_focus = {
+	id = NCH_traditional_way_of_life
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_blosmport_hive
+	}
+	prerequisite = {
+		focus = NCH_birth_control
+	}
+	mutually_exclusive = {
+		focus = NCH_new_instituts
+	}
+	x = 18
+	y = 20
+
+}
+
+# LEFT #
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_unknown
@@ -110,6 +169,8 @@ shared_focus = {
 	y = 17
 
 }
+
+# CENTRAL #
 shared_focus = {
 	id = NCH_first_constitution
 	icon = GFX_goal_unknown
@@ -122,6 +183,7 @@ shared_focus = {
 	y = 18
 
 }
+
 shared_focus = {
 	id = NCH_from_chaos
 	icon = GFX_goal_unknown
@@ -133,6 +195,7 @@ shared_focus = {
 	y = 19
 
 }
+
 shared_focus = {
 	id = NCH_form_new_govermant
 	icon = GFX_goal_unknown
@@ -144,6 +207,7 @@ shared_focus = {
 	y = 20
 
 }
+
 shared_focus = {
 	id = NCH_reflecting_the_past
 	icon = GFX_goal_unknown
@@ -155,6 +219,7 @@ shared_focus = {
 	y = 20
 
 }
+
 shared_focus = {
 	id = NCH_to_the_new_order
 	icon = GFX_goal_unknown
@@ -169,6 +234,37 @@ shared_focus = {
 	y = 21
 
 }
+
+shared_focus = {
+	id = NCH_save_clans_system
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_to_the_new_order
+	}
+	mutually_exclusive = {
+		focus = NCH_hereditary_monarchy
+	}
+	x = 21
+	y = 22
+
+}
+
+shared_focus = {
+	id = NCH_hereditary_monarchy
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_to_the_new_order
+	}
+	mutually_exclusive = {
+		focus = NCH_save_clans_system
+	}
+	x = 23
+	y = 22
+
+}
+
 shared_focus = {
 	id = NCH_bee_productivity
 	icon = GFX_goal_unknown
@@ -180,6 +276,7 @@ shared_focus = {
 	y = 18
 
 }
+
 shared_focus = {
 	id = NCH_businesses_do_not_stand_idle
 	icon = GFX_goal_unknown
@@ -191,6 +288,7 @@ shared_focus = {
 	y = 18
 
 }
+
 shared_focus = {
 	id = NCH_brood_of_working_drones
 	icon = GFX_goal_unknown
@@ -220,6 +318,7 @@ shared_focus = {
 	y = 19
 
 }
+
 shared_focus = {
 	id = NCH_economics_of_friendship
 	icon = GFX_goal_unknown
@@ -253,6 +352,7 @@ shared_focus = {
 	y = 19
 
 }
+
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_unknown
@@ -271,6 +371,8 @@ shared_focus = {
 
 }
 
+### MAIN PATCH ###
+
 shared_focus = {
 	id = NCH_dreems_of_more
 	icon = GFX_goal_unknown
@@ -283,7 +385,7 @@ shared_focus = {
 
 }
 
-	shared_focus = {
+shared_focus = {
 	id = NCH_friends_and_allies
 	icon = GFX_goal_unknown
 	cost = 10,00
@@ -294,6 +396,7 @@ shared_focus = {
 	y = 17
 
 }
+
 shared_focus = {
 	id = NCH_agents_stand_by
 	icon = GFX_goal_unknown
@@ -305,6 +408,7 @@ shared_focus = {
 	y = 17
 
 }
+
 shared_focus = {
 	id = NCH_under_the_flag_of_freedom
 	icon = GFX_goal_unknown
@@ -556,6 +660,7 @@ shared_focus = {
 	y = 21
 
 }
+
 shared_focus = {
 	id = NCH_our_values
 	icon = GFX_goal_unknown
@@ -568,82 +673,6 @@ shared_focus = {
 
 }
 
-shared_focus = {
-	id = NCH_blosmport_hive
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_education_reform
-	}
-	prerequisite = {
-		focus = NCH_health_care_reform
-	}
-	x = 17
-	y = 19
-
-}
-shared_focus = {
-	id = NCH_new_instituts
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_civil_rights_reform
-	}
-	prerequisite = {
-		focus = NCH_blosmport_hive
-	}
-	mutually_exclusive = {
-		focus = NCH_traditional_way_of_life
-	}
-	x = 16
-	y = 20
-
-}
-shared_focus = {
-	id = NCH_traditional_way_of_life
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_blosmport_hive
-	}
-	prerequisite = {
-		focus = NCH_birth_control
-	}
-	mutually_exclusive = {
-		focus = NCH_new_instituts
-	}
-	x = 18
-	y = 20
-
-}
-shared_focus = {
-	id = NCH_save_clans_system
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_to_the_new_order
-	}
-	mutually_exclusive = {
-		focus = NCH_hereditary_monarchy
-	}
-	x = 21
-	y = 22
-
-}
-shared_focus = {
-	id = NCH_hereditary_monarchy
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_to_the_new_order
-	}
-	mutually_exclusive = {
-		focus = NCH_save_clans_system
-	}
-	x = 23
-	y = 22
-
-}
 shared_focus = {
 	id = NCH_we_are_ready
 	icon = GFX_goal_unknown

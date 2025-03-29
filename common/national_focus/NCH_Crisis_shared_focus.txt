@@ -113,6 +113,12 @@ Shared_focus = {
 	y = 10
 
 	completion_reward = {
+		668 = {
+			add_building_construction = {
+				type = magical_quarry
+				level = 1
+			}
+		}
 		set_country_flag = NCH_obsidian_export
 
 		custom_effect_tooltip = NCH_start_obsisian_export
@@ -293,6 +299,7 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_political_power = 50
 		add_stability = 0.075
 		country_event = {
 			id = greneclyf_redux.28
@@ -411,6 +418,7 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_political_power = 40
 		add_power_balance_value = {
 			id = NCH_hunger_bop
 			value = 0.05

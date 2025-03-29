@@ -1,4 +1,5 @@
 spriteTypes = {
+	# REDUX #
 	SpriteType = {
 		name = "GFX_goal_enyas_legacy"
 		texturefile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
@@ -30,7 +31,14 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
+
+
+
+
+
+
+	# ORIGINAL #
+
 	SpriteType = {
 		name = "GFX_goal_nch_farris_shine"
 		texturefile = "gfx/interface/goals/NCH/goal_nch_farris.dds"
