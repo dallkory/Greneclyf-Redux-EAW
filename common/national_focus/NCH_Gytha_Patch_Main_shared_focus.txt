@@ -157,19 +157,6 @@ shared_focus = {
 
 }
 
-# LEFT #
-shared_focus = {
-	id = NCH_economic_revival
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_reforms_after_storm
-	}
-	x = 25
-	y = 17
-
-}
-
 # CENTRAL #
 shared_focus = {
 	id = NCH_first_constitution
@@ -265,6 +252,19 @@ shared_focus = {
 
 }
 
+# LEFT #
+shared_focus = {
+	id = NCH_economic_revival
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_reforms_after_storm
+	}
+	x = 25
+	y = 17
+
+}
+
 shared_focus = {
 	id = NCH_bee_productivity
 	icon = GFX_goal_unknown
@@ -314,6 +314,21 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_bee_productivity
 	}
+	x = 29
+	y = 19
+
+}
+
+shared_focus = {
+	id = NCH_ensure_full_employment
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_businesses_do_not_stand_idle
+	}
+	prerequisite = {
+		focus = NCH_bee_productivity
+	}
 	x = 27
 	y = 19
 
@@ -337,21 +352,6 @@ shared_focus = {
 
 }
 
-
-shared_focus = {
-	id = NCH_ensure_full_employment
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_businesses_do_not_stand_idle
-	}
-	prerequisite = {
-		focus = NCH_bee_productivity
-	}
-	x = 29
-	y = 19
-
-}
 
 shared_focus = {
 	id = NCH_mobilizing_the_economy
