@@ -352,7 +352,6 @@ shared_focus = {
 
 }
 
-
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_unknown
