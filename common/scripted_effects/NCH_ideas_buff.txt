@@ -1,0 +1,78 @@
+NCH_air_school_buff_effect = {
+
+	if = {
+		limit = {
+			has_idea = NCH_air_school_1
+		}
+		swap_ideas = { remove_idea = NCH_air_school_1 add_idea = NCH_air_school_2 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_air_school_2
+		}
+		swap_ideas = { remove_idea = NCH_air_school_2 add_idea = NCH_air_school_3 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_air_school_3
+		}
+		swap_ideas = { remove_idea = NCH_air_school_3 add_idea = NCH_air_school_4 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_air_school_4
+		}
+		swap_ideas = { remove_idea = NCH_air_school_4 add_idea = NCH_air_school_5 }
+	}
+}
+
+NCH_air_production_buff_effect = {
+	if = {
+		limit = {
+			has_idea = NCH_air_production_1
+		}
+		swap_ideas = { remove_idea = NCH_air_production_1 add_idea = NCH_air_production_2 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_air_production_2
+		}
+		swap_ideas = { remove_idea = NCH_air_production_2 add_idea = NCH_air_production_3 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_air_production_3
+		}
+		swap_ideas = { remove_idea = NCH_air_production_3 add_idea = NCH_air_production_4 }
+	}
+}
+
+NCH_GAF_masters_buff_effect = {
+
+	if = {
+		limit = {
+			has_idea = NCH_GAF_masters_1
+		}
+		swap_ideas = { remove_idea = NCH_GAF_masters_1 add_idea = NCH_GAF_masters_2 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_GAF_masters_2
+		}
+		swap_ideas = { remove_idea = NCH_GAF_masters_2 add_idea = NCH_GAF_masters_3 }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_GAF_masters_3
+			has_completed_focus = NCH_tactical_aviation
+		}
+		swap_ideas = { remove_idea = NCH_GAF_masters_3 add_idea = NCH_GAF_masters_4_tac }
+	}
+	else_if = {
+		limit = {
+			has_idea = NCH_GAF_masters_3
+			has_completed_focus = NCH_figher_aircraft
+		}
+		swap_ideas = { remove_idea = NCH_GAF_masters_3 add_idea = NCH_GAF_masters_4_fig }
+	}
+}

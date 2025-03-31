@@ -631,6 +631,54 @@ characters={
 			}
 		}
 	}
+	NCH_Harris_Perk={
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = NCH_air_command_1
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = NCH_who_else_but_us
+			}
+			traits = {
+				air_airborne_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NCH_Nowel_Dark={
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = NCH_air_command_2
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = NCH_flying_like_butterfly
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 
    	 # Submod #
     
