@@ -1487,7 +1487,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_and_in_the_air
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_rule_greneclyf
 	}
@@ -1508,7 +1508,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_flying_school 
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
@@ -1532,7 +1532,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_radar_development
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
@@ -1567,7 +1567,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_build_new_airbases
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
@@ -1602,7 +1602,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_defense_island
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_build_new_airbases
 	}
@@ -1641,7 +1641,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_night_training
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_radar_development
 	}
@@ -1658,7 +1658,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_flying_like_butterfly
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_night_training
 		focus = NCH_defense_island
@@ -1721,7 +1721,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_aisling_air_institute
 	icon = GFX_goal_unknown
-	cost = 15,00
+	cost = 7
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
@@ -1749,7 +1749,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_domestic_parts
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
@@ -1777,12 +1777,12 @@ shared_focus = {
 shared_focus = {
 	id = NCH_rocket_science
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
 	completion_reward = {
-		
+
 		NCH_air_production_buff_effect = yes
 
 
@@ -1808,7 +1808,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_hotter_thousands_suns
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
@@ -1837,6 +1837,8 @@ shared_focus = {
 	cost = 10
 	prerequisite = {
 		focus = NCH_rocket_science
+	}
+	prerequisite = {
 		focus = NCH_hotter_thousands_suns
 	}
 	completion_reward = {
@@ -1876,7 +1878,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_tactical_aviation
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
@@ -1902,7 +1904,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_figher_aircraft
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
