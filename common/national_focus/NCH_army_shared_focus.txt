@@ -933,7 +933,20 @@ shared_focus = {
 		else = {
 			set_technology = { torpedo_cruiser_mtg = 1 }
 
-			complete_special_project = sp:sp_naval_ice_carrier
+		}
+		complete_special_project = sp:sp_naval_ice_carrier
+
+		sp:sp_naval_ice_carrier={
+			add_equipment_bonus = {
+				name = sp_mega_carrier_eq_bonus_strength
+				bonus = {
+					mega_carrier = {
+						build_cost_ic = 0.05
+						max_strength = 0.1	
+						instant = yes			 
+					}
+				}
+			}	
 		}
 	}
 }
@@ -1769,6 +1782,8 @@ shared_focus = {
 		focus = NCH_domestic_parts
 	}
 	completion_reward = {
+		
+		NCH_air_production_buff_effect = yes
 
 
 		add_tech_bonus = {
