@@ -1,0 +1,4 @@
+spriteType = {
+	name = "GFX_idea_NCH_obsidian_crystals"
+	texturefile = "gfx/interface/ideas/NCH/CRY_harmony_crystals.dds"
+}

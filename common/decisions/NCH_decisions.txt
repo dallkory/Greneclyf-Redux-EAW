@@ -1001,74 +1001,244 @@ NCH_celarl_laboratory = {
 		}
 	}
 	NCH_obsidian_category = {
-		NCH_obsidian_sale_start={
+		NCH_obsidian_EQS={
 			icon = changeling_category_icon
+
+			days_re_enable = 100
+
+			cost = 30
+
 			visible = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
+				NOT = {
+					EQS={
+						has_idea = obsidian_trade_NCH
+					}
+				}
 			}
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
 			complete_effect = {
-				obsidian_trade_power_increase = yes
+				every_country = {
+					limit = {
+						tag = EQS
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
 			}
 		}
-		NCH_obsidian_sale={
+		NCH_obsidian_KIR={
 			icon = changeling_category_icon
+			days_re_enable = 100
+			cost = 30
 			visible = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
+				NOT = {
+					KIR={
+						has_idea = obsidian_trade_NCH
+					}
+				}
 			}
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
 			complete_effect = {
-				obsidian_trade_power_increase = yes
+				every_country = {
+					limit = {
+						tag = KIR
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
 			}
 		}
-		NCH_obsidian_sale={
+		NCH_obsidian_FBK={
 			icon = changeling_category_icon
+			days_re_enable = 100
+			cost = 30
 			visible = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
+				NOT = {
+					FBK={
+						has_idea = obsidian_trade_NCH
+					}
+				}
 			}
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
 			complete_effect = {
-				obsidian_trade_power_increase = yes
+				every_country = {
+					limit = {
+						tag = FBK
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
 			}
 		}
-		NCH_obsidian_sale={
+		NCH_obsidian_BAK={
 			icon = changeling_category_icon
+			days_re_enable = 100
+
+			cost = 30
 			visible = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
+				NOT = {
+					BAK={
+						has_idea = obsidian_trade_NCH
+					}
+				}
 			}
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
 			complete_effect = {
-				obsidian_trade_power_increase = yes
+				every_country = {
+					limit = {
+						tag = BAK
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
 			}
 		}
-		NCH_obsidian_sale={
+		NCH_obsidian_TRD={
 			icon = changeling_category_icon
+			days_re_enable = 100
+
+			cost = 30
 			visible = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
+				NOT = {
+					TRD={
+						has_idea = obsidian_trade_NCH
+					}
+				}
 			}
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
 			complete_effect = {
-				obsidian_trade_power_increase = yes
+				every_country = {
+					limit = {
+						tag = TRD
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
+			}
+		}
+		NCH_obsidian_HIP={
+			icon = changeling_category_icon
+			days_re_enable = 100
+
+			cost = 30
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+				NOT = {
+					HIP={
+						has_idea = obsidian_trade_NCH
+					}
+				}
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				every_country = {
+					limit = {
+						tag = HIP
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
+			}
+		}
+		NCH_obsidian_PNG={
+			icon = changeling_category_icon
+			days_re_enable = 100
+
+			cost = 30
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+				NOT = {
+					PNG={
+						has_idea = obsidian_trade_NCH
+					}
+				}
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				every_country = {
+					limit = {
+						tag = PNG
+					}
+					country_event ={ 
+						id = greneclyf_obsidian.1 
+						days = 10
+						}
+				}
+			}
+		}
+		NCH_obsidian_EQC={
+			icon = changeling_category_icon
+			days_re_enable = 100
+
+			cost = 30
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+				NOT = {
+					EQC={
+						has_idea = obsidian_trade_NCH
+					}
+				}
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				every_country = {
+					limit = {
+						tag = EQC
+					}
+					country_event ={ 
+					id = greneclyf_obsidian.1 
+					days = 10
+				    }
+				}
 			}
 		}
 	}

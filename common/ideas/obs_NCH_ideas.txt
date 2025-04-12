@@ -1,7 +1,18 @@
 ideas={
 	country = {
+		obsidian_trade_NCH ={
+			picture = GFX_idea_NCH_obsidian_crystals
+
+			modifier = {
+				production_speed_supply_node_factor = 0.05
+                production_speed_industrial_complex_factor = 0.05
+				resource_trade_cost_bonus_per_factory = 1
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
 		obsidian_trade_power_1={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -15,7 +26,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_2={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -29,7 +40,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_3={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -43,7 +54,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_4={
-			picture = GFX_unknow
+			picture = GGFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -57,7 +68,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_5={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -71,7 +82,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_6={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -85,7 +96,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_7={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {
@@ -99,7 +110,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_8={
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {

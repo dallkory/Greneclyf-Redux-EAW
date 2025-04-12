@@ -150,7 +150,4 @@ NCH_obsidian_category = {
 	allowed = {
 		original_tag = NCH
 	}
-	priority = {
-		base = 100
-	}
 }

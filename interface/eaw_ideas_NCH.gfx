@@ -60,6 +60,10 @@ spriteTypes = {
 		name = "GFX_idea_medium_industry"
 		textureFile = "gfx/interface/ideas/NCH/IRE_medium_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CRY_harmony_crystals"
+		texturefile = "gfx/interface/ideas/CRY/CRY_harmony_crystals.dds"
+	}
 }
 
 
