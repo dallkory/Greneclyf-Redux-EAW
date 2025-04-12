@@ -15,18 +15,17 @@ NCH_debug_decision = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
-	NCH_obsidian_sale_start={
+	NCH_obsidian_sale_increase={
 		icon = changeling_category_icon
 		visible = {
 			original_tag = NCH
-			has_country_flag = NCH_obsidian_export
+			
 		}
 		allowed = {
 			original_tag = NCH
-			has_country_flag = NCH_obsidian_export
+			
 		}
 		complete_effect = {
-			add_ideas = obsidian_trade_power_1
 			obsidian_trade_power_increase = yes
 		}
 	}
@@ -34,11 +33,11 @@ NCH_debug_decision = {
 		icon = changeling_category_icon
 		visible = {
 			original_tag = NCH
-			has_country_flag = NCH_obsidian_export
+			
 		}
 		allowed = {
 			original_tag = NCH
-			has_country_flag = NCH_obsidian_export
+			
 		}
 		complete_effect = {
 			add_ideas = obsidian_trade_power_1
