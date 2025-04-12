@@ -145,3 +145,12 @@ NCH_crisis_category = {
 		base = 100
 	}
 }
+NCH_obsidian_category = {
+	icon = changeling_category_icon
+	allowed = {
+		original_tag = NCH
+	}
+	priority = {
+		base = 100
+	}
+}

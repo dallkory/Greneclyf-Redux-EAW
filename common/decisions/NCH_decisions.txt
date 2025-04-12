@@ -15,6 +15,36 @@ NCH_debug_decision = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	NCH_obsidian_sale_start={
+		icon = changeling_category_icon
+		visible = {
+			original_tag = NCH
+			has_country_flag = NCH_obsidian_export
+		}
+		allowed = {
+			original_tag = NCH
+			has_country_flag = NCH_obsidian_export
+		}
+		complete_effect = {
+			add_ideas = obsidian_trade_power_1
+			obsidian_trade_power_increase = yes
+		}
+	}
+	NCH_obsidian_sale_add_idea={
+		icon = changeling_category_icon
+		visible = {
+			original_tag = NCH
+			has_country_flag = NCH_obsidian_export
+		}
+		allowed = {
+			original_tag = NCH
+			has_country_flag = NCH_obsidian_export
+		}
+		complete_effect = {
+			add_ideas = obsidian_trade_power_1
+		}
+	}
+
 
 	NCH_show_typographia = {
 		icon = d
@@ -968,6 +998,78 @@ NCH_celarl_laboratory = {
 			complete_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision NCH_crisis"
 				country_event = greneclyf_crisis.9
+			}
+		}
+	}
+	NCH_obsidian_category = {
+		NCH_obsidian_sale_start={
+			icon = changeling_category_icon
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				obsidian_trade_power_increase = yes
+			}
+		}
+		NCH_obsidian_sale={
+			icon = changeling_category_icon
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				obsidian_trade_power_increase = yes
+			}
+		}
+		NCH_obsidian_sale={
+			icon = changeling_category_icon
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				obsidian_trade_power_increase = yes
+			}
+		}
+		NCH_obsidian_sale={
+			icon = changeling_category_icon
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				obsidian_trade_power_increase = yes
+			}
+		}
+		NCH_obsidian_sale={
+			icon = changeling_category_icon
+			visible = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			allowed = {
+				original_tag = NCH
+				has_country_flag = NCH_obsidian_export
+			}
+			complete_effect = {
+				obsidian_trade_power_increase = yes
 			}
 		}
 	}
