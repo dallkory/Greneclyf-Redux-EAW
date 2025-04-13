@@ -875,8 +875,32 @@ add_namespace = greneclyf_obsidian
 
 		option = {
 			name = greneclyf_redux.39.a
-
+			add_ideas = NCH_Majestic_V
+			
 			## ADD 5 WITCHES ##
+			# ADVISOR #
+			add_advisor_role = {
+				advisor = { }
+			}
+
+			# ARMY #
+			add_corps_commander_role = {
+				
+			}
+
+			# NAVY #
+			add_corps_commander_role = {
+				
+			}
+
+			# 2 ARMY CHIEF #
+			add_advisor_role = {
+				advisor = { }
+			}
+
+			add_advisor_role = {
+				advisor = { }
+			}
 		}
 	}
 
