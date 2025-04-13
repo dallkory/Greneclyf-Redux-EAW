@@ -130,6 +130,23 @@ ideas = {
 			}
 		}
 
+		NCH_Overpopulation_2 = {
+			picture = overpopulation
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 150
+				monthly_population = 0.15
+				democratic_drift = 0.02
+			}
+		}
+
 		NCH_Basalt_Shaw = {
 			picture = Basalt_Shaw_Idea
 			allowed = {

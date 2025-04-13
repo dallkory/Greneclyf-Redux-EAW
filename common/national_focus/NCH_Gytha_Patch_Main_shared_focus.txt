@@ -34,19 +34,27 @@ shared_focus = {
 shared_focus = {
 	id = NCH_reforms_after_storm
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
 	}
 	x = 22
 	y = 16
 
+	completion_reward = {
+		add_political_power = 50
+
+		country_event = {
+			id = greneclyf_redux.34
+			days = 0
+		}
+	}
 }
 
 shared_focus = {
 	id = NCH_patch_to_prosperty
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_reforms_after_storm
 	}
@@ -65,6 +73,9 @@ shared_focus = {
 	x = 17
 	y = 18
 
+	completion_reward = {
+		add_ideas = no_lack_of_scientists
+	}
 }
 
 shared_focus = {
@@ -89,6 +100,9 @@ shared_focus = {
 	x = 19
 	y = 18
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -104,12 +118,15 @@ shared_focus = {
 	x = 17
 	y = 19
 
+	completion_reward = {
+		add_research_slot = 1
+	}
 }
 
 shared_focus = {
 	id = NCH_birth_control
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_health_care_reform
 	}
@@ -119,6 +136,13 @@ shared_focus = {
 	x = 19
 	y = 19
 
+	completion_reward = {
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = NCH_Overpopulation
+			add_idea = NCH_Overpopulation_2
+		}
+	}
 }
 
 shared_focus = {

@@ -772,6 +772,116 @@ add_namespace = greneclyf_obsidian
 		}
 	}
 
+	## WITCHES ##
+	# BLUE MAIL #
+	country_event = {
+		id = greneclyf_redux.34
+		title = greneclyf_redux.34.t
+		desc = greneclyf_redux.34.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.34.a
+			country_event = {
+				id = greneclyf_redux.35
+				days = 10
+			}
+		}
+	}
+
+	# FINDS #
+	country_event = {
+		id = greneclyf_redux.35
+		title = greneclyf_redux.35.t
+		desc = greneclyf_redux.35.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.35.a
+			country_event = {
+				id = greneclyf_redux.36
+				days = 1
+			}
+		}
+	}
+
+	# SURVIVE #
+	country_event = {
+		id = greneclyf_redux.36
+		title = greneclyf_redux.36.t
+		desc = greneclyf_redux.36.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.36.a
+			country_event = {
+				id = greneclyf_redux.37
+				days = 0
+			}
+		}
+	}
+
+	# AFTER DARK #
+	country_event = {
+		id = greneclyf_redux.37
+		title = greneclyf_redux.37.t
+		desc = greneclyf_redux.37.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.37.a
+			country_event = {
+				id = greneclyf_redux.38
+				days = 0
+			}
+		}
+	}
+
+	# SHINE SUNRISE #
+	country_event = {
+		id = greneclyf_redux.38
+		title = greneclyf_redux.38.t
+		desc = greneclyf_redux.38.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			add_manpower = -300
+			name = greneclyf_redux.38.a
+			country_event = {
+				id = greneclyf_redux.39
+				days = 30
+			}
+		}
+	}
+
+	# KVINTET #
+	country_event = {
+		id = greneclyf_redux.39
+		title = greneclyf_redux.39.t
+		desc = greneclyf_redux.39.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.39.a
+
+			## ADD 5 WITCHES ##
+		}
+	}
+
+
+
 	### FORCES ###
 
 	country_event = {
