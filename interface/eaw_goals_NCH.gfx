@@ -12,7 +12,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_goal_House_Divided"
-		textureFile = "gfx/interface/goals/NCH/A_House_Divided.png"
+		textureFile = "gfx/interface/goals/NCH/goal_House_Divided.dds.dds"
 	}
 
 	spriteType = {

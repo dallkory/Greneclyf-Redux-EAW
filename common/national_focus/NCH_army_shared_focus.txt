@@ -936,9 +936,23 @@ shared_focus = {
 
 		else = {
 			set_technology = { torpedo_cruiser_mtg = 1 }
-
 		}
-		complete_special_project = sp:sp_naval_ice_carrier
+
+		if = {
+			limit = {
+              no = { has_dlc = "Man the Guns" }
+            }
+			complete_special_project = sp:sp_naval_ice_carrier
+		}
+
+		else = {
+			set_technology = {
+				mega_carrier = 1
+			}
+		}		
+
+		#complete_special_project = sp:sp_naval_ice_carrier
+
 
 		sp:sp_naval_ice_carrier={
 			add_equipment_bonus = {
