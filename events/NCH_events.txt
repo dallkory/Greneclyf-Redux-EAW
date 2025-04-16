@@ -732,14 +732,14 @@ add_namespace = greneclyf_obsidian
 	# SOLDIERS RISING #
 	country_event = {
 		id = greneclyf_redux.30
-		title = greneclyf_redux.29.t
-		desc = greneclyf_redux.29.d
+		title = greneclyf_redux.30.t
+		desc = greneclyf_redux.30.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.29.a
+			name = greneclyf_redux.30.a
 
 		}
 	}
@@ -876,7 +876,7 @@ add_namespace = greneclyf_obsidian
 		option = {
 			name = greneclyf_redux.39.a
 			add_ideas = NCH_Majestic_V
-			
+
 			## ADD 5 WITCHES ##
 			# ADVISOR #
 			add_advisor_role = {

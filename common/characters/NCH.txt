@@ -75,7 +75,7 @@ characters={
 		name = Basalt_Shaw
 		portraits={
 			army={
-				large="gfx/leaders/NCH/Basalt_Shaw"
+				large="gfx/leaders/NCH/Basalt_Shaw.tga"
 				small="gfx/interface/ideas/Advisors/NCH/Basalt_Shaw.tga"
 			}
 		}
