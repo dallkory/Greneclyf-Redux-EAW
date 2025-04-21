@@ -88,6 +88,9 @@ shared_focus = {
 	x = 15
 	y = 19
 
+	completion_reward = {
+		custom_effect_tooltip = NCH_agroindustrial_programs_south_north
+	}
 }
 
 shared_focus = {
@@ -101,7 +104,23 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
-		
+		add_stability = 0.05
+
+		670 = {
+			add_manpower = 25000
+		}
+		669 = {
+			add_manpower = 15000
+		}
+		1209 = {
+			add_manpower = 10000
+		}
+		668 = {
+			add_manpower = 10000
+		}
+		1210 = {
+			add_manpower = 5000
+		}
 	}
 }
 
@@ -119,6 +138,10 @@ shared_focus = {
 	y = 19
 
 	completion_reward = {
+		add_timed_idea = {
+			idea = NCH_rise_science
+			days = 150
+		}
 		add_research_slot = 1
 	}
 }
