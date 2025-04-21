@@ -20,6 +20,25 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/goal_The_Summoning_of_the_Oireachtas.dds"
 	}
 
+	spriteType = {
+		name = "GFX_goal_Study_the_Recent_Experiences"
+		textureFile = "gfx/interface/goals/NCH/Study_the_Recent_Experiences.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_The_Establishment_of_the_State_Printing_House"
+		textureFile = "gfx/interface/goals/NCH/The_Establishment_of_the_State_Printing_House.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Find_Them_Work"
+		textureFile = "gfx/interface/goals/NCH/Find_Them_Work.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_You_learn_from_mistakes"
+		textureFile = "gfx/interface/goals/NCH/You_learn_from_mistakes.dds"
+	}
 
 	
 

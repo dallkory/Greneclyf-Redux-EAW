@@ -31,17 +31,6 @@ NCH_typography_category = {
 	}
 }
 
-NCH_obsidian_trade_category = {
-	icon = GFX_unknow
-	
-	visible = {
-		has_country_flag = NCH_obsidian_export
-	}
-	priority = {
-		base = 150
-	}
-}
-
 NCH_trade_with_pony_of_hills = {
 	icon = GFX_unknow
 	

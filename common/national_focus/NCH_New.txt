@@ -91,7 +91,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_Spy_experience
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Study_the_Recent_Experiences
 		cost = 5
 		prerequisite = {
 			focus = NCH_divided_house
@@ -166,7 +166,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_find_they_job
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Find_Them_Work
 		cost = 5
 		prerequisite = {
 			focus = NCH_Spy_experience
@@ -200,7 +200,7 @@ focus_tree = {
 	# Agitprom #
 	focus = {
 		id = NCH_typography
-		icon = GFX_goal_unknown
+		icon = GFX_goal_The_Establishment_of_the_State_Printing_House
 		cost = 5
 		prerequisite = {
 			focus = NCH_Spy_experience
@@ -218,7 +218,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_learn_from_mistakes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_You_learn_from_mistakes
 		cost = 5
 		prerequisite = {
 			focus = NCH_new_housing

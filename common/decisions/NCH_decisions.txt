@@ -299,6 +299,7 @@ NCH_hunger_bop_category = {
 		}
 
 		complete_effect = {
+			add_manpower = -2000
 			add_power_balance_value = {
 				id = NCH_hunger_bop
 				value = 0.015
@@ -620,27 +621,6 @@ NCH_typography_category = {
 		}
 		remove_effect = {
 			add_war_support = 0.025
-		}
-	}
-}
-
-### OBSIDIAN EXPORT ###
-NCH_obsidian_trade_category = {
-	NCH_find_importers = {
-		icon =d
-		cost = 75
-		days_remove = 45
-	
-		modifier = {
-			#offence = 0.05
-			#defence = 0.05
-			#experience_gain_army_factor = 0.1
-			#experience_gain_navy_factor = 0.1
-			#command_power_gain = 0.1
-		}
-
-		remove_effect = {
-			
 		}
 	}
 }
