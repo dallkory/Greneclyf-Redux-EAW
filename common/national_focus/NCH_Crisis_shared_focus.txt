@@ -565,6 +565,10 @@ Shared_focus = {
 	x = 33
 	y = 12
 
+	available = {
+		has_country_flag = NCH_bop_just_finished
+	}
+
 	completion_reward = {
 		remove_ideas = NCH_protests_on_street
 		add_power_balance_value = {
@@ -586,6 +590,10 @@ Shared_focus = {
 	}
 	x = 33
 	y = 13
+
+	available = {
+		has_country_flag = NCH_hunger_defeat
+	}
 
 	completion_reward = {
 		country_event = {

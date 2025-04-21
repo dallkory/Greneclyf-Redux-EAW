@@ -74,6 +74,7 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
+		add_stability = 0.05
 		add_ideas = no_lack_of_scientists
 	}
 }
@@ -184,6 +185,9 @@ shared_focus = {
 	x = 16
 	y = 20
 
+	completion_reward = {
+		add_ideas = NCH_cult_of_progress
+	}
 }
 
 shared_focus = {
@@ -202,6 +206,9 @@ shared_focus = {
 	x = 18
 	y = 20
 
+	completion_reward = {
+		add_ideas = NCH_cult_of_traditions
+	}
 }
 
 # CENTRAL #
@@ -282,6 +289,14 @@ shared_focus = {
 	x = 21
 	y = 22
 
+	completion_reward = {
+		#set_politics = { ruling_party = democratic }#
+		set_party_name = {
+			ideology = democratic
+			long_name = NCH_democratic_party_lehman_long
+			name = NCH_democratic_party
+		}
+	}
 }
 
 shared_focus = {
