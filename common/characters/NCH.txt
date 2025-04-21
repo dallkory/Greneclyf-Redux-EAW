@@ -95,6 +95,37 @@ characters={
 		}
 	}
 
+	NCH_Caider = {
+		name = Caider
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Caider.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Caider.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				no = {
+					has_government = fascism
+				}
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Caider
+			ledger = army
+			cost = 150
+			
+			allowed = {
+				original_tag = NCH
+			}
+
+			traits = {
+				red_scientist
+			}
+		}
+	}
+
 	NCH_Valha = {
 		name = Valha_Ksilokopa
 		desc = Valha_Ksilokopa_desc 

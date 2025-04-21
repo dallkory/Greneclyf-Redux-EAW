@@ -62,8 +62,16 @@ leader_traits = {
 
 		industry_free_repair_factor = 0.15
 
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
 
-
+	red_scientist = {
+		random = no
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.1
+		communism_drift = 0.01
 
 		ai_will_do = {
 			factor = 0.5

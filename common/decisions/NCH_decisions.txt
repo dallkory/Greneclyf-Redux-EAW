@@ -393,19 +393,13 @@ NCH_typography_category = {
 		days_remove = 70
 
 		visible = {
-			has_idea = NCH_luddites
+			has_idea = NCH_luddites_1
 		}
 
 		modifier = {
 			production_factory_max_efficiency_factor = 0.02 
 			local_resources_factor = 0.1
 			stability_weekly = 0.03
-		}
-		remove_effect = {
-			news_event = {
-				id = d
-				days = 3
-			}
 		}
 	}
 
@@ -430,6 +424,8 @@ NCH_typography_category = {
 		days_remove = 56
 
 		modifier = {
+			consumer_goods_factor = 0.05
+
 			stability_weekly = 0.001
 			political_power_factor = 0.075
 		}
@@ -541,6 +537,8 @@ NCH_typography_category = {
 		}
 
 		modifier = {
+			civilian_factory_use = 3
+
 			encryption = 1
 			enemy_operative_detection_chance_factor = 0.75
 			enemy_operative_capture_chance_factor = 0.75
@@ -553,9 +551,11 @@ NCH_typography_category = {
 		days_remove = 70
 
 		modifier = {
+			consumer_goods_factor = 0.25
+
 			production_factory_efficiency_gain_factor = 0.05 
 			industrial_capacity_dockyard = 0.05
-			production_speed_buildings_factor = 0.075
+			production_speed_buildings_factor = 0.05
 		}
 		remove_effect = {
 			
@@ -574,6 +574,7 @@ NCH_typography_category = {
 		visible = {
 			and = {
 				has_government = democratic
+				has_completed_focus = NCH_final_crisis
 				or = {
 					country_exists = WAT
 					country_exists = FBK
@@ -613,14 +614,12 @@ NCH_typography_category = {
 		days_remove = 45
 
 		modifier = {
-			offence = 0.05
-			defence = 0.05
-			experience_gain_army_factor = 0.1
-			experience_gain_navy_factor = 0.1
-			command_power_gain = 0.1
+			experience_gain_army_factor = 0.05
+			experience_gain_navy_factor = 0.05
+			weekly_manpower = 250
 		}
 		remove_effect = {
-			
+			add_war_support = 0.025
 		}
 	}
 }
