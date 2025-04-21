@@ -768,6 +768,7 @@ add_namespace = greneclyf_obsidian
 		fire_only_once = yes
 
 		option = {
+			clr_country_flag = NCH_great_hunger_started
 			name = greneclyf_redux.33.a
 		}
 	}
