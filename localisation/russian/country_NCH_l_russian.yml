@@ -447,8 +447,10 @@
   NCH_typography_category:0 "Государственная типография"
   NCH_typography_category_desc:0 "Гос тип"
 
-
+ 
   ### TOOL TIPS ###
+  NCH_patch_to_prosperty_tt:0 "§3Станут активны миссии по выполнению королевских указов.§!"
+
   NCH_agroindustrial_programs_south_north:0 "§3Открывает программу развития малонаселённых и слаборазвитых северных и южных провинций§!"
 
   NCH_great_hunger_started:0 "§RСлучилось непредвиденное...§!"
