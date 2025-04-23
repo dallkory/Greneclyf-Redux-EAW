@@ -415,6 +415,9 @@ shared_focus = {
 	x = 26
 	y = 20
 
+	completion_reward = {
+		add_ideas = harmonic_solidarity
+	}
 }
 
 shared_focus = {
@@ -433,6 +436,9 @@ shared_focus = {
 	x = 28
 	y = 20
 
+	completion_reward = {
+		add_ideas = project_phoenix
+	}
 }
 
 ### MAIN PATCH ###
