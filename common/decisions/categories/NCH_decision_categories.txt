@@ -6,7 +6,7 @@ NCH_debug_decision = {
 		original_tag = NCH
 		is_debug = yes
 	}
-	priority = { base = 151 }
+	priority = { base = 200 }
 }
 
 #NCH_hunger_category = {
@@ -19,6 +19,17 @@ NCH_debug_decision = {
 #	}
 #	priority = 152
 #}
+
+NCH_underground_build_category = {
+	icon = GFX_unknow
+
+	visible = {
+		has_completed_focus = NCH_brood_of_working_drones
+	}
+	priority = {
+		base = 152
+	}
+}
 
 NCH_typography_category = {
 	icon = GFX_unknow
@@ -54,7 +65,7 @@ NCH_queen_plan = {
 	}
 
 	priority = {
-		base = 149
+		base = 152
 	}
 }
 

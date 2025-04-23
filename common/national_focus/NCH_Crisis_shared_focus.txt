@@ -506,7 +506,7 @@ Shared_focus = {
 
 		add_timed_idea = {
 			idea = NCH_zone_of_sin
-			days = 90
+			days = 120
 		}
 
 		1210 = {

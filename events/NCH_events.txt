@@ -837,6 +837,12 @@ add_namespace = greneclyf_obsidian
 		is_triggered_only = yes
 		fire_only_once = yes
 
+		immediate = {
+			1210 = {
+				set_demilitarized_zone = no
+			}
+		}
+
 		option = {
 			name = greneclyf_redux.41.a
 			add_political_power = -100
@@ -844,11 +850,18 @@ add_namespace = greneclyf_obsidian
 			add_state_core = 1210
 
 			1210 = {
+				set_state_name = "Yliss"
+			}
+			set_province_name = {
+				id = 10775
+				name = "Yliss"
+			}
+
+			1210 = {
 				add_state_modifier = {
 					modifier = { 
 						local_manpower = 0.05
 						local_supplies_factor = 0.05
-						resistance_target = -0.1
 					}
 				}
 			}
