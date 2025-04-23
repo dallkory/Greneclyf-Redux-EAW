@@ -294,6 +294,7 @@ shared_focus = {
 
 	completion_reward = {
 		#set_politics = { ruling_party = democratic }#
+
 		set_party_name = {
 			ideology = democratic
 			long_name = NCH_democratic_party_lehman_long
@@ -315,7 +316,17 @@ shared_focus = {
 	x = 23
 	y = 22
 
+	completion_reward = {
+		#set_politics = { ruling_party = democratic }#
+
+		set_party_name = {
+			ideology = democratic
+			long_name = NCH_democratic_party_electorate
+			name = NCH_democratic_party
+		}
+	}
 }
+
 
 # LEFT #
 shared_focus = {
@@ -328,6 +339,15 @@ shared_focus = {
 	x = 25
 	y = 17
 
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+
+		add_timed_idea = {
+			idea = NCH_economic_boom
+			days = 720
+		}
+	}
 }
 
 shared_focus = {
@@ -340,6 +360,9 @@ shared_focus = {
 	x = 25
 	y = 18
 
+	completion_reward = {
+		country_event = iddd
+	}
 }
 
 shared_focus = {
@@ -352,6 +375,12 @@ shared_focus = {
 	x = 27
 	y = 18
 
+	completion_reward = {
+		country_event = {
+			id = greneclyf_redux.41
+			days = 0
+		}
+	}
 }
 
 shared_focus = {

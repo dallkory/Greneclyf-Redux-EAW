@@ -773,6 +773,93 @@ add_namespace = greneclyf_obsidian
 		}
 	}
 
+	# BEE PRODUCTIVITY #
+	country_event = {
+		id = greneclyf_redux.40
+		title = greneclyf_redux.40.t
+		desc = greneclyf_redux.40.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.40.a
+
+			670 = {
+				add_state_modifier = {
+					modifier = { 
+						recruitable_population_factor = 0.15
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.1
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			1209 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			669 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 2
+						local_building_slots = 1
+						local_manpower_factor = 0.15
+						state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			668 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+		}
+	}
+
+	country_event = {
+		id = greneclyf_redux.41
+		title = greneclyf_redux.41.t
+		desc = greneclyf_redux.41.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.41.a
+			add_political_power = -100
+			add_stability = 0.03
+			add_state_core = 1210
+
+			1210 = {
+				add_state_modifier = {
+					modifier = { 
+						local_manpower = 0.05
+						local_supplies_factor = 0.05
+						resistance_target = -0.1
+					}
+				}
+			}
+
+			add_timed_idea = {
+				idea = NCH_retaking_saor
+				days = 365
+			}
+		}
+	}
+
 	## WITCHES ##
 	# BLUE MAIL #
 	country_event = {
