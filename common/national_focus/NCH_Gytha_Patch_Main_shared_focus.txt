@@ -415,10 +415,13 @@ shared_focus = {
 			level = 2
 		}
 
-		add_to_variable = { var = NCH_underground_civ value = 2 }
-		add_to_variable = { var = NCH_underground_civ_remove value = -2 }
-		add_to_variable = { var = NCH_underground_build  value = 2}
-		add_to_variable = { var = NCH_underground_buildings value = 4}
+		set_variable = { var = NCH_underground_cost  value = 50 }
+		set_variable = { var = NCH_underground_slots value = 10 }
+
+		#add_to_variable = { var = NCH_underground_civ value = 2 }
+		#add_to_variable = { var = NCH_underground_civ_remove value = -2 }
+		#add_to_variable = { var = NCH_underground_build  value = 2}
+		#add_to_variable = { var = NCH_underground_buildings value = 4}
 	}
 }
 

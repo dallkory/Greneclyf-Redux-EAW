@@ -1,3 +1,6 @@
+
+
+
 NCH_remove_underground_buildings = {
 	custom_effect_tooltip = HIP_remove_underwater_buildings_tt
 
