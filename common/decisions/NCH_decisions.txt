@@ -3,7 +3,7 @@
 
 ### DEBUG ###
 NCH_debug_decision = {
-	
+
 	NCH_show_underground_buildings = {
 		icon = d
 
@@ -30,7 +30,8 @@ NCH_debug_decision = {
 		icon = d
 		
 		complete_effect = {
-			set_character_flag = NCH_debug_vision
+			set_country_flag = NCH_debug_vision
+
 		}
 	}
 
@@ -692,7 +693,10 @@ NCH_underground_build_category = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 3
-			check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			custom_trigger_tooltip = {
+				tooltip = NCH_underground_slots_tt
+				check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			}
 		}
 
 		visible = {
