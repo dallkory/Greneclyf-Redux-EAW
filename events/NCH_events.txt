@@ -872,6 +872,22 @@ add_namespace = greneclyf_obsidian
 			}
 		}
 	}
+	
+	# NEW CARDINAL #
+	country_event = {
+		id = greneclyf_redux.42
+		title = greneclyf_redux.42.t
+		desc = greneclyf_redux.42.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.42.a
+			
+			set_country_flag = NCH_cardinal_chosed
+		}
+	}
 
 	## WITCHES ##
 	# BLUE MAIL #

@@ -222,7 +222,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_first_constitution
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 3
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 		focus = NCH_economic_revival
@@ -230,6 +230,9 @@ shared_focus = {
 	x = 22
 	y = 18
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -242,6 +245,9 @@ shared_focus = {
 	x = 22
 	y = 19
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -254,6 +260,13 @@ shared_focus = {
 	x = 21
 	y = 20
 
+	completion_reward = {
+
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
 }
 
 shared_focus = {
@@ -266,6 +279,13 @@ shared_focus = {
 	x = 23
 	y = 20
 
+	completion_reward = {
+		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
 }
 
 shared_focus = {
@@ -281,6 +301,9 @@ shared_focus = {
 	x = 22
 	y = 21
 
+	completion_reward = {
+		add_political_power = 200
+	}
 }
 
 shared_focus = {

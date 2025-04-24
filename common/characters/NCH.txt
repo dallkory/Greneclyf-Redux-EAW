@@ -96,7 +96,7 @@ characters={
 	}
 
 	NCH_Caider = {
-		name = Caider
+		name = Cader_Scierite
 		portraits = {
 			army = {
 				large="gfx/leaders/NCH/Caider.tga"
