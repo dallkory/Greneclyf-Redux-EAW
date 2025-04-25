@@ -70,7 +70,7 @@ characters={
 	}
 
 	# lord - protecttor
-	NCH_Basalt_Shaw={
+	NCH_Basalt_Shaw ={
 		#name=NCH_theorist
 		name = Basalt_Shaw
 		portraits={
@@ -112,7 +112,7 @@ characters={
 			}
 
 			slot = political_advisor
-			idea_token = NCH_Caider
+			idea_token = NCH_Caider_it
 			ledger = army
 			cost = 150
 			
@@ -140,7 +140,7 @@ characters={
 				has_country_flag = NCH_valha_hired
 			}
 			slot = political_advisor
-			idea_token = NCH_Valha
+			idea_token = NCH_Valha_it
 			ledger = army
 			cost = 100
 			
@@ -163,7 +163,7 @@ characters={
         }
         advisor={
             slot = theorist
-            idea_token = NCH_celarl
+            idea_token = NCH_celarl_it
             ledger = army
             cost = 150
             removal_cost = -1
@@ -203,7 +203,7 @@ characters={
 			}
 			advisor = {
 				slot = political_advisor
-				idea_token = NCH_Derkliones
+				idea_token = NCH_Derkliones_it
 				available = {
 					has_intelligence_agency = yes
 				}
@@ -228,7 +228,7 @@ characters={
 			}
 			advisor = {
 				slot = political_advisor
-				idea_token = NCH_Derkliones
+				idea_token = NCH_Derkliones_it
 				allowed = {
 					original_tag = NCH
 				}
@@ -248,7 +248,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = NCH_Sul_Oraiste
+			idea_token = NCH_Sul_Oraiste_it
 			traits= {
 				fortification_engineer
 			}
@@ -264,7 +264,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = NCH_trade_advisor
+			idea_token = NCH_Marikel_it
 			traits = {
 				smooth_talking_charmer
 			}
@@ -280,7 +280,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = NCH_captain_of_industry
+			idea_token = NCH_Ludas_it
 			traits = {
 				captain_of_industry
 			}
@@ -297,6 +297,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = NCH_Arachi_it
 			traits = { 
 				ideological_crusader
 			}
@@ -313,9 +314,34 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = NCH_Yorilos_it
 			traits = { 
 				war_industrialist 
 			}
+		}
+	}
+
+	NCH_Floppa={
+		name=Floppa
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Floppa.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Floppa_it
+			desc = "Floppa_desc"
+			cost =  150
+			allowed = {
+				original_tag = NCH
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			traits = {
+				silent_workbug2
+			 }
 		}
 	}
 
@@ -610,30 +636,6 @@ characters={
 			ai_will_do = {
 				factor = 1
 			}
-		}
-	}
-
-	NCH_Floppa={
-		name=Floppa
-		portraits={
-			army={
-				small="gfx/interface/ideas/Advisors/NCH/Floppa.tga"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NCH_Floppa
-			desc = "Floppa_desc"
-			cost =  150
-			allowed = {
-				original_tag = NCH
-			}
-			ai_will_do = {
-				factor = 1
-			}
-			traits = {
-				silent_workbug2
-			 }
 		}
 	}
 

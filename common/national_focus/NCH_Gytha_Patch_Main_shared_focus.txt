@@ -336,6 +336,11 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 200
+		custom_effect_tooltip = NCH_new_goverment_system_tt
+
+		set_country_flag = NCH_new_goverment_system_cf
+
+		activate_mission = NCH_gov_rotation
 	}
 }
 
