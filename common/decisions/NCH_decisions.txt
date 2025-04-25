@@ -743,18 +743,18 @@ NCH_gov_rotation_category = {
 			# NEW GOV #
 			# ECONOMIC #
 			random_list = {
-				33 = { add_ideas = NCH_Valha_it } 
-				33 = { add_ideas = NCH_Ludas_it } 
-				34 = { add_ideas = NCH_Sul_Oraiste_it } 
+				25 = { add_ideas = NCH_Valha_it } 
+				25 = { add_ideas = NCH_Ludas_it } 
+				25 = { add_ideas = NCH_Sul_Oraiste_it } 
+				25 = { add_ideas = NCH_Yorilos_it }
 			}
 
 			# POLITIC #
 			random_list = {
-				20 = { add_ideas = NCH_Oiren_Judge_itoken } 
-				20 = { add_ideas = NCH_Arachi_it } 
-				20 = { add_ideas = NCH_Yorilos_it }
-				20 = { add_ideas = NCH_Floppa_it } 
-				20 = { add_ideas = NCH_Marikel_it } 
+				25 = { add_ideas = NCH_Oiren_Judge_itoken } 
+				25 = { add_ideas = NCH_Arachi_it } 
+				25 = { add_ideas = NCH_Floppa_it } 
+				25 = { add_ideas = NCH_Marikel_it } 
 			}
 
 			# OTHER #
