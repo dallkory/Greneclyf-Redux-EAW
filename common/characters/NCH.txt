@@ -170,9 +170,6 @@ characters={
             allowed = {
                 original_tag = NCH
             }
-			available = { 
-                has_completed_focus = NCH_nuce_program_first_step
-            } 
             research_bonus = {
                 nuclear = 0.15
             }

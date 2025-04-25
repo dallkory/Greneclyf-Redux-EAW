@@ -691,8 +691,8 @@ NCH_gov_rotation_category = {
 	NCH_gov_rotation = {
 		icon = generic_politics
 		fire_only_once = no
-		is_good = yes
-		days_mission_timeout = 180
+		#is_good = no
+		days_mission_timeout = 3
 
 		activation = {
 			has_completed_focus = NCH_to_the_new_order
@@ -703,21 +703,41 @@ NCH_gov_rotation_category = {
 			}
 		}
 
-		remove_effect = {
+		available = {
+			has_country_flag = NCH_new_gov_election
+		}
+
+		timeout_effect = {
 			# ALL POLITIC ADVISORS #
-			remove_ideas = {
-				NCH_Oiren_Judge_itoken #pol
-				NCH_generic_military_theorist #other / Basalt
-				NCH_Caider_it #other
-				NCH_Valha_it #industrial
-				NCH_celarl_it #other
-				NCH_Derkliones_it #other spymaster
-				NCH_Sul_Oraiste_it # bunkers / industrial
-				NCH_Marikel_it #
-				NCH_Ludas_it #industrial
-				NCH_Arachi_it #pol 
-				NCH_Yorilos_it #industrial
-				NCH_Floppa_it #pol 
+			limit = {
+				has_idea = {
+					NCH_Oiren_Judge_itoken #pol
+					NCH_generic_military_theorist #other / Basalt
+					NCH_Caider_it #other
+					NCH_Valha_it #industrial
+					NCH_celarl_it #other
+					NCH_Derkliones_it #other spymaster
+					NCH_Sul_Oraiste_it # bunkers / industrial
+					NCH_Marikel_it #
+					NCH_Ludas_it #industrial
+					NCH_Arachi_it #pol 
+					NCH_Yorilos_it #industrial
+					NCH_Floppa_it #pol 
+				}
+				remove_ideas = {
+					NCH_Oiren_Judge_itoken #pol
+					NCH_generic_military_theorist #other / Basalt
+					NCH_Caider_it #other
+					NCH_Valha_it #industrial
+					NCH_celarl_it #other
+					NCH_Derkliones_it #other spymaster
+					NCH_Sul_Oraiste_it # bunkers / industrial
+					NCH_Marikel_it #
+					NCH_Ludas_it #industrial
+					NCH_Arachi_it #pol 
+					NCH_Yorilos_it #industrial
+					NCH_Floppa_it #pol 
+				}
 			}
 			
 			# NEW GOV #
@@ -739,10 +759,14 @@ NCH_gov_rotation_category = {
 
 			# OTHER #
 			random_list = {
-				25 = { add_ideas = NCH_Derkliones_it } 
-				25 = { add_ideas = NCH_Caider_it } 
-				25 = { add_ideas = NCH_celarl_it } 
-				25 = { add_ideas = NCH_generic_military_theorist } 
+				50 = { add_ideas = NCH_Derkliones_it } 
+				50 = { add_ideas = NCH_Caider_it } 
+			}
+
+			# THEORETIC #
+			random_list = {
+				50 = { add_ideas = NCH_celarl_it } 
+				50 = { add_ideas = NCH_generic_military_theorist } 
 			}
 		}
 	}
