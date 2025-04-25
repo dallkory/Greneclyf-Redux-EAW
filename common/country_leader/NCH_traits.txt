@@ -29,6 +29,13 @@ leader_traits = {
 		democratic_drift = 0.03
 		democratic_acceptance = 50
 	}
+
+	The_god_chosen_queen = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.5
+		army_core_defence_factor = 0.15
+	}
 	
 
 	silent_workbug2 = {
