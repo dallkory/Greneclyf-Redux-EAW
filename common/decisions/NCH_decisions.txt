@@ -902,7 +902,7 @@ NCH_queen_plan = {
 		icon = d
 		fire_only_once = yes 
 		is_good = no
-		days_mission_timeout = 480
+		days_mission_timeout = 580
 
 		activation = {
 			has_completed_focus = NCH_patch_to_prosperty

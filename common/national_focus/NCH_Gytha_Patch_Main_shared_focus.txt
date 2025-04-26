@@ -69,7 +69,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_education_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 	}
@@ -84,7 +84,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_civil_rights_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
 	}
@@ -99,7 +99,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_health_care_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 	}
@@ -135,7 +135,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_blosmport_hive
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
 	}
@@ -179,7 +179,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_new_instituts
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_civil_rights_reform
 	}
@@ -200,7 +200,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_traditional_way_of_life
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_blosmport_hive
 	}
@@ -222,7 +222,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_first_constitution
 	icon = GFX_goal_unknown
-	cost = 3
+	cost = 2
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 		focus = NCH_economic_revival
@@ -241,7 +241,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_from_chaos
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_first_constitution
 	}
@@ -268,7 +268,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_form_new_govermant
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
 	}
@@ -296,7 +296,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_reflecting_the_past
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
 	}
@@ -324,7 +324,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_to_the_new_order
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_form_new_govermant
 	}
@@ -347,7 +347,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_save_clans_system
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 2
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -371,7 +371,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_hereditary_monarchy
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 2
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -397,7 +397,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_reforms_after_storm
 	}
@@ -418,7 +418,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bee_productivity
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
 	}
@@ -433,7 +433,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_businesses_do_not_stand_idle
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
 	}
@@ -457,7 +457,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_brood_of_working_drones
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_bee_productivity
 	}
@@ -489,7 +489,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_gaining_economic_power
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
 	}
@@ -524,7 +524,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_ensure_full_employment
 	icon = GFX_goal_unknown
-	cost = 2
+	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
 	}
@@ -543,7 +543,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economics_of_friendship
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_brood_of_working_drones
 	}
@@ -564,7 +564,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_ensure_full_employment
 	}

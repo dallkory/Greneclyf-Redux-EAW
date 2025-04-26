@@ -6,9 +6,10 @@ spriteTypes = {
 		name = "GFX_idea_overpopulation"
 		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
 	}
+
 	spriteType = {
-		name = "GFX_goal_Enyas_legacy"
-		textureFile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
+		name = "GFX_idea_NCH_luddities"
+		textureFile = "gfx/interface/goals/NCH/luddities.dds"
 	}
 
 
