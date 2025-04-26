@@ -2,16 +2,6 @@ spriteTypes = {
 
 	### REDUX ###
 
-	spriteType = {
-		name = "GFX_idea_overpopulation"
-		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_NCH_luddities"
-		textureFile = "gfx/interface/goals/NCH/luddities.dds"
-	}
-
 
 
 

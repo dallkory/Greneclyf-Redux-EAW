@@ -98,7 +98,7 @@ ideas = {
 		}
 
 		NCH_luddites_2 = {
-			picture = GFX_unknow
+			picture = GFX_idea_NCH_luddities
 			allowed = {
 				always = yes
 			}
