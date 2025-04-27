@@ -347,7 +347,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_save_clans_system
 	icon = GFX_goal_unknown
-	cost = 2
+	cost = 1
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -371,7 +371,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_hereditary_monarchy
 	icon = GFX_goal_unknown
-	cost = 2
+	cost = 1
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -648,18 +648,23 @@ shared_focus = {
 shared_focus = {
 	id = NCH_we_are_not_alone
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 2
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
 	}
 	x = 44
 	y = 16
-
+	
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+	}
 }
+
 shared_focus = {
 	id = NCH_new_opportunities
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
@@ -710,7 +715,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_our_mission
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
@@ -731,6 +736,26 @@ shared_focus = {
 	x = 44
 	y = 18
 
+	available = {
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = WAT
+			modifier = NCH_new_hillspony
+		}
+
+		add_opinion_modifier = {
+			target = FIR
+			modifier = NCH_new_hillspony
+		}
+	}
 }
 shared_focus = {
 	id = NCH_another_visit
@@ -741,8 +766,54 @@ shared_focus = {
 	}
 	x = 43
 	y = 19
+	
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
 
+			not = {
+				WAT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		# WAT INTEGRATION #
+		if = {
+			limit = {
+				WAT = {
+					has_government = communism
+				}
+			}
+			set_country_flag = WAT_agreement_our_friendship
+			country_event = {
+				id = greneclyf_foregin.1
+				days = 0
+			}
+		}
+		if = {
+			limit = {
+				WAT = {
+					not = {
+						has_government = communism
+					}
+				}
+			}
+			custom_effect_tooltip = WAT_not_commie
+			add_opinion_modifier = {
+				target = WAT
+				modifier = small_decrease
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_pacts_exchange_for_support
 	icon = GFX_goal_unknown
@@ -753,7 +824,39 @@ shared_focus = {
 	x = 45
 	y = 19
 
+	available = {
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+
+	completion_reward = {
+
+		FBK  = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+
+		WAT = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+
+		FIR = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_long_cooperation
 	icon = GFX_goal_unknown
@@ -767,7 +870,28 @@ shared_focus = {
 	x = 44
 	y = 20
 
+		available = {
+		has_completed_focus = NCH_pacts_exchange_for_support
+	}
+
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.3
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_not_so_different
 	icon = GFX_goal_unknown
@@ -778,6 +902,17 @@ shared_focus = {
 	x = 45
 	y = 21
 
+	available = {
+		and = {
+			is_puppet = FBK
+			is_puppet = FIR
+			is_puppet = WAT
+		}
+	}
+
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -1007,6 +1142,86 @@ shared_focus = {
 	x = 43
 	y = 21
 
+	available = {
+		and = {
+			# FBK #
+			or = {
+				and = {
+					owns_state = 569
+					controls_state = 569
+					owns_state = 639
+					controls_state = 639
+					owns_state = 572
+					controls_state = 572
+					owns_state = 571
+					controls_state = 571
+					owns_state = 455
+					controls_state = 455
+					owns_state = 603
+					controls_state = 603
+				}
+				FBK = {
+					is_subject = yes
+				}
+			}
+
+			# WIT #
+			or = {
+				and = {
+					owns_state = 641
+					controls_state = 641
+					owns_state = 643
+					controls_state = 643
+					owns_state = 642
+					controls_state = 642
+					owns_state = 640
+					controls_state = 640
+				}
+				WIT = {
+					is_subject = yes
+				}
+			}
+
+			# FIR #
+			or = {
+				and = {
+					owns_state = 604
+					controls_state = 604
+					owns_state = 644
+					controls_state = 644
+					owns_state = 454
+					controls_state = 454
+					owns_state = 636
+					controls_state = 636
+					owns_state = 478
+					controls_state = 478
+					owns_state = 650
+					controls_state = 650
+					owns_state = 453
+					controls_state = 453
+				}
+				FIR = {
+					is_subject = yes
+				}
+			}
+		}
+	}
+
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+
+	completion_reward = {
+		NTR = {
+			add_manpower = 40000
+		}
+	}
 }
 shared_focus = {
 	id = NCH_new_great_agreement

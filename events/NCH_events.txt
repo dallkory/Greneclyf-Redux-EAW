@@ -2,6 +2,7 @@
 add_namespace = greneclyf_forces
 add_namespace = greneclyf_main
 add_namespace = greneclyf_obsidian
+add_namespace = greneclyf_foregin
 
 	# Example #
 
@@ -1108,6 +1109,176 @@ add_namespace = greneclyf_obsidian
 			NCH={
 				obsidian_trade_power_increase = yes
 			}
+		}
+	}
 
+	####### MAIN GYTHA #######
+	### MAIN PATCH - FOREGIEN PATCH ###
+
+	# VISIT #
+	country_event = {
+		id = greneclyf_foregin.1
+		title = greneclyf_foregin.1.t
+		desc = greneclyf_foregin.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.1.a	
+			give_guarantee = WAT
+
+			add_opinion_modifier = {
+				target = WAT
+				modifier = NCH_WAT_friends
+			}
+
+			add_opinion_modifier = {
+				target = WAT
+				modifier = huge_increase
+			}
+		}
+	}
+
+	# FRIENDSHIP #
+	country_event = {
+		id = greneclyf_foregin.2
+		title = greneclyf_foregin.2.t
+		desc = greneclyf_foregin.2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# READY #
+		option = {
+			name = greneclyf_foregin.2.a
+			ai_chance = {
+				base = 50
+				factor = 65
+				modifier = {
+					factor = 0.5
+					has_government = democratic
+				}
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = NCH_WAT_friends
+			}
+			add_timed_idea = {
+				idea = NCH_help_with_industrialization
+				days = 180
+			}
+			set_country_flag = NCH_help_ponyhills
+
+			NCH = {
+				add_timed_idea = {
+					idea = NCH_help_ponyhills_main
+					days = 200
+				}
+			}
+		}
+
+		# NOT READY #
+		option = {
+			name = greneclyf_foregin.2.b
+			ai_chance = {
+				factor = 35
+			}
+
+			set_country_flag = NCH_not_friendship_accepted
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_decrease
+			}
+		}
+	}
+
+	# ORDER 1400 #
+	country_event = {
+		id = greneclyf_foregin.3
+		title = greneclyf_foregin.3.t
+		desc = greneclyf_foregin.3.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_foregin.3.a	
+			# FOR WIT #
+			release_autonomy = {
+				target = WIT
+				autonomy_state = autonomy_integrated_puppet
+			}
+
+			# READY #
+			if = {
+				limit = {
+					and = {
+						FBK = {
+							has_government = democratic
+						}
+						FBK = {
+							not = {
+								has_country_flag = NCH_not_friendship_accepted
+							}
+						}
+					}
+				}
+				release_autonomy = {
+					target = FBK
+					autonomy_state = autonomy_integrated_puppet
+				}
+
+				limit = {
+					and = {
+						FIR = {
+							has_government = democratic
+						}
+						FIR = {
+							not = {
+								has_country_flag = NCH_not_friendship_accepted
+							}
+						}
+					}
+				}
+				release_autonomy = {
+					target = FIR
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+
+			# NOT READY #
+			if = {
+				limit = {
+					or = {
+						FBK = {
+							has_country_flag = NCH_not_friendship_accepted
+						}
+						FBK = {
+							not = {
+								has_government = democratic
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = FBK
+					type = puppet_wargoal_focus 
+				}
+				limit = {
+					or = {
+						FIR = {
+							has_country_flag = NCH_not_friendship_accepted
+						}
+						FIR = {
+							not = {
+								has_government = democratic
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = FIR
+					type = puppet_wargoal_focus 
+				}
+			}
 		}
 	}

@@ -1,14 +1,6 @@
 spriteType = {
-	name = "GFX_idea_NCH_obsidian_crystals"
-	texturefile = "gfx/interface/ideas/NCH/CRY_harmony_crystals.dds"
-}
-
-spriteType = {
-	name = "GFX_idea_overpopulation"
-	textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
-}
-
-spriteType = {
-	name = "GFX_idea_NCH_luddities"
-	textureFile = "gfx/interface/goals/NCH/luddities.dds"
+	spriteType = {
+		name = "GFX_idea_NCH_obsidian_crystals"
+		texturefile = "gfx/interface/ideas/NCH/CRY_harmony_crystals.dds"
+	}
 }

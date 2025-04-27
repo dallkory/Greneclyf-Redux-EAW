@@ -354,6 +354,42 @@ ideas = {
 
 		### MAIN PATCH ###
 
+		NCH_help_ponyhills_main = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.15
+				political_power_factor = -0.15
+			}
+		}
+
+		NCH_help_with_industrialization = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				research_speed_factor = 0.075
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+
 		NCH_all_medecine_help = {
 			picture = GFX_unknow
 			allowed = {

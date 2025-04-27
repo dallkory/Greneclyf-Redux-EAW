@@ -12,6 +12,7 @@
  # Traits #
   The_Steel_lady:0 "Стальная воля"
   The_naive_reformer:0 "Наивный реформатор"
+  The_god_chosen_queen:0 "Любимица народа"
 
  ### FOCUSES ###
  # Pre crisis #
@@ -548,6 +549,7 @@
 
  
   ### TOOL TIPS ###
+
   NCH_new_goverment_system_tt:0 "§3Каждые 180 дней состав нашего правительства будет меняться.§!"
 
   NCH_underground_slots_tt:0 "У нас есть как минимум 1 доступная §Yячейка§! для подводного строительства."
