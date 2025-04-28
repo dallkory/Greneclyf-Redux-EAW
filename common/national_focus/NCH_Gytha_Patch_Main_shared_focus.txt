@@ -755,6 +755,11 @@ shared_focus = {
 			target = FIR
 			modifier = NCH_new_hillspony
 		}
+
+		add_opinion_modifier = {
+			target = FBK
+			modifier = NCH_new_hillspony
+		}
 	}
 }
 shared_focus = {
@@ -903,10 +908,18 @@ shared_focus = {
 	y = 21
 
 	available = {
-		and = {
-			is_puppet = FBK
-			is_puppet = FIR
-			is_puppet = WAT
+		or = {
+			NCH = {
+				overlord = {
+					tag = FBK
+				}
+				overlord = {
+					tag = FIR
+				}
+				overlord = {
+					tag = WAT
+				}
+			}
 		}
 	}
 
@@ -1160,8 +1173,8 @@ shared_focus = {
 					owns_state = 603
 					controls_state = 603
 				}
-				FBK = {
-					is_subject = yes
+				overlord = {
+					tag = FBK
 				}
 			}
 
@@ -1177,8 +1190,8 @@ shared_focus = {
 					owns_state = 640
 					controls_state = 640
 				}
-				WIT = {
-					is_subject = yes
+				overlord = {
+					tag = WIT
 				}
 			}
 
@@ -1200,8 +1213,8 @@ shared_focus = {
 					owns_state = 453
 					controls_state = 453
 				}
-				FIR = {
-					is_subject = yes
+				overlord = {
+					tag = FIR
 				}
 			}
 		}
@@ -1236,7 +1249,22 @@ shared_focus = {
 	x = 44
 	y = 22
 
+	available = {
+		or = {
+			has_completed_focus = NCH_bring_them_harmony
+			has_completed_focus = NCH_not_so_different
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 100
+		country_event = {
+			id = greneclyf_foregin.4
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_cit_thrpugh_the_bureaurcracy
 	icon = GFX_goal_unknown

@@ -1200,12 +1200,32 @@ add_namespace = greneclyf_foregin
 		picture = GFX_unknow
 		is_triggered_only = yes
 
+		immediate = {
+			RCT = {
+				diplomatic_relation = {
+					country = FBK
+					relation = guarantee
+					active = no
+				}
+				diplomatic_relation = {
+					country = WAT
+					relation = guarantee
+					active = no
+				}
+				diplomatic_relation = {
+					country = FIR
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+
 		option = {
 			name = greneclyf_foregin.3.a	
+
 			# FOR WIT #
-			release_autonomy = {
-				target = WIT
-				autonomy_state = autonomy_integrated_puppet
+			NCH = {
+				puppet = WAT
 			}
 
 			# READY #
@@ -1280,5 +1300,20 @@ add_namespace = greneclyf_foregin
 					type = puppet_wargoal_focus 
 				}
 			}
+		}
+	}
+
+	# ALWAYS LOYALITY #
+	country_event = {
+		id = greneclyf_foregin.4
+		title = greneclyf_foregin.4.t
+		desc = greneclyf_foregin.4.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.4.a	
+			set_country_flag = NCH_neighborhood_final
+			
 		}
 	}
