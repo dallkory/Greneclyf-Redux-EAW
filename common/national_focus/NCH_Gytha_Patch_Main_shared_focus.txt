@@ -662,25 +662,14 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NCH_new_opportunities
-	icon = GFX_goal_unknown
-	cost = 5
-	prerequisite = {
-		focus = NCH_we_are_not_alone
-	}
-	x = 43
-	y = 17
-
-}
-shared_focus = {
 	id = NCH_river_pf_opportunity
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_new_opportunities
+		focus = NCH_we_are_not_alone
 	}
 	x = 40
-	y = 18
+	y = 17
 
 }
 shared_focus = {
@@ -691,7 +680,7 @@ shared_focus = {
 		focus = NCH_river_pf_opportunity
 	}
 	x = 38
-	y = 19
+	y = 18
 
 	available = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
@@ -709,32 +698,19 @@ shared_focus = {
 		focus = NCH_trade_development
 	}
 	x = 37
-	y = 20
+	y = 19
 
 }
-shared_focus = {
-	id = NCH_our_mission
-	icon = GFX_goal_unknown
-	cost = 5
-	prerequisite = {
-		focus = NCH_we_are_not_alone
-	}
-	x = 45
-	y = 17
 
-}
 shared_focus = {
 	id = NCH_neighborhood
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_new_opportunities
-	}
-	prerequisite = {
-		focus = NCH_our_mission
+		focus = NCH_we_are_not_alone
 	}
 	x = 44
-	y = 18
+	y = 17
 
 	available = {
 		OR = {
@@ -770,7 +746,7 @@ shared_focus = {
 		focus = NCH_neighborhood
 	}
 	x = 43
-	y = 19
+	y = 18
 	
 	bypass = {
 		or = {
@@ -827,7 +803,7 @@ shared_focus = {
 		focus = NCH_neighborhood
 	}
 	x = 45
-	y = 19
+	y = 18
 
 	available = {
 		OR = {
@@ -873,7 +849,7 @@ shared_focus = {
 		focus = NCH_pacts_exchange_for_support
 	}
 	x = 44
-	y = 20
+	y = 19
 
 		available = {
 		has_completed_focus = NCH_pacts_exchange_for_support
@@ -905,7 +881,7 @@ shared_focus = {
 		focus = NCH_long_cooperation
 	}
 	x = 45
-	y = 21
+	y = 20
 
 	available = {
 		or = {
@@ -933,10 +909,10 @@ shared_focus = {
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_our_mission
+		focus = NCH_we_are_not_alone
 	}
 	x = 48
-	y = 18
+	y = 17
 
 }
 
@@ -948,7 +924,7 @@ shared_focus = {
 		focus = NCH_their_light_beckons_us
 	}
 	x = 48
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -959,7 +935,7 @@ shared_focus = {
 		focus = NCH_emvassy_to_equestria
 	}
 	x = 47
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -970,7 +946,7 @@ shared_focus = {
 		focus = NCH_their_light_beckons_us
 	}
 	x = 50
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -984,7 +960,7 @@ shared_focus = {
 		focus = NCH_princess_in_a_high_castle
 	}
 	x = 49
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -998,7 +974,7 @@ shared_focus = {
 		focus = NCH_our_best_qualities
 	}
 	x = 48
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1009,7 +985,7 @@ shared_focus = {
 		focus = NCH_princess_in_a_high_castle
 	}
 	x = 51
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -1023,7 +999,7 @@ shared_focus = {
 		focus = NCH_harmpony_in_every_heart
 	}
 	x = 50
-	y = 21
+	y = 20
 
 }
 
@@ -1035,7 +1011,7 @@ shared_focus = {
 		focus = NCH_harmpony_in_every_heart
 	}
 	x = 52
-	y = 21
+	y = 20
 
 }
 
@@ -1089,7 +1065,7 @@ shared_focus = {
 		focus = NCH_river_pf_opportunity
 	}
 	x = 40
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -1103,7 +1079,7 @@ shared_focus = {
 		focus = NCH_peaceful_coexistence
 	}
 	x = 39
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -1114,7 +1090,7 @@ shared_focus = {
 		focus = NCH_peaceful_coexistence
 	}
 	x = 41
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -1128,7 +1104,7 @@ shared_focus = {
 		focus = NCH_friendship_delegation
 	}
 	x = 49
-	y = 22
+	y = 21
 
 }
 shared_focus = {
@@ -1142,7 +1118,7 @@ shared_focus = {
 		focus = NCH_our_values
 	}
 	x = 51
-	y = 22
+	y = 21
 
 }
 shared_focus = {
@@ -1153,7 +1129,7 @@ shared_focus = {
 		focus = NCH_long_cooperation
 	}
 	x = 43
-	y = 21
+	y = 20
 
 	available = {
 		and = {
@@ -1247,7 +1223,7 @@ shared_focus = {
 		focus = NCH_not_so_different
 	}
 	x = 44
-	y = 22
+	y = 21
 
 	available = {
 		or = {
@@ -1276,7 +1252,7 @@ shared_focus = {
 		focus = NCH_scout_the_situation
 	}
 	x = 40
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1290,7 +1266,7 @@ shared_focus = {
 		focus = NCH_scout_the_situation
 	}
 	x = 38
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1301,7 +1277,7 @@ shared_focus = {
 		focus = NCH_visit_to_riverlands
 	}
 	x = 36
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1318,7 +1294,7 @@ shared_focus = {
 		focus = NCH_embed_agents_in_goverments
 	}
 	x = 39
-	y = 22
+	y = 21
 
 }
 
