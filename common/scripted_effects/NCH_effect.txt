@@ -25,3 +25,6 @@ NCH_remove_underground_buildings = {
 		level = var:NCH_underground_reactor_remove
 	}
 }
+NCH_script = {
+
+}
