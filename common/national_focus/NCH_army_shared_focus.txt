@@ -863,7 +863,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_break_ice
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
 	}
@@ -900,7 +900,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_merchant_navy
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
 	}
@@ -925,7 +925,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_resources_for_fleet
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
 		focus = NCH_merchant_navy
@@ -947,7 +947,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_investing_in_shipbuildings
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
 		focus = NCH_merchant_navy
@@ -1130,7 +1130,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_auxiliary_battalions
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
 	}
@@ -1162,7 +1162,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_inspire_by_example
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
 	}
@@ -1205,7 +1205,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_anyone_can_be_hero
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
 	}
@@ -1232,7 +1232,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_greuling_workouts
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
 	}
@@ -1256,7 +1256,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_best_of_the_best
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_inspire_by_example
 	}
@@ -1357,7 +1357,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_priorize_integrity
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
 	}
@@ -1390,7 +1390,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_discipline_is_key_to_order
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
 	}
@@ -1487,7 +1487,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_pass_law_on_consctiption
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
 	}
@@ -1540,7 +1540,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_queen_of_the_fields
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order
 	}
@@ -1573,7 +1573,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_goddes_of_war
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order
 	}

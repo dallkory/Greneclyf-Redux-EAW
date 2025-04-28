@@ -31,6 +31,14 @@ NCH_underground_build_category = {
 	}
 }
 
+NCH_gov_rotation_category = {
+	icon = GFX_unknow
+
+	priority = {
+		base = 153
+	}
+}
+
 NCH_typography_category = {
 	icon = GFX_unknow
 	

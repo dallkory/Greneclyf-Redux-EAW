@@ -69,7 +69,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_education_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 	}
@@ -84,7 +84,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_civil_rights_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
 	}
@@ -99,7 +99,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_health_care_reform
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 	}
@@ -135,7 +135,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_blosmport_hive
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
 	}
@@ -179,7 +179,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_new_instituts
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_civil_rights_reform
 	}
@@ -200,7 +200,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_traditional_way_of_life
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_blosmport_hive
 	}
@@ -222,7 +222,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_first_constitution
 	icon = GFX_goal_unknown
-	cost = 3
+	cost = 2
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
 		focus = NCH_economic_revival
@@ -241,7 +241,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_from_chaos
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_first_constitution
 	}
@@ -268,7 +268,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_form_new_govermant
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
 	}
@@ -296,7 +296,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_reflecting_the_past
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
 	}
@@ -324,7 +324,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_to_the_new_order
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_form_new_govermant
 	}
@@ -336,13 +336,18 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 200
+		custom_effect_tooltip = NCH_new_goverment_system_tt
+
+		set_country_flag = NCH_new_goverment_system_cf
+
+		activate_mission = NCH_gov_rotation
 	}
 }
 
 shared_focus = {
 	id = NCH_save_clans_system
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -366,7 +371,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_hereditary_monarchy
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -392,7 +397,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_reforms_after_storm
 	}
@@ -413,7 +418,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bee_productivity
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
 	}
@@ -428,7 +433,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_businesses_do_not_stand_idle
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
 	}
@@ -452,7 +457,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_brood_of_working_drones
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_bee_productivity
 	}
@@ -484,7 +489,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_gaining_economic_power
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
 	}
@@ -519,7 +524,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_ensure_full_employment
 	icon = GFX_goal_unknown
-	cost = 2
+	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
 	}
@@ -538,7 +543,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economics_of_friendship
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_brood_of_working_drones
 	}
@@ -559,7 +564,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_ensure_full_employment
 	}
@@ -643,34 +648,28 @@ shared_focus = {
 shared_focus = {
 	id = NCH_we_are_not_alone
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 2
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
 	}
 	x = 44
 	y = 16
-
-}
-shared_focus = {
-	id = NCH_new_opportunities
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_we_are_not_alone
+	
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
 	}
-	x = 43
-	y = 17
-
 }
+
 shared_focus = {
 	id = NCH_river_pf_opportunity
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_new_opportunities
+		focus = NCH_we_are_not_alone
 	}
 	x = 40
-	y = 18
+	y = 17
 
 }
 shared_focus = {
@@ -681,7 +680,7 @@ shared_focus = {
 		focus = NCH_river_pf_opportunity
 	}
 	x = 38
-	y = 19
+	y = 18
 
 	available = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
@@ -699,33 +698,45 @@ shared_focus = {
 		focus = NCH_trade_development
 	}
 	x = 37
-	y = 20
+	y = 19
 
 }
-shared_focus = {
-	id = NCH_our_mission
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_we_are_not_alone
-	}
-	x = 45
-	y = 17
 
-}
 shared_focus = {
 	id = NCH_neighborhood
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_new_opportunities
-	}
-	prerequisite = {
-		focus = NCH_our_mission
+		focus = NCH_we_are_not_alone
 	}
 	x = 44
-	y = 18
+	y = 17
 
+	available = {
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = WAT
+			modifier = NCH_new_hillspony
+		}
+
+		add_opinion_modifier = {
+			target = FIR
+			modifier = NCH_new_hillspony
+		}
+
+		add_opinion_modifier = {
+			target = FBK
+			modifier = NCH_new_hillspony
+		}
+	}
 }
 shared_focus = {
 	id = NCH_another_visit
@@ -735,9 +746,55 @@ shared_focus = {
 		focus = NCH_neighborhood
 	}
 	x = 43
-	y = 19
+	y = 18
+	
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
 
+			not = {
+				WAT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		# WAT INTEGRATION #
+		if = {
+			limit = {
+				WAT = {
+					has_government = communism
+				}
+			}
+			set_country_flag = WAT_agreement_our_friendship
+			country_event = {
+				id = greneclyf_foregin.1
+				days = 0
+			}
+		}
+		if = {
+			limit = {
+				WAT = {
+					not = {
+						has_government = communism
+					}
+				}
+			}
+			custom_effect_tooltip = WAT_not_commie
+			add_opinion_modifier = {
+				target = WAT
+				modifier = small_decrease
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_pacts_exchange_for_support
 	icon = GFX_goal_unknown
@@ -746,9 +803,41 @@ shared_focus = {
 		focus = NCH_neighborhood
 	}
 	x = 45
-	y = 19
+	y = 18
 
+	available = {
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+
+	completion_reward = {
+
+		FBK  = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+
+		WAT = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+
+		FIR = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_long_cooperation
 	icon = GFX_goal_unknown
@@ -760,9 +849,30 @@ shared_focus = {
 		focus = NCH_pacts_exchange_for_support
 	}
 	x = 44
-	y = 20
+	y = 19
 
+		available = {
+		has_completed_focus = NCH_pacts_exchange_for_support
+	}
+
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.3
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_not_so_different
 	icon = GFX_goal_unknown
@@ -771,8 +881,27 @@ shared_focus = {
 		focus = NCH_long_cooperation
 	}
 	x = 45
-	y = 21
+	y = 20
 
+	available = {
+		or = {
+			NCH = {
+				overlord = {
+					tag = FBK
+				}
+				overlord = {
+					tag = FIR
+				}
+				overlord = {
+					tag = WAT
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -780,10 +909,10 @@ shared_focus = {
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_our_mission
+		focus = NCH_we_are_not_alone
 	}
 	x = 48
-	y = 18
+	y = 17
 
 }
 
@@ -795,7 +924,7 @@ shared_focus = {
 		focus = NCH_their_light_beckons_us
 	}
 	x = 48
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -806,7 +935,7 @@ shared_focus = {
 		focus = NCH_emvassy_to_equestria
 	}
 	x = 47
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -817,7 +946,7 @@ shared_focus = {
 		focus = NCH_their_light_beckons_us
 	}
 	x = 50
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -831,7 +960,7 @@ shared_focus = {
 		focus = NCH_princess_in_a_high_castle
 	}
 	x = 49
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -845,7 +974,7 @@ shared_focus = {
 		focus = NCH_our_best_qualities
 	}
 	x = 48
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -856,7 +985,7 @@ shared_focus = {
 		focus = NCH_princess_in_a_high_castle
 	}
 	x = 51
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -870,7 +999,7 @@ shared_focus = {
 		focus = NCH_harmpony_in_every_heart
 	}
 	x = 50
-	y = 21
+	y = 20
 
 }
 
@@ -882,7 +1011,7 @@ shared_focus = {
 		focus = NCH_harmpony_in_every_heart
 	}
 	x = 52
-	y = 21
+	y = 20
 
 }
 
@@ -936,7 +1065,7 @@ shared_focus = {
 		focus = NCH_river_pf_opportunity
 	}
 	x = 40
-	y = 19
+	y = 18
 
 }
 shared_focus = {
@@ -950,7 +1079,7 @@ shared_focus = {
 		focus = NCH_peaceful_coexistence
 	}
 	x = 39
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -961,7 +1090,7 @@ shared_focus = {
 		focus = NCH_peaceful_coexistence
 	}
 	x = 41
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -975,7 +1104,7 @@ shared_focus = {
 		focus = NCH_friendship_delegation
 	}
 	x = 49
-	y = 22
+	y = 21
 
 }
 shared_focus = {
@@ -989,7 +1118,7 @@ shared_focus = {
 		focus = NCH_our_values
 	}
 	x = 51
-	y = 22
+	y = 21
 
 }
 shared_focus = {
@@ -1000,8 +1129,88 @@ shared_focus = {
 		focus = NCH_long_cooperation
 	}
 	x = 43
-	y = 21
+	y = 20
 
+	available = {
+		and = {
+			# FBK #
+			or = {
+				and = {
+					owns_state = 569
+					controls_state = 569
+					owns_state = 639
+					controls_state = 639
+					owns_state = 572
+					controls_state = 572
+					owns_state = 571
+					controls_state = 571
+					owns_state = 455
+					controls_state = 455
+					owns_state = 603
+					controls_state = 603
+				}
+				overlord = {
+					tag = FBK
+				}
+			}
+
+			# WIT #
+			or = {
+				and = {
+					owns_state = 641
+					controls_state = 641
+					owns_state = 643
+					controls_state = 643
+					owns_state = 642
+					controls_state = 642
+					owns_state = 640
+					controls_state = 640
+				}
+				overlord = {
+					tag = WIT
+				}
+			}
+
+			# FIR #
+			or = {
+				and = {
+					owns_state = 604
+					controls_state = 604
+					owns_state = 644
+					controls_state = 644
+					owns_state = 454
+					controls_state = 454
+					owns_state = 636
+					controls_state = 636
+					owns_state = 478
+					controls_state = 478
+					owns_state = 650
+					controls_state = 650
+					owns_state = 453
+					controls_state = 453
+				}
+				overlord = {
+					tag = FIR
+				}
+			}
+		}
+	}
+
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+
+	completion_reward = {
+		NTR = {
+			add_manpower = 40000
+		}
+	}
 }
 shared_focus = {
 	id = NCH_new_great_agreement
@@ -1014,9 +1223,24 @@ shared_focus = {
 		focus = NCH_not_so_different
 	}
 	x = 44
-	y = 22
+	y = 21
 
+	available = {
+		or = {
+			has_completed_focus = NCH_bring_them_harmony
+			has_completed_focus = NCH_not_so_different
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 100
+		country_event = {
+			id = greneclyf_foregin.4
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_cit_thrpugh_the_bureaurcracy
 	icon = GFX_goal_unknown
@@ -1028,7 +1252,7 @@ shared_focus = {
 		focus = NCH_scout_the_situation
 	}
 	x = 40
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1042,7 +1266,7 @@ shared_focus = {
 		focus = NCH_scout_the_situation
 	}
 	x = 38
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1053,7 +1277,7 @@ shared_focus = {
 		focus = NCH_visit_to_riverlands
 	}
 	x = 36
-	y = 21
+	y = 20
 
 }
 shared_focus = {
@@ -1070,7 +1294,7 @@ shared_focus = {
 		focus = NCH_embed_agents_in_goverments
 	}
 	x = 39
-	y = 22
+	y = 21
 
 }
 

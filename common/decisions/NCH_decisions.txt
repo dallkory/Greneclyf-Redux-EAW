@@ -686,6 +686,92 @@ NCH_north_south_development = {
 	}
 }
 
+# GOV ROTATION #
+NCH_gov_rotation_category = {
+	NCH_gov_rotation = {
+		icon = generic_politics
+		fire_only_once = no
+		#is_good = no
+		days_mission_timeout = 3
+
+		activation = {
+			has_completed_focus = NCH_to_the_new_order
+		}
+		cancel_trigger = {
+			not = {
+				has_government = democratic
+			}
+		}
+
+		available = {
+			has_country_flag = NCH_new_gov_election
+		}
+
+		timeout_effect = {
+			# ALL POLITIC ADVISORS #
+			limit = {
+				has_idea = {
+					NCH_Oiren_Judge_itoken #pol
+					NCH_generic_military_theorist #other / Basalt
+					NCH_Caider_it #other
+					NCH_Valha_it #industrial
+					NCH_celarl_it #other
+					NCH_Derkliones_it #other spymaster
+					NCH_Sul_Oraiste_it # bunkers / industrial
+					NCH_Marikel_it #
+					NCH_Ludas_it #industrial
+					NCH_Arachi_it #pol 
+					NCH_Yorilos_it #industrial
+					NCH_Floppa_it #pol 
+				}
+				remove_ideas = {
+					NCH_Oiren_Judge_itoken #pol
+					NCH_generic_military_theorist #other / Basalt
+					NCH_Caider_it #other
+					NCH_Valha_it #industrial
+					NCH_celarl_it #other
+					NCH_Derkliones_it #other spymaster
+					NCH_Sul_Oraiste_it # bunkers / industrial
+					NCH_Marikel_it #
+					NCH_Ludas_it #industrial
+					NCH_Arachi_it #pol 
+					NCH_Yorilos_it #industrial
+					NCH_Floppa_it #pol 
+				}
+			}
+			
+			# NEW GOV #
+			# ECONOMIC #
+			random_list = {
+				25 = { add_ideas = NCH_Valha_it } 
+				25 = { add_ideas = NCH_Ludas_it } 
+				25 = { add_ideas = NCH_Sul_Oraiste_it } 
+				25 = { add_ideas = NCH_Yorilos_it }
+			}
+
+			# POLITIC #
+			random_list = {
+				25 = { add_ideas = NCH_Oiren_Judge_itoken } 
+				25 = { add_ideas = NCH_Arachi_it } 
+				25 = { add_ideas = NCH_Floppa_it } 
+				25 = { add_ideas = NCH_Marikel_it } 
+			}
+
+			# OTHER #
+			random_list = {
+				50 = { add_ideas = NCH_Derkliones_it } 
+				50 = { add_ideas = NCH_Caider_it } 
+			}
+
+			# THEORETIC #
+			random_list = {
+				50 = { add_ideas = NCH_celarl_it } 
+				50 = { add_ideas = NCH_generic_military_theorist } 
+			}
+		}
+	}
+}
+
 # UNDERGROUND #
 NCH_underground_build_category = {
 	NCH_build_underground_civ_factory = {
@@ -816,7 +902,7 @@ NCH_queen_plan = {
 		icon = d
 		fire_only_once = yes 
 		is_good = no
-		days_mission_timeout = 480
+		days_mission_timeout = 580
 
 		activation = {
 			has_completed_focus = NCH_patch_to_prosperty
