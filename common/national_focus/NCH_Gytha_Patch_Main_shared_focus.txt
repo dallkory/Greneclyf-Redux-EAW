@@ -254,15 +254,16 @@ shared_focus = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
 	}
 
+	
 	completion_reward = {
-		add_trait = {
-			character = NCH_queen_gytha
-			trait = The_god_chosen_queen
-		}
-
 		remove_trait = {
 			character = NCH_queen_gytha
 			trait = The_naive_reformer
+		}
+
+		add_trait = {
+			character = NCH_queen_gytha
+			trait = The_god_chosen_queen
 		}
 	}
 }
@@ -1243,6 +1244,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 100
+		create_faction = NCH_fraction_neighborhood
 		country_event = {
 			id = greneclyf_foregin.4
 			days = 0
