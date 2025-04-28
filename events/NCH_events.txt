@@ -1125,15 +1125,15 @@ add_namespace = greneclyf_foregin
 
 		option = {
         name = greneclyf_foregin.1.a	
-			give_guarantee = WAT
+			give_guarantee = WIT
 
 			add_opinion_modifier = {
-				target = WAT
-				modifier = NCH_WAT_friends
+				target = WIT
+				modifier = NCH_WIT_friends
 			}
 
 			add_opinion_modifier = {
-				target = WAT
+				target = WIT
 				modifier = huge_increase
 			}
 		}
@@ -1160,7 +1160,7 @@ add_namespace = greneclyf_foregin
 			}
 			add_opinion_modifier = {
 				target = NCH
-				modifier = NCH_WAT_friends
+				modifier = NCH_WIT_friends
 			}
 			add_timed_idea = {
 				idea = NCH_help_with_industrialization
@@ -1208,7 +1208,7 @@ add_namespace = greneclyf_foregin
 					active = no
 				}
 				diplomatic_relation = {
-					country = WAT
+					country = WIT
 					relation = guarantee
 					active = no
 				}
@@ -1225,7 +1225,7 @@ add_namespace = greneclyf_foregin
 
 			# FOR WIT #
 			NCH = {
-				puppet = WAT
+				puppet = WIT
 			}
 
 			# READY #
@@ -1314,6 +1314,6 @@ add_namespace = greneclyf_foregin
 		option = {
         name = greneclyf_foregin.4.a	
 			set_country_flag = NCH_neighborhood_final
-			
+
 		}
 	}
