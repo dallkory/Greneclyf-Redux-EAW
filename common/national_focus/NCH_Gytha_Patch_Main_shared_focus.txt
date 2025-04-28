@@ -150,6 +150,8 @@ shared_focus = {
 			idea = NCH_rise_science
 			days = 150
 		}
+		add_ideas = big_science_base
+		
 		add_research_slot = 1
 	}
 }
