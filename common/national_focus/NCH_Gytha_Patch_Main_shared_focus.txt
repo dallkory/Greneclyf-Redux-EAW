@@ -150,6 +150,8 @@ shared_focus = {
 			idea = NCH_rise_science
 			days = 150
 		}
+		add_ideas = big_science_base
+		
 		add_research_slot = 1
 	}
 }
@@ -252,15 +254,16 @@ shared_focus = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
 	}
 
+	
 	completion_reward = {
-		add_trait = {
-			character = NCH_queen_gytha
-			trait = The_god_chosen_queen
-		}
-
 		remove_trait = {
 			character = NCH_queen_gytha
 			trait = The_naive_reformer
+		}
+
+		add_trait = {
+			character = NCH_queen_gytha
+			trait = The_god_chosen_queen
 		}
 	}
 }
@@ -715,7 +718,7 @@ shared_focus = {
 	available = {
 		OR = {
 			country_exists = FBK
-			country_exists = WAT
+			country_exists = WIT
 			country_exists = FIR
 		}
 	}
@@ -723,7 +726,7 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 50
 		add_opinion_modifier = {
-			target = WAT
+			target = WIT
 			modifier = NCH_new_hillspony
 		}
 
@@ -752,12 +755,12 @@ shared_focus = {
 		or = {
 			not = {
 				country_exists = FBK
-				country_exists = WAT
+				country_exists = WIT
 				country_exists = FIR
 			}
 
 			not = {
-				WAT = {
+				WIT = {
 					has_government = communism
 				}
 			}
@@ -765,14 +768,14 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		# WAT INTEGRATION #
+		# WIT INTEGRATION #
 		if = {
 			limit = {
-				WAT = {
+				WIT = {
 					has_government = communism
 				}
 			}
-			set_country_flag = WAT_agreement_our_friendship
+			set_country_flag = WIT_agreement_our_friendship
 			country_event = {
 				id = greneclyf_foregin.1
 				days = 0
@@ -780,15 +783,15 @@ shared_focus = {
 		}
 		if = {
 			limit = {
-				WAT = {
+				WIT = {
 					not = {
 						has_government = communism
 					}
 				}
 			}
-			custom_effect_tooltip = WAT_not_commie
+			custom_effect_tooltip = WIT_not_commie
 			add_opinion_modifier = {
-				target = WAT
+				target = WIT
 				modifier = small_decrease
 			}
 		}
@@ -808,7 +811,7 @@ shared_focus = {
 	available = {
 		OR = {
 			country_exists = FBK
-			country_exists = WAT
+			country_exists = WIT
 			country_exists = FIR
 		}
 	}
@@ -822,7 +825,7 @@ shared_focus = {
 			}
 		}
 
-		WAT = {
+		WIT = {
 			country_event = {
 				id = greneclyf_foregin.2
 				days = 0
@@ -851,7 +854,7 @@ shared_focus = {
 	x = 44
 	y = 19
 
-		available = {
+	available = {
 		has_completed_focus = NCH_pacts_exchange_for_support
 	}
 
@@ -859,7 +862,7 @@ shared_focus = {
 		or = {
 			not = {
 				country_exists = FBK
-				country_exists = WAT
+				country_exists = WIT
 				country_exists = FIR
 			}
 		}
@@ -893,7 +896,7 @@ shared_focus = {
 					tag = FIR
 				}
 				overlord = {
-					tag = WAT
+					tag = WIT
 				}
 			}
 		}
@@ -1149,8 +1152,10 @@ shared_focus = {
 					owns_state = 603
 					controls_state = 603
 				}
-				overlord = {
-					tag = FBK
+				FBK = {
+					overlord = {
+						tag = NCH
+					}
 				}
 			}
 
@@ -1166,8 +1171,10 @@ shared_focus = {
 					owns_state = 640
 					controls_state = 640
 				}
-				overlord = {
-					tag = WIT
+				WIT = {
+					overlord = {
+						tag = NCH
+					}
 				}
 			}
 
@@ -1189,8 +1196,10 @@ shared_focus = {
 					owns_state = 453
 					controls_state = 453
 				}
-				overlord = {
-					tag = FIR
+				FIR = {
+					overlord = {
+						tag = NCH
+					}
 				}
 			}
 		}
@@ -1200,7 +1209,7 @@ shared_focus = {
 		or = {
 			not = {
 				country_exists = FBK
-				country_exists = WAT
+				country_exists = WIT
 				country_exists = FIR
 			}
 		}
@@ -1212,6 +1221,7 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_new_great_agreement
 	icon = GFX_goal_unknown
@@ -1234,6 +1244,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 100
+		create_faction = NCH_fraction_neighborhood
 		country_event = {
 			id = greneclyf_foregin.4
 			days = 0
