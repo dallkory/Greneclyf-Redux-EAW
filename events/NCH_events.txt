@@ -1224,6 +1224,11 @@ add_namespace = greneclyf_foregin
 			name = greneclyf_foregin.3.a	
 
 			# FOR WIT #
+			WIT = {
+				set_party_rule = {
+					ideology = communism
+				}
+			}
 			NCH = {
 				puppet = WIT
 			}

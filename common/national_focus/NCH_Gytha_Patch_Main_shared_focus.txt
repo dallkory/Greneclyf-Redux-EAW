@@ -596,7 +596,10 @@ shared_focus = {
 	}
 	x = 33
 	y = 16
-
+	
+	available = {
+		has_completed_focus = NCH_cit_thrpugh_the_bureaurcracy
+	}
 }
 
 shared_focus = {
@@ -1249,6 +1252,7 @@ shared_focus = {
 			id = greneclyf_foregin.4
 			days = 0
 		}
+
 		FBK = { add_to_ROOT_potential_cores = yes }
 		FIR = { add_to_ROOT_potential_cores = yes }
 		WAT = { add_to_ROOT_potential_cores = yes }

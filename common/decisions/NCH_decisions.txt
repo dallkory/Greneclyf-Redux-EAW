@@ -868,7 +868,7 @@ NCH_underground_build_category = {
 
 		remove_effect = {
 			add_to_variable = {
-				var = NCH_underground_civ
+				var = NCH_underground_mil
 				value = 1
 			}
 			add_to_variable = {
@@ -884,11 +884,232 @@ NCH_underground_build_category = {
 		}
 	}
 
+	NCH_build_underground_refinery = {
+		icon = generic_construction
 
-#refinery
-#fuel_silo
-#dockyard
-#
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			custom_trigger_tooltip = {
+				tooltip = NCH_underground_slots_tt
+				check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			}
+		}
+
+		visible = {
+			or = {
+			has_completed_focus = NCH_brood_of_working_drones
+			has_country_flag = NCH_debug
+			}
+		}
+
+		cost = NCH_underground_cost 
+		days_remove = NCH_build_underground_refinery?100
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			factor = 1.0
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = NCH_underground_buildings
+				value = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_refinery"
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = NCH_underground_refinery
+				value = 1
+			}
+			add_to_variable = {
+				var = NCH_underground_refinery_remove 
+				value = -1
+			}
+
+			add_offsite_building = {
+				type = refinery
+				level = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_refinery"
+		}
+	}
+
+	NCH_build_underground_fuel_silo = {
+		icon = generic_construction
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			custom_trigger_tooltip = {
+				tooltip = NCH_underground_slots_tt
+				check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			}
+		}
+
+		visible = {
+			or = {
+			has_completed_focus = NCH_brood_of_working_drones
+			has_country_flag = NCH_debug
+			}
+		}
+
+		cost = NCH_underground_cost 
+		days_remove = NCH_build_underground_refinery?100
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			factor = 1.0
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = NCH_underground_buildings
+				value = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_fuel_silo"
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = NCH_underground_fuel_silo
+				value = 1
+			}
+			add_to_variable = {
+				var = NCH_underground_fuel_silo_remove 
+				value = -1
+			}
+
+			add_offsite_building = {
+				type = fuel_silo
+				level = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_fuel_silo"
+		}
+	}
+
+	NCH_build_underground_dockyard = {
+		icon = generic_construction
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			custom_trigger_tooltip = {
+				tooltip = NCH_underground_slots_tt
+				check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			}
+		}
+
+		visible = {
+			or = {
+			has_completed_focus = NCH_brood_of_working_drones
+			has_country_flag = NCH_debug
+			}
+		}
+
+		cost = NCH_underground_cost 
+		days_remove = NCH_build_underground_refinery?100
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			factor = 1.0
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = NCH_underground_buildings
+				value = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_dockyard"
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = NCH_underground_dockyard
+				value = 1
+			}
+			add_to_variable = {
+				var = NCH_underground_dockyard_remove 
+				value = -1
+			}
+
+			add_offsite_building = {
+				type = dockyard
+				level = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_dockyard"
+		}
+	}
+
+	NCH_build_underground_nuclear_reactor = {
+		icon = generic_construction
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			custom_trigger_tooltip = {
+				tooltip = NCH_underground_slots_tt
+				check_variable = { NCH_underground_slots > NCH_underground_buildings }
+			}
+			not = {
+				has_country_flag = NCH_underground_nuke_finish
+			}
+			is_researching_technology = nuclear_reactor
+		}
+
+		visible = {
+			and = {
+				or = {
+					has_completed_focus = NCH_brood_of_working_drones
+					has_country_flag = NCH_debug
+					}
+			}
+		}
+
+		cost = NCH_underground_cost 
+		days_remove = NCH_build_underground_refinery?210
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		ai_will_do = {
+			factor = 1.0
+		}
+
+		complete_effect = {
+			set_country_flag = NCH_underground_nuke_finish
+			add_to_variable = {
+				var = NCH_underground_buildings
+				value = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_nuclear_reactor"
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = NCH_underground_nuclear_reactor
+				value = 1
+			}
+			add_to_variable = {
+				var = NCH_underground_nuclear_reactor_remove 
+				value = -1
+			}
+
+			add_offsite_building = {
+				type = nuclear_reactor
+				level = 1
+			}
+		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_nuclear_reactor"
+		}
+	}
 
 #new hives?#
 
@@ -942,12 +1163,14 @@ NCH_queen_plan = {
 				custom_effect_tooltip = NCH_queen_plan_sucsess
 			}
 			add_political_power = -200
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.25
+			}
 			add_stability = -0.15
 			
 		}
 	}
-
-
 }
 
 NCH_celarl_laboratory = {

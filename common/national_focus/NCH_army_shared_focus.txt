@@ -1501,38 +1501,30 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		add_manpower = 40000
+
 		if = {
-			limit = { has_idea = volunteer_only_1 }
-			remove_ideas = { volunteer_only_1 }
-			add_ideas = { volunteer_only_1_5 }
-		}
-		else_if = {
-			limit = { has_idea = volunteer_only_1_5 }
-			remove_ideas = { volunteer_only_1_5 }
+			limit = { has_idea = volunteer_only }
 			add_ideas = { limited_conscription }
 		}
 		else_if = {
 			limit = { has_idea = limited_conscription }
-			remove_ideas = { limited_conscription }
 			add_ideas = { extensive_conscription }
 		}
 		else_if = {
 			limit = { has_idea = extensive_conscription }
-			remove_ideas = { extensive_conscription }
 			add_ideas = { service_by_requirement }
 		}
 		else_if = {
 			limit = { has_idea = service_by_requirement }
-			remove_ideas = { service_by_requirement }
 			add_ideas = { all_adult_serve }
 		}
 		else_if = {
 			limit = { has_idea = all_adult_serve }
-			remove_ideas = { all_adult_serve }
 			add_ideas = { scraping_the_barrel }
 		}
 		else = {
-			add_ideas = { volunteer_only_1 }
+			add_ideas = { volunteer_only }
 		}
 	}
 }
