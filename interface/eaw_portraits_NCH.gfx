@@ -1,13 +1,13 @@
 spriteTypes = {
-	####################################################################
-	#################### GENERIC #######################################
-	####################################################################
-	##### Generic Pony #####
 	### Leaders ###
 
-	# Submod #
 	spriteType = {
 		name = "GFX_NCH_operative_Tribbie"
 		textureFile = "gfx/leaders/NCH/Tribbie.tga"
+	}
+
+	spriteType = {
+		name = "GFX_NCH_Steel_Gytha"
+		textureFile = "gfx/leaders/NCH/Steel_Gytha.tga"
 	}
 }

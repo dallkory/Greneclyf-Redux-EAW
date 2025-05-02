@@ -3,18 +3,36 @@ characters={
 	### REDUX ###
 
 	# New Leaders #
+
+	NCH_queen_gytha = {
+		name=NCH_queen_gytha
+		portraits={
+			civilian={
+				large="gfx/leaders/NCH/Queen.tga"
+			}
+		}
+		country_leader={
+			desc="QUEEN_GYTHA_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = { The_naive_reformer }
+			id=-1
+		}
+		gender = female
+	}
 	
 	NCH_Gytha_iron_lady = {
 		name = Gytha_iron_lady
 		portraits = {
 			civilian={ 
-				large=""
+				large = "gfx/leaders/NCH/Steel_Gytha.tga"
 			}
 		}
 		country_leader = {
 			desc = "Gytha_iron_lady_desc"
-			ideology =
-			expire = 
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits = { steel_lady }
 			id = -1
 		}
 		gender = female
@@ -52,12 +70,12 @@ characters={
 	}
 
 	# lord - protecttor
-	NCH_Basalt_Shaw={
+	NCH_Basalt_Shaw ={
 		#name=NCH_theorist
 		name = Basalt_Shaw
 		portraits={
 			army={
-				large="gfx/leaders/NCH/Basalt_Shaw"
+				large="gfx/leaders/NCH/Basalt_Shaw.tga"
 				small="gfx/interface/ideas/Advisors/NCH/Basalt_Shaw.tga"
 			}
 		}
@@ -77,12 +95,67 @@ characters={
 		}
 	}
 
+	NCH_Caider = {
+		name = Cader_Scierite
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Caider.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Caider.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				no = {
+					has_government = fascism
+				}
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Caider_it
+			ledger = army
+			cost = 150
+			
+			allowed = {
+				original_tag = NCH
+			}
+
+			traits = {
+				red_scientist
+			}
+		}
+	}
+
+	NCH_Gerald_3 = {
+		name = Gerald_3
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Gerald_3.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_country_flag = NCH_cardinal_chosed
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Gerald_3_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				first_bishop
+			}
+		}
+	}
+
 	NCH_Valha = {
 		name = Valha_Ksilokopa
 		desc = Valha_Ksilokopa_desc 
 		portraits = {
 			army = {
-				small = ""
+				small = "gfx/interface/ideas/Advisors/NCH/Valha.tga"
 			}
 		}
 
@@ -91,7 +164,7 @@ characters={
 				has_country_flag = NCH_valha_hired
 			}
 			slot = political_advisor
-			idea_token = NCH_Valha
+			idea_token = NCH_Valha_it
 			ledger = army
 			cost = 100
 			
@@ -99,7 +172,7 @@ characters={
 				original_tag = NCH
 			}
 			traits = {
-				great_architect
+				great_architecter
 			}
 		}
 	}
@@ -114,16 +187,13 @@ characters={
         }
         advisor={
             slot = theorist
-            idea_token = NCH_celarl
+            idea_token = NCH_celarl_it
             ledger = army
             cost = 150
             removal_cost = -1
             allowed = {
                 original_tag = NCH
             }
-			available = { 
-                has_completed_focus = NCH_nuce_program_first_step
-            } 
             research_bonus = {
                 nuclear = 0.15
             }
@@ -154,7 +224,7 @@ characters={
 			}
 			advisor = {
 				slot = political_advisor
-				idea_token = NCH_Derkliones
+				idea_token = NCH_Derkliones_it
 				available = {
 					has_intelligence_agency = yes
 				}
@@ -179,7 +249,7 @@ characters={
 			}
 			advisor = {
 				slot = political_advisor
-				idea_token = NCH_Derkliones
+				idea_token = NCH_Derkliones_it
 				allowed = {
 					original_tag = NCH
 				}
@@ -199,7 +269,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = NCH_Sul_Oraiste
+			idea_token = NCH_Sul_Oraiste_it
 			traits= {
 				fortification_engineer
 			}
@@ -215,7 +285,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = NCH_trade_advisor
+			idea_token = NCH_Marikel_it
 			traits = {
 				smooth_talking_charmer
 			}
@@ -231,7 +301,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = NCH_captain_of_industry
+			idea_token = NCH_Ludas_it
 			traits = {
 				captain_of_industry
 			}
@@ -248,6 +318,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = NCH_Arachi_it
 			traits = { 
 				ideological_crusader
 			}
@@ -264,9 +335,34 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = NCH_Yorilos_it
 			traits = { 
 				war_industrialist 
 			}
+		}
+	}
+
+	NCH_Floppa={
+		name=Floppa
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Floppa.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Floppa_it
+			desc = "Floppa_desc"
+			cost =  150
+			allowed = {
+				original_tag = NCH
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			traits = {
+				silent_workbug2
+			 }
 		}
 	}
 
@@ -564,30 +660,6 @@ characters={
 		}
 	}
 
-	NCH_Floppa={
-		name=Floppa
-		portraits={
-			army={
-				small="gfx/interface/ideas/Advisors/NCH/Floppa.tga"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NCH_Floppa
-			desc = "Floppa_desc"
-			cost =  150
-			allowed = {
-				original_tag = NCH
-			}
-			ai_will_do = {
-				factor = 1
-			}
-			traits = {
-				silent_workbug2
-			 }
-		}
-	}
-
 	# Air chiefs #
 	NCH_Farris_Fork={
 		portraits={
@@ -613,25 +685,57 @@ characters={
 			}
 		}
 	}
+	NCH_Harris_Perk={
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = NCH_air_command_1
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = NCH_who_else_but_us
+			}
+			traits = {
+				air_airborne_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NCH_Nowel_Dark={
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = NCH_air_command_2
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = NCH_flying_like_butterfly
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 
    	 # Submod #
     
-	NCH_queen_gytha={
-		name=NCH_queen_gytha
-		portraits={
-			civilian={
-				large="gfx/leaders/NCH/Queen.tga"
-			}
-		}
-		country_leader={
-			desc="QUEEN_GYTHA_DESC"
-			ideology=conservatism
-			expire="1965.1.1.1"
-			traits = { The_naive_reformer }
-			id=-1
-		}
-		gender = female
-	}
 	NCH_oiren_of_oir={
 		name=NCH_oiren_of_oir
 		portraits={

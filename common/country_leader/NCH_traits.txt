@@ -1,11 +1,42 @@
+	#war_support_factor = 0.05
+	#experience_gain_army = 0.05
+	#conscription_factor = 0.05
+	#industrial_capacity_factory = 0.1
+	#high_command_cost_factor = -0.25
+	#send_volunteers_tension = 1.0
+	#guarantee_tension = 1.0
+	#resistance_activity = -0.2
+	#resistance_damage_to_garrison = -0.25
+	#mobilization_speed = 0.15
+	#justify_war_goal_time = -0.25
+
 leader_traits = {
+
+	The_Steel_lady = {
+		random = no
+		ai_focus_aggressive_factor = 0.5
+		political_power_factor = 0.05
+
+		army_armor_attack_factor = 0.05
+		army_armor_defence_factor = 0.05
+		communism_drift = -0.03
+	}
 
 	The_naive_reformer = {
 		random = no
-		political_power_factor = 0.05
+		political_power_factor = -0.05
 		stability_factor = -0.05
 		democratic_drift = 0.03
 		democratic_acceptance = 50
+	}
+
+	The_god_chosen_queen = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.35
+		army_core_defence_factor = 0.1
+		mobilization_speed = 0.05
+		democratic_drift = 0.03
 	}
 	
 
@@ -14,8 +45,16 @@ leader_traits = {
 		political_power_factor = 0.1
 			
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 		}
+	}
+
+	first_bishop = {
+		random = no
+		political_power_gain = 0.25
+		recruitable_population_factor = 0.05
+		war_support_factor = 0.05   
+		army_org_factor = 0.05
 	}
 
 	higher_judge_oiren = {
@@ -28,24 +67,31 @@ leader_traits = {
 		resistance_growth_bonus = -0.05  
 
 		ai_will_do = {
-			factor = 0
+			factor = 0.5
 		}
 	}
 
-	great_architect = {
+	great_architecter = {
 		random = no
 
-		local_building_slots = 2
-		construction_speed = 0.10
-        civilian_factory_construction_speed = 0.10
-        military_factory_construction_speed = 0.10
-        dockyard_construction_speed = 0.10
-        land_fort_construction_speed = 0.10
-        coastal_fort_construction_speed = 0.10
-        infrastructure_construction_speed = 0.10
-        fuel_silo_construction_speed = 0.10
-        radar_station_construction_speed = 0.10
-        nuclear_reactor_construction_speed = 0.10
-        build_cost_reduction = 0.05
+		global_building_slots_factor = 0.1
+		production_speed_buildings_factor = 0.075
+
+		industry_free_repair_factor = 0.15
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	red_scientist = {
+		random = no
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.1
+		communism_drift = 0.01
+
+		ai_will_do = {
+			factor = 0.5
+		}
 	}
 }

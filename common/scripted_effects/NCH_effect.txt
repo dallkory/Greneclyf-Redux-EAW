@@ -1,0 +1,30 @@
+
+
+
+NCH_remove_underground_buildings = {
+	custom_effect_tooltip = HIP_remove_underwater_buildings_tt
+
+	add_offsite_building = {
+		type = industrial_complex
+		level = var:NCH_underground_civ_remove 
+	}
+	add_offsite_building = {
+		type = arms_factory
+		level = var:NCH_underground_mil_remove 
+	}
+	add_offsite_building = {
+		type = synthetic_refinery
+		level = var:NCH_underground_refinery_remove
+	}
+	add_offsite_building = {
+		type = fuel_silo
+		level = var:NCH_underground_fuel_silo_remove
+	}
+	add_offsite_building = {
+		type = nuclear_reactor
+		level = var:NCH_underground_reactor_remove
+	}
+}
+NCH_script = {
+
+}

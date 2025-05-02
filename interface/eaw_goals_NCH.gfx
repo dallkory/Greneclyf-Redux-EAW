@@ -1,9 +1,48 @@
 spriteTypes = {
+	### REDUX ###
+	spriteType = {
+		name = "GFX_goal_enyas_legacy"
+		textureFile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
+	}
 
-	#### Equestria At War
+	spriteType = {
+		name = "GFX_goal_new_housing"
+		textureFile = "gfx/interface/goals/NCH/goal_new_Housing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_House_Divided"
+		textureFile = "gfx/interface/goals/NCH/goal_House_Divided.dds.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Summoning_of_the_Oireachtas"
+		textureFile = "gfx/interface/goals/NCH/goal_The_Summoning_of_the_Oireachtas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Study_the_Recent_Experiences"
+		textureFile = "gfx/interface/goals/NCH/Study_the_Recent_Experiences.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_The_Establishment_of_the_State_Printing_House"
+		textureFile = "gfx/interface/goals/NCH/The_Establishment_of_the_State_Printing_House.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Find_Them_Work"
+		textureFile = "gfx/interface/goals/NCH/Find_Them_Work.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_You_learn_from_mistakes"
+		textureFile = "gfx/interface/goals/NCH/You_learn_from_mistakes.dds"
+	}
+
+	
 
 	# Submod #
-
 	spriteType = {
 		name = "GFX_goal_hart_side"
 		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"

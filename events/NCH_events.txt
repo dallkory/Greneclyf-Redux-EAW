@@ -1,6 +1,8 @@
 ﻿add_namespace = greneclyf_redux
-add_namespace = greneclyf_FBK_coup
-add_namespace = greneclyf_crisis
+add_namespace = greneclyf_forces
+add_namespace = greneclyf_main
+add_namespace = greneclyf_obsidian
+add_namespace = greneclyf_foregin
 
 	# Example #
 
@@ -400,10 +402,10 @@ add_namespace = greneclyf_crisis
 				id = NCH_hunger_bop
 				set_default = yes
 			}
-			country_event = {
-				id = greneclyf_redux.11
-				days = 15
-			}
+			#country_event = {
+			#	id = greneclyf_redux.11
+			#	days = 15
+			#}
 			set_country_flag = NCH_hunger_starts
 		}
 
@@ -491,6 +493,7 @@ add_namespace = greneclyf_crisis
 			name = greneclyf_redux.15.a
 		}
 	}
+	
 	# SAOR liberty trade zone #
 	country_event = {
 		id = greneclyf_redux.16
@@ -730,14 +733,14 @@ add_namespace = greneclyf_crisis
 	# SOLDIERS RISING #
 	country_event = {
 		id = greneclyf_redux.30
-		title = greneclyf_redux.29.t
-		desc = greneclyf_redux.29.d
+		title = greneclyf_redux.30.t
+		desc = greneclyf_redux.30.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.29.a
+			name = greneclyf_redux.30.a
 
 		}
 	}
@@ -757,6 +760,269 @@ add_namespace = greneclyf_crisis
 		}
 	}
 
+	country_event = {
+		id = greneclyf_redux.33
+		title = greneclyf_redux.33.t
+		desc = greneclyf_redux.33.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			clr_country_flag = NCH_great_hunger_started
+			name = greneclyf_redux.33.a
+		}
+	}
+
+	# BEE PRODUCTIVITY #
+	country_event = {
+		id = greneclyf_redux.40
+		title = greneclyf_redux.40.t
+		desc = greneclyf_redux.40.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.40.a
+
+			670 = {
+				add_state_modifier = {
+					modifier = { 
+						recruitable_population_factor = 0.15
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.1
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			1209 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			669 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 2
+						local_building_slots = 1
+						local_manpower_factor = 0.15
+						state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			668 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+		}
+	}
+
+	country_event = {
+		id = greneclyf_redux.41
+		title = greneclyf_redux.41.t
+		desc = greneclyf_redux.41.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		immediate = {
+			1210 = {
+				set_demilitarized_zone = no
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.41.a
+			add_political_power = -100
+			add_stability = 0.03
+			add_state_core = 1210
+
+			1210 = {
+				set_state_name = "Yliss"
+			}
+			set_province_name = {
+				id = 10775
+				name = "Yliss"
+			}
+
+			1210 = {
+				add_state_modifier = {
+					modifier = { 
+						local_manpower = 0.05
+						local_supplies_factor = 0.05
+					}
+				}
+			}
+
+			add_timed_idea = {
+				idea = NCH_retaking_saor
+				days = 365
+			}
+		}
+	}
+	
+	# NEW CARDINAL #
+	country_event = {
+		id = greneclyf_redux.42
+		title = greneclyf_redux.42.t
+		desc = greneclyf_redux.42.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.42.a
+			set_country_flag = NCH_cardinal_chosed
+		}
+	}
+
+	## WITCHES ##
+	# BLUE MAIL #
+	country_event = {
+		id = greneclyf_redux.34
+		title = greneclyf_redux.34.t
+		desc = greneclyf_redux.34.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.34.a
+			country_event = {
+				id = greneclyf_redux.35
+				days = 10
+			}
+		}
+	}
+
+	# FINDS #
+	country_event = {
+		id = greneclyf_redux.35
+		title = greneclyf_redux.35.t
+		desc = greneclyf_redux.35.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.35.a
+			country_event = {
+				id = greneclyf_redux.36
+				days = 1
+			}
+		}
+	}
+
+	# SURVIVE #
+	country_event = {
+		id = greneclyf_redux.36
+		title = greneclyf_redux.36.t
+		desc = greneclyf_redux.36.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.36.a
+			country_event = {
+				id = greneclyf_redux.37
+				days = 0
+			}
+		}
+	}
+
+	# AFTER DARK #
+	country_event = {
+		id = greneclyf_redux.37
+		title = greneclyf_redux.37.t
+		desc = greneclyf_redux.37.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.37.a
+			country_event = {
+				id = greneclyf_redux.38
+				days = 0
+			}
+		}
+	}
+
+	# SHINE SUNRISE #
+	country_event = {
+		id = greneclyf_redux.38
+		title = greneclyf_redux.38.t
+		desc = greneclyf_redux.38.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			add_manpower = -300
+			name = greneclyf_redux.38.a
+			country_event = {
+				id = greneclyf_redux.39
+				days = 30
+			}
+		}
+	}
+
+	# KVINTET #
+	country_event = {
+		id = greneclyf_redux.39
+		title = greneclyf_redux.39.t
+		desc = greneclyf_redux.39.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_redux.39.a
+			add_ideas = NCH_Majestic_V
+
+			## ADD 5 WITCHES ##
+			# ADVISOR #
+			add_advisor_role = {
+				advisor = { }
+			}
+
+			# ARMY #
+			add_corps_commander_role = {
+				
+			}
+
+			# NAVY #
+			add_corps_commander_role = {
+				
+			}
+
+			# 2 ARMY CHIEF #
+			add_advisor_role = {
+				advisor = { }
+			}
+
+			add_advisor_role = {
+				advisor = { }
+			}
+		}
+	}
+
+
+
 	### FORCES ###
 
 	country_event = {
@@ -769,8 +1035,7 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_redux.32.a
-
-			
+		}
 	}
 
 	### CHANGE ###
@@ -784,5 +1049,437 @@ add_namespace = greneclyf_crisis
 
 		option = {
 			name = greneclyf_forces.99.a
+		}
+	}
+	### OBS ###
+	country_event = {
+		id = greneclyf_obsidian.1
+		title = greneclyf_obsidian.1.t
+		desc = greneclyf_obsidian.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_obsidian.1.a
+
+			add_ideas = obsidian_trade_NCH
+			NCH = {
+				country_event = greneclyf_obsidian.3
+			}
+			ai_chance = {
+				base = 60
+			}
+		}
+		option = {
+			name = greneclyf_obsidian.1.b
+
+			NCH = {
+				country_event = greneclyf_obsidian.2
+			}
+			ai_chance = {
+				base = 40
+
+			}
+		}
+	}
+	country_event = {
+		id = greneclyf_obsidian.2
+		title = greneclyf_obsidian.2.t
+		desc = greneclyf_obsidian.2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_obsidian.2.a
+
+			add_political_power = 30
+		}
+	}
+	country_event = {
+		id = greneclyf_obsidian.3
+		title = greneclyf_obsidian.3.t
+		desc = greneclyf_obsidian.3.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_obsidian.3.a
+
+			NCH={
+				obsidian_trade_power_increase = yes
+			}
+		}
+	}
+
+	####### MAIN GYTHA #######
+	### MAIN PATCH - FOREGIEN PATCH ###
+
+	# VISIT #
+	country_event = {
+		id = greneclyf_foregin.1
+		title = greneclyf_foregin.1.t
+		desc = greneclyf_foregin.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.1.a	
+			give_guarantee = WIT
+
+			add_opinion_modifier = {
+				target = WIT
+				modifier = NCH_WIT_friends
+			}
+
+			add_opinion_modifier = {
+				target = WIT
+				modifier = huge_increase
+			}
+		}
+	}
+
+	# FRIENDSHIP #
+	country_event = {
+		id = greneclyf_foregin.2
+		title = greneclyf_foregin.2.t
+		desc = greneclyf_foregin.2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# READY #
+		option = {
+			name = greneclyf_foregin.2.a
+			ai_chance = {
+				base = 50
+				factor = 65
+				modifier = {
+					factor = 0.5
+					has_government = democratic
+				}
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = NCH_WIT_friends
+			}
+			add_timed_idea = {
+				idea = NCH_help_with_industrialization
+				days = 180
+			}
+			set_country_flag = NCH_help_ponyhills
+
+			NCH = {
+				add_timed_idea = {
+					idea = NCH_help_ponyhills_main
+					days = 200
+				}
+			}
+		}
+
+		# NOT READY #
+		option = {
+			name = greneclyf_foregin.2.b
+			ai_chance = {
+				factor = 35
+			}
+
+			set_country_flag = NCH_not_friendship_accepted
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_decrease
+			}
+		}
+	}
+
+	# ORDER 1400 #
+	country_event = {
+		id = greneclyf_foregin.3
+		title = greneclyf_foregin.3.t
+		desc = greneclyf_foregin.3.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		immediate = {
+			RCT = {
+				diplomatic_relation = {
+					country = FBK
+					relation = guarantee
+					active = no
+				}
+				diplomatic_relation = {
+					country = WIT
+					relation = guarantee
+					active = no
+				}
+				diplomatic_relation = {
+					country = FIR
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+
+		option = {
+			name = greneclyf_foregin.3.a	
+
+			# FOR WIT #
+			WIT = {
+				set_party_rule = {
+					ideology = communism
+				}
+			}
+			NCH = {
+				puppet = WIT
+			}
+
+			# READY #
+			if = {
+				limit = {
+					and = {
+						FBK = {
+							has_government = democratic
+						}
+						FBK = {
+							not = {
+								has_country_flag = NCH_not_friendship_accepted
+							}
+						}
+					}
+				}
+				release_autonomy = {
+					target = FBK
+					autonomy_state = autonomy_integrated_puppet
+				}
+
+				limit = {
+					and = {
+						FIR = {
+							has_government = democratic
+						}
+						FIR = {
+							not = {
+								has_country_flag = NCH_not_friendship_accepted
+							}
+						}
+					}
+				}
+				release_autonomy = {
+					target = FIR
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+
+			# NOT READY #
+			if = {
+				limit = {
+					or = {
+						FBK = {
+							has_country_flag = NCH_not_friendship_accepted
+						}
+						FBK = {
+							not = {
+								has_government = democratic
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = FBK
+					type = puppet_wargoal_focus 
+				}
+				limit = {
+					or = {
+						FIR = {
+							has_country_flag = NCH_not_friendship_accepted
+						}
+						FIR = {
+							not = {
+								has_government = democratic
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = FIR
+					type = puppet_wargoal_focus 
+				}
+			}
+		}
+	}
+
+	# ALWAYS LOYALITY #
+	country_event = {
+		id = greneclyf_foregin.4
+		title = greneclyf_foregin.4.t
+		desc = greneclyf_foregin.4.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.4.a	
+			set_country_flag = NCH_neighborhood_final
+
+		}
+	}
+
+	# RIVERLANDS #
+	# PEACFUL NEIGHBORHOOD #
+	country_event = {
+		id = greneclyf_foregin.5
+		title = greneclyf_foregin.5.t
+		desc = greneclyf_foregin.5.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.5.a	
+			country_event = {
+				id = greneclyf_foregin.6
+				days = 0
+			}
+
+		}
+	}
+	
+	# MANAGER #
+	country_event = {
+		id = greneclyf_foregin.6
+		title = greneclyf_foregin.6.t
+		desc = greneclyf_foregin.6.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.6.a	
+			country_event = {
+				id = greneclyf_foregin.7
+				days = 0
+			}
+
+		}
+	}
+
+	# IDEA #
+	country_event = {
+		id = greneclyf_foregin.7
+		title = greneclyf_foregin.7.t
+		desc = greneclyf_foregin.7.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.7.a		
+			every_country = {
+				limit = {
+					is_riverlands_country_tag = yes
+				}
+				add_ideas = NCH_nine_stars
+				NCH = {
+					add_ideas = NCH_nine_stars
+				}
+			}			
+		}
+	}
+
+	# DAL MORE #
+	country_event = {
+		id = greneclyf_foregin.8
+		title = greneclyf_foregin.8.t
+		desc = greneclyf_foregin.8.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.8.a	
+			add_timed_idea = {
+				idea = NCH_FRE_development
+				days = 100
+			}
+
+			FRE = {
+				add_popularity = { ideology = democratic popularity = 0.15 }
+			}
+
+			FRE = {
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}	
+			country_event = {
+				id = greneclyf_foregin.9
+				days = 10
+			}
+		}
+	}
+
+	# BAKBANBURG #
+	country_event = {
+		id = greneclyf_foregin.9
+		title = greneclyf_foregin.9.t
+		desc = greneclyf_foregin.9.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.9.a		
+		
+		}
+	}
+
+	# CLEAR HIT #
+	country_event = {
+		id = greneclyf_foregin.10
+		title = greneclyf_foregin.10.t
+		desc = greneclyf_foregin.10.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	 name = greneclyf_foregin.10.a		
+		
+			every_country = {
+				limit = {
+					and = {
+						is_riverlands_country_tag = yes
+						not = {
+							has_government = democratic
+						}
+					}
+				}
+			add_manpower = -200
+				add_timed_idea = {
+					idea = NCH_political_violence
+					days = 210
+				}
+			}
+		}
+	}
+
+	# CRIMSON HOUSE #
+	country_event = {
+		id = greneclyf_foregin.11
+		title = greneclyf_foregin.11.t
+		desc = greneclyf_foregin.11.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.11.a		
+		
 		}
 	}

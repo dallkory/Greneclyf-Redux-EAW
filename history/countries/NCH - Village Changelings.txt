@@ -198,17 +198,21 @@ recruit_character = NCH_Marikel
 #recruit_character = NCH_Tornus
 recruit_character = NCH_Sul_Oraiste
 recruit_character = NCH_Valha
+recruit_character = NCH_Caider
+recruit_character = NCH_Gerald_3
 
 # leaders #
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite
 
+#############################################
 recruit_character = NCH_feilean
 recruit_character = NCH_airann
 recruit_character = NCH_garran_of_leamhan
 recruit_character = NCH_generic_army_log
 recruit_character = NCH_generic_navy_fleet_log #### WIP
+###############################################
 
 NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_navy_fleet_log = { set_character_flag = RIV_advisor_from_NCH }

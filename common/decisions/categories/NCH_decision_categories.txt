@@ -6,7 +6,7 @@ NCH_debug_decision = {
 		original_tag = NCH
 		is_debug = yes
 	}
-	priority = { base = 151 }
+	priority = { base = 200 }
 }
 
 #NCH_hunger_category = {
@@ -20,6 +20,37 @@ NCH_debug_decision = {
 #	priority = 152
 #}
 
+NCH_underground_build_category = {
+	icon = GFX_unknow
+
+	visible = {
+		has_completed_focus = NCH_brood_of_working_drones
+	}
+	priority = {
+		base = 152
+	}
+}
+
+NCH_gov_rotation_category = {
+	icon = GFX_unknow
+
+	priority = {
+		base = 153
+	}
+}
+
+NCH_river_of_op_category = {
+	icon = GFX_political
+	
+	visible = {
+		has_completed_focus = NCH_not_so_united
+		has_country_flag = NCH_debug
+	}
+	priority = {
+		base = 152
+	}
+}
+
 NCH_typography_category = {
 	icon = GFX_unknow
 	
@@ -31,17 +62,6 @@ NCH_typography_category = {
 	}
 }
 
-NCH_obsidian_trade_category = {
-	icon = GFX_unknow
-	
-	visible = {
-		has_country_flag = NCH_obsidian_export
-	}
-	priority = {
-		base = 150
-	}
-}
-
 NCH_trade_with_pony_of_hills = {
 	icon = GFX_unknow
 	
@@ -50,6 +70,22 @@ NCH_trade_with_pony_of_hills = {
 	}
 	priority = {
 		base = 149
+	}
+}
+
+NCH_queen_plan = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+	visible = {
+		has_completed_focus = NCH_patch_to_prosperty
+		has_country_flag = NCH_debug
+	}
+
+	priority = {
+		base = 152
 	}
 }
 
@@ -79,6 +115,21 @@ NCH_hunger_bop_category = {
 		has_power_balance = {
 			id = NCH_hunger_bop
 		}
+	}
+}
+
+NCH_north_south_development = {
+	icon = GFX_unknow
+
+	allowed = {
+		original_tag = NCH
+	}
+	visible = {
+		has_completed_focus = NCH_civil_rights_reform
+	}
+
+	priority = {
+		base = 148
 	}
 }
 
@@ -143,5 +194,11 @@ NCH_crisis_category = {
 	}
 	priority = {
 		base = 100
+	}
+}
+NCH_obsidian_category = {
+	icon = changeling_category_icon
+	allowed = {
+		original_tag = NCH
 	}
 }
