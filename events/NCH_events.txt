@@ -885,7 +885,6 @@ add_namespace = greneclyf_foregin
 
 		option = {
 			name = greneclyf_redux.42.a
-			
 			set_country_flag = NCH_cardinal_chosed
 		}
 	}
@@ -1322,3 +1321,5 @@ add_namespace = greneclyf_foregin
 
 		}
 	}
+
+	# RIVERLANDS #

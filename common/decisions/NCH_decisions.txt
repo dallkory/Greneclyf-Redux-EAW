@@ -884,7 +884,7 @@ NCH_underground_build_category = {
 		}
 	}
 
-	NCH_build_underground_refinery = {
+	NCH_build_underground_synthetic_refinery = {
 		icon = generic_construction
 
 		available = {
@@ -923,16 +923,16 @@ NCH_underground_build_category = {
 
 		remove_effect = {
 			add_to_variable = {
-				var = NCH_underground_refinery
+				var = NCH_underground_synthetic_refinery
 				value = 1
 			}
 			add_to_variable = {
-				var = NCH_underground_refinery_remove 
+				var = NCH_underground_synthetic_refinery_remove 
 				value = -1
 			}
 
 			add_offsite_building = {
-				type = refinery
+				type = synthetic_refinery
 				level = 1
 			}
 		log = "[GetDateText]: [Root.GetName]: Decision NCH_underground_build_refinery"

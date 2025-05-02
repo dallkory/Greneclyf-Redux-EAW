@@ -126,6 +126,30 @@ characters={
 		}
 	}
 
+	NCH_Gerald_3 = {
+		name = Gerald_3
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Gerald_3.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_country_flag = NCH_cardinal_chosed
+			}
+
+			slot = political_advisor
+			idea_token = NCH_Gerald_3_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				first_bishop
+			}
+		}
+	}
+
 	NCH_Valha = {
 		name = Valha_Ksilokopa
 		desc = Valha_Ksilokopa_desc 

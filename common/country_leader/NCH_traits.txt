@@ -49,6 +49,14 @@ leader_traits = {
 		}
 	}
 
+	first_bishop = {
+		random = no
+		political_power_gain = 0.25
+		recruitable_population_factor = 0.05
+		war_support_factor = 0.05   
+		army_org_factor = 0.05
+	}
+
 	higher_judge_oiren = {
 		random = no
 		

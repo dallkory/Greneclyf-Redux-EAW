@@ -181,7 +181,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_new_instituts
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 8
 	prerequisite = {
 		focus = NCH_civil_rights_reform
 	}
@@ -202,7 +202,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_traditional_way_of_life
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 8
 	prerequisite = {
 		focus = NCH_blosmport_hive
 	}
@@ -400,7 +400,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 10
 	prerequisite = {
 		focus = NCH_reforms_after_storm
 	}
@@ -546,7 +546,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economics_of_friendship
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 8
 	prerequisite = {
 		focus = NCH_brood_of_working_drones
 	}
@@ -567,7 +567,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 8
 	prerequisite = {
 		focus = NCH_ensure_full_employment
 	}
@@ -677,7 +677,19 @@ shared_focus = {
 	x = 40
 	y = 17
 
+	available = {
+		has_completed_focus = NCH_businesses_do_not_stand_idle
+	}
+
+	completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_trade_development
 	icon = GFX_goal_unknown
@@ -688,12 +700,18 @@ shared_focus = {
 	x = 38
 	y = 18
 
-	available = {
-		has_completed_focus = NCH_businesses_do_not_stand_idle
-	}
-
 	completion_reward = {
 		
+		
+		every_country = {
+			limit = {
+				is_riverlands_country_tag = yes
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = NCH_trade_with_riverlands_opportunity
+			}
+		}
 	}
 }
 shared_focus = {
@@ -727,7 +745,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 50
+		#add_political_power = 50
 		add_opinion_modifier = {
 			target = WIT
 			modifier = NCH_new_hillspony
@@ -763,7 +781,7 @@ shared_focus = {
 			}
 
 			not = {
-				WIT = {
+				WAT = {
 					has_government = communism
 				}
 			}
@@ -774,7 +792,7 @@ shared_focus = {
 		# WIT INTEGRATION #
 		if = {
 			limit = {
-				WIT = {
+				WAT = {
 					has_government = communism
 				}
 			}
@@ -786,7 +804,7 @@ shared_focus = {
 		}
 		if = {
 			limit = {
-				WIT = {
+				WAT = {
 					not = {
 						has_government = communism
 					}
@@ -794,7 +812,7 @@ shared_focus = {
 			}
 			custom_effect_tooltip = WIT_not_commie
 			add_opinion_modifier = {
-				target = WIT
+				target = WAT
 				modifier = small_decrease
 			}
 		}

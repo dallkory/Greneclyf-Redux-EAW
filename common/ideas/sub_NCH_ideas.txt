@@ -82,7 +82,7 @@ ideas = {
 				mobilization_laws_cost_factor = 1.5
 			}
 		}
-######
+
 		NCH_luddites_1 = {
 			picture = GFX_idea_NCH_luddities
 			allowed = {
@@ -98,7 +98,7 @@ ideas = {
 		}
 
 		NCH_luddites_2 = {
-			picture = GFX_idea_NCH_luddities
+			picture = GFX_idea_NCH_luddities_2
 			allowed = {
 				always = yes
 			}
