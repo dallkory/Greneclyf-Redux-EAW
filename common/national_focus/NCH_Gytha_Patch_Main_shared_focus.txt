@@ -600,6 +600,10 @@ shared_focus = {
 	available = {
 		has_completed_focus = NCH_cit_thrpugh_the_bureaurcracy
 	}
+
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -701,19 +705,61 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
-		
-		
+		custom_effect_tooltip = NCH_trade_with_riverlands_tt
 		every_country = {
 			limit = {
 				is_riverlands_country_tag = yes
 			}
 			add_opinion_modifier = {
-				target = NCH
+				target = from
 				modifier = NCH_trade_with_riverlands_opportunity
+			}
+		}
+
+		NCH = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			every_core_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources = 0.10
+						local_building_slots_factor = 0.05
+					}
+				}
+			}
+		}
+
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			every_core_state = {
+				capital_scope = {
+					add_state_modifier = {
+						modifier = {
+							local_resources = 0.10
+							local_building_slots_factor = 0.05
+						}
+					}
+				}
 			}
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_visit_to_riverlands
 	icon = GFX_goal_unknown
@@ -724,12 +770,24 @@ shared_focus = {
 	x = 37
 	y = 19
 
+	bypass = {
+		not = {
+			country_exists = FRE
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.8
+			days = 0
+		}
+	}
 }
 
 shared_focus = {
 	id = NCH_neighborhood
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 8
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
@@ -765,7 +823,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_another_visit
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_neighborhood
 	}
@@ -822,7 +880,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_pacts_exchange_for_support
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_neighborhood
 	}
@@ -865,7 +923,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_long_cooperation
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 7
 	prerequisite = {
 		focus = NCH_another_visit
 	}
@@ -900,7 +958,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_not_so_different
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_long_cooperation
 	}
@@ -924,7 +982,8 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = 100
+		add_stability = 0.05
 	}
 }
 
@@ -1069,6 +1128,18 @@ shared_focus = {
 	x = 33
 	y = 19
 
+	available = {
+		or = {
+			has_completed_focus = NCH_finding_allies_in_coalition
+			not = {
+				country_exists = FRE
+			}
+		}
+	}
+
+	completion_reward = {
+		
+	}
 }
 shared_focus = {
 	id = NCH_operation_raging_river
@@ -1091,7 +1162,80 @@ shared_focus = {
 	x = 40
 	y = 18
 
+	available = {
+		or = {
+			and = {
+				has_opinion = {
+					target = FBK
+					value > 25
+				}
+				has_opinion = {
+					target = WAT
+					value > 25
+				}
+				has_opinion = {
+					target = FIR
+					value > 25
+				}
+			}
+
+			and = {
+				has_opinion = {
+					target = BAK
+					value > 25
+				}
+				has_opinion = {
+					target = DMT
+					value > 25
+				}
+				has_opinion = {
+					target = DEP
+					value > 25
+				}
+				has_opinion = {
+					target = NUM
+					value > 25
+				}
+				has_opinion = {
+					target = RCT
+					value > 25
+				}
+				has_opinion = {
+					target = FRE
+					value > 25
+				}
+				has_opinion = {
+					target = WIT
+					value > 25
+				}
+				has_opinion = {
+					target = LCT
+					value > 25
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			diplomatic_relation = {
+				country = NCH
+				relation = non_aggression_pact
+				active = no
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_scout_the_situation
 	icon = GFX_goal_unknown
@@ -1105,7 +1249,30 @@ shared_focus = {
 	x = 39
 	y = 19
 
+
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = large_decrease
+			}
+		}
+
+		country_event = {
+			id = greneclyf_foregin.5
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_open_up_the_shopping_districts
 	icon = GFX_goal_unknown
@@ -1116,6 +1283,33 @@ shared_focus = {
 	x = 41
 	y = 19
 
+	completion_reward = {
+	custom_effect_tooltip = NCH_trade_with_riverlands_tt
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			diplomatic_relation = {
+				country = NCH
+				relation = docking_rights
+				active = yes
+			}
+			NCH = {
+				navy_experience = 35
+				add_timed_idea = {
+					idea = NCH_free_trade
+					days = 180
+				}
+			}
+			navy_experience = 35
+		}
+	}
 }
 shared_focus = {
 	id = NCH_shield_and_sword_harmony
@@ -1148,7 +1342,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bring_them_harmony
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_long_cooperation
 	}
@@ -1264,7 +1458,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 100
+		set_rule = { can_create_factions = yes }
 		create_faction = NCH_fraction_neighborhood
 		country_event = {
 			id = greneclyf_foregin.4
@@ -1290,7 +1484,32 @@ shared_focus = {
 	x = 40
 	y = 20
 
+	available = {
+		is_puppet = no
+	}
+
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					and = {
+						is_riverlands_country_tag = yes
+						not = {
+							original_tag = FRE
+						}
+					}
+					has_government = democratic
+				}
+			}
+
+			diplomatic_relation = {
+				country = NCH
+				relation = guarantee
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_embed_agents_in_goverments
 	icon = GFX_goal_unknown
@@ -1304,7 +1523,14 @@ shared_focus = {
 	x = 38
 	y = 20
 
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.10
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_not_so_united
 	icon = GFX_goal_unknown
@@ -1315,7 +1541,12 @@ shared_focus = {
 	x = 36
 	y = 20
 
+	completion_reward = {
+		add_political_power = 100
+		custom_effect_tooltip = NCH_not_so_united_tt
+	}
 }
+
 shared_focus = {
 	id = NCH_finding_allies_in_coalition
 	icon = GFX_goal_unknown
@@ -1332,6 +1563,55 @@ shared_focus = {
 	x = 39
 	y = 21
 
+	available = {
+		or = {
+			has_country_flag = NCH_more_help_FRE
+			FRE = {
+				has_government = democratic
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				and = {
+					country_exists = FRE
+					FRE = {
+						is_puppet = yes
+					}
+				}
+			}
+			every_country = {
+				end_puppet = FRE
+			}
+
+			FRE = {
+				add_to_faction = DEP
+			}
+		}
+
+		if = {
+			limit = {
+				and = {
+					country_exists = FRE
+					FRE = {
+						is_puppet = no
+					}
+				}
+			}
+			set_country_flag = NCH_FRE_friendship
+			diplomatic_relation = {
+				country = FRE
+				relation = guarantee
+			}
+		}
+
+		country_event = {
+			id = greneclyf_foregin.11
+			days = 0
+		}
+	}
 }
 
 

@@ -7,8 +7,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_NCH_luddities"
-		textureFile = "gfx/interface/ideas/NCH/NCH_river_fed_attack_idea.dds"
+		name = "GFX_idea_luddities"
+		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
 	}
 
 

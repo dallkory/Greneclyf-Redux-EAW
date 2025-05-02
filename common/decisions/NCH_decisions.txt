@@ -4,7 +4,7 @@
 ### DEBUG ###
 NCH_debug_decision = {
 
-	NCH_show_underground_buildings = {
+	NCH_show_all_debug_categories = {
 		icon = d
 
 		complete_effect = {
@@ -399,6 +399,240 @@ NCH_hunger_bop_category = {
 			add_power_balance_value = {
 				id = NCH_hunger_bop
 				value = 0.035
+			}
+		}
+	}
+}
+
+#DMT 
+#BAK
+#FIR
+#WIT
+#NIM
+#RCT
+#LCT
+NCH_river_of_op_category = {
+	NCH_democratic_support_DMT = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				DMT = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			DMT = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_BAK = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				BAK = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			BAK = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_FRE = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				FRE = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			set_country_flag = NCH_more_help_FRE
+			FRE = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_WIT = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				WIT = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			WIT = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_RCT = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				RCT = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			RCT = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_NIM = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				NIM = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			NIM = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
+			}
+		}
+	}
+
+	NCH_democratic_support_LCT = {
+		icon = d
+		cost = 30
+		days_remove = 50
+
+		visible = {
+			has_country_flag = NCH_debug
+			and = {
+				has_completed_focus = NCH_not_so_united
+				LCT = {
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			LCT = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.075
+				}
 			}
 		}
 	}

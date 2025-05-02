@@ -1323,3 +1323,163 @@ add_namespace = greneclyf_foregin
 	}
 
 	# RIVERLANDS #
+	# PEACFUL NEIGHBORHOOD #
+	country_event = {
+		id = greneclyf_foregin.5
+		title = greneclyf_foregin.5.t
+		desc = greneclyf_foregin.5.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.5.a	
+			country_event = {
+				id = greneclyf_foregin.6
+				days = 0
+			}
+
+		}
+	}
+	
+	# MANAGER #
+	country_event = {
+		id = greneclyf_foregin.6
+		title = greneclyf_foregin.6.t
+		desc = greneclyf_foregin.6.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.6.a	
+			country_event = {
+				id = greneclyf_foregin.7
+				days = 0
+			}
+
+		}
+	}
+
+	# IDEA #
+	country_event = {
+		id = greneclyf_foregin.7
+		title = greneclyf_foregin.7.t
+		desc = greneclyf_foregin.7.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.7.a		
+			every_country = {
+				limit = {
+					is_riverlands_country_tag = yes
+				}
+				add_ideas = NCH_nine_stars
+				NCH = {
+					add_ideas = NCH_nine_stars
+				}
+			}			
+		}
+	}
+
+	# DAL MORE #
+	country_event = {
+		id = greneclyf_foregin.8
+		title = greneclyf_foregin.8.t
+		desc = greneclyf_foregin.8.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.8.a	
+			add_timed_idea = {
+				idea = NCH_FRE_development
+				days = 100
+			}
+
+			FRE = {
+				add_popularity = { ideology = democratic popularity = 0.15 }
+			}
+
+			FRE = {
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_core_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}	
+			country_event = {
+				id = greneclyf_foregin.9
+				days = 10
+			}
+		}
+	}
+
+	# BAKBANBURG #
+	country_event = {
+		id = greneclyf_foregin.9
+		title = greneclyf_foregin.9.t
+		desc = greneclyf_foregin.9.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.9.a		
+		
+		}
+	}
+
+	# CLEAR HIT #
+	country_event = {
+		id = greneclyf_foregin.10
+		title = greneclyf_foregin.10.t
+		desc = greneclyf_foregin.10.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	 name = greneclyf_foregin.10.a		
+		
+			every_country = {
+				limit = {
+					and = {
+						is_riverlands_country_tag = yes
+						not = {
+							has_government = democratic
+						}
+					}
+				}
+			add_manpower = -200
+				add_timed_idea = {
+					idea = NCH_political_violence
+					days = 210
+				}
+			}
+		}
+	}
+
+	# CRIMSON HOUSE #
+	country_event = {
+		id = greneclyf_foregin.11
+		title = greneclyf_foregin.11.t
+		desc = greneclyf_foregin.11.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+        name = greneclyf_foregin.11.a		
+		
+		}
+	}

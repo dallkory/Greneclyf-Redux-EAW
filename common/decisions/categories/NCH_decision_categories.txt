@@ -39,6 +39,18 @@ NCH_gov_rotation_category = {
 	}
 }
 
+NCH_river_of_op_category = {
+	icon = GFX_political
+	
+	visible = {
+		has_completed_focus = NCH_not_so_united
+		has_country_flag = NCH_debug
+	}
+	priority = {
+		base = 152
+	}
+}
+
 NCH_typography_category = {
 	icon = GFX_unknow
 	
@@ -69,7 +81,7 @@ NCH_queen_plan = {
 	}
 	visible = {
 		has_completed_focus = NCH_patch_to_prosperty
-		has_country_flag = NCH_debug_vision
+		has_country_flag = NCH_debug
 	}
 
 	priority = {
