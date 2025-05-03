@@ -894,31 +894,6 @@ NCH_trade_with_pony_of_hills = {
 	}
 }
 
-NCH_north_south_development = {
-	NCH_development_saint_grove = {
-		icon =d
-		cost = 75
-		days_remove = 45
-	
-		modifier = {
-		}
-
-		remove_effect = {
-		}
-	}
-
-	NCH_development_aisling = {
-		icon =d
-		cost = 75
-		days_remove = 45
-	
-		modifier = {
-		}
-
-		remove_effect = {
-		}
-	}
-}
 
 # GOV ROTATION #
 NCH_gov_rotation_category = {

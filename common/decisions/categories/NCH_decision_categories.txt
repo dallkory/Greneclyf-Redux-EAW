@@ -118,22 +118,6 @@ NCH_hunger_bop_category = {
 	}
 }
 
-NCH_north_south_development = {
-	icon = GFX_unknow
-
-	allowed = {
-		original_tag = NCH
-	}
-	visible = {
-		has_completed_focus = NCH_civil_rights_reform
-	}
-
-	priority = {
-		base = 148
-	}
-}
-
-
 
 # Submod
 NCH_nuke_category = {

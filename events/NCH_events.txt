@@ -1124,15 +1124,15 @@ add_namespace = greneclyf_foregin
 
 		option = {
         name = greneclyf_foregin.1.a	
-			give_guarantee = WIT
+			give_guarantee = WAT
 
 			add_opinion_modifier = {
-				target = WIT
+				target = WAT
 				modifier = NCH_WIT_friends
 			}
 
 			add_opinion_modifier = {
-				target = WIT
+				target = WAT
 				modifier = huge_increase
 			}
 		}
@@ -1207,7 +1207,7 @@ add_namespace = greneclyf_foregin
 					active = no
 				}
 				diplomatic_relation = {
-					country = WIT
+					country = WAT
 					relation = guarantee
 					active = no
 				}
@@ -1222,14 +1222,14 @@ add_namespace = greneclyf_foregin
 		option = {
 			name = greneclyf_foregin.3.a	
 
-			# FOR WIT #
-			WIT = {
+			# FOR WAT #
+			WAT = {
 				set_party_rule = {
 					ideology = communism
 				}
 			}
 			NCH = {
-				puppet = WIT
+				puppet = WAT
 			}
 
 			# READY #
