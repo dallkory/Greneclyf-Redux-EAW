@@ -1,0 +1,18 @@
+state={
+	id=1211
+	name="STATE_1211"
+	provinces={
+		 20361 20405 20414 
+	}
+	history={
+		owner = AWT
+		add_core_of = AWT
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=45869
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
