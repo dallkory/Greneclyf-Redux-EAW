@@ -17,6 +17,7 @@ focus_tree = {
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch
 	shared_focus = NCH_rule_greneclyf
+	shared_focus = NCH_land_behind_seas
 
 	default = no
 	continuous_focus_position = { x = 150 y = 1300 }
