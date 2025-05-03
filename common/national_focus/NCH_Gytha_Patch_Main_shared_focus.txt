@@ -312,9 +312,9 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_trait = {
-			character = NCH_queen_gytha
-			trait = The_god_chosen_queen
+		swap_ruler_traits = {
+			remove = The_naive_reformer
+			add = The_god_chosen_queen
 		}
 	}
 }
@@ -1060,7 +1060,13 @@ shared_focus = {
 	x = 48
 	y = 18
 
+	cancel_if_invalid = no
+
+	completion_reward = {
+		
+	}
 }
+
 shared_focus = {
 	id = NCH_beacon_harmony_in_the_east
 	icon = GFX_goal_unknown
@@ -1081,6 +1087,8 @@ shared_focus = {
 	}
 	x = 50
 	y = 18
+
+	cancel_if_invalid = no
 
 }
 shared_focus = {

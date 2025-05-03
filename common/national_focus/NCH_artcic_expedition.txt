@@ -1,0 +1,110 @@
+
+Shared_focus = {
+	id = NCH_land_behind_seas
+	icon = GFX_goal_unknown
+	cost = 10,00
+
+	allow_branch = {
+		or = {
+		has_completed_focus = NCH_time_to_look_further
+		}
+	}
+
+	x = 51
+	y = 10
+
+}
+
+Shared_focus = {
+	id = NCH_colony_development
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+
+	x = 51
+	y = 11
+
+}
+
+# MILITATY #
+Shared_focus = {
+	id = NCH_militarization_north
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+	
+	x = 49
+	y = 11
+
+}
+
+Shared_focus = {
+	id = NCH_dockyards_for_navy
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_militarization_north
+	}
+	
+	x = 48
+	y = 12
+
+}
+
+Shared_focus = {
+	id = NCH_army_base_behind_homeland
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_militarization_north
+	}
+	
+	x = 50
+	y = 12
+
+}
+
+# ECOMONIC #
+
+Shared_focus = {
+	id = NCH_economic_development_in_ice
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+	
+	x = 53
+	y = 11
+
+}
+
+Shared_focus = {
+	id = NCH_resorurces_digging
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_economic_development_in_ice
+	}
+	
+	x = 52
+	y = 12
+
+}
+
+Shared_focus = {
+	id = NCH_trade_in_snow
+	icon = GFX_goal_unknown
+	cost = 10,00
+	prerequisite = {
+		focus = NCH_economic_development_in_ice
+	}
+	
+	x = 54
+	y = 12
+
+}
