@@ -589,6 +589,11 @@ shared_focus = {
 	y = 19
 
 	completion_reward = {
+		swap_ideas = {
+			remove_idea = outdated_industry
+			add_idea = modern_society
+		}
+
 		add_stability = 0.05
 		add_political_power = 50
 	}

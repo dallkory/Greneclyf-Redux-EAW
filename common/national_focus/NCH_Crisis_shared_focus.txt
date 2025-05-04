@@ -157,6 +157,7 @@ Shared_focus = {
 
 	completion_reward = {
 		add_research_slot = 1
+		add_ideas = lack_of_scientists2
 
 		remove_ideas = {
 			NCH_luddites_2
