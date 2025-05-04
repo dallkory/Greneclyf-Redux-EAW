@@ -1,18 +1,30 @@
 state={
-	id=1242
-	name="STATE_1242"
+	id=1243
+	name="STATE_1243"
 	provinces={
-		20346
+		20422
 	}
 		history={
-		owner = AWT
-		add_core_of = AWT
+		owner = EQS
+		add_core_of = EQS
 
 		buildings = {
 			infrastructure = 1
 		}
+		add_resource = {
+			type = chromium
+			amount = 7
+		}
+		add_resource = {
+			type = oil
+			amount = 15
+		}
+		add_resource = {
+			type = tungsten
+			amount = 6
+		}
 	}
-	manpower=45869
+	manpower= 175869
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

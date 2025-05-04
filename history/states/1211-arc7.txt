@@ -5,8 +5,8 @@ state={
 		20360 20384 20395 20403 20410 
 	}
 		history={
-		owner = AWT
-		add_core_of = AWT
+		owner = AWP
+		add_core_of = AWP
 
 		buildings = {
 			infrastructure = 1
