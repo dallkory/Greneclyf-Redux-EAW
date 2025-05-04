@@ -1,0 +1,4 @@
+AWT = {
+	color = rgb { 1 30 200 }
+	color_ui = rgb { 1 30 200 }
+}

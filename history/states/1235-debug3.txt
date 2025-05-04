@@ -5,8 +5,8 @@ state={
 		20363 20371 20394 
 	}
 		history={
-		owner = AWT
-		add_core_of = AWT
+		owner = AWN
+		add_core_of = AWN
 
 		buildings = {
 			infrastructure = 1

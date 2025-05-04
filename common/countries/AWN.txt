@@ -1,0 +1,4 @@
+AWN = {
+	color = rgb { 22 30 89 }
+	color_ui = rgb { 139 74 5 }
+}

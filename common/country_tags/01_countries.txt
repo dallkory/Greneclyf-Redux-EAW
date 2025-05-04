@@ -1,1 +1,4 @@
 AWT = "countries/AWT.txt"
+AWP = "countries/AWP.txt"
+AWM = "countries/AWM.txt"
+AWN = "countries/AWN.txt"
