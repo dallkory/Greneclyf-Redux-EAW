@@ -1,4 +1,5 @@
-AWT = {
-	color = rgb { 1 30 200 }
-	color_ui = rgb { 1 30 200 }
-}
+use_legacy_ai_pp_spend = yes
+graphical_culture = western_european_gfx
+graphical_culture_2d = polar_bear_2d
+
+color = rgb { 1 30 200 }
