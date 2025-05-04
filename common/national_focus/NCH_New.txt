@@ -143,7 +143,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_lift_the_veil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Open_the_veil
 		cost = 5
 		prerequisite = {
 			focus = NCH_parliament_convocation
@@ -238,7 +238,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_Esteblish_trade_guild
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Found_a_Trade_Guild
 		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
@@ -265,7 +265,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_take_look_around
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Take_a_look_around
 		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
@@ -290,7 +290,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_time_to_look_further
-		icon = GFX_unknow
+		icon = GFX_goal_Looking_Beyond
 		cost = 8
 		
 
@@ -313,6 +313,7 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
+			add_ideas = outdated_industry
 			country_event = {
 				id = greneclyf_redux.9
 				days = 0

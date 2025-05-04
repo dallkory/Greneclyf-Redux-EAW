@@ -40,7 +40,29 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/You_learn_from_mistakes.dds"
 	}
 
-	
+	spriteType = {
+		name = "GFX_goal_Looking_Beyond"
+		textureFile = "gfx/interface/goals/NCH/Looking_Beyond.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Open_the_veil"
+		textureFile = "gfx/interface/goals/NCH/Open_the_veil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Found_a_Trade_Guild"
+		textureFile = "gfx/interface/goals/NCH/Found_a_Trade_Guild.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Take_a_look_around"
+		textureFile = "gfx/interface/goals/NCH/Take_a_look_around.dds"
+	}
+
+
+
+
 
 	# Submod #
 	spriteType = {
