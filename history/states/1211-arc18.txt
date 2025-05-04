@@ -5,14 +5,14 @@ state={
 		20313 20314 20317 
 	}
 		history={
-		owner = AWN
-		add_core_of = AWN
+		owner = AWT
+		add_core_of = AWT
 
 		buildings = {
 			infrastructure = 1
 		}
 	}
-	manpower=45869
+	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
