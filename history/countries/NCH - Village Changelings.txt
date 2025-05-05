@@ -200,6 +200,7 @@ recruit_character = NCH_Sul_Oraiste
 recruit_character = NCH_Valha
 recruit_character = NCH_Caider
 recruit_character = NCH_Gerald_3
+recruit_character = NCH_kianit_oir
 
 # leaders #
 recruit_character = NCH_queen_gytha

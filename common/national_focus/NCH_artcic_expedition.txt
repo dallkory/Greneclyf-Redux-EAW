@@ -13,6 +13,14 @@ Shared_focus = {
 	x = 51
 	y = 10
 
+	available = {
+		has_completed_focus = NCH_time_to_look_further
+		has_country_flag = NCH_island_found
+	}
+
+	completion_reward = {
+		
+	}
 }
 
 Shared_focus = {
@@ -25,6 +33,7 @@ Shared_focus = {
 
 	x = 51
 	y = 11
+
 
 }
 

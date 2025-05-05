@@ -126,6 +126,33 @@ characters={
 		}
 	}
 
+	NCH_kianit_oir = {
+		name = kianit_oir
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Kianit.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				not = {
+					has_government = democratic
+				}
+				has_completed_focus = NCH_beginning_of_crisis
+			}
+
+			slot = political_advisor
+			idea_token = kianit_oir_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				anti_crisis_manager
+			}
+		}
+	}
+
 	NCH_Gerald_3 = {
 		name = Gerald_3
 		portraits = {
