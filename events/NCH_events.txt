@@ -1721,7 +1721,7 @@ add_namespace = greneclyf_foregin
 
 		option = {
        	name = greneclyf_foregin.23.a		
-
+			add_political_power = -50
 		}
 	}	
 
@@ -1735,6 +1735,111 @@ add_namespace = greneclyf_foregin
 
 		option = {
        	name = greneclyf_foregin.24.a		
+
+		}
+	}
+	
+	# RAINBOW DASH #
+	country_event = {
+		id = greneclyf_foregin.25
+		title = greneclyf_foregin.25.t
+		desc = greneclyf_foregin.25.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.25.a		
 		
 		}
 	}	
+	
+	## ### ## ### ##
+	# TRADE WITH EQS #
+	country_event = {
+		id = greneclyf_foregin.26
+		title = greneclyf_foregin.26.t
+		desc = greneclyf_foregin.26.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+		set_country_flag = NCH_EQS_accept_trade
+       	name = greneclyf_foregin.26.a		
+			ai_chance = {
+				base = 0.7
+				modifier = {
+					factor = 0.15
+					has_opinion = {
+						target = NCH
+						value > 25
+					}
+				}
+			}
+			add_ideas = {
+				NCH_trade_and_support_EQS
+			}
+			NCH = {
+				add_ideas = NCH_trade_and_support_EQS
+			}
+		}
+
+		option = {
+       	name = greneclyf_foregin.26.b		
+			ai_chance = {
+				base = 0.3
+				modifier = {
+					factor = 0.8
+					has_opinion = {
+						target = NCH
+						value < 10
+					}
+				}
+			}
+
+			NCH  = {
+				country_event = {
+					id = greneclyf_foregin.27
+					days = 0
+				}
+			}
+		}
+	}		
+
+	# EQS ignore trade #
+	country_event = {
+		id = greneclyf_foregin.27
+		title = greneclyf_foregin.27.t
+		desc = greneclyf_foregin.27.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.27.a		
+			add_political_power = -50
+		}
+	}		
+
+	# NCH finds EQS defense #
+	country_event = {
+		id = greneclyf_foregin.28
+		title = greneclyf_foregin.28.t
+		desc = greneclyf_foregin.28.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.28.a		
+			diplomatic_relation = {
+				country = NCH
+				relation = guarantee
+			}
+		}
+
+		option = {
+       	name = greneclyf_foregin.28.b		
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_decrease
+			}
+		}
+	}		

@@ -459,7 +459,7 @@ shared_focus = {
 	y = 17
 
 	completion_reward = {
-		add_political_power = 50
+		#add_political_power = 50
 		add_stability = 0.05
 
 		add_timed_idea = {
@@ -1251,9 +1251,12 @@ shared_focus = {
 			has_government = democratic
 		}
 	}
+
 	bypass = {
 		or = {
-			country_exists = EQS
+			not = {
+				country_exists = EQS
+			}
 			EQS = {
 				not = {
 					has_government = democratic
@@ -1284,6 +1287,75 @@ shared_focus = {
 	x = 50
 	y = 20
 
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+		add_ideas = NCH_wonderbolts
+			if = {
+         	   limit = {
+         	       has_dlc = "By Blood Alone"
+          	  }
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
+			}
+		
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				create_equipment_variant = {
+					name = "DASH.112"
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 22
+					variant_name = "KLAB.168"
+					producer = NCH
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				set_technology = { cv_early_fighter = 1 }
+				set_technology = { cv_fighter1 = 1 }
+				add_equipment_to_stockpile = {
+					type = cv_fighter_equipment_1
+					amount = 22
+				}
+			}
+
+		country_event = {
+			id = greneclyf_foregin.25
+			days = 0
+		}
+	}
 }
 
 shared_focus = {
@@ -1296,6 +1368,21 @@ shared_focus = {
 	x = 52
 	y = 20
 
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_foregin.26
+				days = 0
+			}
+		}
+	}
 }
 
 shared_focus = {
@@ -1525,7 +1612,35 @@ shared_focus = {
 	x = 49
 	y = 21
 
+	available = {
+		country_exists = CHN
+		CHN = {
+			has_government = fascism
+		}
+	}
+
+	completion_reward = {
+		add_war_support = 0.1		
+		if = {
+			limit = {
+				has_idea = NCH_trade_and_support_CHN
+			}
+			remove_ideas = NCH_trade_and_support_CHN
+		}
+
+		add_opinion_modifier = {
+			target = CHN
+			modifier = large_decrease
+		}
+
+		CHN = {
+			252 = {
+				add_claim_by = NCH
+			}
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_equestria_support
 	icon = GFX_goal_unknown
@@ -1539,6 +1654,22 @@ shared_focus = {
 	x = 51
 	y = 21
 
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+		has_country_flag = NCH_EQS_accept_trade
+	}
+
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_foregin.28
+				days = 0
+			}
+		}
+	}
 }
 shared_focus = {
 	id = NCH_bring_them_harmony

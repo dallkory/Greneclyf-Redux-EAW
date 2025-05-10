@@ -429,6 +429,48 @@ ideas = {
 
 
 		### MAIN PATCH ###
+		NCH_trade_and_support_EQS = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				industry = 0.05
+				electronics = 0.05
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		NCH_wonderbolts = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				light_air = 0.05
+				air_equipment = 0.1
+			}
+
+			modifier = {
+				air_accidents_factor = -0.15
+				experience_gain_air_factor = 0.05
+			}
+		}
+
 		NCH_school_of_friendship = {
 			picture = GFX_unknow
 			allowed = {
