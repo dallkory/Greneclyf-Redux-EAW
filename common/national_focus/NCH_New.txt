@@ -320,6 +320,13 @@ focus_tree = {
 			}
 			custom_effect_tooltip = NCH_army_development
 			mark_focus_tree_layout_dirty = yes
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_arctic.1
+					days = 150
+				}
+			}
 		}
 	}
 }

@@ -3,6 +3,7 @@ add_namespace = greneclyf_forces
 add_namespace = greneclyf_main
 add_namespace = greneclyf_obsidian
 add_namespace = greneclyf_foregin
+add_namespace = greneclyf_arctic
 
 	# Example #
 
@@ -1843,3 +1844,30 @@ add_namespace = greneclyf_foregin
 			}
 		}
 	}		
+
+
+	### ARCTIC ###
+	# Expedition #
+	country_event = {
+		id = greneclyf_arctic.1
+		title = greneclyf_arctic.1.t
+		desc = greneclyf_arctic.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_arctic.1.a	
+		set_country_flag = NCH_island_found
+			AWT = {
+				1242 = {
+				transfer_state_to = NCH					
+				}
+			}
+			1242 = {
+				add_core_of = NCH
+			}
+			1242 = {
+				add_manpower = 1200
+			}
+		}
+	}			
