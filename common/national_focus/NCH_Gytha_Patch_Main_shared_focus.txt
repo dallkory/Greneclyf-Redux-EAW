@@ -730,7 +730,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_river_pf_opportunity
 	icon = GFX_goal_unknown
-	cost = 7
+	cost = 3
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
@@ -742,7 +742,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 100
+		add_political_power = 50
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.15
@@ -1046,13 +1046,26 @@ shared_focus = {
 shared_focus = {
 	id = NCH_their_light_beckons_us
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 3
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
 	x = 48
 	y = 17
 
+	available = {
+		or = {
+			country_exists = EQS
+			country_exists = CHN
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.12
+			days = 0
+		}
+	}
 }
 
 shared_focus = {
@@ -1067,6 +1080,12 @@ shared_focus = {
 
 	cancel_if_invalid = no
 
+	available = {
+		CHN = {
+			has_government = fascism
+		}
+	}
+
 	completion_reward = {
 		
 	}
@@ -1075,13 +1094,39 @@ shared_focus = {
 shared_focus = {
 	id = NCH_beacon_harmony_in_the_east
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 3
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
 	}
 	x = 47
 	y = 19
 
+	available = {
+		country_exists = CHN
+	}
+
+	bypass = {
+		CHN = {
+			not = {
+				has_government = fascism
+			}
+		}
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = race_tech_bonus
+			bonus = 1.0
+			uses = 2
+			category = race_tech
+		}
+		CHN = {
+			country_event = {
+				id = greneclyf_foregin.22
+				days = 0
+			}
+		}
+	}
 }
 shared_focus = {
 	id = NCH_princess_in_a_high_castle
@@ -1095,6 +1140,15 @@ shared_focus = {
 
 	cancel_if_invalid = no
 
+	available = {
+		EQS = { 
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+
+	}
 }
 shared_focus = {
 	id = NCH_our_best_qualities
@@ -1109,6 +1163,51 @@ shared_focus = {
 	x = 49
 	y = 19
 
+	cancel_if_invalid = no
+
+	available = {
+		CHN = {
+			has_government = fascism 
+		}
+		EQS = {
+			has_government = democratic
+		}
+
+		Not = {
+			CHN = {
+				has_war_with = EQS
+			}
+		}
+	}
+
+	bypass = {
+		CHN = {
+			has_war_with = EQS
+		}
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_help_great_war
+		if = {
+			limit = {
+				and = {
+					EQS = {
+						has_country_flag = NCH_peacful_diplomatic_accept
+					}		
+					CHN = {
+						has_country_flag = NCH_peacful_diplomatic_accept
+					}			
+				}
+			}
+
+			CHN = {
+				diplomatic_relation = {
+				country = EQS
+				relation = non_aggression_pact
+				}
+			}
+		}
+	}
 }
 shared_focus = {
 	id = NCH_lessons_in_friendship
@@ -1123,17 +1222,54 @@ shared_focus = {
 	x = 48
 	y = 20
 
+	available = {
+		not = {
+			has_war_with = CHN
+		}
+	}
+	
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.24
+			days = 0
+		}
+	}
 }
+
 shared_focus = {
 	id = NCH_harmpony_in_every_heart
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 3
 	prerequisite = {
 		focus = NCH_princess_in_a_high_castle
 	}
 	x = 51
 	y = 19
 
+	available = {
+		EQS = {
+			has_government = democratic
+		}
+	}
+	bypass = {
+		or = {
+			country_exists = EQS
+			EQS = {
+				not = {
+					has_government = democratic
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_manpower = 100
+		add_ideas = NCH_school_of_friendship
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+	}
 }
 shared_focus = {
 	id = NCH_friendship_delegation

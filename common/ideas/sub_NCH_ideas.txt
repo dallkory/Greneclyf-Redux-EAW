@@ -429,6 +429,46 @@ ideas = {
 
 
 		### MAIN PATCH ###
+		NCH_school_of_friendship = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				race_tech = 0.05
+				electronics = 0.05
+			}
+
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+
+		NCH_trade_and_support_CHN = {
+			picture = GFX_unknow
+			allowed = {
+				not = {
+					or = {
+						has_war_with = CHN
+						has_war_with = NCH
+					}
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				trade_opinion_factor = 0.15
+				local_resources_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
 
 		NCH_help_ponyhills_main = {
 			picture = GFX_unknow

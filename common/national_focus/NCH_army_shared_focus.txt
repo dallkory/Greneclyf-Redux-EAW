@@ -797,7 +797,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_Blosmport_navy_institute
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 15
 	prerequisite = {
 		focus = NCH_marine_corp
 	}
@@ -825,7 +825,7 @@ shared_focus = {
 				province = 5188
 				type = naval_facility
 				level = 1
-			}
+				}
 			}
 		}
 	}
@@ -1411,7 +1411,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bugsmere_war_institute
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 15
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
 		focus = NCH_discipline_is_key_to_order
@@ -1984,7 +1984,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_aisling_air_institute
 	icon = GFX_goal_unknown
-	cost = 7
+	cost = 15
 
 	available = {
 		not = {

@@ -216,7 +216,7 @@ characters={
             slot = theorist
             idea_token = NCH_celarl_it
             ledger = army
-            cost = 150
+            cost = 100
             removal_cost = -1
             allowed = {
                 original_tag = NCH
@@ -235,6 +235,26 @@ characters={
 				}
 			}      
         }
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+				scientist_trait_genius 
+				scientist_trait_brilliant_theorist 
+				scientist_trait_fast_learner 
+			} # TODO GTD balance
+			skills = {
+				specialization_nuclear = 2
+			}
+
+			visible = {
+				owner = {
+					has_government = democratic
+				}
+			}
+			
+			#desc = twilight_sparkle_desc
+		}
     }
 
 	# Spymaster #
