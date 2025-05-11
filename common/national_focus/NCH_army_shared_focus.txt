@@ -1274,7 +1274,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.32
+			id = greneclyf_forces.1
 			days = 0
 		}
 
