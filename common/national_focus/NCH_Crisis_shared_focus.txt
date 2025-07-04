@@ -24,7 +24,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_mre_cards
-	icon = GFX_goal_unknown
+	icon = GFX_goal_mre_cards
 	cost = 2
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
@@ -46,7 +46,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_agroindustrial_mobilization
-	icon = GFX_goal_unknown
+	icon = GFX_goal_agroindustrial_mobilization
 	cost = 10
 	prerequisite = {
 		focus = NCH_mre_cards
@@ -78,7 +78,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_agroindustrial_programs
-	icon = GFX_goal_unknown
+	icon = GFX_goal_lux_program
 	cost = 2
 	prerequisite = {
 		focus = NCH_agroindustrial_mobilization
@@ -104,7 +104,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_limit_external_trade
-	icon = GFX_goal_unknown
+	icon = GFX_goal_obsidian_trade
 	cost = 5
 	prerequisite = {
 		focus = NCH_mre_cards
@@ -144,7 +144,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_industrial_cooperatives
-	icon = GFX_goal_unknown
+	icon = GFX_goal_enya_institute
 	cost = 8
 	prerequisite = {
 		focus = NCH_agroindustrial_mobilization
@@ -167,7 +167,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_modernization_industry
-	icon = GFX_goal_unknown
+	icon = GFX_goal_gold_standart
 	cost = 5
 	prerequisite = {
 		focus = NCH_limit_external_trade
@@ -199,7 +199,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_domestic_consumption
-	icon = GFX_goal_unknown
+	icon = GFX_goal_domestic_consumption
 	cost = 5
 	prerequisite = {
 		focus = NCH_agroindustrial_programs
@@ -351,7 +351,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_to_neighbors
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hide_and_seek
 	cost = 5
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
@@ -378,7 +378,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_every_friend
-	icon = GFX_goal_unknown
+	icon = GFX_goal_farbrook_help
 	cost = 2
 	prerequisite = {
 		focus = NCH_to_neighbors
@@ -406,7 +406,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_hoof_of_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hoof_of_help
 	cost = 5
 	prerequisite = {
 		focus = NCH_every_friend
@@ -437,7 +437,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_some_love
-	icon = GFX_goal_unknown
+	icon = GFX_goal_some_love
 	cost = 1
 	prerequisite = {
 		focus = NCH_every_friend
@@ -466,7 +466,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_reguest_of_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_riverlands_help
 	cost = 2
 	prerequisite = {
 		focus = NCH_to_neighbors
@@ -494,7 +494,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_army_concessions
-	icon = GFX_goal_unknown
+	icon = GFX_goal_saor
 	cost = 8
 	prerequisite = {
 		focus = NCH_reguest_of_help
@@ -609,7 +609,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_concessions_for_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_saor_policy
 	cost = 5
 	prerequisite = {
 		focus = NCH_reguest_of_help

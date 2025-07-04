@@ -12,7 +12,7 @@ Shared_focus = {
 	y = 10
 
 	available = {
-		has_completed_focus = NCH_break_ice
+		has_country_flag = NCH_island_found
 		#has_country_flag = NCH_island_found
 	}
 
@@ -32,6 +32,9 @@ Shared_focus = {
 	x = 51
 	y = 11
 
+	available = {
+		has_completed_focus = NCH_break_ice
+	}
 
 }
 
@@ -47,6 +50,9 @@ Shared_focus = {
 	x = 49
 	y = 11
 
+	available = {
+		has_completed_focus = NCH_break_ice
+	}
 }
 
 Shared_focus = {
@@ -88,6 +94,10 @@ Shared_focus = {
 	x = 53
 	y = 11
 
+	available = {
+		has_completed_focus = NCH_break_ice
+	}
+		
 }
 
 Shared_focus = {

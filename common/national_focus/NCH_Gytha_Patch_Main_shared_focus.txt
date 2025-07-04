@@ -11,7 +11,7 @@
 shared_focus = {
 	id = NCH_Queen_Gytha_Patch
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	x = 33
 	y = 15
 
@@ -683,31 +683,6 @@ shared_focus = {
 	}
 	x = 32
 	y = 17
-
-}
-
-shared_focus = {
-	id = NCH_under_the_flag_of_freedom
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_agents_stand_by
-	}
-	x = 31
-	y = 18
-
-}
-
-
-shared_focus = {
-	id = NCH_act
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_friends_and_allies
-	}
-	x = 35
-	y = 18
 
 }
 
@@ -1385,8 +1360,9 @@ shared_focus = {
 	}
 }
 
+
 shared_focus = {
-	id = NCH_we_are_ready
+	id = NCH_light_f_fire_in_their_hearts
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
@@ -1397,23 +1373,6 @@ shared_focus = {
 	}
 	x = 33
 	y = 18
-
-}
-shared_focus = {
-	id = NCH_light_f_fire_in_their_hearts
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_under_the_flag_of_freedom
-	}
-	prerequisite = {
-		focus = NCH_we_are_ready
-	}
-	prerequisite = {
-		focus = NCH_act
-	}
-	x = 33
-	y = 19
 
 	available = {
 		or = {
@@ -1436,7 +1395,7 @@ shared_focus = {
 		focus = NCH_light_f_fire_in_their_hearts
 	}
 	x = 33
-	y = 20
+	y = 19
 
 }
 shared_focus = {
@@ -1951,7 +1910,7 @@ shared_focus = {
 		focus = NCH_operation_raging_river
 	}
 	x = 32
-	y = 21
+	y = 20
 
 }
 
@@ -1963,7 +1922,7 @@ shared_focus = {
 		focus = NCH_operation_raging_river
 	}
 	x = 34
-	y = 21
+	y = 20
 
 }
 
@@ -1978,7 +1937,7 @@ shared_focus = {
 		focus = NCH_time_to_look
 	}
 	x = 33
-	y = 22
+	y = 21
 
 }
 
@@ -2043,18 +2002,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NCH_single_currency
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_economic_community
-	}
-	x = 28
-	y = 24
-
-}
-
-shared_focus = {
 	id = NCH_racial_differences
 	icon = GFX_goal_unknown
 	cost = 10,00
@@ -2096,32 +2043,6 @@ shared_focus = {
 
 }
 
-shared_focus = {
-	id = NCH_harmonization_legislation
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_general_institutions
-	}
-	x = 38
-	y = 24
-
-}
-
-shared_focus = {
-	id = NCH_rethinking_of_union
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_single_currency
-	}
-	prerequisite = {
-		focus = NCH_racial_differences
-	}
-	x = 31
-	y = 25
-
-}
 
 shared_focus = {
 	id = NCH_what_we_strive_for
@@ -2130,22 +2051,14 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_make_us_stronger
 	}
-	x = 33
-	y = 25
-
-}
-
-shared_focus = {
-	id = NCH_political_integration
-	icon = GFX_goal_unknown
-	cost = 10,00
 	prerequisite = {
 		focus = NCH_river_science_program
 	}
 	prerequisite = {
-		focus = NCH_harmonization_legislation
+		focus = NCH_racial_differences
 	}
-	x = 35
+
+	x = 33
 	y = 25
 
 }
@@ -2181,40 +2094,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NCH_approve_the_new_symbols
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_inity_as_the_highest_good
-	}
-	x = 32
-	y = 28
-
-}
-
-shared_focus = {
 	id = NCH_adopt_consitution
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
 		focus = NCH_inity_as_the_highest_good
 	}
-	x = 34
-	y = 28
-
-}
-
-shared_focus = {
-	id = NCH_deeper_integration
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_approve_the_new_symbols
-	}
-	prerequisite = {
-		focus = NCH_adopt_consitution
-	}
 	x = 33
-	y = 29
+	y = 28
 
 }
