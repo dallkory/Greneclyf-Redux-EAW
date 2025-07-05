@@ -16,6 +16,7 @@ NCH_debug_decision = {
 		icon = d
 		
 		complete_effect = {
+			set_country_flag = NCH_island_found
 			set_country_flag = NCH_hunger_starts
 			set_country_flag = NCH_crisis_end
 			set_country_flag = NCH_army_forces_allow

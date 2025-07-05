@@ -657,8 +657,15 @@ shared_focus = {
 		has_completed_focus = NCH_cit_thrpugh_the_bureaurcracy
 	}
 
+	available = {
+		is_puppet = no
+	}
+
 	completion_reward = {
-		
+		country_event = {
+			id = greneclyf_core.1
+			days = 0
+		}
 	}
 }
 
@@ -684,6 +691,9 @@ shared_focus = {
 	x = 32
 	y = 17
 
+	completion_reward = {
+		# DECISION Industrial < 50% harmony #
+	}
 }
 
 shared_focus = {
@@ -1056,8 +1066,14 @@ shared_focus = {
 	cancel_if_invalid = no
 
 	available = {
+		country_exists = CHN
+	}
+
+	bypass = {
 		CHN = {
-			has_government = fascism
+			not = {
+				has_government = fascism
+			}
 		}
 	}
 
@@ -1078,13 +1094,8 @@ shared_focus = {
 
 	available = {
 		country_exists = CHN
-	}
-
-	bypass = {
 		CHN = {
-			not = {
-				has_government = fascism
-			}
+			has_government = fascism 
 		}
 	}
 
@@ -1158,6 +1169,11 @@ shared_focus = {
 	bypass = {
 		CHN = {
 			has_war_with = EQS
+		}
+		CHN = {
+			not = {
+				has_government = fascism
+			}
 		}
 	}
 
@@ -1949,7 +1965,7 @@ shared_focus = {
 		focus = NCH_what_we_bring
 	}
 	x = 29
-	y = 23
+	y = 22
 
 }
 
@@ -1961,7 +1977,7 @@ shared_focus = {
 		focus = NCH_what_we_bring
 	}
 	x = 31
-	y = 23
+	y = 22
 
 }
 
@@ -1973,7 +1989,7 @@ shared_focus = {
 		focus = NCH_what_we_bring
 	}
 	x = 33
-	y = 23
+	y = 22
 
 }
 
@@ -1985,7 +2001,7 @@ shared_focus = {
 		focus = NCH_what_we_bring
 	}
 	x = 35
-	y = 23
+	y = 22
 
 }
 
@@ -1997,7 +2013,7 @@ shared_focus = {
 		focus = NCH_what_we_bring
 	}
 	x = 37
-	y = 23
+	y = 22
 
 }
 
@@ -2009,7 +2025,7 @@ shared_focus = {
 		focus = NCH_a_sample_of_unity
 	}
 	x = 30
-	y = 24
+	y = 23
 
 }
 
@@ -2027,7 +2043,7 @@ shared_focus = {
 		focus = NCH_bring_together
 	}
 	x = 33
-	y = 24
+	y = 23
 
 }
 
@@ -2039,7 +2055,7 @@ shared_focus = {
 		focus = NCH_example_for_ponies
 	}
 	x = 36
-	y = 24
+	y = 23
 
 }
 
@@ -2059,7 +2075,7 @@ shared_focus = {
 	}
 
 	x = 33
-	y = 25
+	y = 24
 
 }
 
@@ -2077,7 +2093,7 @@ shared_focus = {
 		focus = NCH_what_we_strive_for
 	}
 	x = 33
-	y = 26
+	y = 25
 
 }
 
@@ -2089,7 +2105,7 @@ shared_focus = {
 		focus = NCH_first_president
 	}
 	x = 33
-	y = 27
+	y = 26
 
 }
 
@@ -2101,6 +2117,6 @@ shared_focus = {
 		focus = NCH_inity_as_the_highest_good
 	}
 	x = 33
-	y = 28
+	y = 27
 
 }

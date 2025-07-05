@@ -1,9 +1,10 @@
 ﻿add_namespace = greneclyf_redux
 add_namespace = greneclyf_forces
-add_namespace = greneclyf_main
+#add_namespace = greneclyf_main
 add_namespace = greneclyf_obsidian
 add_namespace = greneclyf_foregin
 add_namespace = greneclyf_arctic
+add_namespace = greneclyf_core
 
 
 	# Example #
@@ -1844,8 +1845,25 @@ add_namespace = greneclyf_arctic
 				modifier = medium_decrease
 			}
 		}
-	}		
+	}	
+	
+	## Main patch - Core ##
 
+	# Realpolitik #
+	country_event = {
+		id = greneclyf_core.1
+		title = greneclyf_core.1.t
+		desc = greneclyf_core.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_core.1.a		
+
+		}
+	}
+
+	### END MAIN PATCH ###
 
 	### ARCTIC ###
 	# Expedition #
