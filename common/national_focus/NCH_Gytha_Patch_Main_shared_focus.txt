@@ -836,6 +836,7 @@ shared_focus = {
 	y = 17
 
 	available = {
+		has_completed_focus = NCH_peaceful_coexistence	
 		OR = {
 			country_exists = FBK
 			country_exists = WAT

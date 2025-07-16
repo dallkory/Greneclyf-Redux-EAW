@@ -4,13 +4,19 @@ state={
 	provinces={
 		20422
 	}
-		history={
+
+	state_category = rural
+
+	history={
 		owner = EQS
 		add_core_of = EQS
 
 		buildings = {
 			infrastructure = 1
 		}
+
+		victory_points = { 20422 1 }
+
 		add_resource = {
 			type = chromium
 			amount = 7
