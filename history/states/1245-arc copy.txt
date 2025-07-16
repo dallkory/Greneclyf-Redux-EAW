@@ -1,8 +1,8 @@
 state={
-	id=1223
-	name="STATE_1223"
+	id=1245
+	name="STATE_1245"
 	provinces={
-		20352 20370 
+		20352 
 	}
 		history={
 		owner = AWP
@@ -12,7 +12,7 @@ state={
 			infrastructure = 1
 		}
 	}
-	manpower=45869
+	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

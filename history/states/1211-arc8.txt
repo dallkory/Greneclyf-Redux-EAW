@@ -2,7 +2,7 @@ state={
 	id=1217
 	name="STATE_1217"
 	provinces={
-		20331 20334 20335 20367 20381 20390 
+		20335 20367 20381 20390 
 	}
 		history={
 		owner = AWP

@@ -1,18 +1,18 @@
 state={
-	id=1221
-	name="STATE_1221"
+	id=1227
+	name="STATE_1227"
 	provinces={
-		20364 20368 20415 20416 20420 
+		20320 20316 20313 20314 20317 
 	}
 		history={
-		owner = AWP
-		add_core_of = AWP
+		owner = AWT
+		add_core_of = AWT
 
 		buildings = {
 			infrastructure = 1
 		}
 	}
-	manpower=45869
+	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

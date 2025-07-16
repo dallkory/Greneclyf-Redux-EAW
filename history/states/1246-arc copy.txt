@@ -1,8 +1,8 @@
 state={
-	id=1218
-	name="STATE_1218"
+	id=1246
+	name="STATE_1246"
 	provinces={
-		20330 20331 20334 20340 
+		20348 
 	}
 		history={
 		owner = AWT
