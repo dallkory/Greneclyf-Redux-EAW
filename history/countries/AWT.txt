@@ -7,11 +7,11 @@ set_country_flag = has_custom_spymaster
 set_research_slots = 0
 
 set_technology = {
-
+	melee_weapons = 1
 }
 actually_fix_weapon_techs = yes
 
-set_convoys = 1
+set_convoys = 0
 
 set_popularities = {
 	democratic = 0
@@ -19,8 +19,9 @@ set_popularities = {
 	communism = 100
 	neutrality = 0
 }
+
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "700.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -36,6 +37,9 @@ add_ideas = {
 
 set_stability = 0
 
+recruit_character = AWT_wastland
+#recruit_character = NCH_queen_gytha
+
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders  = yes
@@ -43,5 +47,3 @@ set_rule = {
 	can_not_declare_war = yes
 	can_join_factions = no
 }
-
-recruit_character = AWT_A_wastland

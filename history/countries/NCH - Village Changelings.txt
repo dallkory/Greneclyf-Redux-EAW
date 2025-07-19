@@ -129,7 +129,6 @@ if = {
 }
 # End of ship stuff
 
-# REDUX #
 set_convoys = 20
 set_popularities = {
 	democratic = 90
@@ -174,7 +173,6 @@ add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.73
 
 
-# Submod #
 recruit_character = NCH_Oiren_Judge
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart

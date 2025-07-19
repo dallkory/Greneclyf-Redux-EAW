@@ -1,30 +1,53 @@
-	AWT_A_wastland = {
+character = {
+	NCH_queen_gytha = {
+		name=NCH_queen_gytha
+		portraits={
+			civilian={
+				large="gfx/leaders/NCH/Queen.tga"
+			}
+		}
+		country_leader={
+			desc="QUEEN_GYTHA_DESC"
+			ideology = conservatism
+			expire="1965.1.1.1"
+			traits = { The_naive_reformer }
+			id=-1
+		}
+		gender = female
+	}
+
+	AWT_wastland = {
 		name = Arctic_wastland
 		portraits={
 			civilian={
-				large="gfx/leaders/NCH/Arctic_Wastland.tga"
+				large = "gfx/leaders/NCH/Wastland.tga"
 			}
 		}
 		country_leader={
 			desc = "Desc Wastland"
-			ideology = democratic
+			ideology = conservatism
 			expire= "1965.1.1.1"
+			traits = {wastland }
 		}
 		country_leader={
 			desc = "Desc Wastland"
-			ideology = fascism
+			ideology = reformisten
 			expire= "1965.1.1.1"
+			traits = {wastland }
 		}	
 		country_leader={
 			desc = "Desc Wastland"
-			ideology = neutrality
+			ideology = centrism
 			expire= "1965.1.1.1"
+			traits = {wastland }
 		}		
 		country_leader={
 			desc = "Desc Wastland"
-			ideology = communism
+			ideology = socialism
 			expire= "1965.1.1.1"
+			traits = {wastland }
 		}				
 	}
+}	
 
 	
