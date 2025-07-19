@@ -1,4 +1,4 @@
-capital = 1216
+capital = 1230
 
 set_country_flag = has_custom_advisors
 set_country_flag = has_custom_designers
@@ -14,13 +14,13 @@ actually_fix_weapon_techs = yes
 set_convoys = 1
 
 set_popularities = {
-	democratic = 25
-	fascism = 40
-	communism = 0
-	neutrality = 35
+	democratic = 0
+	fascism = 0
+	communism = 100
+	neutrality = 0
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = communism
 	last_election = "700.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -34,7 +34,7 @@ add_ideas = {
 	closed_economy
 }
 
-set_stability = 0.6
+set_stability = 0
 
 set_rule = {
 	can_generate_female_aces = yes
@@ -44,4 +44,4 @@ set_rule = {
 	can_join_factions = no
 }
 
-recruit_character = AWT_wastland
+recruit_character = AWT_A_wastland
