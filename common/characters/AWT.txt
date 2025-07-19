@@ -1,0 +1,26 @@
+	AWT_wastland = {
+		name = Arctic_wastland
+		portraits={
+			civilian={
+				large="gfx/leaders/NCH/Arctic_Wastland.tga"
+			}
+		}
+		country_leader={
+			desc = "Desc Wastland"
+			ideology = facsism
+			expire= "1965.1.1.1"
+		}
+		country_leader={
+			desc = "Desc Wastland"
+			ideology = democratic
+			expire= "1965.1.1.1"
+		}
+		country_leader={
+			desc = "Desc Wastland"
+			ideology = neutrality
+			expire= "1965.1.1.1"
+		}
+	}
+
+
+	
