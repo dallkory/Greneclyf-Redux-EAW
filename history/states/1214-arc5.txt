@@ -1,10 +1,10 @@
 state={
-	id=1211
-	name="STATE_1211"
+	id=1214
+	name="STATE_1214"
 	provinces={
-		20405 20414 20412
+		20328 20333 20378 20379 20380 20386 20397 20400 
 	}
-	history={
+		history={
 		owner = AWP
 		add_core_of = AWP
 

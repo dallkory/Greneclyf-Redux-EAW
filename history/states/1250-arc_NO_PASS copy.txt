@@ -1,12 +1,13 @@
 state={
-	id=1229
-	name="STATE_1229"
+	id=1250
+	name="STATE_1250"
+	impassable=yes
 	provinces={
-		20342 20357 20388 20398 20413 
+		20360 20367 20350 20372
 	}
 		history={
-		owner = AWT
-		add_core_of = AWT
+		owner = AWP
+		add_core_of = AWP
 
 		buildings = {
 			infrastructure = 1
