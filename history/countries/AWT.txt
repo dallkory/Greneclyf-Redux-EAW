@@ -1,5 +1,9 @@
 capital = 1216
 
+set_country_flag = has_custom_advisors
+set_country_flag = has_custom_designers
+set_country_flag = has_custom_spymaster
+
 set_research_slots = 0
 
 set_technology = {
@@ -17,7 +21,7 @@ set_popularities = {
 }
 set_politics = {
 	ruling_party = fascism
-	last_election = "1000.10.10"
+	last_election = "700.10.10"
 	election_frequency = 36
 	elections_allowed = no
 }
@@ -39,3 +43,5 @@ set_rule = {
 	can_not_declare_war = yes
 	can_join_factions = no
 }
+
+recruit_character = AWT_wastland
