@@ -1,4 +1,4 @@
-character = {
+characters = {
 	AWT_wastland = {
 		name = Arctic_wastland
 
@@ -9,26 +9,10 @@ character = {
 		}
 
 		country_leader={
-			ideology = conservatism
+			ideology=tribal_federation
 			expire= "1965.1.1.1"
 			traits = { wastland }
-		}
-		country_leader={
-			ideology = Rexism
-			expire= "1965.1.1.1"
-			traits = { wastland }
-		}	
-		country_leader={
-			ideology = centrism
-			expire= "1965.1.1.1"
-			traits = { wastland }
-		}		
-		country_leader={
-			ideology = socialism
-			expire= "1965.1.1.1"
-			traits = { wastland }
-		}				
+			id=-1
+		}			
 	}
 }	
-
-	

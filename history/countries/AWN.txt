@@ -10,14 +10,15 @@ actually_fix_weapon_techs = yes
 set_convoys = 1
 
 set_popularities = {
-	democratic = 25
-	fascism = 40
-	communism = 0
-	neutrality = 35
+	democratic = 90
+	fascism = 3
+	communism = 6
+	neutrality = 1
 }
+
 set_politics = {
 	ruling_party = democratic
-	last_election = "1000.10.10"
+	last_election = "700.10.10"
 	election_frequency = 36
 	elections_allowed = no
 }

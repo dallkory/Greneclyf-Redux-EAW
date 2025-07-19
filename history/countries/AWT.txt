@@ -1,4 +1,4 @@
-capital = 1230
+capital = 1251
 
 set_country_flag = has_custom_advisors
 set_country_flag = has_custom_designers
@@ -14,10 +14,10 @@ actually_fix_weapon_techs = yes
 set_convoys = 0
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 100
-	neutrality = 0
+	democratic = 90
+	fascism = 3
+	communism = 6
+	neutrality = 1
 }
 
 set_politics = {
