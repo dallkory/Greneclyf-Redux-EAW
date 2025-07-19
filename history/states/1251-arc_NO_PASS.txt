@@ -1,7 +1,7 @@
 state={
 	id=1251
 	name="STATE_1251"
-	impassable=yes
+
 	provinces={
 		20342 20343 20357 20365
 	}

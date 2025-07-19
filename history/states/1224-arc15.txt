@@ -4,7 +4,7 @@ state={
 	provinces={
 		20377 20339 20371
 	}
-	impassable=yes
+
 	
 		history={
 		owner = AWN

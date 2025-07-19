@@ -1,51 +1,32 @@
 character = {
-	NCH_queen_gytha = {
-		name=NCH_queen_gytha
-		portraits={
-			civilian={
-				large="gfx/leaders/NCH/Queen.tga"
-			}
-		}
-		country_leader={
-			desc="QUEEN_GYTHA_DESC"
-			ideology = conservatism
-			expire="1965.1.1.1"
-			traits = { The_naive_reformer }
-			id=-1
-		}
-		gender = female
-	}
-
 	AWT_wastland = {
 		name = Arctic_wastland
+
 		portraits={
 			civilian={
 				large = "gfx/leaders/NCH/Wastland.tga"
 			}
 		}
+
 		country_leader={
-			desc = "Desc Wastland"
 			ideology = conservatism
 			expire= "1965.1.1.1"
-			traits = {wastland }
+			traits = { wastland }
 		}
 		country_leader={
-			desc = "Desc Wastland"
-			ideology = reformisten
+			ideology = Rexism
 			expire= "1965.1.1.1"
-			traits = {wastland }
+			traits = { wastland }
 		}	
 		country_leader={
-			desc = "Desc Wastland"
 			ideology = centrism
 			expire= "1965.1.1.1"
-			traits = {wastland }
+			traits = { wastland }
 		}		
 		country_leader={
-			desc = "Desc Wastland"
 			ideology = socialism
 			expire= "1965.1.1.1"
-			traits = {wastland }
+			traits = { wastland }
 		}				
 	}
 }	
