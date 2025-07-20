@@ -126,6 +126,48 @@ characters={
 		}
 	}
 
+	# War Attache #
+	NCH_Adler = {
+		name = Adler
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Adler.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Adler.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_government = democratic
+				#has_completed_focus = NCH_beginning_of_crisis
+			}
+
+			slot = political_advisor
+			idea_token = adler_it
+			allowed = {
+				original_tag = NCH
+			}
+
+			traits = {
+				war_attache
+			}
+		}
+
+		corps_commander={
+			desc = "NCH_desc_Adler"
+			traits={ 
+				changeling_race_trait ranger infantry_leader
+			}
+
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	NCH_kianit_oir = {
 		name = kianit_oir
 		portraits = {
@@ -136,9 +178,7 @@ characters={
 
 		advisor = {
 			available = {
-				not = {
-					has_government = democratic
-				}
+				has_government = democratic
 				has_completed_focus = NCH_beginning_of_crisis
 			}
 

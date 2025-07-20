@@ -102,4 +102,16 @@ leader_traits = {
 			factor = 0.5
 		}
 	}
+
+	war_attache = {
+		random = no
+		command_abilities_cost_factor = -0.05
+		command_power_gain = 0.015
+		war_support_factor = 0.05   
+		fascism_drift = 0.01
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
 }
