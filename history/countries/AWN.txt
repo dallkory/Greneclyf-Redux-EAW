@@ -9,6 +9,8 @@ actually_fix_weapon_techs = yes
 
 set_convoys = 1
 
+recruit_character = AWN_leader
+
 set_popularities = {
 	democratic = 90
 	fascism = 3
@@ -24,7 +26,7 @@ set_politics = {
 }
 
 add_ideas = {
-	tribal_society
+	detached_country
 	lack_of_scientists
 	poor_science_base
 	primitive_economy

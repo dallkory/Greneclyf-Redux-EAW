@@ -29,7 +29,7 @@ set_politics = {
 
 add_ideas = {
 	#polar_race
-	tribal_society
+	detached_country
 	lack_of_scientists
 	poor_science_base
 	primitive_economy

@@ -1,0 +1,18 @@
+characters = {
+	AWN_leader = {
+		name = AWN_leader
+
+		portraits={
+			civilian={
+				large = "gfx/leaders/NCH/AWN_leader.tga"
+			}
+		}
+
+		country_leader={
+			ideology= tribal_federation
+			expire= "1965.1.1.1"
+			traits = { tribal_warrior }
+			id=-1
+		}			
+	}
+}	

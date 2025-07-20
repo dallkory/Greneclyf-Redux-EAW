@@ -3,4 +3,4 @@ graphical_culture = western_european_gfx
 graphical_culture_2d = polar_bear_2d
 
 
-color = rgb { 50 30 55 }
+color = rgb { 256 256 256 }

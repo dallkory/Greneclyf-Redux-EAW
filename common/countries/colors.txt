@@ -1,24 +1,4 @@
 
-AWM = {
-	color = rgb { 256 256 256 }
-	color_ui = rgb { 1 30 200 }
-}
-AWN = {
-	color = rgb { 256 256 256 }
-	color_ui = rgb { 22 30 89 }
-}
-AWP = {
-	color = rgb { 256 256 256 }
-	color_ui = rgb { 50 30 55 }
-}
-AWT = {
-	color = rgb { 256 256 256 }
-	color_ui = rgb { 0 0 0 }
-}
-
-
-
-
 EQS = {
 	color = rgb { 158 242 117 }
 	color_ui = rgb { 158 242 117 }
