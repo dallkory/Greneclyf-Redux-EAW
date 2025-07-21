@@ -1,16 +1,12 @@
 state={
 	id=1224
 	name="STATE_1224"
-
-
 	provinces={
 		20377 20339 20371
 	}
-
-	
 		history={
-		owner = AWN
-		add_core_of = AWN
+		owner = AWT
+		add_core_of = AWT
 		buildings = {
 			infrastructure = 1
 		}
