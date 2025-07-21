@@ -28,5 +28,6 @@ state={
 
 	resources={
 		oil=18.000
+		crystals = 4
 	}
 }
