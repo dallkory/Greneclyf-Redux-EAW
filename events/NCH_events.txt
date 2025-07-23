@@ -1041,6 +1041,19 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	country_event = {
+		id = greneclyf_forces.2
+		title = greneclyf_forces.2.t
+		desc = greneclyf_forces.2.d
+		picture = GFX_unkmow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_forces.2.a
+		}
+	}
+
 	### CHANGE ###
 	country_event = {
 		id = greneclyf_forces.99

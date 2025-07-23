@@ -199,7 +199,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_domestic_consumption
-	icon = GFX_goal_domestic_consumption
+	icon = GFX_goal_new_packts
 	cost = 5
 	prerequisite = {
 		focus = NCH_agroindustrial_programs
@@ -631,7 +631,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_overvise_great_packt
-	icon = GFX_goal_unknown
+	icon = GFX_goal_domestic_consumption
 	cost = 8
 	prerequisite = {
 		focus = NCH_hoof_of_help
