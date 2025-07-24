@@ -3,6 +3,11 @@
   NCH_queen_gytha:0 "Queen Gytha" 
   NCH_Gytha_iron_lady:0 "Iron lady Gytha"
 
+  Arctic_wastland:0 "Arctic silence"
+
+ # minor tags #
+  AWT:0 "Polar Wasteland"
+
  # Characters #
   Valha_Ksilokopa:0 "Ms. Valga"
   great_architecter:0 "Hive Architect"

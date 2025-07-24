@@ -25,7 +25,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_mre_cards
 	icon = GFX_goal_mre_cards
-	cost = 2
+	cost = 0
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
 	}
