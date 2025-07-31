@@ -20,17 +20,6 @@ NCH_debug_decision = {
 #	priority = 152
 #}
 
-NCH_underground_build_category = {
-	icon = GFX_unknow
-
-	visible = {
-		has_completed_focus = NCH_brood_of_working_drones
-	}
-	priority = {
-		base = 152
-	}
-}
-
 NCH_gov_rotation_category = {
 	icon = GFX_unknow
 

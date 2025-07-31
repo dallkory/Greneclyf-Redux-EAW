@@ -1,6 +1,6 @@
 Shared_focus = {
 	id = NCH_beginning_of_crisis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_begining_crisis
 	cost = 1
 	x = 33
 	y = 8
@@ -249,7 +249,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_emergacy_plan
-	icon = GFX_goal_unknown
+	icon = GFX_goal_emegrency_plan
 	cost = 8
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
@@ -293,7 +293,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_consolidation_political
-	icon = GFX_goal_unknown
+	icon = GFX_goal_church
 	cost = 5
 	prerequisite = {
 		focus = NCH_emergacy_plan
@@ -322,7 +322,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_call_for_unity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_propaganda
 	cost = 5
 	prerequisite = {
 		focus = NCH_emergacy_plan
@@ -529,11 +529,9 @@ Shared_focus = {
 	}
 }
 
-
-
 Shared_focus = {
 	id = NCH_clans_of_Greneclyf
-	icon = GFX_goal_unknown
+	icon = GFX_goal_warlaw
 	cost = 10
 	prerequisite = {
 		focus = NCH_consolidation_political
@@ -558,7 +556,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_suppression_of_unrest
-	icon = GFX_goal_unknown
+	icon = GFX_goal_arest
 	cost = 10
 	prerequisite = {
 		focus = NCH_clans_of_Greneclyf
@@ -581,7 +579,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_final_crisis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_clearsky
 	cost = 8
 	prerequisite = {
 		focus = NCH_suppression_of_unrest

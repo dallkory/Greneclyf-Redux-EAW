@@ -151,6 +151,83 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/pro_mod.tga"
 	}
 
+	# Crisis Main #
+	spriteType = {
+		name = "GFX_goal_begining_crisis"
+		textureFile = "gfx/interface/goals/NCH/famine.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_emegrency_plan"
+		textureFile = "gfx/interface/goals/NCH/emergencymeasures.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_propaganda"
+		textureFile = "gfx/interface/goals/NCH/emergencymeasures.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_church"
+		textureFile = "gfx/interface/goals/NCH/churches.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_warlaw"
+		textureFile = "gfx/interface/goals/NCH/martiallaw.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_arest"
+		textureFile = "gfx/interface/goals/NCH/lancingboil.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_clearsky"
+		textureFile = "gfx/interface/goals/NCH/clearskies.tga"
+	}	
+
+	# ARCTIC #
+
+	spriteType = {
+		name = "GFX_goal_artmilitarization"
+		textureFile = "gfx/interface/goals/NCH/militaryutilization.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_newtradeway"
+		textureFile = "gfx/interface/goals/NCH/traderoute.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_fuelfleet"
+		textureFile = "gfx/interface/goals/NCH/fleetrefueling.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_exppoligon"
+		textureFile = "gfx/interface/goals/NCH/ExperimentalRanges.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_arccity"
+		textureFile = "gfx/interface/goals/NCH/settlement.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_geosurvey"
+		textureFile = "gfx/interface/goals/NCH/geosurvey.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_marineresources"
+		textureFile = "gfx/interface/goals/NCH/maritimeresources.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_terraink"
+		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
+	}	
 
 
 
@@ -158,7 +235,8 @@ spriteTypes = {
 
 
 
-	
+
+
 
 	# Submod #
 	spriteType = {

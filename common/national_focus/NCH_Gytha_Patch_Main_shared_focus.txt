@@ -523,15 +523,25 @@ shared_focus = {
 
 	# UNDERGROUND CITIES #
 	completion_reward = {
-		custom_effect_tooltip = NCH_underground_build
+		#custom_effect_tooltip = NCH_underground_build
 
 		add_offsite_building = {
 			type = arms_factory
 			level = 2
 		}
 
-		set_variable = { var = NCH_underground_cost  value = 50 }
-		set_variable = { var = NCH_underground_slots value = 10 }
+		add_offsite_building = {
+			type = dockyard
+			level = 2
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+
+		#set_variable = { var = NCH_underground_cost  value = 50 }
+		#set_variable = { var = NCH_underground_slots value = 10 }
 
 		#add_to_variable = { var = NCH_underground_civ value = 2 }
 		#add_to_variable = { var = NCH_underground_civ_remove value = -2 }
@@ -1926,19 +1936,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_operation_raging_river
 	}
-	x = 32
-	y = 20
-
-}
-
-shared_focus = {
-	id = NCH_time_to_look
-	icon = GFX_goal_unknown
-	cost = 10,00
-	prerequisite = {
-		focus = NCH_operation_raging_river
-	}
-	x = 34
+	x = 33
 	y = 20
 
 }
@@ -1950,9 +1948,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_under_one_flag
 	}
-	prerequisite = {
-		focus = NCH_time_to_look
-	}
+
 	x = 33
 	y = 21
 

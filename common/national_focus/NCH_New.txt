@@ -161,6 +161,13 @@ focus_tree = {
 				target = FBK
 				modifier = NCH_cold_trade
 			}
+
+			random_core_state = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				}
+			}
 		}
 	}
 
@@ -324,7 +331,7 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 					id = greneclyf_arctic.1
-					days = 150
+					days = 180
 				}
 			}
 		}
