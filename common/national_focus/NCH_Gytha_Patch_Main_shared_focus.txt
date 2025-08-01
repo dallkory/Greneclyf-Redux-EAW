@@ -1933,9 +1933,11 @@ shared_focus = {
 	id = NCH_under_one_flag
 	icon = GFX_goal_unknown
 	cost = 10,00
+	
 	prerequisite = {
 		focus = NCH_operation_raging_river
 	}
+
 	x = 33
 	y = 20
 
@@ -2021,6 +2023,10 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_a_sample_of_unity
 	}
+	prerequisite = {
+		focus = NCH_economic_community
+	}
+
 	x = 30
 	y = 23
 
@@ -2051,6 +2057,10 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_example_for_ponies
 	}
+	prerequisite = {
+		focus = NCH_general_institutions
+	}
+	
 	x = 36
 	y = 23
 
@@ -2062,16 +2072,10 @@ shared_focus = {
 	icon = GFX_goal_unknown
 	cost = 10,00
 	prerequisite = {
-		focus = NCH_make_us_stronger
-	}
-	prerequisite = {
-		focus = NCH_river_science_program
-	}
-	prerequisite = {
 		focus = NCH_racial_differences
 	}
 
-	x = 33
+	x = 31
 	y = 24
 
 }
@@ -2080,17 +2084,12 @@ shared_focus = {
 	id = NCH_first_president
 	icon = GFX_goal_unknown
 	cost = 10,00
+
 	prerequisite = {
-		focus = NCH_rethinking_of_union
+		focus = NCH_river_science_program
 	}
-	prerequisite = {
-		focus = NCH_political_integration
-	}
-	prerequisite = {
-		focus = NCH_what_we_strive_for
-	}
-	x = 33
-	y = 25
+	x = 35
+	y = 24
 
 }
 
@@ -2101,8 +2100,15 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_first_president
 	}
+	prerequisite = {
+		focus = NCH_what_we_strive_for
+	}
+	prerequisite = {
+		focus = NCH_make_us_stronger
+	}
+
 	x = 33
-	y = 26
+	y = 25
 
 }
 
@@ -2114,6 +2120,6 @@ shared_focus = {
 		focus = NCH_inity_as_the_highest_good
 	}
 	x = 33
-	y = 27
+	y = 26
 
 }

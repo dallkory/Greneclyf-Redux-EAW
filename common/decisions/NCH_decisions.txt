@@ -4,13 +4,13 @@
 ### DEBUG ###
 NCH_debug_decision = {
 
-	NCH_show_all_debug_categories = {
-		icon = d
-
-		complete_effect = {
-			set_country_flag = NCH_debug
-		}
-	}
+	#NCH_show_all_debug_categories = {
+	#	icon = d
+	#
+	#		complete_effect = {
+	#		set_country_flag = NCH_debug
+	#	}
+	#}
 
 	NCH_show_all_focuses_GYTHA = {
 		icon = d
@@ -21,6 +21,7 @@ NCH_debug_decision = {
 			set_country_flag = NCH_crisis_end
 			set_country_flag = NCH_army_forces_allow
 			set_country_flag = NCH_queen_hive_abmitions
+			set_country_flag = NCH_debug_vision
 
 			mark_focus_tree_layout_dirty = yes
 		}
