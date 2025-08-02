@@ -668,6 +668,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		custom_effect_tooltip = NCH_boost_harmony_tt
 		country_event = {
 			id = greneclyf_core.1
 			days = 0
@@ -694,6 +695,10 @@ shared_focus = {
 
 	}
 
+	bypass = {
+		has_completed_focus = NCH_finding_allies_in_coalition
+	}
+
 	completion_reward = {
 		
 	}
@@ -709,6 +714,10 @@ shared_focus = {
 	x = 32
 	y = 17
 
+	bypass = {
+		has_completed_focus = NCH_finding_allies_in_coalition
+	}
+
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
@@ -721,6 +730,30 @@ shared_focus = {
 
 	completion_reward = {
 		# DECISION Industrial < 50% harmony #
+		every_country = {
+			limit = {
+				is_riverlands_country_tag = yes
+				check_variable = {
+					party_popularity@democratic < 0.5
+				}
+			}
+			add_stability = -0.075
+			
+			damage_building = {
+				type = industrial_complex
+				damage = 8
+			}
+
+			damage_building = {
+				type = arms_factory   
+				damage = 6
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 10
+			}
+		}
+		
 	}
 }
 
@@ -1424,7 +1457,7 @@ shared_focus = {
 	y = 18
 
 	available = {
-		country_exists = FRE
+		#country_exists = FRE
 		has_completed_focus = NCH_finding_allies_in_coalition
 	}
 
@@ -1910,6 +1943,12 @@ shared_focus = {
 
 	available = {
 		country_exists = FRE
+	}
+
+	bypass = {
+		not = {
+			country_exists = FRE
+		}
 	}
 
 	completion_reward = {
