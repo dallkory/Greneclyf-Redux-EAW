@@ -20,6 +20,14 @@ NCH_debug_decision = {
 #	priority = 152
 #}
 
+NCH_boost_harmony_river = {
+	icon = GFX_unknow
+
+	priority = {
+		base = 1
+	}
+}
+
 NCH_gov_rotation_category = {
 	icon = GFX_unknow
 

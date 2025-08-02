@@ -152,6 +152,8 @@ add_ideas = {
 	NCH_FBK_pact
 	NCH_luddites_1
 	NCH_Overpopulation
+
+	NCH_fleet_stagnation
 }
 
 add_tech_bonus = {

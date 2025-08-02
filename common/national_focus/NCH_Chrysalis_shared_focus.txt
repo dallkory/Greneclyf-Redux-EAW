@@ -1,7 +1,7 @@
 Shared_focus = {
 	id = NCH_hive
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 1
 	x = 13
 	y = 2
 
