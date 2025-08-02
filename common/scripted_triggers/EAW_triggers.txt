@@ -563,6 +563,8 @@ is_griffon_continent_country_tag = {
 		original_tag = JAS
 		original_tag = JEV
 		original_tag = EQC
+
+		original_tag = AWT
 	}
 }
 
@@ -1300,6 +1302,7 @@ is_eqs_civil_war_tag_tag = {
 
 country_with_custom_advisors = {
 	OR = {
+		original_tag = AWT
 		original_tag = NCH
 		original_tag = HAU
 		original_tag = GRI
@@ -1343,7 +1346,6 @@ country_with_custom_advisors = {
 		original_tag = ROU
 		original_tag = RCT
 		original_tag = GRY
-		original_tag = NCH
 		original_tag = LCT
 		original_tag = FRE
 		original_tag = DMT

@@ -1,0 +1,18 @@
+characters = {
+	AWT_wastland = {
+		name = Arctic_wastland
+
+		portraits={
+			civilian={
+				large = "gfx/leaders/NCH/Wastland.tga"
+			}
+		}
+
+		country_leader={
+			ideology=tribal_federation
+			expire= "1965.1.1.1"
+			traits = { wastland }
+			id=-1
+		}			
+	}
+}	

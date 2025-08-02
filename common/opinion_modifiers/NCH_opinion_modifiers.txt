@@ -11,6 +11,12 @@ opinion_modifiers = {
 		months = 12
 	}
 
+	NCH_trade_with_homeland = {
+		value = 25
+		trade = yes
+		months = 9
+	}
+
 	NCH_trade_with_riverlands_opportunity = {
 		export_bonus = 0.15  
 		value = 50

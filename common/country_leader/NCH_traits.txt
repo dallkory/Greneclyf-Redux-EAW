@@ -51,10 +51,18 @@ leader_traits = {
 
 	first_bishop = {
 		random = no
-		political_power_gain = 0.25
+		political_power_gain = 0.05
 		recruitable_population_factor = 0.05
-		war_support_factor = 0.05   
+		war_support_factor = 0.15   
 		army_org_factor = 0.05
+	}
+
+	anti_crisis_manager = {
+		random = no
+		recruitable_population_factor = 0.05
+		production_speed_buildings_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
+		party_popularity_stability_factor = 0.1
 	}
 
 	higher_judge_oiren = {
@@ -89,6 +97,18 @@ leader_traits = {
 		research_speed_factor = 0.05
 		consumer_goods_factor = -0.1
 		communism_drift = 0.01
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	war_attache = {
+		random = no
+		command_abilities_cost_factor = -0.05
+		command_power_gain = 0.015
+		war_support_factor = 0.05   
+		fascism_drift = 0.01
 
 		ai_will_do = {
 			factor = 0.5

@@ -1,6 +1,6 @@
 Shared_focus = {
 	id = NCH_beginning_of_crisis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_begining_crisis
 	cost = 1
 	x = 33
 	y = 8
@@ -24,8 +24,8 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_mre_cards
-	icon = GFX_goal_unknown
-	cost = 2
+	icon = GFX_goal_mre_cards
+	cost = 0
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
 	}
@@ -33,7 +33,7 @@ Shared_focus = {
 	y = 9
 
 	completion_reward = {
-		add_political_power = 30
+		add_political_power = 50
 		add_stability = 0.05
 		add_timed_idea = {
 			idea = NCH_mre_cards_help
@@ -46,7 +46,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_agroindustrial_mobilization
-	icon = GFX_goal_unknown
+	icon = GFX_goal_agroindustrial_mobilization
 	cost = 10
 	prerequisite = {
 		focus = NCH_mre_cards
@@ -78,7 +78,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_agroindustrial_programs
-	icon = GFX_goal_unknown
+	icon = GFX_goal_lux_program
 	cost = 2
 	prerequisite = {
 		focus = NCH_agroindustrial_mobilization
@@ -104,7 +104,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_limit_external_trade
-	icon = GFX_goal_unknown
+	icon = GFX_goal_obsidian_trade
 	cost = 5
 	prerequisite = {
 		focus = NCH_mre_cards
@@ -144,7 +144,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_industrial_cooperatives
-	icon = GFX_goal_unknown
+	icon = GFX_goal_enya_institute
 	cost = 8
 	prerequisite = {
 		focus = NCH_agroindustrial_mobilization
@@ -157,6 +157,7 @@ Shared_focus = {
 
 	completion_reward = {
 		add_research_slot = 1
+		add_ideas = lack_of_scientists2
 
 		remove_ideas = {
 			NCH_luddites_2
@@ -166,7 +167,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_modernization_industry
-	icon = GFX_goal_unknown
+	icon = GFX_goal_gold_standart
 	cost = 5
 	prerequisite = {
 		focus = NCH_limit_external_trade
@@ -198,7 +199,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_domestic_consumption
-	icon = GFX_goal_unknown
+	icon = GFX_goal_new_packts
 	cost = 5
 	prerequisite = {
 		focus = NCH_agroindustrial_programs
@@ -248,7 +249,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_emergacy_plan
-	icon = GFX_goal_unknown
+	icon = GFX_goal_emegrency_plan
 	cost = 8
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
@@ -261,7 +262,7 @@ Shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 30
+		add_political_power = -100
 		add_stability = -0.1
 		add_timed_idea = {
 			idea = NCH_emergecy_plan_idea
@@ -292,7 +293,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_consolidation_political
-	icon = GFX_goal_unknown
+	icon = GFX_goal_church
 	cost = 5
 	prerequisite = {
 		focus = NCH_emergacy_plan
@@ -321,7 +322,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_call_for_unity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_propaganda
 	cost = 5
 	prerequisite = {
 		focus = NCH_emergacy_plan
@@ -350,7 +351,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_to_neighbors
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hide_and_seek
 	cost = 5
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
@@ -377,7 +378,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_every_friend
-	icon = GFX_goal_unknown
+	icon = GFX_goal_farbrook_help
 	cost = 2
 	prerequisite = {
 		focus = NCH_to_neighbors
@@ -405,7 +406,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_hoof_of_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hoof_of_help
 	cost = 5
 	prerequisite = {
 		focus = NCH_every_friend
@@ -436,7 +437,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_some_love
-	icon = GFX_goal_unknown
+	icon = GFX_goal_some_love
 	cost = 1
 	prerequisite = {
 		focus = NCH_every_friend
@@ -465,7 +466,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_reguest_of_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_riverlands_help
 	cost = 2
 	prerequisite = {
 		focus = NCH_to_neighbors
@@ -493,7 +494,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_army_concessions
-	icon = GFX_goal_unknown
+	icon = GFX_goal_saor
 	cost = 8
 	prerequisite = {
 		focus = NCH_reguest_of_help
@@ -528,11 +529,9 @@ Shared_focus = {
 	}
 }
 
-
-
 Shared_focus = {
 	id = NCH_clans_of_Greneclyf
-	icon = GFX_goal_unknown
+	icon = GFX_goal_warlaw
 	cost = 10
 	prerequisite = {
 		focus = NCH_consolidation_political
@@ -557,7 +556,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_suppression_of_unrest
-	icon = GFX_goal_unknown
+	icon = GFX_goal_arest
 	cost = 10
 	prerequisite = {
 		focus = NCH_clans_of_Greneclyf
@@ -580,7 +579,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_final_crisis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_clearsky
 	cost = 8
 	prerequisite = {
 		focus = NCH_suppression_of_unrest
@@ -608,7 +607,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_concessions_for_help
-	icon = GFX_goal_unknown
+	icon = GFX_goal_saor_policy
 	cost = 5
 	prerequisite = {
 		focus = NCH_reguest_of_help
@@ -630,7 +629,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_overvise_great_packt
-	icon = GFX_goal_unknown
+	icon = GFX_goal_domestic_consumption
 	cost = 8
 	prerequisite = {
 		focus = NCH_hoof_of_help

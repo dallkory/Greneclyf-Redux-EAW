@@ -1,0 +1,19 @@
+state={
+	id=1215
+	name="STATE_1215"
+	provinces={
+		20324 20329 
+	}
+		history={
+		owner = AWT
+		add_core_of = AWT
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=45869
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

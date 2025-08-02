@@ -1,0 +1,36 @@
+state={
+	id=1243
+	name="STATE_1243"
+	provinces={
+		20422
+	}
+
+	state_category = rural
+
+	history={
+		owner = EQS
+		add_core_of = EQS
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = { 20422 1 }
+
+		add_resource = {
+			type = chromium
+			amount = 7
+		}
+		add_resource = {
+			type = oil
+			amount = 15
+		}
+		add_resource = {
+			type = tungsten
+			amount = 6
+		}
+	}
+	manpower= 175869
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

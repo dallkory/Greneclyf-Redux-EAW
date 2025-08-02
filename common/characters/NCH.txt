@@ -126,6 +126,73 @@ characters={
 		}
 	}
 
+	# War Attache #
+	NCH_Adler = {
+		name = Adler
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Adler.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Adler.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_government = democratic
+				#has_completed_focus = NCH_beginning_of_crisis
+			}
+
+			slot = political_advisor
+			idea_token = adler_it
+			allowed = {
+				original_tag = NCH
+			}
+
+			traits = {
+				war_attache
+			}
+		}
+
+		corps_commander={
+			desc = "NCH_desc_Adler"
+			traits={ 
+				changeling_race_trait ranger infantry_leader
+			}
+
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	NCH_kianit_oir = {
+		name = kianit_oir
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Kianit.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_government = democratic
+				has_completed_focus = NCH_beginning_of_crisis
+			}
+
+			slot = political_advisor
+			idea_token = kianit_oir_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				anti_crisis_manager
+			}
+		}
+	}
+
 	NCH_Gerald_3 = {
 		name = Gerald_3
 		portraits = {
@@ -189,7 +256,7 @@ characters={
             slot = theorist
             idea_token = NCH_celarl_it
             ledger = army
-            cost = 150
+            cost = 100
             removal_cost = -1
             allowed = {
                 original_tag = NCH
@@ -208,6 +275,26 @@ characters={
 				}
 			}      
         }
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+				scientist_trait_genius 
+				scientist_trait_brilliant_theorist 
+				scientist_trait_fast_learner 
+			} # TODO GTD balance
+			skills = {
+				specialization_nuclear = 2
+			}
+
+			visible = {
+				owner = {
+					has_government = democratic
+				}
+			}
+			
+			#desc = twilight_sparkle_desc
+		}
     }
 
 	# Spymaster #

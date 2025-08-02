@@ -1,12 +1,13 @@
 Shared_focus = {
 	id = NCH_hive
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 1
 	x = 13
 	y = 2
 
 	available = {
 		or = {
+			has_completed_focus = NCH_equestria_support
 			has_country_flag = NCH_queen_hive_abmitions
 			has_completed_focus = NCH_time_to_look_further
 		}
@@ -15,6 +16,7 @@ Shared_focus = {
 		or = {
 			has_country_flag = NCH_queen_hive_abmitions
 			has_completed_focus = NCH_time_to_look_further
+			has_completed_focus = NCH_equestria_support
 		}
 	}
 }

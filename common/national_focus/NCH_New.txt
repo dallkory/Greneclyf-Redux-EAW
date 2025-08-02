@@ -17,6 +17,7 @@ focus_tree = {
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch
 	shared_focus = NCH_rule_greneclyf
+	shared_focus = NCH_land_behind_seas
 
 	default = no
 	continuous_focus_position = { x = 150 y = 1300 }
@@ -142,7 +143,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_lift_the_veil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Open_the_veil
 		cost = 5
 		prerequisite = {
 			focus = NCH_parliament_convocation
@@ -159,6 +160,13 @@ focus_tree = {
 			add_opinion_modifier = {
 				target = FBK
 				modifier = NCH_cold_trade
+			}
+
+			random_core_state = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				}
 			}
 		}
 	}
@@ -237,7 +245,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_Esteblish_trade_guild
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Found_a_Trade_Guild
 		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
@@ -264,7 +272,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_take_look_around
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Take_a_look_around
 		cost = 5
 		prerequisite = {
 			focus = NCH_lift_the_veil
@@ -289,7 +297,7 @@ focus_tree = {
 
 	focus = {
 		id = NCH_time_to_look_further
-		icon = GFX_unknow
+		icon = GFX_goal_Looking_Beyond
 		cost = 8
 		
 
@@ -312,12 +320,20 @@ focus_tree = {
 		y = 6
 
 		completion_reward = {
+			add_ideas = outdated_industry
 			country_event = {
 				id = greneclyf_redux.9
 				days = 0
 			}
 			custom_effect_tooltip = NCH_army_development
 			mark_focus_tree_layout_dirty = yes
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_arctic.1
+					days = 180
+				}
+			}
 		}
 	}
 }

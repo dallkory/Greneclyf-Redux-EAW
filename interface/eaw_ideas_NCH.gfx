@@ -12,7 +12,6 @@ spriteTypes = {
 	}
 
 
-
 	# Submod #
 	spriteType = {
 		name = "GFX_idea_NCH_changeling_submarine"

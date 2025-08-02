@@ -8,6 +8,95 @@ on_actions = {
 
     on_daily_NCH = {
         effect = {
+			# REDUX #
+			# EQS #
+			if = {
+				limit = {
+					has_war_with = CHN
+				}
+				remove_ideas = NCH_trade_and_support_CHN
+			}
+
+			if = {
+                limit = {
+					focus_progress = {
+						focus = NCH_princess_in_a_high_castle
+						progress > 0.4
+					}
+                }
+				NCH = {
+				     country_event = {
+                    id = greneclyf_foregin.13
+                    days = 0
+              		}	
+				}
+
+				EQS = {
+					 country_event = {
+                    id = greneclyf_foregin.13
+                    days = 0
+            		}	
+				}
+            }
+
+			# CHN #
+			if = {
+                limit = {
+					focus_progress = {
+						focus = NCH_emvassy_to_equestria
+						progress > 0.15
+					}
+                }
+				NCH = {
+				     country_event = {
+                    id = greneclyf_foregin.16
+                    days = 0
+              		}	
+				}
+
+				CHN = {
+					 country_event = {
+                    id = greneclyf_foregin.16
+                    days = 0
+            		}	
+				}
+            }
+
+			if = {
+				limit = {
+					focus_progress = {
+						focus = NCH_our_best_qualities
+						progress = 0.65
+					}
+				}
+				CHN = {
+					country_event = {
+						id = greneclyf_foregin.21
+						days = 0
+					}
+				}
+
+				EQS = {
+					country_event = {
+						id = greneclyf_foregin.21
+						days = 0
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					focus_progress = {
+						focus = NCH_princess_in_a_high_castle
+						progress = 0.85
+					}
+				}
+				country_event = {
+					id = greneclyf_foregin.15
+					days = 0
+				}
+			}
+
 
 			if = {
 				limit = {

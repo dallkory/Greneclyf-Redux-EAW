@@ -36,12 +36,39 @@ ideas = {
 					exists = yes
 					has_government = democratic
 				}
-				#is_river_fed_member = yes
 			}
 			removal_cost = -1
 
 			modifier = {
 				democratic_drift = 0.05
+				war_support_weekly = -0.001
+				political_power_factor = -0.05
+			}
+		}
+
+		NCH_army_stagnation = {
+
+		}
+
+		NCH_fleet_stagnation = {
+			picture = d
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_dockyard_factor = -0.25
+				production_cost_dockyard_factor = -0.15
+				experience_gain_navy = -0.01
+				
+				production_cost_max_ship_hull_cruiser = 3200
+				production_cost_max_ship_hull_light = 2500
+				production_cost_max_ship_hull_submarine = 500
+				production_cost_max_ship_hull_heavy = 7000
 			}
 		}
 
@@ -429,6 +456,88 @@ ideas = {
 
 
 		### MAIN PATCH ###
+		NCH_trade_and_support_EQS = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				industry = 0.05
+				electronics = 0.05
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		NCH_wonderbolts = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				light_air = 0.05
+				air_equipment = 0.1
+			}
+
+			modifier = {
+				air_accidents_factor = -0.15
+				experience_gain_air_factor = 0.05
+			}
+		}
+
+		NCH_school_of_friendship = {
+			picture = GFX_unknow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				race_tech = 0.05
+				electronics = 0.05
+			}
+
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+
+		NCH_trade_and_support_CHN = {
+			picture = GFX_unknow
+			allowed = {
+				not = {
+					or = {
+						has_war_with = CHN
+						has_war_with = NCH
+					}
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				trade_opinion_factor = 0.15
+				local_resources_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
 
 		NCH_help_ponyhills_main = {
 			picture = GFX_unknow
@@ -1027,7 +1136,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_cruiser = 4500
+				production_cost_max_ship_hull_light = 3000
+				production_cost_max_ship_hull_submarine = 800
+				production_cost_max_ship_hull_heavy = 9000
 				navy_fuel_consumption_factor = -0.05
 				industrial_capacity_dockyard = 0.1
 				naval_accidents_chance = -0.05
@@ -1272,7 +1384,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				war_support_weekly = 0.003
+				war_support_weekly = 0.001
 				army_org_factor = 0.05
 			}
 		}

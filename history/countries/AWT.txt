@@ -1,0 +1,52 @@
+capital = 1251
+
+set_country_flag = has_custom_advisors
+set_country_flag = has_custom_designers
+set_country_flag = has_custom_spymaster
+
+set_research_slots = 0
+
+set_technology = {
+	polar_race = 1
+}
+actually_fix_weapon_techs = yes
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 90
+	fascism = 3
+	communism = 6
+	neutrality = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "700.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_ideas = {
+	#polar_race
+	detached_country
+	lack_of_scientists
+	poor_science_base
+	primitive_economy
+	closed_economy
+
+	#polar_nation
+}
+
+set_stability = 0
+set_war_support = 0
+
+recruit_character = AWT_wastland
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders  = yes
+	can_generate_female_country_leaders = yes
+	can_not_declare_war = yes
+	can_join_factions = no
+}

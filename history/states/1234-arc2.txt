@@ -1,0 +1,19 @@
+state={
+	id=1234
+	name="STATE_1234"
+	provinces={
+		20345 20347 20354 20358 20359 
+	}
+		history={
+		owner = AWT
+		add_core_of = AWT
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=1  
+state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

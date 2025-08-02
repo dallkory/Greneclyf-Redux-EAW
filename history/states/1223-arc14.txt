@@ -1,0 +1,19 @@
+state={
+	id=1223
+	name="STATE_1223"
+	provinces={
+		20370 20373 20374
+	}
+		history={
+		owner = AWN
+		add_core_of = AWN
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=45869
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

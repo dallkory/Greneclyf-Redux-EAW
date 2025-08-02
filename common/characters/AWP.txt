@@ -1,0 +1,18 @@
+characters = {
+	AWP_leader = {
+		name = AWP_leader
+
+		portraits={
+			civilian={
+				large = "gfx/leaders/NCH/AWP_leader.tga"
+			}
+		}
+
+		country_leader={
+			ideology= tribal_federation
+			expire= "1965.1.1.1"
+			traits = { industry_reformer }
+			id=-1
+		}			
+	}
+}	

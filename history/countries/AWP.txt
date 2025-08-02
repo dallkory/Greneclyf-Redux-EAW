@@ -1,0 +1,44 @@
+capital = 1215
+
+set_research_slots = 0
+
+set_technology = {
+
+}
+actually_fix_weapon_techs = yes
+
+set_convoys = 1
+
+recruit_character= AWP_leader
+
+set_popularities = {
+	democratic = 25
+	fascism = 40
+	communism = 0
+	neutrality = 35
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_ideas = {
+	detached_country
+	lack_of_scientists
+	poor_science_base
+	primitive_economy
+	closed_economy
+	
+}
+
+set_stability = 0.6
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders  = yes
+	can_generate_female_country_leaders = yes
+	can_not_declare_war = yes
+	can_join_factions = no
+}

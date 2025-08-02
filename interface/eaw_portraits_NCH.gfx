@@ -10,4 +10,9 @@ spriteTypes = {
 		name = "GFX_NCH_Steel_Gytha"
 		textureFile = "gfx/leaders/NCH/Steel_Gytha.tga"
 	}
+
+	spriteType = {
+		name = "GFX_Arctic_Wastland"
+		textureFile = "gfx/leaders/NCH/Wastland.tga"
+	}
 }

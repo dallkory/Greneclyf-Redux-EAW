@@ -797,7 +797,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_Blosmport_navy_institute
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 15
 	prerequisite = {
 		focus = NCH_marine_corp
 	}
@@ -825,7 +825,7 @@ shared_focus = {
 				province = 5188
 				type = naval_facility
 				level = 1
-			}
+				}
 			}
 		}
 	}
@@ -1274,7 +1274,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.32
+			id = greneclyf_forces.1
 			days = 0
 		}
 
@@ -1411,7 +1411,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bugsmere_war_institute
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 15
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
 		focus = NCH_discipline_is_key_to_order
@@ -1984,7 +1984,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_aisling_air_institute
 	icon = GFX_goal_unknown
-	cost = 7
+	cost = 15
 
 	available = {
 		not = {
@@ -2107,16 +2107,22 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			category = nuclear
-			bonus = 1
-			uses = 2
+			bonus = 3
+			uses = 1
 		}
+
+		country_event = {
+			id = greneclyf_forces.2
+			days = 0
+		}
+
 		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
 			type = industrial_complex
 			level = 1
+			}
 		}
-	}
 	}
 	x = 79
 	y = 6
@@ -2167,13 +2173,11 @@ shared_focus = {
 			resource = aluminium
 			amount = 1
 		}
-
-		
 	}
 	x = 78
 	y = 7
-
 }
+
 shared_focus = {
 	id = NCH_tactical_aviation
 	icon = GFX_goal_unknown

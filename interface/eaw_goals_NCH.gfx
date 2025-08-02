@@ -40,7 +40,203 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/You_learn_from_mistakes.dds"
 	}
 
-	
+	spriteType = {
+		name = "GFX_goal_Looking_Beyond"
+		textureFile = "gfx/interface/goals/NCH/Looking_Beyond.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Open_the_veil"
+		textureFile = "gfx/interface/goals/NCH/Open_the_veil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Found_a_Trade_Guild"
+		textureFile = "gfx/interface/goals/NCH/Found_a_Trade_Guild.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_Take_a_look_around"
+		textureFile = "gfx/interface/goals/NCH/Take_a_look_around.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_goal_mre_cards"
+		textureFile = "gfx/interface/goals/NCH/rations.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_domestic_consumption"
+		textureFile = "gfx/interface/goals/NCH/dom_consumption.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_agroindustrial_mobilization"
+		textureFile = "gfx/interface/goals/NCH/agri_mobilization.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_lux_program"
+		textureFile = "gfx/interface/goals/NCH/irg_pro.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_obsidian_trade"
+		textureFile = "gfx/interface/goals/NCH/foreign_trade.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_enya_institute"
+		textureFile = "gfx/interface/goals/NCH/Industrial_cooperatives.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_mobilization_industry"
+		textureFile = "gfx/interface/goals/NCH/agri_mobilization.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hide_and_seek"
+		textureFile = "gfx/interface/goals/NCH/hideandseek.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_some_love"
+		textureFile = "gfx/interface/goals/NCH/loveaffairs.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hoof_of_help"
+		textureFile = "gfx/interface/goals/NCH/hoofofaid.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_farbrook_help"
+		textureFile = "gfx/interface/goals/NCH/meetingfarbrook.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_farbrook_help"
+		textureFile = "gfx/interface/goals/NCH/meetingfarbrook.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_riverlands_help"
+		textureFile = "gfx/interface/goals/NCH/reviewgreatagreements.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_riverlands_help"
+		textureFile = "gfx/interface/goals/NCH/reviewgreatagreements.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_saor"
+		textureFile = "gfx/interface/goals/NCH/saor.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_saor_policy"
+		textureFile = "gfx/interface/goals/NCH/saorpolice.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_new_packts"
+		textureFile = "gfx/interface/goals/NCH/meetingtrade.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_gold_standart"
+		textureFile = "gfx/interface/goals/NCH/pro_mod.tga"
+	}
+
+	# Crisis Main #
+	spriteType = {
+		name = "GFX_goal_begining_crisis"
+		textureFile = "gfx/interface/goals/NCH/famine.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_emegrency_plan"
+		textureFile = "gfx/interface/goals/NCH/emergencymeasures.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_propaganda"
+		textureFile = "gfx/interface/goals/NCH/emergencymeasures.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_church"
+		textureFile = "gfx/interface/goals/NCH/churches.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_warlaw"
+		textureFile = "gfx/interface/goals/NCH/martiallaw.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_arest"
+		textureFile = "gfx/interface/goals/NCH/lancingboil.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_clearsky"
+		textureFile = "gfx/interface/goals/NCH/clearskies.tga"
+	}	
+
+	# ARCTIC #
+
+	spriteType = {
+		name = "GFX_goal_artmilitarization"
+		textureFile = "gfx/interface/goals/NCH/militaryutilization.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_newtradeway"
+		textureFile = "gfx/interface/goals/NCH/traderoute.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_fuelfleet"
+		textureFile = "gfx/interface/goals/NCH/fleetrefueling.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_exppoligon"
+		textureFile = "gfx/interface/goals/NCH/ExperimentalRanges.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_arccity"
+		textureFile = "gfx/interface/goals/NCH/settlement.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_geosurvey"
+		textureFile = "gfx/interface/goals/NCH/geosurvey.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_marineresources"
+		textureFile = "gfx/interface/goals/NCH/maritimeresources.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_terraink"
+		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
+	}	
+
+
+
+
+
+
+
+
+
 
 	# Submod #
 	spriteType = {

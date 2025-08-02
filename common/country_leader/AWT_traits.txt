@@ -1,0 +1,10 @@
+leader_traits  = {
+	wastland = {
+		random = no
+		research_speed_factor = -99.99
+		political_power_gain = -99.99
+		consumer_goods_factor = 99.99
+		global_building_slots_factor = -99.99
+		monthly_population = -9.99
+	}
+}

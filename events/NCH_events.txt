@@ -1,8 +1,11 @@
 ﻿add_namespace = greneclyf_redux
 add_namespace = greneclyf_forces
-add_namespace = greneclyf_main
+#add_namespace = greneclyf_main
 add_namespace = greneclyf_obsidian
 add_namespace = greneclyf_foregin
+add_namespace = greneclyf_arctic
+add_namespace = greneclyf_core
+
 
 	# Example #
 
@@ -1026,15 +1029,28 @@ add_namespace = greneclyf_foregin
 	### FORCES ###
 
 	country_event = {
-		id = greneclyf_redux.32
-		title = greneclyf_redux.32.t
-		desc = greneclyf_redux.32.d
+		id = greneclyf_forces.1
+		title = greneclyf_forces.1.t
+		desc = greneclyf_forces.1.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.32.a
+			name = greneclyf_forces.1.a
+		}
+	}
+
+	country_event = {
+		id = greneclyf_forces.2
+		title = greneclyf_forces.2.t
+		desc = greneclyf_forces.2.d
+		picture = GFX_unkmow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_forces.2.a
 		}
 	}
 
@@ -1124,15 +1140,15 @@ add_namespace = greneclyf_foregin
 
 		option = {
         name = greneclyf_foregin.1.a	
-			give_guarantee = WIT
+			give_guarantee = WAT
 
 			add_opinion_modifier = {
-				target = WIT
+				target = WAT
 				modifier = NCH_WIT_friends
 			}
 
 			add_opinion_modifier = {
-				target = WIT
+				target = WAT
 				modifier = huge_increase
 			}
 		}
@@ -1207,7 +1223,7 @@ add_namespace = greneclyf_foregin
 					active = no
 				}
 				diplomatic_relation = {
-					country = WIT
+					country = WAT
 					relation = guarantee
 					active = no
 				}
@@ -1222,14 +1238,14 @@ add_namespace = greneclyf_foregin
 		option = {
 			name = greneclyf_foregin.3.a	
 
-			# FOR WIT #
-			WIT = {
+			# FOR WAT #
+			WAT = {
 				set_party_rule = {
 					ideology = communism
 				}
 			}
 			NCH = {
-				puppet = WIT
+				puppet = WAT
 			}
 
 			# READY #
@@ -1483,3 +1499,407 @@ add_namespace = greneclyf_foregin
 		
 		}
 	}
+
+	# WAY TO HOME #
+	country_event = {
+		id = greneclyf_foregin.12
+		title = greneclyf_foregin.12.t
+		desc = greneclyf_foregin.12.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.12.a		
+		
+		}
+	}
+
+	### EQS ###
+	# HOT DELIGATION #
+	country_event = {
+		id = greneclyf_foregin.13
+		title = greneclyf_foregin.13.t
+		desc = greneclyf_foregin.13.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.13.a		
+			country_event = {
+				id = greneclyf_foregin.14
+				days = 0
+			}
+		}
+	}
+	
+	# AFTER LECTION #
+	country_event = {
+		id = greneclyf_foregin.14
+		title = greneclyf_foregin.14.t
+		desc = greneclyf_foregin.14.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.14.a		
+		
+		}
+	}	
+
+	# ABOUT DELEGATION EQS #
+	country_event = {
+		id = greneclyf_foregin.15
+		title = greneclyf_foregin.15.t
+		desc = greneclyf_foregin.15.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.15.a		
+			add_political_power = 30
+		}
+	}	
+
+	### CHN ###
+	# DELEGATION TO CHN #
+	country_event = {
+		id = greneclyf_foregin.16
+		title = greneclyf_foregin.16.t
+		desc = greneclyf_foregin.16.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.16.a		
+			country_event = {
+				id = greneclyf_foregin.17
+				days = 10
+			}
+		}
+	}
+	
+	# NEW AND OLD WORLD #
+	country_event = {
+		id = greneclyf_foregin.17
+		title = greneclyf_foregin.17.t
+		desc = greneclyf_foregin.17.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.17.a		
+			country_event = {
+				id = greneclyf_foregin.18
+				days = 10
+			}
+		}
+	}	
+
+	# QUEEN IN HIGH CASTLE #
+	country_event = {
+		id = greneclyf_foregin.18
+		title = greneclyf_foregin.18.t
+		desc = greneclyf_foregin.18.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.18.a		
+			country_event = {
+				id = greneclyf_foregin.19
+				days = 10
+			}	
+		}
+	}
+
+	# BEHIND SCENE #
+	country_event = {
+		id = greneclyf_foregin.19
+		title = greneclyf_foregin.19.t
+		desc = greneclyf_foregin.19.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.19.a		
+			country_event = {
+				id = greneclyf_foregin.20
+				days = 10
+			}	
+		}
+	}	
+
+	# ABOUT DELEGATION CHN #
+	country_event = {
+		id = greneclyf_foregin.20
+		title = greneclyf_foregin.20.t
+		desc = greneclyf_foregin.20.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.20.a		
+			add_political_power = 30
+		}
+	}		
+
+	# BLITZ #
+	# GRENECLYF 3'd side #
+	country_event = {
+		id = greneclyf_foregin.21
+		title = greneclyf_foregin.21.t
+		desc = greneclyf_foregin.21.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.21.a		
+			ai_chance = {
+				base = 0.65
+				modifier = {
+					factor = 0.25
+					has_government = democratic
+				}
+			}	
+			set_country_flag = NCH_peacful_diplomatic_accept
+		}
+
+		option = {
+       	name = greneclyf_foregin.21.b		
+			ai_chance = {
+				base = 0.65
+				modifier = {
+					factor = 0.25
+					has_government = fascism
+				}
+			}	
+			set_country_flag = NCH_peacful_diplomatic_ignore
+		}
+	}		
+
+	# TRADE WITH CHN #
+	country_event = {
+		id = greneclyf_foregin.22
+		title = greneclyf_foregin.22.t
+		desc = greneclyf_foregin.22.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.22.a		
+			ai_chance = {
+				base = 0.7
+				modifier = {
+					factor = 0.15
+					has_opinion = {
+						target = NCH
+						value > 25
+					}
+				}
+			}
+			add_ideas = {
+				NCH_trade_and_support_CHN
+			}
+			NCH = {
+				add_ideas = NCH_trade_and_support_CHN
+			}
+		}
+
+		option = {
+       	name = greneclyf_foregin.22.b		
+			ai_chance = {
+				base = 0.3
+				modifier = {
+					factor = 0.8
+					has_opinion = {
+						target = NCH
+						value < 10
+					}
+				}
+			}
+
+			NCH  = {
+				country_event = {
+					id = greneclyf_foregin.23
+					days = 0
+				}
+			}
+		}
+	}		
+
+	# CHN ignore trade #
+	country_event = {
+		id = greneclyf_foregin.23
+		title = greneclyf_foregin.23.t
+		desc = greneclyf_foregin.23.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.23.a		
+			add_political_power = -50
+		}
+	}	
+
+	# GUEST #
+	country_event = {
+		id = greneclyf_foregin.24
+		title = greneclyf_foregin.24.t
+		desc = greneclyf_foregin.24.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.24.a		
+
+		}
+	}
+	
+	# RAINBOW DASH #
+	country_event = {
+		id = greneclyf_foregin.25
+		title = greneclyf_foregin.25.t
+		desc = greneclyf_foregin.25.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.25.a		
+		
+		}
+	}	
+	
+	## ### ## ### ##
+	# TRADE WITH EQS #
+	country_event = {
+		id = greneclyf_foregin.26
+		title = greneclyf_foregin.26.t
+		desc = greneclyf_foregin.26.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+		set_country_flag = NCH_EQS_accept_trade
+       	name = greneclyf_foregin.26.a		
+			ai_chance = {
+				base = 0.7
+				modifier = {
+					factor = 0.15
+					has_opinion = {
+						target = NCH
+						value > 25
+					}
+				}
+			}
+			add_ideas = {
+				NCH_trade_and_support_EQS
+			}
+			NCH = {
+				add_ideas = NCH_trade_and_support_EQS
+			}
+		}
+
+		option = {
+       	name = greneclyf_foregin.26.b		
+			ai_chance = {
+				base = 0.3
+				modifier = {
+					factor = 0.8
+					has_opinion = {
+						target = NCH
+						value < 10
+					}
+				}
+			}
+
+			NCH  = {
+				country_event = {
+					id = greneclyf_foregin.27
+					days = 0
+				}
+			}
+		}
+	}		
+
+	# EQS ignore trade #
+	country_event = {
+		id = greneclyf_foregin.27
+		title = greneclyf_foregin.27.t
+		desc = greneclyf_foregin.27.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.27.a		
+			add_political_power = -50
+		}
+	}		
+
+	# NCH finds EQS defense #
+	country_event = {
+		id = greneclyf_foregin.28
+		title = greneclyf_foregin.28.t
+		desc = greneclyf_foregin.28.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_foregin.28.a		
+			diplomatic_relation = {
+				country = NCH
+				relation = guarantee
+			}
+		}
+
+		option = {
+       	name = greneclyf_foregin.28.b		
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_decrease
+			}
+		}
+	}	
+	
+	## Main patch - Core ##
+
+	# Realpolitik #
+	country_event = {
+		id = greneclyf_core.1
+		title = greneclyf_core.1.t
+		desc = greneclyf_core.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_core.1.a		
+
+		}
+	}
+
+	### END MAIN PATCH ###
+
+	### ARCTIC ###
+	# Expedition #
+	country_event = {
+		id = greneclyf_arctic.1
+		title = greneclyf_arctic.1.t
+		desc = greneclyf_arctic.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_arctic.1.a	
+		set_country_flag = NCH_island_found
+			AWT = {
+				1242 = {
+				transfer_state_to = NCH					
+				}
+			}
+			1242 = {
+				add_core_of = NCH
+			}
+			1242 = {
+				add_manpower = 1200
+			}
+		}
+	}			

@@ -129,7 +129,6 @@ if = {
 }
 # End of ship stuff
 
-# REDUX #
 set_convoys = 20
 set_popularities = {
 	democratic = 90
@@ -150,9 +149,11 @@ add_ideas = {
 	lack_of_scientists
 
 	NCH_idyllic_society
-	NCH_luddites_1
 	NCH_FBK_pact
+	NCH_luddites_1
 	NCH_Overpopulation
+
+	NCH_fleet_stagnation
 }
 
 add_tech_bonus = {
@@ -174,7 +175,6 @@ add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.73
 
 
-# Submod #
 recruit_character = NCH_Oiren_Judge
 recruit_character = NCH_scientist_celarl
 recruit_character = NCH_admiral_hart
@@ -200,6 +200,8 @@ recruit_character = NCH_Sul_Oraiste
 recruit_character = NCH_Valha
 recruit_character = NCH_Caider
 recruit_character = NCH_Gerald_3
+recruit_character = NCH_kianit_oir
+recruit_character = NCH_Adler
 
 # leaders #
 recruit_character = NCH_queen_gytha
