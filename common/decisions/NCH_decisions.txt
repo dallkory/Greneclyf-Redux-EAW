@@ -235,8 +235,7 @@ NCH_debug_decision = {
 # WIT
 
 NCH_boost_harmony_river = {
-
-	NCH_overlay_RCT = {
+	NCH_overlay_riv_dem_boost = {
 		icon = x
 		priority = 80
 		
@@ -246,12 +245,7 @@ NCH_boost_harmony_river = {
 
 		#fire_only_once = no
 		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = RCT
-				is_capital = yes
-			}
-		}
+		target_array = NCH.boost_targets
 
 		#target_array = NHC.boost_targets
 
@@ -259,31 +253,37 @@ NCH_boost_harmony_river = {
 
 		allowed = {
 			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
 		}
 
 		visible = {
 			has_completed_focus = NCH_dreems_of_more
 			has_government = democratic
 			not = {
-				has_country_flag = NCH_join_riverland
+				has_completed_focus = NCH_operation_raging_river
 			}
+
+			#check_variable = {
+			#	which = NCH_var_boost
+			#	value < 10
+			#}
 		}
 
 		days_remove = 30
 		cost = 50
 
+		#custom_cost_trigger = {
+		#	command_power > 25
+		#	has_equipment = { infantry_equipment > 499 }
+		#	has_political_power > 50
+		#}
 
 		modifier = {
 			civilian_factory_use = 3
-			political_power_cost = -0.15
+			political_power_cost = 0.15
 		}
 
 		complete_effect = {
-			RCT = {
+			FROM = {
 				add_popularity = {
 					ideology = neutrality
 					popularity = -0.05
@@ -299,7 +299,7 @@ NCH_boost_harmony_river = {
 				add_stability = -0.05
 			}
 
-			RCT = {
+			FROM = {
 				set_country_flag = NCH_boost
 				add_ideas = NCH_boost_exp
 			}
@@ -314,7 +314,6 @@ NCH_boost_harmony_river = {
 		cancel_trigger = {
 			FROM = {
 				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
 					OWNER = {
 						OR = {
 							exists = no
@@ -328,652 +327,6 @@ NCH_boost_harmony_river = {
 			}
 		}
 	}
-
-
-	NCH_overlay_BAK = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = BAK
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			BAK = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			BAK = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_BAK_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_DMT = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = DMT
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			DMT = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			DMT = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_DMT_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_NIM = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = NIM
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			NIM = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			NIM = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_NIM_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_DEP = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = DEP
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			DEP = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			DEP = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_DEP_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_LCT = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = LCT
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			LCT = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			LCT = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_LCT_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_FRE = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = FRE
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			FRE = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			FRE = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_FRE_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	NCH_overlay_WIT = {
-		icon = x
-		priority = 80
-		
-		ai_will_do = {
-			base = 1
-		}
-
-		#fire_only_once = no
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = WIT
-				is_capital = yes
-			}
-		}
-
-		#target_array = NHC.boost_targets
-
-		on_map_mode = map_only
-
-		allowed = {
-			original_tag = NCH
-			check_variable = {
-				which = NCH_var_boost
-				value < 3
-			}
-		}
-
-		visible = {
-			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
-			not = {
-				has_country_flag = NCH_join_riverland
-			}
-		}
-
-		days_remove = 30
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-			political_power_cost = -0.15
-		}
-
-		complete_effect = {
-			WIT = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
-			}
-
-			WIT = {
-				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
-			}
-
-			add_to_variable = {
-				which = NCH_var_boost
-				value = 1
-			}
-			set_country_flag = NCH_FRE_boost
-		}
-
-		cancel_trigger = {
-			FROM = {
-				OR = {
-					#has_state_flag = AUS_no_longer_expansion_target
-					OWNER = {
-						OR = {
-							exists = no
-							has_capitulated = yes
-							has_war_with = ROOT
-							is_subject = yes
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
 }
 
 ##  ##

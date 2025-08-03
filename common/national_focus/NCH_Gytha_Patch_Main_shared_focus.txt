@@ -674,9 +674,83 @@ shared_focus = {
 			days = 0
 		}
 
-		set_variable = {
-			which = NCH_var_boost
-			value = 0
+		#set_variable = {
+		#	which = NCH_var_boost
+		#	value = 1
+		#}
+
+		hidden_effect = {
+			RCT = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			BAK = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			DMT = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			NIM = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			DEP = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			LCT = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			FRE = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
+
+			WIT = {
+				capital_scope = {
+					add_to_array = {
+						array = NCH.boost_targets
+						value = THIS
+					}
+				}
+			}
 		}
 	}
 }
@@ -692,15 +766,18 @@ shared_focus = {
 	y = 17
 
 	available = {
-
 	}
 
 	bypass = {
-		has_completed_focus = NCH_finding_allies_in_coalition
+		RCT = {
+			not = {
+				has_government = democratic
+			}
+		}
 	}
 
 	completion_reward = {
-		
+		custom_effect_tooltip = NCH_nine_stars_tt
 	}
 }
 
@@ -714,9 +791,6 @@ shared_focus = {
 	x = 32
 	y = 17
 
-	bypass = {
-		has_completed_focus = NCH_finding_allies_in_coalition
-	}
 
 	available = {
 		custom_trigger_tooltip = {
@@ -738,7 +812,7 @@ shared_focus = {
 				}
 			}
 			add_stability = -0.075
-			
+
 			damage_building = {
 				type = industrial_complex
 				damage = 8
