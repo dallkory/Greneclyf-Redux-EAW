@@ -1610,7 +1610,6 @@ shared_focus = {
 			}
 		}
 
-
 		if = {
 			FRE = {
 				exists = yes
@@ -2146,6 +2145,7 @@ shared_focus = {
 	available = {
 		or = {
 			has_idea = RIV_member_state
+			owns_state = 619
 		}
 	}
 
