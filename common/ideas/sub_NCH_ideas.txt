@@ -110,6 +110,45 @@ ideas = {
 			}
 		}
 
+		NCH_9_stars_no_lr = {
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+
+			modifier = {
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+				resistance_activity = -0.1
+				democratic_drift = 0.01
+				war_support_factor = 0.05
+			}
+		}
+
+		NCH_9_stars_lr = {
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.25
+				operative_slot = 2
+				operation_collaboration_government_cost = -0.15
+				resistance_activity = -0.1
+				democratic_drift = 0.01
+				war_support_factor = 0.05
+			}
+		}
+
+
 		NCH_luddites_1 = {
 			picture = luddities
 			allowed = {

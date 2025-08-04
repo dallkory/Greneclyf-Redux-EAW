@@ -1876,6 +1876,97 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# Join in coalition - order #
+	country_event = {
+		id = greneclyf_core.2
+		title = greneclyf_core.2.t
+		desc = greneclyf_core.2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# Accept #
+		option = {
+       		name = greneclyf_core.3.a		
+			ai_chance = {
+				base = 0.3
+				modifier = {
+					factor = 0.7
+					has_government = democratic
+
+					has_opinion = {
+    					target = NCH
+    					value > 70
+					}
+				}
+			}
+		}
+
+
+		# Reject #
+		option = {
+       	name = greneclyf_core.3.b		
+			ai_chance = {
+				base = 0.7
+				modifier = {
+					factor = 0.7
+					not = {
+						has_government = democratic
+					}
+
+					has_opinion = {
+    					target = NCH
+    					value < 70
+					}
+				}
+			}
+
+			NCH = {
+				country_event = {
+					id = greneclyf_core.4
+					days = 10
+				}
+			}
+		}
+	}
+
+	# Peacful join #
+	country_event = {
+		id = greneclyf_core.3
+		title = greneclyf_core.3.t
+		desc = greneclyf_core.3.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			set_country_flag = NCH_join_riverland
+
+			# NEED ADDED #
+			add_ideas = RIV_member_state
+			add_to_faction = NCH
+		}
+	}
+
+	# Else join - Rigging river #
+	country_event = {
+		id = greneclyf_core.4
+		title = greneclyf_core.4.t
+		desc = greneclyf_core.4.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_core.4.a		
+			
+			# RCT exists
+			
+			# RCT not exists
+		}
+	}
+
+	# 2 Principe #
+
+
+
 	### END MAIN PATCH ###
 
 	### ARCTIC ###
