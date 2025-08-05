@@ -1956,35 +1956,98 @@ add_namespace = greneclyf_core
 		is_triggered_only = yes
 
 		option = {
-       	name = greneclyf_core.4.a		
-			
+       		name = greneclyf_core.4.a		
 			# RCT exists non democratic 
-			if = {
-				limit = {
-					RCT = {
-						not = {
-							has_government = democratic
+
+			# RCT commie #
+			RCT = {
+				if = {
+						limit = {
+							not = {
+								has_government = democratic
+							}
 						}
-						num_faction_members = yes
+					leave_faction = yes
+
+					NCH = {
+					release_puppet = RCT
 					}
-				}
-				leave_faction = yes
-				start_civil_war = { 
-					ideology = democratic #ROOT
-					size = party_popularity@democratic
-					capital = 619
-				}
-				add_to_war = {
-					targeted_alliance = RCT
-					enemy = NCH
-					hostility_reason = asked_to_join #ally
+
+					start_civil_war = { 
+						ideology = communism 
+						size = party_popularity@communism
+						capital = 619 #646
+						states = {
+						619 620
+						}
+					}
+
+					NCH = {
+						create_wargoal = {
+							target = RCT
+							type = puppet_wargoal_focus
+						}
+					}
 				}
 			}
 
-			# RCT exists democratic baka / player 
+			# RCT netr #
+			# RCT fascism #			
 
+			# RCT exists democratic baka / player 
+			RCT = {
+				if = {
+					limit = {
+						or = {
+							has_government = democratic
+							root = {
+								has_government = democratic
+							}
+						}
+					}
+
+					NCH = {
+						create_wargoal = {
+							target = RCT
+							type = puppet_wargoal_focus
+						}
+					}
+				}
+			}
 
 			# RCT not exists
+
+			if = {
+				limit = {
+					not = {
+						exists = RCT
+					}
+				}
+
+				619 = {
+					if = {
+						limit = {
+							is_controlled_by = yes
+						}
+						CONTROLLER = {
+							if = {
+								limit = {
+									not = {
+										has_war_with = NCH
+									}
+									not = {
+										is_puppet = NCH
+									}
+								}
+								create_wargoal = {
+									target = PREV
+									type = independence_wargoal
+								}
+							}
+						}
+					}
+				}	
+			}
 		}
 	}
 

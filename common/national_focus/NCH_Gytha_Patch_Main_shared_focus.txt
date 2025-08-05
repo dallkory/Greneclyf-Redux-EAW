@@ -664,7 +664,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_dreems_of_more
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
 	}
@@ -768,7 +768,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_friends_and_allies
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_dreems_of_more
 	}
@@ -1561,7 +1561,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_light_f_fire_in_their_hearts
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_agents_stand_by
 		focus = NCH_friends_and_allies
@@ -1591,7 +1591,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_operation_raging_river
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 8
 	prerequisite = {
 		focus = NCH_light_f_fire_in_their_hearts
 	}
@@ -2134,7 +2134,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_what_we_bring
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 8
 	prerequisite = {
 		focus = NCH_operation_raging_river
 	}
