@@ -1957,96 +1957,145 @@ add_namespace = greneclyf_core
 
 		option = {
        		name = greneclyf_core.4.a		
-			# RCT exists non democratic 
-
+			## RCT exists non democratic ##
 			# RCT commie #
-			RCT = {
-				if = {
-						limit = {
-							not = {
-								has_government = democratic
-							}
-						}
+			if = {
+				limit = {
+					exists = RCT
+					NOT = { has_government = democratic }
+				}
+				RCT = {
 					leave_faction = yes
-
-					NCH = {
-					release_puppet = RCT
-					}
-
 					start_civil_war = { 
 						ideology = communism 
 						size = party_popularity@communism
-						capital = 619 #646
-						states = {
-						619 620
-						}
+						capital = 619
+						states = { 619 620 }
 					}
-
-					NCH = {
-						create_wargoal = {
-							target = RCT
-							type = puppet_wargoal_focus
-						}
+				}
+				NCH = {
+					create_wargoal = {
+						target = RCT
+						type = puppet_wargoal_focus
 					}
+				}
+				NCH = {
+					release_puppet = RCT
 				}
 			}
 
 			# RCT netr #
-			# RCT fascism #			
-
-			# RCT exists democratic baka / player 
-			RCT = {
-				if = {
-					limit = {
-						or = {
-							has_government = democratic
-							root = {
-								has_government = democratic
-							}
-						}
+			if = {
+				limit = {
+					exists = RCT
+					NOT = { has_government = democratic }
+				}
+				RCT = {
+					leave_faction = yes
+					start_civil_war = { 
+						ideology = neutrality 
+						size = party_popularity@neutrality
+						capital = 619
+						states = { 619 620 }
 					}
+				}
+				NCH = {
+					create_wargoal = {
+						target = RCT
+						type = puppet_wargoal_focus
+					}
+				}
+				NCH = {
+					release_puppet = RCT
+				}
+			}
 
-					NCH = {
-						create_wargoal = {
-							target = RCT
-							type = puppet_wargoal_focus
-						}
+			# RCT fascism #			
+			if = {
+				limit = {
+					exists = RCT
+					NOT = { has_government = democratic }
+				}
+				RCT = {
+					leave_faction = yes
+					start_civil_war = { 
+						ideology = fascism 
+						size = party_popularity@fascism
+						capital = 619
+						states = { 619 620 }
+					}
+				}
+				NCH = {
+					create_wargoal = {
+						target = RCT
+						type = puppet_wargoal_focus
+					}
+				}
+				NCH = {
+					release_puppet = RCT
+				}
+			}
+			# RCT puppet #
+			if = {
+				limit = {
+					exists = RCT
+					RCT = {
+						is_puppet = yes
+					}
+				}
+
+				NCH = {
+					create_wargoal = {
+						target = 619.controller
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+
+			## OTHER ##
+			# RCT exists democratic baka / player 
+			if = {
+				limit = {
+					exists = RCT
+					OR = {
+						RCT = { has_government = democratic }
+						ROOT = { has_government = democratic }
+					}
+				}
+				NCH = {
+					create_wargoal = {
+						target = RCT
+						type = puppet_wargoal_focus
 					}
 				}
 			}
 
 			# RCT not exists
-
 			if = {
 				limit = {
-					not = {
-						exists = RCT
-					}
-				}
-
-				619 = {
-					if = {
-						limit = {
-							is_controlled_by = yes
+					NOT = { exists = RCT }
+					619 = {
+						not = {
+							owner = {
+								is_subject_of = NCH
+							}
 						}
-						CONTROLLER = {
-							if = {
-								limit = {
-									not = {
-										has_war_with = NCH
-									}
-									not = {
-										is_puppet = NCH
-									}
-								}
-								create_wargoal = {
-									target = PREV
-									type = independence_wargoal
-								}
+						controller = {
+							not = {
+								is_subject_of = NCH
+								has_war_with = NCH
+								tag = NCH
 							}
 						}
 					}
-				}	
+				}
+				create_wargoal = {
+					target = 619.controller
+					type = liberate_wargoal
+					generator = {
+						619 620 682 577 646
+					}
+				}
 			}
 		}
 	}

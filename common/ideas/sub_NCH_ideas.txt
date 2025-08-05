@@ -62,13 +62,14 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_dockyard_factor = -0.25
-				production_cost_dockyard_factor = -0.15
-				experience_gain_navy = -0.01
+				industrial_capacity_dockyard = -0.15
+				experience_gain_navy = -0.03
 				
-				production_cost_max_ship_hull_cruiser = 3200
-				production_cost_max_ship_hull_light = 2500
 				production_cost_max_ship_hull_submarine = 500
-				production_cost_max_ship_hull_heavy = 7000
+				production_cost_max_ship_hull_light = 2500
+				production_cost_max_ship_hull_cruiser = 3200
+				production_cost_max_ship_hull_heavy = 6500
+				production_cost_max_ship_hull_carrier = 7000
 			}
 		}
 
