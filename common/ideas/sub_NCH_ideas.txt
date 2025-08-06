@@ -46,6 +46,74 @@ ideas = {
 			}
 		}
 
+		NCH_bos_riv = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.075
+				resistance_growth = -0.1
+				compliance_growth = 0.05
+				conscription_factor = 0.025
+
+				high_command_cost_factor = -0.15
+				max_command_power = 20
+				command_power_gain_mult = 0.25
+			}
+		}
+
+		NCH_blosmport_economic_consequences ={
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.55
+				production_factory_efficiency_gain_factor = -0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		NCH_blosmport_economic_org = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+
+			modifier = {
+				stability_factor = -0.02
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.075
+				industrial_capacity_factory = 0.05
+				trade_opinion_factor = 0.2
+				resource_gain_efficiency = 0.03
+			}
+		}
+
 		NCH_army_stagnation = {
 
 		}

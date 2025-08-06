@@ -405,25 +405,26 @@ NCH_fed_found_category = {
 					}
 				}
 		
-			NCH = {
-				add_core_of = RCT
-				add_core_of = BAK
-				add_core_of = NIM
-				add_core_of = FRE
-				add_core_of = DMT
-				add_core_of = WIT
-				add_core_of = LCT
-				add_core_of = DEP
+				NCH = {
+					add_core_of = RCT
+					add_core_of = BAK
+					add_core_of = NIM
+					add_core_of = FRE
+					add_core_of = DMT
+					add_core_of = WIT
+					add_core_of = LCT
+					add_core_of = DEP
 
-				set_cosmetic_tag = NCH_River
-			}
+					set_cosmetic_tag = NCH_River
+				}
 
-			remove_country_leader_role = yes
-			create_country_leader = {
-				name = NCH_Gytha_iron_lady
-				picture = GFX_NCH_Steel_Gytha
-				traits = { The_Steel_lady }
-				ideology = conservatism
+				remove_country_leader_role = yes
+				create_country_leader = {
+					name = NCH_Gytha_iron_lady
+					picture = GFX_NCH_Steel_Gytha
+					traits = { The_Steel_lady }
+					ideology = conservatism
+				}
 			}
 		}
 	}

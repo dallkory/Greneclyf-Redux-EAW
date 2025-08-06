@@ -2115,6 +2115,193 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# Blosmport econom org #
+	country_event = {
+		id = greneclyf_core.100
+		title = greneclyf_core.100.t
+		desc = greneclyf_core.100.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# accept #
+		option = {
+			name = greneclyf_core.100.a
+			country_event = {
+				id = greneclyf_core.101
+			}
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.3
+					OR = {
+					has_government = democratic
+					has_opinion = {
+						target = NCH
+						value > 50
+						}
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.100.b
+
+			country_event = {
+				id = greneclyf_core.102
+			}
+
+			ai_chance = {
+				base = 3
+				modifier = {
+					factor = 0.5
+					OR = {
+					not = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = NCH
+						value < 30
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# TAG accept #
+	country_event = {
+		id = greneclyf_core.101
+		title = greneclyf_core.101.t
+		desc = greneclyf_core.101.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		immediate = {
+			add_timed_idea = {
+				idea = NCH_blosmport_economic_consequences
+				days = 180
+			}
+		}
+
+		option = {
+			name = greneclyf_redux.101.a
+			set_country_flag = NCH_neg_blosmport_economic
+		}
+	}
+
+	# TAG deceline #
+	country_event = {
+		id = greneclyf_core.102
+		title = greneclyf_core.102.t
+		desc = greneclyf_core.102.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.102.a
+
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_decrease
+			}
+		}
+	}
+
+	# BOS #
+	country_event = {
+		id = greneclyf_core.103
+		title = greneclyf_core.103.t
+		desc = greneclyf_core.103.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# accept #
+		option = {
+			name = greneclyf_core.103.a
+			country_event = {
+				id = greneclyf_core.104
+			}
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.3
+					OR = {
+					has_government = democratic
+					has_opinion = {
+						target = NCH
+						value > 50
+						}
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.103.b
+
+			country_event = {
+				id = greneclyf_core.105
+			}
+
+			ai_chance = {
+				base = 3
+				modifier = {
+					factor = 0.5
+					OR = {
+					not = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = NCH
+						value < 30
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# TAG accept #
+	country_event = {
+		id = greneclyf_core.104
+		title = greneclyf_core.104.t
+		desc = greneclyf_core.104.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_redux.104.a
+			set_country_flag = NCH_bos_command
+
+			add_ideas = NCH_bos_riv
+		}
+	}
+
+	# TAG deceline - BOS #
+	country_event = {
+		id = greneclyf_core.105
+		title = greneclyf_core.105.t
+		desc = greneclyf_core.105.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.105.a
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = small_decrease
+			}
+		}
+	}
+
+	
+
 
 	### END MAIN PATCH ###
 

@@ -9,6 +9,32 @@ on_actions = {
     on_daily_NCH = {
         effect = {
 			# REDUX #
+			every_country = {
+				if = {
+					limit = {
+						has_idea = NCH_blosmport_economic_consequences
+					}
+					NCH = {
+						add_ideas = NCH_blosmport_economic_consequences
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						has_country_flag = NCH_neg_blosmport_economic
+						not = {
+							has_idea = NCH_blosmport_economic_consequences
+						}
+
+						add_ideas = {
+							NCH_blosmport_economic_org
+						}
+					}
+				}
+			}
+
 			# EQS #
 			if = {
 				limit = {

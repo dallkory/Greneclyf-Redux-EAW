@@ -2003,7 +2003,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 50
+		#add_political_power = 50
 		every_country = {
 			limit = {
 				and = {
@@ -2049,7 +2049,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_not_so_united
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 2
 	prerequisite = {
 		focus = NCH_visit_to_riverlands
 	}
@@ -2057,7 +2057,7 @@ shared_focus = {
 	y = 20
 
 	completion_reward = {
-		add_political_power = 50
+		#add_political_power = 50
 		custom_effect_tooltip = NCH_not_so_united_tt
 
 		every_country = {
@@ -2079,9 +2079,7 @@ shared_focus = {
 	id = NCH_finding_allies_in_coalition
 	icon = GFX_goal_unknown
 	cost = 5
-	prerequisite = {
-		focus = NCH_not_so_united
-	}
+
 	prerequisite = {
 		focus = NCH_cit_thrpugh_the_bureaurcracy
 	}
@@ -2233,7 +2231,27 @@ shared_focus = {
 	}
 	x = 30
 	y = 21
+	
+	completion_reward = {
+		custom_effect_tooltip = NCH_ecnomic_tt
+		add_stability = -0.03
+		add_political_power = -50
 
+		country_event = {
+			id = greneclyf_core.104
+		}
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			country_event = {
+				id = greneclyf_core.100
+				days = 10
+			}
+		}
+	}
 }
 
 shared_focus = {
@@ -2246,6 +2264,18 @@ shared_focus = {
 	x = 32
 	y = 21
 
+	completion_reward = {
+		add_stability = -0.03
+		add_political_power = -50
+		#add_ideas = NCH_bos_riv
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			add_ideas = NCH_bos_riv
+		}
+	}
 }
 
 shared_focus = {
@@ -2258,6 +2288,9 @@ shared_focus = {
 	x = 33
 	y = 22
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -2270,6 +2303,19 @@ shared_focus = {
 	x = 34
 	y = 21
 
+	completion_reward = {
+		add_stability = 0.075
+		add_political_power = 50
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			add_stability = 0.1
+			add_political_power = 50
+		}
+
+	}
 }
 
 shared_focus = {
@@ -2282,6 +2328,10 @@ shared_focus = {
 	x = 36
 	y = 21
 
+	completion_reward = {
+		add_stability = -0.03
+
+	}
 }
 
 shared_focus = {
@@ -2298,6 +2348,9 @@ shared_focus = {
 	x = 31
 	y = 22
 
+	completion_reward = {
+		add_stability = -0.05
+	}
 }
 
 shared_focus = {
@@ -2311,6 +2364,9 @@ shared_focus = {
 	x = 33
 	y = 23
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -2327,6 +2383,9 @@ shared_focus = {
 	x = 35
 	y = 22
 
+	completion_reward = {
+		
+	}
 }
 
 
@@ -2338,10 +2397,12 @@ shared_focus = {
 		focus = NCH_racial_differences
 	}
 
-
 	x = 31
 	y = 23
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
@@ -2356,6 +2417,9 @@ shared_focus = {
 	x = 35
 	y = 23
 
+	completion_reward = {
+		
+	}
 }
 
 shared_focus = {
