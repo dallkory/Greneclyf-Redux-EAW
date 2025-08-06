@@ -74,8 +74,13 @@ NCH_debug_decision = {
 			set_country_flag = NCH_typography_create
 		}
 	}
+
+	# NCH_fed_found #
 	NCH_create_country = {
 		icon = d
+		#visible = {
+		#	has_country_flag = NCH_fed_found
+		#}
 		complete_effect = {
 			remove_country_leader_role = yes
 
@@ -199,6 +204,7 @@ NCH_debug_decision = {
 			}
 		}
 	}
+
 	NCH_show_power_balance = {
 		icon = d
 		complete_effect = {
@@ -220,6 +226,205 @@ NCH_debug_decision = {
 		icon = d
 		complete_effect = {
 			set_country_flag = NCH_celarl_laboratory_opend
+		}
+	}
+}
+
+NCH_fed_found_category = {
+	NCH_fed_found = {
+		icon = x
+		ai_will_do = {
+			base = 1
+		}
+
+		visible = {
+			has_country_flag = NCH_fed_found
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							controls_state = 681
+							controls_state = 580
+							controls_state = 621
+							controls_state = 618
+							controls_state = 452
+							controls_state = 622
+							controls_state = 645
+							controls_state = 587
+							controls_state = 649
+							controls_state = 648
+							controls_state = 438
+							controls_state = 461
+							controls_state = 638
+							controls_state = 647
+							controls_state = 637
+							controls_state = 635
+							controls_state = 619
+							controls_state = 682
+							controls_state = 620
+							controls_state = 577
+							controls_state = 646
+							controls_state = 586
+							controls_state = 544
+							controls_state = 491
+							controls_state = 543
+							controls_state = 627
+							controls_state = 629
+							controls_state = 628
+							controls_state = 617
+							controls_state = 616
+							controls_state = 614
+							controls_state = 615
+							controls_state = 550
+							controls_state = 551
+							controls_state = 387
+							controls_state = 499
+							controls_state = 560
+							controls_state = 541
+						}
+						
+						AND = {
+							any_subject_country = {
+								controls_state = 681
+							}
+							any_subject_country = {
+								controls_state = 580
+							}
+							any_subject_country = {
+								controls_state = 621
+							}
+							any_subject_country = {
+								controls_state = 618
+							}
+							any_subject_country = {
+								controls_state = 452
+							}
+							any_subject_country = {
+								controls_state = 622
+							}
+							any_subject_country = {
+								controls_state = 645
+							}
+							any_subject_country = {
+								controls_state = 587
+							}
+							any_subject_country = {
+								controls_state = 649
+							}
+							any_subject_country = {
+								controls_state = 648
+							}
+							any_subject_country = {
+								controls_state = 438
+							}
+							any_subject_country = {
+								controls_state = 461
+							}
+							any_subject_country = {
+								controls_state = 638
+							}
+							any_subject_country = {
+								controls_state = 647
+							}
+							any_subject_country = {
+								controls_state = 637
+							}
+							any_subject_country = {
+								controls_state = 635
+							}
+							any_subject_country = {
+								controls_state = 619
+							}
+							any_subject_country = {
+								controls_state = 682
+							}
+							any_subject_country = {
+								controls_state = 620
+							}
+							any_subject_country = {
+								controls_state = 577
+							}
+							any_subject_country = {
+								controls_state = 646
+							}
+							any_subject_country = {
+								controls_state = 586
+							}
+							any_subject_country = {
+								controls_state = 544
+							}
+							any_subject_country = {
+								controls_state = 491
+							}
+							any_subject_country = {
+								controls_state = 543
+							}
+							any_subject_country = {
+								controls_state = 627
+							}
+							any_subject_country = {
+								controls_state = 629
+							}
+							any_subject_country = {
+								controls_state = 628
+							}
+							any_subject_country = {
+								controls_state = 617
+							}
+							any_subject_country = {
+								controls_state = 616
+							}
+							any_subject_country = {
+								controls_state = 614
+							}
+							any_subject_country = {
+								controls_state = 615
+							}
+							any_subject_country = {
+								controls_state = 550
+							}
+							any_subject_country = {
+								controls_state = 551
+							}
+							any_subject_country = {
+								controls_state = 387
+							}
+							any_subject_country = {
+								controls_state = 499
+							}
+							any_subject_country = {
+								controls_state = 560
+							}
+							any_subject_country = {
+								controls_state = 541
+							}
+						}
+					}
+				}
+		
+			NCH = {
+				add_core_of = RCT
+				add_core_of = BAK
+				add_core_of = NIM
+				add_core_of = FRE
+				add_core_of = DMT
+				add_core_of = WIT
+				add_core_of = LCT
+				add_core_of = DEP
+
+				set_cosmetic_tag = NCH_River
+			}
+
+			remove_country_leader_role = yes
+			create_country_leader = {
+				name = NCH_Gytha_iron_lady
+				picture = GFX_NCH_Steel_Gytha
+				traits = { The_Steel_lady }
+				ideology = conservatism
+			}
 		}
 	}
 }

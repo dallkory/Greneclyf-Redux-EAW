@@ -20,6 +20,14 @@ NCH_debug_decision = {
 #	priority = 152
 #}
 
+NCH_fed_found_category = {
+	icon = GFX_unkmow
+
+	priority = {
+		base = 153
+	}
+}
+
 NCH_boost_harmony_river = {
 	icon = GFX_unknow
 
@@ -32,7 +40,7 @@ NCH_gov_rotation_category = {
 	icon = GFX_unknow
 
 	priority = {
-		base = 153
+		base = 154
 	}
 }
 

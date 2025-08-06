@@ -17,6 +17,7 @@ shared_focus = {
 
 	available = {
 		or = {
+		has_government = democratic
 		has_country_flag = NCH_crisis_end
 		has_completed_focus = NCH_final_crisis
 		}
@@ -786,7 +787,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_nine_stars_tt
+		#custom_effect_tooltip = NCH_nine_stars_tt
 
 		if = {
 			limit = {
@@ -1620,6 +1621,7 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_peaceful_coexistence
 	icon = GFX_goal_unknown
@@ -2057,6 +2059,19 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 50
 		custom_effect_tooltip = NCH_not_so_united_tt
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				not = {
+					has_government = democratic
+				}
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_decrease
+			}
+		}
 	}
 }
 
@@ -2143,8 +2158,14 @@ shared_focus = {
 	y = 20
 
 	available = {
+		is_puppet = no
 		or = {
 			has_idea = RIV_member_state
+			619 = {
+				controller = {
+					is_puppet_of = NCH
+				}
+			}
 			owns_state = 619
 		}
 	}
@@ -2154,7 +2175,52 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		country_event = {
+			id = greneclyf_core.5
+		}
+
+		if = {
+			limit = {
+				has_country_flag = NCH_riv_deceline
+			}
+			add_ideas = RIV_member_state
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				FROM = {
+					add_to_faction = NCH
+				}
+			}
+		}
+	
+
+		# Hehe player baka #
+		hidden_effect = {
+			if = {
+				limit = {
+					or = {
+						owns_state = 619
+						owns_state = 620
+						owns_state = 682
+						owns_state = 577
+						owns_state = 646
+					}
+					not = {
+						exists = RCT
+					}
+				}
+				
+				release_autonomy = {
+					target = RCT
+					freedom_level = 0.5
+					autonomy_state = autonomy_volkskommissariat
+					release_non_owned_controlled = no
+				}
+			}
+		}
 	}
 }
 
@@ -2238,12 +2304,7 @@ shared_focus = {
 	id = NCH_make_us_stronger
 	icon = GFX_goal_unknown
 	cost = 10,00
-	prerequisite = {
-		focus = NCH_a_sample_of_unity
-	}
-	prerequisite = {
-		focus = NCH_example_for_ponies
-	}
+
 	prerequisite = {
 		focus = NCH_bring_together
 	}
@@ -2276,9 +2337,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_racial_differences
 	}
-	prerequisite = {
-		focus = NCH_make_us_stronger
-	}
+
 
 	x = 31
 	y = 23
@@ -2293,9 +2352,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_river_science_program
 	}
-	prerequisite = {
-		focus = NCH_make_us_stronger
-	}	
+
 	x = 35
 	y = 23
 
@@ -2304,7 +2361,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_inity_as_the_highest_good
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_first_president
 	}
@@ -2315,9 +2372,99 @@ shared_focus = {
 		focus = NCH_make_us_stronger
 	}
 
+	available = {
+		AND = {
+			RCT = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			LTC = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			BAK = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			NIM = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			DEP = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			FRE = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			WIT = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+			DMT = {
+				all_core_state = {
+					OR = {
+						controller = NCH
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+		}
+	}
+
 	x = 33
 	y = 24
 
+	completion_reward = {
+		#set_country_flag = NCH_fed_found
+
+
+	}
 }
 
 shared_focus = {
@@ -2330,4 +2477,7 @@ shared_focus = {
 	x = 33
 	y = 25
 
+	completion_reward = {
+		set_country_flag = NCH_fed_found
+	}
 }

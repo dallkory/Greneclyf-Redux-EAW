@@ -1947,7 +1947,7 @@ add_namespace = greneclyf_core
 		}
 	}
 
-	# Else join - Rigging river #
+	# Deceline join - Rigging river #
 	country_event = {
 		id = greneclyf_core.4
 		title = greneclyf_core.4.t
@@ -1959,6 +1959,7 @@ add_namespace = greneclyf_core
        		name = greneclyf_core.4.a		
 			## RCT exists non democratic ##
 			# RCT commie #
+			set_country_flag = NCH_riv_deceline
 			if = {
 				limit = {
 					exists = RCT
@@ -2110,11 +2111,7 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_core.5.a
-			set_country_flag = NCH_join_riverland
 
-			# NEED ADDED #
-			add_ideas = RIV_member_state
-			add_to_faction = NCH
 		}
 	}
 
