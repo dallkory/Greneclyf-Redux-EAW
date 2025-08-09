@@ -46,6 +46,26 @@ ideas = {
 			}
 		}
 
+		NCH_riv_volounters = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 200
+				cic_construction_boost_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
 		NCH_riv_search_base = {
 			picture = x
 			allowed = {
@@ -215,10 +235,14 @@ ideas = {
 			}
 			removal_cost = -1
 			research_bonus = {
-				race_tech = -0.1
+				race_tech = -0.15
+				infantry_tech = -0.1
+				support_tech = -0.1
+				artillery = -0.1
 			}
 			modifier = {
-				war_support_factor = -0.25
+				war_support_weekly = -0.001
+				war_support_factor = -0.15
 				mobilization_laws_cost_factor = 1.5
 			}
 		}

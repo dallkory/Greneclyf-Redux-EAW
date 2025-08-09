@@ -569,6 +569,9 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_manpower = -2000
+		add_war_support = 0.05
+		add_stability = 0.05
 		remove_ideas = NCH_protests_on_street
 		add_power_balance_value = {
 			id = NCH_hunger_bop

@@ -11,7 +11,7 @@
 shared_focus = {
 	id = NCH_Queen_Gytha_Patch
 	icon = GFX_goal_unknown
-	cost = 1
+	cost = 0
 	x = 33
 	y = 15
 
@@ -31,7 +31,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.15
+		#add_stability = 0.15
 	}
 }
 
@@ -395,6 +395,10 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 150
 		custom_effect_tooltip = NCH_new_goverment_system_tt
+		set_rule = {
+			can_declare_war_on_same_ideology = yes
+			can_guarantee_other_ideologies = yes
+		}
 
 		set_country_flag = NCH_new_goverment_system_cf
 
@@ -884,7 +888,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
 	}
-	x = 45
+	x = 44
 	y = 16
 
 	available = {
@@ -904,7 +908,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
-	x = 41
+	x = 40
 	y = 17
 
 	available = {
@@ -927,7 +931,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_river_pf_opportunity
 	}
-	x = 39
+	x = 38
 	y = 18
 
 	completion_reward = {
@@ -993,7 +997,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_trade_development
 	}
-	x = 38
+	x = 37
 	y = 19
 
 	bypass = {
@@ -1017,7 +1021,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
-	x = 45
+	x = 44
 	y = 17
 
 	available = {
@@ -1054,7 +1058,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_neighborhood
 	}
-	x = 44
+	x = 43
 	y = 18
 	
 	bypass = {
@@ -1111,7 +1115,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_neighborhood
 	}
-	x = 46
+	x = 45
 	y = 18
 
 	available = {
@@ -1157,7 +1161,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_pacts_exchange_for_support
 	}
-	x = 45
+	x = 44
 	y = 19
 
 	available = {
@@ -1189,7 +1193,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_long_cooperation
 	}
-	x = 46
+	x = 45
 	y = 20
 
 	available = {
@@ -1225,7 +1229,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_we_are_not_alone
 	}
-	x = 49
+	x = 48
 	y = 17
 
 	available = {
@@ -1246,11 +1250,11 @@ shared_focus = {
 shared_focus = {
 	id = NCH_emvassy_to_equestria
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
-	x = 49
+	x = 48
 	y = 18
 
 	cancel_if_invalid = no
@@ -1279,7 +1283,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
 	}
-	x = 48
+	x = 47
 	y = 19
 
 	available = {
@@ -1307,11 +1311,11 @@ shared_focus = {
 shared_focus = {
 	id = NCH_princess_in_a_high_castle
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 1
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
-	x = 51
+	x = 50
 	y = 18
 
 	cancel_if_invalid = no
@@ -1329,14 +1333,14 @@ shared_focus = {
 shared_focus = {
 	id = NCH_our_best_qualities
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
 	}
 	prerequisite = {
 		focus = NCH_princess_in_a_high_castle
 	}
-	x = 50
+	x = 49
 	y = 19
 
 	cancel_if_invalid = no
@@ -1393,14 +1397,14 @@ shared_focus = {
 shared_focus = {
 	id = NCH_lessons_in_friendship
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_beacon_harmony_in_the_east
 	}
 	prerequisite = {
 		focus = NCH_our_best_qualities
 	}
-	x = 49
+	x = 48
 	y = 20
 
 	available = {
@@ -1424,7 +1428,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_princess_in_a_high_castle
 	}
-	x = 52
+	x = 51
 	y = 19
 
 	available = {
@@ -1458,14 +1462,14 @@ shared_focus = {
 shared_focus = {
 	id = NCH_friendship_delegation
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_our_best_qualities
 	}
 	prerequisite = {
 		focus = NCH_harmpony_in_every_heart
 	}
-	x = 51
+	x = 50
 	y = 20
 
 	available = {
@@ -1542,11 +1546,11 @@ shared_focus = {
 shared_focus = {
 	id = NCH_our_values
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_harmpony_in_every_heart
 	}
-	x = 53
+	x = 52
 	y = 20
 
 	available = {
@@ -1641,7 +1645,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_river_pf_opportunity
 	}
-	x = 41
+	x = 40
 	y = 18
 
 	available = {
@@ -1729,7 +1733,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_peaceful_coexistence
 	}
-	x = 40
+	x = 39
 	y = 19
 
 
@@ -1763,7 +1767,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_peaceful_coexistence
 	}
-	x = 42
+	x = 41
 	y = 19
 
 	completion_reward = {
@@ -1797,14 +1801,17 @@ shared_focus = {
 shared_focus = {
 	id = NCH_shield_and_sword_harmony
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_lessons_in_friendship
-	}
-	prerequisite = {
 		focus = NCH_friendship_delegation
 	}
-	x = 50
+
+	prerequisite = {
+		focus = NCH_our_values
+	}
+
+	x = 49
 	y = 21
 
 	available = {
@@ -1839,14 +1846,14 @@ shared_focus = {
 shared_focus = {
 	id = NCH_equestria_support
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_friendship_delegation
 	}
 	prerequisite = {
 		focus = NCH_our_values
 	}
-	x = 52
+	x = 51
 	y = 21
 
 	available = {
@@ -1873,7 +1880,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_long_cooperation
 	}
-	x = 44
+	x = 43
 	y = 20
 
 	available = {
@@ -1967,13 +1974,13 @@ shared_focus = {
 shared_focus = {
 	id = NCH_new_great_agreement
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_bring_them_harmony
 		focus = NCH_not_so_different
 	}
 
-	x = 45
+	x = 44
 	y = 21
 
 	available = {
@@ -2007,7 +2014,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_scout_the_situation
 	}
-	x = 41
+	x = 40
 	y = 20
 
 	available = {
@@ -2047,7 +2054,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_scout_the_situation
 	}
-	x = 39
+	x = 38
 	y = 20
 
 	completion_reward = {
@@ -2071,7 +2078,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_embed_agents_in_goverments
 	}
-	x = 40
+	x = 39
 	y = 21
 
 	available = {
@@ -2210,7 +2217,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economic_community
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
 	}
@@ -2242,7 +2249,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_a_sample_of_unity
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
 	}
@@ -2336,7 +2343,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_example_for_ponies
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
 	}
@@ -2363,7 +2370,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_general_institutions
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
 	}
@@ -2388,7 +2395,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_racial_differences
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_a_sample_of_unity
 	}
@@ -2407,8 +2414,10 @@ shared_focus = {
 				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
-			add_stability = -0.05
-			#add_ideas = NCH_riv_senate
+			country_event = {
+				id = greneclyf_core.106
+				days = 7
+			}
 		}
 	}
 }
@@ -2438,7 +2447,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_river_science_program
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_example_for_ponies
 	}
@@ -2458,7 +2467,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_what_we_strive_for
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_racial_differences
 	}
@@ -2494,7 +2503,7 @@ shared_focus = {
 #shared_focus = {
 #	id = NCH_first_president
 #	icon = GFX_goal_unknown
-#	cost = 10,00
+#	cost = 10
 #
 #	prerequisite = {
 #		focus = NCH_river_science_program

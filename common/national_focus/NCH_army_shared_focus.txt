@@ -1108,6 +1108,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_suppression_of_unrest
 	}
 
 	prerequisite = {
@@ -2402,6 +2403,9 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		set_rule = {
+			can_use_kamikaze_pilots = yes
+		}
 
 		custom_effect_tooltip = give_bonuses_after_all_focuses_tt
 
@@ -2442,7 +2446,7 @@ shared_focus = {
 			}
 		}
 
-		complete_special_project = sp:sp_air_mothership_aircraft
+		#complete_special_project = sp:sp_air_mothership_aircraft
 
 		set_technology = {
 			improved_medium_airframe = 1

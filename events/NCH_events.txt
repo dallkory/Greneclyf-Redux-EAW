@@ -2311,12 +2311,105 @@ add_namespace = greneclyf_core
 	}
 
 	# SENATE #
+	country_event = {
+		id = greneclyf_core.106
+		title = greneclyf_core.106.t
+		desc = greneclyf_core.106.d
+		picture = GFX_unknow
+		is_triggered_only = yes
 
+		# accept #
+		option = {
+			name = greneclyf_core.106.a
+			add_ideas = NCH_riv_senate
+			NCH = {
+				country_event = {
+					id = greneclyf_core.107
+				}
+			}
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.3
+					OR = {
+					has_government = democratic
+					has_opinion = {
+						target = NCH
+						value > 50
+						}
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.106.b
+
+			NCH = {
+				country_event = {
+					id = greneclyf_core.108
+				}
+			}
+
+			ai_chance = {
+				base = 3
+				modifier = {
+					factor = 0.5
+					OR = {
+					not = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = NCH
+						value < 30
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# TAG accept #
+	country_event = {
+		id = greneclyf_core.107
+		title = greneclyf_core.107.t
+		desc = greneclyf_core.107.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_redux.107.a
+			set_country_flag = NCH_bos_command
+
+			#add_ideas = NCH_bos_riv
+		}
+	}
+
+	# TAG deceline - BOS #
+	country_event = {
+		id = greneclyf_core.108
+		title = greneclyf_core.108.t
+		desc = greneclyf_core.108.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.108.a
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = small_decrease
+			}
+		}
+	}
 
 	# LANQUAGE Q #
 
 	
-
+NCH_riv_volounters
+	# Science #
 
 	### END MAIN PATCH ###
 
