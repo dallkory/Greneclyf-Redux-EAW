@@ -20,4 +20,9 @@ spriteTypes = {
 		name = "GFX_NCH_riv_senate"
 		textureFile = "gfx/leaders/NCH/NCH_senate.tga"
 	}
+
+	spriteType = {
+		name = "GFX_NCH_riverswirl"
+		textureFile = "gfx/leaders/NCH/Riverswirl.tga"
+	}
 }

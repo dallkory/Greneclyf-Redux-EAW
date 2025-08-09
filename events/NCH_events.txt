@@ -2667,6 +2667,115 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# ELECTION - NCH - FED #
+	country_event = {
+		id = greneclyf_core.117
+		title = greneclyf_core.117.t
+		desc = greneclyf_core.117.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# GYTHA #
+		option = {
+			custom_effect_tooltip = NCH_elect_gytha_chose
+			name = greneclyf_core.117.a
+
+			add_political_power = 100
+
+			NCH = {
+				remove_country_leader_role = yes
+			}
+
+			create_country_leader = {
+				name = NCH_Gytha_iron_lady
+				picture = GFX_NCH_Steel_Gytha
+				traits = {
+					The_Steel_lady
+				}
+				ideology = conservatism
+			}
+		}
+
+		# RIVER SVYRL #
+		option = {
+			name = greneclyf_core.117.b
+			custom_effect_tooltip = NCH_elect_svirl_chose
+			set_nationality = RCT
+
+			add_stability = -0.6
+			add_war_support = -0.35
+			add_political_power = -300
+
+			NCH = {
+				remove_country_leader_role = yes
+			}
+
+			create_country_leader = {
+				name = NCH_Svirl_chosen_leader
+				picture = GFX_NCH_riverswirl
+				traits = {
+					NCH_swirl_chosen
+				}
+				ideology = conservatism
+			}
+
+			# Payment... #
+			1209 = {
+				remove_core_of = NCH
+				add_state_modifier = {
+					modifier = { 
+						resistance_activity = 0.2
+						resistance_damage_to_garrison = 0.3
+						compliance_growth = -0.05
+					}
+				}
+			}
+			670 = {
+				remove_core_of = NCH
+				add_state_modifier = {
+					modifier = { 
+						resistance_activity = 0.2
+						resistance_damage_to_garrison = 0.3
+						compliance_growth = -0.05
+					}
+				}
+			}
+			669 = {
+				remove_core_of = NCH
+
+				add_state_modifier = {
+					modifier = { 
+						resistance_activity = 0.2
+						resistance_damage_to_garrison = 0.3
+						compliance_growth = -0.05
+					}
+				}
+			}
+			668 = {
+				remove_core_of = NCH
+				add_state_modifier = {
+					modifier = { 
+						resistance_activity = 0.2
+						resistance_damage_to_garrison = 0.3
+						compliance_growth = -0.05
+					}
+				}
+			}
+			1210 = {
+				remove_core_of = NCH
+				add_state_modifier = {
+					modifier = { 
+						resistance_activity = 0.2
+						resistance_damage_to_garrison = 0.3
+						compliance_growth = -0.05
+					}
+				}
+			}
+		}
+	}
+
+
+
 	### END MAIN PATCH ###
 
 	### ARCTIC ###
