@@ -139,7 +139,7 @@ characters={
 		advisor = {
 			available = {
 				has_government = democratic
-				#has_completed_focus = NCH_beginning_of_crisis
+				has_completed_focus = NCH_beacon_harmony_in_the_east
 			}
 
 			slot = political_advisor

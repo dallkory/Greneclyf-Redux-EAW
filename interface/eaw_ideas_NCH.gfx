@@ -11,6 +11,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_navy_stagnation"
+		textureFile = "gfx/interface/ideas/NCH/shipwa2ves.dds"
+	}
+
 
 	# Submod #
 	spriteType = {

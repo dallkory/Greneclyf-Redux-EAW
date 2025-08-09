@@ -1250,7 +1250,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_emvassy_to_equestria
 	icon = GFX_goal_unknown
-	cost = 1
+	cost = 10
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
@@ -1311,7 +1311,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_princess_in_a_high_castle
 	icon = GFX_goal_unknown
-	cost = 1
+	cost = 10
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
@@ -2723,6 +2723,79 @@ shared_focus = {
 
 		country_event = {
 			id = greneclyf_core.117
+		}
+
+		set_cosmetic_tag = NCH_River
+
+		hidden_effect = {
+			every_state = {
+				if = {
+					limit = {
+						is_core_of = RCT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = NIM
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = DMT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = BAK
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = DEP
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = LCT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = WIT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FRE
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FBK
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FIR
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = WAT
+					}
+					add_core_of = NCH
+				}
+			}
 		}
 	}
 }

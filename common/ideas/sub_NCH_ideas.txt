@@ -261,7 +261,7 @@ ideas = {
 		}
 
 		NCH_fleet_stagnation = {
-			picture = d
+			picture = GFX_idea_navy_stagnation
 			allowed = {
 				always = no
 			}

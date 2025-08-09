@@ -218,8 +218,8 @@ recruit_character = NCH_generic_navy_fleet_log #### WIP
 
 NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_navy_fleet_log = { set_character_flag = RIV_advisor_from_NCH }
-NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
-NCH_fortification_engineer = { set_character_flag = RIV_advisor_from_NCH }
+#NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
+#NCH_fortification_engineer = { set_character_flag = RIV_advisor_from_NCH }
 
 
 set_rule = {
