@@ -2595,7 +2595,77 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# CALL OF UNITY #
+	country_event = {
+		id = greneclyf_core.115
+		title = greneclyf_core.115.t
+		desc = greneclyf_core.115.d
+		picture = GFX_unknow
+		is_triggered_only = yes
 
+		option = {
+			name = greneclyf_core.115.a
+			add_stability = 0.03
+			add_political_power = 30
+			FROM = {
+				OVERLORD = {
+					tag = NCH
+				}
+			}
+
+			ai_chance = {
+				base = 1
+				modifier = {
+					factor = 0.95
+					has_country_flag = NCH_ready_to_integration_1
+					has_opinion = {
+						target = NCH
+						value > 50
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.115.b
+			leave_faction = yes
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.8
+					not = {
+						has_country_flag = NCH_ready_to_integration_1
+						has_government = democratic
+					}
+				}
+			}
+
+			NCH = {
+				country_event = {
+					id = greneclyf_core.116
+				}
+			}
+		}
+	}
+
+	# TAG deceline - call of unity #
+	country_event = {
+		id = greneclyf_core.116
+		title = greneclyf_core.116.t
+		desc = greneclyf_core.116.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.116.a
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
 
 	### END MAIN PATCH ###
 

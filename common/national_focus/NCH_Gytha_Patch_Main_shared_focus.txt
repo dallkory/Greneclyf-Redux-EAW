@@ -1604,7 +1604,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_operation_raging_river
 	icon = GFX_goal_unknown
-	cost = 8
+	cost = 10
 	prerequisite = {
 		focus = NCH_light_f_fire_in_their_hearts
 	}
@@ -2444,7 +2444,37 @@ shared_focus = {
 	y = 23
 
 	completion_reward = {
-		
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_government = democratic
+				not = {
+					tag = NCH
+				}
+			}
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_idea = NCH_riv_volounters
+				has_idea = NCH_riv_search_base
+			}
+			remove_ideas = {
+				NCH_riv_volounters
+				NCH_riv_search_base
+			}
+			add_ideas = NCH_declaration_nations
+			set_country_flag = NCH_ready_to_integration_2
+		}
 	}
 }
 
@@ -2463,7 +2493,7 @@ shared_focus = {
 	y = 22
 
 	completion_reward = {
-		
+		add_ideas = NCH_riv_autonomy_states
 	}
 }
 
@@ -2486,13 +2516,21 @@ shared_focus = {
 		}
 	}
 
-
 	x = 32
 	y = 23
 
 	completion_reward = {
-		#add_stability = 0.05
-		#add_political_power = 50
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			# call of unity - puppet #
+			country_event = {
+				id = greneclyf_core.115
+				days = 35
+			}
+		}
 
 		every_country = {
 			limit = {
@@ -2517,10 +2555,12 @@ shared_focus = {
 				is_in_faction_with = NCH
 				has_idea = NCH_bos_riv
 				has_idea = NCH_blosmport_economic_org
+				has_idea = NCH_riv_senate
 			}
 			remove_ideas = {
 				NCH_blosmport_economic_org
 				NCH_bos_riv
+				NCH_riv_senate
 			}
 			add_ideas = NCH_goodbye_despair
 			set_country_flag = NCH_ready_to_integration_1
@@ -2558,85 +2598,88 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_make_us_stronger
 	}
-
 	available = {
-		AND = {
-			RCT = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+		custom_trigger_tooltip = {
+			tooltip = NCH_one_more_dream
+
+			AND = {
+				RCT = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			LTC = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				LTC = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			BAK = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				BAK = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			NIM = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				NIM = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			DEP = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				DEP = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			FRE = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				FRE = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			WIT = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				WIT = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
-			}
-			DMT = {
-				all_core_state = {
-					OR = {
-						controller = NCH
-						controller = {
-							is_subject_of = NCH
+				DMT = {
+					all_core_state = {
+						OR = {
+							controller = NCH
+							controller = {
+								is_subject_of = NCH
+							}
 						}
 					}
 				}
@@ -2644,13 +2687,24 @@ shared_focus = {
 		}
 	}
 
+
 	x = 33
 	y = 24
 
 	completion_reward = {
 		#set_country_flag = NCH_fed_found
+		NCH = {
+			remove_country_leader_role = yes
+		}
 
-
+		create_country_leader = {
+			name = NCH_riv_senate
+			picture = GFX_NCH_riv_senate
+			traits = {
+				NCH_political_power_in_senate_hoofs
+			}
+			ideology = conservatism
+		}
 	}
 }
 

@@ -5,10 +5,37 @@ on_actions = {
 		}
 	}
 
-
     on_daily_NCH = {
         effect = {
 			# REDUX #
+
+			
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_declaration_nations
+					}
+					NCH = {
+						add_ideas = NCH_declaration_nations
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_goodbye_despair
+					}
+					NCH = {
+						add_ideas = NCH_goodbye_despair
+					}
+				}
+			}
 
 			every_country = {
 				if = {

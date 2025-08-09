@@ -91,6 +91,14 @@ leader_traits = {
 			factor = 0.5
 		}
 	}
+	NCH_political_power_in_senate_hoofs = {
+		random = no
+		political_power_gain = -0.5
+		fascism_drift = 0.003
+		communism_drift = 0.003
+		stability_factor = -0.3
+		war_support_factor = 0.25
+	}
 
 	red_scientist = {
 		random = no
