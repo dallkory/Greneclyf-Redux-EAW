@@ -533,17 +533,20 @@ shared_focus = {
 	# UNDERGROUND CITIES #
 	completion_reward = {
 		#custom_effect_tooltip = NCH_underground_build
+		every_core_state = {
+			add_state_modifier = {
+				modifier = {
+					local_building_slots_factor = 0.25
+					local_manpower = 0.15
+					local_supplies = 0.075
+				}
+			}
+		}
 
 		add_offsite_building = {
 			type = arms_factory
 			level = 2
 		}
-
-		add_offsite_building = {
-			type = dockyard
-			level = 2
-		}
-
 		add_offsite_building = {
 			type = industrial_complex
 			level = 2
@@ -834,7 +837,7 @@ shared_focus = {
 	completion_reward = {
 		# DECISION Industrial < 50% harmony #
 		add_political_power = -100
-		add_command_power = -30
+		add_command_power = -50
 		add_equipment_to_stockpile = {
   		type = infantry_equipment
   		amount = -2000
@@ -852,7 +855,8 @@ shared_focus = {
 				}
 			}
 			add_stability = -0.075
-			add_political_power = -50
+			add_war_support = -0.1
+			add_political_power = -75
 
 			every_owned_state = {
 				damage_building = {
@@ -1190,15 +1194,19 @@ shared_focus = {
 
 	available = {
 		or = {
-			NCH = {
-				overlord = {
-					tag = FBK
+			FBK = {
+				OVERLORD = {
+					tag = NCH
 				}
-				overlord = {
-					tag = FIR
+			}
+			FIR = {
+				OVERLORD = {
+					tag = NCH
 				}
-				overlord = {
-					tag = WAT
+			}
+			WAT = {
+				OVERLORD = {
+					tag = NCH
 				}
 			}
 		}
@@ -1573,7 +1581,7 @@ shared_focus = {
 
 	available = {
 		#country_exists = FRE
-		has_completed_focus = NCH_finding_allies_in_coalition
+		#has_completed_focus = NCH_finding_allies_in_coalition
 	}
 
 	completion_reward = {
@@ -1598,6 +1606,10 @@ shared_focus = {
 	}
 	x = 33
 	y = 19
+
+	available = {
+		has_completed_focus = NCH_finding_allies_in_coalition
+	}
 
 	completion_reward = {
 		every_country = {
@@ -2046,34 +2058,7 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-	id = NCH_not_so_united
-	icon = GFX_goal_unknown
-	cost = 2
-	prerequisite = {
-		focus = NCH_visit_to_riverlands
-	}
-	x = 37
-	y = 20
 
-	completion_reward = {
-		#add_political_power = 50
-		custom_effect_tooltip = NCH_not_so_united_tt
-
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				not = {
-					has_government = democratic
-				}
-			}
-			add_opinion_modifier = {
-				target = NCH
-				modifier = medium_decrease
-			}
-		}
-	}
-}
 
 shared_focus = {
 	id = NCH_finding_allies_in_coalition
@@ -2147,7 +2132,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_what_we_bring
 	icon = GFX_goal_unknown
-	cost = 8
+	cost = 2
 	prerequisite = {
 		focus = NCH_operation_raging_river
 	}
@@ -2237,9 +2222,9 @@ shared_focus = {
 		add_stability = -0.03
 		add_political_power = -50
 
-		country_event = {
-			id = greneclyf_core.104
-		}
+		#country_event = {
+		#	id = greneclyf_core.104
+		#}
 
 		every_country = {
 			limit = {
@@ -2273,7 +2258,10 @@ shared_focus = {
 				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
-			add_ideas = NCH_bos_riv
+			country_event = {
+				id = greneclyf_core.103
+				days = 10
+			}
 		}
 	}
 }
@@ -2281,7 +2269,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_bring_together
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 5
 	prerequisite = {
 		focus = NCH_what_we_bring
 	}
@@ -2289,7 +2277,59 @@ shared_focus = {
 	y = 22
 
 	completion_reward = {
-		
+		army_experience = 35
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -200
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -400
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				has_war = no
+				is_in_faction_with = NCH
+			}
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+			}
+
+			add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -400
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_increase
+			}
+		}
 	}
 }
 
@@ -2311,8 +2351,10 @@ shared_focus = {
 				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
-			add_stability = 0.1
-			add_political_power = 50
+			country_event = {
+				id = greneclyf_core.1
+				days = 10
+			}
 		}
 
 	}
@@ -2330,7 +2372,16 @@ shared_focus = {
 
 	completion_reward = {
 		add_stability = -0.03
+		add_political_power = -50
+		add_ideas = NCH_riv_search_base
 
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			add_ideas = NCH_riv_search_base
+		}
 	}
 }
 
@@ -2350,18 +2401,33 @@ shared_focus = {
 
 	completion_reward = {
 		add_stability = -0.05
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			add_stability = -0.05
+			#add_ideas = NCH_riv_senate
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_make_us_stronger
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 10
+
+	prerequisite = {
+		focus = NCH_river_science_program
+	}
 
 	prerequisite = {
 		focus = NCH_bring_together
+		focus = NCH_river_science_program
 	}
-	x = 33
+
+	x = 34
 	y = 23
 
 	completion_reward = {
@@ -2396,31 +2462,51 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_racial_differences
 	}
-
-	x = 31
-	y = 23
-
-	completion_reward = {
-		
-	}
-}
-
-shared_focus = {
-	id = NCH_first_president
-	icon = GFX_goal_unknown
-	cost = 10,00
-
 	prerequisite = {
-		focus = NCH_river_science_program
+		focus = NCH_bring_together
+		focus = NCH_racial_differences
 	}
 
-	x = 35
+
+	x = 32
 	y = 23
 
 	completion_reward = {
-		
+		add_stability = 0.05
+		add_political_power = 50
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_government = democratic
+			}
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
 	}
 }
+
+#shared_focus = {
+#	id = NCH_first_president
+#	icon = GFX_goal_unknown
+#	cost = 10,00
+#
+#	prerequisite = {
+#		focus = NCH_river_science_program
+#	}
+#
+#	x = 35
+#	y = 23
+#
+#	completion_reward = {
+#		
+#	}
+#}
 
 shared_focus = {
 	id = NCH_inity_as_the_highest_good
@@ -2534,7 +2620,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_adopt_consitution
 	icon = GFX_goal_unknown
-	cost = 10,00
+	cost = 14.4
 	prerequisite = {
 		focus = NCH_inity_as_the_highest_good
 	}

@@ -12,6 +12,34 @@ on_actions = {
 			every_country = {
 				if = {
 					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_riv_senate
+					}
+					NCH = {
+						add_ideas = NCH_riv_senate
+					}
+				}
+			}
+			
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_bos_riv
+					}
+					NCH = {
+						add_ideas = NCH_bos_riv
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
 						has_idea = NCH_blosmport_economic_consequences
 					}
 					NCH = {
@@ -23,6 +51,8 @@ on_actions = {
 			every_country = {
 				if = {
 					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
 						has_country_flag = NCH_neg_blosmport_economic
 						not = {
 							has_idea = NCH_blosmport_economic_consequences
@@ -51,16 +81,16 @@ on_actions = {
 					}
                 }
 				NCH = {
-				     country_event = {
-                    id = greneclyf_foregin.13
-                    days = 0
+				    country_event = {
+                    	id = greneclyf_foregin.13
+                    	days = 0
               		}	
 				}
 
 				EQS = {
-					 country_event = {
-                    id = greneclyf_foregin.13
-                    days = 0
+					country_event = {
+                    	id = greneclyf_foregin.13
+                    	days = 0
             		}	
 				}
             }

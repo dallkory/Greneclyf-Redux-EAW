@@ -46,6 +46,49 @@ ideas = {
 			}
 		}
 
+		NCH_riv_search_base = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.075
+				political_power_gain = 0.05
+				special_project_speed_factor = 0.05
+			}
+		}
+
+		NCH_riv_senate = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.05
+				political_power_gain = 0.05
+				drift_defence_factor = 0.15
+				justify_war_goal_time = 0.35
+				democratic_drift = 0.001
+				trade_opinion_factor = 1
+			}
+		}
+
 		NCH_bos_riv = {
 			picture = x
 			allowed = {
@@ -88,6 +131,7 @@ ideas = {
 				consumer_goods_factor = 0.55
 				production_factory_efficiency_gain_factor = -0.1
 				political_power_factor = -0.1
+				stability_weekly = -0.001
 			}
 		}
 
