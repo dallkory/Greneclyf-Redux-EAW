@@ -2165,6 +2165,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		custom_effect_tooltip = NCH_ecnomic_tt
 		country_event = {
 			id = greneclyf_core.5
 		}
@@ -2225,7 +2226,7 @@ shared_focus = {
 	y = 21
 	
 	completion_reward = {
-		custom_effect_tooltip = NCH_ecnomic_tt
+		#custom_effect_tooltip = NCH_ecnomic_tt
 		add_stability = -0.03
 		add_political_power = -50
 
@@ -2359,7 +2360,7 @@ shared_focus = {
 				is_in_faction_with = NCH
 			}
 			country_event = {
-				id = greneclyf_core.1
+				id = greneclyf_core.109
 				days = 10
 			}
 		}
@@ -2380,14 +2381,17 @@ shared_focus = {
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
-		add_ideas = NCH_riv_search_base
 
 		every_country = {
 			limit = {
 				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
-			add_ideas = NCH_riv_search_base
+			country_event = {
+				id = greneclyf_core.112
+				days = 20
+			}
+			#add_ideas = NCH_riv_search_base
 		}
 	}
 }
@@ -2476,19 +2480,28 @@ shared_focus = {
 		focus = NCH_racial_differences
 	}
 
+	available = {
+		not = {
+			has_idea = NCH_blosmport_economic_consequences
+		}
+	}
+
 
 	x = 32
 	y = 23
 
 	completion_reward = {
-		add_stability = 0.05
-		add_political_power = 50
+		#add_stability = 0.05
+		#add_political_power = 50
 
 		every_country = {
 			limit = {
 				is_riverlands_country = yes
 				is_in_faction_with = NCH
 				has_government = democratic
+				not = {
+					tag = NCH
+				}
 			}
 			add_stability = 0.05
 			add_political_power = 50
@@ -2496,6 +2509,21 @@ shared_focus = {
 				ideology = democratic
 				popularity = 0.15
 			}
+		}
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_idea = NCH_bos_riv
+				has_idea = NCH_blosmport_economic_org
+			}
+			remove_ideas = {
+				NCH_blosmport_economic_org
+				NCH_bos_riv
+			}
+			add_ideas = NCH_goodbye_despair
+			set_country_flag = NCH_ready_to_integration_1
 		}
 	}
 }

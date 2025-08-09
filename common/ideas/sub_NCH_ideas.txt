@@ -124,13 +124,13 @@ ideas = {
 
 			modifier = {
 				resistance_damage_to_garrison = -0.075
-				resistance_growth = -0.1
+				resistance_growth = -0.05
 				compliance_growth = 0.05
-				conscription_factor = 0.025
+				conscription_factor = 0.015
 
-				high_command_cost_factor = -0.15
+				high_command_cost_factor = -0.05
 				max_command_power = 20
-				command_power_gain_mult = 0.25
+				command_power_gain_mult = 0.1
 			}
 		}
 
@@ -168,13 +168,42 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.02
-				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
 				political_power_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.075
 				industrial_capacity_factory = 0.05
 				trade_opinion_factor = 0.2
 				resource_gain_efficiency = 0.03
+			}
+		}
+
+		NCH_goodbye_despair = {
+			picture = d
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.075
+				resistance_growth = -0.1
+				compliance_growth = 0.05
+				conscription_factor = 0.025
+				high_command_cost_factor = -0.15
+				max_command_power = 35
+				command_power_gain_mult = 0.25
+
+				stability_factor = -0.02
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.075
+				industrial_capacity_factory = 0.05
+				trade_opinion_factor = 0.3
+				resource_gain_efficiency = 0.05
 			}
 		}
 

@@ -2193,7 +2193,7 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_redux.101.a
-			set_country_flag = NCH_neg_blosmport_economic
+			#set_country_flag = NCH_neg_blosmport_economic
 		}
 	}
 
@@ -2286,7 +2286,7 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_redux.104.a
-			set_country_flag = NCH_bos_command
+			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
 		}
@@ -2371,7 +2371,7 @@ add_namespace = greneclyf_core
 		}
 	}
 
-	# TAG accept #
+	# TAG accept - senate #
 	country_event = {
 		id = greneclyf_core.107
 		title = greneclyf_core.107.t
@@ -2381,13 +2381,13 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_redux.107.a
-			set_country_flag = NCH_bos_command
+			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
 		}
 	}
 
-	# TAG deceline - BOS #
+	# TAG deceline - senate #
 	country_event = {
 		id = greneclyf_core.108
 		title = greneclyf_core.108.t
@@ -2406,10 +2406,196 @@ add_namespace = greneclyf_core
 	}
 
 	# LANQUAGE Q #
+	country_event = {
+		id = greneclyf_core.109
+		title = greneclyf_core.109.t
+		desc = greneclyf_core.109.d
+		picture = GFX_unknow
+		is_triggered_only = yes
 
+		# accept #
+		option = {
+			name = greneclyf_core.109.a
+			add_ideas = NCH_riv_volounters
+			NCH = {
+				country_event = {
+					id = greneclyf_core.110
+				}
+			}
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.3
+					OR = {
+					has_government = democratic
+					has_opinion = {
+						target = NCH
+						value > 50
+						}
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.109.b
+
+			NCH = {
+				country_event = {
+					id = greneclyf_core.111
+				}
+			}
+
+			ai_chance = {
+				base = 3
+				modifier = {
+					factor = 0.5
+					OR = {
+					not = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = NCH
+						value < 30
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# TAG accept - lanq #
+	country_event = {
+		id = greneclyf_core.110
+		title = greneclyf_core.110.t
+		desc = greneclyf_core.110.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_redux.110.a
+			#set_country_flag = NCH_bos_command
+
+			#add_ideas = NCH_bos_riv
+		}
+	}
+
+	# TAG deceline - lanq #
+	country_event = {
+		id = greneclyf_core.111
+		title = greneclyf_core.111.t
+		desc = greneclyf_core.111.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.111.a
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = small_decrease
+			}
+		}
+	}
 	
-NCH_riv_volounters
 	# Science #
+	country_event = {
+		id = greneclyf_core.112
+		title = greneclyf_core.112.t
+		desc = greneclyf_core.112.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		# accept #
+		option = {
+			name = greneclyf_core.112.a
+			add_ideas = NCH_riv_volounters
+			NCH = {
+				country_event = {
+					id = greneclyf_core.113
+				}
+			}
+
+			ai_chance = {
+				base = 2
+				modifier = {
+					factor = 0.3
+					OR = {
+					has_government = democratic
+					has_opinion = {
+						target = NCH
+						value > 50
+						}
+					}
+				}
+			}
+		}
+
+		# deceline #
+		option = {
+			name = greneclyf_core.112.b
+
+			NCH = {
+				country_event = {
+					id = greneclyf_core.114
+				}
+			}
+
+			ai_chance = {
+				base = 3
+				modifier = {
+					factor = 0.5
+					OR = {
+					not = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = NCH
+						value < 30
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# TAG accept - lanq #
+	country_event = {
+		id = greneclyf_core.113
+		title = greneclyf_core.113.t
+		desc = greneclyf_core.113.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_redux.113.a
+			#set_country_flag = NCH_bos_command
+
+			#add_ideas = NCH_bos_riv
+		}
+	}
+
+	# TAG deceline - lanq #
+	country_event = {
+		id = greneclyf_core.114
+		title = greneclyf_core.114.t
+		desc = greneclyf_core.114.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.114.a
+
+			add_opinion_modifier = {
+				target = NCH
+				modifier = small_decrease
+			}
+		}
+	}
+
+
 
 	### END MAIN PATCH ###
 
