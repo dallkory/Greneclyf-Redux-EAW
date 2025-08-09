@@ -148,7 +148,7 @@ add_ideas = {
 	isolation
 	lack_of_scientists
 
-	NCH_idyllic_society
+	NCH_idyllic_society_1
 	NCH_FBK_pact
 	NCH_luddites_1
 	NCH_Overpopulation

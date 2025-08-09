@@ -2,38 +2,6 @@ spriteTypes = {
 
 	### REDUX ###
 	spriteType = {
-		name = "GFX_idea_overpopulation"
-		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_luddities"
-		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_navy_stagnation"
-		textureFile = "gfx/interface/ideas/NCH/shipwa2ves.dds"
-	}
-
-
-	# Submod #
-	spriteType = {
-		name = "GFX_idea_NCH_changeling_submarine"
-		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_idea_NCH_changeling_submarine"
-		textureFile = "gfx/interface/ideas/NCH/idea_CZE_planning_bonus.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_idea_NCH_changeling_submarine"
-		textureFile = "gfx/interface/ideas/NCH/idea_tfv_can_conscription_crisis.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_NCH_changeling_submarine"
 		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
 	}
@@ -47,6 +15,86 @@ spriteTypes = {
 		name = "GFX_idea_grand_navy"
 		textureFile = "gfx/interface/ideas/NCH/shipwaves.dds"
 	}
+
+
+	spriteType = {
+		name = "GFX_idea_overpopulation"
+		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_luddities"
+		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_navy_stagnation"
+		textureFile = "gfx/interface/ideas/NCH/navy_stagnation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rethinking_army"
+		textureFile = "gfx/interface/ideas/NCH/idea_mex_politicised_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rethinking_army"
+		textureFile = "gfx/interface/ideas/NCH/idea_mex_politicised_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rise_of_the_nation"
+		textureFile = "gfx/interface/ideas/NCH/rise_of_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_blosmport_dockyards"
+		textureFile = "gfx/interface/ideas/NCH/blosmport_dockyards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mre_cards"
+		textureFile = "gfx/interface/ideas/NCH/idea_severe_famine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_massive_unemployment"
+		textureFile = "gfx/interface/ideas/NCH/idea_tfv_can_conscription_crisis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_protest_on_street"
+		textureFile = "gfx/interface/ideas/NCH/protest_on_street.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_shortage_food"
+		textureFile = "gfx/interface/ideas/NCH/goal_famine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_new_packts"
+		textureFile = "gfx/interface/ideas/NCH/new_great_packts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_medecine"
+		textureFile = "gfx/interface/ideas/NCH/medecine.dds"
+	}
+
+
+
+
+
+
+	
+
+	# Submod #
+	spriteType = {
+		name = "GFX_idea_NCH_changeling_submarine"
+		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_bug_school"
 		textureFile = "gfx/interface/ideas/NCH/school_for_engeneers.dds"

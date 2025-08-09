@@ -256,12 +256,8 @@ ideas = {
 			}
 		}
 
-		NCH_army_stagnation = {
-
-		}
-
 		NCH_fleet_stagnation = {
-			picture = GFX_idea_navy_stagnation
+			picture = navy_stagnation
 			allowed = {
 				always = no
 			}
@@ -274,12 +270,11 @@ ideas = {
 				production_speed_dockyard_factor = -0.25
 				industrial_capacity_dockyard = -0.15
 				experience_gain_navy = -0.03
-				
-				production_cost_max_ship_hull_submarine = 500
-				production_cost_max_ship_hull_light = 2500
 				production_cost_max_ship_hull_cruiser = 3200
 				production_cost_max_ship_hull_heavy = 6500
 				production_cost_max_ship_hull_carrier = 7000
+				production_cost_max_ship_hull_fleet_submarine = 500
+				production_cost_max_destroyer = 1000
 			}
 		}
 
@@ -305,20 +300,23 @@ ideas = {
 			}
 		}
 
-		NCH_idyllic_society = {
+		NCH_idyllic_society_1 = {
 			picture = EQS_friendly_harmony
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
+
 			research_bonus = {
 				race_tech = -0.15
 				infantry_tech = -0.1
 				support_tech = -0.1
 				artillery = -0.1
 			}
+
 			modifier = {
+				experience_gain_army = -0.003
 				war_support_weekly = -0.001
 				war_support_factor = -0.15
 				mobilization_laws_cost_factor = 1.5
@@ -540,7 +538,7 @@ ideas = {
 		}
 
 		NCH_rise_nation_movement = {
-			picture = GFX_unknow
+			picture = rise_of_the_nation
 			allowed = {
 				always = yes
 			}
@@ -573,7 +571,7 @@ ideas = {
 		}
 
 		NCH_protests_on_street = {
-			picture = GFX_unknow
+			picture = protest_on_street
 			allowed = {
 				always = yes
 			}
@@ -591,7 +589,7 @@ ideas = {
 		}
 
 		NCH_massive_unemployed = {
-			picture = GFX_unknow
+			picture = massive_unemployment
 			allowed = {
 				always = yes
 			}
@@ -610,7 +608,7 @@ ideas = {
 		}
 
 		NCH_food_shortage = {
-			picture = GFX_unknow
+			picture = shortage_food
 			allowed = {
 				always = yes
 			}
@@ -630,7 +628,7 @@ ideas = {
 		}
 
 		NCH_mre_cards_help = {
-			picture = GFX_unknow
+			picture = mre_cards
 			allowed = {
 				always = yes
 			}
@@ -647,7 +645,7 @@ ideas = {
 
 		# NEW PACT #
 		NCH_new_great_pact = {
-			picture = FAR_NCH_trade
+			picture = new_packts
 			allowed = {
 				always = no
 			}
@@ -830,7 +828,7 @@ ideas = {
 		}
 
 		NCH_all_medecine_help = {
-			picture = GFX_unknow
+			picture = medecine
 			allowed = {
 				always = yes
 			}
@@ -965,7 +963,6 @@ ideas = {
 			}
 		}
 		#################
-
 		#NCH_second_hunger = {
 		#	picture = 
 		#	allowed = {
@@ -988,25 +985,29 @@ ideas = {
 		#		communism_drift = 0.03
 		#	}
 		#}
-
 		#####################
 
 		### FORCES ###
-
 		NCH_rethinking_forces = {
-			picture = GFX_unknow
+			picture = rethinking_army
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 
+			research_bonus = {
+				race_tech = 0.25
+				infantry_tech = 0.1
+				naval_equipment = 0.3
+				air_equipment = 0.3
+			}
+
 			modifier = {
+				war_support_weekly = 0.001
 				experience_gain_navy_factor = 0.1
 				experience_gain_army_factor = 0.1
 				experience_gain_air_factor = 0.1
-				consumer_goods_factor = 0.075
-
-				
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -1383,7 +1384,7 @@ ideas = {
 		}
 
 		NCH_blosmporn_dockyards = {
-			picture = GFX_unknow
+			picture = blosmport_dockyards
 			allowed = {
 				always = yes
 			}
@@ -1391,8 +1392,8 @@ ideas = {
 
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 4500
-				production_cost_max_ship_hull_light = 3000
-				production_cost_max_ship_hull_submarine = 800
+				production_cost_max_ship_hull_fleet_submarine = 800
+				production_cost_max_destroyer = 1300
 				production_cost_max_ship_hull_heavy = 9000
 				navy_fuel_consumption_factor = -0.05
 				industrial_capacity_dockyard = 0.1
@@ -1516,7 +1517,7 @@ ideas = {
 		# LAND FORCES #
 
 		NCH_land_forces_everyone_can_be_hero = {
-			picture = NCH_changeling_submarine
+			picture = x
 			allowed = {
 				always = yes
 			}
@@ -1532,10 +1533,6 @@ ideas = {
 				special_forces_min = 250
 			}
 		}
-
-		#army_attack_against_major_factor = 0.075
-		#army_defence_against_major_factor = 0.05
-
 
 		NCH_Greneclyf_land_forces_intergrity_priorize = {
 			picture = NCH_changeling_submarine

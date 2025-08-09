@@ -2092,6 +2092,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_new_great_pact
 		if = {
 			limit = {
 				and = {
