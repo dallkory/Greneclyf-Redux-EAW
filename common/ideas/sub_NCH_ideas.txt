@@ -316,7 +316,7 @@ ideas = {
 			}
 
 			modifier = {
-				experience_gain_army = -0.003
+				experience_gain_army = -0.03
 				war_support_weekly = -0.001
 				war_support_factor = -0.15
 				mobilization_laws_cost_factor = 1.5
@@ -683,7 +683,7 @@ ideas = {
 		}
 
 		NCH_zone_of_sin = {
-			picture = GFX_unknow
+			picture = saor
 			allowed = {
 				always = yes
 			}

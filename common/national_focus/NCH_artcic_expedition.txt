@@ -2,7 +2,7 @@
 Shared_focus = {
 	id = NCH_land_behind_seas
 	icon = GFX_goal_terraink
-	cost = 10,00
+	cost = 10
 
 	allow_branch = {
 		has_country_flag = NCH_island_found
@@ -12,8 +12,10 @@ Shared_focus = {
 	y = 10
 
 	available = {
-		has_country_flag = NCH_island_found
 		#has_country_flag = NCH_island_found
+		NCH = {
+			owns_state = 1242
+		}
 	}
 
 	completion_reward = {
@@ -24,7 +26,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_colony_development
 	icon = GFX_goal_arccity
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
@@ -42,28 +44,28 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_militarization_north
 	icon = GFX_goal_artmilitarization
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
 	
-	x = 49
+	x = 48
 	y = 11
 
 	available = {
-		has_completed_focus = NCH_break_ice
+		#has_completed_focus = NCH_break_ice
 	}
 }
 
 Shared_focus = {
 	id = NCH_dockyards_for_navy
 	icon = GFX_goal_fuelfleet
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_militarization_north
 	}
 	
-	x = 48
+	x = 47
 	y = 12
 
 }
@@ -71,12 +73,12 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_army_base_behind_homeland
 	icon = GFX_goal_exppoligon
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_militarization_north
 	}
 	
-	x = 50
+	x = 49
 	y = 12
 
 }
@@ -86,12 +88,12 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_economic_development_in_ice
 	icon = GFX_goal_newtradeway
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
 	
-	x = 53
+	x = 54
 	y = 11
 
 	available = {
@@ -103,12 +105,12 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_resorurces_digging
 	icon = GFX_goal_geosurvey
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_economic_development_in_ice
 	}
 	
-	x = 52
+	x = 53
 	y = 12
 
 }
@@ -116,12 +118,12 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_trade_in_snow
 	icon = GFX_goal_marineresources
-	cost = 10,00
+	cost = 10
 	prerequisite = {
 		focus = NCH_economic_development_in_ice
 	}
 	
-	x = 54
+	x = 55
 	y = 12
 
 }

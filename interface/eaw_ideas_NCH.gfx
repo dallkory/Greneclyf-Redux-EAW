@@ -92,6 +92,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/cult_progress.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_saor"
+		textureFile = "gfx/interface/ideas/NCH/SAOR.tga"
+	}
+
 
 
 
