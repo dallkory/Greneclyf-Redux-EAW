@@ -430,6 +430,52 @@ NCH_fed_found_category = {
 	}
 }
 
+NCH_arctic_expedition_category = {
+	NCH_gytha_island = {
+		icon = x
+		priority = 80
+
+		ai_will_do = {
+			base = 1
+		}
+
+		state_target = yes
+		target_array = NCH.arctic_targets
+
+		on_map_mode = map_only
+
+		allowed = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		visible = {
+			has_completed_focus = NCH_land_behind_seas
+			has_government = democratic
+		}
+
+		days_remove = 70
+		custom_cost_trigger = {
+			check_variable = {
+				var = command_power
+				value = 15
+				compare = greater_than_or_equals
+			}
+			has_equipment = {
+				convoy > 25
+			}
+			has_manpower > 1000
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			
+		}
+	}
+}
+
 ## MAP ICON DREEMS OF MORE ##
 # RCT
 # BAK
@@ -476,12 +522,6 @@ NCH_boost_harmony_river = {
 
 		days_remove = 30
 		cost = 50
-
-		#custom_cost_trigger = {
-		#	command_power > 25
-		#	has_equipment = { infantry_equipment > 499 }
-		#	has_political_power > 50
-		#}
 
 		modifier = {
 			civilian_factory_use = 3

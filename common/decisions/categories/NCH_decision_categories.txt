@@ -19,6 +19,13 @@ NCH_debug_decision = {
 #	}
 #	priority = 152
 #}
+NCH_arctic_expedition_category = {
+	icon = GFX_unkmow
+
+	priority = {
+		base = 1
+	}
+}
 
 NCH_fed_found_category = {
 	icon = GFX_unkmow
@@ -105,7 +112,7 @@ NCH_celarl_laboratory = {
 	}
 
 	priority = {
-		base = 149
+		base = 148
 	}
 }
 

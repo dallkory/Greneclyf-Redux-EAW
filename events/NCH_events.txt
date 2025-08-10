@@ -2789,6 +2789,10 @@ add_namespace = greneclyf_core
 
 		option = {
        	name = greneclyf_arctic.1.a	
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -5 
+			}
 		set_country_flag = NCH_island_found
 			AWT = {
 				1242 = {

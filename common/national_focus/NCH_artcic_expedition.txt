@@ -12,14 +12,63 @@ Shared_focus = {
 	y = 10
 
 	available = {
-		#has_country_flag = NCH_island_found
+		has_country_flag = NCH_island_found
 		NCH = {
 			owns_state = 1242
 		}
 	}
 
 	completion_reward = {
-		navy_experience = 25
+		custom_effect_tooltip = NCH_arctic_found_tt
+
+		1212 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
+		1218 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
+		1219 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
+		1245 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
+		1236 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
+		1227 = {
+			capital_scope = {
+				add_to_array = {
+					array = NCH.arctic_targets
+					value = this
+				}
+			}
+		}
 	}
 }
 
@@ -35,9 +84,12 @@ Shared_focus = {
 	y = 11
 
 	available = {
-		has_completed_focus = NCH_break_ice
+		#has_completed_focus = NCH_break_ice
 	}
 
+	completion_reward = {
+		add_ideas = NCH_arctic_conquest
+	}
 }
 
 # MILITATY #

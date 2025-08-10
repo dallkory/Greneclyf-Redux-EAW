@@ -682,6 +682,21 @@ ideas = {
 			}
 		}
 
+		NCH_arctic_conquest = {
+			picture = x
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+
 		NCH_zone_of_sin = {
 			picture = saor
 			allowed = {
