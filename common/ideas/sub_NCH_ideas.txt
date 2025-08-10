@@ -881,7 +881,7 @@ ideas = {
 		}
 
 		NCH_cult_of_progress = {
-			picture = GFX_unknow
+			picture = cult_progress
 			allowed = {
 				always = yes
 			}
@@ -907,7 +907,7 @@ ideas = {
 		}
 
 		NCH_cult_of_traditions = {
-			picture = GFX_unknow
+			picture = cult_traditional
 			allowed = {
 				always = yes
 			}
@@ -932,7 +932,7 @@ ideas = {
 		}
 
 		NCH_rise_science = {
-			picture = GFX_unknow
+			picture = science_rise
 			allowed = {
 				always = yes
 			}

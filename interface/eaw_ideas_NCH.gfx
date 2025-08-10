@@ -78,8 +78,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_medecine"
-		textureFile = "gfx/interface/ideas/NCH/medecine.dds"
+		name = "GFX_idea_science_rise"
+		textureFile = "gfx/interface/ideas/NCH/science_rise.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_cult_traditional"
+		textureFile = "gfx/interface/ideas/NCH/traditional_cult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_cult_progress"
+		textureFile = "gfx/interface/ideas/NCH/cult_progress.dds"
 	}
 
 
@@ -87,7 +97,7 @@ spriteTypes = {
 
 
 
-	
+
 
 	# Submod #
 	spriteType = {
