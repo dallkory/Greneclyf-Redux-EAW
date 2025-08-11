@@ -122,6 +122,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/silent_torpedo.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_medecine"
+		textureFile = "gfx/interface/ideas/NCH/medecine.dds"
+	}
+
 
 
 

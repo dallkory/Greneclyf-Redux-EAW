@@ -2,7 +2,7 @@
 Shared_focus = {
 	id = NCH_land_behind_seas
 	icon = GFX_goal_terraink
-	cost = 10
+	cost = 5
 
 	allow_branch = {
 		has_country_flag = NCH_island_found
@@ -32,10 +32,17 @@ Shared_focus = {
 	}
 }
 
+#1242
+#1234
+#1215
+#1245
+#1236
+#1227
+
 Shared_focus = {
 	id = NCH_colony_development
 	icon = GFX_goal_arccity
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
@@ -48,8 +55,8 @@ Shared_focus = {
 	}
 
 	completion_reward = {
-		add_ideas = NCH_arctic_conquest
-
+		#add_ideas = NCH_arctic_conquest
+		custom_effect_tooltip = NCH_arctic_special_citues 
 
 	}
 }
@@ -58,7 +65,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_militarization_north
 	icon = GFX_goal_artmilitarization
-	cost = 10
+	cost = 4
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
@@ -71,8 +78,8 @@ Shared_focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_arctic_special_citues 
-		set_country_flag = NCH_arctic_cit_cf
+		add_ideas = NCH_arctic_conquest
+
 	}
 }
 
@@ -88,7 +95,77 @@ Shared_focus = {
 	y = 12
 
 	completion_reward = {
-		
+		if = {
+			limit = {
+				owns_state = 1227
+			}
+			1227 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1236
+			}
+			1236 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1245
+			}
+			1245 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1242
+			}
+			1242 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1215
+			}
+			1215 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1234
+			}
+			1234 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
 	}
 }
 
@@ -110,7 +187,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_economic_development_in_ice
 	icon = GFX_goal_newtradeway
-	cost = 10
+	cost = 4
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
@@ -123,7 +200,24 @@ Shared_focus = {
 	}
 	
 	completion_reward = {
+		668 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = 10891
+			}
+		}
 		
+		add_victory_points = {
+			province = 10891
+			value = 1
+		}
+		build_railway = {
+			level = 1
+
+			start_province = 10891
+			target_province = 5131
+		}
 	}
 }
 
@@ -159,8 +253,8 @@ Shared_focus = {
 				amount = 15
 			}
 			add_resource = {
-				type = chromium
-				amount = x
+				type = oil
+				amount = 8
 			}
 			add_manpower = 10000
 		}
@@ -170,6 +264,11 @@ Shared_focus = {
 				type = chromium
 				amount = 36
 			}
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			add_manpower = 15000
 		}
 	}
 }
@@ -185,4 +284,7 @@ Shared_focus = {
 	x = 55
 	y = 12
 
+	completion_reward = {
+		
+	}
 }
