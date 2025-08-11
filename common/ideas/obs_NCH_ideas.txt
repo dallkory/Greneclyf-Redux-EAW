@@ -4,8 +4,7 @@ ideas={
 			picture = GFX_idea_NCH_obsidian_crystals
 
 			modifier = {
-				production_speed_supply_node_factor = 0.05
-                production_speed_industrial_complex_factor = 0.05
+                production_speed_industrial_complex_factor = 0.025
 				resource_trade_cost_bonus_per_factory = 1
 				consumer_goods_factor = -0.05
 				local_resources_factor = 0.05
@@ -16,13 +15,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.05
-                production_speed_industrial_complex_factor = 0.025
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.05
-				military_industrial_organization_research_bonus = 0.05
-				military_industrial_organization_funds_gain = 0.05
-				consumer_goods_factor = 0.01
-				resource_trade_cost_bonus_per_factory = 0.5
+                production_speed_industrial_complex_factor = 0.05
+				
+				military_industrial_organization_research_bonus = 0.01
+				military_industrial_organization_funds_gain = 0.01
+
+				consumer_goods_factor = 0.025
+				resource_trade_cost_bonus_per_factory = 1.3
 			}
 		}
 		obsidian_trade_power_2={
@@ -30,13 +29,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.075
-                production_speed_industrial_complex_factor = 0.05
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.075
-				military_industrial_organization_research_bonus = 0.075
-				military_industrial_organization_funds_gain = 0.075
-				consumer_goods_factor = 0.02
-				resource_trade_cost_bonus_per_factory = 1
+                production_speed_industrial_complex_factor = 0.075
+
+				military_industrial_organization_research_bonus = 0.02
+				military_industrial_organization_funds_gain = 0.02
+
+				consumer_goods_factor = 0.05
+				resource_trade_cost_bonus_per_factory = 1.6
 			}
 		}
 		obsidian_trade_power_3={
@@ -44,13 +43,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.075
-                production_speed_industrial_complex_factor = 0.075
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.1
-				military_industrial_organization_research_bonus = 0.075
-				military_industrial_organization_funds_gain = 0.075
-				consumer_goods_factor = 0.03
-				resource_trade_cost_bonus_per_factory = 1.5
+                production_speed_industrial_complex_factor = 0.1
+				
+				military_industrial_organization_research_bonus = 0.03
+				military_industrial_organization_funds_gain = 0.03
+
+				consumer_goods_factor = 0.075
+				resource_trade_cost_bonus_per_factory = 1.9
 			}
 		}
 		obsidian_trade_power_4={
@@ -58,13 +57,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.09
-                production_speed_industrial_complex_factor = 0.1
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.15
-				military_industrial_organization_research_bonus = 0.1
-				military_industrial_organization_funds_gain = 0.1
-				consumer_goods_factor = 0.04
-				resource_trade_cost_bonus_per_factory = 2
+                production_speed_industrial_complex_factor = 0.125
+				
+				military_industrial_organization_research_bonus = 0.04
+				military_industrial_organization_funds_gain = 0.04
+
+				consumer_goods_factor = 0.1
+				resource_trade_cost_bonus_per_factory = 2.1
 			}
 		}
 		obsidian_trade_power_5={
@@ -72,13 +71,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.1
-                production_speed_industrial_complex_factor = 0.125
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.2
-				military_industrial_organization_research_bonus = 0.15
-				military_industrial_organization_funds_gain = 0.15
-				consumer_goods_factor = 0.06
-				resource_trade_cost_bonus_per_factory = 2.5
+                production_speed_industrial_complex_factor = 0.15
+				
+				military_industrial_organization_research_bonus = 0.05
+				military_industrial_organization_funds_gain = 0.05
+
+				consumer_goods_factor = 0.125
+				resource_trade_cost_bonus_per_factory = 2.4
 			}
 		}
 		obsidian_trade_power_6={
@@ -86,13 +85,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.12
-                production_speed_industrial_complex_factor = 0.125
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.25
-				military_industrial_organization_research_bonus = 0.175
-				military_industrial_organization_funds_gain = 0.175
-				consumer_goods_factor = 0.07
-				resource_trade_cost_bonus_per_factory = 3
+                production_speed_industrial_complex_factor = 0.175
+				
+				military_industrial_organization_research_bonus = 0.06
+				military_industrial_organization_funds_gain = 0.06
+
+				consumer_goods_factor = 0.15
+				resource_trade_cost_bonus_per_factory = 2.7
 			}
 		}
 		obsidian_trade_power_7={
@@ -100,13 +99,13 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.125
-                production_speed_industrial_complex_factor = 0.125
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.3
-				military_industrial_organization_research_bonus = 0.2
-				military_industrial_organization_funds_gain = 0.2
-				consumer_goods_factor = 0.08
-				resource_trade_cost_bonus_per_factory = 3.5
+                production_speed_industrial_complex_factor = 0.2
+				
+				military_industrial_organization_research_bonus = 0.07
+				military_industrial_organization_funds_gain = 0.07
+
+				consumer_goods_factor = 0.175
+				resource_trade_cost_bonus_per_factory = 3
 			}
 		}
 		obsidian_trade_power_8={
@@ -114,15 +113,14 @@ ideas={
 			allowed = { always = no }
 
 			modifier = {
-				production_speed_supply_node_factor = 0.175
-                production_speed_industrial_complex_factor = 0.125
-				military_industrial_organization_industrial_manufacturer_assign_cost = -0.3
-				military_industrial_organization_research_bonus = 0.3
-				military_industrial_organization_funds_gain = 0.3
-				consumer_goods_factor = 0.1
-				resource_trade_cost_bonus_per_factory = 4
+                production_speed_industrial_complex_factor = 0.225
+				
+				military_industrial_organization_research_bonus = 0.08
+				military_industrial_organization_funds_gain = 0.08
+
+				consumer_goods_factor = 0.2
+				resource_trade_cost_bonus_per_factory = 3.3
 			}
 		}
-
 	}
 }

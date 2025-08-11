@@ -440,12 +440,15 @@ NCH_arctic_expedition_category = {
 		}
 
 		state_target = yes
-		target_array = NCH.arctic_targets
+		#target_array = NCH.arctic_targets
 
 		on_map_mode = map_only
 
 		allowed = {
 			any_controlled_state_is_coastal = yes
+		}
+		targets = {
+			1234 1215 1245 1236 1227
 		}
 
 		visible = {
@@ -460,10 +463,8 @@ NCH_arctic_expedition_category = {
 				value = 15
 				compare = greater_than_or_equals
 			}
-			has_equipment = {
-				convoy > 25
-			}
-			has_manpower > 1000
+			has_political_power > 30
+			has_manpower > 1200
 		}
 
 		modifier = {
@@ -471,7 +472,32 @@ NCH_arctic_expedition_category = {
 		}
 
 		complete_effect = {
-			
+			FROM = {
+				NCH.arctic_targets = {
+					transfer_state_to = NCH
+				}
+				NCH.arctic_targets = {
+					remove_core_of = AWT
+					add_core_of = NCH
+				}
+				NCH.arctic_targets = {
+					add_manpower = 1200
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+		cancel_trigger = {
+			not = {
+				has_manpower < 1200
+				has_equipment = {
+					convoy < 24
+				}
+
+				has_equipment_to_stockpile = {
+				type = convoy
+				amount < 5 
+				}
+			}
 		}
 	}
 }

@@ -20,55 +20,15 @@ Shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = NCH_arctic_found_tt
+		set_variable = {
+			name = NCH.arctic_targets
+		}
 
-		1212 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
-		1218 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
-		1219 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
-		1245 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
-		1236 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
-		1227 = {
-			capital_scope = {
-				add_to_array = {
-					array = NCH.arctic_targets
-					value = this
-				}
-			}
-		}
+		1234 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1215 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1245 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1236 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1227 = { add_to_array = { array = NCH.arctic_targets value = this } }
 	}
 }
 
