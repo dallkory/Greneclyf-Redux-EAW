@@ -75,6 +75,8 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_fleet_stagnation
+
 		add_timed_idea = {
 			idea = NCH_blosmporn_dockyards
 			days = 270

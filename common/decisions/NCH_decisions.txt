@@ -456,15 +456,17 @@ NCH_arctic_expedition_category = {
 			has_government = democratic
 		}
 
+		custom_cost_text = decision_cost_CP_15_pp_30_manpower_1200
+
 		days_remove = 70
-		custom_cost_trigger = {
+		custom_cost_trigger= {
 			check_variable = {
 				var = command_power
 				value = 15
 				compare = greater_than_or_equals
 			}
-			has_political_power > 30
-			has_manpower > 1200
+			has_political_power = 30
+			has_manpower = 1200
 		}
 
 		modifier = {

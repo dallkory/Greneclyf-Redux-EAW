@@ -784,6 +784,9 @@
  
   ### DECISIONS ###
   NCH_typography_category:0 "Государственная типография"
+  
+  decision_cost_CP_15_pp_30_manpower_1200:0 "£command_power  §Y15§! £pol_power  §Y30§! £manpower_icon  §Y1200§!"
+
   #NCH_typography_category_desc:0 "Гос тип"
 
   # FRACTION #
