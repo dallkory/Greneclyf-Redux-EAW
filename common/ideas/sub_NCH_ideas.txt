@@ -522,7 +522,7 @@ ideas = {
 		}
 
 		NCH_urbanization_idea = {
-			picture = GFX_unknow
+			picture = urbanism
 			allowed = {
 				always = yes
 			}
@@ -1370,10 +1370,9 @@ ideas = {
 		}
 
 
-
 		## NAVY ##
 		NCH_navy_forces = {
-			picture = GFX_unknow
+			picture = naval_forces
 			allowed = {
 				always = yes
 			}
@@ -1418,7 +1417,7 @@ ideas = {
 		}
 
 		NCH_naval_academy_establish = {
-			picture = GFX_unknow
+			picture = naval_academy
 			allowed = {
 				always = yes
 			}
@@ -1437,7 +1436,7 @@ ideas = {
 		}
 
 		NCH_break_ice_idea = {
-			picture = GFX_unknow
+			picture = break_ice
 			allowed = {
 				always = yes
 			}
@@ -1449,7 +1448,7 @@ ideas = {
 		}
 
 		NCH_torpedo_attack = {
-			picture = GFX_unknow
+			picture = silent_torpedo
 			allowed = {
 				always = no
 			}

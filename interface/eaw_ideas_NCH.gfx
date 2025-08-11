@@ -49,7 +49,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_blosmport_dockyards"
-		textureFile = "gfx/interface/ideas/NCH/blosmport_dockyards.dds"
+		textureFile = "gfx/interface/ideas/NCH/goal_JER_refurbish_the_shipyards.dds"
 	}
 
 	spriteType = {
@@ -97,6 +97,30 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/SAOR.tga"
 	}
 
+	spriteType = {
+		name = "GFX_idea_urbanism"
+		textureFile = "gfx/interface/ideas/NCH/urbanisation.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_naval_forces"
+		textureFile = "gfx/interface/ideas/NCH/naval_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_naval_academy"
+		textureFile = "gfx/interface/ideas/NCH/navy_academy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_break_ice"
+		textureFile = "gfx/interface/ideas/NCH/break_ice.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_silent_torpedo"
+		textureFile = "gfx/interface/ideas/NCH/silent_torpedo.dds"
+	}
 
 
 

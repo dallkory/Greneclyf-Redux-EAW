@@ -1702,14 +1702,19 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					EQS={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
+			
 			allowed = {
 				original_tag = NCH
 				has_country_flag = NCH_obsidian_export
 			}
+
 			complete_effect = {
 				every_country = {
 					limit = {
@@ -1731,7 +1736,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					KIR={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1760,7 +1768,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					FBK={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1790,7 +1801,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					BAK={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1820,7 +1834,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					TRD={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1850,7 +1867,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					HIP={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1880,7 +1900,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					PNG={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}
@@ -1910,7 +1933,10 @@ NCH_celarl_laboratory = {
 				has_country_flag = NCH_obsidian_export
 				NOT = {
 					EQC={
-						has_idea = obsidian_trade_NCH
+						or = {
+							has_country_flag = NCH_obs_deceline
+							has_idea = obsidian_trade_NCH
+						}
 					}
 				}
 			}

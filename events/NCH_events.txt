@@ -1075,6 +1075,7 @@ add_namespace = greneclyf_core
 		picture = GFX_unknow
 		is_triggered_only = yes
 
+		# ACCEPT #
 		option = {
 			name = greneclyf_obsidian.1.a
 
@@ -1083,9 +1084,17 @@ add_namespace = greneclyf_core
 				country_event = greneclyf_obsidian.3
 			}
 			ai_chance = {
-				base = 60
+				base = 10
+				modifier = {
+					has_opinion = {
+						target = NCH
+						value > 25
+					}
+				}
 			}
 		}
+		
+		# DECELINE #
 		option = {
 			name = greneclyf_obsidian.1.b
 
@@ -1093,8 +1102,13 @@ add_namespace = greneclyf_core
 				country_event = greneclyf_obsidian.2
 			}
 			ai_chance = {
-				base = 40
-
+				base = 15
+				modifier = {
+					has_opinion = {
+						target = NCH
+						value < 25
+					}
+				}
 			}
 		}
 	}
@@ -1107,8 +1121,6 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_obsidian.2.a
-
-			add_political_power = 30
 		}
 	}
 	country_event = {

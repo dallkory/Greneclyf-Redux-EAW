@@ -1117,7 +1117,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 25
-		remove_ideas = NCH_idyllic_society
+		#remove_ideas = NCH_idyllic_society
 
 		add_doctrine_cost_reduction = {
 			name = navdoc_bonus
@@ -1148,6 +1148,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
 		army_experience = 25
 		set_country_flag = NCH_left_land_forces
 
@@ -1375,6 +1376,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
 		set_country_flag = NCH_right_land_forces
 		add_manpower = 20000
 		army_experience = 25
