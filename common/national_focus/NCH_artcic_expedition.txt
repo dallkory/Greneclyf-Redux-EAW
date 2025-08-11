@@ -49,6 +49,8 @@ Shared_focus = {
 
 	completion_reward = {
 		add_ideas = NCH_arctic_conquest
+
+
 	}
 }
 
@@ -67,6 +69,11 @@ Shared_focus = {
 	available = {
 		#has_completed_focus = NCH_break_ice
 	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_arctic_special_citues 
+		set_country_flag = NCH_arctic_cit_cf
+	}
 }
 
 Shared_focus = {
@@ -80,6 +87,9 @@ Shared_focus = {
 	x = 47
 	y = 12
 
+	completion_reward = {
+		
+	}
 }
 
 Shared_focus = {
@@ -111,7 +121,10 @@ Shared_focus = {
 	available = {
 		has_completed_focus = NCH_break_ice
 	}
+	
+	completion_reward = {
 		
+	}
 }
 
 Shared_focus = {
@@ -125,6 +138,40 @@ Shared_focus = {
 	x = 53
 	y = 12
 
+	available = {
+		owns_state = 1234
+		owns_state = 1236
+	}
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -400
+		}
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = -25
+		}
+
+		1234 = {
+			add_resource = {
+				type = chromium
+				amount = 15
+			}
+			add_resource = {
+				type = chromium
+				amount = x
+			}
+			add_manpower = 10000
+		}
+
+		1236 = {
+			add_resource = {
+				type = chromium
+				amount = 36
+			}
+		}
+	}
 }
 
 Shared_focus = {

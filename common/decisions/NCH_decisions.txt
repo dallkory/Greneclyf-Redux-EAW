@@ -456,17 +456,18 @@ NCH_arctic_expedition_category = {
 			has_government = democratic
 		}
 
-		custom_cost_text = decision_cost_CP_15_pp_30_manpower_1200
+		custom_cost_text = NCH_arctic_cost
 
 		days_remove = 70
 		custom_cost_trigger= {
-			check_variable = {
-				var = command_power
-				value = 15
-				compare = greater_than_or_equals
-			}
+			#check_variable = {
+			#	var = command_power
+			#	value = 15
+			#	compare = greater_than_or_equals
+			#}
 			has_political_power = 30
 			has_manpower = 1200
+			has_equipment = { convoy = 25 }
 		}
 
 		modifier = {
@@ -487,7 +488,15 @@ NCH_arctic_expedition_category = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
+
+			hidden_effect = {
+				#add_command_power = -15
+				add_political_power = -30
+				add_manpower = -1200 
+				add_equipment_to_stockpile = { type = convoy amount = -25 } 
+			}
 		}
+		
 		cancel_trigger = {
 			not = {
 				has_manpower < 1200

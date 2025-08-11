@@ -784,8 +784,12 @@
  
   ### DECISIONS ###
   NCH_typography_category:0 "Государственная типография"
-  
-  decision_cost_CP_15_pp_30_manpower_1200:0 "£command_power  §Y15§! £pol_power  §Y30§! £manpower_icon  §Y1200§!"
+
+  #£command_power  §Y15§! £pol_power  §Y15§! £manpower_icon  §Y500§!
+
+  NCH_arctic_cost:0 "£pol_power §Y30§! £manpower_icon §Y1200§! £convoy_texticon §Y25§!"
+  NCH_arctic_cost_blocked:0 "£pol_power §R30§! £manpower_icon §R1200§! £convoy_texticon §R25§!"
+  NCH_arctic_cost_tooltip:0 "Экспедиция на остров обойдётся нам в 1200 дронов-рабочих, 30 политической власти и 25 конвоев"
 
   #NCH_typography_category_desc:0 "Гос тип"
 

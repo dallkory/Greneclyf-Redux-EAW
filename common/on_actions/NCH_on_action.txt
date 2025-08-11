@@ -9,8 +9,86 @@ on_actions = {
         effect = {
 			# REDUX #
 
-			
+			if = {
+				limit = {
+					has_completed_focus = NCH_colony_development
+				}
+				if = {
+					limit = {
+						owns_state = 1234
+					}
+					add_victory_points = {
+						province = 20358
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20358
+					}
+				}
 
+				if = {
+					limit = {
+						owns_state = 1215
+					}
+					add_victory_points = {
+						province = 20324
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20324
+					}
+				}
+
+				if = {
+					limit = {
+						owns_state = 1245
+					}
+					add_victory_points = {
+						province = 20352
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20352
+					}
+				}
+
+				if = {
+					limit = {
+						owns_state = 1236
+					}
+					add_victory_points = {
+						province = 20321
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20321
+					}
+				}
+				
+				if = {
+					limit = {
+						owns_state = 1227
+					}
+					add_victory_points = {
+						province = 20314
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20314
+					}
+				}
+			}
+		 
 			every_country = {
 				if = {
 					limit = {
