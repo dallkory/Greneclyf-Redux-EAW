@@ -296,7 +296,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_base.42
+			id = greneclyf_core.8
 			days = 0
 		}
 	}
@@ -493,7 +493,7 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
-		country_event = greneclyf_base.40
+		country_event = greneclyf_core.6
 	}
 }
 
@@ -516,7 +516,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_base.41
+			id = greneclyf_core.7
 		}
 	}
 }

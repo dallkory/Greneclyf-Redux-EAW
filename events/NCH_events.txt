@@ -778,120 +778,7 @@ add_namespace = greneclyf_core
 		}
 	}
 
-	# BEE PRODUCTIVITY #
-	country_event = {
-		id = greneclyf_base.40
-		title = greneclyf_base.40.t
-		desc = greneclyf_base.40.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
-
-		option = {
-			name = greneclyf_base.40.a
-
-			670 = {
-				add_state_modifier = {
-					modifier = { 
-						recruitable_population_factor = 0.15
-						local_building_slots = 1
-						local_resources_factor = 0.10
-						local_manpower_factor = 0.1
-						state_production_speed_buildings_factor = 0.05
-					}
-				}
-			}
-			1209 = {
-				add_state_modifier = {
-					modifier = { 
-						local_building_slots = 1
-						local_resources_factor = 0.10
-						local_manpower_factor = 0.05
-						state_production_speed_buildings_factor = 0.05
-					}
-				}
-			}
-			669 = {
-				add_state_modifier = {
-					modifier = { 
-						local_building_slots = 2
-						local_building_slots = 1
-						local_manpower_factor = 0.15
-						state_production_speed_buildings_factor = 0.15
-					}
-				}
-			}
-			668 = {
-				add_state_modifier = {
-					modifier = { 
-						local_building_slots = 1
-						local_resources_factor = 0.10
-						local_manpower_factor = 0.05
-						state_production_speed_buildings_factor = 0.05
-					}
-				}
-			}
-		}
-	}
-
-	country_event = {
-		id = greneclyf_base.41
-		title = greneclyf_base.41.t
-		desc = greneclyf_base.41.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
-
-		immediate = {
-			1210 = {
-				set_demilitarized_zone = no
-			}
-		}
-
-		option = {
-			name = greneclyf_base.41.a
-			add_political_power = -100
-			add_stability = 0.03
-			add_state_core = 1210
-
-			1210 = {
-				set_state_name = "Yliss"
-			}
-			set_province_name = {
-				id = 10775
-				name = "Yliss"
-			}
-
-			1210 = {
-				add_state_modifier = {
-					modifier = { 
-						local_manpower = 0.05
-						local_supplies_factor = 0.05
-					}
-				}
-			}
-
-			add_timed_idea = {
-				idea = NCH_retaking_saor
-				days = 365
-			}
-		}
-	}
 	
-	# NEW CARDINAL #
-	country_event = {
-		id = greneclyf_base.42
-		title = greneclyf_base.42.t
-		desc = greneclyf_base.42.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
-
-		option = {
-			name = greneclyf_base.42.a
-			set_country_flag = NCH_cardinal_chosed
-		}
-	}
 
 	## WITCHES ##
 	# BLUE MAIL #
@@ -1024,6 +911,8 @@ add_namespace = greneclyf_core
 			}
 		}
 	}
+
+	
 
 
 
@@ -2130,6 +2019,122 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# BEE PRODUCTIVITY #
+	country_event = {
+		id = greneclyf_core.6
+		title = greneclyf_core.6.t
+		desc = greneclyf_core.6.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_core.6.a
+
+			670 = {
+				add_state_modifier = {
+					modifier = { 
+						recruitable_population_factor = 0.15
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.1
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			1209 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+			669 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 2
+						local_building_slots = 1
+						local_manpower_factor = 0.15
+						state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			668 = {
+				add_state_modifier = {
+					modifier = { 
+						local_building_slots = 1
+						local_resources_factor = 0.10
+						local_manpower_factor = 0.05
+						state_production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+		}
+	}
+	
+	# SAOR BACK #
+	country_event = {
+		id = greneclyf_core.7
+		title = greneclyf_core.7.t
+		desc = greneclyf_core.7.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		immediate = {
+			1210 = {
+				set_demilitarized_zone = no
+			}
+		}
+
+		option = {
+			name = greneclyf_core.7.a
+			add_political_power = -100
+			add_stability = 0.03
+			add_state_core = 1210
+
+			1210 = {
+				set_state_name = "Yliss"
+			}
+			set_province_name = {
+				id = 10775
+				name = "Yliss"
+			}
+
+			1210 = {
+				add_state_modifier = {
+					modifier = { 
+						local_manpower = 0.05
+						local_supplies_factor = 0.05
+					}
+				}
+			}
+
+			add_timed_idea = {
+				idea = NCH_retaking_saor
+				days = 365
+			}
+		}
+	}
+
+	# NEW CARDINAL #
+	country_event = {
+		id = greneclyf_core.8
+		title = greneclyf_core.8.t
+		desc = greneclyf_core.8.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_core.8.a
+			set_country_flag = NCH_cardinal_chosed
+		}
+	}
+
 	# Blosmport econom org #
 	country_event = {
 		id = greneclyf_core.100
@@ -2804,11 +2809,14 @@ add_namespace = greneclyf_core
 
 		option = {
        	name = greneclyf_arctic.1.a	
+		set_country_flag = NCH_island_found
+		mark_focus_tree_layout_dirty = yes
+		
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = -5 
 			}
-		set_country_flag = NCH_island_found
+		
 			AWT = {
 				1242 = {
 				transfer_state_to = NCH					
