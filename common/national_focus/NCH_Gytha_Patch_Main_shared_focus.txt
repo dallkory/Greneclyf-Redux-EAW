@@ -267,7 +267,7 @@ shared_focus = {
 		focus = NCH_blosmport_hive
 		focus = NCH_birth_control
 	}
-	
+
 	mutually_exclusive = {
 		focus = NCH_new_instituts
 	}
@@ -629,10 +629,9 @@ shared_focus = {
 	cost = 8
 	prerequisite = {
 		focus = NCH_brood_of_working_drones
-	}
-	prerequisite = {
 		focus = NCH_gaining_economic_power
 	}
+
 	mutually_exclusive = {
 		focus = NCH_mobilizing_the_economy
 	}
@@ -650,10 +649,9 @@ shared_focus = {
 	cost = 8
 	prerequisite = {
 		focus = NCH_ensure_full_employment
-	}
-	prerequisite = {
 		focus = NCH_gaining_economic_power
 	}
+
 	mutually_exclusive = {
 		focus = NCH_economics_of_friendship
 	}
@@ -1639,7 +1637,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_peaceful_coexistence
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 2
 	prerequisite = {
 		focus = NCH_river_pf_opportunity
 	}

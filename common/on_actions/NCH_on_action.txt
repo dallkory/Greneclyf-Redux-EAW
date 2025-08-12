@@ -196,7 +196,7 @@ on_actions = {
                 limit = {
 					focus_progress = {
 						focus = NCH_princess_in_a_high_castle
-						progress > 0.4
+						progress = 0.4
 					}
                 }
 				NCH = {
@@ -219,7 +219,7 @@ on_actions = {
                 limit = {
 					focus_progress = {
 						focus = NCH_emvassy_to_equestria
-						progress > 0.15
+						progress = 0.15
 					}
                 }
 				NCH = {
