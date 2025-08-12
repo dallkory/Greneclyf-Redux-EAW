@@ -702,7 +702,7 @@ NCH_hunger_bop_category = {
 
 	NCH_order_on_the_street = {
 		icon = d
-		cost = 30
+		cost = 75
 		days_remove = 50
 		#fire_only_once = no
 

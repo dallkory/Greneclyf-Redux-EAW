@@ -86,7 +86,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_dockyards_for_navy
 	icon = GFX_goal_fuelfleet
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_militarization_north
 	}
@@ -95,11 +95,13 @@ Shared_focus = {
 	y = 12
 
 	completion_reward = {
+		add_ideas = NCH_arctic_fleet
 		if = {
 			limit = {
 				owns_state = 1227
 			}
 			1227 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = fuel_silo
 					level = 1
@@ -112,6 +114,7 @@ Shared_focus = {
 				owns_state = 1236
 			}
 			1236 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = fuel_silo
 					level = 1
@@ -124,6 +127,7 @@ Shared_focus = {
 				owns_state = 1245
 			}
 			1245 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = fuel_silo
 					level = 1
@@ -136,8 +140,90 @@ Shared_focus = {
 				owns_state = 1242
 			}
 			1242 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1215
+			}
+			1215 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1234
+			}
+			1234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_army_base_behind_homeland
+	icon = GFX_goal_exppoligon
+	cost = 5
+	prerequisite = {
+		focus = NCH_militarization_north
+	}
+	
+	x = 49
+	y = 12
+
+	completion_reward = {
+		add_ideas = NCH_arctic_rocket
+
+		if = {
+			limit = {
+				owns_state = 1227
+			}
+			1227 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1245
+			}
+			1245 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1242
+			}
+			1242 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
 					level = 1
 				}
 			}
@@ -154,32 +240,7 @@ Shared_focus = {
 				}
 			}
 		}
-
-		if = {
-			limit = {
-				owns_state = 1234
-			}
-			1234 = {
-				add_building_construction = {
-					type = fuel_silo
-					level = 1
-				}
-			}
-		}
 	}
-}
-
-Shared_focus = {
-	id = NCH_army_base_behind_homeland
-	icon = GFX_goal_exppoligon
-	cost = 10
-	prerequisite = {
-		focus = NCH_militarization_north
-	}
-	
-	x = 49
-	y = 12
-
 }
 
 # ECOMONIC #
@@ -224,7 +285,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_resorurces_digging
 	icon = GFX_goal_geosurvey
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_development_in_ice
 	}
@@ -253,7 +314,7 @@ Shared_focus = {
 				amount = 15
 			}
 			add_resource = {
-				type = oil
+				type = steel
 				amount = 8
 			}
 			add_manpower = 10000
@@ -276,7 +337,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_trade_in_snow
 	icon = GFX_goal_marineresources
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_economic_development_in_ice
 	}
@@ -285,6 +346,20 @@ Shared_focus = {
 	y = 12
 
 	completion_reward = {
-		
+		1234 = {
+			add_resource = {
+				type = oil
+				amount = 7
+			}
+			add_manpower = 2500
+		}
+
+		1215 = {
+			add_resource = {
+				type = oil
+				amount = 13
+			}
+			add_manpower = 2500
+		}
 	}
 }

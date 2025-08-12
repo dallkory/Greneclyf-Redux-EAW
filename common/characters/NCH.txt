@@ -628,7 +628,7 @@ characters={
 		}
 	}
 
-	NCH_Moronlan={
+	NCH_Moronlan = {
 		name = Moronlan
 		portraits={
 			army={

@@ -127,6 +127,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/medecine.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_emergecy_plan"
+		textureFile = "gfx/interface/ideas/NCH/emergency_plan.png"
+	}
+
 
 
 

@@ -431,6 +431,43 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
+		
+		NCH_arctic_fleet = {
+			picture = d
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_fuel_consumption_factor = -0.15
+			}
+		}
+
+		NCH_arctic_rocket = {
+			picture = d
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				rocketry = 0.35
+			}
+
+			modifier = {
+				rocket_attack_factor = 0.1
+				production_speed_rocket_site_factor = 0.15
+			}
+		}
 
 		NCH_FRE_development = {
 			picture = d
@@ -554,7 +591,7 @@ ideas = {
 		### CRISIS ###
 
 		NCH_emergecy_plan_idea = {
-			picture = GFX_unknow
+			picture = emergecy_plan
 			allowed = {
 				always = yes
 			}
