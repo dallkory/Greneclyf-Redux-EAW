@@ -475,7 +475,7 @@ NCH_arctic_expedition_category = {
 		}
 
 		complete_effect = {
-			FROM = {
+			AWT = {
 				NCH.arctic_targets = {
 					transfer_state_to = NCH
 				}

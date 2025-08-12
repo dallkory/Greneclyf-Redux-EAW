@@ -532,7 +532,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_clans_of_Greneclyf
 	icon = GFX_goal_warlaw
-	cost = 10
+	cost = 8
 	prerequisite = {
 		focus = NCH_consolidation_political
 	}
@@ -557,7 +557,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_suppression_of_unrest
 	icon = GFX_goal_arest
-	cost = 10
+	cost = 8
 	prerequisite = {
 		focus = NCH_clans_of_Greneclyf
 	}
