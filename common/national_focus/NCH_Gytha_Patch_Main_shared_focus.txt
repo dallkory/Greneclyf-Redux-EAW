@@ -824,8 +824,8 @@ shared_focus = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
 			check_variable = {
-			which = NCH_var_boost
-			value = 5
+				which = NCH_var_boost
+				value > 5
 			}
 		}
 	}
@@ -864,13 +864,12 @@ shared_focus = {
 	x = 32
 	y = 17
 
-
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
 			check_variable = {
-			which = NCH_var_boost
-			value = 5
+				which = NCH_var_boost
+				value > 5
 			}
 		}
 	}
