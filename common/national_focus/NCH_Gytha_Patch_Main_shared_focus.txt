@@ -233,10 +233,9 @@ shared_focus = {
 
 	completion_reward = {
 		add_stability = 0.05
-		swap_ideas = {
-			remove_idea = NCH_Overpopulation
-			add_idea = NCH_Overpopulation_2
-		}
+		remove_ideas = NCH_Overpopulation
+		add_ideas = NCH_Overpopulation_2
+
 	}
 }
 
