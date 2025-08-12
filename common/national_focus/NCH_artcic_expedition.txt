@@ -345,6 +345,11 @@ Shared_focus = {
 	x = 55
 	y = 12
 
+	available = {
+		owns_state = 1234
+		owns_state = 1236
+	}
+
 	completion_reward = {
 		1234 = {
 			add_resource = {
