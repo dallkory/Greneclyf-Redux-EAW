@@ -245,10 +245,9 @@ shared_focus = {
 	cost = 8
 	prerequisite = {
 		focus = NCH_civil_rights_reform
-	}
-	prerequisite = {
 		focus = NCH_blosmport_hive
 	}
+
 	mutually_exclusive = {
 		focus = NCH_traditional_way_of_life
 	}
@@ -266,13 +265,13 @@ shared_focus = {
 	cost = 8
 	prerequisite = {
 		focus = NCH_blosmport_hive
-	}
-	prerequisite = {
 		focus = NCH_birth_control
 	}
+	
 	mutually_exclusive = {
 		focus = NCH_new_instituts
 	}
+
 	x = 18
 	y = 20
 
@@ -458,7 +457,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 8
 	prerequisite = {
 		focus = NCH_reforms_after_storm
 	}
