@@ -396,6 +396,7 @@ shared_focus = {
 		set_rule = {
 			can_declare_war_on_same_ideology = yes
 			can_guarantee_other_ideologies = yes
+			
 		}
 
 		set_country_flag = NCH_new_goverment_system_cf
@@ -538,21 +539,21 @@ shared_focus = {
 		every_core_state = {
 			add_state_modifier = {
 				modifier = {
-					local_building_slots_factor = 0.25
+					local_building_slots_factor = 0.35
 					local_manpower = 0.15
 					local_supplies = 0.075
 				}
 			}
 		}
 
-		add_offsite_building = {
-			type = arms_factory
-			level = 2
-		}
-		add_offsite_building = {
-			type = industrial_complex
-			level = 2
-		}
+		#add_offsite_building = {
+		#	type = arms_factory
+		#	level = 2
+		#}
+		#add_offsite_building = {
+		#	type = industrial_complex
+		#	level = 2
+		#}
 
 		#set_variable = { var = NCH_underground_cost  value = 50 }
 		#set_variable = { var = NCH_underground_slots value = 10 }
@@ -1647,53 +1648,76 @@ shared_focus = {
 	available = {
 		has_war = no
 		or = {
+			# Блок 1: FBK, WAT, FIR
 			and = {
-				has_opinion = {
-					target = FBK
-					value > 25
+				# Требуется, чтобы хотя бы одна из стран существовала
+				or = {
+					exists = FBK
+					exists = WAT
+					exists = FIR
 				}
-				has_opinion = {
-					target = WAT
-					value > 25
+
+				# Для каждой страны: либо она не существует (пропускаем), либо её мнение > 25
+				or = {
+					not = { exists = FBK }
+					has_opinion = { target = FBK value > 25 }
 				}
-				has_opinion = {
-					target = FIR
-					value > 25
+				or = {
+					not = { exists = WAT }
+					has_opinion = { target = WAT value > 25 }
+				}
+				or = {
+					not = { exists = FIR }
+					has_opinion = { target = FIR value > 25 }
 				}
 			}
 
+			# Блок 2: BAK, DMT, DEP, NUM, RCT, FRE, WIT, LCT
 			and = {
-				has_opinion = {
-					target = BAK
-					value > 25
+				# Хотя бы одна из этих стран должна существовать
+				or = {
+					exists = BAK
+					exists = DMT
+					exists = DEP
+					exists = NUM
+					exists = RCT
+					exists = FRE
+					exists = WIT
+					exists = LCT
 				}
-				has_opinion = {
-					target = DMT
-					value > 25
+
+				# Для каждой страны: либо её нет (пропускаем), либо opinion > 25
+				or = {
+					not = { exists = BAK }
+					has_opinion = { target = BAK value > 25 }
 				}
-				has_opinion = {
-					target = DEP
-					value > 25
+				or = {
+					not = { exists = DMT }
+					has_opinion = { target = DMT value > 25 }
 				}
-				has_opinion = {
-					target = NUM
-					value > 25
+				or = {
+					not = { exists = DEP }
+					has_opinion = { target = DEP value > 25 }
 				}
-				has_opinion = {
-					target = RCT
-					value > 25
+				or = {
+					not = { exists = NUM }
+					has_opinion = { target = NUM value > 25 }
 				}
-				has_opinion = {
-					target = FRE
-					value > 25
+				or = {
+					not = { exists = RCT }
+					has_opinion = { target = RCT value > 25 }
 				}
-				has_opinion = {
-					target = WIT
-					value > 25
+				or = {
+					not = { exists = FRE }
+					has_opinion = { target = FRE value > 25 }
 				}
-				has_opinion = {
-					target = LCT
-					value > 25
+				or = {
+					not = { exists = WIT }
+					has_opinion = { target = WIT value > 25 }
+				}
+				or = {
+					not = { exists = LCT }
+					has_opinion = { target = LCT value > 25 }
 				}
 			}
 		}

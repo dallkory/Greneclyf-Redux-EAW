@@ -74,17 +74,6 @@ NCH_typography_category = {
 	}
 }
 
-NCH_trade_with_pony_of_hills = {
-	icon = GFX_unknow
-	
-	visible = {
-		has_completed_focus = NCH_hoof_of_help
-	}
-	priority = {
-		base = 149
-	}
-}
-
 NCH_queen_plan = {
 	icon = GFX_unknow
 

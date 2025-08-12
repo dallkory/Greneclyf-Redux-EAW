@@ -1229,21 +1229,6 @@ NCH_typography_category = {
 	}
 }
 
-# PONY OF HILLS #
-NCH_trade_with_pony_of_hills = {
-	NCH_trade_with_FBK = {
-		icon =d
-		cost = 75
-		days_remove = 45
-	
-		modifier = {
-		}
-
-		remove_effect = {
-		}
-	}
-}
-
 
 # GOV ROTATION #
 NCH_gov_rotation_category = {
