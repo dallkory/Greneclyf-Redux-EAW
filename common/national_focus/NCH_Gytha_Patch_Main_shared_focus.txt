@@ -696,73 +696,113 @@ shared_focus = {
 
 		hidden_effect = {
 			RCT = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			BAK = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			DMT = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			NIM = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			DEP = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			LCT = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			FRE = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
 
 			WIT = {
-				capital_scope = {
-					add_to_array = {
-						array = NCH.boost_targets
-						value = THIS
+				if = {
+					limit = {
+						is_puppet = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
 					}
 				}
 			}
