@@ -50,7 +50,7 @@ shared_focus = {
 		#add_political_power = 50
 
 		country_event = {
-			id = greneclyf_redux.34
+			id = greneclyf_base.34
 			days = 0
 		}
 	}
@@ -296,7 +296,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.42
+			id = greneclyf_base.42
 			days = 0
 		}
 	}
@@ -493,7 +493,7 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
-		country_event = greneclyf_redux.40
+		country_event = greneclyf_base.40
 	}
 }
 
@@ -516,7 +516,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.41
+			id = greneclyf_base.41
 		}
 	}
 }

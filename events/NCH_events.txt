@@ -1,6 +1,6 @@
-﻿add_namespace = greneclyf_redux
+﻿add_namespace = greneclyf_base
 add_namespace = greneclyf_forces
-#add_namespace = greneclyf_main
+#add_namespace = greneclyf_crisis
 add_namespace = greneclyf_obsidian
 add_namespace = greneclyf_foregin
 add_namespace = greneclyf_arctic
@@ -30,15 +30,15 @@ add_namespace = greneclyf_core
 
 	# LEGACY #
 	country_event = {
-		id = greneclyf_redux.1
-		title = greneclyf_redux.1.t
-		desc = greneclyf_redux.1.d
+		id = greneclyf_base.1
+		title = greneclyf_base.1.t
+		desc = greneclyf_base.1.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.1.a 
+			name = greneclyf_base.1.a 
 			add_political_power = 30
 			add_ideas = NCH_Basalt_Shaw
 			set_country_flag = NCH_Moronlan_Legacy
@@ -57,15 +57,15 @@ add_namespace = greneclyf_core
 
 	#PAIRLAMENT#
 	country_event = {
-		id = greneclyf_redux.2
-		title = greneclyf_redux.2.t
-		desc = greneclyf_redux.2.d
+		id = greneclyf_base.2
+		title = greneclyf_base.2.t
+		desc = greneclyf_base.2.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.2.a 
+			name = greneclyf_base.2.a 
 			#add_political_power = 50
 			set_country_flag = pairlament_convenction_completed
 
@@ -74,20 +74,20 @@ add_namespace = greneclyf_core
 
 	# Gytha Jorney #
 	country_event = {
-		id = greneclyf_redux.3
-		title = greneclyf_redux.3.t
-		desc = greneclyf_redux.3.d
+		id = greneclyf_base.3
+		title = greneclyf_base.3.t
+		desc = greneclyf_base.3.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.3.a 
+			name = greneclyf_base.3.a 
 			custom_effect_tooltip = NCH_lay_down_LNG_Gytha
 			set_country_flag = NCH_Jorney_started
 
 			country_event = {
-				id = greneclyf_redux.4
+				id = greneclyf_base.4
 				days = 7
 			}
 
@@ -144,19 +144,19 @@ add_namespace = greneclyf_core
 
 	# ACELING JORNEY #
 	country_event = {
-		id = greneclyf_redux.4
-		title = greneclyf_redux.4.t
-		desc = greneclyf_redux.4.d
+		id = greneclyf_base.4
+		title = greneclyf_base.4.t
+		desc = greneclyf_base.4.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.4.a 
+			name = greneclyf_base.4.a 
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_redux.5
+				id = greneclyf_base.5
 				days = 7
 			}
 		}
@@ -164,19 +164,19 @@ add_namespace = greneclyf_core
 
 	# BUGSMERE JORNEY #
 	country_event = {
-		id = greneclyf_redux.5
-		title = greneclyf_redux.5.t
-		desc = greneclyf_redux.5.d
+		id = greneclyf_base.5
+		title = greneclyf_base.5.t
+		desc = greneclyf_base.5.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.5.a 
+			name = greneclyf_base.5.a 
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_redux.26
+				id = greneclyf_base.26
 				days = 5
 			}
 		}
@@ -184,19 +184,19 @@ add_namespace = greneclyf_core
 
 	# SAINT PLACE JORNEY #
 	country_event = {
-		id = greneclyf_redux.26
-		title = greneclyf_redux.26.t
-		desc = greneclyf_redux.26.d
+		id = greneclyf_base.26
+		title = greneclyf_base.26.t
+		desc = greneclyf_base.26.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.26.a 
+			name = greneclyf_base.26.a 
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_redux.30
+				id = greneclyf_base.30
 				days = 0
 			}
 		}
@@ -204,19 +204,19 @@ add_namespace = greneclyf_core
 
 		# SAINT PLACE JORNEY X2 #
 		country_event = {
-			id = greneclyf_redux.30
-			title = greneclyf_redux.30.t
-			desc = greneclyf_redux.30.d
+			id = greneclyf_base.30
+			title = greneclyf_base.30.t
+			desc = greneclyf_base.30.d
 			picture = GFX_unknow
 			is_triggered_only = yes
 			fire_only_once = yes
 	
 			option={
-				name = greneclyf_redux.30.a 
+				name = greneclyf_base.30.a 
 				#add_political_power = 50
 	
 				country_event = {
-					id = greneclyf_redux.6
+					id = greneclyf_base.6
 					days = 5
 				}
 			}
@@ -224,15 +224,15 @@ add_namespace = greneclyf_core
 
 	# WAY TO HOME JORNEY #
 	country_event = {
-		id = greneclyf_redux.6
-		title = greneclyf_redux.6.t
-		desc = greneclyf_redux.6.d
+		id = greneclyf_base.6
+		title = greneclyf_base.6.t
+		desc = greneclyf_base.6.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option={
-			name = greneclyf_redux.6.a 
+			name = greneclyf_base.6.a 
 			custom_effect_tooltip = NCH_oiren_hired
 			add_political_power = 50
 			
@@ -243,30 +243,30 @@ add_namespace = greneclyf_core
 	}
 
 	country_event = {
-		id = greneclyf_redux.7
-		title = greneclyf_redux.7.t
-		desc = greneclyf_redux.7.d
+		id = greneclyf_base.7
+		title = greneclyf_base.7.t
+		desc = greneclyf_base.7.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.7.a
+			name = greneclyf_base.7.a
 			add_ideas = NCH_economic_status_protect #Economic type
 		}
 	}
 
 	# Typography #
 	country_event = {
-		id = greneclyf_redux.700
-		title = greneclyf_redux.700.t
-		desc = greneclyf_redux.700.d
+		id = greneclyf_base.700
+		title = greneclyf_base.700.t
+		desc = greneclyf_base.700.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.700.a
+			name = greneclyf_base.700.a
 			add_political_power = 25
 			custom_effect_tooltip = NCH_typography_create_ttip
 			set_country_flag = NCH_typography_create
@@ -275,15 +275,15 @@ add_namespace = greneclyf_core
 
 	# Urbanization and Valha hire #
 	country_event = {
-		id = greneclyf_redux.8
-		title = greneclyf_redux.8.t
-		desc = greneclyf_redux.8.d
+		id = greneclyf_base.8
+		title = greneclyf_base.8.t
+		desc = greneclyf_base.8.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.8.a
+			name = greneclyf_base.8.a
 			set_country_flag = NCH_valha_hired
 			custom_effect_tooltip = NCH_valha_hired
 
@@ -326,19 +326,19 @@ add_namespace = greneclyf_core
 	### HUNGER STARTED ###
 	## ALL IS FINE ##
 	country_event = {
-		id = greneclyf_redux.9
-		title = greneclyf_redux.9.t
-		desc = greneclyf_redux.9.d
+		id = greneclyf_base.9
+		title = greneclyf_base.9.t
+		desc = greneclyf_base.9.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.9.a
+			name = greneclyf_base.9.a
 
 			hidden_effect = {
 				country_event = {
-					id = greneclyf_redux.32
+					id = greneclyf_base.32
 					days = 28
 				}
 			}
@@ -346,20 +346,21 @@ add_namespace = greneclyf_core
 	}
 
 	country_event = {
-		id = greneclyf_redux.32
-		title = greneclyf_redux.32.t
-		desc = greneclyf_redux.32.d
+		id = greneclyf_base.32
+		title = greneclyf_base.32.t
+		desc = greneclyf_base.32.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.32.a
+			name = greneclyf_base.32.a
 
 			hidden_effect = {
 				country_event = {
-					id = greneclyf_redux.10
-					days = 56
+					id = greneclyf_base.10
+					days = 50
+					random_days = 25
 				}
 			}
 		}
@@ -368,30 +369,30 @@ add_namespace = greneclyf_core
 
 	# CELARL LABORATORY #
 	country_event = {
-		id = greneclyf_redux.18
-		title = greneclyf_redux.18.t
-		desc = greneclyf_redux.18.d
+		id = greneclyf_base.18
+		title = greneclyf_base.18.t
+		desc = greneclyf_base.18.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.18.a
+			name = greneclyf_base.18.a
 			set_country_flag = NCH_celarl_laboratory_opend
 		}
 	}
 
 	# HUNGER STARTS #
 	country_event = {
-		id = greneclyf_redux.10
-		title = greneclyf_redux.10.t
-		desc = greneclyf_redux.10.d
+		id = greneclyf_base.10
+		title = greneclyf_base.10.t
+		desc = greneclyf_base.10.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.10.a
+			name = greneclyf_base.10.a
 			set_country_flag = NCH_greet_future
 			set_country_flag = NCH_great_hunger_started
 
@@ -406,14 +407,14 @@ add_namespace = greneclyf_core
 				set_default = yes
 			}
 			#country_event = {
-			#	id = greneclyf_redux.11
+			#	id = greneclyf_base.11
 			#	days = 15
 			#}
 			set_country_flag = NCH_hunger_starts
 		}
 
 		option = {
-			name = greneclyf_redux.10.b
+			name = greneclyf_base.10.b
 			hidden_effect = {
 				country_event = country_capitulated.1
 			}
@@ -422,60 +423,60 @@ add_namespace = greneclyf_core
 
 	# unloyal elite #
 	country_event = {
-		id = greneclyf_redux.11
-		title = greneclyf_redux.11.t
-		desc = greneclyf_redux.11.d
+		id = greneclyf_base.11
+		title = greneclyf_base.11.t
+		desc = greneclyf_base.11.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.11.a
+			name = greneclyf_base.11.a
 
 		}
 	}
 
 	# food limit #
 	country_event = {
-		id = greneclyf_redux.12
-		title = greneclyf_redux.12.t
-		desc = greneclyf_redux.12.d
+		id = greneclyf_base.12
+		title = greneclyf_base.12.t
+		desc = greneclyf_base.12.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.12.a
+			name = greneclyf_base.12.a
 
 		}
 	}
 
 	# unemployed #
 	country_event = {
-		id = greneclyf_redux.13
-		title = greneclyf_redux.13.t
-		desc = greneclyf_redux.13.d
+		id = greneclyf_base.13
+		title = greneclyf_base.13.t
+		desc = greneclyf_base.13.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.13.a
+			name = greneclyf_base.13.a
 
 		}
 	}
 
 	# hunger defeat #
 	country_event = {
-		id = greneclyf_redux.14
-		title = greneclyf_redux.14.t
-		desc = greneclyf_redux.14.d
+		id = greneclyf_base.14
+		title = greneclyf_base.14.t
+		desc = greneclyf_base.14.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.14.a
+			name = greneclyf_base.14.a
 			set_country_flag = NCH_hunger_defeat
 		}
 	}
@@ -485,37 +486,37 @@ add_namespace = greneclyf_core
 	### CRISIS ###
 	# Meet with trade emissars #
 	country_event = {
-		id = greneclyf_redux.15
-		title = greneclyf_redux.15.t
-		desc = greneclyf_redux.15.d
+		id = greneclyf_base.15
+		title = greneclyf_base.15.t
+		desc = greneclyf_base.15.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.15.a
+			name = greneclyf_base.15.a
 		}
 	}
 	
 	# SAOR liberty trade zone #
 	country_event = {
-		id = greneclyf_redux.16
-		title = greneclyf_redux.16.t
-		desc = greneclyf_redux.16.d
+		id = greneclyf_base.16
+		title = greneclyf_base.16.t
+		desc = greneclyf_base.16.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.16.a
+			name = greneclyf_base.16.a
 		}
 	}
 	# ALONE CAPITAN - DMZ #
 	### SAOR ###
 	country_event = {
-		id = greneclyf_redux.17
-		title = greneclyf_redux.17.t
-		desc = greneclyf_redux.17.d
+		id = greneclyf_base.17
+		title = greneclyf_base.17.t
+		desc = greneclyf_base.17.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
@@ -527,7 +528,7 @@ add_namespace = greneclyf_core
 		}
 
 		option = {
-			name = greneclyf_redux.17.a
+			name = greneclyf_base.17.a
 			add_stability = -0.05
 			add_political_power = -50
 
@@ -541,7 +542,7 @@ add_namespace = greneclyf_core
 			}
 
 			country_event = {
-				id = greneclyf_redux.21
+				id = greneclyf_base.21
 				days = 50
 			}
 		}
@@ -549,19 +550,19 @@ add_namespace = greneclyf_core
 
 	# FEAR IN SAOR #
 	country_event = {
-		id = greneclyf_redux.21
-		title = greneclyf_redux.21.t
-		desc = greneclyf_redux.21.d
+		id = greneclyf_base.21
+		title = greneclyf_base.21.t
+		desc = greneclyf_base.21.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 
 		option = {
-			name = greneclyf_redux.21.a
+			name = greneclyf_base.21.a
 
 			country_event = {
-				id = greneclyf_redux.22
+				id = greneclyf_base.22
 				days = 7
 			}
 		}
@@ -569,40 +570,40 @@ add_namespace = greneclyf_core
 
 	# BAD REPPORT #
 	country_event = {
-		id = greneclyf_redux.22
-		title = greneclyf_redux.22.t
-		desc = greneclyf_redux.22.d
+		id = greneclyf_base.22
+		title = greneclyf_base.22.t
+		desc = greneclyf_base.22.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 
 		option = {
-			name = greneclyf_redux.22.a
+			name = greneclyf_base.22.a
 
 			country_event = {
-				id = greneclyf_redux.23
+				id = greneclyf_base.23
 				days = 50
 			}
 		}
 
 		option = {
-			name = greneclyf_redux.22.b
+			name = greneclyf_base.22.b
 		}
 	}
 
 	# SAOR NOIER #
 	country_event = {
-		id = greneclyf_redux.23
-		title = greneclyf_redux.23.t
-		desc = greneclyf_redux.23.d
+		id = greneclyf_base.23
+		title = greneclyf_base.23.t
+		desc = greneclyf_base.23.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 
 		option = {
-			name = greneclyf_redux.23.a
+			name = greneclyf_base.23.a
 
 			add_stability = 0.05
 			add_power_balance_value = {
@@ -612,9 +613,9 @@ add_namespace = greneclyf_core
 		}
 
 		option = {
-			name = greneclyf_redux.23.b
+			name = greneclyf_base.23.b
 			country_event = {
-				id = greneclyf_redux.24
+				id = greneclyf_base.24
 				days = 30
 			}
 		}
@@ -622,15 +623,15 @@ add_namespace = greneclyf_core
 
 	# VENDETTA #
 	country_event = {
-		id = greneclyf_redux.24
-		title = greneclyf_redux.24.t
-		desc = greneclyf_redux.24.d
+		id = greneclyf_base.24
+		title = greneclyf_base.24.t
+		desc = greneclyf_base.24.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.24.a
+			name = greneclyf_base.24.a
 			add_political_power = 50
 			set_country_flag = NCH_Vendetta_choice
 
@@ -644,57 +645,57 @@ add_namespace = greneclyf_core
 	### ###
 
 	country_event = {
-		id = greneclyf_redux.19
-		title = greneclyf_redux.19.t
-		desc = greneclyf_redux.19.d
+		id = greneclyf_base.19
+		title = greneclyf_base.19.t
+		desc = greneclyf_base.19.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.19.a
+			name = greneclyf_base.19.a
 		}
 	}
 
 	# Stairs of unequal #
 	country_event = {
-		id = greneclyf_redux.20
-		title = greneclyf_redux.20.t
-		desc = greneclyf_redux.20.d
+		id = greneclyf_base.20
+		title = greneclyf_base.20.t
+		desc = greneclyf_base.20.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.20.a
+			name = greneclyf_base.20.a
 		}
 	}
 
 	# LOVERS DEALS #
 	country_event = {
-		id = greneclyf_redux.25
-		title = greneclyf_redux.25.t
-		desc = greneclyf_redux.25.d
+		id = greneclyf_base.25
+		title = greneclyf_base.25.t
+		desc = greneclyf_base.25.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.25.a
+			name = greneclyf_base.25.a
 		}
 	}
 
 	# TYPOGRAPHY PROPAGANDA #
 	country_event = {
-		id = greneclyf_redux.27
-		title = greneclyf_redux.27.t
-		desc = greneclyf_redux.27.d
+		id = greneclyf_base.27
+		title = greneclyf_base.27.t
+		desc = greneclyf_base.27.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.27.a
+			name = greneclyf_base.27.a
 
 			set_country_flag = NCH_start_propaganda_company
 		}
@@ -702,15 +703,15 @@ add_namespace = greneclyf_core
 
 	# CHURCH SUPPORT #
 	country_event = {
-		id = greneclyf_redux.28
-		title = greneclyf_redux.28.t
-		desc = greneclyf_redux.28.d
+		id = greneclyf_base.28
+		title = greneclyf_base.28.t
+		desc = greneclyf_base.28.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.28.a
+			name = greneclyf_base.28.a
 
 		}
 	}
@@ -718,15 +719,15 @@ add_namespace = greneclyf_core
 	# QUEEN SPEAKS #
 	# ACTUAL 1.2 #
 	country_event = {
-		id = greneclyf_redux.29
-		title = greneclyf_redux.29.t
-		desc = greneclyf_redux.29.d
+		id = greneclyf_base.29
+		title = greneclyf_base.29.t
+		desc = greneclyf_base.29.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.29.a
+			name = greneclyf_base.29.a
 			add_political_power = 100
 			add_stability = 0.15
 		}
@@ -735,59 +736,59 @@ add_namespace = greneclyf_core
 	## ##
 	# SOLDIERS RISING #
 	country_event = {
-		id = greneclyf_redux.30
-		title = greneclyf_redux.30.t
-		desc = greneclyf_redux.30.d
+		id = greneclyf_base.30
+		title = greneclyf_base.30.t
+		desc = greneclyf_base.30.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.30.a
+			name = greneclyf_base.30.a
 
 		}
 	}
 
 	# BLOOD IN THE STREETS #
 	country_event = {
-		id = greneclyf_redux.31
-		title = greneclyf_redux.31.t
-		desc = greneclyf_redux.31.d
+		id = greneclyf_base.31
+		title = greneclyf_base.31.t
+		desc = greneclyf_base.31.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.31.a
+			name = greneclyf_base.31.a
 
 		}
 	}
 
 	country_event = {
-		id = greneclyf_redux.33
-		title = greneclyf_redux.33.t
-		desc = greneclyf_redux.33.d
+		id = greneclyf_base.33
+		title = greneclyf_base.33.t
+		desc = greneclyf_base.33.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
 			clr_country_flag = NCH_great_hunger_started
-			name = greneclyf_redux.33.a
+			name = greneclyf_base.33.a
 		}
 	}
 
 	# BEE PRODUCTIVITY #
 	country_event = {
-		id = greneclyf_redux.40
-		title = greneclyf_redux.40.t
-		desc = greneclyf_redux.40.d
+		id = greneclyf_base.40
+		title = greneclyf_base.40.t
+		desc = greneclyf_base.40.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.40.a
+			name = greneclyf_base.40.a
 
 			670 = {
 				add_state_modifier = {
@@ -834,9 +835,9 @@ add_namespace = greneclyf_core
 	}
 
 	country_event = {
-		id = greneclyf_redux.41
-		title = greneclyf_redux.41.t
-		desc = greneclyf_redux.41.d
+		id = greneclyf_base.41
+		title = greneclyf_base.41.t
+		desc = greneclyf_base.41.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
@@ -848,7 +849,7 @@ add_namespace = greneclyf_core
 		}
 
 		option = {
-			name = greneclyf_redux.41.a
+			name = greneclyf_base.41.a
 			add_political_power = -100
 			add_stability = 0.03
 			add_state_core = 1210
@@ -879,15 +880,15 @@ add_namespace = greneclyf_core
 	
 	# NEW CARDINAL #
 	country_event = {
-		id = greneclyf_redux.42
-		title = greneclyf_redux.42.t
-		desc = greneclyf_redux.42.d
+		id = greneclyf_base.42
+		title = greneclyf_base.42.t
+		desc = greneclyf_base.42.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.42.a
+			name = greneclyf_base.42.a
 			set_country_flag = NCH_cardinal_chosed
 		}
 	}
@@ -895,17 +896,17 @@ add_namespace = greneclyf_core
 	## WITCHES ##
 	# BLUE MAIL #
 	country_event = {
-		id = greneclyf_redux.34
-		title = greneclyf_redux.34.t
-		desc = greneclyf_redux.34.d
+		id = greneclyf_base.34
+		title = greneclyf_base.34.t
+		desc = greneclyf_base.34.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.34.a
+			name = greneclyf_base.34.a
 			country_event = {
-				id = greneclyf_redux.35
+				id = greneclyf_base.35
 				days = 10
 			}
 		}
@@ -913,17 +914,17 @@ add_namespace = greneclyf_core
 
 	# FINDS #
 	country_event = {
-		id = greneclyf_redux.35
-		title = greneclyf_redux.35.t
-		desc = greneclyf_redux.35.d
+		id = greneclyf_base.35
+		title = greneclyf_base.35.t
+		desc = greneclyf_base.35.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.35.a
+			name = greneclyf_base.35.a
 			country_event = {
-				id = greneclyf_redux.36
+				id = greneclyf_base.36
 				days = 1
 			}
 		}
@@ -931,17 +932,17 @@ add_namespace = greneclyf_core
 
 	# SURVIVE #
 	country_event = {
-		id = greneclyf_redux.36
-		title = greneclyf_redux.36.t
-		desc = greneclyf_redux.36.d
+		id = greneclyf_base.36
+		title = greneclyf_base.36.t
+		desc = greneclyf_base.36.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.36.a
+			name = greneclyf_base.36.a
 			country_event = {
-				id = greneclyf_redux.37
+				id = greneclyf_base.37
 				days = 0
 			}
 		}
@@ -949,17 +950,17 @@ add_namespace = greneclyf_core
 
 	# AFTER DARK #
 	country_event = {
-		id = greneclyf_redux.37
-		title = greneclyf_redux.37.t
-		desc = greneclyf_redux.37.d
+		id = greneclyf_base.37
+		title = greneclyf_base.37.t
+		desc = greneclyf_base.37.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.37.a
+			name = greneclyf_base.37.a
 			country_event = {
-				id = greneclyf_redux.38
+				id = greneclyf_base.38
 				days = 0
 			}
 		}
@@ -967,18 +968,18 @@ add_namespace = greneclyf_core
 
 	# SHINE SUNRISE #
 	country_event = {
-		id = greneclyf_redux.38
-		title = greneclyf_redux.38.t
-		desc = greneclyf_redux.38.d
+		id = greneclyf_base.38
+		title = greneclyf_base.38.t
+		desc = greneclyf_base.38.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
 			add_manpower = -300
-			name = greneclyf_redux.38.a
+			name = greneclyf_base.38.a
 			country_event = {
-				id = greneclyf_redux.39
+				id = greneclyf_base.39
 				days = 30
 			}
 		}
@@ -986,15 +987,15 @@ add_namespace = greneclyf_core
 
 	# KVINTET #
 	country_event = {
-		id = greneclyf_redux.39
-		title = greneclyf_redux.39.t
-		desc = greneclyf_redux.39.d
+		id = greneclyf_base.39
+		title = greneclyf_base.39.t
+		desc = greneclyf_base.39.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_redux.39.a
+			name = greneclyf_base.39.a
 			add_ideas = NCH_Majestic_V
 
 			## ADD 5 WITCHES ##
@@ -1027,7 +1028,7 @@ add_namespace = greneclyf_core
 
 
 	### FORCES ###
-
+	# Best of the best #
 	country_event = {
 		id = greneclyf_forces.1
 		title = greneclyf_forces.1.t
@@ -1056,17 +1057,19 @@ add_namespace = greneclyf_core
 
 	### CHANGE ###
 	country_event = {
-		id = greneclyf_forces.99
-		title = greneclyf_forces.99.t
-		desc = greneclyf_forces.99.d
+		id = greneclyf_forces.3
+		title = greneclyf_forces.3.t
+		desc = greneclyf_forces.3.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = {
-			name = greneclyf_forces.99.a
+			name = greneclyf_forces.3.a
 		}
 	}
+
+
 	### OBS ###
 	country_event = {
 		id = greneclyf_obsidian.1
@@ -2204,7 +2207,7 @@ add_namespace = greneclyf_core
 		}
 
 		option = {
-			name = greneclyf_redux.101.a
+			name = greneclyf_base.101.a
 			#set_country_flag = NCH_neg_blosmport_economic
 		}
 	}
@@ -2297,7 +2300,7 @@ add_namespace = greneclyf_core
 		is_triggered_only = yes
 
 		option = {
-			name = greneclyf_redux.104.a
+			name = greneclyf_base.104.a
 			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
@@ -2392,7 +2395,7 @@ add_namespace = greneclyf_core
 		is_triggered_only = yes
 
 		option = {
-			name = greneclyf_redux.107.a
+			name = greneclyf_base.107.a
 			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
@@ -2487,7 +2490,7 @@ add_namespace = greneclyf_core
 		is_triggered_only = yes
 
 		option = {
-			name = greneclyf_redux.110.a
+			name = greneclyf_base.110.a
 			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
@@ -2582,7 +2585,7 @@ add_namespace = greneclyf_core
 		is_triggered_only = yes
 
 		option = {
-			name = greneclyf_redux.113.a
+			name = greneclyf_base.113.a
 			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv

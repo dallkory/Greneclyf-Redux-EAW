@@ -433,7 +433,7 @@ ideas = {
 		}
 		
 		NCH_arctic_fleet = {
-			picture = d
+			picture = arctic_fleet
 			allowed = {
 				always = yes
 			}
@@ -449,7 +449,7 @@ ideas = {
 		}
 
 		NCH_arctic_rocket = {
-			picture = d
+			picture = arctic_rocket
 			allowed = {
 				always = yes
 			}
@@ -720,7 +720,7 @@ ideas = {
 		}
 
 		NCH_arctic_conquest = {
-			picture = x
+			picture = arctic_conquest
 			allowed = {
 				always = yes
 			}

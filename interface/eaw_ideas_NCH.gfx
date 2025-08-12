@@ -64,7 +64,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_protest_on_street"
-		textureFile = "gfx/interface/ideas/NCH/protest_on_street.tga"
+		textureFile = "gfx/interface/ideas/NCH/protest_on_strreet.png"
 	}
 
 	spriteType = {
@@ -131,6 +131,24 @@ spriteTypes = {
 		name = "GFX_idea_emergecy_plan"
 		textureFile = "gfx/interface/ideas/NCH/emergency_plan.png"
 	}
+
+	spriteType = {
+		name = "GFX_idea_arctic_conquest"
+		textureFile = "gfx/interface/ideas/NCH/arctic_conquest.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_arctic_fleet"
+		textureFile = "gfx/interface/ideas/NCH/arctic_fleet.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_arctic_rocket"
+		textureFile = "gfx/interface/ideas/NCH/arctic_rocket.dds"
+	}
+
+
+
 
 
 

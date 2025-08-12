@@ -57,7 +57,7 @@ Shared_focus = {
 	completion_reward = {
 
 		country_event = {
-			id = greneclyf_redux.19
+			id = greneclyf_base.19
 			days = 0
 		}
 
@@ -91,7 +91,7 @@ Shared_focus = {
 		add_political_power = 50
 
 		country_event = {
-			id = greneclyf_redux.20
+			id = greneclyf_base.20
 			days = 0
 		}
 
@@ -309,7 +309,7 @@ Shared_focus = {
 		add_political_power = 50
 		add_stability = 0.075
 		country_event = {
-			id = greneclyf_redux.28
+			id = greneclyf_base.28
 			days = 0
 		}
 
@@ -338,7 +338,7 @@ Shared_focus = {
 		add_political_power = 30
 		add_stability = 0.05
 		country_event = {
-			id = greneclyf_redux.27
+			id = greneclyf_base.27
 			days = 0
 		}
 		add_power_balance_value = {
@@ -431,7 +431,7 @@ Shared_focus = {
 			value = 0.05
 		}
 
-		custom_effect_tooltip = NCH_start_friendship_with_pony_hills
+		#custom_effect_tooltip = NCH_start_friendship_with_pony_hills
 	}
 }
 
@@ -458,7 +458,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.25
+			id = greneclyf_base.25
 			days = 0
 		}
 	}
@@ -476,7 +476,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.15
+			id = greneclyf_base.15
 			days = 0
 		}			
 
@@ -523,7 +523,7 @@ Shared_focus = {
 		}
 
 		country_event = {
-			id = greneclyf_redux.16
+			id = greneclyf_base.16
 			days = 0
 		}
 	}
@@ -548,7 +548,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.29
+			id = greneclyf_base.29
 			days = 0
 		}
 	}
@@ -599,7 +599,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.33
+			id = greneclyf_base.33
 			days = 0
 		}
 
@@ -624,7 +624,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.17
+			id = greneclyf_base.17
 			days = 15
 		}
 	}
