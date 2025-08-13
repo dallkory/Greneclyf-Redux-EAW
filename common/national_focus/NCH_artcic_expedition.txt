@@ -42,7 +42,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_colony_development
 	icon = GFX_goal_arccity
-	cost = 5
+	cost = 2
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}

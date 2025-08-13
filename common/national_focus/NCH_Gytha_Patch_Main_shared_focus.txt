@@ -396,7 +396,7 @@ shared_focus = {
 		set_rule = {
 			can_declare_war_on_same_ideology = yes
 			can_guarantee_other_ideologies = yes
-			
+			can_only_justify_war_on_threat_country = no
 		}
 
 		set_country_flag = NCH_new_goverment_system_cf
@@ -928,7 +928,7 @@ shared_focus = {
 	y = 16
 
 	available = {
-		has_completed_focus = NCH_patch_to_prosperty
+		#has_completed_focus = NCH_patch_to_prosperty
 	}
 	
 	completion_reward = {
@@ -1657,6 +1657,9 @@ shared_focus = {
 				is_riverlands_country = yes
 				is_in_faction = yes
 				is_faction_leader = yes
+				not = {
+					tag = NCH
+				}
 			}
 			country_event = {
 				id = greneclyf_core.2
@@ -2658,6 +2661,8 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_make_us_stronger
 	}
+
+	# NEED TO CHANGE #
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_one_more_dream

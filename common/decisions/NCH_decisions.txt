@@ -454,59 +454,67 @@ NCH_arctic_expedition_category = {
 		visible = {
 			has_completed_focus = NCH_land_behind_seas
 			has_government = democratic
+			
+			FROM = {
+				not = {
+					has_state_flag = NCH_arctic_found_colony
+				}
+			}
 		}
 
 		custom_cost_text = NCH_arctic_cost
-
-		days_remove = 70
+		
 		custom_cost_trigger= {
 			#check_variable = {
 			#	var = command_power
 			#	value = 15
 			#	compare = greater_than_or_equals
 			#}
-			has_political_power = 30
-			has_manpower = 1200
-			has_equipment = { convoy = 25 }
+			has_equipment = { convoy > 4 }
+			has_political_power > 29
+			has_manpower > 1199
+			
 		}
+		days_remove = 70
 
 		modifier = {
 			civilian_factory_use = 3
+			command_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 40
 		}
 
 		complete_effect = {
-			AWT = {
-				NCH.arctic_targets = {
-					transfer_state_to = NCH
-				}
-				NCH.arctic_targets = {
+			FROM = {
+				transfer_state_to = NCH
+				hidden_effect = {
 					remove_core_of = AWT
-					add_core_of = NCH
 				}
-				NCH.arctic_targets = {
-					add_manpower = 1200
-					add_extra_state_shared_building_slots = 1
-				}
+				add_core_of = NCH
+
+				add_manpower = 1200
+				add_extra_state_shared_building_slots = 1
+
+				set_state_flag = NCH_arctic_found_colony
 			}
 
 			hidden_effect = {
-				#add_command_power = -15
 				add_political_power = -30
 				add_manpower = -1200 
-				add_equipment_to_stockpile = { type = convoy amount = -25 } 
+				add_equipment_to_stockpile = { type = convoy amount = -5 } 
 			}
+		}
+
+		remove_effect = {
+			
 		}
 		
 		cancel_trigger = {
 			not = {
 				has_manpower < 1200
 				has_equipment = {
-					convoy < 24
-				}
-
-				has_equipment_to_stockpile = {
-				type = convoy
-				amount < 5 
+					convoy < 4
 				}
 			}
 		}
@@ -1042,6 +1050,7 @@ NCH_typography_category = {
 
 		visible = {
 			has_idea = NCH_luddites_1
+			has_idea = NCH_luddites_2
 		}
 
 		modifier = {

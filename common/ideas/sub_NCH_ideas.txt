@@ -503,6 +503,24 @@ ideas = {
 			}
 		}
 
+		NCH_golden_standart_cancel = {
+			picture = overpopulation
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = 0.35
+				political_power_gain = 0.05
+			}
+		}
+
 		NCH_Overpopulation = {
 			picture = overpopulation
 			allowed = {
