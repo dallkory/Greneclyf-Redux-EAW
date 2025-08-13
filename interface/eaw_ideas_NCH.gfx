@@ -207,6 +207,26 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/discipline_land.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_artillery_focus"
+		textureFile = "gfx/interface/ideas/NCH/artillery_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_infantry_focus"
+		textureFile = "gfx/interface/ideas/NCH/infantry_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_land_focus"
+		textureFile = "gfx/interface/ideas/NCH/land_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_help_industrialisation"
+		textureFile = "gfx/interface/ideas/NCH/help_industrialisation.tga"
+	}
+
 
 
 

@@ -1728,7 +1728,7 @@ ideas = {
 		}
 
 		NCH_artillery_fields = {
-			picture = GFX_goal_unknown
+			picture = artillery_focus
 			allowed = {
 				always = no
 			}
@@ -1753,7 +1753,7 @@ ideas = {
 		}
 
 		NCH_goddes_war_inf = {
-			picture = GFX_goal_unknown
+			picture = infantry_focus
 			allowed = {
 				always = no
 			}
@@ -1773,7 +1773,7 @@ ideas = {
 
 		### ORG SIDE ###
 		NCH_org_land_forces = {
-			picture = GFX_goal_unknown
+			picture = land_focus
 			allowed = {
 				always = no
 			}
