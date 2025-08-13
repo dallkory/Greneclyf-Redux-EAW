@@ -1286,7 +1286,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_emvassy_to_equestria
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
@@ -1347,7 +1347,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_princess_in_a_high_castle
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 7
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
 	}
@@ -1433,7 +1433,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_lessons_in_friendship
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 6
 	prerequisite = {
 		focus = NCH_beacon_harmony_in_the_east
 	}
@@ -1498,7 +1498,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_friendship_delegation
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 6
 	prerequisite = {
 		focus = NCH_our_best_qualities
 	}
@@ -1582,7 +1582,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_our_values
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 6
 	prerequisite = {
 		focus = NCH_harmpony_in_every_heart
 	}
@@ -1864,12 +1864,14 @@ shared_focus = {
 	id = NCH_shield_and_sword_harmony
 	icon = GFX_goal_unknown
 	cost = 10
+
+
 	prerequisite = {
 		focus = NCH_lessons_in_friendship
-		focus = NCH_friendship_delegation
 	}
 
 	prerequisite = {
+		focus = NCH_friendship_delegation
 		focus = NCH_our_values
 	}
 
@@ -2293,6 +2295,8 @@ shared_focus = {
 		add_stability = -0.03
 		add_political_power = -50
 
+		add_ideas = modern_society
+
 		#country_event = {
 		#	id = greneclyf_core.104
 		#}
@@ -2444,6 +2448,8 @@ shared_focus = {
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
+
+		add_ideas = proper_science_base
 
 		every_country = {
 			limit = {

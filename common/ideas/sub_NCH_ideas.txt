@@ -4,7 +4,7 @@ ideas = {
 		### REDUX ###
 		## ECONOMIC TYPE ##
 		NCH_economic_status_protect = {
-			picture = GFX_unknow
+			picture = economic_protect
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
@@ -504,7 +504,7 @@ ideas = {
 		}
 
 		NCH_golden_standart_cancel = {
-			picture = overpopulation
+			picture = golden_standart
 			allowed = {
 				always = yes
 			}
@@ -783,7 +783,7 @@ ideas = {
 
 		### MAIN PATCH ###
 		NCH_trade_and_support_EQS = {
-			picture = GFX_unknow
+			picture = EQS_trade
 			allowed = {
 				always = yes
 			}
@@ -845,7 +845,7 @@ ideas = {
 		}
 
 		NCH_trade_and_support_CHN = {
-			picture = GFX_unknow
+			picture = CHN_trade
 			allowed = {
 				not = {
 					or = {
@@ -861,12 +861,13 @@ ideas = {
 				experience_gain_navy = 0.05
 				trade_opinion_factor = 0.15
 				local_resources_factor = 0.05
+				production_oil_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 
 		NCH_help_ponyhills_main = {
-			picture = GFX_unknow
+			picture = help_pony_hills
 			allowed = {
 				always = yes
 			}
@@ -920,7 +921,7 @@ ideas = {
 		}
 
 		NCH_retaking_saor = {
-			picture = GFX_unknow
+			picture = retaking_saor
 			allowed = {
 				always = yes
 			}
@@ -937,7 +938,7 @@ ideas = {
 		}
 
 		NCH_economic_boom = {
-			picture = GFX_unknow
+			picture = rise_of_the_nation
 			allowed = {
 				always = yes
 			}
@@ -1023,7 +1024,7 @@ ideas = {
 		}
 
 		NCH_Majestic_V = {
-			picture = GFX_unknow
+			picture = Majestic_5
 			allowed = {
 				always = yes
 			}
@@ -1158,12 +1159,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-
 				experience_gain_air_factor = -0.3
-
-
-				
-				
 			}
 		}
 
@@ -1588,7 +1584,6 @@ ideas = {
 
 
 		# LAND FORCES #
-
 		NCH_land_forces_everyone_can_be_hero = {
 			picture = x
 			allowed = {
@@ -1601,29 +1596,14 @@ ideas = {
 
 			modifier = {
 				recruitable_population = -0.15 
-				special_forces_defence_factor = 0.05
-				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.075
+				special_forces_attack_factor = 0.075
 				special_forces_min = 250
 			}
 		}
 
-		NCH_Greneclyf_land_forces_intergrity_priorize = {
-			picture = NCH_changeling_submarine
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-
-			}
-		}
-
 		NCH_new_tank_idea = {
-			picture = GFX_goal_unknown
+			picture = armored_tank
 			allowed = {
 				always = no
 			}
@@ -1662,7 +1642,7 @@ ideas = {
 		}
 
 		NCH_mech_brigads = {
-			picture = GFX_goal_unknown
+			picture = mechanization
 			allowed = {
 				always = no
 			}
@@ -1680,7 +1660,7 @@ ideas = {
 		}
 
 		NCH_greuling_training = {
-			picture = GFX_goal_unknown
+			picture = hard_training
 			allowed = {
 				always = no
 			}
@@ -1690,7 +1670,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				acclimatization_cold_climate_gain_factor = 0.25
+				acclimatization_cold_climate_gain_factor = 0.075
 				#tech_jager_attack_factor = 0.05
 				army_morale_factor = 0.05
 				army_org_regain = 0.05
@@ -1698,7 +1678,7 @@ ideas = {
 		}
 
 		NCH_faith_in_queen_idea = {
-			picture = GFX_goal_unknown
+			picture = queen_faith
 			allowed = {
 				always = no
 			}
@@ -1712,9 +1692,10 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
+
 		### HERO SIDE ###
 		NCH_hero_land_forces = {
-			picture = GFX_goal_unknown
+			picture = hard_training
 			allowed = {
 				always = no
 			}
@@ -1730,7 +1711,7 @@ ideas = {
 
 		## RIGHT SIDE ##
 		NCH_discipline_key = {
-			picture = GFX_goal_unknown
+			picture = discipline_land
 			allowed = {
 				always = no
 			}

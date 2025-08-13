@@ -147,6 +147,77 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/arctic_rocket.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_golden_standart"
+		textureFile = "gfx/interface/ideas/NCH/golden_standart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_economic_protect"
+		textureFile = "gfx/interface/ideas/NCH/economic_protect.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EQS_trade"
+		textureFile = "gfx/interface/ideas/NCH/EQS_trade.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHN_trade"
+		textureFile = "gfx/interface/ideas/NCH/CHN_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_help_pony_hills"
+		textureFile = "gfx/interface/ideas/NCH/help_pony_hills.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_retaking_saor"
+		textureFile = "gfx/interface/ideas/NCH/retaking_saor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Majestic_5"
+		textureFile = "gfx/interface/ideas/NCH/Majestic_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_armored_tank"
+		textureFile = "gfx/interface/ideas/NCH/armored_tank.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mechanization"
+		textureFile = "gfx/interface/ideas/NCH/mechanization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hard_training"
+		textureFile = "gfx/interface/ideas/NCH/hard_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_queen_faith"
+		textureFile = "gfx/interface/ideas/NCH/queen_faith.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_discipline_land"
+		textureFile = "gfx/interface/ideas/NCH/discipline_land.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

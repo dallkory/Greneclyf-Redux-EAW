@@ -1102,7 +1102,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_on_land
 	icon = GFX_goal_unknown
-	cost = 10
+	cost = 8
 	x = 64
 	y = 3
 
