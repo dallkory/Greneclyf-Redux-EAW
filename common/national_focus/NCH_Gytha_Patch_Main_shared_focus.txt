@@ -402,6 +402,10 @@ shared_focus = {
 		set_country_flag = NCH_new_goverment_system_cf
 
 		activate_mission = NCH_gov_rotation
+
+		country_event = {
+			id = greneclyf_core.1
+		}
 	}
 }
 
@@ -515,7 +519,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_core.7
+			id = greneclyf_core_11
 		}
 	}
 }
@@ -1362,6 +1366,14 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+		EQS = {
+			not = {
+				has_government = democratic
+			}
+		}
+	}
+
 	completion_reward = {
 
 	}
@@ -2062,7 +2074,7 @@ shared_focus = {
 			}
 			create_faction = NCH_fraction_neighborhood
 		}
-		
+
 		country_event = {
 			id = greneclyf_foregin.4
 			days = 0
