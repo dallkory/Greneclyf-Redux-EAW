@@ -1133,6 +1133,47 @@
   greneclyf_arctic.2.d:0 ""
 
   greneclyf_arctic.2.a:0 ""
+
+  # Foreces #
+  # Перепутье
+  greneclyf_forces.4.t:0 ""
+  greneclyf_forces.4.d:0 ""
+
+  # Линкоры
+  greneclyf_forces.4.a:0 ""
+  # Подводные лодки
+  greneclyf_forces.4.b:0 ""
+
+  # Заседение комитета по обороне
+  greneclyf_forces.5.t:0 ""
+  greneclyf_forces.5.d:0 ""
+
+  greneclyf_forces.5.a:0 ""
+
+  # Нарушитель
+  greneclyf_forces.6.t:0 ""
+  greneclyf_forces.6.d:0 ""
+
+  greneclyf_forces.6.a:0 ""
+
+  # Псы войны
+  greneclyf_forces.7.t:0 ""
+  greneclyf_forces.7.d:0 ""
+
+  greneclyf_forces.7.a:0 ""
+
+  # Мысли о божественном
+  greneclyf_forces.8.t:0 ""
+  greneclyf_forces.8.d:0 ""
+
+  greneclyf_forces.8.a:0 ""
+
+  # Механические звери
+  greneclyf_forces.9.t:0 ""
+  greneclyf_forces.9.d:0 ""
+
+  greneclyf_forces.9.a:0 ""
+  
  
   ### DECISIONS ###
   # BOP #

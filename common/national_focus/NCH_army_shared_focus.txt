@@ -112,6 +112,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_battleship_chose
 	}
 
 	completion_reward = {
@@ -150,6 +152,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_silent_hunters_chose
 	}
 
 	completion_reward = {
@@ -690,6 +694,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		country_event = {
+			id = greneclyf_forces.4
+			days = 0
+		}
 		set_country_flag = NCH_navy_advisor_flag
 
 		custom_effect_tooltip = available_chief_of_navy
@@ -1127,6 +1135,11 @@ shared_focus = {
 			uses = 2
 			category = land_doctrine
 		}
+
+		country_event = {
+			id = greneclyf_forces.5
+			days = 0
+		}
 	}
 }
 
@@ -1230,6 +1243,11 @@ shared_focus = {
 			category = cat_racial_specforce_doctrine
 		}
 		add_ideas = NCH_land_forces_everyone_can_be_hero
+
+		country_event = {
+			id = greneclyf_forces.7
+			days = 0
+		}
 	}
 }
 
@@ -1355,6 +1373,11 @@ shared_focus = {
 		add_war_support = 0.15
 
 		add_ideas = NCH_faith_in_queen_idea
+
+		country_event = {
+			id = greneclyf_forces.8
+			days = 0
+		}
 	}
 }
 
@@ -1410,6 +1433,10 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = NCH_discipline_key
+		country_event = {
+			id = greneclyf_forces.6
+			days = 0
+		}
 	}
 }
 
@@ -1438,6 +1465,11 @@ shared_focus = {
 			level = 1
 			}
 		}
+
+		country_event = {
+			id = greneclyf_forces.9
+			days = 0
+		}
 	}
 }
 
@@ -1458,6 +1490,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_blizkrieg_chose
 	}
 
 	completion_reward = {
@@ -1482,6 +1515,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_motorize_chose
 	}
 
 	completion_reward = {
