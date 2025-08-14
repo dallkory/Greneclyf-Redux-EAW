@@ -2056,7 +2056,13 @@ shared_focus = {
 
 	completion_reward = {
 		set_rule = { can_create_factions = yes }
-		create_faction = NCH_fraction_neighborhood
+		if = {
+			limit = {
+				is_in_faction = no
+			}
+			create_faction = NCH_fraction_neighborhood
+		}
+		
 		country_event = {
 			id = greneclyf_foregin.4
 			days = 0

@@ -227,6 +227,75 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/help_industrialisation.tga"
 	}
 
+	spriteType = {
+		name = "GFX_idea_air_stagnation"
+		textureFile = "gfx/interface/ideas/NCH/air_stagnation.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_every_one_can_be_hero"
+		textureFile = "gfx/interface/ideas/NCH/every_one_can_be_hero.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_riv_search_base"
+		textureFile = "gfx/interface/ideas/NCH/riv_search_base.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_riv_senate"
+		textureFile = "gfx/interface/ideas/NCH/riv_senate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_riv_bos"
+		textureFile = "gfx/interface/ideas/NCH/riv_bos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_economic_consequance"
+		textureFile = "gfx/interface/ideas/NCH/economic_consequance.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_riv_autonomy_state"
+		textureFile = "gfx/interface/ideas/NCH/riv_autonomy_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_declaration_nations"
+		textureFile = "gfx/interface/ideas/NCH/declaration_nations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_goodbye_despair"
+		textureFile = "gfx/interface/ideas/NCH/goodbye_despair.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_free_trade"
+		textureFile = "gfx/interface/ideas/NCH/free_trade.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_political_violence"
+		textureFile = "gfx/interface/ideas/NCH/political_violence.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRE_help"
+		textureFile = "gfx/interface/ideas/NCH/FRE_help.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nine_starrs"
+		textureFile = "gfx/interface/ideas/NCH/nine_starrs.dds"
+	}
+
+
+
+
+
 
 
 

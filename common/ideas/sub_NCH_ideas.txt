@@ -19,6 +19,8 @@ ideas = {
 				consumer_goods_factor = -0.075
 				research_speed_factor = -0.05
 				trade_opinion_factor = -0.25
+
+				fascism_drift = 0.001
 			}
 		}
 
@@ -46,28 +48,33 @@ ideas = {
 			}
 		}
 
-		NCH_riv_volounters = {
-			picture = x
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-				is_in_faction_with = NCH
-			}
-			removal_cost = -1
+		# #NCH_riv_volounters = {
+		# 	picture = x
+		# 	allowed = {
+		# 		always = no
+		# 	}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+		# 	available = {
+		# 		is_riverlands_country = yes
+		# 		is_in_faction_with = NCH
+		# 	}
+		# 	removal_cost = -1
 
-			modifier = {
-				weekly_manpower = 200
-				production_speed_buildings_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
-			}
+		# 	modifier = {
+		# 		weekly_manpower = 200
+		# 		production_speed_buildings_factor = 0.05
+		# 		production_factory_max_efficiency_factor = 0.05
+		# 	}
+		# }
+
+		NCH_economic_hehemony_ork = {
+
 		}
 
 		NCH_riv_search_base = {
-			picture = x
+			picture = riv_search_base
 			allowed = {
 				always = no
 			}
@@ -75,6 +82,7 @@ ideas = {
 				always = yes
 			}
 			available = {
+				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
 			removal_cost = -1
@@ -87,7 +95,7 @@ ideas = {
 		}
 
 		NCH_riv_senate = {
-			picture = x
+			picture = riv_senate
 			allowed = {
 				always = no
 			}
@@ -95,6 +103,7 @@ ideas = {
 				always = yes
 			}
 			available = {
+				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
 			removal_cost = -1
@@ -110,7 +119,7 @@ ideas = {
 		}
 
 		NCH_bos_riv = {
-			picture = x
+			picture = riv_bos
 			allowed = {
 				always = no
 			}
@@ -118,6 +127,7 @@ ideas = {
 				always = yes
 			}
 			available = {
+				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
 			removal_cost = -1
@@ -135,7 +145,7 @@ ideas = {
 		}
 
 		NCH_blosmport_economic_consequences ={
-			picture = x
+			picture = economic_consequance
 			allowed = {
 				always = no
 			}
@@ -143,6 +153,7 @@ ideas = {
 				always = yes
 			}
 			available = {
+				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
 			removal_cost = -1
@@ -156,7 +167,7 @@ ideas = {
 		}
 
 		NCH_blosmport_economic_org = {
-			picture = x
+			picture = help_industrialisation
 			allowed = {
 				always = no
 			}
@@ -164,6 +175,7 @@ ideas = {
 				always = yes
 			}
 			available = {
+				is_riverlands_country = yes
 				is_in_faction_with = NCH
 			}
 
@@ -179,7 +191,7 @@ ideas = {
 		}
 
 		NCH_riv_autonomy_states = {
-			picture = d
+			picture = riv_autonomy_state
 			allowed = {
 				always = no
 			}
@@ -199,7 +211,7 @@ ideas = {
 		}
 
 		NCH_declaration_nations = {
-			picture = d
+			picture = declaration_nations
 			allowed = {
 				always = no
 			}
@@ -223,7 +235,7 @@ ideas = {
 		}
 
 		NCH_goodbye_despair = {
-			picture = d
+			picture = goodbye_despair
 			allowed = {
 				always = no
 			}
@@ -256,7 +268,7 @@ ideas = {
 			}
 		}
 
-		NCH_fleet_stagnation = {
+		NCH_army_stagnation = {
 			picture = navy_stagnation
 			allowed = {
 				always = no
@@ -266,15 +278,84 @@ ideas = {
 			}
 
 			removal_cost = -1
+
+			research_bonus = {
+				infantry_tech = -0.1
+				support_tech = -0.15
+				armor = -0.15
+			}
+
+			modifier = {
+				
+			}
+		}
+
+		NCH_fleet_stagnation = {
+			picture = navy_stagnation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			research_bonus = {
+				naval_equipment = -0.1
+				naval_doctrine = -0.1
+				ship_modules_tech = -0.25
+			}
+
+			removal_cost = -1
 			modifier = {
 				production_speed_dockyard_factor = -0.25
 				industrial_capacity_dockyard = -0.15
-				experience_gain_navy = -0.03
+				experience_gain_navy = -0.02
 				production_cost_max_ship_hull_cruiser = 3200
 				production_cost_max_ship_hull_heavy = 6500
 				production_cost_max_ship_hull_carrier = 7000
 				production_cost_max_ship_hull_fleet_submarine = 500
 				production_cost_max_destroyer = 1000
+			}
+		}
+
+		NCH_air_stagnation = {
+			picture = air_stagnation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				air_equipment = -0.25
+				air_doctrine = -0.1
+				heavy_air = -0.2
+				light_air = -0.2
+			}
+
+			modifier = {
+				experience_gain_air = -0.02
+				production_cost_max_cv_small_plane_airframe = -0.2
+				
+			}
+		}
+
+		NCH_industry_stagnation = {
+			picture = x
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
 			}
 		}
 
@@ -313,6 +394,7 @@ ideas = {
 				infantry_tech = -0.1
 				support_tech = -0.1
 				artillery = -0.1
+				armor = -0.15
 			}
 
 			modifier = {
@@ -322,6 +404,7 @@ ideas = {
 				mobilization_laws_cost_factor = 1.5
 			}
 		}
+
 
 		NCH_9_stars_no_lr = {
 			picture = x
@@ -391,7 +474,7 @@ ideas = {
 		}
 
 		NCH_free_trade = {
-			picture = d
+			picture = free_trade
 			allowed = {
 				always = yes
 			}
@@ -415,7 +498,7 @@ ideas = {
 		}
 
 		NCH_political_violence = {
-			picture = d
+			picture = political_violence
 			allowed = {
 				always = yes
 			}
@@ -470,7 +553,8 @@ ideas = {
 		}
 
 		NCH_FRE_development = {
-			picture = d
+			picture = FRE_help
+
 			allowed = {
 				always = yes
 			}
@@ -487,7 +571,7 @@ ideas = {
 		}
 
 		NCH_nine_stars = {
-			picture = d
+			picture = nine_starrs
 			allowed = {
 				always = yes
 			}
@@ -1083,6 +1167,7 @@ ideas = {
 				experience_gain_army_factor = 0.1
 				experience_gain_air_factor = 0.1
 				consumer_goods_factor = 0.15
+				political_power_factor = -0.075
 			}
 		}
 
@@ -1149,7 +1234,6 @@ ideas = {
 				air_accidents_factor = -0.15
 			}
 		}
-
 		GAF_does_not_exists={
 
 			picture = GFX_unknow
@@ -1164,7 +1248,6 @@ ideas = {
 		}
 
 		## air schools ##
-
 		NCH_air_school_1={
 			picture = GFX_unknow
 			allowed = {
@@ -1585,7 +1668,7 @@ ideas = {
 
 		# LAND FORCES #
 		NCH_land_forces_everyone_can_be_hero = {
-			picture = x
+			picture = every_one_can_be_hero
 			allowed = {
 				always = yes
 			}

@@ -29,6 +29,14 @@ Shared_focus = {
 		1245 = { add_to_array = { array = NCH.arctic_targets value = this } }
 		1236 = { add_to_array = { array = NCH.arctic_targets value = this } }
 		1227 = { add_to_array = { array = NCH.arctic_targets value = this } }
+
+		hidden_effect = {
+			country_event = {
+				id = greneclyf_arctic.2
+				days = 217
+				random_days = 100
+			}
+		}
 	}
 }
 

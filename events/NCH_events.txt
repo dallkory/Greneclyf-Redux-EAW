@@ -642,6 +642,60 @@ add_namespace = greneclyf_core
 		}
 	}
 
+	# New great packts #
+	country_event = {
+		id = greneclyf_base.40
+		title = greneclyf_base.40.t
+		desc = greneclyf_base.40.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_base.40.a
+			add_ideas = NCH_economic_hehemony_ork
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = -0.025
+			}
+		}
+	}
+
+	# Sunrise red-brown
+	country_event = {
+		id = greneclyf_base.41
+		title = greneclyf_base.41.t
+		desc = greneclyf_base.41.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_base.41.a
+
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+
+			if = {
+				limit = {
+					STC = {
+						has_government = communism 
+					}
+				}
+
+				NCH_Realta_Dearg = {
+					remove_unit_leader_role = yes
+				}
+				NCH_Furrelion = {
+					remove_unit_leader_role = yes
+				}
+			}
+		}
+	}
+
 	### ###
 
 	country_event = {
@@ -654,6 +708,11 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_base.19.a
+
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.025
+			}
 		}
 	}
 
@@ -668,6 +727,29 @@ add_namespace = greneclyf_core
 
 		option = {
 			name = greneclyf_base.20.a
+			add_power_balance_value = {
+				id = NCH_hunger_bop
+				value = 0.055
+			}
+			add_political_power = 50
+		}
+
+		option = {
+			name = greneclyf_base.20.b
+			add_political_power = 30
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+
+		option = {
+			name = greneclyf_base.20.c
+			add_political_power = 10
+			add_manpower = 5000
+			add_stability = 0.05
 		}
 	}
 
@@ -1753,6 +1835,7 @@ add_namespace = greneclyf_core
 				country = NCH
 				relation = guarantee
 			}
+			add_to_faction = NCH
 		}
 
 		option = {
@@ -2843,4 +2926,17 @@ add_namespace = greneclyf_core
 				}
 			}
 		}
-	}			
+	}		
+	
+	country_event = {
+		id = greneclyf_arctic.2
+		title = greneclyf_arctic.2.t
+		desc = greneclyf_arctic.2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+
+		option = {
+       	name = greneclyf_arctic.2.a	
+		
+		}
+	}

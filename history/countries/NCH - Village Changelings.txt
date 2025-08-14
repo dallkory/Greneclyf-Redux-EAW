@@ -1,7 +1,6 @@
 capital = 670
 
 oob = "NCH_1007"
-
 set_research_slots = 3
 
 set_country_flag = has_custom_advisors
@@ -154,6 +153,7 @@ add_ideas = {
 	NCH_Overpopulation
 
 	NCH_fleet_stagnation
+	#NCH_army_stagnation
 }
 
 add_tech_bonus = {

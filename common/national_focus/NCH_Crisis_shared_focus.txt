@@ -569,7 +569,11 @@ Shared_focus = {
 		remove_ideas = NCH_protests_on_street
 		add_power_balance_value = {
 			id = NCH_hunger_bop
-			value = 0.2
+			value = 0.075
+		}
+
+		country_event = {
+			id = greneclyf_base.41
 		}
 	}
 }
@@ -656,7 +660,7 @@ Shared_focus = {
 		}
 
 		country_event = {
-			id = greneclyf_base.15
+			id = greneclyf_base.40
 		}
 	}
 }
