@@ -153,6 +153,7 @@ add_ideas = {
 	NCH_Overpopulation
 
 	NCH_fleet_stagnation
+	NCH_air_stagnation
 	#NCH_army_stagnation
 }
 

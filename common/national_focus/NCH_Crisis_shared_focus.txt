@@ -8,7 +8,7 @@ Shared_focus = {
 	available = {
 		or = {
 			has_country_flag = NCH_hunger_starts
-			has_completed_focus = NCH_time_to_look_further
+			#has_completed_focus = NCH_time_to_look_further
 		}
 	}
 	bypass = {
@@ -17,7 +17,7 @@ Shared_focus = {
 	allow_branch = {
 		or = {
 		has_country_flag = NCH_hunger_starts
-		has_completed_focus = NCH_time_to_look_further
+		#has_completed_focus = NCH_time_to_look_further
 		}
 	}
 }

@@ -2142,6 +2142,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
+
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
@@ -2161,6 +2162,11 @@ shared_focus = {
 			type = industrial_complex
 			level = 1
 			}
+		}
+
+		country_event = {
+			id = greneclyf_forces.10
+			days = 0
 		}
 	}
 	x = 79
