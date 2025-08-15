@@ -1290,6 +1290,9 @@ NCH_gov_rotation_category = {
 					NCH_Arachi_it #pol 
 					NCH_Yorilos_it #industrial
 					NCH_Floppa_it #pol 
+					NCH_Gerald_3_it #pol
+					NCH_kianit_oir_it # pol
+					NCH_Adler_it #other
 				}
 			}
 			
@@ -1304,16 +1307,19 @@ NCH_gov_rotation_category = {
 
 			# POLITIC #
 			random_list = {
-				25 = { add_ideas = NCH_Oiren_Judge_itoken } 
-				25 = { add_ideas = NCH_Arachi_it } 
-				25 = { add_ideas = NCH_Floppa_it } 
-				25 = { add_ideas = NCH_Marikel_it } 
+				17 = { add_ideas = NCH_Oiren_Judge_itoken } 
+				17 = { add_ideas = NCH_Arachi_it } 
+				17 = { add_ideas = NCH_Floppa_it } 
+				17 = { add_ideas = NCH_Marikel_it } 
+				17 = { add_ideas = NCH_Gerald_3_it }
+				17 = { add_ideas = NCH_kianit_oir_it }
 			}
 
 			# OTHER #
 			random_list = {
-				50 = { add_ideas = NCH_Derkliones_it } 
-				50 = { add_ideas = NCH_Caider_it } 
+				33 = { add_ideas = NCH_Derkliones_it } 
+				33 = { add_ideas = NCH_Caider_it } 
+				34 = { add_ideas = NCH_Adler_it }
 			}
 
 			# THEORETIC #

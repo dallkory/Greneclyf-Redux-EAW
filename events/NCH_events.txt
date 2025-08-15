@@ -2001,7 +2001,7 @@ add_namespace = greneclyf_core
 
 		# Reject #
 		option = {
-       	name = greneclyf_core.3.b		
+       	name = greneclyf_core.2.b		
 			ai_chance = {
 				base = 0.7
 				modifier = {
