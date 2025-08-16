@@ -1109,7 +1109,7 @@ shared_focus = {
 ## ARMY ##
 shared_focus = {
 	id = NCH_on_land
-	icon = GFX_goal_unknown
+	icon = GFX_goal_gurd_future
 	cost = 8
 	x = 64
 	y = 3
@@ -1145,7 +1145,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_auxiliary_battalions
-	icon = GFX_goal_unknown
+	icon = GFX_goal_latro_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
@@ -1157,6 +1157,7 @@ shared_focus = {
 	y = 4
 
 	available = {
+		has_war_support > 35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
@@ -1383,7 +1384,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_priorize_integrity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_karyon_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
@@ -1395,6 +1396,7 @@ shared_focus = {
 	y = 4
 
 	available = {
+		has_war_support > 35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
@@ -1417,7 +1419,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_discipline_is_key_to_order
-	icon = GFX_goal_unknown
+	icon = GFX_goal_political_comisars
 	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
@@ -1525,7 +1527,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_pass_law_on_consctiption
-	icon = GFX_goal_unknown
+	icon = GFX_goal_conscription
 	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
@@ -1570,7 +1572,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_queen_of_the_fields
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_vasilisk
 	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order

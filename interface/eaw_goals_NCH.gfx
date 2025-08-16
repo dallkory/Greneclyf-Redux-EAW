@@ -234,6 +234,36 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/Future_guard.png"
 	}	
 
+	spriteType = {
+		name = "GFX_goal_karyon_doctrine"
+		textureFile = "gfx/interface/goals/NCH/Karyon_doctrine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_latro_doctrine"
+		textureFile = "gfx/interface/goals/NCH/latro_doctrine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_political_comisars"
+		textureFile = "gfx/interface/goals/NCH/political_comisars.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_conscription"
+		textureFile = "gfx/interface/goals/NCH/conscription.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_vasilisk"
+		textureFile = "gfx/interface/goals/NCH/project_vasilisk.png"
+	}
+
+
+
+
+
+
 
 
 
