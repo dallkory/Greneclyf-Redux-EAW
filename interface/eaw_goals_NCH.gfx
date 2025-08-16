@@ -229,6 +229,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
 	}	
 
+	spriteType = {
+		name = "GFX_goal_gurd_future"
+		textureFile = "gfx/interface/goals/NCH/Future_guard.png"
+	}	
+
 
 
 

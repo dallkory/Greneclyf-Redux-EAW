@@ -1,6 +1,6 @@
 shared_focus = {
 	id = NCH_rule_greneclyf
-	icon = GFX_goal_unknown
+	icon = GFX_goal_gurd_future
 	cost = 3
 	x = 64
 	y = 2
