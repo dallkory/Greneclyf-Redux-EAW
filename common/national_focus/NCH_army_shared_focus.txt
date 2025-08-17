@@ -730,7 +730,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_marine_corp
-	icon = GFX_goal_unknown
+	icon = GFX_goal_marine
 	cost = 5
 	prerequisite = {
 		focus = NCH_assing_new_command
@@ -781,7 +781,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_naval_academy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_navy_departaiment
 	cost = 5
 	prerequisite = {
 		focus = NCH_assing_new_command
@@ -844,7 +844,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_security_trade
-	icon = GFX_goal_unknown
+	icon = GFX_goal_security_trade
 	cost = 10
 	prerequisite = {
 		focus = NCH_at_seas
@@ -870,7 +870,7 @@ shared_focus = {
 ############
 shared_focus = {
 	id = NCH_break_ice
-	icon = GFX_goal_unknown
+	icon = GFX_goal_break_ice
 	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
@@ -907,7 +907,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_merchant_navy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_trade_fleet
 	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
@@ -932,7 +932,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_resources_for_fleet
-	icon = GFX_goal_unknown
+	icon = GFX_goal_resources_for_fleet
 	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
@@ -954,7 +954,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_investing_in_shipbuildings
-	icon = GFX_goal_unknown
+	icon = GFX_goal_investment_shipbyilding
 	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
@@ -996,7 +996,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_domestic_development
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_borei
 	cost = 10
 	prerequisite = {
 		focus = NCH_resources_for_fleet
@@ -1681,7 +1681,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greneclyf_school_of_war
-	icon = GFX_goal_rule_greneclyf_seas
+	icon = GFX_goal_greneclyf_school_of_war
 	cost = 10
 	prerequisite = {
 		focus = NCH_faith_in_queen

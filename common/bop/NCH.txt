@@ -25,7 +25,7 @@ NCH_hunger_bop = {
 	# left #
 	side = {
 		id = NCH_hunger_acute_phase
-		icon = d
+		icon = GFX_idea_idea_severe_famine
 		range = {
 			id = NCH_hunger_acute_phase_external
 			min = -1
@@ -108,7 +108,7 @@ NCH_hunger_bop = {
 	# right #
 	side = {
 		id = NCH_hunger_hunger_end
-		icon = d
+		icon = GFX_idea_idea_severe_famine5
 		range = {
 			id = NCH_hunger_hunger_end_done
 			min = 0.1

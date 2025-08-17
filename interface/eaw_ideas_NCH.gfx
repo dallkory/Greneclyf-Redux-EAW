@@ -292,11 +292,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/nine_starrs.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_idea_severe_famine"
+		textureFile = "gfx/interface/ideas/NCH/idea_severe_famine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_idea_severe_famine5"
+		textureFile = "gfx/interface/ideas/NCH/idea_severe_famine5.dds"
+	}
 
 
 
+idea_severe_famine.dds
 
-
+idea_severe_famine5.dds
 
 
 

@@ -369,6 +369,45 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/blosmport_facility.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_marine"
+		textureFile = "gfx/interface/goals/NCH/marine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_navy_departaiment"
+		textureFile = "gfx/interface/goals/NCH/navy_departaiment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_security_trade"
+		textureFile = "gfx/interface/goals/NCH/security_trade.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_borei"
+		textureFile = "gfx/interface/goals/NCH/project_borei.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_break_ice"
+		textureFile = "gfx/interface/goals/NCH/break_ice.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_resources_for_fleet"
+		textureFile = "gfx/interface/goals/NCH/resources_for_fleet.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_investment_shipbyilding"
+		textureFile = "gfx/interface/goals/NCH/investment_shipbyilding.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_trade_fleet"
+		textureFile = "gfx/interface/goals/NCH/trade_fleet.png"
+	}
 
 
 
@@ -376,7 +415,6 @@ spriteTypes = {
 
 
 
-	blosmport_facility.png
 
 
 

@@ -710,7 +710,7 @@ characters={
 	}
 
 	NCH_Goulen={
-		name=Goulen
+		name = Goulen_Lari
 		portraits={
 			army={
 				large="gfx/leaders/NCH/Goulen.tga"
@@ -727,9 +727,7 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 		}
-		available = {
-			has_country_flag = NCH_generals_flag
-		}
+		
 		advisor={
 			slot = high_command
 			ledger = army
