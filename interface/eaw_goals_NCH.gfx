@@ -334,12 +334,54 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/expand_blosmport_yards.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_exnavy_academy"
+		textureFile = "gfx/interface/goals/NCH/navy_academy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hard_armor"
+		textureFile = "gfx/interface/goals/NCH/hard_armor.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_torpedor"
+		textureFile = "gfx/interface/goals/NCH/torpedo.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_sharks_ice_waters"
+		textureFile = "gfx/interface/goals/NCH/sharks_ice_waters.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_kraken_east"
+		textureFile = "gfx/interface/goals/NCH/kraken_east.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_massive_production"
+		textureFile = "gfx/interface/goals/NCH/massive_production.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_facility"
+		textureFile = "gfx/interface/goals/NCH/blosmport_facility.png"
+	}
 
 
 
 
 
-expand_blosmport_yards.png
+
+
+
+	blosmport_facility.png
+
+
+
+
+
 
 
 # Submod #

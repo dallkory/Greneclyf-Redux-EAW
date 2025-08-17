@@ -95,7 +95,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_hard_armor
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hard_armor
 	cost = 5
 	prerequisite = {
 		focus = NCH_expand_blosmport_yards
@@ -135,7 +135,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_silent_hunters
-	icon = GFX_goal_unknown
+	icon = GFX_goal_torpedor
 	cost = 5
 	prerequisite = {
 		focus = NCH_expand_blosmport_yards
@@ -174,7 +174,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_Greneclyf_pride
-	icon = GFX_goal_unknown
+	icon = GFX_goal_kraken_east
 	cost = 8
 	prerequisite = {
 		focus = NCH_hard_armor
@@ -201,7 +201,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_sharks_ice_waters
-	icon = GFX_goal_unknown
+	icon = GFX_goal_sharks_ice_waters
 	cost = 8
 	prerequisite = {
 		focus = NCH_silent_hunters
@@ -230,7 +230,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_experomental_developments
-	icon = GFX_goal_unknown
+	icon = GFX_goal_massive_production
 	cost = 10
 	prerequisite = {
 		focus = NCH_Greneclyf_pride
@@ -677,7 +677,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_assing_new_command
-	icon = GFX_goal_unknown
+	icon = GFX_goal_exnavy_academy
 	cost = 8
 	prerequisite = {
 		focus = NCH_at_seas
@@ -804,7 +804,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_Blosmport_navy_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_blosmport_facility
 	cost = 15
 	prerequisite = {
 		focus = NCH_marine_corp
@@ -1069,7 +1069,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_our_future_at_sea
-	icon = GFX_goal_unknown
+	icon = GFX_goal_rule_greneclyf_seas
 	cost = 10
 	prerequisite = {
 		focus = NCH_experomental_developments
