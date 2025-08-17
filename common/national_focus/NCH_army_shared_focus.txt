@@ -9,10 +9,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
-		or = {
-			has_country_flag = NCH_army_forces_allow
-			has_completed_focus = NCH_time_to_look_further
-		}
+		#has_country_flag = NCH_army_forces_allow
+		has_completed_focus = NCH_time_to_look_further
 	}
 	allow_branch = {
 		or = {
@@ -32,7 +30,7 @@ shared_focus = {
 ## NAVY ##
 shared_focus = {
 	id = NCH_at_seas
-	icon = GFX_goal_unknown
+	icon = GFX_goal_on_the_seas
 	cost = 5
 	prerequisite = {
 		focus = NCH_rule_greneclyf
@@ -60,7 +58,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_expand_blosmport_yards
-	icon = GFX_goal_unknown
+	icon = GFX_goal_expand_blosmport_yards
 	cost = 10
 	prerequisite = {
 		focus = NCH_at_seas
@@ -1683,7 +1681,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greneclyf_school_of_war
-	icon = GFX_goal_greneclyf_school_of_war
+	icon = GFX_goal_rule_greneclyf_seas
 	cost = 10
 	prerequisite = {
 		focus = NCH_faith_in_queen

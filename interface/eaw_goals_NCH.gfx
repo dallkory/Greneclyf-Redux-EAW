@@ -319,14 +319,30 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/faith_in_the_queen.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_rule_greneclyf_seas"
+		textureFile = "gfx/interface/goals/NCH/rule_greneclyf_seas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_on_the_seas"
+		textureFile = "gfx/interface/goals/NCH/on_the_seas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_expand_blosmport_yards"
+		textureFile = "gfx/interface/goals/NCH/expand_blosmport_yards.png"
+	}
 
 
 
 
 
 
+expand_blosmport_yards.png
 
-	# Submod #
+
+# Submod #
 	spriteType = {
 		name = "GFX_goal_hart_side"
 		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"

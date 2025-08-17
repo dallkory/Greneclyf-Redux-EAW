@@ -1158,10 +1158,9 @@ greneclyf_forces.5.a:0 "Carrion's Doctrine of the Regular army"
 greneclyf_forces.5.b:0 "Latreau’s Doctrine of the Elite army"
 
 # Нарушитель
-greneclyf_forces.6.t:0 "Нарушитель"
-greneclyf_forces.6.d:0 "Даск Лорий полусонный стоял в строю после изматывающего ночного караула. Кто-то из новобранцев, посчитав тревогу отличной шуткой, поднял на уши весь лагерь.\n\nВнезапно к старшине подошёл скромно одетый политрук, таща за собой трясущегося юнца. Получив кивок, он повернулся к солдатам. «Равнясь!»\n\nЕго голос прозвучал как удар хлыста, мгновенно пробудив многих.\n\n«Товарищи-призывники! В полку беспорядок. Хулиганьё устраивает диверсии. И вам, как старшим, поручено провести суд и наказать непутёвого, наставив его на путь чести и благородства, чтобы впредь никто не смел играть с такой вещью, как боевая тревога. На первый-второй рассчитайсь!»\n\nПосле быстрого расчёта политрук приказал бойцам выстроиться в две шеренги и раздал каждому винтовочные шомполы. Солдаты напряжённо переглядывались, не понимая происходящего. У того самого юнца покосились колени.\n\n«За лишение сна боевых товарищей и ложную тревогу, которая в иной ситуации могла стоить жизни, призывник Елен Бромум наказывается двумя сотнями ударов шпицрутенами. Приговор исполнить немедленно. Каждый, кто откажется, получит пятнадцать ударов сам».\n\nСкулящий Бромум попятился назад, но политрук резко пнул его вперёд. Другие подняли шомполы, готовясь наносить удар.\n\nЛорий замялся. Глядя на корчившегося от боли Бромума, он вспомнил, как всю ночь не мог сомкнуть глаз из-за идиотской тревоги. Сжав зубы, он нанёс удар, пожалуй, даже сильнее, чем остальные.\n\nКомиссары порой перегибали с наказаниями, но постепенно солдаты начали видеть в них не надзирателей, а старших товарищей – строгих, но справедливых. Дедовщина была искоренена, а Кодекс стал настольной книгой каждого новобранца."
-
-greneclyf_forces.6.a:0 "«Честь и совесть нации»"
+greneclyf_forces.6.t:0 "The Offender"
+greneclyf_forces.6.d:0 "Dusk Lauri stood half-asleep in formation, weary after a sleepless night on sentry duty. Some recruit had thought it funny to raise a false alarm, throwing the entire camp into chaos. Suddenly, a modestly dressed commissar approached the platoon sergeant, dragging behind him a trembling youth. At a nod, he turned to the assembled troops. “Attention!” His voice cracked like a whip, snapping many awake. “Comrades-in-training! There is disorder in the regiment. Saboteurs sow confusion. And it is your duty, as seniors, to judge and correct this wayward soul — so that no one dares ever again to mock something as sacred as a combat alert. Count off: ones and twos.” The commissar ordered the conscripts to form two lines and handed out rifle cleaning rods to each. The soldiers exchanged nervous glances, uncertain. The trembling recruit’s knees buckled. “For depriving comrades of rest and staging a false alarm that, in real battle, could have gotten them killed, conscript Elen Bromum is hereby sentenced to 200 lashes by spießrute. The sentence is to be carried out immediately. Any who refuse will receive fifteen lashes themselves.” Bromum whimpered and staggered back, but the commissar kicked him forward. The others raised their rods, some hesitating, others resigned. Lauri paused. But then he remembered the sleepless night, the panic, the exhaustion. His grip tightened. Gritting his teeth, he struck a blow perhaps stronger than the rest. In time, soldiers began to see commissars not as wardens, but as senior comrades — stern, yes, but just. Hazing was eradicated, and the Code became the sacred manual of every recruit."
+greneclyf_forces.6.a:0 "Honor and Conscience of the Nation"
 
 # Псы войны
 greneclyf_forces.7.t:0 "Dogs of War"
@@ -1169,17 +1168,15 @@ greneclyf_forces.7.d:0 "Orb Seller made quite an impression. While he puffed on 
 greneclyf_forces.7.a:0 "“We’ll Meet Again, General”"
 
 # Мысли о божественном
-greneclyf_forces.8.t:0 "Мысли о Божественном"
-greneclyf_forces.8.d:0 "Генерал вёл очередную свою беседу с Селлером, расхаживая из стороны в сторону на взлётном полигоне, пока пони следил за ним взглядом.\n\n«Идея, Селлер, должна лежать в душе каждого солдата. Даже будучи наёмником, ты это понимаешь лучше прочих. И вот скажи мне: какой может быть связующая идея для Гвардии? Родина? Семьи?»\n\nСеллер повёл ушами. «Я верю в войну, Латро. Родина – это флаг, который предаст тебя в случае необходимости. Семья не вечна, королева смертна. Война – это испытание воли: своей и чужой, при этом внутри воли более великой. Война – это последняя, абсолютная игра, ибо она превращает само существование в единое целое».\n\nЛатро задумался.\n\n«Это идеальная философия для пса войны, но не для национальной армии. Мы привязаны к Гринклифу – он наш дом. Мы верим в королеву и... в Матрону».\n\nСеллер поднял бровь.\n\n«Матрона?»\n\n«Это наша богиня. Культ Леди Матроны, дарящей любовь и защиту. Нашей святой защитницы и покровительницы»\n\nГлава ЧВК поднял голову: «Мой Бог – это сама война. Но я понимаю тебя и твою мысль. Религия действительно может быть хорошим средством единения для солдат, если правильно её преподнести. Бог вечен. Бог бессмертен. Бог не предаст»\n\nГенерал довольно улыбнулся:"
-
-greneclyf_forces.8.a:0 "«И Бог с нами»"
+greneclyf_forces.8.t:0 "Thoughts on the Divine"
+greneclyf_forces.8.d:0 "The general once again found himself conversing with Seller, pacing slowly across the takeoff range while the pony watched him.\n\n“An idea, Seller,” Latreau began, “must live in the soul of every soldier. Even as a mercenary, you understand this better than most. So tell me — what idea can truly unite the Guard? Homeland? Family?”\n\nSeller flicked an ear. “I believe in war, Latreau. Homeland? That’s a flag that’ll abandon you the moment it’s convenient. Family? It doesn’t last. The Queen is mortal. War is a test — of your will and that of others, all beneath a greater Will. War is the final, absolute game. It turns existence into a single, unified truth.”\n\nLatreau paused, thoughtful. “That’s an ideal philosophy for a warhound — but not for a national army. We’re tied to Greneclyf. It is our home. We believe in the Queen... and in the Matron.”\n\nSeller raised an eyebrow. “The Matron?”\n\n“Our goddess. Lady Matron — the giver of love and protection. Our sacred guardian and patron.”\n\nThe head of the PMC tilted his head upward. “My god is War itself. But I see your point. Religion... can unite soldiers, if presented well. God is eternal. God is immortal. God does not betray.”\n\nLatreau allowed himself a rare smile."
+greneclyf_forces.8.a:0 "“And God is with us”"
 
 # Механические звери \n\n
-greneclyf_forces.9.t:0 "Механические Звери"
-greneclyf_forces.9.d:0 "Перед Базальтом лежали два одновременно поступивших запроса от разных инициативных групп Института Изучения Войны. Первая продвигает уделить особое внимание изучению грифоньих тактик танкового блицкрига, в то время как вторая настаивает на том, что нам не хватит ресурсов на танковые исследования, акцентируя внимание на моторизированных бригадах и потенциальных проектах бронетранспортеров.\n\nОднако, учитывая ограниченность ресурсов, можно выбрать только один проект. Шоу подумал немного и поставил свою печать на..."
-
-greneclyf_forces.9.a:0 "проекте изучения блицкрига"
-greneclyf_forces.9.b:0 "проекте моторизированных бригад"
+greneclyf_forces.9.t:0 "Mechanical Beasts"
+greneclyf_forces.9.d:0 "Two simultaneous proposals landed on Basalt’s desk from different initiative groups at the Institute of War Studies. The first pushed for focused research into griffon blitzkrieg-style armored warfare, while the second argued that we lack the resources for full-scale tank development and should instead focus on motorized brigades and potential APC projects. Given our limited resources, only one project can move forward. Shaw thought for a moment and placed his seal on..."
+greneclyf_forces.9.a:0 "The blitzkrieg research project"
+greneclyf_forces.9.b:0 "The motorized brigades project"
 
 # Проект "феникс"
 greneclyf_forces.10.t:0 "Проект «Феникс»"
@@ -1270,7 +1267,7 @@ give_bonuses_after_all_focuses_tt:0 "§3После того, как мы улу�
 NCH_start_obsisian_export_tt:0"§0Открытие магического карьера в Эйслинге позволит нам экпортировать обсидиан§!"
 
 ### IDEAS ###
-NCH_rethinking_forces:0 “Rethinking the Armed Forces”
+NCH_rethinking_forces:0 "Rethinking the Armed Forces"
 NCH_land_forces_everyone_can_be_hero:0 "Everyone can be hero"
 NCH_blosmport_economic_consequences:0 "Последствия изменения финансовой системы"
 NCH_faith_in_queen_idea:0 "Faith in the Queen"
