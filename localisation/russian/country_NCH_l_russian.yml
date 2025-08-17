@@ -1222,6 +1222,9 @@ NCH_arctic_cost_tooltip:0 "Экспедиция на остров обойдёт
 NCH_fraction_neighborhood:0 "Содружество Холмов"  #Фронт Ллира? Аналогия Фронта Стрезы
 
 ### TOOL TIPS ###
+NCH_regular_army_chosen:0 "§4Выбрана доктрина регулярной армии§!"
+NCH_professional_army_chosen:0 "§4Выбрана доктрина профессиональной армии§!"
+
 NCH_arctic_special_citues:0 "\n§gКоролева приняла решение о создании специальных арктических ульев для закрепления нашего контроля над регионом. В уже имеющихся колониях появятся новые ульи, а также рабочие возведут морские базы для связи с метрополией.§!"
 
 NCH_arctic_found_tt:0 "\n§gНам будет доступна возможность отправки экспедиций для изучения и колонизации Арктики§!"
@@ -1270,7 +1273,10 @@ give_bonuses_after_all_focuses_tt:0 "§3После того, как мы улу�
 NCH_start_obsisian_export_tt:0"§0Открытие магического карьера в Эйслинге позволит нам экпортировать обсидиан§!"
 
 ### IDEAS ###
+NCH_rethinking_forces:0 "Переосмысление Вооружённых Сил"
+NCH_land_forces_everyone_can_be_hero:0 "Каждый может стать героем"
 NCH_blosmport_economic_consequences:0 "Последствия изменения финансовой системы"
+NCH_faith_in_queen_idea:0 "Вера в Королеву"
 #NCH_blosmport_economic_consequences_desc:0 ""
 
 NCH_luddites_1:0 "Действующие луддиты"

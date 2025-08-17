@@ -1115,6 +1115,7 @@ shared_focus = {
 	y = 3
 
 	available = {
+		has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
@@ -1157,10 +1158,11 @@ shared_focus = {
 	y = 4
 
 	available = {
-		has_war_support > 0.35
+		#has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_professional_army_chosen
 	}
 
 	completion_reward = {
@@ -1296,10 +1298,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		country_event = {
-			id = greneclyf_forces.1
-			days = 0
-		}
+		#country_event = {
+		#	id = greneclyf_forces.1
+		#	days = 0
+		#}
 
 		division_template = {
 			name = "Changeling Veterans Brigade"
@@ -1396,10 +1398,11 @@ shared_focus = {
 	y = 4
 
 	available = {
-		has_war_support > 0.35
+		#has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_regular_army_chosen
 	}
 
 	completion_reward = {

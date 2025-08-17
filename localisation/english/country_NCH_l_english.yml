@@ -368,7 +368,7 @@ NCH_adopt_consitution_desc:0 "Федерация затаила дыхание, 
 # Gytha Chrysalis patch #
 
 # ARMY #
-NCH_rule_greneclyf:0 "Rule, Greneclyf!"
+NCH_rule_greneclyf:0 "Rule Greneclyf!"
 NCH_rule_greneclyf_desc:0 "The royal court has been given the opportunity to focus on the state of our army. It's time to bring the Guard into proper shape!"
 
 NCH_at_seas:0 "На волнах"
@@ -1152,10 +1152,10 @@ greneclyf_forces.4.b:0 "«Стоит быть осмотрительными...�
 
 # Заседение комитета по обороне
 greneclyf_forces.5.t:0 "Meeting of the Defense Committee"
-greneclyf_forces.5.d:0 "At midday, the Defense Committee of Oireachtas gathered: senior military leaders, members of Parliament, and the Queen herself. A long and arduous debate lay ahead — one not to be resolved by royal decree alone, for the magnitude of this decision was too great.\n\nThe generals pressed for the introduction of universal conscription across the Kingdom.\n\n“The floor recognizes Aphex Carrion, Prefect of Blosmport and General of the Royal Guard,” declared Lady Chief Justice Oiren, observing as the officer approached the chamber.\n\nCarrion swept the room with a stern gaze and began:\n\n“Honorable Deputies. Your Majesty.”\n\n“We face a question of grave consequence: What should form the bedrock of our army? The answer is plain: we need a strong, disciplined, and numerous regular force built upon mandatory military service.”\n\n“First: the safety of the realm cannot rely on a handful of elite warriors. Wars are won by armies, not by heroes. We must be certain we have thousands of trained hooves ready to defend our borders.”\n\n“Second: conscription shall forge a stronger nation. Military service is a school of discipline, unity, and civic spirit. One who serves becomes not merely a soldier, but a patriot, prepared to rise when the realm is in danger.”\n\n“We cannot entrust national defense to a narrow circle of chosen few. We need a nation under arms, not a court of privileged knights. I urge you to support the doctrine of a regular army and the establishment of mandatory conscription. Only thus can we guarantee our people’s safety and our Kingdom’s sovereignty.”\n\n“Your view is noted, Prefect. Your time.”\n\nWith that, Oiren struck the gavel, prompting Carrion to bow and withdraw.\n\n“The floor now recognizes General of the Leib Guard, Bermondt Latreau.”\n\nTo the podium stepped a striking figure in the black uniform of his regiment, its insignias sharp and unmistakable. He removed his peaked cap and held it high in salute.\n\n“Honored Deputies. Beloved Queen.”\n\n“The world has changed, but so has war. This is no age of numbers, but of precision. The army of tomorrow is made not of ranks, but of elite, highly trained, rapid-response units. They strike fast, strike true, and complete missions that regular infantry can barely comprehend.”\n\n“Elites bring results: measured, surgical, effective. A regular army is a lumbering mass that must be fed, clothed, and armed. It is a burden on the bureaucratic core of the kingdom, and with it comes corruption, mismanagement, and stagnation.”\n\n“Modern conflict is no longer about endless frontlines. It is special operations, sabotage, speed. Who is more suited: an elite who has trained for years, or a conscript barely able to hold a rifle?”\n\n“Discipline cannot be beaten into the unwilling. In every conscripted herd lies the thug, the coward, the traitor. My doctrine leads to victory, not to wasteful loss.”\n\nWith both sides heard, the chamber moved to a vote. The deciding voice belonged to Lord Shaw, who chose..."
+greneclyf_forces.5.d:0 "At midday, the Defense Committee of Oireachtas gathered: senior military leaders, members of Parliament, and the Queen herself. A long and arduous debate lay ahead — one not to be resolved by royal decree alone, for the magnitude of this decision was too great.\n\nThe generals pressed for the introduction of universal conscription across the Kingdom. Lady Chief Justice Oiren called upon Aphex Carrion, Prefect of Blosmport and General of the Royal Guard. Carrion swept the chamber with a stern gaze and began: “Honorable Deputies. Your Majesty. We face a question of grave consequence: What should form the bedrock of our army? The answer is plain — we need a strong, disciplined, and numerous force built upon mandatory military service.\n\nFirst, the safety of the realm cannot rely on a handful of elite warriors. Wars are won by armies, not heroes. We must ensure thousands of trained hooves stand ready to defend our borders. Second, conscription shall forge a stronger nation. Military service is a school of discipline, unity, and civic spirit. One who serves becomes not merely a soldier, but a patriot, prepared to rise when the realm is in danger. We cannot entrust national defense to a narrow circle of chosen few. We need a nation under arms, not a court of privileged knights. I urge you to support the doctrine of a regular army and the establishment of mandatory conscription. Only thus can we guarantee our people’s safety and our Kingdom’s sovereignty.”\n\n“Your view is noted, Prefect. Your time,” Oiren concluded, striking the gavel. Carrion bowed and withdrew.\n\nNext, General of the Leib Guard Bermondt Latreau approached the podium. A striking figure in the black uniform of his regiment, insignias gleaming, he removed his peaked cap and raised it high in salute. “Honored Deputies. Beloved Queen. The world has changed, and so has war. This is no age of numbers, but of precision. The army of tomorrow is not made of masses, but of elite, highly trained, rapid-response units. They strike fast, strike true, and complete missions beyond the comprehension of ordinary infantry.\n\nElites bring results — measured, surgical, effective. A regular army is a lumbering mass that must be fed, clothed, armed; it burdens the kingdom’s bureaucracy and breeds corruption, mismanagement, and stagnation. Modern conflict is no longer about endless frontlines. It is special operations, sabotage, speed. Who is more suited: an elite who has trained for years, or a conscript barely able to hold a rifle? Discipline cannot be beaten into the unwilling. Within every conscripted herd lies the thug, the coward, the traitor. My doctrine leads to victory, not to wasteful loss.”\n\nWith both visions set before them, the chamber prepared to vote. The deciding voice belonged to Lord Shaw, who chose..."
 
-greneclyf_forces.5.a:0 "Carrion's Doctrine of the Regular Armyа"
-greneclyf_forces.5.b:0 "Latreau’s Doctrine of the Elite Forces"
+greneclyf_forces.5.a:0 "Carrion's Doctrine of the Regular army"
+greneclyf_forces.5.b:0 "Latreau’s Doctrine of the Elite army"
 
 # Нарушитель
 greneclyf_forces.6.t:0 "Нарушитель"
@@ -1164,10 +1164,9 @@ greneclyf_forces.6.d:0 "Даск Лорий полусонный стоял в �
 greneclyf_forces.6.a:0 "«Честь и совесть нации»"
 
 # Псы войны
-greneclyf_forces.7.t:0 "Псы Войны"
-greneclyf_forces.7.d:0 "Орб Селлер сразу произвёл на Латро сильное впечатление. Глава ЧВК резко контрастировал с генералом лейб-гвардии: пока первый раскуривал сигару, время от времени осклабляясь, второй изучал его с холодной сдержанностью.\n\n«Итак», – выпустил облако дыма Селлер, – «Кажется, вы хотели о чём-то поговорить, Ваше Благородие?»\n\nЛатро глянул на часы. Прошла всего минута, а ощущалось, будто час.\n\n«Да, именно так, господин Селлер. Мне известны методы вашей армии, я видел служивших там существ и нахожу рациональным предложить вашим профессионалам работу. Королевство хочет нанять вас для подготовки наших будущих солдат. Мы слишком долго жили в мире и критически нуждаемся в опыте практиков, а не теоретиков».\n\nПони слегка приспустил свои солнечные очки, пристально взглянув на генерала.\n\n«Ха, а я-то думал, что вы планируете переворот или что-то подобное. Ясно, низкоприоритетный контракт, значит. Что ж, это вполне можно устроить. Но!» – Селлер по-деловому разложил перед ним бумаги, – «прочтите условия. Моим бойцам необходима постоянная ротация: они не могут сидеть на месте, им нужно участвовать в операциях, а не только дрессировать ваших новобранцев».\n\nЛатро внимательно изучил контракт, затем поднял глаза.\n\n«Вы уверены, что такая текучка кадров не повлияет на качество подготовки? Рекруты и наставники не успеют сформировать связь».\n\nСеллер хмыкнул.\n\n«А что, если эта связь окажется негативной? Не переживайте», – он протянул генералу перо, – «мы знаем, что делаем».\n\nПосле нескольких секунд раздумий Латро подписал контракт. На мгновение ему показалось, что он заключает сделку с демоном. Орб Селлер довольно улыбнулся, будто читая его мысли."
-
-greneclyf_forces.7.a:0 "«Мы ещё увидимся, генерал»"
+greneclyf_forces.7.t:0 "Dogs of War"
+greneclyf_forces.7.d:0 "Orb Seller made quite an impression. While he puffed on his cigar and grinned like a wolf, Latreau remained composed and unreadable.\n\n“So,” the pony exhaled a cloud of smoke, “I assume you wanted to discuss something, Your Grace?” Latreau glanced at his watch. One minute had passed — it felt like an hour.\n\n“Yes. I’m aware of your company’s methods. I’ve seen what your soldiers become, and I find it logical to invite your professionals to train our future forces. We have lived in peace for too long. We need practitioners, not theorists.”\n\nSeller lowered his sunglasses, studying the general with curious eyes. “Ha. I thought you were planning a coup. But this? Low-priority contract, then. We can arrange it. But!” — he laid out the papers. “My fighters require constant deployment. They won’t sit idle training your rookies forever. They need to fight, as such is their nature.”\n\nLatreau raised an eyebrow as he reviewed the terms. “Are you not concerned that this rotation will prevent proper bonds between instructors and recruits?”\n\nSeller chuckled darkly. “And what if those bonds go rotten? Don’t worry. We know what we’re doing.”\n\nAfter a long pause, Latreau signed. For a moment, it felt like making a pact with a demon. Orb Seller smiled, as if reading his thoughts."
+greneclyf_forces.7.a:0 "“We’ll Meet Again, General”"
 
 # Мысли о божественном
 greneclyf_forces.8.t:0 "Мысли о Божественном"
@@ -1219,13 +1218,17 @@ NCH_arctic_cost_tooltip:0 "Экспедиция на остров обойдёт
 NCH_fraction_neighborhood:0 "Содружество Холмов"  #Фронт Ллира? Аналогия Фронта Стрезы
 
 ### TOOL TIPS ###
-NCH_arctic_special_citues:0 "\n§gКоролева приняла решение о создании специальных арктических ульев для закрепления нашего контроля над регионом. В уже имеющихся колониях появятся новые ульи, а также рабочие возведут морские базы для связи с метрополией.§!"
+NCH_regular_army_chosen:0 "§4Regular army doctrine selected§!"
+NCH_professional_army_chosen:0 "§4Professional army doctrine selected§!"
 
-NCH_arctic_found_tt:0 "\n§gНам будет доступна возможность отправки экспедиций для изучения и колонизации Арктики§!"
+NCH_arctic_special_citues:0 "\n§gThe Queen has decided to establish special Arctic hives to consolidate our control over the region. New hives will appear in existing colonies, and workers will build naval bases to communicate with the metropolis.§!"
 
-NCH_one_more_dream:0 "§OВсе национальные провинции стран-основательниц речного союза под нашим контролем или под контролем наших марионеток§!"
+NCH_arctic_found_tt:0 "\n§gWe will have the opportunity to send expeditions to explore and colonize the Arctic§!"
 
-NCH_ecnomic_tt:0 "§3Имея хорошие дипломатические отношения со странами речной коалиции, мы сможем убедить их провести федеральные реформы, а затем принять федеральный проект.§!"
+NCH_one_more_dream:0 "§OAll national provinces of the founding countries of the river union are under our control or under the control of our puppets§!"
+
+NCH_ecnomic_tt:0 "“§3With good diplomatic relations with the countries of the river coalition, we will be able to convince them to carry out federal reforms and then adopt the federal project.§!"
+
 
 NCH_nine_stars_tt:0 "§3Даёт возможность §!"
 
@@ -1267,7 +1270,10 @@ give_bonuses_after_all_focuses_tt:0 "§3После того, как мы улу�
 NCH_start_obsisian_export_tt:0"§0Открытие магического карьера в Эйслинге позволит нам экпортировать обсидиан§!"
 
 ### IDEAS ###
+NCH_rethinking_forces:0 “Rethinking the Armed Forces”
+NCH_land_forces_everyone_can_be_hero:0 "Everyone can be hero"
 NCH_blosmport_economic_consequences:0 "Последствия изменения финансовой системы"
+NCH_faith_in_queen_idea:0 "Faith in the Queen"
 #NCH_blosmport_economic_consequences_desc:0 ""
 
 NCH_luddites_1:0 "Действующие луддиты"
@@ -1285,8 +1291,8 @@ NCH_Overpopulation_desc:0 ""
 NCH_FBK_pact:0 "Великие договоры"
 NCH_FBK_pact_desc:0 "Древнюю дружбу Фарбрука и Гринклифа символизируют две пары гобеленов, каждый из которых сплетён одним из народов. Первый гобелен показывает Первый Обмен, совершённый примерно 800 лет назад, тогда как другой изображает Замороженное Убежище. Оба события очень значимы для обоих народов.\n\nИзвестные под общим названием "Великих договоров", эти шедевры является свидетельством исторической дружбы и сотрудничества между двумя народами. Они размывают биологические барьеры и доказывают универсальность идеи гармонии."
 
-NCH_idyllic_society_1:0 "Пацифистские склонности"
-NCH_idyllic_society_1_desc:0 "Несмотря на врожденный талант, Гринклифцы не любят пользоваться своими способностями для военных целей или шпионажа. Поэтому, любые исследования в этой области займут продолжительное время"
+NCH_idyllic_society_1:0 "Pacifist tendencies"
+NCH_idyllic_society_1_desc:0 "Despite their innate talent, the Greencliffs do not like to use their abilities for military purposes or espionage. Therefore, any research in this area will take a long time"
 
 ### MODIFIERS ###
 NCH_urbanization_modifier:0 "Урбанизация в регионах"

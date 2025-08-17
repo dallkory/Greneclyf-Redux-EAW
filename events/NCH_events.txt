@@ -1049,6 +1049,12 @@ add_namespace = greneclyf_daylight
 
 		option = {
 			name = greneclyf_forces.5.a
+			set_country_flag = NCH_regular_army_chosen
+		}
+
+		option = {
+			name = greneclyf_forces.5.b
+			set_country_flag = NCH_professional_army_chosen
 		}
 	}
 
