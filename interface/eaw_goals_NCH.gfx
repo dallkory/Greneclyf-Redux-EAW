@@ -67,7 +67,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_domestic_consumption"
+		name = "GFX_goal_domestic_consumption_NCH"
 		textureFile = "gfx/interface/goals/NCH/dom_consumption.tga"
 	}
 
@@ -250,13 +250,38 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_conscription"
+		name = "GFX_goal_conscription_NCH"
 		textureFile = "gfx/interface/goals/NCH/conscription.png"
 	}
 
 	spriteType = {
 		name = "GFX_goal_project_vasilisk"
 		textureFile = "gfx/interface/goals/NCH/project_vasilisk.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_rule_greneclyf"
+		textureFile = "gfx/interface/goals/NCH/rule_greneclyf.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_elite_doctrine"
+		textureFile = "gfx/interface/goals/NCH/elite_doctrine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_hydra"
+		textureFile = "gfx/interface/goals/NCH/project_hydra.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_weopan_production_massive"
+		textureFile = "gfx/interface/goals/NCH/weopan_production_massive.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_war_facility"
+		textureFile = "gfx/interface/goals/NCH/war_facility.png"
 	}
 
 

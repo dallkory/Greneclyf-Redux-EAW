@@ -5,7 +5,10 @@
 
   Arctic_wastland:0 "Arctic silence"
 
- # minor tags #
+  Cader_Scierite:0 "Cader Scierite"
+  red_scientist:0 "Red Scientist"
+
+  # minor tags #
   AWT:0 "Polar Wasteland"
 
  # Characters #
@@ -18,6 +21,7 @@
  # Traits #
   The_Steel_lady:0 "Steel will"
   The_naive_reformer:0 "Naive reformer"
+  The_god_chosen_queen:0 "Beloved of the people"
 
  ### FOCUSES ###
  # Pre crisis #

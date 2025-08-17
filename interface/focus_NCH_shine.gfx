@@ -100,11 +100,11 @@ spriteTypes = {
 
 	# Army #
 	SpriteType = {
-		name = "GFX_goal_gurd_future_shine"
-		texturefile = "gfx/interface/goals/NCH/Future_guard.png"
+		name = "GFX_goal_rule_greneclyf_shine"
+		texturefile = "gfx/interface/goals/NCH/rule_greneclyf.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/NCH/Future_guard.png"
+			animationmaskfile = "gfx/interface/goals/NCH/rule_greneclyf.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -117,7 +117,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/NCH/Future_guard.png"
+			animationmaskfile = "gfx/interface/goals/NCH/rule_greneclyf.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no

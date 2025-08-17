@@ -1,6 +1,6 @@
 shared_focus = {
 	id = NCH_rule_greneclyf
-	icon = GFX_goal_gurd_future
+	icon = GFX_goal_rule_greneclyf
 	cost = 3
 	x = 64
 	y = 2
@@ -1145,7 +1145,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_auxiliary_battalions
-	icon = GFX_goal_latro_doctrine
+	icon = GFX_goal_elite_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
@@ -1179,7 +1179,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_inspire_by_example
-	icon = GFX_goal_unknown
+	icon = GFX_goal_latro_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
@@ -1444,7 +1444,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_bugsmere_war_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_war_facility
 	cost = 15
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
@@ -1527,7 +1527,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_pass_law_on_consctiption
-	icon = GFX_goal_conscription
+	icon = GFX_goal_conscription_NCH
 	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
@@ -1605,7 +1605,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_goddes_of_war
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_hydra
 	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order
@@ -1638,7 +1638,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_expamd_production
-	icon = GFX_goal_unknown
+	icon = GFX_goal_weopan_production_massive
 	cost = 10
 	prerequisite = {
 		focus = NCH_queen_of_the_fields
