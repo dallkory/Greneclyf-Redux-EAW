@@ -5,6 +5,7 @@ add_namespace = greneclyf_obsidian
 add_namespace = greneclyf_foregin
 add_namespace = greneclyf_arctic
 add_namespace = greneclyf_core
+add_namespace = greneclyf_daylight
 
 
 	# Example #
@@ -27,6 +28,24 @@ add_namespace = greneclyf_core
 	#		custom_effect_tooltip = greneclyf.511.b.tt
 	#		}
 	#}
+
+	# Somethging special #
+	country_event = {
+		id = greneclyf_daylight.1
+		title = greneclyf_daylight.1.t
+		desc = greneclyf_daylight.1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option={
+			name = ggreneclyf_daylight.1.a
+		}
+
+		option={
+			name = ggreneclyf_daylight.1.b
+		}
+	}
 
 	# LEGACY #
 	country_event = {

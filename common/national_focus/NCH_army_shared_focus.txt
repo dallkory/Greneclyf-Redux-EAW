@@ -1118,7 +1118,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
-		has_completed_focus = NCH_suppression_of_unrest
+		#has_completed_focus = NCH_suppression_of_unrest
 	}
 
 	prerequisite = {
