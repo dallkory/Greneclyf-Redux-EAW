@@ -32,7 +32,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Crusus
+	# Crisis
 	SpriteType = {
 		name = "GFX_goal_begining_crisis_shine"
 		texturefile = "gfx/interface/goals/NCH/famine.tga"

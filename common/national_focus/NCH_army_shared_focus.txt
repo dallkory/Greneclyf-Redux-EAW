@@ -1157,7 +1157,7 @@ shared_focus = {
 	y = 4
 
 	available = {
-		has_war_support > 35
+		has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
@@ -1179,7 +1179,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_inspire_by_example
-	icon = GFX_goal_latro_doctrine
+	icon = GFX_goal_army_meritocracy
 	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
@@ -1222,7 +1222,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_anyone_can_be_hero
-	icon = GFX_goal_unknown
+	icon = GFX_goal_war_dogs
 	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
@@ -1254,7 +1254,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greuling_workouts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_extreme_training
 	cost = 5
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
@@ -1278,7 +1278,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_best_of_the_best
-	icon = GFX_goal_unknown
+	icon = GFX_goal_best_of_the_best
 	cost = 5
 	prerequisite = {
 		focus = NCH_inspire_by_example
@@ -1353,7 +1353,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_faith_in_queen
-	icon = GFX_goal_unknown
+	icon = GFX_goal_faith_in_the_queen
 	cost = 10
 	prerequisite = {
 		focus = NCH_best_of_the_best
@@ -1396,7 +1396,7 @@ shared_focus = {
 	y = 4
 
 	available = {
-		has_war_support > 35
+		has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
@@ -1477,7 +1477,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greneclyf_tanks
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wgreneclyf_tanks
 	cost = 10
 	prerequisite = {
 		focus = NCH_bugsmere_war_institute
@@ -1502,7 +1502,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_mechanization_of_brigades
-	icon = GFX_goal_unknown
+	icon = GFX_goal_greneclyf_motor
 	cost = 10
 	prerequisite = {
 		focus = NCH_bugsmere_war_institute
@@ -1680,7 +1680,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greneclyf_school_of_war
-	icon = GFX_goal_unknown
+	icon = GFX_goal_greneclyf_school_of_war
 	cost = 10
 	prerequisite = {
 		focus = NCH_faith_in_queen

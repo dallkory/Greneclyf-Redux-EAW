@@ -240,8 +240,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_latro_doctrine"
-		textureFile = "gfx/interface/goals/NCH/latro_doctrine.png"
+		name = "GFX_goal_greneclyf_school_of_war"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_school_of_war.png"
 	}
 
 	spriteType = {
@@ -283,13 +283,41 @@ spriteTypes = {
 		name = "GFX_goal_war_facility"
 		textureFile = "gfx/interface/goals/NCH/war_facility.png"
 	}
+	
+	spriteType = {
+		name = "GFX_goal_wgreneclyf_tanks"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_tanks.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_greneclyf_motor"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_motor.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_extreme_training"
+		textureFile = "gfx/interface/goals/NCH/extreme_training.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_army_meritocracy"
+		textureFile = "gfx/interface/goals/NCH/army_meritocracy.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_war_dogs"
+		textureFile = "gfx/interface/goals/NCH/war_dogs.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_best_of_the_best"
+		textureFile = "gfx/interface/goals/NCH/best_of_the_best.png"
+	}
 
-
+	spriteType = {
+		name = "GFX_goal_faith_in_the_queen"
+		textureFile = "gfx/interface/goals/NCH/faith_in_the_queen.png"
+	}
 
 
 

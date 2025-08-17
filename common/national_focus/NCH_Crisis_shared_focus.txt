@@ -630,7 +630,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_overvise_great_packt
-	icon = GFX_goal_domestic_consumption
+	icon = GFX_goal_domestic_consumption_NCH
 	cost = 5
 	prerequisite = {
 		focus = NCH_hoof_of_help
