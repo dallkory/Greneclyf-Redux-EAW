@@ -37,7 +37,7 @@ focus_tree = {
 
 			hidden_effect = {
 				country_event = {
-					id = greneclyf_redux.1
+					id = greneclyf_base.1
 				}
 			}
 			set_country_flag = NCH_Jorney_not_started
@@ -66,7 +66,7 @@ focus_tree = {
 			custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
 			country_event = {
 			days = 0
-			id = greneclyf_redux.2
+			id = greneclyf_base.2
 			}
 		}
 	}
@@ -84,7 +84,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = greneclyf_redux.3
+				id = greneclyf_base.3
 				days = 1
 			}
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = greneclyf_redux.7
+				id = greneclyf_base.7
 				days = 0
 			}
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 
 			}
 			country_event = {
-				id = greneclyf_redux.8
+				id = greneclyf_base.8
 				days = 0
 			}
 
@@ -218,7 +218,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = greneclyf_redux.700
+				id = greneclyf_base.700
 				days = 0
 			}
 		}
@@ -322,7 +322,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = outdated_industry
 			country_event = {
-				id = greneclyf_redux.9
+				id = greneclyf_base.9
 				days = 0
 			}
 			custom_effect_tooltip = NCH_army_development

@@ -5,10 +5,185 @@ on_actions = {
 		}
 	}
 
-
     on_daily_NCH = {
         effect = {
 			# REDUX #
+
+			if = {
+				limit = {
+					has_completed_focus = NCH_colony_development
+				}
+				if = {
+					limit = {
+						owns_state = 1234
+					}
+					add_victory_points = {
+						province = 20358
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20358
+					}
+				}
+
+				if = {
+					limit = {
+						owns_state = 1215
+					}
+					add_victory_points = {
+						province = 20324
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20324
+					}
+				}
+
+				if = {
+					limit = {
+						owns_state = 1245
+					}
+					add_victory_points = {
+						province = 20352
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20352
+					}
+				}
+
+				if = {
+					limit = {
+						owns_state = 1236
+					}
+					add_victory_points = {
+						province = 20321
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20321
+					}
+				}
+				
+				if = {
+					limit = {
+						owns_state = 1227
+					}
+					add_victory_points = {
+						province = 20314
+						value = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 20314
+					}
+				}
+			}
+		 
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_declaration_nations
+					}
+					NCH = {
+						add_ideas = NCH_declaration_nations
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_goodbye_despair
+					}
+					NCH = {
+						add_ideas = NCH_goodbye_despair
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_riv_volounters
+					}
+					NCH = {
+						add_ideas = NCH_riv_volounters
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_riv_senate
+					}
+					NCH = {
+						add_ideas = NCH_riv_senate
+					}
+				}
+			}
+			
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_bos_riv
+					}
+					NCH = {
+						add_ideas = NCH_bos_riv
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_idea = NCH_blosmport_economic_consequences
+					}
+					NCH = {
+						add_ideas = NCH_blosmport_economic_consequences
+					}
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						is_riverlands_country = yes
+						is_in_faction_with = NCH
+						has_country_flag = NCH_neg_blosmport_economic
+						not = {
+							has_idea = NCH_blosmport_economic_consequences
+						}
+
+						add_ideas = {
+							NCH_blosmport_economic_org
+						}
+					}
+				}
+			}
+
 			# EQS #
 			if = {
 				limit = {
@@ -21,20 +196,20 @@ on_actions = {
                 limit = {
 					focus_progress = {
 						focus = NCH_princess_in_a_high_castle
-						progress > 0.4
+						progress = 0.4
 					}
                 }
 				NCH = {
-				     country_event = {
-                    id = greneclyf_foregin.13
-                    days = 0
+				    country_event = {
+                    	id = greneclyf_foregin.13
+                    	days = 0
               		}	
 				}
 
 				EQS = {
-					 country_event = {
-                    id = greneclyf_foregin.13
-                    days = 0
+					country_event = {
+                    	id = greneclyf_foregin.13
+                    	days = 0
             		}	
 				}
             }
@@ -44,7 +219,7 @@ on_actions = {
                 limit = {
 					focus_progress = {
 						focus = NCH_emvassy_to_equestria
-						progress > 0.15
+						progress = 0.15
 					}
                 }
 				NCH = {

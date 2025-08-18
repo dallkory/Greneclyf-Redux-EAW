@@ -19,6 +19,21 @@ NCH_debug_decision = {
 #	}
 #	priority = 152
 #}
+NCH_arctic_expedition_category = {
+	icon = GFX_unkmow
+
+	priority = {
+		base = 1
+	}
+}
+
+NCH_fed_found_category = {
+	icon = GFX_unkmow
+
+	priority = {
+		base = 153
+	}
+}
 
 NCH_boost_harmony_river = {
 	icon = GFX_unknow
@@ -32,7 +47,7 @@ NCH_gov_rotation_category = {
 	icon = GFX_unknow
 
 	priority = {
-		base = 153
+		base = 154
 	}
 }
 
@@ -56,17 +71,6 @@ NCH_typography_category = {
 	}
 	priority = {
 		base = 151
-	}
-}
-
-NCH_trade_with_pony_of_hills = {
-	icon = GFX_unknow
-	
-	visible = {
-		has_completed_focus = NCH_hoof_of_help
-	}
-	priority = {
-		base = 149
 	}
 }
 
@@ -97,7 +101,7 @@ NCH_celarl_laboratory = {
 	}
 
 	priority = {
-		base = 149
+		base = 148
 	}
 }
 

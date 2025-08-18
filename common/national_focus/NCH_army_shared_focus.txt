@@ -1,6 +1,6 @@
 shared_focus = {
 	id = NCH_rule_greneclyf
-	icon = GFX_goal_unknown
+	icon = GFX_goal_rule_greneclyf
 	cost = 3
 	x = 64
 	y = 2
@@ -9,10 +9,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
-		or = {
-			has_country_flag = NCH_army_forces_allow
-			has_completed_focus = NCH_time_to_look_further
-		}
+		#has_country_flag = NCH_army_forces_allow
+		has_completed_focus = NCH_time_to_look_further
 	}
 	allow_branch = {
 		or = {
@@ -32,7 +30,7 @@ shared_focus = {
 ## NAVY ##
 shared_focus = {
 	id = NCH_at_seas
-	icon = GFX_goal_unknown
+	icon = GFX_goal_on_the_seas
 	cost = 5
 	prerequisite = {
 		focus = NCH_rule_greneclyf
@@ -60,7 +58,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_expand_blosmport_yards
-	icon = GFX_goal_unknown
+	icon = GFX_goal_expand_blosmport_yards
 	cost = 10
 	prerequisite = {
 		focus = NCH_at_seas
@@ -75,6 +73,8 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_fleet_stagnation
+
 		add_timed_idea = {
 			idea = NCH_blosmporn_dockyards
 			days = 270
@@ -95,7 +95,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_hard_armor
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hard_armor
 	cost = 5
 	prerequisite = {
 		focus = NCH_expand_blosmport_yards
@@ -110,6 +110,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_battleship_chose
 	}
 
 	completion_reward = {
@@ -133,7 +135,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_silent_hunters
-	icon = GFX_goal_unknown
+	icon = GFX_goal_torpedor
 	cost = 5
 	prerequisite = {
 		focus = NCH_expand_blosmport_yards
@@ -148,6 +150,8 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_silent_hunters_chose
 	}
 
 	completion_reward = {
@@ -170,7 +174,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_Greneclyf_pride
-	icon = GFX_goal_unknown
+	icon = GFX_goal_kraken_east
 	cost = 8
 	prerequisite = {
 		focus = NCH_hard_armor
@@ -197,7 +201,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_sharks_ice_waters
-	icon = GFX_goal_unknown
+	icon = GFX_goal_sharks_ice_waters
 	cost = 8
 	prerequisite = {
 		focus = NCH_silent_hunters
@@ -226,7 +230,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_experomental_developments
-	icon = GFX_goal_unknown
+	icon = GFX_goal_massive_production
 	cost = 10
 	prerequisite = {
 		focus = NCH_Greneclyf_pride
@@ -673,7 +677,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_assing_new_command
-	icon = GFX_goal_unknown
+	icon = GFX_goal_exnavy_academy
 	cost = 8
 	prerequisite = {
 		focus = NCH_at_seas
@@ -688,6 +692,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		country_event = {
+			id = greneclyf_forces.4
+			days = 0
+		}
 		set_country_flag = NCH_navy_advisor_flag
 
 		custom_effect_tooltip = available_chief_of_navy
@@ -722,7 +730,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_marine_corp
-	icon = GFX_goal_unknown
+	icon = GFX_goal_marine
 	cost = 5
 	prerequisite = {
 		focus = NCH_assing_new_command
@@ -773,7 +781,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_naval_academy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_navy_departaiment
 	cost = 5
 	prerequisite = {
 		focus = NCH_assing_new_command
@@ -796,7 +804,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_Blosmport_navy_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_blosmport_facility
 	cost = 15
 	prerequisite = {
 		focus = NCH_marine_corp
@@ -836,7 +844,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_security_trade
-	icon = GFX_goal_unknown
+	icon = GFX_goal_security_trade
 	cost = 10
 	prerequisite = {
 		focus = NCH_at_seas
@@ -853,7 +861,7 @@ shared_focus = {
 	completion_reward = {
 
 		country_event = {
-			id = greneclyf_forces.99
+			id = greneclyf_forces.3
 			days = 0
 		}
 	}
@@ -862,7 +870,7 @@ shared_focus = {
 ############
 shared_focus = {
 	id = NCH_break_ice
-	icon = GFX_goal_unknown
+	icon = GFX_goal_break_ice
 	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
@@ -899,7 +907,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_merchant_navy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_trade_fleet
 	cost = 5
 	prerequisite = {
 		focus = NCH_security_trade
@@ -924,7 +932,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_resources_for_fleet
-	icon = GFX_goal_unknown
+	icon = GFX_goal_resources_for_fleet
 	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
@@ -946,7 +954,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_investing_in_shipbuildings
-	icon = GFX_goal_unknown
+	icon = GFX_goal_investment_shipbyilding
 	cost = 5
 	prerequisite = {
 		focus = NCH_break_ice
@@ -988,7 +996,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_domestic_development
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_borei
 	cost = 10
 	prerequisite = {
 		focus = NCH_resources_for_fleet
@@ -1061,7 +1069,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_our_future_at_sea
-	icon = GFX_goal_unknown
+	icon = GFX_goal_rule_greneclyf_seas
 	cost = 10
 	prerequisite = {
 		focus = NCH_experomental_developments
@@ -1099,15 +1107,17 @@ shared_focus = {
 ## ARMY ##
 shared_focus = {
 	id = NCH_on_land
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_gurd_future
+	cost = 8
 	x = 64
 	y = 3
 
 	available = {
+		has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		#has_completed_focus = NCH_suppression_of_unrest
 	}
 
 	prerequisite = {
@@ -1116,7 +1126,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 25
-		remove_ideas = NCH_idyllic_society
+		#remove_ideas = NCH_idyllic_society
 
 		add_doctrine_cost_reduction = {
 			name = navdoc_bonus
@@ -1124,12 +1134,17 @@ shared_focus = {
 			uses = 2
 			category = land_doctrine
 		}
+
+		country_event = {
+			id = greneclyf_forces.5
+			days = 0
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_auxiliary_battalions
-	icon = GFX_goal_unknown
+	icon = GFX_goal_elite_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
@@ -1141,12 +1156,15 @@ shared_focus = {
 	y = 4
 
 	available = {
+		#has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_professional_army_chosen
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
 		army_experience = 25
 		set_country_flag = NCH_left_land_forces
 
@@ -1161,7 +1179,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_inspire_by_example
-	icon = GFX_goal_unknown
+	icon = GFX_goal_army_meritocracy
 	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
@@ -1204,7 +1222,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_anyone_can_be_hero
-	icon = GFX_goal_unknown
+	icon = GFX_goal_war_dogs
 	cost = 5
 	prerequisite = {
 		focus = NCH_auxiliary_battalions
@@ -1226,12 +1244,17 @@ shared_focus = {
 			category = cat_racial_specforce_doctrine
 		}
 		add_ideas = NCH_land_forces_everyone_can_be_hero
+
+		country_event = {
+			id = greneclyf_forces.7
+			days = 0
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_greuling_workouts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_extreme_training
 	cost = 5
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
@@ -1255,7 +1278,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_best_of_the_best
-	icon = GFX_goal_unknown
+	icon = GFX_goal_best_of_the_best
 	cost = 5
 	prerequisite = {
 		focus = NCH_inspire_by_example
@@ -1273,10 +1296,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		country_event = {
-			id = greneclyf_forces.1
-			days = 0
-		}
+		#country_event = {
+		#	id = greneclyf_forces.1
+		#	days = 0
+		#}
 
 		division_template = {
 			name = "Changeling Veterans Brigade"
@@ -1330,7 +1353,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_faith_in_queen
-	icon = GFX_goal_unknown
+	icon = GFX_goal_faith_in_the_queen
 	cost = 10
 	prerequisite = {
 		focus = NCH_best_of_the_best
@@ -1351,12 +1374,17 @@ shared_focus = {
 		add_war_support = 0.15
 
 		add_ideas = NCH_faith_in_queen_idea
+
+		country_event = {
+			id = greneclyf_forces.8
+			days = 0
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_priorize_integrity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_karyon_doctrine
 	cost = 5
 	prerequisite = {
 		focus = NCH_on_land
@@ -1368,12 +1396,15 @@ shared_focus = {
 	y = 4
 
 	available = {
+		#has_war_support > 0.35
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_regular_army_chosen
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
 		set_country_flag = NCH_right_land_forces
 		add_manpower = 20000
 		army_experience = 25
@@ -1389,7 +1420,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_discipline_is_key_to_order
-	icon = GFX_goal_unknown
+	icon = GFX_goal_political_comisars
 	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
@@ -1405,12 +1436,16 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = NCH_discipline_key
+		country_event = {
+			id = greneclyf_forces.6
+			days = 0
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_bugsmere_war_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_war_facility
 	cost = 15
 	prerequisite = {
 		focus = NCH_anyone_can_be_hero
@@ -1433,12 +1468,17 @@ shared_focus = {
 			level = 1
 			}
 		}
+
+		country_event = {
+			id = greneclyf_forces.9
+			days = 0
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_greneclyf_tanks
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wgreneclyf_tanks
 	cost = 10
 	prerequisite = {
 		focus = NCH_bugsmere_war_institute
@@ -1453,6 +1493,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_blizkrieg_chose
 	}
 
 	completion_reward = {
@@ -1462,7 +1503,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_mechanization_of_brigades
-	icon = GFX_goal_unknown
+	icon = GFX_goal_greneclyf_motor
 	cost = 10
 	prerequisite = {
 		focus = NCH_bugsmere_war_institute
@@ -1477,6 +1518,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_country_flag = NCH_motorize_chose
 	}
 
 	completion_reward = {
@@ -1486,7 +1528,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_pass_law_on_consctiption
-	icon = GFX_goal_unknown
+	icon = GFX_goal_conscription_NCH
 	cost = 5
 	prerequisite = {
 		focus = NCH_priorize_integrity
@@ -1531,7 +1573,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_queen_of_the_fields
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_vasilisk
 	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order
@@ -1564,7 +1606,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_goddes_of_war
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_hydra
 	cost = 5
 	prerequisite = {
 		focus = NCH_discipline_is_key_to_order
@@ -1597,7 +1639,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_expamd_production
-	icon = GFX_goal_unknown
+	icon = GFX_goal_weopan_production_massive
 	cost = 10
 	prerequisite = {
 		focus = NCH_queen_of_the_fields
@@ -1639,7 +1681,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_greneclyf_school_of_war
-	icon = GFX_goal_unknown
+	icon = GFX_goal_greneclyf_school_of_war
 	cost = 10
 	prerequisite = {
 		focus = NCH_faith_in_queen
@@ -2103,6 +2145,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
+
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
@@ -2122,6 +2165,11 @@ shared_focus = {
 			type = industrial_complex
 			level = 1
 			}
+		}
+
+		country_event = {
+			id = greneclyf_forces.10
+			days = 0
 		}
 	}
 	x = 79
@@ -2402,6 +2450,9 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		set_rule = {
+			can_use_kamikaze_pilots = yes
+		}
 
 		custom_effect_tooltip = give_bonuses_after_all_focuses_tt
 
@@ -2442,7 +2493,7 @@ shared_focus = {
 			}
 		}
 
-		complete_special_project = sp:sp_air_mothership_aircraft
+		#complete_special_project = sp:sp_air_mothership_aircraft
 
 		set_technology = {
 			improved_medium_airframe = 1

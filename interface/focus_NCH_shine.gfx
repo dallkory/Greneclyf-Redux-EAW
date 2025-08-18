@@ -1,4 +1,5 @@
 spriteTypes = {
+	# Pre Crisis
 	SpriteType = {
 		name = "GFX_goal_enyas_legacy_shine"
 		texturefile = "gfx/interface/goals/NCH/goal_enyas_legacy.dds"
@@ -31,6 +32,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	# Crisis
 	SpriteType = {
 		name = "GFX_goal_begining_crisis_shine"
 		texturefile = "gfx/interface/goals/NCH/famine.tga"
@@ -63,6 +65,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	# Arctic
 	SpriteType = {
 		name = "GFX_goal_terraink_shine"
 		texturefile = "gfx/interface/goals/NCH/terraincognita.tga"
@@ -82,6 +85,39 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/NCH/terraincognita.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Army #
+	SpriteType = {
+		name = "GFX_goal_rule_greneclyf_shine"
+		texturefile = "gfx/interface/goals/NCH/rule_greneclyf.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/NCH/rule_greneclyf.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/NCH/rule_greneclyf.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no

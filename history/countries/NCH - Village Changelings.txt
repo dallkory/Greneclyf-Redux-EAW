@@ -1,8 +1,7 @@
 capital = 670
 
 oob = "NCH_1007"
-
-set_research_slots = 2
+set_research_slots = 3
 
 set_country_flag = has_custom_advisors
 set_country_flag = has_custom_designers
@@ -148,12 +147,14 @@ add_ideas = {
 	isolation
 	lack_of_scientists
 
-	NCH_idyllic_society
+	NCH_idyllic_society_1
 	NCH_FBK_pact
 	NCH_luddites_1
 	NCH_Overpopulation
 
 	NCH_fleet_stagnation
+	NCH_air_stagnation
+	#NCH_army_stagnation
 }
 
 add_tech_bonus = {
@@ -218,8 +219,8 @@ recruit_character = NCH_generic_navy_fleet_log #### WIP
 
 NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }
 NCH_generic_navy_fleet_log = { set_character_flag = RIV_advisor_from_NCH }
-NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
-NCH_fortification_engineer = { set_character_flag = RIV_advisor_from_NCH }
+#NCH_captain_of_industry = { set_character_flag = RIV_advisor_from_NCH }
+#NCH_fortification_engineer = { set_character_flag = RIV_advisor_from_NCH }
 
 
 set_rule = {

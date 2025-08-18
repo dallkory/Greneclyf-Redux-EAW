@@ -1,14 +1,14 @@
 Shared_focus = {
 	id = NCH_beginning_of_crisis
 	icon = GFX_goal_begining_crisis
-	cost = 1
+	cost = 0
 	x = 33
 	y = 8
 
 	available = {
 		or = {
 			has_country_flag = NCH_hunger_starts
-			has_completed_focus = NCH_time_to_look_further
+			#has_completed_focus = NCH_time_to_look_further
 		}
 	}
 	bypass = {
@@ -17,7 +17,7 @@ Shared_focus = {
 	allow_branch = {
 		or = {
 		has_country_flag = NCH_hunger_starts
-		has_completed_focus = NCH_time_to_look_further
+		#has_completed_focus = NCH_time_to_look_further
 		}
 	}
 }
@@ -25,7 +25,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_mre_cards
 	icon = GFX_goal_mre_cards
-	cost = 0
+	cost = 5
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
 	}
@@ -57,15 +57,15 @@ Shared_focus = {
 	completion_reward = {
 
 		country_event = {
-			id = greneclyf_redux.19
+			id = greneclyf_base.19
 			days = 0
 		}
 
 		1209 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 			}
 		}
 
@@ -79,7 +79,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_agroindustrial_programs
 	icon = GFX_goal_lux_program
-	cost = 2
+	cost = 3
 	prerequisite = {
 		focus = NCH_agroindustrial_mobilization
 	}
@@ -91,7 +91,7 @@ Shared_focus = {
 		add_political_power = 50
 
 		country_event = {
-			id = greneclyf_redux.20
+			id = greneclyf_base.20
 			days = 0
 		}
 
@@ -168,7 +168,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_modernization_industry
 	icon = GFX_goal_gold_standart
-	cost = 5
+	cost = 3
 	prerequisite = {
 		focus = NCH_limit_external_trade
 	}
@@ -179,15 +179,9 @@ Shared_focus = {
 		add_political_power = 50
 		add_stability = -0.1
 
-		random_state = {
-			limit = {
-				is_owned_by = NCH
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
+		add_timed_idea = {
+			idea = NCH_golden_standart_cancel
+			days = 120
 		}
 
 		add_power_balance_value = {
@@ -250,7 +244,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_emergacy_plan
 	icon = GFX_goal_emegrency_plan
-	cost = 8
+	cost = 3
 	prerequisite = {
 		focus = NCH_beginning_of_crisis
 	}
@@ -309,7 +303,7 @@ Shared_focus = {
 		add_political_power = 50
 		add_stability = 0.075
 		country_event = {
-			id = greneclyf_redux.28
+			id = greneclyf_base.28
 			days = 0
 		}
 
@@ -338,7 +332,7 @@ Shared_focus = {
 		add_political_power = 30
 		add_stability = 0.05
 		country_event = {
-			id = greneclyf_redux.27
+			id = greneclyf_base.27
 			days = 0
 		}
 		add_power_balance_value = {
@@ -431,14 +425,14 @@ Shared_focus = {
 			value = 0.05
 		}
 
-		custom_effect_tooltip = NCH_start_friendship_with_pony_hills
+		#custom_effect_tooltip = NCH_start_friendship_with_pony_hills
 	}
 }
 
 Shared_focus = {
 	id = NCH_some_love
 	icon = GFX_goal_some_love
-	cost = 1
+	cost = 3
 	prerequisite = {
 		focus = NCH_every_friend
 	}
@@ -458,7 +452,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.25
+			id = greneclyf_base.25
 			days = 0
 		}
 	}
@@ -476,7 +470,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.15
+			id = greneclyf_base.15
 			days = 0
 		}			
 
@@ -523,7 +517,7 @@ Shared_focus = {
 		}
 
 		country_event = {
-			id = greneclyf_redux.16
+			id = greneclyf_base.16
 			days = 0
 		}
 	}
@@ -532,7 +526,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_clans_of_Greneclyf
 	icon = GFX_goal_warlaw
-	cost = 10
+	cost = 5
 	prerequisite = {
 		focus = NCH_consolidation_political
 	}
@@ -548,7 +542,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.29
+			id = greneclyf_base.29
 			days = 0
 		}
 	}
@@ -557,7 +551,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_suppression_of_unrest
 	icon = GFX_goal_arest
-	cost = 10
+	cost = 6
 	prerequisite = {
 		focus = NCH_clans_of_Greneclyf
 	}
@@ -569,10 +563,17 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_manpower = -2000
+		add_war_support = 0.05
+		add_stability = 0.05
 		remove_ideas = NCH_protests_on_street
 		add_power_balance_value = {
 			id = NCH_hunger_bop
-			value = 0.2
+			value = 0.075
+		}
+
+		country_event = {
+			id = greneclyf_base.41
 		}
 	}
 }
@@ -596,7 +597,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.33
+			id = greneclyf_base.33
 			days = 0
 		}
 
@@ -621,7 +622,7 @@ Shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_redux.17
+			id = greneclyf_base.17
 			days = 15
 		}
 	}
@@ -629,8 +630,8 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_overvise_great_packt
-	icon = GFX_goal_domestic_consumption
-	cost = 8
+	icon = GFX_goal_domestic_consumption_NCH
+	cost = 5
 	prerequisite = {
 		focus = NCH_hoof_of_help
 	}
@@ -656,6 +657,10 @@ Shared_focus = {
 		add_power_balance_value = {
 			id = NCH_hunger_bop
 			value = 0.15
+		}
+
+		country_event = {
+			id = greneclyf_base.40
 		}
 	}
 }

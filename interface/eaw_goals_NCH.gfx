@@ -67,7 +67,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_domestic_consumption"
+		name = "GFX_goal_domestic_consumption_NCH"
 		textureFile = "gfx/interface/goals/NCH/dom_consumption.tga"
 	}
 
@@ -229,6 +229,185 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
 	}	
 
+	spriteType = {
+		name = "GFX_goal_gurd_future"
+		textureFile = "gfx/interface/goals/NCH/Future_guard.png"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_karyon_doctrine"
+		textureFile = "gfx/interface/goals/NCH/Karyon_doctrine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_greneclyf_school_of_war"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_school_of_war.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_political_comisars"
+		textureFile = "gfx/interface/goals/NCH/political_comisars.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_conscription_NCH"
+		textureFile = "gfx/interface/goals/NCH/conscription.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_vasilisk"
+		textureFile = "gfx/interface/goals/NCH/project_vasilisk.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_rule_greneclyf"
+		textureFile = "gfx/interface/goals/NCH/rule_greneclyf.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_elite_doctrine"
+		textureFile = "gfx/interface/goals/NCH/elite_doctrine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_hydra"
+		textureFile = "gfx/interface/goals/NCH/project_hydra.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_weopan_production_massive"
+		textureFile = "gfx/interface/goals/NCH/weopan_production_massive.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_war_facility"
+		textureFile = "gfx/interface/goals/NCH/war_facility.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_wgreneclyf_tanks"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_tanks.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_greneclyf_motor"
+		textureFile = "gfx/interface/goals/NCH/greneclyf_motor.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_extreme_training"
+		textureFile = "gfx/interface/goals/NCH/extreme_training.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_army_meritocracy"
+		textureFile = "gfx/interface/goals/NCH/army_meritocracy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_war_dogs"
+		textureFile = "gfx/interface/goals/NCH/war_dogs.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_best_of_the_best"
+		textureFile = "gfx/interface/goals/NCH/best_of_the_best.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_faith_in_the_queen"
+		textureFile = "gfx/interface/goals/NCH/faith_in_the_queen.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_rule_greneclyf_seas"
+		textureFile = "gfx/interface/goals/NCH/rule_greneclyf_seas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_on_the_seas"
+		textureFile = "gfx/interface/goals/NCH/on_the_seas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_expand_blosmport_yards"
+		textureFile = "gfx/interface/goals/NCH/expand_blosmport_yards.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_exnavy_academy"
+		textureFile = "gfx/interface/goals/NCH/navy_academy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hard_armor"
+		textureFile = "gfx/interface/goals/NCH/hard_armor.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_torpedor"
+		textureFile = "gfx/interface/goals/NCH/torpedo.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_sharks_ice_waters"
+		textureFile = "gfx/interface/goals/NCH/sharks_ice_waters.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_kraken_east"
+		textureFile = "gfx/interface/goals/NCH/kraken_east.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_massive_production"
+		textureFile = "gfx/interface/goals/NCH/massive_production.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_facility"
+		textureFile = "gfx/interface/goals/NCH/blosmport_facility.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_marine"
+		textureFile = "gfx/interface/goals/NCH/marine.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_navy_departaiment"
+		textureFile = "gfx/interface/goals/NCH/navy_departaiment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_security_trade"
+		textureFile = "gfx/interface/goals/NCH/security_trade.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_borei"
+		textureFile = "gfx/interface/goals/NCH/project_borei.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_break_ice"
+		textureFile = "gfx/interface/goals/NCH/break_ice.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_resources_for_fleet"
+		textureFile = "gfx/interface/goals/NCH/resources_for_fleet.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_investment_shipbyilding"
+		textureFile = "gfx/interface/goals/NCH/investment_shipbyilding.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_trade_fleet"
+		textureFile = "gfx/interface/goals/NCH/trade_fleet.png"
+	}
 
 
 
@@ -238,7 +417,12 @@ spriteTypes = {
 
 
 
-	# Submod #
+
+
+
+
+
+# Submod #
 	spriteType = {
 		name = "GFX_goal_hart_side"
 		textureFile = "gfx/interface/goals/NCH/goal_nch_hart.dds"

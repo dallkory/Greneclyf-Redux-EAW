@@ -1,9 +1,23 @@
 ﻿l_russian:
 
+# GRENECLYF #
 VICTORY_POINTS_5230:0 "Ллир"
 VICTORY_POINTS_10775:0 "Порт Улисс"
+VICTORY_POINTS_10891:0 "Корхарт"
+
+# ARCTIC #
+VICTORY_POINTS_20346:0 "Литл Хоуп"
+VICTORY_POINTS_20358:0 "Порт Маркарт"
+VICTORY_POINTS_20324:0 "Стоянка Хайсвик"
+VICTORY_POINTS_20352:0 "Станция Фицрой"
+VICTORY_POINTS_20321:0 "Вик-417"
+VICTORY_POINTS_20314:0 "Метеостанция Сноухарт"
 
 SAOR:0 "Саор"
 Yliss:0 "Улисс"
 
+# HAWAI #
 VICTORY_POINTS_20422:0 "Поняйлулу"
+
+#VICTORY_POINTS_
+
