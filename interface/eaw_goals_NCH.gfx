@@ -409,6 +409,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/trade_fleet.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_birth_air_forces"
+		textureFile = "gfx/interface/goals/NCH/birth_air_forces.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_flying_school"
+		textureFile = "gfx/interface/goals/NCH/flying_school.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_raprots_herd"
+		textureFile = "gfx/interface/goals/NCH/raprots_herd.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_radar_station"
+		textureFile = "gfx/interface/goals/NCH/radar_station.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_iron_dome"
+		textureFile = "gfx/interface/goals/NCH/iron_dome.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_night_bomb"
+		textureFile = "gfx/interface/goals/NCH/night_bomb.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_aisling_facility"
+		textureFile = "gfx/interface/goals/NCH/aisling_facility.png"
+	}
 
 
 

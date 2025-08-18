@@ -370,65 +370,68 @@ NCH_adopt_consitution_desc:0 "Федерация затаила дыхание, 
 # ARMY #
 NCH_rule_greneclyf:0 "Rule Greneclyf!"
 NCH_rule_greneclyf_desc:0 "The royal court has been given the opportunity to focus on the state of our army. It's time to bring the Guard into proper shape!"
+#
+# Navy #
+NCH_at_seas:0 "Upon the Waves"
+NCH_at_seas_desc:0 "The Eithne Reforms have greatly expanded the capabilities of our navy. Now, more than ever, we must seize the moment and hasten our pace of modernization. Just a few more steps and Greneclyf shall reign over all the seas of the East!"
 
-NCH_at_seas:0 "На волнах"
-NCH_at_seas_desc:0 "Реформы Эньи значительно расширили возможности нашего флота, и сейчас критически важно не упустить момент, ускорив темпы модернизации. Ещё несколько шагов – и Гринклиф сможет править всеми морями Востока!"
+NCH_expand_blosmport_yards:0 "Expand the Blosmport Shipyards"
+NCH_expand_blosmport_yards_desc:0 "Greneclyf is an island nation. Its shipyards are its lifeline to the world. To bolster trade and protect vital shipping lanes, we must expand our drydocks and harbor stations, and increase the number of skilled workers in their service."
 
-NCH_expand_blosmport_yards:0 "Расширить верфи Блосмпорта"
-NCH_expand_blosmport_yards_desc:0 "Гринклиф – островное государство, а значит, верфи являются его основным связующим звеном с внешним миром. Для активного развития торговли и обеспечения защиты судоходства необходимо расширить доки и стоянки, а также увеличить число обслуживающего персонала."
+NCH_hard_armor:0 "Reinforced Armor"
+NCH_hard_armor_desc:0 "Pursuing refinement of our existing doctrines begins, first and foremost, with the strengthening of our ships’ hulls and the development of new alloys for future vessels. To this end, we shall employ advanced metallurgical techniques acquired through our cooperation with the River Coalition."
 
-NCH_hard_armor:0 "Крепкая броня"
-NCH_hard_armor_desc:0 "Делая ставку на совершенствование существующих доктрин, в первую очередь мы должны заняться укреплением обшивки наших кораблей и разработкой новых сплавов для будущих проектов. В этом нам помогут передовые технологии, полученные от Речной Коалиции."
+NCH_Greneclyf_pride:0 "Kraken of the East"
+NCH_Greneclyf_pride_desc:0 "Hetcher, the foremost pride of the Greneclyfian Navy, stands ready for modernization and rearmament to become the true Kraken of the East. Once improved, the Hetcher will replace tales of tentacled monsters with legends of chromed barrels, thundering across the waves and dragging enemy fleets to their watery graves."
 
-NCH_Greneclyf_pride:0 "Кракен Востока"
-NCH_Greneclyf_pride_desc:0 "«Хетчер», главная гордость военно-морского флота Гринклифа, заслуживает модернизации и обновления вооружения, чтобы стать настоящим Кракеном Востока. После усовершенствований «Хетчер» заменит легенды о чудовищном спруте легендой о мощи хромированных стволов, сотрясающих землю врага и утягивающих на дно его корабли!"
+NCH_silent_hunters:0 "Silent Hunters"
+NCH_silent_hunters_desc:0 "Should we choose the doctrine of raider control over maritime routes, our navy will pivot toward the development of a submarine-dominant fleet. Armed with torpedoes and mining systems, these low-cost killers will slit the throat of any beast we go to war with, severing their lifelines and starving them into submission."
 
-NCH_silent_hunters:0 "Бесшумные охотники"
-NCH_silent_hunters_desc:0 "Выбирая доктрину рейдерского контроля морских путей, мы переориентируем вектор развития нашего флота на доминирование подводных лодок. Эти недорогие в производстве убийцы, оснащённые торпедами и системами минирования, будут перерезать горло любому зверю, с которым мы воюем, лишая его снабжения."
+NCH_sharks_ice_waters:0 "Sharks of the Frozen Deep"
+NCH_sharks_ice_waters_desc:0 "Our submarine fleet shall establish a wide-ranging communications net, codenamed Shark. Upon detecting an enemy formation, a scout sub will immediately transmit data to the underwater command center and initiate pursuit. Meanwhile, the rest of the Shark Pack will position themselves in the surrounding waters, ensuring the prey cannot escape."
 
-NCH_sharks_ice_waters:0 "Акулы ледяных вод"
-NCH_sharks_ice_waters_desc:0 "Наш подводный флот должен выстроить целую сеть коммуникации под кодовым названием «Акула». Обнаружив вражеское соединение, подлодка немедленно передаст данные в подводный штаб, начав преследование на дистанции. Тем временем остальные члены «Акульей Стаи» займут позиции для окружения жертвы, не оставляя ей шанса на спасение."
+NCH_experomental_developments:0 "Mass Production"
+NCH_experomental_developments_desc:0 "With strategic priorities now set, we are poised to launch serial production of naval vessels, significantly accelerating the growth of Greneclyf’s maritime strength. Our enemies will think twice before daring to threaten us again."
 
-NCH_experomental_developments:0 "Серийное производство"
-NCH_experomental_developments_desc:0 "Определившись с приоритетами развития флота, мы можем наладить серийное производство кораблей, ускоряя наращивание военно-морской мощи Гринклифа. Теперь другие страны подумают дважды, прежде чем осмелятся нам угрожать. "
-
-NCH_assing_new_command:0 "Новое Адмиралтейство"
-NCH_assing_new_command_desc:0 "Во время кризиса в страну успели вернуться агенты, обучавшиеся морскому делу в других странах. Контр-адмирал Семпер Фай представит королеве отчёт после консультаций с прибывшими курсантами, чтобы определить оптимальное направление развития нашего флота."
+NCH_assing_new_command:0 "The New Admiralty"
+NCH_assing_new_command_desc:0 "During the crisis, several agents trained in naval warfare abroad managed to return home. Rear Admiral Semper Phi shall present a report to the Queen after consulting with the returning cadets, in order to determine the optimal course for our fleet’s development."
 
 NCH_marine_corp:0 "„Go brách dílis”"
-NCH_marine_corp_desc:0 "Для эффективного контроля над морем наша армия всегда должна располагать мобильными отрядами морского десанта, готовыми высадиться в любой точке суши и удерживать её до прибытия основных сил. В соответствии с этой целью, под руководством ВМФ Гринклифа будет создан Корпус Королевской Морской Пехоты."
+NCH_marine_corp_desc:0 "To maintain command over the sea, our forces must possess swift, mobile marine units — ready to land anywhere and hold the ground until reinforcements arrive. With this objective in mind, under the leadership of the Greneclyf Navy, the Royal Marine Corps shall be established."
 
-NCH_naval_academy:0 "Центромор"
-NCH_naval_academy_desc:0 "В целях дальнейшей модернизации военно-морского флота было принято решение расширить его военную автономию, учредив Центральный Комитет Морфлота со штаб-квартирой в Блосмпорте. Большая свобода действий благотворно скажется на оперативности и гибкости в принятии решений. "
+NCH_naval_academy:0 "CeNaCo"
+NCH_naval_academy_desc:0 "To ensure the continued modernization of our fleet, it has been decided to grant it greater autonomy through the creation of the Central Naval Committee, headquartered in Blosmport. Broader operational freedom will strengthen the navy’s ability to act swiftly and adapt to changing circumstances."
 
-NCH_Blosmport_navy_institute:0 "Военно-морской Институт Блосмпорта"
-NCH_Blosmport_navy_institute_desc:0 "С открытием Военно-морского института Блосмпорта при Центроморе Семпер предложил решить сразу две задачи: усовершенствовать систему военно-морского образования и укрепить потенциал флота. Отныне подготовка морских теоретиков будет проходить на национальном уровне, ориентируясь не на отвлечённые концепции, а на адаптацию доктрин под реальные условия Гринклифа. "
+NCH_Blosmport_navy_institute:0 "Blosmport Naval Institute"
+NCH_Blosmport_navy_institute_desc:0 "With the founding of the Blosmport Naval Institute under the auspices of CeNaCo, Admiral Semper proposed a dual-purpose mission: to reform naval education and enhance our strategic capabilities. From now on, our naval theorists shall be trained at the national level — not in abstract doctrine, but in principles tailored to the unique realities of Greneclyf."
 
-NCH_security_trade:0 "Безопасность нашей торговли"
-NCH_security_trade_desc:0 "Одна из главных проблем расположения Гринклифа в том, что полгода воды вокруг нас скованы льдом, что создаёт большие трудности для торговли. Королева ставит перед военно-морским флотом очевидную задачу: подчинить природу, преодолев ледяную преграду, и обеспечить бесперебойное функционирование морских торговых путей круглый год."
+NCH_security_trade:0 "Securing Our Trade"
+NCH_security_trade_desc:0 "One of Greneclyf’s enduring hardships is that the waters surrounding our island remain frozen for half the year, posing major obstacles to trade. The Queen has now tasked the Navy with a clear mandate: to conquer nature itself, breaking the ice barrier and ensuring uninterrupted maritime commerce all year round."
 
-NCH_merchant_navy:0 "Торговый флот"
-NCH_merchant_navy_desc:0 "Первоочередной задачей является оснащение уже существующих торговых судов средствами для преодоления суровых северных зим. Первая универсальная торговая флотилия Гринклифа будет оснащена прототипами ледовых таранов, способных пробивать замёрзшие воды, обеспечивая торговлю даже в самые лютые морозы."
+NCH_merchant_navy:0 "The Merchant Fleet"
+NCH_merchant_navy_desc:0 "Our first order of business is to retrofit existing trade ships with means of traversing the brutal northern winters. Greneclyf’s first fully integrated merchant flotilla will be outfitted with prototype icebreakers, capable of shattering frozen waterways and securing trade routes even in the deepest frost."
 
-NCH_break_ice:0 "Сокрушить ледяной покров"
-NCH_break_ice_desc:0 "Некоторые из наших учёных предложили испытать уникальный обсидиановый сплав в деталях ледокольного оборудования. Они утверждают, что этот материал позволит прорезать лёд, словно бумагу. Если эксперимент окажется успешным, новую технологию получат не только торговые и исследовательские суда, но и боевые корабли, сделав наш флот практически независимым от погодных условий и зимних льдов. "
+NCH_break_ice:0 "Shattering the Ice"
+NCH_break_ice_desc:0 "Some of our scholars have proposed testing an obsidian-infused alloy for use in icebreaking equipment. They claim this material can slice through ice as if it were parchment. If the trials prove successful, the technology will be deployed not only on trade and research ships, but also on military vessels, rendering our fleet nearly immune to winter’s grip."
 
-NCH_resources_for_fleet:0 "Ресурсы для флота"
-NCH_resources_for_fleet_desc:0 "Королевский двор одобрил указ, предложенный Семпером Фаем, о разработке новых месторождений в рудниках Эйслинга и других регионах страны. Это решение не только обеспечит рабочие места для граждан Гринклифа, но и создаст излишки сырья, которые можно будет перенаправить в другие отрасли экономики. "
+NCH_resources_for_fleet:0 "Resources for the Fleet"
+NCH_resources_for_fleet_desc:0 "The Royal Court has approved Rear Admiral Semper Phi’s decree to develop new resource sites in the Aisling mines and other territories across the realm. This initiative will not only provide new employment opportunities for Greneclyf’s citizens, but also generate surplus materials to support other sectors of the economy."
 
-NCH_investing_in_shipbuildings:0 "Инвестиции в судостроение"
-NCH_investing_in_shipbuildings_desc:0 "Прошлая торговая флотилия хорошо показала себя в борьбе с суровыми зимними условиями, но экономика королевства растёт, а вместе с ней увеличивается и товарооборот. Нам необходимо как можно скорее открыть дополнительные стоянки и верфи в ключевых морских портах страны, чтобы не допустить дефицита торговых судов."
+NCH_investing_in_shipbuildings:0 "Investment in Shipbuilding"
+NCH_investing_in_shipbuildings_desc:0 "The previous merchant flotilla has proven its worth in withstanding the harsh winter seas. However, as the kingdom’s economy grows, so too does its volume of trade. We must expedite the construction of additional drydocks and berths at key ports to prevent shortages of merchant vessels."
 
-NCH_domestic_development:0 "Проект «Борей»"
-NCH_domestic_development_desc:0 "Успех эксперимента с обсидиановыми компонентами вдохновил наш флот на дальнейшее развитие этой технологии. В результате появился амбициозный проект – первый в своём роде ледокол-торпедный крейсер под кодовым названием «Борей». Это уникальное судно можно будет использовать как в военных, так и в гражданских или даже научных целях. С таким флотом Гринклиф сможет без труда исследовать самые северные воды – доселе почти неизученные другими странами."
+NCH_domestic_development:0 "Project Boreas"
+NCH_domestic_development_desc:0 "The success of the obsidian component trials has inspired the Navy to pursue further innovations. Thus was born an ambitious design: the world’s first icebreaking torpedo cruiser — Project Boreas. This vessel will be capable of serving military, civilian, and scientific purposes alike. With such a fleet, Greneclyf shall chart and command even the coldest, most uncharted waters of the North, where no nation has yet dared to venture."
 
-NCH_our_future_at_sea:0 "Правь, Гринклиф, морями!"
-NCH_our_future_at_sea_desc:0 "После срочного обновления и расширения военно-морского флота Гринклиф окончательно утверждает своё господство в регионе, закрепляя статус морского гегемона. Мы сильны, но это только начало. Теперь нам предстоит продолжать развивать мощь нашего флота, чтобы весь мир знал: Гринклиф – владыка морей!"
+NCH_our_future_at_sea:0 "Rule Greneclyf the Waves!"
+NCH_our_future_at_sea_desc:0 "With its navy swiftly expanded and reforged, Greneclyf cements its hegemony over the region’s waters. We are strong, but this is only the beginning. We shall continue to grow our maritime might until the world knows, without doubt or defiance: Greneclyf is master of the seas!"
 
+
+
+# Army #
 NCH_on_land:0 "The Future of the Guard"
 NCH_on_land_desc:0 "The high command, including Generals Carrion and Latreau, convened to determine the future of Greneclyf’s Royal Guard. Yet the meeting sowed division among the military elite — each general offering a conflicting vision for the army’s role in the world to come. Now it falls to Oireachtas to hear them both and choose which path to follow."
 
-# Army #
 NCH_priorize_integrity:0 "Carrion’s Doctrine"
 NCH_priorize_integrity_desc:0 "Oireachtas chose to embrace Carrion’s vision, and the Royal Guard now begins a sweeping transformation. Troop numbers will surge, and a true standing army shall be forged from the soil of Greneclyf. Soon, the realm shall witness the rise of a new generation of defenders, marching in step and numberless in their ranks."
 
@@ -478,62 +481,64 @@ NCH_greneclyf_school_of_war:0 "Greneclyf School of War"
 NCH_greneclyf_school_of_war_desc:0 "After a long road of reform, our army is finally ready for war and worthy of the name Armed Forces of the 11th Century. Whoever comes to challenge us now will face the Guard and receive a response worthy of legend."
 
 
-NCH_and_in_the_air:0 "Рождение ВВС"
-NCH_and_in_the_air_desc:0 "Чтобы эффективно вести современные войны, необходим контроль над воздухом. Наших ВВС пока не существует, но специалисты, набравшиеся зарубежного опыта, исправят это, заложив основы гринклифской школы воздушной войны."
 
-NCH_who_else_but_us:0 "Стаи Рапторов"
-NCH_who_else_but_us_desc:0 "«Рапторы» – так будет называться наша программа воздушного десанта. Как островному государству, нам жизненно важно иметь возможность забрасывать рейдеров-диверсантов в тыл врага – отряды, способные уничтожать инфраструктуру, захватывать города и удерживать позиции до прибытия основных сил."
 
-NCH_flying_school:0 "Лётные школы"
-NCH_flying_school_desc:0 "Следует расчистить несколько площадок под будущие школы подготовки пилотов. Постоянная тренировка до автоматизма значительно снизит риск аварий и прочих инцидентов."
+NCH_and_in_the_air:0 "Birth of the Air Force"
+NCH_and_in_the_air_desc:0 "To wage modern wars effectively, air superiority is essential. Our air force doesn’t yet exist, but specialists with foreign experience will lay the foundation for a uniquely Greneclyfan school of aerial warfare."
 
-NCH_build_new_airbases:0 "Обустроить полигоны"
-NCH_build_new_airbases_desc:0 "Полигоны и авиабазы нужны не только для военных целей, но и как гражданская инфраструктура, связывающая Гринклиф с внешним миром. Может, однажды к нам даже будут прилетать туристы. "
+NCH_who_else_but_us:0 "Raptor Wings"
+NCH_who_else_but_us_desc:0 "“Raptors” will be the name of our airborne operations program. As an island nation, it’s vital we possess the means to drop raider-diversion units deep behind enemy lines: strike teams trained to destroy infrastructure, seize key positions, and hold cities until reinforcements arrive."
 
-NCH_defense_island:0 "«Железный Купол»"
-NCH_defense_island_desc:0 "ВВС развиваем не только мы, но и каждый потенциальный противник, который захочет принести войну в наш дом. Его остановит непрерывный огонь переплетённых систем ПВО, первым звеном которых станет проект «Железный купол». Пусть только попробуют!"
+NCH_flying_school:0 "Flight Schools"
+NCH_flying_school_desc:0 "We must clear ground for the construction of pilot training schools. Constant drill and routine will reduce the risk of fatal accidents and prepare our aviators for the realities of combat."
 
-NCH_radar_development:0 "Радиолокационные станции"
-NCH_radar_development_desc:0 "Одна из инновационных технологий внешнего мира, которую мы должны освоить, – это радиолокация. С ней никто не укроется: радар даст нам способность видеть сквозь тьму и расстояние, предугадывать действия врага и не теряться в небе."
+NCH_build_new_airbases:0 "Develop Test Ranges"
+NCH_build_new_airbases_desc:0 "Airbases and test ranges are not just for military use — they are strategic infrastructure linking Greneclyf to the wider world. Perhaps one day, even tourists will fly here."
 
-NCH_night_training:0 "Ужас в ночи"
-NCH_night_training_desc:0 "Изучение методов ведения боя в тени приведёт любого потенциального противника в настоящий ужас, когда эскадрильи наших боевых машин будут пикировать на них с отключёнными моторами, заставая врага врасплох перед скорой кончиной. Первый такой отряд будет прозван «Ночные Ведьмы»."
+NCH_defense_island:0 "Iron Dome"
+NCH_defense_island_desc:0 "Potential enemies are developing their own air forces and one day they may try to bring war to our shores. The first line of our aerial defense will be the Iron Dome project: a woven mesh of anti-air systems, ready to unleash a hailstorm on intruders. Let them try."
 
-NCH_flying_like_butterfly:0 "Поступью ветров"
-NCH_flying_like_butterfly_desc:0 "В тишине ангаров рождаются доктрины, где каждый манёвр – молитва высоте. Пусть небо станет учебником, написанным самой Матроной, к которой с дерзновением тянутся наши пилоты."
+NCH_radar_development:0 "Radar Stations"
+NCH_radar_development_desc:0 "One of the most important technologies from abroad is radio detection. Radar will give us the power to see through darkness and distance, anticipate the enemy, and never lose our way in the sky."
 
-NCH_aisling_air_institute:0 "Авиационный университет Эйслинга"
-NCH_aisling_air_institute_desc:0 "Эйслинг – идеальное место для создания будущего авиационного университета. Вокруг него вырастет целый новый район, «авиа-городок», где будут жить, учиться и тренироваться пилоты, как гражданские, так и военные."
+NCH_night_training:0 "Terror in the Night"
+NCH_night_training_desc:0 "Studying the art of combat under cover of darkness will leave any enemy trembling, when our silent aircraft strike from above with engines cut, catching them off-guard just before their final breath. Our first such squadron will be named the Night Witches."
 
-NCH_domestic_parts:0 "Авиастроительный ВПК"
-NCH_domestic_parts_desc:0 "Производство самолётов требует не только ресурсов, но и банального пространства для проектирования и сборки. Виксит предложила переоборудовать два старых цеха в своём домене в инновационные центры промышленной сборки воздушных судов – от такого предложения отказаться невозможно."
+NCH_flying_like_butterfly:0 "On Wind’s Swift Trail"
+NCH_flying_like_butterfly_desc:0 "In the stillness of the hangars, doctrine is born — each maneuver a prayer to the skies. Let the heavens become a living scripture written by Matron herself, to whom our pilots reach with daring hearts."
 
-NCH_rocket_science:0 "Проект «Зенит»"
-NCH_rocket_science_desc:0 "Виксит и команда её учёных, углубляясь в авиапромышленность, в ходе экспериментов синтезировали высокоэнергетическое топливо, непригодное для самолётов. После месяцев чертежей и моделирования они пришли к идее создания машины, основанной на принципах ускорения и реактивной тяги – вдохновением послужили... фейерверки. Префект видит огромный потенциал в проекте и просит разрешения построить полигон в Жукомире."
+NCH_aisling_air_institute:0 "Aisling Aviation University"
+NCH_aisling_air_institute_desc:0 "Aisling is the perfect site for the creation of our national aviation university. Around it will grow an aviation town where pilots — both civilian and military — will live, study, and train."
 
-NCH_hotter_thousands_suns:0 "Проект «Феникс»"
-NCH_hotter_thousands_suns_desc:0 "Франсер Целарл предложил идею создания ужасающего оружия, сочетающего достижения науки и магические наработки. Виксит горячо поддержала инициативу, заверив, что разрушительный потенциал нового орудия превзойдёт жар тысяч солнц."
+NCH_domestic_parts:0 "Aviation Military-Industrial Complex"
+NCH_domestic_parts_desc:0 "Aircraft production requires not just resources, but dedicated space for design and assembly. Wicksite has offered to convert two old plants in her domain into innovative assembly centers for airframes — a proposal we cannot refuse."
 
-NCH_experimental_developments:0 "Субсидии на инновации"
-NCH_experimental_developments_desc:0 "Наши учёные достигают значительного прогресса в сфере ядерной энергетики и реактивной тяги. Не исключено, что именно мы станем первой страной, создавшей настоящий реактивный истребитель. Прогресс нельзя останавливать, мы обязаны догнать и перегнать любую потенциальную угрозу, развивая сферы дальше."
+NCH_rocket_science:0 "Project Zenith"
+NCH_rocket_science_desc:0 "Delving deeper into aviation tech, Wicksite and her team synthesized a high-energy fuel unsuitable for aircraft. Months of blueprints and simulations led them to design a machine based on principles of acceleration and thrust inspired by... fireworks. The Prefect sees great potential in the project and requests a test site in Bugsmere."
 
-NCH_tactical_aviation:0 "Стратегия уничтожения"
-NCH_tactical_aviation_desc:0 "Сделав ставку на уничтожение резервов и инфраструктуры противника, мы получим возможность парализовать его военную машину и измотать врага без прямого столкновения. Если, конечно, наши бомбардировщики сумеют до него долететь..."
+NCH_hotter_thousands_suns:0 "Project Phoenix"
+NCH_hotter_thousands_suns_desc:0 "Celarl proposed a terrifying new weapon, one combining the heights of science with breakthroughs in magical theory. Wicksite strongly supported the initiative, promising that the destructive potential of this device would surpass the heat of a thousand suns."
 
-NCH_naval_bomber_project:0 "«Ловец 22»"
-NCH_naval_bomber_project_desc:0 "«Ловец 22» – совместный инициативный проект ВМФ и ВВС, направленный на разработку так называемого гидросамолёта. Его задача – стать тяжёлым морским бомбардировщиком, способным поражать вражеские суда, поддерживать наш флот и топить конвои, лишая противника возможности контролировать морские регионы и снабжать свои силы."
+NCH_experimental_developments:0 "Innovation Grants"
+NCH_experimental_developments_desc:0 "Our scientists are making major strides in nuclear energy and jet propulsion. We may even be the first nation to develop a true jet fighter. Progress cannot be halted and we must catch up and overtake any threat by pushing the frontier ever further."
 
-NCH_figher_aircraft:0 "Доктрина доминирования"
-NCH_figher_aircraft_desc:0 "Сделав ставку на истребительную авиацию, мы обретём господство в небе: будем уничтожать вражеские воздушные цели и защищать наши линии соприкосновения. Мы не достанем врага в глубоком тылу – но и не придётся, если его производство будет уничтожено сразу, с минимальными потерями."
+NCH_tactical_aviation:0 "Strategy of Annihilation"
+NCH_tactical_aviation_desc:0 "By focusing on striking enemy reserves and infrastructure, we can cripple their war machine without meeting them head-on. Of course, if our bombers can reach them..."
 
-NCH_air_support:0 "«Рейдер 10»"
-NCH_air_support_desc:0 "«Рейдер 10» – проект штурмового воздушного судна, специально разработанного для поражения наземных целей. Его задача – оказывать непосредственную поддержку пехоте, расчищая ей путь и срывая наступление вражеских подкреплений."
+NCH_naval_bomber_project:0 "Cather 22"
+NCH_naval_bomber_project_desc:0 "Cather 22 is a joint Navy-Air Force initiative to develop a flying boat — a heavy maritime bomber capable of striking enemy ships, supporting our fleet, and sinking convoys, cutting off supply lines and denying the enemy control over the seas."
 
-NCH_sorry_as_bee:0 "Тенью облаков"
-NCH_sorry_as_bee_desc:0 "Меж строк рапортов – откровения, а не цифры. Мы выслушаем тех, кто видел небо изнутри: кто шептал с облаками, кто падал, кто поднимался вновь. Кто, как не приблизившиеся к мечте, смогут поведать нам, в каком направлении покорять небесную твердь?"
+NCH_figher_aircraft:0 "Doctrine of Air Superiority"
+NCH_figher_aircraft_desc:0 "A doctrine built around air superiority will grant us control of the skies. Our fighters will eliminate airborne threats and protect our frontlines. Deep strikes won’t be needed as enemy aircraft will be downed almost immediately, and at little cost to us."
 
-NCH_angry_hive:0 "Осиный рой"
-NCH_angry_hive_desc:0 "Наши ВВС проделали путь от идеи до грозной силы, способной сдерживать любой натиск, пока десант громит вражеский дом, а штурмовая авиация косит подкрепления. Любой, кто посягнёт на наш улей, встретит целый разгневанный рой."
+NCH_air_support:0 "Raider 10"
+NCH_air_support_desc:0 "Raider 10 is a ground-attack aircraft project designed for frontline support. These planes will carve paths for our infantry and disrupt enemy reinforcements during their advance."
+
+NCH_sorry_as_bee:0 "In Cloud’s Pale Veil"
+NCH_sorry_as_bee_desc:0 "The truths of war aren’t in numbers, but in testimony. We’ll listen to those who have touched the sky — those who whispered with the clouds, who fell and rose again. Who better to help us chart the heavens than those who nearly made it?"
+
+NCH_angry_hive:0 "Wasp Swarm"
+NCH_angry_hive_desc:0 "Our air force has grown from an idea into a terrible force holding the line as our paratroopers shatter enemy strongholds, and attack planes cut down reinforcements. Any who dare threaten our hive will be met by the full fury of the swarm."
 
 
 ### ARMY ###

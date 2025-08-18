@@ -1736,12 +1736,12 @@ shared_focus = {
 ### AIR FORCES ###
 shared_focus = {
 	id = NCH_and_in_the_air
-	icon = GFX_goal_unknown
+	icon = GFX_goal_birth_air_forces
 	cost = 5
 	prerequisite = {
 		focus = NCH_rule_greneclyf
 	}
-	x = 77
+	x = 76
 	y = 3
 
 	available = {
@@ -1763,8 +1763,12 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_flying_school 
-	icon = GFX_goal_unknown
+	icon = GFX_goal_flying_school
 	cost = 5
+
+	x = 73
+	y = 4
+
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
@@ -1777,24 +1781,14 @@ shared_focus = {
 
 	completion_reward = {
 		air_experience = 25
-		add_tech_bonus = {
-			name = army_upgrades
-			bonus = 0.3
-			uses = 2
-			category = air_equipment
-		}
 		#Открывает советника на доктрину
 		add_ideas = NCH_air_school_1
 	}
-
-	x = 73
-	y = 4
-
 }
 
 shared_focus = {
 	id = NCH_radar_development
-	icon = GFX_goal_unknown
+	icon = GFX_goal_radar_station
 	cost = 7
 	prerequisite = {
 		focus = NCH_flying_school 
@@ -1878,7 +1872,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_defense_island
-	icon = GFX_goal_unknown
+	icon = GFX_goal_iron_dome
 	cost = 7
 
 	available = {
@@ -1924,7 +1918,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_night_training
-	icon = GFX_goal_unknown
+	icon = GFX_goal_night_bomb
 	cost = 7
 
 	available = {
@@ -1951,6 +1945,9 @@ shared_focus = {
 	icon = GFX_goal_unknown
 	cost = 5
 
+	x = 74
+	y = 7
+
 	available = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
@@ -1966,29 +1963,30 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			category = air_doctrine
-			bonus = 0.7
-			uses = 1
+			bonus = 0.25
+			uses = 2
 		}
+
 		add_tech_bonus = {
-			name = x
-			category = air_doctrine
-			bonus = 0.5
-			uses = 1
+			name = army_upgrades
+			bonus = 0.3
+			uses = 2
+			category = air_equipment
 		}
 		set_country_flag = NCH_air_advisor_flag
 		#Открывает советника
 		NCH_air_school_buff_effect = yes
 
 	}
-	x = 74
-	y = 7
-
 }
 
 shared_focus = {
 	id = NCH_who_else_but_us
-	icon = GFX_goal_unknown
+	icon = GFX_goal_raprots_herd
 	cost = 10
+
+	x = 76
+	y = 4	
 
 	available = {
 		not = {
@@ -2018,15 +2016,15 @@ shared_focus = {
 			uses = 2
 		}
 	}
-	x = 77
-	y = 4
-
 }
 
 shared_focus = {
 	id = NCH_aisling_air_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_aisling_facility
 	cost = 15
+
+	x = 79
+	y = 4	
 
 	available = {
 		not = {
@@ -2037,8 +2035,6 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
-	x = 81
-	y = 4
 
 	completion_reward = {
 		1209={
@@ -2063,6 +2059,9 @@ shared_focus = {
 	icon = GFX_goal_unknown
 	cost = 5
 
+	x = 77
+	y = 5
+
 	available = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
@@ -2074,29 +2073,23 @@ shared_focus = {
 	}
 	completion_reward = {
 		NCH_air_production_buff_effect = yes
-		1209 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-			type = arms_factory
-			level = 2
+		random_core_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
 		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-		}
-		
 	}
-
-	}
-	x = 78
-	y = 5
-
 }
 
 shared_focus = {
 	id = NCH_rocket_science
 	icon = GFX_goal_unknown
 	cost = 5
+
+	x = 76
+	y = 6	
 
 	available = {
 		not = {
@@ -2127,14 +2120,14 @@ shared_focus = {
 			}
 		}
 	}
-	x = 77
-	y = 6
-
 }
 shared_focus = {
 	id = NCH_hotter_thousands_suns
 	icon = GFX_goal_unknown
 	cost = 5
+
+	x = 78
+	y = 6	
 
 	available = {
 		not = {
@@ -2172,15 +2165,15 @@ shared_focus = {
 			days = 0
 		}
 	}
-	x = 79
-	y = 6
-
 }
 
 shared_focus = {
 	id = NCH_experimental_developments
 	icon = GFX_goal_unknown
 	cost = 10
+
+	x = 77
+	y = 7
 
 	available = {
 		not = {
@@ -2222,14 +2215,15 @@ shared_focus = {
 			amount = 1
 		}
 	}
-	x = 78
-	y = 7
 }
 
 shared_focus = {
 	id = NCH_tactical_aviation
 	icon = GFX_goal_unknown
 	cost = 7
+
+	x = 81
+	y = 5
 
 	available = {
 		not = {
@@ -2240,9 +2234,7 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
-	mutually_exclusive = {
-		focus = NCH_figher_aircraft
-	}
+
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
@@ -2255,47 +2247,17 @@ shared_focus = {
 
 		NCH_GAF_masters_buff_effect = yes
 	}
-	x = 81
-	y = 5
-
 }
-shared_focus = {
-	id = NCH_figher_aircraft
-	icon = GFX_goal_unknown
-	cost = 7
 
-	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
-	}
-
-	prerequisite = {
-		focus = NCH_aisling_air_institute
-	}
-	mutually_exclusive = {
-		focus = NCH_tactical_aviation
-	}
-	completion_reward = {
-			add_tech_bonus = {
-				name = x
-				category = light_fighter
-				uses = 2
-				bonus = 0.7
-			}
-			add_ideas = NCH_GAF_masters_fighters
-			NCH_GAF_masters_buff_effect = yes
-	}
-	x = 83
-	y = 5
-
-}
 
 shared_focus = {
 	id = NCH_naval_bomber_project
 	icon = GFX_goal_unknown
 	cost = 10
 
+	x = 81
+	y = 6	
+
 	available = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
@@ -2304,8 +2266,8 @@ shared_focus = {
 
 	prerequisite = {
 		focus = NCH_tactical_aviation
-		focus = NCH_figher_aircraft
 	}
+
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
@@ -2316,42 +2278,16 @@ shared_focus = {
 
 		NCH_GAF_masters_buff_effect = yes
 	}
-	x = 81
-	y = 6
 
 }
-shared_focus = {
-	id = NCH_air_support
-	icon = GFX_goal_unknown
-	cost = 10
 
-	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
-	}
-
-	prerequisite = {
-		focus = NCH_figher_aircraft
-		focus = NCH_tactical_aviation
-	}
-	completion_reward = {
-		add_tech_bonus = {
-			name = x
-			category = cas_bomber
-			uses = 2
-			bonus = 0.7
-		}
-		add_ideas = NCH_GAF_masters_CAS
-}
-	x = 83
-	y = 6
-
-}
 shared_focus = {
 	id = NCH_sorry_as_bee
 	icon = GFX_goal_unknown
 	cost = 10
+
+	x = 80
+	y = 7	
 
 	available = {
 		not = {
@@ -2423,9 +2359,6 @@ shared_focus = {
 			}
 		}
 	}
-	x = 81
-	y = 7
-
 }
 
 shared_focus = {
