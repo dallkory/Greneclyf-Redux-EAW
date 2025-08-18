@@ -1090,7 +1090,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_our_navy_strategy
+		#custom_effect_tooltip = NCH_our_navy_strategy
 		set_country_flag = NCH_sea_future
 		
 		# NOT WORKING WHY #
@@ -1099,7 +1099,15 @@ shared_focus = {
 			remove_idea = NCH_naval_academy_establish
 			remove_idea = NCH_break_ice_idea
 		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_experomental_developments
+				has_completed_focus = NCH_Blosmport_navy_institute
+				has_completed_focus = NCH_domestic_development
+			}
 			add_ideas = NCH_navy_forces
+		}
 	}
 }
 
@@ -1830,7 +1838,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_build_new_airbases
-	icon = GFX_goal_unknown
+	icon = GFX_goal_rocket_stantion
 	cost = 7
 
 	available = {
@@ -1942,7 +1950,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_flying_like_butterfly
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wind_air
 	cost = 5
 
 	x = 74
@@ -2056,7 +2064,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_domestic_parts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_massive_aircraft
 	cost = 5
 
 	x = 77
@@ -2363,7 +2371,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_angry_hive
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wasps_swarm
 	cost = 10
 
 	available = {

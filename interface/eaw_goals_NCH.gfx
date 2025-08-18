@@ -444,6 +444,26 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/aisling_facility.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_rocket_stantion"
+		textureFile = "gfx/interface/goals/NCH/rocket_stantion.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_massive_aircraft"
+		textureFile = "gfx/interface/goals/NCH/massive_aircraft.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wind_air"
+		textureFile = "gfx/interface/goals/NCH/wind_air.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wasps_swarm"
+		textureFile = "gfx/interface/goals/NCH/wasps_swarm.png"
+	}
+
 
 
 
