@@ -65,7 +65,7 @@ NCH_river_of_op_category = {
 
 NCH_typography_category = {
 	icon = GFX_unknow
-	picture = GFX_decision_typography
+	picture = GFX_decision_typography_propaganda
 	
 	visible = {
 		has_country_flag = NCH_typography_create

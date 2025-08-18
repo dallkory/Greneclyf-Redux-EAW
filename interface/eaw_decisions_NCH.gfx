@@ -1,8 +1,8 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_decision_typography"
-		textureFile = "gfx/event_picture/medium.png"
+	SpriteType = {
+		name = "GFX_decision_typography_propaganda"
+		texturefile = "gfx/interface/decisions/typography_propaganda.dds"
 	}
 	
 }
