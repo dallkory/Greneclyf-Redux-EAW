@@ -482,6 +482,13 @@ NCH_greneclyf_school_of_war_desc:0 "After a long road of reform, our army is fin
 
 
 
+# AIR #
+GFX_goal_native_aircraft:0 "Domestic Designs"
+GFX_goal_native_aircraft_desc:0 "We enter the age of aviation with almost nothing: no powerful industry, no reliable resource base. Yet it is precisely this hardship that forces our engineers and scientists to search for unconventional solutions. If we support their endeavors, in time we may build our own school of aviation—unique and independent..."
+
+GFX_goal_foreign_aircraft:0 "Foreign Purchases"
+GFX_goal_foreign_aircraft_desc:0 "Why spend years on catching up in research when others have already walked this path? We can purchase proven aircraft on the world market, gain access to advanced models, and use them as the foundation for the future growth of our air force."
+
 
 NCH_and_in_the_air:0 "Birth of the Air Force"
 NCH_and_in_the_air_desc:0 "To wage modern wars effectively, air superiority is essential. Our air force doesn’t yet exist, but specialists with foreign experience will lay the foundation for a uniquely Greneclyfan school of aerial warfare."
@@ -1147,6 +1154,11 @@ greneclyf_arctic.2.d:0 "Ронове обустраивалась на свое�
 greneclyf_arctic.2.a:0 "«Внимание. Внимание. 39486 60170...»"
 
 # Forces #
+greneclyf_forces.3.t:0 "Securing Our Arctic Trade Routes"
+greneclyf_forces.3.d:0 "Half of the year, the seas around Greneclyf are locked in ice, turning commerce into a constant struggle against nature itself. Merchants complain of lost profits, captains curse the frozen waves, and the kingdom’s economy suffers from the unpredictable rhythm of the seasons. Now, however, the Queen has declared that this burden shall no longer be tolerated. The navy is tasked not merely with defending our shores, but with breaking the icy chains that bind our trade. Icebreakers, new routes, and daring expeditions may finally turn the northern seas from an obstacle into a lifeline—if we can muster the will to endure the challenge."
+
+greneclyf_forces.3.a:0 "The sea shall serve us, not hinder us."
+
 # Перепутье
 greneclyf_forces.4.t:0 "Перепутье"
 greneclyf_forces.4.d:0 "«Ваше Величество, Ваше Превосходительство», –отсалютовал Семпер Фай, войдя в кабинет с двумя увесистыми папками, –«после длительных и оживлённых бесед с вашими любезными курсантами и теоретиками спешу сообщить, что наш флот находится в весьма достойном по современным меркам состоянии».\n\n«Что ж, это радует», – ответила Судья.\n\n«Однако, чтобы сохранить стратегическое превосходство в регионе, нам необходимо определиться с дальнейшей доктриной. Видите ли, в современном мире выделяют три основные концепции развития военно-морского флота. Однако последняя – экспериментальная и невероятно дорогая в производстве, поэтому, как контр-адмирал королевства, я предлагаю исключить её из рассмотрения и сосредоточиться на первых двух».\n\nФай прокашлялся, поймав одобрительные кивки главных лиц государства, и затем положил перед ними папки.\n\n«Красная папка представляет доктрину, сосредоточенную на совершенствовании существующей структуры нашего доблестного флота с учётом современных реалий. Наш флот силён, и я настаиваю на развитии нашей ударной флотилии. Тогда, –Семпер быстро стукнул по столу, –мы обгоним даже проклятых бакарцев, фактически заявив права на весь регион».\n\nПока Ойрен с удовлетворённым видом изучала папку, Гита спросила адмирала: «А что же зелёная папка? О чём она?»\n\nФай слегка замялся: «Это альтернативный план развития флота, но... скажем так, запасной. Он исходит из заведомо осторожной, если не пораженческой, позиции – что нашего флота недостаточно для доминирования в морях, а потому следует сосредоточиться на подводных лодках и рейдерских атаках на вражеские суда. Мне этот план не очень по душе не только из-за уязвлённой гордости, но и из-за его подхода. Основная ресурсная база наших потенциальных соперников находится на континенте, а значит, нам будет сложно нанести решающий удар. Однако в условиях политической нестабильности региона это позволит буквально задушить континент, лишив его связей с внешним миром»."

@@ -1023,18 +1023,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_ideas = NCH_torpedo_attack 
+		#add_ideas = NCH_torpedo_attack 
 
-		if = {
-			limit = {
-				not = { has_dlc = "Man the Guns" }
-			}
-			set_technology = { torpedo_cruiser = 1 }
-		}
+		# if = {
+		# 	limit = {
+		# 		not = { has_dlc = "Man the Guns" }
+		# 	}
+		# 	set_technology = { torpedo_cruiser = 1 }
+		# }
 
-		else = {
-			set_technology = { torpedo_cruiser_mtg = 1 }
-		}
+		#else = {
+		#	set_technology = { torpedo_cruiser_mtg = 1 }
+		#}
 
 		if = {
 			limit = {
@@ -1044,6 +1044,7 @@ shared_focus = {
 		}
 
 		else = {
+			set_technology = { torpedo_cruiser_mtg = 1 }
 			set_technology = {
 				mega_carrier = 1
 			}
@@ -1057,7 +1058,7 @@ shared_focus = {
 				name = sp_mega_carrier_eq_bonus_strength
 				bonus = {
 					mega_carrier = {
-						build_cost_ic = 0.05
+						build_cost_ic = 0.075
 						max_strength = 0.1	
 						instant = yes		 
 					}
