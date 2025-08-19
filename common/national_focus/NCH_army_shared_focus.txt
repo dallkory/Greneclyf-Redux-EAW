@@ -1845,6 +1845,7 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+		has_completed_focus = NCH_rocket_science
 	}
 
 	prerequisite = {
@@ -2093,7 +2094,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_rocket_science
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_zenit
 	cost = 5
 
 	x = 76
@@ -2129,9 +2130,10 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_hotter_thousands_suns
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_atom_phenix
 	cost = 5
 
 	x = 78
@@ -2177,7 +2179,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_experimental_developments
-	icon = GFX_goal_unknown
+	icon = GFX_goal_air_investment
 	cost = 10
 
 	x = 77
@@ -2191,10 +2193,9 @@ shared_focus = {
 
 	prerequisite = {
 		focus = NCH_rocket_science
-	}
-	prerequisite = {
 		focus = NCH_hotter_thousands_suns
 	}
+
 	completion_reward = {
 
 		NCH_air_production_buff_effect = yes
@@ -2226,12 +2227,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NCH_tactical_aviation
-	icon = GFX_goal_unknown
+	id = NCH_native_development
+	icon = GFX_goal_native_aircraft
 	cost = 7
 
-	x = 81
+	x = 79
 	y = 5
+
+	mutually_exclusive = {
+		focus = NCH_foregine_development
+	}
 
 	available = {
 		not = {
@@ -2244,26 +2249,44 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_tech_bonus = {
-			name = x
-			category = tactical_bomber
-			uses = 2
-			bonus = 0.5
+
+	}
+}
+
+shared_focus = {
+	id = NCH_foregine_development
+	icon = GFX_goal_foregine_aircraft
+	cost = 7
+
+	x = 81
+	y = 5
+
+	mutually_exclusive = {
+		focus = NCH_native_development
+	}
+
+	available = {
+		not = {
+			has_country_flag = NCH_great_hunger_started
 		}
+	}
 
-		add_ideas = NCH_GAF_masters_tactical
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
 
-		NCH_GAF_masters_buff_effect = yes
+	completion_reward = {
+
 	}
 }
 
 
 shared_focus = {
 	id = NCH_naval_bomber_project
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_catcher
 	cost = 10
 
-	x = 81
+	x = 80
 	y = 6	
 
 	available = {
@@ -2273,7 +2296,8 @@ shared_focus = {
 	}
 
 	prerequisite = {
-		focus = NCH_tactical_aviation
+		focus = NCH_native_development
+		focus = NCH_foregine_development
 	}
 
 	completion_reward = {
@@ -2291,7 +2315,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_sorry_as_bee
-	icon = GFX_goal_unknown
+	icon = GFX_goal_shadows_cloud
 	cost = 10
 
 	x = 80

@@ -464,6 +464,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/wasps_swarm.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_air_investment"
+		textureFile = "gfx/interface/goals/NCH/air_investment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_zenit"
+		textureFile = "gfx/interface/goals/NCH/project_zenit.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_atom_phenix"
+		textureFile = "gfx/interface/goals/NCH/project_atom_phenix.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_catcher"
+		textureFile = "gfx/interface/goals/NCH/project_catcher.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_shadows_cloud"
+		textureFile = "gfx/interface/goals/NCH/shadows_cloud.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_native_aircraft"
+		textureFile = "gfx/interface/goals/NCH/native_aircraft.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_foregine_aircraft"
+		textureFile = "gfx/interface/goals/NCH/foregine_aircraft.png"
+	}
 
 
 
