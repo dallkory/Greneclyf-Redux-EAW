@@ -230,15 +230,102 @@ NCH_debug_decision = {
 	}
 }
 
+# WAR ONLY #
 NCH_fed_found_category = {
 	NCH_fed_found = {
 		icon = x
 		ai_will_do = {
 			base = 1
 		}
+		fire_only_once = yes
+		#on_map_mode = map_only
+		
+		#visible = {
+		#	has_completed_focus = NCH_dreems_of_more
+		#}
 
-		visible = {
-			has_country_flag = NCH_fed_found
+		available = {
+			controls_state = 681
+			controls_state = 580
+			controls_state = 621
+			controls_state = 618
+			controls_state = 452
+			controls_state = 622
+			controls_state = 645
+			controls_state = 587
+			controls_state = 649
+			controls_state = 648
+			controls_state = 438
+			controls_state = 461
+			controls_state = 638
+			controls_state = 647
+			controls_state = 637
+			controls_state = 635
+			controls_state = 619
+			controls_state = 682
+			controls_state = 620
+			controls_state = 577
+			controls_state = 646
+			controls_state = 586
+			controls_state = 544
+			controls_state = 491
+			controls_state = 543
+			controls_state = 627
+			controls_state = 629
+			controls_state = 628
+			controls_state = 617
+			controls_state = 616
+			controls_state = 614
+			controls_state = 615
+			controls_state = 550
+			controls_state = 551
+			controls_state = 387
+			controls_state = 499
+			controls_state = 560
+			controls_state = 541
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 681
+				state = 580
+				state = 621
+				state = 618
+				state = 452
+				state = 622
+				state = 645
+				state = 587
+				state = 649
+				state = 648
+				state = 438
+				state = 461
+				state = 638
+				state = 647
+				state = 637
+				state = 635
+				state = 619
+				state = 682
+				state = 620
+				state = 577
+				state = 646
+				state = 586
+				state = 544
+				state = 491
+				state = 543
+				state = 627
+				state = 629
+				state = 628
+				state = 617
+				state = 616
+				state = 614
+				state = 615
+				state = 550
+				state = 551
+				state = 387
+				state = 499
+				state = 560
+				state = 541
+			}
 		}
 
 		complete_effect = {
@@ -404,28 +491,30 @@ NCH_fed_found_category = {
 						}
 					}
 				}
-		
-				NCH = {
-					add_core_of = RCT
-					add_core_of = BAK
-					add_core_of = NIM
-					add_core_of = FRE
-					add_core_of = DMT
-					add_core_of = WIT
-					add_core_of = LCT
-					add_core_of = DEP
-
-					set_cosmetic_tag = NCH_River
-				}
-
-				remove_country_leader_role = yes
-				create_country_leader = {
-					name = NCH_Gytha_iron_lady
-					picture = GFX_NCH_Steel_Gytha
-					traits = { The_Steel_lady }
-					ideology = conservatism
-				}
 			}
+
+			ROOT = {
+				add_core_of = RCT
+				add_core_of = BAK
+				add_core_of = NIM
+				add_core_of = FRE
+				add_core_of = DMT
+				add_core_of = WIT
+				add_core_of = LCT
+				add_core_of = DEP
+
+				set_cosmetic_tag = NCH_River
+			}
+
+			remove_country_leader_role = yes
+			create_country_leader = {
+				name = NCH_Gytha_iron_lady
+				picture = GFX_NCH_Steel_Gytha
+				traits = { The_Steel_lady }
+				ideology = conservatism
+			}
+
+			set_country_flag = NCH_war_fed_found
 		}
 	}
 }
@@ -473,7 +562,6 @@ NCH_arctic_expedition_category = {
 			has_equipment = { convoy > 4 }
 			has_political_power > 29
 			has_manpower > 1199
-			
 		}
 		days_remove = 70
 
@@ -544,8 +632,6 @@ NCH_boost_harmony_river = {
 		state_target = yes
 		target_array = NCH.boost_targets
 
-		#target_array = NHC.boost_targets
-
 		on_map_mode = map_only
 
 		allowed = {
@@ -554,15 +640,18 @@ NCH_boost_harmony_river = {
 
 		visible = {
 			has_completed_focus = NCH_dreems_of_more
-			has_government = democratic
+
 			not = {
 				has_completed_focus = NCH_operation_raging_river
 			}
 
-			#check_variable = {
-			#	which = NCH_var_boost
-			#	value < 10
-			#}
+			# not = {
+			# 	check_variable = {
+			# 		var = NCH_var_boost
+			# 		value = 10
+			# 		compare = greater_than_or_equals
+			# 	}
+			# }
 		}
 
 		days_remove = 30
@@ -588,11 +677,12 @@ NCH_boost_harmony_river = {
 					popularity = -0.05
 				}	
 				add_stability = -0.05
-			}
 
-			FROM = {
 				set_country_flag = NCH_boost
-				add_ideas = NCH_boost_exp
+				add_timed_idea = {
+					idea = NCH_boost_exp
+					days = 30
+				}
 			}
 
 			add_to_variable = {

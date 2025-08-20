@@ -702,16 +702,26 @@ shared_focus = {
 			days = 0
 		}
 
-		#set_variable = {
-		#	which = NCH_var_boost
-		#	value = 1
-		#}
+
+		set_variable = {
+			var = NCH_var_boost
+			value = 0
+		}
+
+		# RCT
+		# BAK
+		# DMT
+		# NIM
+		# DEP
+		# LCT
+		# FRE
+		# WIT
 
 		hidden_effect = {
 			RCT = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -725,7 +735,7 @@ shared_focus = {
 			BAK = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -739,7 +749,7 @@ shared_focus = {
 			DMT = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -753,7 +763,7 @@ shared_focus = {
 			NIM = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -767,7 +777,7 @@ shared_focus = {
 			DEP = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -781,7 +791,7 @@ shared_focus = {
 			LCT = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -795,7 +805,7 @@ shared_focus = {
 			FRE = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -809,7 +819,7 @@ shared_focus = {
 			WIT = {
 				if = {
 					limit = {
-						is_puppet = yes
+						is_exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -819,6 +829,8 @@ shared_focus = {
 					}
 				}
 			}
+
+
 		}
 	}
 }
@@ -833,12 +845,19 @@ shared_focus = {
 	x = 34
 	y = 17
 
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
+
+			
 			check_variable = {
 				which = NCH_var_boost
-				value > 5
+				value = 5
+				compare = greater_than_or_equals
 			}
 		}
 	}
@@ -877,12 +896,18 @@ shared_focus = {
 	x = 32
 	y = 17
 
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
+
 			check_variable = {
 				which = NCH_var_boost
-				value > 5
+				value = 5
+				compare = greater_than_or_equals
 			}
 		}
 	}
@@ -1640,6 +1665,10 @@ shared_focus = {
 	x = 33
 	y = 18
 
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+
 	available = {
 		#country_exists = FRE
 		#has_completed_focus = NCH_finding_allies_in_coalition
@@ -1667,6 +1696,10 @@ shared_focus = {
 	}
 	x = 33
 	y = 19
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 
 	available = {
 		has_completed_focus = NCH_finding_allies_in_coalition
@@ -2180,6 +2213,7 @@ shared_focus = {
 
 	available = {
 		is_puppet = no
+		has_war = no
 		or = {
 			has_idea = RIV_member_state
 			619 = {
@@ -2192,7 +2226,7 @@ shared_focus = {
 	}
 
 	bypass = {
-		
+		has_country_flag = NCH_war_fed_found
 	}
 
 	completion_reward = {
@@ -2218,7 +2252,6 @@ shared_focus = {
 			}
 		}
 	
-
 		# Hehe player baka #
 		hidden_effect = {
 			if = {
@@ -2238,7 +2271,7 @@ shared_focus = {
 				release_autonomy = {
 					target = RCT
 					freedom_level = 0.5
-					autonomy_state = autonomy_volkskommissariat
+					autonomy_state = autonomy_dominion
 					release_non_owned_controlled = no
 				}
 			}
@@ -2255,6 +2288,10 @@ shared_focus = {
 	}
 	x = 30
 	y = 21
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 	
 	completion_reward = {
 		#custom_effect_tooltip = NCH_ecnomic_tt
@@ -2289,6 +2326,10 @@ shared_focus = {
 	}
 	x = 32
 	y = 21
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 
 	completion_reward = {
 		add_stability = -0.03
@@ -2384,6 +2425,10 @@ shared_focus = {
 	x = 34
 	y = 21
 
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+
 	completion_reward = {
 		add_stability = 0.075
 		add_political_power = 50
@@ -2410,6 +2455,10 @@ shared_focus = {
 	}
 	x = 36
 	y = 21
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 
 	completion_reward = {
 		add_stability = -0.03
@@ -2440,6 +2489,10 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = NCH_economic_community
+	}
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
 	}
 
 	x = 31
@@ -2473,6 +2526,10 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_bring_together
 		focus = NCH_river_science_program
+	}
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
 	}
 
 	x = 34
@@ -2523,6 +2580,10 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_general_institutions
 	}
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 	
 	x = 35
 	y = 22
@@ -2543,6 +2604,10 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_bring_together
 		focus = NCH_racial_differences
+	}
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
 	}
 
 	available = {
@@ -2632,6 +2697,10 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = NCH_make_us_stronger
+	}
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
 	}
 
 	# NEED TO CHANGE #
