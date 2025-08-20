@@ -230,10 +230,10 @@ NCH_debug_decision = {
 	}
 }
 
-# WAR ONLY #
+# WAR ONLY Fed dound #
 NCH_fed_found_category = {
 	NCH_fed_found = {
-		icon = x
+		#icon = x
 		ai_will_do = {
 			base = 1
 		}
@@ -493,17 +493,79 @@ NCH_fed_found_category = {
 				}
 			}
 
-			ROOT = {
-				add_core_of = RCT
-				add_core_of = BAK
-				add_core_of = NIM
-				add_core_of = FRE
-				add_core_of = DMT
-				add_core_of = WIT
-				add_core_of = LCT
-				add_core_of = DEP
-
+			NCH = {
 				set_cosmetic_tag = NCH_River
+			}
+
+			NCH = {
+				every_state = {
+					if = {
+						limit = {
+							owner = RCT
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = NIM
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = DMT
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = BAK
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = DEP
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = LCT
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = WIT
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = FRE
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = FBK
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = FIR
+						}
+						add_core_of = NCH
+					}
+					if = {
+						limit = {
+							owner = WAT
+						}
+						add_core_of = NCH
+					}
+				}
 			}
 
 			remove_country_leader_role = yes

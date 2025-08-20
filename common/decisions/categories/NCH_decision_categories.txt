@@ -29,7 +29,7 @@ NCH_arctic_expedition_category = {
 
 NCH_fed_found_category = {
 	icon = x
-	picture = GFX_decision_category_picture_river_fed
+	picture = GFX_decision_fed_war_found
 
 	priority = {
 		base = 153

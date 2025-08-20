@@ -688,6 +688,10 @@ shared_focus = {
 	}
 	x = 33
 	y = 16
+
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
 	
 	available = {
 		is_puppet = no
