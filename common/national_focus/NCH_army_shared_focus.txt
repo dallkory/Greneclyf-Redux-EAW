@@ -2390,6 +2390,9 @@ shared_focus = {
 	icon = GFX_goal_wasps_swarm
 	cost = 10
 
+	x = 77
+	y = 8
+
 	available = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
@@ -2411,61 +2414,13 @@ shared_focus = {
 			can_use_kamikaze_pilots = yes
 		}
 
-		custom_effect_tooltip = give_bonuses_after_all_focuses_tt
+		add_ideas = NCH_swarms_hive
 
-		if = {
-			limit = {has_idea = NCH_GAF_masters_4_fig
-		}
-		hidden_effect={
-			remove_ideas = NCH_air_production_4
-			remove_ideas = NCH_GAF_masters_fighters
-			remove_ideas = NCH_air_school_5
-			set_technology = {
-				improved_small_airframe = 1
-			}
-			
-			complete_special_project = sp:sp_rocket_interceptor
-		}
-		add_ideas = GAF_supreme_fig
-		air_experience = 150
-	}
-	else_if={
-		limit = {has_idea = NCH_GAF_masters_4_tac
-	}
-	hidden_effect={
-		remove_ideas = NCH_air_production_4
-		remove_ideas = NCH_GAF_masters_4_tac
-		remove_ideas = NCH_air_school_5
-
-		sp:sp_air_mothership_aircraft = {
-			add_equipment_bonus = {
-				name = sp_air_mothership_strength
-				bonus = {
-					mothership_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
-						air_defence = 0.1
-						air_attack = 0.1
-						build_cost_ic = 0.1
-					}
-				}
-			}
-		}
-
-		#complete_special_project = sp:sp_air_mothership_aircraft
-
-		set_technology = {
-			improved_medium_airframe = 1
+		add_breakthrough_progress = {
+			value = 1
+			specialization = specialization_air
 		}
 	}
-	swap_ideas = {
-	remove_idea = NCH_GAF_masters_4_tac
-	add_idea = GAF_supreme_tac
-	}
-
-	air_experience = 150
-	}
-}
-	x = 77
-	y = 8
 }
 
 

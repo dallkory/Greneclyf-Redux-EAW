@@ -1250,6 +1250,27 @@ ideas = {
 			}
 		}
 
+		NCH_swarms_hive = {
+			picture = x
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+					instant = yes
+				}
+			}
+		}
+
 		NCH_investment_for_air = {
 			picture = air_investment
 			allowed = {
