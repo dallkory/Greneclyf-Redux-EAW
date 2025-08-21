@@ -240,9 +240,9 @@ NCH_fed_found_category = {
 		fire_only_once = yes
 		#on_map_mode = map_only
 		
-		#visible = {
-		#	has_completed_focus = NCH_dreems_of_more
-		#}
+		visible = {
+			has_completed_focus = NCH_dreems_of_more
+		}
 
 		available = {
 			controls_state = 681
@@ -1253,7 +1253,6 @@ NCH_typography_category = {
 		}
 	}
 
-	#3 решения -> решение на начало программы борьбы с безграматностью 
 	NCH_defeat_scientlist_1 = {
 		icon = d
 		cost = 50
@@ -1286,9 +1285,10 @@ NCH_typography_category = {
 
 	NCH_calm_down_people = {
 		icon =d
-		cost = 75
+		cost = 0
 		days_remove = 30
-		fire_only_once = yes
+		days_re_enable = 50
+		#fire_only_once = yes
 
 		visible = {
 			and = {
@@ -1299,7 +1299,7 @@ NCH_typography_category = {
 			}
 		}
 		complete_effect = {
-
+			add_stability = 0.025
 		}
 	}
 

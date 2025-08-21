@@ -9,13 +9,13 @@ Shared_focus = {
 		or = {
 			has_completed_focus = NCH_equestria_support
 			has_country_flag = NCH_queen_hive_abmitions
-			has_completed_focus = NCH_time_to_look_further
+			#has_completed_focus = NCH_time_to_look_further
 		}
 	}
 	allow_branch = {
 		or = {
 			has_country_flag = NCH_queen_hive_abmitions
-			has_completed_focus = NCH_time_to_look_further
+			#has_completed_focus = NCH_time_to_look_further
 			has_completed_focus = NCH_equestria_support
 		}
 	}

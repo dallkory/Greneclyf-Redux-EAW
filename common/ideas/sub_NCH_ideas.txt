@@ -332,13 +332,13 @@ ideas = {
 			research_bonus = {
 				air_equipment = -0.25
 				air_doctrine = -0.1
-				heavy_air = -0.2
-				light_air = -0.2
+				#heavy_air = -0.2
+				#light_air = -0.2
 			}
 
 			modifier = {
 				experience_gain_air = -0.02
-				production_cost_max_cv_small_plane_airframe = -0.2
+				country_resource_cost_aluminium = 2
 				
 			}
 		}
@@ -814,10 +814,9 @@ ideas = {
 				production_speed_buildings_factor = 0.075
 				research_speed_factor = 0.05
 				local_resources_factor = -0.15
-				political_power_gain = -0.25
+				political_power_gain = -0.15
 				consumer_goods_factor = 0.15
 				trade_laws_cost_factor = 1.75
-				cannot_change_trade_laws = yes
 			}
 		}
 
@@ -1212,8 +1211,8 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_cost = -0.05
-				air_mission_efficiency = 0.12
+				political_power_gain = 0.05
+				air_mission_efficiency = 0.08
 				air_spirit_category_type_cost_factor = -0.05
 
 				air_range_factor = -0.075
@@ -1238,10 +1237,10 @@ ideas = {
 			}
 
 			modifier = {
-				air_mission_efficiency = -0.15
+				air_mission_efficiency = -0.09
 				air_equipment_research_speed = -0.05
 
-				air_range_factor = 0.15
+				air_range_factor = 0.1
 				air_agility_factor = -0.05
 
 				license_air_equipment_purchase_cost = -0.25

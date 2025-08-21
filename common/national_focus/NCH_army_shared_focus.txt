@@ -6,9 +6,9 @@ shared_focus = {
 	y = 2
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		#has_country_flag = NCH_army_forces_allow
 		has_completed_focus = NCH_time_to_look_further
 	}
@@ -39,9 +39,9 @@ shared_focus = {
 	y = 3
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -67,9 +67,9 @@ shared_focus = {
 	y = 4
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -107,9 +107,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_completed_focus = NCH_assing_new_command
 		has_country_flag = NCH_battleship_chose
 	}
@@ -147,9 +147,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_completed_focus = NCH_assing_new_command
 		has_country_flag = NCH_silent_hunters_chose
 	}
@@ -183,9 +183,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -210,9 +210,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -240,9 +240,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -686,9 +686,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -739,9 +739,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -790,9 +790,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -816,9 +816,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -854,9 +854,9 @@ shared_focus = {
 	y = 4
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -880,9 +880,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -917,9 +917,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -943,9 +943,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -965,9 +965,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1007,9 +1007,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		FROM = {
 			if = {
 				limit = {
@@ -1086,9 +1086,9 @@ shared_focus = {
 	y = 8
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1124,9 +1124,9 @@ shared_focus = {
 
 	available = {
 		has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		#has_completed_focus = NCH_suppression_of_unrest
 	}
 
@@ -1167,9 +1167,9 @@ shared_focus = {
 
 	available = {
 		#has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_professional_army_chosen
 	}
 
@@ -1198,9 +1198,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1241,9 +1241,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 	
 	completion_reward = {
@@ -1276,9 +1276,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1300,9 +1300,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1375,9 +1375,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1407,9 +1407,9 @@ shared_focus = {
 
 	available = {
 		#has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_regular_army_chosen
 	}
 
@@ -1439,9 +1439,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1465,9 +1465,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1500,9 +1500,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_blizkrieg_chose
 	}
 
@@ -1525,9 +1525,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_motorize_chose
 	}
 
@@ -1547,9 +1547,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1598,9 +1598,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1631,9 +1631,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1659,9 +1659,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1701,9 +1701,9 @@ shared_focus = {
 	y = 8
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1755,9 +1755,9 @@ shared_focus = {
 	y = 3
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 
 		if = {
 			limit = {
@@ -1813,9 +1813,9 @@ shared_focus = {
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1838,9 +1838,9 @@ shared_focus = {
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1867,9 +1867,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_completed_focus = NCH_rocket_science
 	}
 
@@ -1879,8 +1879,15 @@ shared_focus = {
 	
 	completion_reward = {
 		add_breakthrough_progress = {
-			value = 0.75
+			value = 0.25
 			specialization = specialization_air
+		}
+
+		add_tech_bonus = {
+			name = x
+			category = rocketry
+			bonus = 0.4
+			uses = 3
 		}
 	}
 }
@@ -1894,9 +1901,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 
 		has_tech = interwar_antiair
 	}
@@ -1928,9 +1935,9 @@ shared_focus = {
 	cost = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	x = 72
@@ -1955,9 +1962,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -1995,9 +2002,9 @@ shared_focus = {
 	y = 4	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2033,9 +2040,9 @@ shared_focus = {
 	y = 4	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2074,9 +2081,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2103,25 +2110,20 @@ shared_focus = {
 	y = 6	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
 	completion_reward = {
-
-		NCH_air_production_buff_effect = yes
-
-
-		add_tech_bonus = {
-			name = x
-			category = rocketry
-			bonus = 0.4
-			uses = 3
+		add_breakthrough_progress = {
+			value = 0.75
+			specialization = specialization_air
 		}
+
 		669={
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -2142,9 +2144,9 @@ shared_focus = {
 	y = 6	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2155,21 +2157,8 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			category = nuclear
-			bonus = 3
+			bonus = 1
 			uses = 1
-		}
-
-		country_event = {
-			id = greneclyf_forces.10
-			days = 0
-		}
-
-		random_owned_state = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			}
 		}
 
 		country_event = {
@@ -2188,9 +2177,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2222,9 +2211,9 @@ shared_focus = {
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2249,9 +2238,9 @@ shared_focus = {
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2284,9 +2273,9 @@ shared_focus = {
 	y = 6	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2314,9 +2303,9 @@ shared_focus = {
 	y = 7	
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2394,9 +2383,9 @@ shared_focus = {
 	y = 8
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
