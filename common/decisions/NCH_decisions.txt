@@ -329,243 +329,246 @@ NCH_fed_found_category = {
 		}
 
 		complete_effect = {
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							controls_state = 681
-							controls_state = 580
-							controls_state = 621
-							controls_state = 618
-							controls_state = 452
-							controls_state = 622
-							controls_state = 645
-							controls_state = 587
-							controls_state = 649
-							controls_state = 648
-							controls_state = 438
-							controls_state = 461
-							controls_state = 638
-							controls_state = 647
-							controls_state = 637
-							controls_state = 635
-							controls_state = 619
-							controls_state = 682
-							controls_state = 620
-							controls_state = 577
-							controls_state = 646
-							controls_state = 586
-							controls_state = 544
-							controls_state = 491
-							controls_state = 543
-							controls_state = 627
-							controls_state = 629
-							controls_state = 628
-							controls_state = 617
-							controls_state = 616
-							controls_state = 614
-							controls_state = 615
-							controls_state = 550
-							controls_state = 551
-							controls_state = 387
-							controls_state = 499
-							controls_state = 560
-							controls_state = 541
-						}
-						
-						AND = {
-							any_subject_country = {
+			hidden_effect = {
+					if = {
+					limit = {
+						OR = {
+							AND = {
 								controls_state = 681
-							}
-							any_subject_country = {
 								controls_state = 580
-							}
-							any_subject_country = {
 								controls_state = 621
-							}
-							any_subject_country = {
 								controls_state = 618
-							}
-							any_subject_country = {
 								controls_state = 452
-							}
-							any_subject_country = {
 								controls_state = 622
-							}
-							any_subject_country = {
 								controls_state = 645
-							}
-							any_subject_country = {
 								controls_state = 587
-							}
-							any_subject_country = {
 								controls_state = 649
-							}
-							any_subject_country = {
 								controls_state = 648
-							}
-							any_subject_country = {
 								controls_state = 438
-							}
-							any_subject_country = {
 								controls_state = 461
-							}
-							any_subject_country = {
 								controls_state = 638
-							}
-							any_subject_country = {
 								controls_state = 647
-							}
-							any_subject_country = {
 								controls_state = 637
-							}
-							any_subject_country = {
 								controls_state = 635
-							}
-							any_subject_country = {
 								controls_state = 619
-							}
-							any_subject_country = {
 								controls_state = 682
-							}
-							any_subject_country = {
 								controls_state = 620
-							}
-							any_subject_country = {
 								controls_state = 577
-							}
-							any_subject_country = {
 								controls_state = 646
-							}
-							any_subject_country = {
 								controls_state = 586
-							}
-							any_subject_country = {
 								controls_state = 544
-							}
-							any_subject_country = {
 								controls_state = 491
-							}
-							any_subject_country = {
 								controls_state = 543
-							}
-							any_subject_country = {
 								controls_state = 627
-							}
-							any_subject_country = {
 								controls_state = 629
-							}
-							any_subject_country = {
 								controls_state = 628
-							}
-							any_subject_country = {
 								controls_state = 617
-							}
-							any_subject_country = {
 								controls_state = 616
-							}
-							any_subject_country = {
 								controls_state = 614
-							}
-							any_subject_country = {
 								controls_state = 615
-							}
-							any_subject_country = {
 								controls_state = 550
-							}
-							any_subject_country = {
 								controls_state = 551
-							}
-							any_subject_country = {
 								controls_state = 387
-							}
-							any_subject_country = {
 								controls_state = 499
-							}
-							any_subject_country = {
 								controls_state = 560
-							}
-							any_subject_country = {
 								controls_state = 541
+							}
+							
+							AND = {
+								any_subject_country = {
+									controls_state = 681
+								}
+								any_subject_country = {
+									controls_state = 580
+								}
+								any_subject_country = {
+									controls_state = 621
+								}
+								any_subject_country = {
+									controls_state = 618
+								}
+								any_subject_country = {
+									controls_state = 452
+								}
+								any_subject_country = {
+									controls_state = 622
+								}
+								any_subject_country = {
+									controls_state = 645
+								}
+								any_subject_country = {
+									controls_state = 587
+								}
+								any_subject_country = {
+									controls_state = 649
+								}
+								any_subject_country = {
+									controls_state = 648
+								}
+								any_subject_country = {
+									controls_state = 438
+								}
+								any_subject_country = {
+									controls_state = 461
+								}
+								any_subject_country = {
+									controls_state = 638
+								}
+								any_subject_country = {
+									controls_state = 647
+								}
+								any_subject_country = {
+									controls_state = 637
+								}
+								any_subject_country = {
+									controls_state = 635
+								}
+								any_subject_country = {
+									controls_state = 619
+								}
+								any_subject_country = {
+									controls_state = 682
+								}
+								any_subject_country = {
+									controls_state = 620
+								}
+								any_subject_country = {
+									controls_state = 577
+								}
+								any_subject_country = {
+									controls_state = 646
+								}
+								any_subject_country = {
+									controls_state = 586
+								}
+								any_subject_country = {
+									controls_state = 544
+								}
+								any_subject_country = {
+									controls_state = 491
+								}
+								any_subject_country = {
+									controls_state = 543
+								}
+								any_subject_country = {
+									controls_state = 627
+								}
+								any_subject_country = {
+									controls_state = 629
+								}
+								any_subject_country = {
+									controls_state = 628
+								}
+								any_subject_country = {
+									controls_state = 617
+								}
+								any_subject_country = {
+									controls_state = 616
+								}
+								any_subject_country = {
+									controls_state = 614
+								}
+								any_subject_country = {
+									controls_state = 615
+								}
+								any_subject_country = {
+									controls_state = 550
+								}
+								any_subject_country = {
+									controls_state = 551
+								}
+								any_subject_country = {
+									controls_state = 387
+								}
+								any_subject_country = {
+									controls_state = 499
+								}
+								any_subject_country = {
+									controls_state = 560
+								}
+								any_subject_country = {
+									controls_state = 541
+								}
 							}
 						}
 					}
 				}
+
+				NCH = {
+					every_state = {
+						if = {
+							limit = {
+								owner = RCT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = NIM
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = DMT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = BAK
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = DEP
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = LCT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = WIT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = FRE
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = FBK
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = FIR
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								owner = WAT
+							}
+							add_core_of = NCH
+						}
+					}
+				}
 			}
+			
 
 			NCH = {
 				set_cosmetic_tag = NCH_River
-			}
-
-			NCH = {
-				every_state = {
-					if = {
-						limit = {
-							owner = RCT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = NIM
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = DMT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = BAK
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = DEP
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = LCT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = WIT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FRE
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FBK
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FIR
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = WAT
-						}
-						add_core_of = NCH
-					}
-				}
 			}
 
 			remove_country_leader_role = yes
@@ -614,6 +617,8 @@ NCH_arctic_expedition_category = {
 		}
 
 		custom_cost_text = NCH_arctic_cost
+
+		days_remove = 70
 		
 		custom_cost_trigger= {
 			#check_variable = {
@@ -625,7 +630,6 @@ NCH_arctic_expedition_category = {
 			has_political_power > 29
 			has_manpower > 1199
 		}
-		days_remove = 70
 
 		modifier = {
 			civilian_factory_use = 3
@@ -654,10 +658,6 @@ NCH_arctic_expedition_category = {
 				add_manpower = -1200 
 				add_equipment_to_stockpile = { type = convoy amount = -5 } 
 			}
-		}
-
-		remove_effect = {
-			
 		}
 		
 		cancel_trigger = {

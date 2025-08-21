@@ -1192,7 +1192,7 @@ ideas = {
 		}
 
 		NCH_native_air_spirit = {
-			picture = x
+			picture = native_aircraft
 			allowed = {
 				always = yes
 			}
@@ -1222,7 +1222,7 @@ ideas = {
 		}
 
 		NCH_foreign_air_spirit = {
-			picture = x
+			picture = foregine_aircraft
 			allowed = {
 				always = yes
 			}
@@ -1251,7 +1251,7 @@ ideas = {
 		}
 
 		NCH_swarms_hive = {
-			picture = x
+			picture = swarms_hive
 			allowed = {
 				always = yes
 			}

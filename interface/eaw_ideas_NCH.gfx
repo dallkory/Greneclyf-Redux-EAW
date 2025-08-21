@@ -312,6 +312,25 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/air_investment.tga"
 	}
 
+	spriteType = {
+		name = "GFX_idea_foregine_aircraft"
+		textureFile = "gfx/interface/ideas/NCH/foregine_aircraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_native_aircraft"
+		textureFile = "gfx/interface/ideas/NCH/native_aircraft.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_native_aircraft"
+		textureFile = "gfx/interface/ideas/NCH/native_aircraft.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_swarms_hive"
+		textureFile = "gfx/interface/ideas/NCH/swarms_hive.dds"
+	}
 
 
 
