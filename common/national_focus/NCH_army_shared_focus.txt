@@ -823,17 +823,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_naval_institute
 
-		random_core_state = {
-			limit = {
-				state = 670
-			}
-			add_building_construction = {
-				province = 5188
-				type = naval_facility
-				level = 1
+			670 = {
+				add_building_construction = {
+					province = 5188
+					type = naval_facility
+					level = 1
 				}
+			}
+
+			add_breakthrough_progress = {
+				value = 0.25
+				specialization = specialization_naval
 			}
 		}
 	}
@@ -1757,10 +1758,39 @@ shared_focus = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			or = {
+				has_tech = iw_small_airframe
+				has_tech = iw_large_airframe
+				has_tech = iw_medium_airframe
+			}
+		}
+
+		if = {
+			limit = {
+				not = { has_dlc = "By Blood Alone" }
+			}
+			or = {
+				has_tech = early_bomber
+				has_tech = early_fighter
+				has_tech = strategic_bomber1
+			}
+		}
 	}
 
 	completion_reward = {
 		air_experience = 25
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe
+			amount = 25
+			producer = NCH
+		}
+
+
 		add_tech_bonus = {
 			name = army_upgrades
 			bonus = 0.5
@@ -1799,6 +1829,10 @@ shared_focus = {
 	id = NCH_radar_development
 	icon = GFX_goal_radar_station
 	cost = 7
+
+	x = 72
+	y = 5
+
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
@@ -1813,34 +1847,24 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			technology = radio
-			bonus = 0.7
+			bonus = 0.5
 			uses = 1
 		}
 		
-		add_tech_bonus = {
-			name = x
-			category = radar_tech
-			bonus = 0.5
-			uses = 2
-		}
-
-		random_owned_state = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = arms_factory
-			level = 1
-			}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.25
 		}
 	}
-	x = 72
-	y = 5
-
 }
 
 shared_focus = {
 	id = NCH_build_new_airbases
 	icon = GFX_goal_rocket_stantion
 	cost = 7
+
+	x = 74
+	y = 5
 
 	available = {
 		not = {
@@ -1852,32 +1876,13 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
+	
 	completion_reward = {
-		random_core_state = {
-			add_building_construction = {
-				type = air_base
-				level = 1
-			}
+		add_breakthrough_progress = {
+			value = 0.75
+			specialization = specialization_air
 		}
-		random_owned_state = {
-			add_building_construction = {
-				type = air_base
-				level = 1
-			}
-		}
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-			}
-		}
-		NCH_air_school_buff_effect = yes
-
 	}
-	x = 74
-	y = 5
-
 }
 
 shared_focus = {
@@ -1885,45 +1890,36 @@ shared_focus = {
 	icon = GFX_goal_iron_dome
 	cost = 7
 
+	x = 74
+	y = 6
+
 	available = {
 		not = {
 			has_country_flag = NCH_great_hunger_started
 		}
+
+		has_tech = interwar_antiair
 	}
 
 	prerequisite = {
 		focus = NCH_build_new_airbases
 	}
-	completion_reward = {
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		NCH_air_school_buff_effect = yes
-	}
-	x = 74
-	y = 6
 
+	completion_reward = {
+		670 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+			}
+		}
+
+		669 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+	}
 }
 
 shared_focus = {
@@ -1937,17 +1933,17 @@ shared_focus = {
 		}
 	}
 
-	prerequisite = {
-		focus = NCH_radar_development
-	}
-	completion_reward = {
-		add_ideas = air_night1
-		army_experience = 30
-		NCH_air_school_buff_effect = yes
-	}
 	x = 72
 	y = 6
 
+	prerequisite = {
+		focus = NCH_radar_development
+	}
+
+	completion_reward = {
+		add_ideas = NCH_night_bombers
+		army_experience = 30
+	}
 }
 
 shared_focus = {
@@ -1985,7 +1981,7 @@ shared_focus = {
 		}
 		set_country_flag = NCH_air_advisor_flag
 		#Открывает советника
-		NCH_air_school_buff_effect = yes
+		
 
 	}
 }
@@ -2047,6 +2043,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		remove_ideas = NCH_air_stagnation
 		1209={
 			add_building_construction = {
 				type = air_facility
@@ -2055,12 +2052,16 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = air_base
-				level = 2
+				level = 1
 			}
-			add_ideas = air_facility1
 		}
-		add_ideas = NCH_air_production_1
-		add_ideas = NCH_GAF_masters_1
+
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+		}
 	}
 }
 
@@ -2159,7 +2160,7 @@ shared_focus = {
 		}
 
 		country_event = {
-			id = greneclyf_forces.2
+			id = greneclyf_forces.10
 			days = 0
 		}
 
@@ -2198,27 +2199,8 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		add_ideas = NCH_investment_for_air
 
-		NCH_air_production_buff_effect = yes
-		
-		add_tech_bonus = {
-			name = x
-			category = rocketry
-			bonus = 0.35
-			uses = 2
-		}
-		add_tech_bonus = {
-			name = x
-			category = cat_paratroopers_doctrine
-			bonus = 0.35
-			uses = 2
-		}
-		add_tech_bonus = {
-			name = x
-			technology = jet_engines
-			bonus = 0.35
-			uses = 2
-		}
 		modify_building_resources = {
 			building = industrial_complex
 			resource = aluminium
@@ -2250,7 +2232,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-
+		add_ideas = NCH_native_air_spirit
 	}
 }
 
@@ -2277,7 +2259,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		add_ideas = NCH_foreign_air_spirit
 
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_equipment_subsidy = {
+				cic = 1000
+				equipment_type = small_plane_airframe
+				seller_tags = { EQS RCT CRY HIP MCW }
+			}
+		}
 	}
 }
 
@@ -2304,12 +2297,10 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
-			category = naval_bomber
+			category = cat_torpedoes
 			uses = 2
-			bonus = 0.6
+			bonus = 0.5
 		}
-
-		NCH_GAF_masters_buff_effect = yes
 	}
 
 }

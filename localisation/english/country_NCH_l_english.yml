@@ -483,11 +483,11 @@ NCH_greneclyf_school_of_war_desc:0 "After a long road of reform, our army is fin
 
 
 # AIR #
-GFX_goal_native_aircraft:0 "Domestic Designs"
-GFX_goal_native_aircraft_desc:0 "We enter the age of aviation with almost nothing: no powerful industry, no reliable resource base. Yet it is precisely this hardship that forces our engineers and scientists to search for unconventional solutions. If we support their endeavors, in time we may build our own school of aviation—unique and independent..."
+NCH_native_development:0 "Domestic Designs"
+NCH_native_development_desc:0 "We enter the age of aviation with almost nothing: no powerful industry, no reliable resource base. Yet it is precisely this hardship that forces our engineers and scientists to search for unconventional solutions. If we support their endeavors, in time we may build our own school of aviation—unique and independent..."
 
-GFX_goal_foreign_aircraft:0 "Foreign Purchases"
-GFX_goal_foreign_aircraft_desc:0 "Why spend years on catching up in research when others have already walked this path? We can purchase proven aircraft on the world market, gain access to advanced models, and use them as the foundation for the future growth of our air force."
+NCH_foregine_development:0 "Foreign Purchases"
+NCH_foregine_development_desc:0 "Why spend years on catching up in research when others have already walked this path? We can purchase proven aircraft on the world market, gain access to advanced models, and use them as the foundation for the future growth of our air force."
 
 
 NCH_and_in_the_air:0 "Birth of the Air Force"

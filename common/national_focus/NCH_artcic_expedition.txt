@@ -191,6 +191,10 @@ Shared_focus = {
 	prerequisite = {
 		focus = NCH_militarization_north
 	}
+
+	available = {
+		has_completed_focus = NCH_build_new_airbases
+	}
 	
 	x = 49
 	y = 12
