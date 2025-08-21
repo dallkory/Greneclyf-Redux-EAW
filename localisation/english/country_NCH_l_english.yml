@@ -1204,19 +1204,28 @@ greneclyf_forces.10.a:0 "«Помилуй и прости нас, Матрона
 
 ### DECISIONS ###
 # BOP #
-NCH_hunger_bop:0 "§RЭхо голода§!"
+NCH_hunger_bop:0 "§RHunger echoes§!"
 
-NCH_hunger_acute_phase:0 "§4Кровавый рассвет§!"           
-NCH_hunger_acute_phase_external:0 "§OГолодные тени§!"  
-NCH_hunger_acute_phase_medium:0 "§6Глухая зима§!"  
-NCH_hunger_acute_phase_just_finished:0 "§YТяжёлое оттепель§!"  
+NCH_hunger_acute_phase:0 "§4Bloody dawn§!"           
+NCH_hunger_acute_phase_external:0 "§OHungry shadows§!"  
+NCH_hunger_acute_phase_medium:0 "§6Silent winter§!"  
+NCH_hunger_acute_phase_just_finished:0 "§YHarsh thaw§!"  
 
-NCH_hunger_bop_balanced:0 "§GХрупкое равновесие§!"            
+NCH_hunger_bop_balanced:0 "§GFragile balance§!"            
 
-NCH_hunger_hunger_end:0 "§gВкус хлеба§!"                    
-NCH_hunger_hunger_end_done:0 "§5Спокойствие в ульях§!" 
-NCH_hunger_hunger_end_never_more:0 "§CСытное будущее§!"     
+NCH_hunger_hunger_end:0 "§gTaste of bread§!"                    
+NCH_hunger_hunger_end_done:0 "§5Calm in the hives§!" 
+NCH_hunger_hunger_end_never_more:0 "§CSatiated future§!"    
 
+NCH_help_big_cities:0 "Send aid to major hives"
+NCH_help_small_cities:0 "Send aid to small hives"
+NCH_help_frontiers:0 "Frontier development"
+NCH_work_on_plane:0 "Diligent work in the fields"
+NCH_order_on_the_street:0 "Restore order in the streets"
+NCH_import_food_1:0 "Purchase food from neighboring regions"
+NCH_import_food_2:0 "Purchase food on the international market"
+NCH_import_food_3:0 "Purchase food overseas"
+# #
 
 NCH_typography_category:0 "Государственная типография"
 
@@ -1311,3 +1320,9 @@ NCH_idyllic_society_1_desc:0 "Despite their innate talent, the Greencliffs do no
 ### MODIFIERS ###
 NCH_urbanization_modifier:0 "Урбанизация в регионах"
 NCH_trade_with_riverlands_prey:0 "Жертва вынужденной торговли"
+
+# DECISIONS #
+NCH_typography_category_desc:0 "Государственная типография Гринклифа, расположенная в Блосмпорте и находящаяся под строгим контролем редактора Гаагата, специализируется на выполнении государственных заказов, направленных на формирование общественного мнения в угодном королевской власти русле. Благодаря своим возможностям типография способна влиять на стабильность в ульях, повышать лояльность населения и корректировать настроение масс в пользу монархии.\n\nЕсли столичная типография проявит выдающееся мастерство, королева может выделить дополнительные средства на выпуск агитационных материалов для всех остальных ульев, усиливая пропагандистское присутствие и расширяя влияние Гринклифа на периферийные территории. Как однажды подчеркнул сам Гаагат: «Власть — это разрывание разума на куски и собирание его заново в той форме, которая нужна правителю». В руках искусных редакторов и мастеров печати эти слова становятся инструментом, способным менять восприятие целых ульев и определять ход событий на границе между контролем и хаосом."
+
+NCH_fed_found_category_desc:0 "Grenclyf has a historic opportunity to establish the Concordat of Eastern Griffonia — a political union meant to symbolize strength and harmony within the Coalition. Under Queen Gytha’s guidance, determined to achieve this goal at any cost, Grenclyf can pursue diplomacy, forging alliances and treaties, or resort to war, where force decides the fate of lands and peoples. The creation of the Concordat will shape regional stability, expand Grenclyf’s influence in the riverlands, and define the future of the eastern Coalition."
+

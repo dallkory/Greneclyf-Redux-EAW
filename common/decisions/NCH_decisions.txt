@@ -608,7 +608,6 @@ NCH_arctic_expedition_category = {
 		visible = {
 			has_completed_focus = NCH_land_behind_seas
 			has_government = democratic
-			
 			FROM = {
 				not = {
 					has_state_flag = NCH_arctic_found_colony
@@ -616,16 +615,16 @@ NCH_arctic_expedition_category = {
 			}
 		}
 
+		available = {
+			has_equipment = { convoy > 4 }
+			has_manpower > 1199
+		}
+
 		custom_cost_text = NCH_arctic_cost
 
 		days_remove = 70
 		
 		custom_cost_trigger= {
-			#check_variable = {
-			#	var = command_power
-			#	value = 15
-			#	compare = greater_than_or_equals
-			#}
 			has_equipment = { convoy > 4 }
 			has_political_power > 29
 			has_manpower > 1199
@@ -635,11 +634,13 @@ NCH_arctic_expedition_category = {
 			civilian_factory_use = 3
 			command_power_gain = -0.10
 		}
+
 		ai_will_do = {
-			factor = 40
+			factor = 1
 		}
 
-		complete_effect = {
+		remove_effect = {
+			clr_country_flag = NCH_arctic_found_colony
 			FROM = {
 				transfer_state_to = NCH
 				hidden_effect = {
@@ -654,22 +655,28 @@ NCH_arctic_expedition_category = {
 			}
 
 			hidden_effect = {
-				add_political_power = -30
-				add_manpower = -1200 
-				add_equipment_to_stockpile = { type = convoy amount = -5 } 
-			}
-		}
-		
-		cancel_trigger = {
-			not = {
-				has_manpower < 1200
-				has_equipment = {
-					convoy < 4
+				ROOT = {
+					add_political_power = -30
+					add_manpower = -1200 
+					#add_equipment_to_stockpile = { type = convoy amount = -4 } 
 				}
 			}
 		}
+
+		complete_effect = {
+			set_country_flag = NCH_arctic_found_colony
+			
+			add_equipment_to_stockpile = { type = convoy amount = -25 } 
+			
+		}
+		
+		# cancel_trigger = {
+		# 	has_equipment = { convoy > 5 }	
+		# 	has_manpower > 1200
+		# }
 	}
 }
+
 
 ## MAP ICON DREEMS OF MORE ##
 # RCT
