@@ -1228,7 +1228,17 @@ NCH_import_food_2:0 "Purchase food on the international market"
 NCH_import_food_3:0 "Purchase food overseas"
 # #
 
-NCH_typography_category:0 "Государственная типография"
+NCH_typography_category:0 "Goverment typography"
+NCH_typography_category:0 "State Printing House"
+NCH_propaganda_anti_luddism:0 "Propaganda of Progress"
+NCH_propaganda_company_party:0 "Publish an Article on Harmonic Solidarism"
+NCH_propaganda_company:0 "Interview a Capital Official"
+NCH_defeat_scientlist_1:0 "Exposing the Pseudo-Scientists"
+NCH_calm_down_people:0 "Bulletin of Reassurance"
+NCH_anti_spy_operation:0 "Pamphlet on Enemy Spies"
+NCH_production_boost:0 "Publish Agitation Posters"
+NCH_support_army:0 "Write a Column on the Army’s Valor"
+
 
 #£command_power  §Y15§! £pol_power  §Y15§! £manpower_icon  §Y500§!
 

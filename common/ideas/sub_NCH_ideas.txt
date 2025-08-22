@@ -318,6 +318,22 @@ ideas = {
 			}
 		}
 
+		NCH_volonteurs = {
+			picture = volunteers_send
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_factor = 0.25
+			}
+		}
+
 		NCH_air_stagnation = {
 			picture = air_stagnation
 			allowed = {

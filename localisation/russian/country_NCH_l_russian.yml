@@ -1235,14 +1235,14 @@ NCH_import_food_3:0 "Закупка продовольствия за океан
 
 # #  
 NCH_typography_category:0 "Государственная типография"
-NCH_propaganda_anti_luddism:0 ""
-NCH_propaganda_company_party:0 ""
-NCH_propaganda_company:0 ""
-NCH_defeat_scientlist_1:0 ""
-NCH_calm_down_people:0 ""
-NCH_anti_spy_operation:0 ""
-NCH_production_boost:0 ""
-NCH_support_army:0 ""
+NCH_propaganda_anti_luddism:0 "Пропаганда прогресса"
+NCH_propaganda_company_party:0 "Выпустить статью о гармоническом солидаризме"
+NCH_propaganda_company:0 "Взять интервью у столичного чиновника"
+NCH_defeat_scientlist_1:0 "Разоблачение лже-учёных"
+NCH_calm_down_people:0 "Бюллетень спокойствия"
+NCH_anti_spy_operation:0 "Памятка о шпионах"
+NCH_production_boost:0 "Выпустить агитационные плакаты"
+NCH_support_army:0 "Написать колонку о доблести армии"
 
 #£command_power  §Y15§! £pol_power  §Y15§! £manpower_icon  §Y500§!
 

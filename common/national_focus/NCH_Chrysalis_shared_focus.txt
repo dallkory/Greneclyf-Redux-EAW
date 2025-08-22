@@ -19,6 +19,10 @@ Shared_focus = {
 			has_completed_focus = NCH_equestria_support
 		}
 	}
+
+	completion_reward = {
+		
+	}
 }
 
 Shared_focus = {

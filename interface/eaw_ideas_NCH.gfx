@@ -332,6 +332,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/swarms_hive.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_volunteers_send"
+		textureFile = "gfx/interface/ideas/NCH/volunteers_send.dds"
+	}
+
 
 
 

@@ -139,7 +139,8 @@ characters={
 		advisor = {
 			available = {
 				has_government = democratic
-				has_completed_focus = NCH_beacon_harmony_in_the_east
+				#has_completed_focus = NCH_beacon_harmony_in_the_east
+				has_country_flag = NCH_trade_and_support_CHN
 			}
 
 			slot = political_advisor
@@ -153,19 +154,19 @@ characters={
 			}
 		}
 
-		corps_commander={
-			desc = "NCH_desc_Adler"
-			traits={ 
-				changeling_race_trait ranger infantry_leader
-			}
+		# corps_commander={
+		# 	desc = "NCH_desc_Adler"
+		# 	traits={ 
+		# 		changeling_race_trait ranger infantry_leader
+		# 	}
 
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# 	skill=2
+		# 	attack_skill=2
+		# 	defense_skill=2
+		# 	planning_skill=3
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 
 	NCH_kianit_oir = {

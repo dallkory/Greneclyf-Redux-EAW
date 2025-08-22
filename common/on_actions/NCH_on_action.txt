@@ -184,8 +184,12 @@ on_actions = {
 				}
 			}
 
-			# CHN и EQS need fix #
-			# EQS #
+			if = {
+				limit = {
+					has_war_with = EQS
+				}
+				remove_ideas = NCH_trade_and_support_EQS
+			}
 			if = {
 				limit = {
 					has_war_with = CHN
@@ -193,8 +197,13 @@ on_actions = {
 				remove_ideas = NCH_trade_and_support_CHN
 			}
 
+			# CHN и EQS need fix #
+			# EQS #
 			if = {
                 limit = {
+					not = {
+						has_completed_focus = NCH_princess_in_a_high_castle
+					}
 					focus_progress = {
 						focus = NCH_princess_in_a_high_castle
 						progress = 0.4
@@ -218,6 +227,9 @@ on_actions = {
 			# CHN #
 			if = {
                 limit = {
+					not = {
+						has_completed_focus = NCH_emvassy_to_equestria
+					}
 					focus_progress = {
 						focus = NCH_emvassy_to_equestria
 						progress = 0.15
@@ -262,6 +274,9 @@ on_actions = {
 
 			if = {
 				limit = {
+					not = {
+						has_completed_focus = NCH_princess_in_a_high_castle
+					}
 					focus_progress = {
 						focus = NCH_princess_in_a_high_castle
 						progress = 0.85
@@ -276,6 +291,9 @@ on_actions = {
 
 			if = {
 				limit = {
+					not = {
+						has_completed_focus = NCH_Blosmport_navy_institute
+					}
 					and = {
 						focus_progress = {
 							focus = NCH_Blosmport_navy_institute

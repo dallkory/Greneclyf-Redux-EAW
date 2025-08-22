@@ -1805,6 +1805,7 @@ add_namespace = greneclyf_daylight
 		picture = GFX_unknow
 		is_triggered_only = yes
 
+		# accept #
 		option = {
        	name = greneclyf_foregin.22.a		
 			ai_chance = {
@@ -1822,6 +1823,20 @@ add_namespace = greneclyf_daylight
 			}
 			NCH = {
 				add_ideas = NCH_trade_and_support_CHN
+				set_country_flag = NCH_trade_and_support_CHN
+
+				add_corps_commander_role = {
+					character = NCH_Adler
+					traits={ 
+						changeling_race_trait ranger infantry_leader
+					}
+					skill=2
+					attack_skill=2
+					defense_skill=2
+					planning_skill=3
+					logistics_skill=2
+					legacy_id=-1
+				}
 			}
 		}
 
