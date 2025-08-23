@@ -58,18 +58,29 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_spy_everywhere
 	icon = GFX_goal_unknown
-	cost = 5
+	cost = 4
 	prerequisite = {
 		focus = NCH_pressure_chrusalis
 	}
 	x = 7
 	y = 4
 
+	available = {
+		has_completed_focus = NCH_Queen_Ditrisium
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_spy_everywhere_tt
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
+	}
 }
 Shared_focus = {
 	id = NCH_take_a_equipment
 	icon = GFX_goal_unknown
-	cost = 8
+	cost = 4
 	prerequisite = {
 		focus = NCH_spy_everywhere
 	}
@@ -80,7 +91,10 @@ Shared_focus = {
 	y = 5
 
 	completion_reward = {
-		
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
 	}
 }
 Shared_focus = {
@@ -146,6 +160,18 @@ Shared_focus = {
 	x = 8
 	y = 5
 
+	completion_reward = {
+		custom_effect_tooltip = NCH_old_guard_reb
+		set_country_flag = NCH_old_guard
+		add_command_power = 30
+
+		REB = {
+			add_equipment_to_stockpile = {
+				type = magical_equipment
+				amount = 4000
+			}
+		}
+	}
 }
 Shared_focus = {
 	id = NCH_give_hope
@@ -173,7 +199,8 @@ Shared_focus = {
 
 	# #
 	completion_reward = {
-		
+		custom_effect_tooltip = NCH_9_stars_methods_tt
+		set_country_flag = NCH_9_stars_methods
 	}
 }
 Shared_focus = {

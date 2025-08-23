@@ -486,13 +486,75 @@ NCH_chrysalis_category = {
 		}
 	}
 
+	NCH_sabotage_9_stars = {
+		icon = d
+		cost = 70
+		days_remove = 30
+
+		visible = {
+			country_exists = CHN
+			or = {
+				has_country_flag = NCH_debug_vision
+				has_completed_focus = NCH_idea_of_harmony_in_hives
+			}
+		}
+
+		modifier = {
+			command_power_gain = -0.5
+			political_power_cost = 0.08
+			production_factory_max_efficiency_factor = -0.05
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_with = CHN
+				}
+
+				CHN = {
+					add_timed_idea = {
+						idea = NCH_9_stars_diversions
+						days = 30
+					}
+				}
+
+				CHN = {
+					random_core_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+					random_core_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+					random_core_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+					random_core_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+				}
+			}
+		}
+	}
+
 	NCH_sabotage_chrysalis = {
 		icon = d
 		cost = 50
 		days_remove = 30
 
 		visible = {
-			has_active_mission = NCH_chrysalis_resistance_mission
+			country_exists = CHN
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_spy_everywhere

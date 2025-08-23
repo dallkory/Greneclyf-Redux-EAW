@@ -163,6 +163,51 @@ add_namespace = greneclyf_hive
 					puppet = REB
 				}
 
+				if = {
+					limit = {
+						NCH = {
+							has_country_flag = NCH_old_guard
+						}
+					}
+
+					REB = {
+						division_template = {
+							name = "Old Guard"
+							is_locked = no
+							regiments = {
+								magical_mechanized = { x = 0 y = 0 }
+								magical_mechanized = { x = 0 y = 1 }
+								magical_mechanized = { x = 0 y = 2 }
+								magical_mechanized = { x = 0 y = 3 }
+								magical_mechanized = { x = 1 y = 0 }
+								magical_mechanized = { x = 1 y = 1 }
+								magical_mechanized = { x = 1 y = 2 }
+								magical_mechanized = { x = 1 y = 3 }
+
+								magical_infantry = { x = 2 y = 0 }
+								magical_infantry = { x = 2 y = 1 }
+								magical_infantry = { x = 3 y = 0 }
+								magical_infantry = { x = 3 y = 1 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+								field_hospital =  { x = 0 y = 1 }
+								anti_tank =  { x = 0 y = 2 }
+								maintenance_company =  { x = 0 y = 3 }
+								infiltrator_company = { x = 0 y = 4 }
+							}
+							priority = 2
+						}
+						
+						create_unit = { 
+							division = "name = \"Old Guard\" division_template = \"Old Guard\" start_experience_factor = 0.9 start_equipment_factor = 0.9"
+							owner = REB 
+							count = 2
+							allow_spawning_on_enemy_provs = no
+						}
+					}
+				}
+
 				REB = {
 					add_corps_commander_role = {
 						character = NCH_Adler

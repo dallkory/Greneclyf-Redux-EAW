@@ -317,6 +317,22 @@ ideas = {
 				production_cost_max_destroyer = 1000
 			}
 		}
+		NCH_9_stars_diversions = {
+			picture = political_violence
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.05
+				supply_factor = -0.07
+			}
+		}
 
 		NCH_volonteurs = {
 			picture = volunteers_send
