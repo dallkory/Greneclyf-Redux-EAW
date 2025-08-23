@@ -120,81 +120,461 @@ add_namespace = greneclyf_hive
 					set_demilitarized_zone = yes
 				}
 			}
-
-			REB = {
-				every_state = {
-					limit = {
-						is_core_of = CHN
-					}
-					add_core_of = REB
-				}
-			}
-
-			REB = {
-				set_capital = {
-					state = 252
-				}
-
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = no
-				}
-			}
-
-			REB = {
-				create_country_leader = {
-					name = NCH_Adler
-					picture = GFX_NCH_Adler
-					ideology = conservatism
-
-					traits = {
-						Warrior_democratic
-					}
-				}
-			}
-
-			NCH = { country_event = { id = greneclyf_hive.100 } }
 		}
-
-		# immediate = {
-		# 	set_variable = {
-		# 		civil_war_size = 0.0
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			has_state_flag = NCH_high_class_support
-		# 		}
-		# 		add_to_variable = {
-		# 			var = civil_war_size 
-		# 			value = 0.2
-		# 		}
-		# 		clamp_temp_variable = {
-		# 			var = civil_war_size
-		# 			min = 0.3
-		# 			max = 0.7
-		# 		}
-		# 	}
-
-		# 	start_civil_war = {
-		# 		ideology = democratic
-		# 		size = civil_war_size
-		# 		capital = 252
-		# 	}
-		# 	clear_variable = civ_war_size
-
-		# 	NCH = {
-		# 		puppet = ROOT
-		# 	}
-		# }
 
 		option = {
 			name = greneclyf_hive.6.a
 
+			hidden_effect = {
+				REB = {
+					every_state = {
+						limit = {
+							is_core_of = CHN
+						}
+						add_core_of = REB
+					}
+				}
+
+				REB = {
+					set_capital = {
+						state = 252
+					}
+
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+					}
+				}
+
+				REB = {
+					set_cosmetic_tag = REB_Puppet
+					create_country_leader = {
+						name = NCH_Adler
+						picture = GFX_NCH_Adler
+						ideology = conservatism
+
+						traits = {
+							Warrior_democratic
+						}
+					}
+				}
+
+				NCH = {
+					puppet = REB
+				}
+
+				REB = {
+					add_corps_commander_role = {
+						character = NCH_Adler
+						traits={ 
+							changeling_race_trait ranger infantry_leader
+						}
+						skill=2
+						attack_skill=2
+						defense_skill=2
+						planning_skill=3
+						logistics_skill=2
+						legacy_id=-1
+					}
+				}
+
+				# If no support tx #
+				if = {
+					limit = {
+						not = {
+							NCH = {
+								or = {
+									has_country_flag = NCH_use_torax_f1
+									has_country_flag = NCH_use_torax_f2
+									has_country_flag = NCH_use_torax_f3
+								}
+							}
+						}
+					}
+
+					REB = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 5000
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 1000
+						}
+						add_equipment_to_stockpile = {
+							type = anti_tank_equipment
+							amount = 400
+						}
+					}
+
+					REB = {
+						division_template = {
+							name = "Worker Militia"
+							is_locked = no
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 1 y = 0 }
+								militia = { x = 1 y = 1 }
+							}
+							priority = -1
+						}
+
+						division_template = {
+							name = "Rebels Infanteri"
+							is_locked = yes
+							division_cap = 2
+							#division_names_group = USA_INF_01
+							priority = 0
+							template_counter = 0
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+							}
+							support = {
+								military_police = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+							}
+						}
+						division_template = {
+							name = "Changeling Veterans Brigade"
+							#division_names_group = CHN_ALTINF_01
+							template_counter = 37
+							is_locked = no
+							template_counter = 108
+							regiments = {
+								jager = { x = 0 y = 0 }
+								jager = { x = 0 y = 1 }
+								jager = { x = 0 y = 2 }
+								jager = { x = 0 y = 3 }
+								jager = { x = 1 y = 0 }
+								jager = { x = 1 y = 1 }
+								jager = { x = 1 y = 2 }
+								jager = { x = 1 y = 3 }
+								jager = { x = 2 y = 0 }
+								jager = { x = 2 y = 1 }
+								jager = { x = 2 y = 2 }
+								jager = { x = 2 y = 3 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+							}
+							support = {
+								infiltrator_company = { x = 0 y = 0 }
+								recon = { x = 0 y = 1 }
+								engineer = { x = 0 y = 2 }
+								artillery = { x = 0 y = 3 }
+							}
+							priority = 2
+						}
+
+						capital_scope = {
+							create_unit = { 
+								division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\"  start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 2
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = { 
+								division = "name = \"Worker Militia\" division_template = \"Worker Militia\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 4
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = {
+								division = "name = \"Rebels Infanteri\" division_template = \"Rebels Infanteri\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 3
+								allow_spawning_on_enemy_provs = no
+							}
+						}
+					}	
+				}
+
+				# if support has 1 tier #
+				if = {
+					limit = {
+						NCH = {
+							has_country_flag = NCH_use_torax_f1
+						}
+					}
+
+
+					REB = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 20000
+						}
+
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 4000
+						}
+
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 2000
+						}
+					}
+
+					REB = {
+						division_template = {
+							name = "Worker Militia"
+							is_locked = no
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 1 y = 0 }
+								militia = { x = 1 y = 1 }
+							}
+							priority = -1
+						}
+						
+
+						division_template = {
+							name = "Rebels Infanteri"
+							is_locked = yes
+							division_cap = 2
+							#division_names_group = USA_INF_01
+							priority = 0
+							template_counter = 0
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+							}
+							support = {
+								military_police = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+							}
+						}
+						division_template = {
+							name = "Changeling Veterans Brigade"
+							#division_names_group = CHN_ALTINF_01
+							template_counter = 37
+							is_locked = no
+							template_counter = 108
+							regiments = {
+								jager = { x = 0 y = 0 }
+								jager = { x = 0 y = 1 }
+								jager = { x = 0 y = 2 }
+								jager = { x = 0 y = 3 }
+								jager = { x = 1 y = 0 }
+								jager = { x = 1 y = 1 }
+								jager = { x = 1 y = 2 }
+								jager = { x = 1 y = 3 }
+								jager = { x = 2 y = 0 }
+								jager = { x = 2 y = 1 }
+								jager = { x = 2 y = 2 }
+								jager = { x = 2 y = 3 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+							}
+							support = {
+								infiltrator_company = { x = 0 y = 0 }
+								recon = { x = 0 y = 1 }
+								engineer = { x = 0 y = 2 }
+								artillery = { x = 0 y = 3 }
+							}
+							priority = 2
+						}
+
+						capital_scope = {
+							create_unit = { 
+								division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\"  start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 3
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = { 
+								division = "name = \"Worker Militia\" division_template = \"Worker Militia\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 6
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = {
+								division = "name = \"Rebels Infanteri\" division_template = \"Rebels Infanteri\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 4
+								allow_spawning_on_enemy_provs = no
+							}
+						}
+					}
+				}
+
+				# if support has 2 tier #
+				if = {
+					limit = {
+						NCH = {
+							has_country_flag = NCH_use_torax_f2
+						}
+					}
+
+
+					REB = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 20000
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 4000
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 2000
+						}
+
+						add_equipment_to_stockpile = {
+							type = medium_tank_chassis
+							amount = 3000
+						}
+						add_equipment_to_stockpile = {
+							type = motorized_equipment
+							amount = 5000
+						}
+						add_equipment_to_stockpile = {
+							type = anti_air_equipment
+							amount = 5000
+						}
+					}
+
+					REB = {
+						division_template = {
+							name = "Worker Militia"
+							is_locked = no
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 1 y = 0 }
+								militia = { x = 1 y = 1 }
+							}
+							priority = -1
+						}
+
+						division_template = {
+							name = "Rebels Infanteri"
+							is_locked = yes
+							division_cap = 2
+							#division_names_group = USA_INF_01
+							priority = 0
+							template_counter = 0
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+							}
+							support = {
+								military_police = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+							}
+						}
+
+						division_template = {
+							name = "Rebels Motorized"
+							is_locked = yes
+							division_cap = 2
+							priority = 0
+							template_counter = 0
+							regiments = {
+								medium_armor = { x = 0 y = 0 }
+								medium_armor = { x = 0 y = 1 }
+								medium_armor = { x = 0 y = 2 }
+								medium_armor = { x = 0 y = 3 }
+								motorized = { x = 1 y = 0 }
+								motorized = { x = 1 y = 1 }
+								motorized = { x = 1 y = 2 }
+								motorized = { x = 1 y = 3 }
+								motorized = { x = 2 y = 0 }
+								motorized = { x = 2 y = 1 }
+								motorized = { x = 2 y = 2 }
+								motorized = { x = 2 y = 3 }
+							}
+							support = {
+								engineer = 1
+								signal_company = 1
+								maintenance_company = 1
+								anti_air = 1
+							}
+						}
+
+						division_template = {
+							name = "Changeling Veterans Brigade"
+							#division_names_group = CHN_ALTINF_01
+							template_counter = 37
+							is_locked = no
+							template_counter = 108
+							regiments = {
+								jager = { x = 0 y = 0 }
+								jager = { x = 0 y = 1 }
+								jager = { x = 0 y = 2 }
+								jager = { x = 0 y = 3 }
+								jager = { x = 1 y = 0 }
+								jager = { x = 1 y = 1 }
+								jager = { x = 1 y = 2 }
+								jager = { x = 1 y = 3 }
+								jager = { x = 2 y = 0 }
+								jager = { x = 2 y = 1 }
+								jager = { x = 2 y = 2 }
+								jager = { x = 2 y = 3 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+							}
+							support = {
+								infiltrator_company = { x = 0 y = 0 }
+								recon = { x = 0 y = 1 }
+								engineer = { x = 0 y = 2 }
+								artillery = { x = 0 y = 3 }
+							}
+							priority = 2
+						}
+
+						capital_scope = {
+							create_unit = { 
+								division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\"  start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 5
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = { 
+								division = "name = \"Worker Militia\" division_template = \"Worker Militia\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 3
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = {
+								division = "name = \"Rebels Infanteri\" division_template = \"Rebels Infanteri\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 6
+								allow_spawning_on_enemy_provs = no
+							}
+							create_unit = {
+								division = "name = \"Rebels Motorized\" division_template = \"Rebels Motorized\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+								owner = REB 
+								count = 3
+								allow_spawning_on_enemy_provs = no
+							}
+						}
+					}
+				}
+			}
+			
 			declare_war_on = {
 				type = annex_everything
 				target = REB
 			}
-			
 			every_state = {
 				limit = {
 					is_core_of = REB
