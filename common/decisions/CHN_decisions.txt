@@ -1,3 +1,34 @@
+CHN_NCH_resistance = {
+	CHN_NCH_use_woops = {
+		icon = intelligence_agency_defense
+		days_remove = 30
+
+		cost = 50
+
+		visible = {
+			and = {
+				NCH = {
+					has_completed_focus = NCH_Queen_Ditrisium
+				}
+				is_ai = no
+			}
+		}
+
+		modifier = {
+			intelligence_agency_defense = 0.35
+			political_power_factor = -0.05
+		}
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = NCH_chrysalis_resistance_mission
+				days = -30
+			}
+		}
+	}
+}
+
+
 foreign_politics = {
 
 	CHN_demand_remilitarization = {

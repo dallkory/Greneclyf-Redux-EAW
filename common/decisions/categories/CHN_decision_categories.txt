@@ -1,3 +1,13 @@
+CHN_NCH_resistance = {
+	icon = resistance_activity
+	allowed = {
+		original_tag = CHN
+	}
+	priority = {
+		base = 1
+	}
+}
+
 CHN_chaos_in_the_everfree = {
 	picture = GFX_decision_cat_richmay_forestburning
 	icon = burning_swamp

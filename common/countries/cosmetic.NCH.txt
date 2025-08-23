@@ -1,0 +1,10 @@
+NCH_River = {
+	color = rgb { 37 38 88 }
+	color_ui = rgb { 134 128 221 }
+}
+
+CHN_resistance = {
+	color = rgb {    }
+	color_ui = rgb {    }
+}
+

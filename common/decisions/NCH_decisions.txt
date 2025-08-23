@@ -3,15 +3,6 @@
 
 ### DEBUG ###
 NCH_debug_decision = {
-
-	#NCH_show_all_debug_categories = {
-	#	icon = d
-	#
-	#		complete_effect = {
-	#		set_country_flag = NCH_debug
-	#	}
-	#}
-
 	NCH_show_all_focuses_GYTHA = {
 		icon = d
 		
@@ -253,32 +244,46 @@ NCH_chrysalis_category = {
 		}
 
 		timeout_effect = {
-			
+			CHN = {
+				start_civil_war = {
+					ideology = democratic
+				}
+#NCH_high_class_support
+# NCH_torax.up1
+			}
+
 		}
 	}
 
 	NCH_use_agency_woops = {
 		icon = x
 		cost = 70
-		days_re_enable = 20
-
+		days_re_enable = 1
+		
+		days_remove = 20
 		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_seek_support
+
+				not = {
+					or = {
+						has_completed_focus = NCH_take_a_equipment
+						has_completed_focus = NCH_equipment_suppporter
+						has_completed_focus = NCH_idea_of_harmony_in_hives
+					}
+				}
 			}
 		}
 
 		available = {
-			has_built = {
-				type = industrial_complex
-				value = 8
-			}
+			industrial_complex > 7
 		}
 
 		modifier = {
 			political_power_cost = 0.12
-			civilian_factory_use = 8
+			consumer_goods_factor = 0.13
 			intelligence_agency_defense = -0.15
 		}
 
@@ -291,12 +296,65 @@ NCH_chrysalis_category = {
 		}
 	}
 
+	NCH_chn_high_class = {
+		icon = d
+		cost = 200
+		days_remove = 30
+
+		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
+			or = {
+				has_country_flag = NCH_debug_vision
+				has_completed_focus = NCH_Queen_Ditrisium
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			has_political_power > 199
+		}
+
+		modifier = {
+			civilian_factory_use = 10
+			political_power_cost = 0.17
+		}
+
+		state_target = yes
+		targets = {
+			305 304 261 312 306 313
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = NCH_chrysalis_resistance_mission
+				days = -15
+			}
+
+			FROM = {
+				set_state_flag = NCH_high_class_support
+				add_state_modifier = {
+					modifier = {
+						local_manpower = 0.12
+						local_org_regain = 0.05
+						local_supplies = 0.07
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -200
+		}
+	}
+
 	NCH_use_torax_followers_1 = {
 		icon = d
 		cost = 50
 		fire_only_once = yes
 
 		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_pressure_chrusalis
@@ -318,8 +376,22 @@ NCH_chrysalis_category = {
 		complete_effect = {
 			set_country_flag = NCH_use_torax_f1
 			custom_effect_tooltip = NCH_resistance_upgrade1
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -20000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -4000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -2000
+			}
 		}
 	}
+
 
 	NCH_use_torax_followers_2 = {
 		icon = d
@@ -327,9 +399,22 @@ NCH_chrysalis_category = {
 		fire_only_once = yes
 
 		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_country_flag = NCH_use_torax_f1
+			}
+		}
+
+		available = {
+			has_equipment = {
+				medium_tank_chassis > 2999
+			}
+			has_equipment = {
+				motorized_equipment > 4999
+			}
+			has_equipment = {
+				anti_air_equipment > 499
 			}
 		}
 
@@ -344,9 +429,22 @@ NCH_chrysalis_category = {
 		fire_only_once = yes
 
 		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_country_flag = NCH_use_torax_f2
+			}
+		}
+
+		available = {
+			has_equipment = {
+				small_plane_airframe > 999
+			}
+			has_equipment = {
+				small_plane_cas_airframe > 499
+			}
+			has_equipment = {
+				train_equipment > 49
 			}
 		}
 
@@ -361,6 +459,7 @@ NCH_chrysalis_category = {
 		days_remove = 30
 
 		visible = {
+			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_spy_everywhere
@@ -388,6 +487,18 @@ NCH_chrysalis_category = {
 			}
 
 			CHN = {
+				random_core_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+				}
+
 				random_core_state = {
 					damage_building = {
 						type = infrastructure
