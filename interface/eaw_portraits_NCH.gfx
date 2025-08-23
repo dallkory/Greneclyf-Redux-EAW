@@ -28,6 +28,6 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_NCH_Adler"
-		textureFile = "gfx/leaders/NCH/Adler.tga"
+		textureFile = "gfx/leaders/NCH/Helvia.tga"
 	}
 }

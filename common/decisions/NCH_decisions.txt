@@ -243,6 +243,15 @@ NCH_chrysalis_category = {
 			}
 		}
 
+		complete_effect = {
+			CHN = {
+				country_event = {
+					id = greneclyf_hive.6
+					days = 0
+				}
+			}
+		}
+
 		timeout_effect = {
 			CHN = {
 				country_event = {
@@ -254,7 +263,7 @@ NCH_chrysalis_category = {
 	}
 
 	NCH_use_agency_woops = {
-		icon = x
+		icon = war_attache
 		cost = 70
 		days_re_enable = 1
 		
