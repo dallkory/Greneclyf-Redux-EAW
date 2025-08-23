@@ -6,6 +6,7 @@ add_namespace = greneclyf_foregin
 add_namespace = greneclyf_arctic
 add_namespace = greneclyf_core
 add_namespace = greneclyf_daylight
+add_namespace = greneclyf_hive
 
 
 	# Example #
@@ -28,6 +29,91 @@ add_namespace = greneclyf_daylight
 	#		custom_effect_tooltip = greneclyf.511.b.tt
 	#		}
 	#}
+
+	# hibe #
+	# Sparkle #
+	country_event = {
+		id = greneclyf_hive.1
+		title = greneclyf_1.t
+		desc = greneclyf_1.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_1.a
+		}
+	}
+
+	# Gift #
+	country_event = {
+		id = greneclyf_hive.2
+		title = greneclyf_2.t
+		desc = greneclyf_2.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_2.a
+		}
+	}
+
+	# Gold crown Ditrisium #
+	country_event = {
+		id = greneclyf_hive.3
+		title = greneclyf_3.t
+		desc = greneclyf_3.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_3.a
+		}
+	}
+
+	# Chrysalis thing somethging in north #
+	country_event = {
+		id = greneclyf_hive.4
+		title = greneclyf_4.t
+		desc = greneclyf_4.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_4.a
+		}
+	}
+
+	# Conspiracy uncovered #
+	country_event = {
+		id = greneclyf_hive.5
+		title = greneclyf_5.t
+		desc = greneclyf_5.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_5.a
+		}
+	}
+
+	# Traitors behind us #
+	country_event = {
+		id = greneclyf_hive.6
+		title = greneclyf_6.t
+		desc = greneclyf_6.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_6.a
+		}
+	}
 
 	# Somethging special #
 	country_event = {

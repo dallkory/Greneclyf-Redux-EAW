@@ -1123,7 +1123,7 @@ shared_focus = {
 	y = 3
 
 	available = {
-		has_war_support > 0.35
+		has_war_support > 0.45
 		# not = {
 		# 	has_country_flag = NCH_great_hunger_started
 		# }

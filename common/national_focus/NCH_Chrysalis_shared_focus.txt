@@ -35,6 +35,16 @@ Shared_focus = {
 	x = 8
 	y = 3
 
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.2
+			days = 0
+		}
+	}
 }
 Shared_focus = {
 	id = NCH_spy_everywhere
@@ -68,6 +78,16 @@ Shared_focus = {
 	x = 10
 	y = 3
 
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.1
+			days = 0
+		}	
+	}
 }
 Shared_focus = {
 	id = NCH_Queen_Ditrisium
@@ -82,6 +102,21 @@ Shared_focus = {
 	x = 9
 	y = 4
 
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.3
+			days = 0
+		}
+
+		CHN = {
+			country_event = {
+				id = greneclyf_hive.4
+				days = 0
+			}
+		}
+
+		custom_effect_tooltip = NCH_run_with_time
+	}
 }
 Shared_focus = {
 	id = NCH_equipment_suppporter
