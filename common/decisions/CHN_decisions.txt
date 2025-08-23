@@ -7,9 +7,7 @@ CHN_NCH_resistance = {
 
 		visible = {
 			and = {
-				NCH = {
-					has_completed_focus = NCH_Queen_Ditrisium
-				}
+				has_country_flag = NCH_resistance_activity
 				is_ai = no
 			}
 		}

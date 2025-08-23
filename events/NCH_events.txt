@@ -9,28 +9,7 @@ add_namespace = greneclyf_daylight
 add_namespace = greneclyf_hive
 
 
-	# Example #
-
-	#country_event = {
-	#	id = greneclyf.1000
-	#	title = greneclyf.511.t
-	#	desc = greneclyf.511.d
-	#	picture = GFX_event_celarl
-	#	is_triggered_only = yes
-	#	fire_only_once = yes
-	#
-	#	option={
-	#		name = greneclyf.1.a 
-	#		add_political_power = -150
-	#		add_manpower = -200
-	#	}
-	#	option = {
-	#		name = greneclyf.511.b
-	#		custom_effect_tooltip = greneclyf.511.b.tt
-	#		}
-	#}
-
-	# hibe #
+	## hive ##
 	# Sparkle #
 	country_event = {
 		id = greneclyf_hive.1
@@ -59,7 +38,7 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# Gold crown Ditrisium #
+	# Gold rose Ditrisium #
 	country_event = {
 		id = greneclyf_hive.3
 		title = greneclyf_3.t
@@ -73,7 +52,7 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# Chrysalis thing somethging in north #
+	# Chrysalis thing somethging in north - Слухи о заговоре на севере #
 	country_event = {
 		id = greneclyf_hive.4
 		title = greneclyf_4.t
@@ -84,10 +63,14 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_4.a
+			CHN = {
+				set_country_flag = NCH_resistance_activity
+			}
 		}
 	}
 
-	# Conspiracy uncovered #
+	# start civil war - resistance weak #
+	# Conspiracy uncovered - Кризалис раскрывает заговор #
 	country_event = {
 		id = greneclyf_hive.5
 		title = greneclyf_5.t
@@ -98,10 +81,23 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_5.a
+
+			NCH = {
+				set_country_flag = NCH_resistance_uncovered
+			}
+
+			252 = {
+				set_demilitarized_zone = yes
+			}
+
+			hidden_effect = {
+				
+			}
 		}
 	}
 
-	# Traitors behind us #
+	# start civil war #
+	# Traitors behind us - Предатели среди нас #
 	country_event = {
 		id = greneclyf_hive.6
 		title = greneclyf_6.t
@@ -110,10 +106,83 @@ add_namespace = greneclyf_hive
 		is_triggered_only = yes
 		fire_only_once = yes
 
+		# immediate = {
+		# 	set_variable = {
+		# 		civil_war_size = 0.0
+		# 	}
+		# 	every_state = {
+		# 		limit = {
+		# 			has_state_flag = NCH_high_class_support
+		# 		}
+		# 		add_to_variable = {
+		# 			var = civil_war_size 
+		# 			value = 0.2
+		# 		}
+		# 		clamp_temp_variable = {
+		# 			var = civil_war_size
+		# 			min = 0.3
+		# 			max = 0.7
+		# 		}
+		# 	}
+
+		# 	start_civil_war = {
+		# 		ideology = democratic
+		# 		size = civil_war_size
+		# 		capital = 252
+		# 	}
+		# 	clear_variable = civ_war_size
+
+		# 	NCH = {
+		# 		puppet = ROOT
+		# 	}
+		# }
+
 		option = {
 			name = greneclyf_6.a
+
 		}
 	}
+
+	# Make puppet and set Adler as leader #
+	country_event = {
+		id = greneclyf_hive.100
+		title = greneclyf_hive.100.t
+		desc = greneclyf_hive.100.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		immediate = {
+			set_autonomy = {
+				target = global_event_target:chn_rebels_global
+				autonomy_state = autonomy_puppet
+			}
+
+			if = {
+				limit = {
+					has_character = NCH_Adler
+				}
+				NCH_adler = {
+					set_nationality = global_event_target:chn_rebels_global
+				}
+				global_event_target:chn_rebels_global = {
+					recruit_character = NCH_Adler
+					create_country_leader = {
+						name = NCH+_Adler
+						picture = x
+						ideology = conservatism
+					}
+				}
+			}
+		}
+
+		option={
+			name = greneclyf_hive.100.a
+		}
+	}
+
+
+
 
 	# Somethging special #
 	country_event = {
