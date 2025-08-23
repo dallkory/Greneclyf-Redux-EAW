@@ -50,3 +50,11 @@ set_stability = 0.15
 set_war_support = 0.65
 
 recruit_character = NCH_Adler
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders  = yes
+	can_generate_female_country_leaders = yes
+	can_not_declare_war = yes
+	can_join_factions = no
+}

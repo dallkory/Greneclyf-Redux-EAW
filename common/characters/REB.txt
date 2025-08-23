@@ -1,6 +1,6 @@
 characters = {
 	REB_Adler = {
-		name = Adler
+		name = NCH_Adler
 		portraits = {
 			army = {
 				large="gfx/leaders/NCH/Adler.tga"
@@ -9,7 +9,7 @@ characters = {
 		}
 
 		country_leader={
-			desc="QUEEN_GYTHA_DESC"
+			desc=""
 			ideology=conservatism
 			expire="1965.1.1.1"
 			traits = { Warrior_democratic }

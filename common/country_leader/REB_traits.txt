@@ -2,7 +2,7 @@ leader_traits = {
 	Warrior_democratic = {
 		random = no
 
-		war_support_weekly = 0.03
+		war_support_weekly = 0.003
 		defence = 0.15
 		attack = 0.15
 		max_dig_in_factor = 0.25

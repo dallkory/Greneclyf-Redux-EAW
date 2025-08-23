@@ -100,11 +100,61 @@ add_namespace = greneclyf_hive
 	# Traitors behind us - Предатели среди нас #
 	country_event = {
 		id = greneclyf_hive.6
-		title = greneclyf_6.t
-		desc = greneclyf_6.d
+		title = greneclyf_hive.6.t
+		desc = greneclyf_hive.6.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
+
+		immediate = {
+			CHN = {
+				every_core_state = {
+					limit = {
+						has_country_flag = NCH_high_class_support
+					}
+					transfer_state_to = REB
+					set_demilitarized_zone = yes
+				}
+				252 = {
+					transfer_state_to = REB
+					set_demilitarized_zone = yes
+				}
+			}
+
+			REB = {
+				every_state = {
+					limit = {
+						is_core_of = CHN
+					}
+					add_core_of = REB
+				}
+			}
+
+			REB = {
+				set_capital = {
+					state = 252
+				}
+
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+			}
+
+			REB = {
+				create_country_leader = {
+					name = NCH_Adler
+					picture = GFX_NCH_Adler
+					ideology = conservatism
+
+					traits = {
+						Warrior_democratic
+					}
+				}
+			}
+
+			NCH = { country_event = { id = greneclyf_hive.100 } }
+		}
 
 		# immediate = {
 		# 	set_variable = {
@@ -138,8 +188,19 @@ add_namespace = greneclyf_hive
 		# }
 
 		option = {
-			name = greneclyf_6.a
+			name = greneclyf_hive.6.a
 
+			declare_war_on = {
+				type = annex_everything
+				target = REB
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = REB
+				}
+				set_demilitarized_zone = no
+			}
 		}
 	}
 
@@ -152,32 +213,34 @@ add_namespace = greneclyf_hive
 		is_triggered_only = yes
 		fire_only_once = yes
 
-		immediate = {
-			set_autonomy = {
-				target = global_event_target:chn_rebels_global
-				autonomy_state = autonomy_puppet
-			}
+		# immediate = {
+		# 	set_autonomy = {
+		# 		target = global_event_target:chn_rebels_global
+		# 		autonomy_state = autonomy_puppet
+		# 	}
 
-			if = {
-				limit = {
-					has_character = NCH_Adler
-				}
-				NCH_adler = {
-					set_nationality = global_event_target:chn_rebels_global
-				}
-				global_event_target:chn_rebels_global = {
-					recruit_character = NCH_Adler
-					create_country_leader = {
-						name = NCH+_Adler
-						picture = x
-						ideology = conservatism
-					}
-				}
-			}
-		}
+		# 	if = {
+		# 		limit = {
+		# 			has_character = NCH_Adler
+		# 		}
+		# 		NCH_adler = {
+		# 			set_nationality = global_event_target:chn_rebels_global
+		# 		}
+		# 		global_event_target:chn_rebels_global = {
+		# 			recruit_character = NCH_Adler
+		# 			create_country_leader = {
+		# 				name = NCH+_Adler
+		# 				picture = x
+		# 				ideology = conservatism
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		option={
 			name = greneclyf_hive.100.a
+
+			
 		}
 	}
 

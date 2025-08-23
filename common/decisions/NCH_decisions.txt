@@ -250,16 +250,6 @@ NCH_chrysalis_category = {
 					days = 0
 				}
 			}
-			CHN = {
-				start_civil_war = {
-					ideology = democratic
-					#civil_war_size = 
-				}
-
-				#NCH_high_class_support
-				#NCH_use_torax_f3
-			}
-
 		}
 	}
 
