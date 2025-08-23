@@ -1,9 +1,16 @@
 Shared_focus = {
 	id = NCH_hive
 	icon = GFX_goal_unknown
-	cost = 1
+	cost = 0.2
 	x = 13
 	y = 2
+
+	bypass = {
+		or = {
+			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+		}
+	}
 
 	available = {
 		or = {
@@ -67,6 +74,9 @@ Shared_focus = {
 	x = 6
 	y = 5
 
+	completion_reward = {
+		
+	}
 }
 Shared_focus = {
 	id = NCH_seek_support
@@ -138,14 +148,14 @@ Shared_focus = {
 	cost = 10
 	prerequisite = {
 		focus = NCH_equipment_suppporter
-	}
-	prerequisite = {
 		focus = NCH_take_a_equipment
 	}
+
 	x = 7
 	y = 6
 
 }
+
 Shared_focus = {
 	id = NCH_idea_of_harmony_in_hives
 	icon = GFX_goal_unknown
@@ -156,6 +166,10 @@ Shared_focus = {
 	x = 10
 	y = 5
 
+	# #
+	completion_reward = {
+		
+	}
 }
 Shared_focus = {
 	id = NCH_fangs_dug
@@ -163,10 +177,9 @@ Shared_focus = {
 	cost = 10
 	prerequisite = {
 		focus = NCH_equipment_suppporter
-	}
-	prerequisite = {
 		focus = NCH_idea_of_harmony_in_hives
 	}
+
 	x = 9
 	y = 6
 

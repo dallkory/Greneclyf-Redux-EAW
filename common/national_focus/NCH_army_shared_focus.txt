@@ -1949,7 +1949,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = NCH_night_bombers
-		army_experience = 30
+		#army_experience = 30
 	}
 }
 

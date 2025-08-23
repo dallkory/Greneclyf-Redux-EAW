@@ -1252,6 +1252,7 @@ NCH_arctic_cost_tooltip:0 "Экспедиция на остров обойдёт
 NCH_fraction_neighborhood:0 "Содружество Холмов"  #Фронт Ллира? Аналогия Фронта Стрезы
 
 ### TOOL TIPS ###
+NCH_Jorney_started:0 "The journey has started"
 NCH_regular_army_chosen:0 "§4Regular army doctrine selected§!"
 NCH_professional_army_chosen:0 "§4Professional army doctrine selected§!"
 

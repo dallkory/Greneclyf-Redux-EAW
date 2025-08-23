@@ -63,7 +63,7 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
-			custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
+			#custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
 			country_event = {
 			days = 0
 			id = greneclyf_base.2

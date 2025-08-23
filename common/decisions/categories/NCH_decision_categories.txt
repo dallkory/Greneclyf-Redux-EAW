@@ -19,6 +19,14 @@ NCH_debug_decision = {
 #	}
 #	priority = 152
 #}
+NCH_chrysalis_category = {
+	icon = GFX_unkmow
+
+	priority = {
+		base = 155
+	}
+}
+
 NCH_arctic_expedition_category = {
 	icon = GFX_unkmow
 
