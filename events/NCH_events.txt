@@ -124,7 +124,23 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_hive.6.a
+			
+			CHN_tetti_rhombi = {
+				set_nationality = REB
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			}
 
+			CHN_pharynx = {
+				set_nationality = REB
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			} 
+			
 			hidden_effect = {
 				REB = {
 					every_state = {
