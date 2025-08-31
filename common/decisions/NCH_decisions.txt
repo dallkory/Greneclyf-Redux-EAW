@@ -253,6 +253,7 @@ NCH_chrysalis_category = {
 		}
 
 		timeout_effect = {
+			set_country_flag = NCH_chrysalis_reb
 			CHN = {
 				country_event = {
 					id = greneclyf_hive.6
@@ -447,7 +448,7 @@ NCH_chrysalis_category = {
 		icon = d
 		cost = 50
 		fire_only_once = yes
-
+		
 		visible = {
 			has_active_mission = NCH_chrysalis_resistance_mission
 			or = {
@@ -491,6 +492,10 @@ NCH_chrysalis_category = {
 		cost = 70
 		days_remove = 30
 
+		available = {
+			country_exists = CHN
+		}
+
 		visible = {
 			country_exists = CHN
 			or = {
@@ -508,7 +513,11 @@ NCH_chrysalis_category = {
 		complete_effect = {
 			if = {
 				limit = {
-					has_war_with = CHN
+					country_exists = CHN
+					or = {
+						has_country_flag = NCH_debug_vision
+						has_completed_focus = NCH_idea_of_harmony_in_hives
+					}
 				}
 
 				CHN = {
@@ -622,9 +631,11 @@ NCH_chrysalis_category = {
 	}
 }
 
-# WAR ONLY Fed dound #
+# WAR ONLY Fed found # 
+# AND #
+# PEACE ONLY Fed found
 NCH_fed_found_category = {
-	NCH_fed_found = {
+	NCH_war_fed_found_dec = {
 		#icon = x
 		ai_will_do = {
 			base = 1
@@ -633,7 +644,15 @@ NCH_fed_found_category = {
 		#on_map_mode = map_only
 		
 		visible = {
-			has_completed_focus = NCH_dreems_of_more
+			or = {
+				has_country_flag = NCH_debug_vision
+				has_completed_focus = NCH_dreems_of_more
+			}
+
+			not = {
+				has_country_flag = NCH_war_fed_found
+				has_country_flag = NCH_peace_fed_found
+			}
 		}
 
 		available = {
@@ -721,6 +740,7 @@ NCH_fed_found_category = {
 		}
 
 		complete_effect = {
+			set_country_flag = NCH_war_fed_found
 			hidden_effect = {
 					if = {
 					limit = {
@@ -890,19 +910,19 @@ NCH_fed_found_category = {
 					every_state = {
 						if = {
 							limit = {
-								owner = RCT
+								is_core_of = RCT
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = NIM
+								is_core_of = NIM
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = DMT
+								is_core_of = DMT
 							}
 							add_core_of = NCH
 						}
@@ -914,43 +934,43 @@ NCH_fed_found_category = {
 						}
 						if = {
 							limit = {
-								owner = DEP
+								is_core_of = DEP
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = LCT
+								is_core_of = LCT
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = WIT
+								is_core_of = WIT
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = FRE
+								is_core_of = FRE
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = FBK
+								is_core_of = FBK
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = FIR
+								is_core_of = FIR
 							}
 							add_core_of = NCH
 						}
 						if = {
 							limit = {
-								owner = WAT
+								is_core_of = WAT
 							}
 							add_core_of = NCH
 						}
@@ -970,11 +990,184 @@ NCH_fed_found_category = {
 				traits = { The_Steel_lady }
 				ideology = conservatism
 			}
+		}
+	}
 
-			set_country_flag = NCH_war_fed_found
+	NCH_peace_fed_found_dec = {
+		#icon = x
+		ai_will_do = {
+			base = 1
+		}
+		fire_only_once = yes
+		#on_map_mode = map_only
+		
+		visible = {
+			or = {
+				has_country_flag = NCH_debug_vision
+				has_country_flag = NCH_peace_fed_ambitions
+			}
+
+			not = {
+				has_country_flag = NCH_war_fed_found
+				has_country_flag = NCH_peace_fed_found
+			}
+		}
+
+		available = {
+			or = {
+				AND = {
+					controls_state = 619
+					controls_state = 620
+					controls_state = 577
+					controls_state = 646
+					controls_state = 682
+				}
+
+				
+				AND = {
+					619 = {
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+					620 = {
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+					577 = {
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+					646 = {
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+					682 = {
+						controller = {
+							is_subject_of = NCH
+						}
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 619
+				state = 620
+				state = 577
+				state = 646
+				state = 682
+
+				state = 618
+				state = 621
+				state = 580
+				state = 681
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = NCH_peace_fed_found
+			hidden_effect = {
+
+				annex_country = {
+					target = FRE
+				}
+				annex_country = {
+					target = RCT
+				}
+
+				NCH = {
+					every_state = {
+						if = {
+							limit = {
+								is_core_of = RCT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = NIM
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = DMT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = BAK
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = DEP
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = LCT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = WIT
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = FRE
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = FBK
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = FIR
+							}
+							add_core_of = NCH
+						}
+						if = {
+							limit = {
+								is_core_of = WAT
+							}
+							add_core_of = NCH
+						}
+					}
+				}
+			}
+			
+
+			NCH = {
+				set_cosmetic_tag = NCH_River
+			}
+
+			remove_country_leader_role = yes
+			create_country_leader = {
+				name = NCH_Gytha_iron_lady
+				picture = GFX_NCH_Steel_Gytha
+				traits = { The_Steel_lady }
+				ideology = conservatism
+			}
 		}
 	}
 }
+
 
 NCH_arctic_expedition_category = {
 	NCH_gytha_island = {

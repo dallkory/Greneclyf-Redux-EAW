@@ -528,7 +528,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_core_11
+			id = greneclyf_core.11
 		}
 	}
 }
@@ -2237,6 +2237,8 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = NCH_ecnomic_tt
+
+		set_country_flag = NCH_peace_fed_ambitions
 		country_event = {
 			id = greneclyf_core.5
 		}
@@ -2711,86 +2713,92 @@ shared_focus = {
 
 	# NEED TO CHANGE #
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = NCH_one_more_dream
+		or = {
+			or = {
+				has_country_flag = NCH_peace_fed_found
+				has_country_flag = NCH_war_fed_found
+			}
+			custom_trigger_tooltip = {
+				tooltip = NCH_one_more_dream
 
-			AND = {
-				RCT = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+				AND = {
+					RCT = {
+						all_core_state = {
+							OR = {
+								is_controlled_by = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				LTC = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					LTC = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				BAK = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					BAK = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				NIM = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					NIM = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				DEP = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					DEP = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				FRE = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					FRE = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				WIT = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					WIT = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
-				}
-				DMT = {
-					all_core_state = {
-						OR = {
-							controller = NCH
-							controller = {
-								is_subject_of = NCH
+					DMT = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
 							}
 						}
 					}
