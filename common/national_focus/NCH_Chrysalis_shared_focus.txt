@@ -13,6 +13,9 @@ Shared_focus = {
 	}
 
 	available = {
+		not = {
+			has_country_leader = NCH_Svirl_chosen_leader
+		}
 		or = {
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
@@ -260,6 +263,22 @@ Shared_focus = {
 	x = 13
 	y = 3
 
+	available = {
+		not = {
+			exists = CHN
+		}
+		CHN = {
+			all_core_state = {
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_ideas = NCH_humanitary_crisis_1
+	}
 }
 
 Shared_focus = {
@@ -272,6 +291,12 @@ Shared_focus = {
 	x = 12
 	y = 4
 
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NCH_humanitary_crisis_1
+			add_idea = NCH_humanitary_crisis_2
+		}
+	}
 }
 Shared_focus = {
 	id = NCH_loyal_elite
@@ -283,6 +308,9 @@ Shared_focus = {
 	x = 14
 	y = 4
 
+	completion_reward = {
+		country_event = greneclyf_hive.14
+	}
 }
 
 Shared_focus = {
@@ -298,6 +326,34 @@ Shared_focus = {
 	x = 13
 	y = 5
 
+	completion_reward = {
+		country_event = greneclyf_hive.16
+		add_named_threat = {
+			threat = 5
+			name = NCH_CHN_intervetion
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_claim_by = NCH
+		}
+
+		if = {
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					add_opinion_modifier = {
+					target = NCH
+						modifier = large_decrease
+					}
+				}
+			}	
+		}
+	}
 }
 
 Shared_focus = {
@@ -310,6 +366,20 @@ Shared_focus = {
 	x = 13
 	y = 6
 
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = CHN
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+			create_wargoal = {
+				target = THIS
+				type = annex_everything
+			}
+		}
+	}
 }
 
 Shared_focus = {
@@ -322,6 +392,49 @@ Shared_focus = {
 	x = 17
 	y = 3
 
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+		or = {
+			EQS = {
+				has_war_with = CHN
+			}
+
+			is_in_faction_with = EQS
+
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					or = {
+						original_tag = EQS
+						is_puppet_of = EQS
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_opinion_modifier = {
+			target = EQS
+			modifier = large_increase
+		}
+		add_timed_idea = {
+			idea = NCH_war_mission_EQS
+			days = 120
+		}
+
+		EQS = {
+			add_timed_idea = {
+				idea = NCH_war_mission_EQS
+				days = 120
+			}
+		}
+	}
 }
 
 Shared_focus = {
@@ -423,6 +536,13 @@ Shared_focus = {
 	completion_reward = {
 		if = {
 			limit = {
+				has_idea = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
+
+		if = {
+			limit = {
 				REB  = {
 					is_puppet_of = NCH
 				}
@@ -430,6 +550,9 @@ Shared_focus = {
 
 			country_event = greneclyf_hive.13
 		}
+
+
+
 	}
 }
 
@@ -444,6 +567,9 @@ Shared_focus = {
 	y = 8
 
 	available = {
+		not = {
+			has_country_leader = NCH_Svirl_chosen_leader
+		}
 		CHN = {
 			all_core_state = {
 				OR = {
@@ -457,16 +583,13 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		add_ideas = NCH_Gytha_triumpf
 		custom_effect_tooltip = NCH_Gytha_triumpf
-		hidden_effect = {
-			every_state = {
-				if = {
-					limit = {
-						is_core_of = CHN
-					}
-					add_core_of = NCH
-				}
-			}	
-		}
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_core_of = NCH
+		}	
 	}
 }

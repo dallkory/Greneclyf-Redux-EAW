@@ -232,7 +232,7 @@ NCH_chrysalis_category = {
 		activation = {
 			or = {
 				has_completed_focus = NCH_Queen_Ditrisium
-				has_country_flag = NCH_debug_vision
+				#has_country_flag = NCH_debug_vision
 			}
 		}
 

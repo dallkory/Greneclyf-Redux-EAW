@@ -261,7 +261,6 @@ add_namespace = greneclyf_hive
 								field_hospital =  { x = 0 y = 1 }
 								anti_tank =  { x = 0 y = 2 }
 								maintenance_company =  { x = 0 y = 3 }
-								infiltrator_company = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -376,10 +375,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -491,10 +490,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -615,10 +614,10 @@ add_namespace = greneclyf_hive
 								motorized = { x = 2 y = 3 }
 							}
 							support = {
-								engineer = 1
-								signal_company = 1
-								maintenance_company = 1
-								anti_air = 1
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 						}
 
@@ -645,10 +644,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -788,10 +787,10 @@ add_namespace = greneclyf_hive
 								motorized = { x = 2 y = 3 }
 							}
 							support = {
-								engineer = 1
-								signal_company = 1
-								maintenance_company = 1
-								anti_air = 1
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 						}
 
@@ -818,10 +817,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -1078,16 +1077,16 @@ add_namespace = greneclyf_hive
 								field_hospital =  { x = 0 y = 1 }
 								anti_tank =  { x = 0 y = 2 }
 								maintenance_company =  { x = 0 y = 3 }
-								infiltrator_company = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
-						
-						create_unit = { 
-							division = "name = \"Old Guard\" division_template = \"Old Guard\" start_experience_factor = 0.9 start_equipment_factor = 0.9"
-							owner = REB 
-							count = 2
-							allow_spawning_on_enemy_provs = no
+						252 = {
+							create_unit = { 
+								division = "name = \"Old Guard\" division_template = \"Old Guard\" start_experience_factor = 0.9 start_equipment_factor = 0.9"
+								owner = REB 
+								count = 2
+								allow_spawning_on_enemy_provs = no
+							}
 						}
 					}
 				}
@@ -1193,10 +1192,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -1308,10 +1307,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -1432,10 +1431,10 @@ add_namespace = greneclyf_hive
 								motorized = { x = 2 y = 3 }
 							}
 							support = {
-								engineer = 1
-								signal_company = 1
-								maintenance_company = 1
-								anti_air = 1
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 						}
 
@@ -1462,7 +1461,6 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
 								recon = { x = 0 y = 1 }
 								engineer = { x = 0 y = 2 }
 								artillery = { x = 0 y = 3 }
@@ -1605,10 +1603,10 @@ add_namespace = greneclyf_hive
 								motorized = { x = 2 y = 3 }
 							}
 							support = {
-								engineer = 1
-								signal_company = 1
-								maintenance_company = 1
-								anti_air = 1
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 						}
 
@@ -1635,10 +1633,10 @@ add_namespace = greneclyf_hive
 								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
-								infiltrator_company = { x = 0 y = 0 }
-								recon = { x = 0 y = 1 }
-								engineer = { x = 0 y = 2 }
-								artillery = { x = 0 y = 3 }
+								engineer = { x = 0 y = 1 }
+								signal_company = { x = 0 y = 2 }
+								maintenance_company = { x = 0 y = 3}
+								anti_air = { x = 0 y = 4 }
 							}
 							priority = 2
 						}
@@ -1722,6 +1720,7 @@ add_namespace = greneclyf_hive
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
+		major = yes
 
 		option = {
 			name = greneclyf_hive.10.a
@@ -1736,6 +1735,7 @@ add_namespace = greneclyf_hive
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
+		major = yes
 
 		option = {
 			name = greneclyf_hive.11.a
@@ -1750,6 +1750,7 @@ add_namespace = greneclyf_hive
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
+		major = yes
 
 		option = {
 			name = greneclyf_hive.12.a
@@ -1780,6 +1781,161 @@ add_namespace = greneclyf_hive
 		# REB - PUPPET #
 		option = {
 			name = greneclyf_hive.13.b
+		}
+	}
+
+	# Voices #
+	country_event = {
+		id = greneclyf_hive.14
+		title = greneclyf_hive.14.t
+		desc = greneclyf_hive.14.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_hive.14.a
+
+			add_ideas = NCH_veterans
+			country_event = greneclyf_arctic.15
+
+			NCH = {
+				division_template = {
+					name = "Letzte Bataillon"
+					is_locked = no
+					regiments = {
+						magical_mechanized = { x = 0 y = 0 }
+						magical_mechanized = { x = 0 y = 1 }
+						magical_mechanized = { x = 0 y = 2 }
+						magical_mechanized = { x = 0 y = 3 }
+						magical_mechanized = { x = 1 y = 0 }
+						magical_mechanized = { x = 1 y = 1 }
+						magical_mechanized = { x = 1 y = 2 }
+						magical_mechanized = { x = 1 y = 3 }
+
+						jager = { x = 2 y = 0 }
+						jager = { x = 2 y = 1 }
+						jager = { x = 3 y = 0 }
+						jager = { x = 3 y = 1 }
+
+						jager = { x = 2 y = 2 }
+						jager = { x = 2 y = 3 }
+						jager = { x = 3 y = 2 }
+						jager = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						field_hospital =  { x = 0 y = 1 }
+						anti_tank =  { x = 0 y = 2 }
+						maintenance_company =  { x = 0 y = 3 }
+						infiltrator_company = { x = 0 y = 4 }
+					}
+					priority = 2
+				}
+				
+				670 = {
+					create_unit = { 
+						division = "name = \"Letzte Bataillon\" division_template = \"Letzte Bataillon\" start_experience_factor = 0.9 start_equipment_factor = 0.25"
+						owner = NCH 
+						count = 14
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# Determenation #
+	country_event = {
+		id = greneclyf_hive.15
+		title = greneclyf_hive.15.t
+		desc = greneclyf_hive.15.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_hive.15.a
+
+			CHN_tetti_rhombi = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			}
+
+			CHN_pharynx = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			} 
+
+
+			CHN_legus = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = theoretic
+					demote_leader = yes	
+				}
+			} 
+
+			CHN_venyx = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			} 
+
+			CHN_queen_helvia = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = political_advisor
+					demote_leader = yes	
+				}
+			} 
+
+			CHN_chnwarindustrialist = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = political_advisor
+					demote_leader = yes	
+				}
+			} 
+
+			CHN_mimic = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			} 
+
+			CHN_chnairmarshal1 = {
+				set_nationality = NCH
+				remove_advisor_role = {
+					slot = high_command
+					demote_leader = yes	
+				}
+			} 
+		}
+	}
+
+	# Ocupation - shame - NEWS #
+	country_event = {
+		id = greneclyf_hive.16
+		title = greneclyf_hive.16.t
+		desc = greneclyf_hive.16.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+		major = yes
+
+		option = {
+			name = greneclyf_hive.16.a
 		}
 	}
 
@@ -1971,7 +2127,7 @@ add_namespace = greneclyf_hive
 			#add_political_power = 50
 
 			country_event = {
-				id = greneclyf_base.30
+				id = greneclyf_base.261
 				days = 0
 			}
 		}
@@ -1979,15 +2135,15 @@ add_namespace = greneclyf_hive
 
 		# SAINT PLACE JORNEY X2 #
 		country_event = {
-			id = greneclyf_base.30
-			title = greneclyf_base.30.t
-			desc = greneclyf_base.30.d
+			id = greneclyf_base.261
+			title = greneclyf_base.261.t
+			desc = greneclyf_base.261.d
 			picture = GFX_unknow
 			is_triggered_only = yes
 			fire_only_once = yes
 	
 			option={
-				name = greneclyf_base.30.a 
+				name = greneclyf_base.261.a 
 				#add_political_power = 50
 	
 				country_event = {
@@ -2307,9 +2463,9 @@ add_namespace = greneclyf_hive
 			add_stability = -0.05
 			add_political_power = -50
 
-			transfer_resources = {
+			give_resource_rights = {
+				receiver = RCT
 				state = 1210
-				target = RCT
 			}
 
 			1210 = {
@@ -2331,8 +2487,6 @@ add_namespace = greneclyf_hive
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
-
-
 		option = {
 			name = greneclyf_base.21.a
 
@@ -2456,7 +2610,7 @@ add_namespace = greneclyf_hive
 
 			if = {
 				limit = {
-					STC = {
+					SIC = {
 						has_government = communism 
 					}
 				}

@@ -413,6 +413,94 @@ ideas = {
 			}
 		}
 
+		NCH_humanitary_crisis_1 = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.08
+				stability_weekly = -0.001
+				fascism_drift = 0.002
+				weekly_manpower = 2000
+			}
+		}
+
+		NCH_humanitary_crisis_2 = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.025
+				consumer_goods_factor = 0.12
+				#stability_weekly = -0.001
+				fascism_drift = 0.001
+				weekly_manpower = 3000
+			}
+		}
+
+		NCH_war_mission_EQS = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				infantry_tech = 0.07
+				magical_tech = 0.15
+				armor = 0.05
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				command_power_gain = 0.1
+				political_advisor_cost_factor = -0.08
+			}
+		}
+
+		NCH_Gytha_triumpf = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = 0.07
+				political_power_gain = 0.25
+				resistance_activity = -0.075
+				resistance_damage_to_garrison = -0.15
+				army_attack_factor = 0.15
+				surrender_limit = 1
+			}
+		}
+
+		NCH_veterans = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_org = 0.08
+				army_attack_factor = 0.07
+				fascism_drift = 0.001
+			}
+		}
+
 		NCH_idyllic_society_1 = {
 			picture = EQS_friendly_harmony
 			allowed = { always = no }

@@ -1,47 +1,45 @@
 NCH_historical = {
 
-		name = "Gytha Way"
-		desc = "Gytha Way"
+	name = "Gytha Way"
+	desc = "Gytha Way"
 
-		allowed = {
+	allowed = {
 			original_tag = NCH
-		}
+	}
 
-		enable = {
-			OR = {
-				AND = {
-					is_historical_focus_on = yes
-					has_game_rule = {
-						rule = NCH_ai_behavior
-						option = GYTHA
-					}
-				}
-				has_country_flag = NCH_AI_historical_patch
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
 				has_game_rule = {
 					rule = NCH_ai_behavior
 					option = GYTHA
 				}
 			}
+			has_country_flag = NCH_AI_historical_patch
+			has_game_rule = {
+				rule = NCH_ai_behavior
+				option = GYTHA
+			}
 		}
-		abort = {
-			
-		}
+	}
+	abort = {
+	}
 
-		ai_national_focuses = {
-			NCH_assess_the_situation
-			NCH_meet_with_the_outsiders
-			NCH_trading_with_the_continentals
-			NCH_beyond_the_continent
-			send_a_delegation_to_equestria
-			NCH_invite_the_equestrians
-			NCH_a_different_kind_of_changeling
-			NCH_intercontinental_trade
+	ai_national_focuses = {
+		NCH_assess_the_situation
+		NCH_meet_with_the_outsiders
+		NCH_trading_with_the_continentals
+		NCH_beyond_the_continent
+		send_a_delegation_to_equestria
+		NCH_invite_the_equestrians
+		NCH_a_different_kind_of_changeling
+		NCH_intercontinental_trade
 
 		research = {
 		}
 
 		ideas = {
-			
 		}
 
 		traits = {
@@ -57,9 +55,8 @@ NCH_historical = {
 		}
 
 		focus_factors = {
-			
 		}
-
 	}
 }
+
 
