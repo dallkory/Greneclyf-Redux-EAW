@@ -1939,6 +1939,103 @@ add_namespace = greneclyf_hive
 		}
 	}
 
+	# Federation and EQS #
+	country_event = {
+		id = greneclyf_hive.17
+		title = greneclyf_hive.17.t
+		desc = greneclyf_hive.17.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+		major = yes
+
+		option = {
+			name = greneclyf_hive.17.a
+			EQS = {
+				add_to_faction = NCH
+			}
+		}
+
+		option = {
+			name = greneclyf_hive.17.b
+
+			NCH = {
+				set_country_flag = NCH_EQS_no_peace
+				create_wargoal = {
+					target = EQS
+					type = independence_wargoal
+				}
+			}
+
+			NCH = {
+				create_wargoal = {
+					target = CHN
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	# Conference declaration #
+	country_event = {
+		id = greneclyf_hive.18
+		title = greneclyf_hive.18.t
+		desc = greneclyf_hive.18.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+		major = yes
+
+		option = {
+			name = greneclyf_hive.18.a
+
+			if = {
+				limit = {
+					CHN = {
+						has_government = democratic
+					}
+					CHN = {
+						is_puppet = yes
+					}
+				}
+				NCH = {
+					annex_country = {
+					target = CHN
+					}
+				}
+
+				NCH  = {
+					every_state = {
+						limit = {
+							is_core_of = CHN
+							not = {
+								is_controlled_by = CHN
+							}
+						}
+						create_wargoal = {
+							target = THIS
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Demons Hehemony #
+	country_event = {
+		id = greneclyf_hive.16
+		title = greneclyf_hive.16.t
+		desc = greneclyf_hive.16.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+		major = yes
+
+		option = {
+			name = greneclyf_hive.16.a
+		}
+	}
 
 
 	# Somethging special #

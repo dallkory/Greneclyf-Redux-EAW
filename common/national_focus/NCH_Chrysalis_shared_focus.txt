@@ -447,6 +447,50 @@ Shared_focus = {
 	x = 17
 	y = 4
 
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+
+			CHN  = {
+				has_government = democratic 
+			}
+
+			CHN  = {
+				has_war_with = NCH
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				EQS = {
+					has_government = democratic
+				}
+				has_opinion = {
+					target = EQS
+					value > 49
+				}
+			}
+			#set_country_flag = NCH_EQS_peace
+		}
+
+		if = {
+			limit = {
+				has_opinion = {
+					target = EQS
+					value < 49
+				}
+			}
+			add_opinion_modifier = {
+				target = EQS
+				modifier = large_decrease
+			}
+			#set_country_flag = NCH_EQS_decrease
+		}
+	}
 }
 
 Shared_focus = {
@@ -462,6 +506,22 @@ Shared_focus = {
 	x = 16
 	y = 5
 
+	#available = {
+	#	has_country_flag = NCH_EQS_decrease
+	#}
+
+	available = {
+		country_exists = CHN
+		CHN  = {
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.19
+		}
+	}
 }
 
 Shared_focus = {
@@ -477,6 +537,17 @@ Shared_focus = {
 	x = 18
 	y = 5
 
+	#available = {
+	#	has_country_flag = NCH_EQS_peace
+	#}
+
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_hive.17
+			}
+		}
+	}
 }
 
 Shared_focus = {
@@ -489,8 +560,22 @@ Shared_focus = {
 	x = 18
 	y = 6
 
+	bypass = {
+		has_country_flag = NCH_EQS_no_peace
+	}
+
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+		}
+	}
+
 	completion_reward = {
-		
+		country_event = {
+			id = greneclyf_hive.18
+		}
 	}
 }
 
@@ -550,8 +635,6 @@ Shared_focus = {
 
 			country_event = greneclyf_hive.13
 		}
-
-
 
 	}
 }
