@@ -12,7 +12,7 @@ focus_tree = {
 	#cancel_if_invalid = yes
     #continue_if_invalid = no
     #available_if_capitulated = no
-
+	
 	shared_focus = NCH_beginning_of_crisis
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch

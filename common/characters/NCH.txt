@@ -455,6 +455,43 @@ characters={
 	}
 
 	# Advisors #
+	
+	NCH_Foiki = {
+ 		name = Foiki
+            portraits={
+                navy={
+                    large="gfx/leaders/NCH/Foiki_Renh.tga"
+                    small="gfx/interface/ideas/Advisors/NCH/Foiki.tga"
+                }
+            }
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Hart
+			cost = 100
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				#has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				alt_navy_fleet_logistics_2
+				#navy_chief_decisive_battle_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		navy_leader = {
+			traits = { changeling_race_trait superior_tactician }			
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=1
+		}
+	}
 
 	# Admirals #
 	 NCH_admiral_hart={
@@ -466,23 +503,23 @@ characters={
                     small="gfx/interface/ideas/Advisors/NCH/Hart.dds"
                 }
             }
-			advisor={
-                slot = navy_chief
-                idea_token = NCH_Hart
-                cost = 200
-                allowed = {
-                    original_tag = NCH
-                }
-                available = {
-                    has_country_flag = NCH_navy_advisor_flag
-                }
-                traits = {
-                    navy_chief_decisive_battle_3
-                }
-                ai_will_do = {
-                    factor = 1
-                }
-            }
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Hart
+			cost = 200
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				navy_chief_decisive_battle_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
     }
 
 	NCH_admiral_lorri={
@@ -494,24 +531,23 @@ characters={
                     small="gfx/interface/ideas/Advisors/NCH/Lorri.tga"
                 }
             }
-			advisor={
-                slot = navy_chief
-                idea_token = NCH_Lorri
-                cost = 150
-                allowed = {
-                    original_tag = NCH
-                }
-                available = {
-                    has_country_flag = NCH_navy_advisor_flag
-                }
-                traits = {
-                    navy_chief_commerce_raiding_3
-                }
-                ai_will_do = {
-                    factor = 0.4
-                }
-            }
-
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Lorri
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			ai_will_do = {
+				factor = 0.4
+			}
+		}
     }
 
 	 # Generals #
