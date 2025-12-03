@@ -245,9 +245,51 @@ characters={
 		}
 	}
 
+	NCH_scientist_Retgir={
+		name = Retgir
+		#desc = Retgir_desc
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/NCH/Retgir.tga"
+			}
+		}
+		# advisor={
+		# 	slot = theorist
+		# 	idea_token = NCH_retgir_it
+		# 	ledger = army
+		# 	cost = 100
+		# 	removal_cost = -1
+		# 	allowed = {
+		# 		original_tag = NCH
+		# 	}
+		# 	research_bonus = {
+		# 		nuclear = 0.15
+		# 	}
+
+		# 	traits = { nuclear_scientist }
+		# 	desc = Retgir_desc      
+		# 	on_add = {
+		# 		is_hired_as_advisor = yes
+		# 		country_event = {
+		# 			id = greneclyf.510
+		# 			days = 1
+		# 		}
+		# 	}      
+		# }
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+			}
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
 	NCH_scientist_celarl={
-        name=Celarl
-		desc = Celarl_desc
+        name = Celarl
+		#desc = Celarl_desc
         portraits={
             army={
                 small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
@@ -267,7 +309,7 @@ characters={
             }
 
             traits = { nuclear_scientist }
-    		desc = Celarl_desc      
+    		#desc = Celarl_desc      
 			on_add = {
 				is_hired_as_advisor = yes
 				country_event = {
@@ -279,13 +321,11 @@ characters={
 
 		scientist = {
 			traits = {
-				scientist_trait_bright 
 				scientist_trait_genius 
-				scientist_trait_brilliant_theorist 
 				scientist_trait_fast_learner 
-			} # TODO GTD balance
+			} 
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 3
 			}
 
 			visible = {
