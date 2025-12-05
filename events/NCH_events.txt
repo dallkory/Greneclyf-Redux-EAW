@@ -2820,9 +2820,9 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_base.28.a
-
 		}
 	}
+	
 	### MILITARY SUSTAINABLE ###
 	# QUEEN SPEAKS #
 	# ACTUAL 1.2 #

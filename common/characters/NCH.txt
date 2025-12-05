@@ -250,6 +250,7 @@ characters={
 		#desc = Retgir_desc
 		portraits={
 			army={
+				large="gfx/leaders/NCH/Retgir.tga"
 				small="gfx/interface/ideas/Advisors/NCH/Retgir.tga"
 			}
 		}
@@ -292,6 +293,7 @@ characters={
 		#desc = Celarl_desc
         portraits={
             army={
+				large="gfx/leaders/NCH/Celarl.tga"
                 small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
             }
         }

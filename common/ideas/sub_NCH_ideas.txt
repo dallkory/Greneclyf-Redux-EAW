@@ -880,6 +880,7 @@ ideas = {
 				war_support_weekly = 0.003
 				consumer_goods_factor = 0.3
 				political_power_factor = -0.25
+				monthly_population = -0.25
 				communism_drift = 0.03
 				recruitable_population_factor = -0.05
 				power_balance_weekly = -0.002

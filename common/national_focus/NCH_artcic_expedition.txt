@@ -326,6 +326,10 @@ Shared_focus = {
 				amount = 15
 			}
 			add_resource = {
+				type = coal
+				amount = 4
+			}
+			add_resource = {
 				type = steel
 				amount = 8
 			}
@@ -336,6 +340,10 @@ Shared_focus = {
 			add_resource = {
 				type = chromium
 				amount = 36
+			}
+			add_resource = {
+				type = coal
+				amount = 4
 			}
 			add_resource = {
 				type = steel

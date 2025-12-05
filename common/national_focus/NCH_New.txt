@@ -281,7 +281,7 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-			custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
+			#custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
 			every_country = {
 				limit = {
 					is_riverlands_country = yes
