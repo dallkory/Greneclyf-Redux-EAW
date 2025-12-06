@@ -537,7 +537,6 @@ characters={
 
 	# Admirals #
 	 NCH_admiral_hart={
-        #name=NCH_Hart
         name=Hart
             portraits={
                 navy={
@@ -565,7 +564,6 @@ characters={
     }
 
 	NCH_admiral_lorri={
-        #name=NCH_Lorri
         name=Lorri
             portraits={
                 navy={
@@ -826,6 +824,7 @@ characters={
 
 	# Air chiefs #
 	NCH_Farris_Fork={
+		name = Faris_Fork
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -842,7 +841,7 @@ characters={
 				has_country_flag = NCH_air_advisor_flag
 			}
 			traits = {
-				air_chief_ground_support_3
+				air_chief_ground_support_2
 			}
 			ai_will_do = {
 				factor = 1
@@ -850,6 +849,7 @@ characters={
 		}
 	}
 	NCH_Harris_Perk={
+		name = Harris_Perk
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -874,6 +874,7 @@ characters={
 		}
 	}
 	NCH_Nowel_Dark={
+		name = Nowel_Dark
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -898,7 +899,7 @@ characters={
 		}
 	}
 
-   	 # Submod #
+   	# Submod #
     
 	NCH_oiren_of_oir={
 		name=NCH_oiren_of_oir
@@ -1150,4 +1151,5 @@ characters={
 			}
 		}
 	}
+
 }

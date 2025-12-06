@@ -12,6 +12,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_NCH_obsidian_crystals"
+		texturefile = "gfx/interface/ideas/NCH/obsidian_trade.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_grand_navy"
 		textureFile = "gfx/interface/ideas/NCH/shipwaves.dds"
 	}

@@ -528,7 +528,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = {
-			id = greneclyf_core.11
+			id = greneclyf_core.7
 		}
 	}
 }
@@ -654,6 +654,8 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = harmonic_solidarity
+
+		remove_ideas = NCH_economic_status_protect
 	}
 }
 
@@ -674,6 +676,8 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = project_phoenix
+
+		remove_ideas = NCH_economic_status_protect
 	}
 }
 

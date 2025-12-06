@@ -2679,7 +2679,6 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_base.40.a
-			add_ideas = NCH_economic_hehemony_ork
 
 			add_power_balance_value = {
 				id = NCH_hunger_bop
@@ -2822,7 +2821,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_base.28.a
 		}
 	}
-	
+
 	### MILITARY SUSTAINABLE ###
 	# QUEEN SPEAKS #
 	# ACTUAL 1.2 #
