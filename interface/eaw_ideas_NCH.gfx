@@ -7,6 +7,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_NCH_yards_concern"
+		textureFile = "gfx/interface/ideas/NCH/yards_concern.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NCH_resource_concern"
+		textureFile = "gfx/interface/ideas/NCH/resource_concern.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_Basalt_Shaw_Idea"
 		textureFile = "gfx/interface/ideas/NCH/Basalt_Shaw.dds"
 	}

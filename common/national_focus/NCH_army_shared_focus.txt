@@ -1136,6 +1136,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 25
+		set_country_flag = NCH_generals_flag
 		#remove_ideas = NCH_idyllic_society
 
 		add_doctrine_cost_reduction = {

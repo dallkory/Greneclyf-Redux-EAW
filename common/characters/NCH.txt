@@ -254,29 +254,6 @@ characters={
 				small="gfx/interface/ideas/Advisors/NCH/Retgir.tga"
 			}
 		}
-		# advisor={
-		# 	slot = theorist
-		# 	idea_token = NCH_retgir_it
-		# 	ledger = army
-		# 	cost = 100
-		# 	removal_cost = -1
-		# 	allowed = {
-		# 		original_tag = NCH
-		# 	}
-		# 	research_bonus = {
-		# 		nuclear = 0.15
-		# 	}
-
-		# 	traits = { nuclear_scientist }
-		# 	desc = Retgir_desc      
-		# 	on_add = {
-		# 		is_hired_as_advisor = yes
-		# 		country_event = {
-		# 			id = greneclyf.510
-		# 			days = 1
-		# 		}
-		# 	}      
-		# }
 
 		scientist = {
 			traits = {
@@ -284,6 +261,40 @@ characters={
 			}
 			skills = {
 				specialization_naval = 2
+			}
+		}
+	}
+
+	NCH_scientist_Zoris={
+		name = Zoris
+		#desc = Zoris_desc
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Zoris.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Zoris.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = NCH_zoris_it
+			ledger = army
+			cost = 100
+			removal_cost = -1
+			allowed = {
+				original_tag = NCH
+			}
+			research_bonus = {
+				rocketry = 0.1
+			}
+			traits = { rocket_scientist }     
+		}
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+			}
+			skills = {
+				specialization_air = 2
 			}
 		}
 	}
@@ -724,7 +735,7 @@ characters={
 				original_tag = NCH
 			}
 			available = {
-				has_country_flag = NCH_Moronlan_Legacy
+				has_completed_focus = NCH_inspire_by_example
 			}
 
 			traits = {

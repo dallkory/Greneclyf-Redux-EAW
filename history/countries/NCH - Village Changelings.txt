@@ -154,7 +154,7 @@ add_ideas = {
 
 	NCH_fleet_stagnation
 	NCH_air_stagnation
-	#NCH_army_stagnation
+
 }
 
 add_tech_bonus = {
@@ -204,6 +204,8 @@ recruit_character = NCH_Gerald_3
 recruit_character = NCH_kianit_oir
 recruit_character = NCH_Adler
 recruit_character = NCH_Foiki
+recruit_character = NCH_scientist_Retgir
+recruit_character = NCH_scientist_Zoris
 
 # leaders #
 recruit_character = NCH_queen_gytha
@@ -214,8 +216,6 @@ recruit_character = NCH_cader_sclerite
 recruit_character = NCH_feilean
 recruit_character = NCH_airann
 recruit_character = NCH_garran_of_leamhan
-#recruit_character = NCH_generic_army_log
-#recruit_character = NCH_generic_navy_fleet_log #### WIP
 ###############################################
 
 #NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }

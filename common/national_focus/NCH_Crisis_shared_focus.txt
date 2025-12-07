@@ -439,6 +439,10 @@ Shared_focus = {
 	x = 38
 	y = 11
 
+	available = {
+		has_completed_focus = NCH_army_concessions
+	}
+
 	bypass = {
 		Not = {
 			country_exists = FBK
@@ -454,6 +458,10 @@ Shared_focus = {
 		country_event = {
 			id = greneclyf_base.25
 			days = 0
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.035
 		}
 	}
 }

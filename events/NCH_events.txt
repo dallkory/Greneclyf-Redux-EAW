@@ -2682,7 +2682,7 @@ add_namespace = greneclyf_hive
 
 			add_power_balance_value = {
 				id = NCH_hunger_bop
-				value = -0.025
+				value = 0.025
 			}
 		}
 	}
