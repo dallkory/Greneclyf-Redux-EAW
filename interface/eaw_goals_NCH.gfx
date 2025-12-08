@@ -500,6 +500,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/foregine_aircraft.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_after_storm"
+		textureFile = "gfx/interface/goals/NCH/after_storm.png"
+	}
+
 	
 
 
