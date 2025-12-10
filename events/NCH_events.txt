@@ -2004,17 +2004,19 @@ add_namespace = greneclyf_hive
 					}
 				}
 
-				NCH  = {
+				NCH = {
 					every_state = {
 						limit = {
 							is_core_of = CHN
-							not = {
-								is_controlled_by = CHN
-							}
+							NOT = { is_controlled_by = CHN }
 						}
-						create_wargoal = {
-							target = THIS
-							type = annex_everything
+						controller = {
+							NCH = {
+								create_wargoal = {
+									target = THIS
+									type = annex_everything
+								}
+							}
 						}
 					}
 				}
@@ -2024,16 +2026,16 @@ add_namespace = greneclyf_hive
 
 	# Demons Hehemony #
 	country_event = {
-		id = greneclyf_hive.16
-		title = greneclyf_hive.16.t
-		desc = greneclyf_hive.16.d
+		id = greneclyf_hive.19
+		title = greneclyf_hive.19.t
+		desc = greneclyf_hive.19.d
 		picture = GFX_unknow
 		is_triggered_only = yes
 		fire_only_once = yes
 		major = yes
 
 		option = {
-			name = greneclyf_hive.16.a
+			name = greneclyf_hive.19.a
 		}
 	}
 
