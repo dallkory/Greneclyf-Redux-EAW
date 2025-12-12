@@ -38,7 +38,7 @@ shared_focus = {
 ### LOCAL POLITICS ###
 shared_focus = {
 	id = NCH_reforms_after_storm
-	icon = GFX_goal_unknown
+	icon = GFX_goal_enya_way
 	cost = 1
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
