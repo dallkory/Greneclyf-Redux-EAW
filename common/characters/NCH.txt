@@ -194,6 +194,30 @@ characters={
 		}
 	}
 
+	NCH_Gagat = {
+		name = Gagat
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Gagat.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_completed_focus = NCH_typography
+			}
+
+			slot = political_advisor
+			idea_token = Gagat_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				Herald_of_truth
+			}
+		}
+	}
+
 	NCH_Gerald_3 = {
 		name = Gerald_3
 		portraits = {

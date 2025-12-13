@@ -206,6 +206,7 @@ recruit_character = NCH_Adler
 recruit_character = NCH_Foiki
 recruit_character = NCH_scientist_Retgir
 recruit_character = NCH_scientist_Zoris
+recruit_character = NCH_Gagat
 
 # leaders #
 recruit_character = NCH_queen_gytha
