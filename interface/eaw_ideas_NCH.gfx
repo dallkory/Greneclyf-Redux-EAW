@@ -338,9 +338,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_native_aircraft"
-		textureFile = "gfx/interface/ideas/NCH/native_aircraft.tga"
+		name = "GFX_idea_EQC_sturdy_sails_co"
+		textureFile = "gfx/interface/ideas/NCH/EQC_sturdy_sails_co.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HIP_SIR_SNA_grateful"
+		textureFile = "gfx/interface/ideas/NCH/idea_HIP_SIR_SNA_grateful.tga"
+	} 
+	spriteType = {
+		name = "GFX_idea_KIS_factory_investment"
+		textureFile = "gfx/interface/ideas/NCH/KIS_factory_investment.tga"
+	} 
+	spriteType = {
+		name = "GFX_idea_KIS_continuous_air_research_idea"
+		textureFile = "gfx/interface/ideas/NCH/KIS_continuous_air_research_idea.tga"
+	} 
+
+
 
 	spriteType = {
 		name = "GFX_idea_swarms_hive"

@@ -35,7 +35,7 @@ NCH_fed_found_category = {
 }
 
 NCH_boost_harmony_river = {
-	icon = GFX_unknow
+	icon = GFX_decision_category_generic_democracy
 
 	priority = {
 		base = 1
@@ -43,7 +43,7 @@ NCH_boost_harmony_river = {
 }
 
 NCH_gov_rotation_category = {
-	icon = GFX_unknow
+	icon = GFX_decision_category_eaw_vote
 
 	priority = {
 		base = 154
@@ -63,7 +63,7 @@ NCH_river_of_op_category = {
 }
 
 NCH_typography_category = {
-	icon = GFX_unknow
+	icon = GFX_news
 	picture = GFX_decision_typography_propaganda
 	
 	visible = {
@@ -75,7 +75,7 @@ NCH_typography_category = {
 }
 
 NCH_queen_plan = {
-	icon = GFX_unknow
+	icon = GFX_princess_cat
 
 	allowed = {
 		original_tag = NCH
@@ -91,7 +91,7 @@ NCH_queen_plan = {
 }
 
 NCH_celarl_laboratory = {
-	icon = GFX_unknow
+	icon = GFX_CTH_Scientifids
 
 	allowed = {
 		original_tag = NCH
@@ -106,7 +106,7 @@ NCH_celarl_laboratory = {
 }
 
 NCH_hunger_bop_category = {
-	icon = GFX_unknow
+	icon = GFX_wheat_bundle
 
 	allowed = {
 		original_tag = NCH

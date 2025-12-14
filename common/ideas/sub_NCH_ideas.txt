@@ -1051,7 +1051,7 @@ ideas = {
 		}
 
 		NCH_wonderbolts = {
-			picture = GFX_unknow
+			picture = GFX_idea_EQC_sturdy_sails_co
 			allowed = {
 				always = yes
 			}
@@ -1072,7 +1072,7 @@ ideas = {
 		}
 
 		NCH_school_of_friendship = {
-			picture = GFX_unknow
+			picture = HIP_SIR_SNA_grateful
 			allowed = {
 				always = yes
 			}
@@ -1132,7 +1132,7 @@ ideas = {
 		}
 
 		NCH_help_with_industrialization = {
-			picture = GFX_unknow
+			picture = KIS_factory_investment
 			allowed = {
 				always = yes
 			}
@@ -1453,7 +1453,7 @@ ideas = {
 		}
 
 		NCH_air_school_1={
-			picture = GFX_unknow
+			picture = GFX_idea_KIS_continuous_air_research_idea
 			allowed = {
 				always = yes
 			}
