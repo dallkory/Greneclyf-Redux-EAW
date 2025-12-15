@@ -496,7 +496,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_bee_productivity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_apis
 	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
@@ -511,7 +511,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_businesses_do_not_stand_idle
-	icon = GFX_goal_unknown
+	icon = GFX_goal_return_saor
 	cost = 5
 	prerequisite = {
 		focus = NCH_economic_revival
@@ -535,7 +535,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_brood_of_working_drones
-	icon = GFX_goal_unknown
+	icon = GFX_goal_underground_cities
 	cost = 5
 	prerequisite = {
 		focus = NCH_bee_productivity

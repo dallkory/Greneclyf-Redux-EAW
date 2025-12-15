@@ -560,9 +560,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/cult_tradition.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_project_apis"
+		textureFile = "gfx/interface/goals/NCH/project_apis.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_return_saor"
+		textureFile = "gfx/interface/goals/NCH/return_saor.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_underground_cities"
+		textureFile = "gfx/interface/goals/NCH/underground_cities.png"
+	}
 
 
-cult_tradition
 
 
 
