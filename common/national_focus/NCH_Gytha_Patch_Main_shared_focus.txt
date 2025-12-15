@@ -58,7 +58,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_patch_to_prosperty
-	icon = GFX_goal_unknown
+	icon = GFX_goal_queen_orders
 	cost = 2
 	prerequisite = {
 		focus = NCH_reforms_after_storm
@@ -73,7 +73,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_education_reform
-	icon = GFX_goal_unknown
+	icon = GFX_goal_eradication_illiteracy
 	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
@@ -88,7 +88,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_civil_rights_reform
-	icon = GFX_goal_unknown
+	icon = GFX_goal_north_south
 	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
@@ -169,7 +169,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_health_care_reform
-	icon = GFX_goal_unknown
+	icon = GFX_goal_health_care
 	cost = 5
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
@@ -205,7 +205,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_blosmport_hive
-	icon = GFX_goal_unknown
+	icon = GFX_goal_open_institutue
 	cost = 5
 	prerequisite = {
 		focus = NCH_education_reform
@@ -229,7 +229,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_birth_control
-	icon = GFX_goal_unknown
+	icon = GFX_goal_birth_control
 	cost = 5
 	prerequisite = {
 		focus = NCH_health_care_reform
@@ -250,7 +250,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_new_instituts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_cult_progress
 	cost = 8
 	prerequisite = {
 		focus = NCH_civil_rights_reform
@@ -270,7 +270,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_traditional_way_of_life
-	icon = GFX_goal_unknown
+	icon = GFX_goal_cult_tradition
 	cost = 8
 	prerequisite = {
 		focus = NCH_blosmport_hive
@@ -292,7 +292,7 @@ shared_focus = {
 # CENTRAL #
 shared_focus = {
 	id = NCH_first_constitution
-	icon = GFX_goal_unknown
+	icon = GFX_goal_end_schism
 	cost = 2
 	prerequisite = {
 		focus = NCH_patch_to_prosperty
@@ -470,7 +470,7 @@ shared_focus = {
 # LEFT #
 shared_focus = {
 	id = NCH_economic_revival
-	icon = GFX_goal_unknown
+	icon = GFX_goal_economic_rise
 	cost = 8
 	prerequisite = {
 		focus = NCH_reforms_after_storm

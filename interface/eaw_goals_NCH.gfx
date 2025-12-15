@@ -510,12 +510,59 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/enya_way.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_queen_orders"
+		textureFile = "gfx/interface/goals/NCH/quen_orders.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_eradication_illiteracy"
+		textureFile = "gfx/interface/goals/NCH/eradication_illiteracy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_health_care"
+		textureFile = "gfx/interface/goals/NCH/health_care.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_end_schism"
+		textureFile = "gfx/interface/goals/NCH/end_schism.png"
+	}
 	
+	spriteType = {
+		name = "GFX_goal_economic_rise"
+		textureFile = "gfx/interface/goals/NCH/economic_rise.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_north_south"
+		textureFile = "gfx/interface/goals/NCH/north_south.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_open_institutue"
+		textureFile = "gfx/interface/goals/NCH/open_institutue.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_birth_control"
+		textureFile = "gfx/interface/goals/NCH/birth_control.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_cult_progress"
+		textureFile = "gfx/interface/goals/NCH/cult_progress.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_cult_tradition"
+		textureFile = "gfx/interface/goals/NCH/cult_tradition.png"
+	}
 
 
 
-
-
+cult_tradition
 
 
 
