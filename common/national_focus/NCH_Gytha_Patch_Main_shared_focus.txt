@@ -311,7 +311,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_from_chaos
-	icon = GFX_goal_unknown
+	icon = GFX_goal_god_chosen_queen
 	cost = 5
 	prerequisite = {
 		focus = NCH_first_constitution
@@ -333,7 +333,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_form_new_govermant
-	icon = GFX_goal_unknown
+	icon = GFX_goal_god_right_ideas
 	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
@@ -361,7 +361,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_reflecting_the_past
-	icon = GFX_goal_unknown
+	icon = GFX_goal_god_left_ideas
 	cost = 5
 	prerequisite = {
 		focus = NCH_from_chaos
@@ -389,7 +389,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_to_the_new_order
-	icon = GFX_goal_unknown
+	icon = GFX_goal_first_constitution
 	cost = 5
 	prerequisite = {
 		focus = NCH_form_new_govermant
@@ -412,16 +412,16 @@ shared_focus = {
 
 		activate_mission = NCH_gov_rotation
 
-		country_event = {
-			id = greneclyf_core.1
-		}
+		# country_event = {
+		# 	id = greneclyf_core.1
+		# }
 	}
 }
 
 shared_focus = {
 	id = NCH_save_clans_system
-	icon = GFX_goal_unknown
-	cost = 0.5
+	icon = GFX_goal_status_quo
+	cost = 0
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -433,6 +433,7 @@ shared_focus = {
 
 	completion_reward = {
 		#set_politics = { ruling_party = democratic }#
+		add_political_power = 50
 
 		set_party_name = {
 			ideology = democratic
@@ -444,8 +445,8 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_hereditary_monarchy
-	icon = GFX_goal_unknown
-	cost = 0.5
+	icon = GFX_goal_skales_skiliper
+	cost = 0
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -457,6 +458,7 @@ shared_focus = {
 
 	completion_reward = {
 		#set_politics = { ruling_party = democratic }#
+		add_political_power = 50
 
 		set_party_name = {
 			ideology = democratic
@@ -580,7 +582,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_gaining_economic_power
-	icon = GFX_goal_unknown
+	icon = GFX_goal_support_middle_class
 	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
@@ -615,7 +617,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_ensure_full_employment
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hoof_market
 	cost = 5
 	prerequisite = {
 		focus = NCH_businesses_do_not_stand_idle
@@ -639,7 +641,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_economics_of_friendship
-	icon = GFX_goal_unknown
+	icon = GFX_goal_harmonic_solidarity
 	cost = 8
 	prerequisite = {
 		focus = NCH_brood_of_working_drones
@@ -661,7 +663,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_mobilizing_the_economy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_phoenix
 	cost = 8
 	prerequisite = {
 		focus = NCH_ensure_full_employment

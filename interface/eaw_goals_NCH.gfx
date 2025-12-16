@@ -575,6 +575,56 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/underground_cities.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_hoof_market"
+		textureFile = "gfx/interface/goals/NCH/hoof_market.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_support_middle_class"
+		textureFile = "gfx/interface/goals/NCH/support_middle_class.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_chosen_queen"
+		textureFile = "gfx/interface/goals/NCH/god_chosen_queen.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_right_ideas"
+		textureFile = "gfx/interface/goals/NCH/right_ideas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_left_ideas"
+		textureFile = "gfx/interface/goals/NCH/left_ideas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_first_constitution"
+		textureFile = "gfx/interface/goals/NCH/first_constitution.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_harmonic_solidarity"
+		textureFile = "gfx/interface/goals/NCH/harmonic_solidarity.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_phoenix"
+		textureFile = "gfx/interface/goals/NCH/project_phoenix.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_skales_skiliper"
+		textureFile = "gfx/interface/goals/NCH/skales_skiliper.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_status_quo"
+		textureFile = "gfx/interface/goals/NCH/status_quo.png"
+	}
+
 
 
 
