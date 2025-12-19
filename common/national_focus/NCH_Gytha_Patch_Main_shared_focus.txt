@@ -967,7 +967,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_we_are_not_alone
-	icon = GFX_goal_unknown
+	icon = GFX_goal_we_are_not_alone
 	cost = 2
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
@@ -989,7 +989,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_river_pf_opportunity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_river_opportunity
 	cost = 3
 	prerequisite = {
 		focus = NCH_we_are_not_alone
@@ -1745,7 +1745,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_peaceful_coexistence
-	icon = GFX_goal_unknown
+	icon = GFX_goal_peace_existing
 	cost = 2
 	prerequisite = {
 		focus = NCH_river_pf_opportunity

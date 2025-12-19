@@ -625,6 +625,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/status_quo.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_we_are_not_alone"
+		textureFile = "gfx/interface/goals/NCH/we_are_not_alone.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_river_opportunity"
+		textureFile = "gfx/interface/goals/NCH/river_opportunity.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_peace_existing"
+		textureFile = "gfx/interface/goals/NCH/peace_existing.png"
+	}
+
 
 
 
