@@ -1012,7 +1012,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_trade_development
-	icon = GFX_goal_unknown
+	icon = GFX_goal_develop_trade
 	cost = 5
 	prerequisite = {
 		focus = NCH_river_pf_opportunity
@@ -1078,7 +1078,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_visit_to_riverlands
-	icon = GFX_goal_unknown
+	icon = GFX_goal_dal_more_visit
 	cost = 5
 	prerequisite = {
 		focus = NCH_trade_development
@@ -1310,7 +1310,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_their_light_beckons_us
-	icon = GFX_goal_unknown
+	icon = GFX_goal_homeland_problems
 	cost = 3
 	prerequisite = {
 		focus = NCH_we_are_not_alone
@@ -1335,7 +1335,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_emvassy_to_equestria
-	icon = GFX_goal_unknown
+	icon = GFX_goal_motherland
 	cost = 7
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
@@ -1396,7 +1396,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_princess_in_a_high_castle
-	icon = GFX_goal_unknown
+	icon = GFX_goal_light_harmony
 	cost = 7
 	prerequisite = {
 		focus = NCH_their_light_beckons_us
@@ -1426,7 +1426,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_our_best_qualities
-	icon = GFX_goal_unknown
+	icon = GFX_goal_blitz
 	cost = 10
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
@@ -1792,7 +1792,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_scout_the_situation
-	icon = GFX_goal_unknown
+	icon = GFX_goal_spy_riverland
 	cost = 5
 	prerequisite = {
 		focus = NCH_trade_development
@@ -1829,7 +1829,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_open_up_the_shopping_districts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_visit_farbrook
 	cost = 5
 	prerequisite = {
 		focus = NCH_peaceful_coexistence
@@ -2081,7 +2081,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_cit_thrpugh_the_bureaurcracy
-	icon = GFX_goal_unknown
+	icon = GFX_goal_burocration_deal
 	cost = 5
 	prerequisite = {
 		focus = NCH_open_up_the_shopping_districts
@@ -2121,7 +2121,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_embed_agents_in_goverments
-	icon = GFX_goal_unknown
+	icon = GFX_goal_operation_patriots
 	cost = 5
 	prerequisite = {
 		focus = NCH_visit_to_riverlands
@@ -2144,7 +2144,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_finding_allies_in_coalition
-	icon = GFX_goal_unknown
+	icon = GFX_goal_three_in_pairs
 	cost = 5
 
 	prerequisite = {

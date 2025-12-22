@@ -640,12 +640,75 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/peace_existing.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_develop_trade"
+		textureFile = "gfx/interface/goals/NCH/develop_trade.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_dal_more_visit"
+		textureFile = "gfx/interface/goals/NCH/dal_more_visit.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_spy_riverland"
+		textureFile = "gfx/interface/goals/NCH/spy_riverland.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_visit_farbrook"
+		textureFile = "gfx/interface/goals/NCH/visit_farbrook.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_operation_patriots"
+		textureFile = "gfx/interface/goals/NCH/operation_patriots.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_burocration_deal"
+		textureFile = "gfx/interface/goals/NCH/burocration_deal.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_three_in_pairs"
+		textureFile = "gfx/interface/goals/NCH/three_in_pairs.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_homeland_problems"
+		textureFile = "gfx/interface/goals/NCH/homeland_problems.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blitz"
+		textureFile = "gfx/interface/goals/NCH/blitz.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_motherland"
+		textureFile = "gfx/interface/goals/NCH/motherland.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_light_harmony"
+		textureFile = "gfx/interface/goals/NCH/light_harmony.png"
+	}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+	
 
 # Submod #
 	spriteType = {
