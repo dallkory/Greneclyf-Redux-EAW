@@ -695,6 +695,75 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/light_harmony.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_use_chrysalis"
+		textureFile = "gfx/interface/goals/NCH/use_chrysalis.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_equestrian_phylpsophi"
+		textureFile = "gfx/interface/goals/NCH/equestrian_phylpsophi.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_unsuckspested_guest"
+		textureFile = "gfx/interface/goals/NCH/unsuckspested_guest.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_east_wonderbolts"
+		textureFile = "gfx/interface/goals/NCH/east_wonderbolts.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_our_values"
+		textureFile = "gfx/interface/goals/NCH/our_values.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_our_rules"
+		textureFile = "gfx/interface/goals/NCH/our_rules.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_equestrian_defense"
+		textureFile = "gfx/interface/goals/NCH/equestrian_defense.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_neighborhood"
+		textureFile = "gfx/interface/goals/NCH/neighborhood.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_offer_friendship"
+		textureFile = "gfx/interface/goals/NCH/offer_friendship.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_old_friend"
+		textureFile = "gfx/interface/goals/NCH/old_friend.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_get_bennefits"
+		textureFile = "gfx/interface/goals/NCH/get_bennefits.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_not_same"
+		textureFile = "gfx/interface/goals/NCH/not_same.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_we_are_same"
+		textureFile = "gfx/interface/goals/NCH/we_are_same.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hills_puppet"
+		textureFile = "gfx/interface/goals/NCH/hills_puppet.png"
+	}
 
 
 
@@ -708,7 +777,12 @@ spriteTypes = {
 
 
 
-	
+
+
+
+
+
+
 
 # Submod #
 	spriteType = {

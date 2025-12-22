@@ -1102,7 +1102,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_neighborhood
-	icon = GFX_goal_unknown
+	icon = GFX_goal_neighborhood
 	cost = 8
 	prerequisite = {
 		focus = NCH_we_are_not_alone
@@ -1137,9 +1137,10 @@ shared_focus = {
 		}
 	}
 }
+
 shared_focus = {
 	id = NCH_another_visit
-	icon = GFX_goal_unknown
+	icon = GFX_goal_old_friend
 	cost = 5
 	prerequisite = {
 		focus = NCH_neighborhood
@@ -1196,7 +1197,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_pacts_exchange_for_support
-	icon = GFX_goal_unknown
+	icon = GFX_goal_offer_friendship
 	cost = 5
 	prerequisite = {
 		focus = NCH_neighborhood
@@ -1239,7 +1240,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_long_cooperation
-	icon = GFX_goal_unknown
+	icon = GFX_goal_get_bennefits
 	cost = 7
 	prerequisite = {
 		focus = NCH_another_visit
@@ -1274,7 +1275,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_not_so_different
-	icon = GFX_goal_unknown
+	icon = GFX_goal_we_are_same
 	cost = 5
 	prerequisite = {
 		focus = NCH_long_cooperation
@@ -1364,7 +1365,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_beacon_harmony_in_the_east
-	icon = GFX_goal_unknown
+	icon = GFX_goal_use_chrysalis
 	cost = 3
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
@@ -1490,14 +1491,17 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_lessons_in_friendship
-	icon = GFX_goal_unknown
+	icon = GFX_goal_unsuckspested_guest
 	cost = 6
 	prerequisite = {
 		focus = NCH_beacon_harmony_in_the_east
-	}
-	prerequisite = {
 		focus = NCH_our_best_qualities
 	}
+
+	prerequisite = {
+		focus = NCH_beacon_harmony_in_the_east
+	}
+
 	x = 48
 	y = 20
 
@@ -1517,7 +1521,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_harmpony_in_every_heart
-	icon = GFX_goal_unknown
+	icon = GFX_goal_equestrian_phylpsophi
 	cost = 3
 	prerequisite = {
 		focus = NCH_princess_in_a_high_castle
@@ -1555,14 +1559,13 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_friendship_delegation
-	icon = GFX_goal_unknown
+	icon = GFX_goal_east_wonderbolts
 	cost = 6
 	prerequisite = {
 		focus = NCH_our_best_qualities
-	}
-	prerequisite = {
 		focus = NCH_harmpony_in_every_heart
 	}
+
 	x = 50
 	y = 20
 
@@ -1639,7 +1642,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_our_values
-	icon = GFX_goal_unknown
+	icon = GFX_goal_our_values
 	cost = 6
 	prerequisite = {
 		focus = NCH_harmpony_in_every_heart
@@ -1867,7 +1870,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_shield_and_sword_harmony
-	icon = GFX_goal_unknown
+	icon = GFX_goal_our_rules
 	cost = 10
 
 
@@ -1914,7 +1917,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_equestria_support
-	icon = GFX_goal_unknown
+	icon = GFX_goal_equestrian_defense
 	cost = 10
 	prerequisite = {
 		focus = NCH_friendship_delegation
@@ -1944,7 +1947,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = NCH_bring_them_harmony
-	icon = GFX_goal_unknown
+	icon = GFX_goal_not_same
 	cost = 5
 	prerequisite = {
 		focus = NCH_long_cooperation
@@ -2042,7 +2045,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_new_great_agreement
-	icon = GFX_goal_unknown
+	icon = GFX_goal_hills_puppet
 	cost = 10
 	prerequisite = {
 		focus = NCH_bring_them_harmony
