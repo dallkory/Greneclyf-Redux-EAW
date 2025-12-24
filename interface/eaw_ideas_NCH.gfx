@@ -34,17 +34,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_overpopulation"
-		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
+		textureFile = "gfx/interface/ideas/NCH/overpopulation.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_luddities"
-		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
+		textureFile = "gfx/interface/ideas/NCH/luddites.tga"
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_stagnation"
-		textureFile = "gfx/interface/ideas/NCH/navy_stagnation.dds"
+		textureFile = "gfx/interface/ideas/NCH/shipstagnation.tga"
 	}
 
 	spriteType = {
@@ -244,7 +244,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_air_stagnation"
-		textureFile = "gfx/interface/ideas/NCH/air_stagnation.tga"
+		textureFile = "gfx/interface/ideas/NCH/planestagnation.tga"
 	}
 
 	spriteType = {

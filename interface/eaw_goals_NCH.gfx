@@ -831,10 +831,35 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/high_rulling.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_river_training"
+		textureFile = "gfx/interface/goals/NCH/river_training.png"
+	}
 
-
-
+	spriteType = {
+		name = "GFX_goal_godbye_dispair"
+		textureFile = "gfx/interface/goals/NCH/godbye_dispair.png"
+	}
 	
+	spriteType = {
+		name = "GFX_goal_declaration_right_creatures"
+		textureFile = "gfx/interface/goals/NCH/declaration_right_creatures.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_first_vote"
+		textureFile = "gfx/interface/goals/NCH/first_vote.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_release_one_big_dream"
+		textureFile = "gfx/interface/goals/NCH/release_one_big_dream.png"
+	}
+
+
+
+
+
 
 
 

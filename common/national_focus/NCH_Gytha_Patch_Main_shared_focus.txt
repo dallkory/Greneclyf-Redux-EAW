@@ -2366,7 +2366,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_bring_together
-	icon = GFX_goal_unknown
+	icon = GFX_goal_river_training
 	cost = 5
 	prerequisite = {
 		focus = NCH_what_we_bring
@@ -2532,7 +2532,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_make_us_stronger
-	icon = GFX_goal_unknown
+	icon = GFX_goal_declaration_right_creatures
 	cost = 10
 
 	prerequisite = {
@@ -2612,7 +2612,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_what_we_strive_for
-	icon = GFX_goal_unknown
+	icon = GFX_goal_godbye_dispair
 	cost = 10
 	prerequisite = {
 		focus = NCH_racial_differences
@@ -2703,7 +2703,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_inity_as_the_highest_good
-	icon = GFX_goal_unknown
+	icon = GFX_goal_release_one_big_dream
 	cost = 10
 	prerequisite = {
 		focus = NCH_first_president
@@ -2838,7 +2838,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_adopt_consitution
-	icon = GFX_goal_unknown
+	icon = GFX_goal_first_vote
 	cost = 14.4
 	prerequisite = {
 		focus = NCH_inity_as_the_highest_good
