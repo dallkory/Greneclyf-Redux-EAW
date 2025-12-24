@@ -687,7 +687,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_dreems_of_more
-	icon = GFX_goal_unknown
+	icon = GFX_goal_basuc_geopolitic
 	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Gytha_Patch
@@ -847,7 +847,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_friends_and_allies
-	icon = GFX_goal_unknown
+	icon = GFX_goal_nch_nine_stars
 	cost = 5
 	prerequisite = {
 		focus = NCH_dreems_of_more
@@ -898,7 +898,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_agents_stand_by
-	icon = GFX_goal_unknown
+	icon = GFX_goal_industrial_sabotage
 	cost = 5
 	prerequisite = {
 		focus = NCH_dreems_of_more
@@ -1667,10 +1667,9 @@ shared_focus = {
 	}
 }
 
-
 shared_focus = {
 	id = NCH_light_f_fire_in_their_hearts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_yosip_strategy
 	cost = 5
 	prerequisite = {
 		focus = NCH_agents_stand_by
@@ -1704,7 +1703,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_operation_raging_river
-	icon = GFX_goal_unknown
+	icon = GFX_goal_operation_rigging_river
 	cost = 10
 	prerequisite = {
 		focus = NCH_light_f_fire_in_their_hearts
@@ -2217,7 +2216,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_what_we_bring
-	icon = GFX_goal_unknown
+	icon = GFX_goal_dreams_of_riverlands
 	cost = 2
 	prerequisite = {
 		focus = NCH_operation_raging_river
@@ -2298,7 +2297,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_economic_community
-	icon = GFX_goal_unknown
+	icon = GFX_goal_economic_union
 	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
@@ -2336,7 +2335,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_a_sample_of_unity
-	icon = GFX_goal_unknown
+	icon = GFX_goal_blosmport_consencus
 	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
@@ -2434,7 +2433,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_example_for_ponies
-	icon = GFX_goal_unknown
+	icon = GFX_goal_language_question
 	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
@@ -2465,7 +2464,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_general_institutions
-	icon = GFX_goal_unknown
+	icon = GFX_goal_vittenburg_process
 	cost = 10
 	prerequisite = {
 		focus = NCH_what_we_bring
@@ -2499,7 +2498,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_racial_differences
-	icon = GFX_goal_unknown
+	icon = GFX_goal_river_senate
 	cost = 10
 	prerequisite = {
 		focus = NCH_a_sample_of_unity
@@ -2589,7 +2588,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_river_science_program
-	icon = GFX_goal_unknown
+	icon = GFX_goal_high_rulling
 	cost = 10
 	prerequisite = {
 		focus = NCH_example_for_ponies

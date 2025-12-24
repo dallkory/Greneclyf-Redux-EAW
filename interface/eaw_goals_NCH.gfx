@@ -765,21 +765,76 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/hills_puppet.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_basuc_geopolitic"
+		textureFile = "gfx/interface/goals/NCH/basuc_geopolitic.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_goal_industrial_sabotage"
+		textureFile = "gfx/interface/goals/NCH/industrial_sabotage.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_nch_nine_stars"
+		textureFile = "gfx/interface/goals/NCH/nine_stars.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_yosip_strategy"
+		textureFile = "gfx/interface/goals/NCH/yosip_strategy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_operation_rigging_river"
+		textureFile = "gfx/interface/goals/NCH/operation_rigging_river.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_dreams_of_riverlands"
+		textureFile = "gfx/interface/goals/NCH/dreams_of_riverlands.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_economic_union"
+		textureFile = "gfx/interface/goals/NCH/economic_union.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_consencus"
+		textureFile = "gfx/interface/goals/NCH/blosmport_consencus.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_language_question"
+		textureFile = "gfx/interface/goals/NCH/language_question.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_vittenburg_process"
+		textureFile = "gfx/interface/goals/NCH/vittenburg_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_vittenburg_process"
+		textureFile = "gfx/interface/goals/NCH/vittenburg_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_river_senate"
+		textureFile = "gfx/interface/goals/NCH/river_senate.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_high_rulling"
+		textureFile = "gfx/interface/goals/NCH/high_rulling.png"
+	}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+	
 
 
 
