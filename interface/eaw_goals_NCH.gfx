@@ -856,8 +856,55 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/release_one_big_dream.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_great_party"
+		textureFile = "gfx/interface/goals/NCH/great_party.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_thorax_connection"
+		textureFile = "gfx/interface/goals/NCH/thorax_connection.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_teach_eagle"
+		textureFile = "gfx/interface/goals/NCH/teach_eagle.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_spyomania"
+		textureFile = "gfx/interface/goals/NCH/spyomania.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_queen_of_ditrisium"
+		textureFile = "gfx/interface/goals/NCH/queen_of_ditrisium.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wait_a_moment"
+		textureFile = "gfx/interface/goals/NCH/wait_a_moment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_old_blood"
+		textureFile = "gfx/interface/goals/NCH/old_blood.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_nine_stars_methods"
+		textureFile = "gfx/interface/goals/NCH/nine_stars_methods.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_secret_colobaration"
+		textureFile = "gfx/interface/goals/NCH/secret_colobaration.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_unforgotten_night"
+		textureFile = "gfx/interface/goals/NCH/unforgotten_night.png"
+	}
 
 
 

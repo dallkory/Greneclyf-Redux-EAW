@@ -1,6 +1,6 @@
 Shared_focus = {
 	id = NCH_hive
-	icon = GFX_goal_unknown
+	icon = GFX_goal_great_party
 	cost = 0.2
 	x = 13
 	y = 2
@@ -39,7 +39,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_pressure_chrusalis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_thorax_connection
 	cost = 5
 	prerequisite = {
 		focus = NCH_hive
@@ -58,9 +58,10 @@ Shared_focus = {
 		}
 	}
 }
+
 Shared_focus = {
 	id = NCH_spy_everywhere
-	icon = GFX_goal_unknown
+	icon = GFX_goal_spyomania
 	cost = 4
 	prerequisite = {
 		focus = NCH_pressure_chrusalis
@@ -80,9 +81,10 @@ Shared_focus = {
 		}
 	}
 }
+
 Shared_focus = {
 	id = NCH_take_a_equipment
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wait_a_moment
 	cost = 4
 	prerequisite = {
 		focus = NCH_spy_everywhere
@@ -104,9 +106,10 @@ Shared_focus = {
 		}
 	}
 }
+
 Shared_focus = {
 	id = NCH_seek_support
-	icon = GFX_goal_unknown
+	icon = GFX_goal_teach_eagle
 	cost = 5
 	prerequisite = {
 		focus = NCH_hive
@@ -127,7 +130,7 @@ Shared_focus = {
 }
 Shared_focus = {
 	id = NCH_Queen_Ditrisium
-	icon = GFX_goal_unknown
+	icon = GFX_goal_queen_of_ditrisium
 	cost = 5
 	prerequisite = {
 		focus = NCH_seek_support
@@ -157,7 +160,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_equipment_suppporter
-	icon = GFX_goal_unknown
+	icon = GFX_goal_old_blood
 	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Ditrisium
@@ -188,7 +191,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_give_hope
-	icon = GFX_goal_unknown
+	icon = GFX_goal_secret_colobaration
 	cost = 7
 	prerequisite = {
 		focus = NCH_equipment_suppporter
@@ -213,7 +216,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_idea_of_harmony_in_hives
-	icon = GFX_goal_unknown
+	icon = GFX_goal_nine_stars_methods
 	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Ditrisium
@@ -234,7 +237,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_fangs_dug
-	icon = GFX_goal_unknown
+	icon = GFX_goal_unforgotten_night
 	cost = 7
 	prerequisite = {
 		focus = NCH_equipment_suppporter
