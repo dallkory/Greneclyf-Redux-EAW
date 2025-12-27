@@ -390,7 +390,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_unity_summit
-	icon = GFX_goal_unknown
+	icon = GFX_goal_emergency_delegation
 	cost = 5
 	prerequisite = {
 		focus = NCH_hive
@@ -445,7 +445,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_start_negotiations
-	icon = GFX_goal_unknown
+	icon = GFX_goal_continue_delegation
 	cost = 5
 	prerequisite = {
 		focus = NCH_unity_summit
@@ -501,7 +501,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_all_wars_ends
-	icon = GFX_goal_unknown
+	icon = GFX_goal_nimbusian_process
 	cost = 5
 	prerequisite = {
 		focus = NCH_start_negotiations
@@ -518,8 +518,13 @@ Shared_focus = {
 
 	available = {
 		country_exists = CHN
-		CHN  = {
-			has_government = democratic
+		or = {
+			CHN  = {
+				has_government = democratic
+			}
+			CHN = {
+				is_puppet_of = EQS
+			}
 		}
 	}
 
@@ -532,7 +537,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_menace_chrysalis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_faction_connection
 	cost = 5
 	prerequisite = {
 		focus = NCH_start_negotiations
@@ -546,6 +551,13 @@ Shared_focus = {
 	#available = {
 	#	has_country_flag = NCH_EQS_peace
 	#}
+
+	available = {
+		country_exists = EQS
+		EQS  = {
+			has_government = democratic
+		}
+	}
 
 	completion_reward = {
 		EQS = {
@@ -595,11 +607,83 @@ Shared_focus = {
 	x = 16
 	y = 6
 
+	available = {
+
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					EQS = {
+						NOT = {
+							any_state = {
+								is_core_of = CHN
+								NOT = { is_controlled_by = EQS }
+							}
+						}
+					}
+					CHN = { is_subject_of = EQS }
+				}
+			}
+
+			if = {
+				limit = { NOT = { country_exists = REB } }
+				EQS = { release = REB }
+			}
+
+			hidden_effect = {
+				REB = {
+					transfer_state = 252
+					transfer_state = 304
+					transfer_state = 309
+					transfer_state = 303
+					transfer_state = 305
+					transfer_state = 261
+					transfer_state = 306
+					transfer_state = 313
+					transfer_state = 312
+					transfer_state = 314
+					transfer_state = 264
+
+					set_capital = 252
+
+					add_state_core = 252
+					add_state_core = 304
+					add_state_core = 309
+					add_state_core = 303
+					add_state_core = 305
+					add_state_core = 261
+					add_state_core = 306
+					add_state_core = 313
+					add_state_core = 312
+					add_state_core = 314
+					add_state_core = 264
+				}
+			}
+
+			NCH = {
+				set_autonomy = { target = REB autonomy_state = autonomy_puppet }
+				add_timed_idea = {
+					idea = NCH_autonomy_debuff
+					days = 210
+				}
+			}
+
+			REB = {
+				add_timed_idea = {
+					idea = REB_pacification_debuff
+					days = 365
+				}
+			}
+		}
+
+	}
 }
 
 Shared_focus = {
 	id = NCH_burnings_they_hearts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_stabilization_society
 	cost = 5
 	prerequisite = {
 		focus = NCH_collective_management
@@ -632,6 +716,13 @@ Shared_focus = {
 			remove_ideas = NCH_humanitary_crisis_2
 		}
 
+		# if = {
+		# 	limit = {
+		# 		has_completed_focus = NCH_collective_management
+		# 	}
+			
+		# }
+
 		if = {
 			limit = {
 				REB  = {
@@ -647,7 +738,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_union_hives
-	icon = GFX_goal_unknown
+	icon = GFX_goal_happy_ending
 	cost = 5
 	prerequisite = {
 		focus = NCH_burnings_they_hearts

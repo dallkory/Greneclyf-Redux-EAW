@@ -1749,7 +1749,7 @@ ideas = {
 				defence = 0.05
 				offence = 0.05
 				army_attack_factor = 0.05
-				
+
 			}
 		}
 
@@ -1900,5 +1900,42 @@ ideas = {
 			}
 		}
 
+		NCH_autonomy_debuff = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.2
+				resistance_activity = 0.15
+				resistance_damage_to_garrison = 0.3
+			}
+		}
+
+		REB_pacification_debuff = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.1
+				consumer_goods_factor = 0.45
+				political_power_cost = 0.25
+				resistance_activity = 0.15
+			}
+		}
+		
 	}
 }

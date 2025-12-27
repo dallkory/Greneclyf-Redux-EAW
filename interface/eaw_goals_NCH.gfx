@@ -1019,5 +1019,36 @@ spriteTypes = {
 		name = "GFX_goal_vendetta"
 		textureFile = "gfx/interface/goals/NCH/vendetta.png"
 	}
+
+	spriteType = {
+		name = "GFX_goal_stabilization_society"
+		textureFile = "gfx/interface/goals/NCH/stabilization_society.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_happy_ending"
+		textureFile = "gfx/interface/goals/NCH/happy_ending.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_emergency_delegation"
+		textureFile = "gfx/interface/goals/NCH/emergency_delegation.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_continue_delegation"
+		textureFile = "gfx/interface/goals/NCH/continue_delegation.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_nimbusian_process"
+		textureFile = "gfx/interface/goals/NCH/nimbusian_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_faction_connection"
+		textureFile = "gfx/interface/goals/NCH/faction_connection.png"
+	}
+	
 	
 }
