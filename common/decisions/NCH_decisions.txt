@@ -1230,6 +1230,9 @@ NCH_arctic_expedition_category = {
 				transfer_state_to = NCH
 				hidden_effect = {
 					remove_core_of = AWT
+					add_victory_points = {
+						value = 1
+					}
 				}
 				add_core_of = NCH
 

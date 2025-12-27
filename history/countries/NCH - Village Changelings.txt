@@ -214,9 +214,9 @@ recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite
 
 #############################################
-recruit_character = NCH_feilean
-recruit_character = NCH_airann
-recruit_character = NCH_garran_of_leamhan
+# recruit_character = NCH_feilean
+# recruit_character = NCH_airann
+# recruit_character = NCH_garran_of_leamhan
 ###############################################
 
 #NCH_generic_army_log = { set_character_flag = RIV_advisor_from_NCH }

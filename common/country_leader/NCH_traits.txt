@@ -59,10 +59,13 @@ leader_traits = {
 
 	anti_crisis_manager = {
 		random = no
+
 		recruitable_population_factor = 0.05
 		production_speed_buildings_factor = 0.1
 		production_factory_max_efficiency_factor = 0.05
 		party_popularity_stability_factor = 0.1
+
+		power_of_balance_weakly = 0.01
 	}
 
 	higher_judge_oiren = {

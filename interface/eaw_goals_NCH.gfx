@@ -189,45 +189,44 @@ spriteTypes = {
 	}	
 
 	# ARCTIC #
-
 	spriteType = {
 		name = "GFX_goal_artmilitarization"
-		textureFile = "gfx/interface/goals/NCH/militaryutilization.tga"
+		textureFile = "gfx/interface/goals/NCH/war_exploatation.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_newtradeway"
-		textureFile = "gfx/interface/goals/NCH/traderoute.tga"
+		textureFile = "gfx/interface/goals/NCH/new_trade_way.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_fuelfleet"
-		textureFile = "gfx/interface/goals/NCH/fleetrefueling.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_ports.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_exppoligon"
-		textureFile = "gfx/interface/goals/NCH/ExperimentalRanges.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_poligons.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_arccity"
-		textureFile = "gfx/interface/goals/NCH/settlement.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_towns.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_geosurvey"
-		textureFile = "gfx/interface/goals/NCH/geosurvey.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_mining.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_marineresources"
-		textureFile = "gfx/interface/goals/NCH/maritimeresources.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_resources.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_terraink"
-		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
+		textureFile = "gfx/interface/goals/NCH/terraincognita.png"
 	}	
 
 	spriteType = {
@@ -995,4 +994,30 @@ spriteTypes = {
 		name = "GFX_goal_railway_stg"
 		texturefile = "gfx/interface/goals/STG/goal_railway_stg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_unreal"
+		textureFile = "gfx/interface/goals/NCH/unreal.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_burning_fury"
+		textureFile = "gfx/interface/goals/NCH/burning_fury.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_care_refudginers"
+		textureFile = "gfx/interface/goals/NCH/care_refudginers.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_judgement_occupation"
+		textureFile = "gfx/interface/goals/NCH/judgement_occupation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_vendetta"
+		textureFile = "gfx/interface/goals/NCH/vendetta.png"
+	}
+	
 }

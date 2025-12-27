@@ -3517,9 +3517,15 @@ add_namespace = greneclyf_hive
 				limit = {
 					is_riverlands_country_tag = yes
 				}
-				add_ideas = NCH_nine_stars
+				add_timed_idea = {
+					idea = NCH_nine_stars
+					days = 180
+				}
 				NCH = {
-					add_ideas = NCH_nine_stars
+					add_timed_idea = {
+						idea = NCH_nine_stars
+						days = 180
+					}
 				}
 			}			
 		}

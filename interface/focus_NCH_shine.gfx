@@ -233,7 +233,8 @@ spriteTypes = {
 
 # Changelengia #
 
-	GFX_goal_great_party_shine = {
+	SpriteType = {
+		name = "GFX_goal_great_party_shine"
 		texturefile = "gfx/interface/goals/NCH/great_party.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

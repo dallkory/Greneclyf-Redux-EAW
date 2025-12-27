@@ -1,7 +1,7 @@
 Shared_focus = {
 	id = NCH_hive
 	icon = GFX_goal_great_party
-	cost = 0.2
+	cost = 0
 	x = 13
 	y = 2
 
@@ -19,6 +19,7 @@ Shared_focus = {
 		or = {
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
+			has_country_flag = NCH_queen_hive_abmitions
 			#has_completed_focus = NCH_time_to_look_further
 			has_war_with = CHN
 		}
@@ -28,6 +29,7 @@ Shared_focus = {
 			has_country_flag = NCH_debug_vision
 			has_country_flag = NCH_queen_hive_abmitions
 			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
 			has_war_with = CHN
 		}
 	}
@@ -258,7 +260,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_rethinking_history
-	icon = GFX_goal_unknown
+	icon = GFX_goal_unreal
 	cost = 5
 	prerequisite = {
 		focus = NCH_hive
@@ -286,7 +288,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_accept_refugees
-	icon = GFX_goal_unknown
+	icon = GFX_goal_care_refudginers
 	cost = 5
 	prerequisite = {
 		focus = NCH_rethinking_history
@@ -301,9 +303,10 @@ Shared_focus = {
 		}
 	}
 }
+
 Shared_focus = {
 	id = NCH_loyal_elite
-	icon = GFX_goal_unknown
+	icon = GFX_goal_burning_fury
 	cost = 5
 	prerequisite = {
 		focus = NCH_rethinking_history
@@ -318,7 +321,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_our_legarl_right
-	icon = GFX_goal_unknown
+	icon = GFX_goal_judgement_occupation
 	cost = 5
 	prerequisite = {
 		focus = NCH_accept_refugees
@@ -361,7 +364,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_all_or_nothing
-	icon = GFX_goal_unknown
+	icon = GFX_goal_vendetta
 	cost = 5
 	prerequisite = {
 		focus = NCH_our_legarl_right
