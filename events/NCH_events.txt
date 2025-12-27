@@ -1797,7 +1797,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_hive.14.a
 
 			add_ideas = NCH_veterans
-			country_event = greneclyf_arctic.15
+			country_event = greneclyf_hive.15
 
 			NCH = {
 				division_template = {
@@ -2036,9 +2036,74 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_hive.19.a
+			add_timed_idea = {
+				idea = NCH_demon_hegemony
+				duration = 210
+			}
+			add_opinion_modifier = {
+				target = EQS
+				modifier = large_increase
+			}
+		}
+
+		option = {
+			name = greneclyf_hive.19.b
+			
+			CHN = {
+				every_character = { limit = { is_character = CHN_legus } set_nationality = NCH }
+				every_character = { limit = { is_character = CHN_fylifa } set_nationality = NCH }
+			}
+
+			NCH = {
+				recruit_character = CHN_legus
+				recruit_character = CHN_fylifa
+				activate_advisor = CHN_legus
+				activate_advisor = CHN_fylifa
+			}
 		}
 	}
 
+	country_event = {
+		id = greneclyf_hive.20
+		title = greneclyf_hive.20.t
+		desc = greneclyf_hive.20.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_hive.20.a
+			custom_effect_tooltip = NCH_forever_and_ever
+		}
+	}
+
+	country_event = {
+		id = greneclyf_hive.21
+		title = greneclyf_hive.21.t
+		desc = greneclyf_hive.21.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_hive.21.a
+			custom_effect_tooltip = NCH_forever_and_ever
+		}
+	}
+
+	country_event = {
+		id = greneclyf_hive.22
+		title = greneclyf_hive.22.t
+		desc = greneclyf_hive.22.d
+		picture = GFX_unknow
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = greneclyf_hive.22.a
+			custom_effect_tooltip = NCH_forever_and_ever
+		}
+	}
 
 	# Somethging special #
 	country_event = {

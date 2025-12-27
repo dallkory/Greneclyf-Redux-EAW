@@ -1936,6 +1936,22 @@ ideas = {
 				resistance_activity = 0.15
 			}
 		}
+
+		NCH_demon_hegemony = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = -0.075
+			}
+		}
 		
 	}
 }

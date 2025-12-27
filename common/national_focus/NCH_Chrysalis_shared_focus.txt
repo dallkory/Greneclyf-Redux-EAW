@@ -570,7 +570,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_after_war_plans
-	icon = GFX_goal_unknown
+	icon = GFX_goal_blosmport_conference
 	cost = 5
 	prerequisite = {
 		focus = NCH_menace_chrysalis
@@ -599,7 +599,7 @@ Shared_focus = {
 
 Shared_focus = {
 	id = NCH_collective_management
-	icon = GFX_goal_unknown
+	icon = GFX_goal_going_peace
 	cost = 5
 	prerequisite = {
 		focus = NCH_all_wars_ends
@@ -634,6 +634,28 @@ Shared_focus = {
 
 			hidden_effect = {
 				REB = {
+					set_cosmetic_tag = REB_Puppet
+					create_country_leader = {
+						name = NCH_Helvia
+						picture = GFX_NCH_Adler
+						ideology = conservatism
+
+						traits = {
+							Warrior_democratic
+						}
+					}
+				}
+
+				REB = {
+					every_state = {
+						limit = {
+							is_core_of = CHN
+						}
+						add_core_of = REB
+					}
+				}
+
+				REB = {
 					transfer_state = 252
 					transfer_state = 304
 					transfer_state = 309
@@ -647,7 +669,9 @@ Shared_focus = {
 					transfer_state = 264
 
 					set_capital = 252
+				}
 
+				REB = {
 					add_state_core = 252
 					add_state_core = 304
 					add_state_core = 309
@@ -763,6 +787,30 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = NCH_fangs_dug
+			}
+			country_event = greneclyf_hive.20
+		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_all_or_nothing
+			}
+			country_event = greneclyf_hive.21
+		}
+
+		if = {
+			limit = {
+				or = {
+					has_completed_focus = NCH_collective_management
+					has_completed_focus = NCH_after_war_plans
+				}
+			}
+			country_event = greneclyf_hive.22
+		}
+
 		add_ideas = NCH_Gytha_triumpf
 		custom_effect_tooltip = NCH_Gytha_triumpf
 		every_state = {

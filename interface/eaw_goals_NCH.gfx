@@ -1049,6 +1049,15 @@ spriteTypes = {
 		name = "GFX_goal_faction_connection"
 		textureFile = "gfx/interface/goals/NCH/faction_connection.png"
 	}
-	
-	
+
+	spriteType = {
+		name = "GFX_goal_going_peace"
+		textureFile = "gfx/interface/goals/NCH/going_peace.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_conference"
+		textureFile = "gfx/interface/goals/NCH/blosmport_conference.png"
+	}
+
 }
