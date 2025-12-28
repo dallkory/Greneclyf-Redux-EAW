@@ -1,7 +1,50 @@
 ﻿l_english:
 
-STATE_1209:0 "Saint Grove"
-STATE_1210:0 "Ulysses"
+STATE_1209:0 "Святая Роща"
+STATE_1210:0 "Yliss"
 
 SAOR:0 "Saor"
-STATE_1243:0 "Ponayani"
+Yliss:0 "Yliss"
+
+STATE_1243:0 "Поняйяни"
+
+# EXPANSION ARCTIC #
+STATE_1242:0 "Hope Island"
+STATE_1212:0 "Gytha Island"
+STATE_1225:0 "The Pit"
+STATE_1236:0 "Lily Island"
+STATE_1227:0 "Mid Island"
+
+
+# ARCTIC WASTELAND #
+STATE_1211:0 "The Void"
+STATE_1215:0 "Buran"
+STATE_1213:0 "Agony"
+STATE_1214:0 "Nowhere"
+STATE_1216:0 "Zelera Peaks"
+STATE_1217:0 "Small Glacier"
+STATE_1218:0 "Big Glacier"
+STATE_1220:0 "Last Hope"    
+STATE_1222:0 "Small Continent"
+STATE_1223:0 "Island of Mors"
+STATE_1224:0 "The Skies"
+STATE_1219:0 "Island of Five"
+STATE_1226:0 "Penguin Mountains"
+STATE_1232:0 "Ice"
+STATE_1233:0 "Land of Monsters"
+STATE_1234:0 "Ice Coast"
+STATE_1235:0 "Edge of Light"
+STATE_1231:0 "Through the Ice"    
+STATE_1237:0 "Between Ice"
+STATE_1238:0 "Exile"
+STATE_1229:0 "Desert of Ice"
+STATE_1230:0 "Eternal Nowhere"
+STATE_1241:0 "The End"
+STATE_1245:0 "Mountains of Air"
+STATE_1246:0 "Home of Ice"
+STATE_1247:0 "Floating Iceberg"
+STATE_1248:0 "Pole"
+STATE_1249:0 "Ice Thickness"
+STATE_1250:0 "Dancing Glacier"
+STATE_1251:0 "Far Shore"
+STATE_1252:0 "Eternal Ice"
