@@ -2506,6 +2506,7 @@ add_namespace = greneclyf_hive
 			#	days = 15
 			#}
 			set_country_flag = NCH_hunger_starts
+			mark_focus_tree_layout_dirty = yes
 		}
 
 		option = {
