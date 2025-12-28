@@ -11,6 +11,7 @@ NCH_debug_decision = {
 
 NCH_chrysalis_category = {
 	icon = GFX_unkmow
+	picture = GFX_decision_category_chn_queens_tower
 
 	priority = {
 		base = 155
@@ -26,7 +27,7 @@ NCH_arctic_expedition_category = {
 }
 
 NCH_fed_found_category = {
-	icon = x
+	icon = GFX_unkmow
 	picture = GFX_decision_fed_war_found
 
 	priority = {

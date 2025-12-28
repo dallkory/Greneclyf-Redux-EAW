@@ -531,7 +531,6 @@ characters={
 	}
 
 	# Advisors #
-	
 	NCH_Foiki = {
  		name = Foiki
             portraits={

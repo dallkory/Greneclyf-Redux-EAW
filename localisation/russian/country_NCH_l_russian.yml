@@ -42,7 +42,23 @@ Marikella:0 "Марикел"
 Ludas:0 "Лудас"
 Arachi:0 "Арачи"
 Yorilos:0 "Йорилос"
-
+Floppa:0 "Шлёпа"
+Floppa_desc:0 "Несмотря на то, что Шлёпа внешне не похож ни на одного другого чейнджлинга, он прижился при дворе, понравившись как королеве, так и остальным придворным. Никто никогда не просил его перевоплащаться. Может быть он вообще не чейнджлинг?"
+Foiki:0 "Фойки"
+Hart:0 "Харт"
+Lorri:0 "Лорри"
+Furrelion:0 "Фуррелион"
+Realta_Dearg:0 "Рельта Дерг"
+Zaliack:0 "Залилак"
+Moronlan:0 "Моронлан"
+Marelay:0 "Марелей"
+Hailman:0 "Хейльман"
+Coilholt:0 "Койхольт"
+Goulen_Lari:0 "Гойлен Лари"
+Faris_Fork:0 "Фарис Форк"
+Harris_Perk:0 "Харрис Перк"
+Nowel_Dark:0 "Ноувел Дарк"
+cader_sclerite:0 "Кейдер Сциерите"
 
 # Traits #
 The_Steel_lady:0 "Стальная воля"
@@ -1389,6 +1405,18 @@ greneclyf_hive.22.d:0 "Гита перепроверила очередную т
 greneclyf_hive.22.a:0 "...Мне не до этого. Хельвии нужна моя помощь"
 
 ### DECISIONS ###
+NCH_chrysalis_category:0 "Великая Партия"
+NCH_chrysalis_category_desc:0 "За океаном, на востоке, лежит Эквус – наш родной дом, раздираемый конфликтом между двумя великими державами, между нашей кровью и нашими идеалами. Мы не можем стоять в стороне, безмолвно наблюдая за убийствами и несправедливостью. Наш долг – вмешаться"
+
+NCH_chrysalis_resistance_mission:0 "вввв"
+NCH_use_agency_woops:0 "Задействовать сочувствующих агентов Кризалис"
+NCH_chn_high_class:0 "Заручиться поддержкой лишённых привелегий дворян"
+NCH_use_torax_followers_1:0 "Поддержка винтовки торксиканцам"
+NCH_use_torax_followers_2:0 "Послать танки торксиканцам"
+NCH_use_torax_followers_3:0 "Тайная поставка самолётов торксиканцам"
+NCH_sabotage_9_stars:0 "Саботаж снабжения"
+NCH_sabotage_chrysalis:0 "Саботаж на военных производствах"
+
 NCH_fed_found_category:0 "Создание Федерации-Конкордата Восточной Грифонии"
 NCH_war_fed_found_dec:0 "Объеденить Федерацию военным путём"
 NCH_peace_fed_found_dec:0 "Объеденить Федерацию мирным путём"
@@ -1518,6 +1546,8 @@ NCH_lay_down_LNG_Gytha:0 "§3Гордость флота Хетчер будет
 NCH_valha_hired:0 "§3Аръитектор Вальга присоединится к нашему правительству.§!"
 
 ### IDEAS ###
+NCH_9_stars_diversions:0 "Подпольная деятельность гармонических агентов"
+
 NCH_trade_and_support_EQS:0 "Торговля и поддержка Эквестрии"
 NCH_trade_and_support_CHN:0 "Торговля и поддержка Чейнджлингов"
 
@@ -1662,3 +1692,26 @@ NCH_fed_found_category_desc:0 "Гринклиф получает историч�
 
 # SPECIAL #
 custom_diff_strong_nch:0 "Усилить Гринклиф"
+
+# DESIGNER S
+NCH_KLA:0 "KLAA AG"
+NCH_generic_tank_manufacturer:0 "Бюро на нГлюиштан"
+
+NCH_motorised:0 "Бюро на нГлюиштан"
+
+longchlois:0 "Лонкхлойс Блосмпорт"
+NCH_freemare:0 "ООО Автомашины ФМ"
+
+NCH_greda:0 "СпО ГредаБлосмпорт"
+NCH_reichswaffen:0 "ОАО Рейхсваффен"
+NCH_waffenhauser:0 "ОК Гринклиф"
+
+NCH_generic_light_aircraft_manufacturer:0 "Ойфиг на Эйтлиохт"
+NCH_generic_medium_aircraft_manufacturer:0 "CNIH"
+NCH_generic_heavy_aircraft_manufacturer:0 "Сердланн MóA"
+NCH_generic_naval_aircraft_manufacturer:0 "CAdA"
+
+NCH_generic_infantry_equipment_manufacturer:0 "Лоханн Лидад"
+
+NCH_generic_industrial_concern:0 "Промышленная компания"
+NCH_generic_electronics_concern:0 "Компания электроники"
