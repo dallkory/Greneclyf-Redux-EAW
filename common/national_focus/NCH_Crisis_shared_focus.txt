@@ -549,9 +549,35 @@ Shared_focus = {
 	}
 
 	completion_reward = {
+		custom_effect_tooltip = NCH_early_military_position
 		country_event = {
 			id = greneclyf_base.29
 			days = 0
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					or = {
+						has_country_flag = NCH_bop_medium_crisis
+						has_country_flag = NCH_bop_start_crisis
+					}
+				}
+				
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = civil_war_size_var
+				}
+
+				NCH_cader_sclerite = {
+					set_nationality = REB
+					remove_advisor_role = {
+					slot = political_advisor
+					demote_leader = yes	
+					}
+				} 
+			}
 		}
 	}
 }
@@ -583,6 +609,7 @@ Shared_focus = {
 		country_event = {
 			id = greneclyf_base.41
 		}
+
 	}
 }
 
@@ -601,6 +628,9 @@ Shared_focus = {
 
 	available = {
 		has_country_flag = NCH_hunger_defeat
+		not = {
+			has_war = yes
+		}
 	}
 
 	completion_reward = {

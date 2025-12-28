@@ -1051,7 +1051,7 @@ ideas = {
 		}
 
 		NCH_wonderbolts = {
-			picture = GFX_idea_EQC_sturdy_sails_co
+			picture = EQC_sturdy_sails_co
 			allowed = {
 				always = yes
 			}
@@ -1749,7 +1749,6 @@ ideas = {
 				defence = 0.05
 				offence = 0.05
 				army_attack_factor = 0.05
-
 			}
 		}
 

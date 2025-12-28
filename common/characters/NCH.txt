@@ -3,7 +3,6 @@ characters={
 	### REDUX ###
 
 	# New Leaders #
-
 	NCH_queen_gytha = {
 		name=NCH_queen_gytha
 		portraits={

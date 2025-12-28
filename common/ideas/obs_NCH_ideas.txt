@@ -10,6 +10,7 @@ ideas={
 				local_resources_factor = 0.05
 			}
 		}
+		
 		obsidian_trade_power_1={
 			picture = NCH_obsidian_crystals
 			allowed = { always = no }
@@ -53,7 +54,7 @@ ideas={
 			}
 		}
 		obsidian_trade_power_4={
-			picture = GNCH_obsidian_crystals
+			picture = NCH_obsidian_crystals
 			allowed = { always = no }
 
 			modifier = {

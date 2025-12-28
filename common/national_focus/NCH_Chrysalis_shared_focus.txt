@@ -740,12 +740,12 @@ Shared_focus = {
 			remove_ideas = NCH_humanitary_crisis_2
 		}
 
-		# if = {
-		# 	limit = {
-		# 		has_completed_focus = NCH_collective_management
-		# 	}
-			
-		# }
+		if = {
+			limit = {
+				has_ideas = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
 
 		if = {
 			limit = {

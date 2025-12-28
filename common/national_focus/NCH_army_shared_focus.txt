@@ -1475,6 +1475,7 @@ shared_focus = {
 		 669 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
+			province = 5131
 			type = land_facility
 			level = 1
 			}
