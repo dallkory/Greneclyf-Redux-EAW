@@ -12,7 +12,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_goal_House_Divided"
-		textureFile = "gfx/interface/goals/NCH/goal_House_Divided.dds.dds"
+		textureFile = "gfx/interface/goals/NCH/goal_House_Divided.dds"
 	}
 
 	spriteType = {
@@ -151,6 +151,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/pro_mod.tga"
 	}
 
+
 	# Crisis Main #
 	spriteType = {
 		name = "GFX_goal_begining_crisis"
@@ -188,45 +189,44 @@ spriteTypes = {
 	}	
 
 	# ARCTIC #
-
 	spriteType = {
 		name = "GFX_goal_artmilitarization"
-		textureFile = "gfx/interface/goals/NCH/militaryutilization.tga"
+		textureFile = "gfx/interface/goals/NCH/war_exploatation.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_newtradeway"
-		textureFile = "gfx/interface/goals/NCH/traderoute.tga"
+		textureFile = "gfx/interface/goals/NCH/new_trade_way.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_fuelfleet"
-		textureFile = "gfx/interface/goals/NCH/fleetrefueling.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_ports.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_exppoligon"
-		textureFile = "gfx/interface/goals/NCH/ExperimentalRanges.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_poligons.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_arccity"
-		textureFile = "gfx/interface/goals/NCH/settlement.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_towns.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_geosurvey"
-		textureFile = "gfx/interface/goals/NCH/geosurvey.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_mining.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_marineresources"
-		textureFile = "gfx/interface/goals/NCH/maritimeresources.tga"
+		textureFile = "gfx/interface/goals/NCH/arctic_resources.png"
 	}	
 
 	spriteType = {
 		name = "GFX_goal_terraink"
-		textureFile = "gfx/interface/goals/NCH/terraincognita.tga"
+		textureFile = "gfx/interface/goals/NCH/terraincognita.png"
 	}	
 
 	spriteType = {
@@ -409,13 +409,501 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/NCH/trade_fleet.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_birth_air_forces"
+		textureFile = "gfx/interface/goals/NCH/birth_air_forces.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_flying_school"
+		textureFile = "gfx/interface/goals/NCH/flying_school.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_raprots_herd"
+		textureFile = "gfx/interface/goals/NCH/raprots_herd.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_radar_station"
+		textureFile = "gfx/interface/goals/NCH/radar_station.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_iron_dome"
+		textureFile = "gfx/interface/goals/NCH/iron_dome.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_night_bomb"
+		textureFile = "gfx/interface/goals/NCH/night_bomb.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_aisling_facility"
+		textureFile = "gfx/interface/goals/NCH/aisling_facility.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_rocket_stantion"
+		textureFile = "gfx/interface/goals/NCH/rocket_stantion.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_massive_aircraft"
+		textureFile = "gfx/interface/goals/NCH/massive_aircraft.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wind_air"
+		textureFile = "gfx/interface/goals/NCH/wind_air.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wasps_swarm"
+		textureFile = "gfx/interface/goals/NCH/wasps_swarm.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_air_investment"
+		textureFile = "gfx/interface/goals/NCH/air_investment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_zenit"
+		textureFile = "gfx/interface/goals/NCH/project_zenit.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_atom_phenix"
+		textureFile = "gfx/interface/goals/NCH/project_atom_phenix.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_catcher"
+		textureFile = "gfx/interface/goals/NCH/project_catcher.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_shadows_cloud"
+		textureFile = "gfx/interface/goals/NCH/shadows_cloud.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_native_aircraft"
+		textureFile = "gfx/interface/goals/NCH/native_aircraft.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_foregine_aircraft"
+		textureFile = "gfx/interface/goals/NCH/foregine_aircraft.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_after_storm"
+		textureFile = "gfx/interface/goals/NCH/after_storm.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_enya_way"
+		textureFile = "gfx/interface/goals/NCH/enya_way.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_queen_orders"
+		textureFile = "gfx/interface/goals/NCH/quen_orders.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_eradication_illiteracy"
+		textureFile = "gfx/interface/goals/NCH/eradication_illiteracy.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_health_care"
+		textureFile = "gfx/interface/goals/NCH/health_care.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_end_schism"
+		textureFile = "gfx/interface/goals/NCH/end_schism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_economic_rise"
+		textureFile = "gfx/interface/goals/NCH/economic_rise.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_north_south"
+		textureFile = "gfx/interface/goals/NCH/north_south.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_open_institutue"
+		textureFile = "gfx/interface/goals/NCH/open_institutue.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_birth_control"
+		textureFile = "gfx/interface/goals/NCH/birth_control.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_cult_progress"
+		textureFile = "gfx/interface/goals/NCH/cult_progress.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_cult_tradition"
+		textureFile = "gfx/interface/goals/NCH/cult_tradition.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_apis"
+		textureFile = "gfx/interface/goals/NCH/project_apis.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_return_saor"
+		textureFile = "gfx/interface/goals/NCH/return_saor.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_underground_cities"
+		textureFile = "gfx/interface/goals/NCH/underground_cities.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hoof_market"
+		textureFile = "gfx/interface/goals/NCH/hoof_market.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_support_middle_class"
+		textureFile = "gfx/interface/goals/NCH/support_middle_class.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_chosen_queen"
+		textureFile = "gfx/interface/goals/NCH/god_chosen_queen.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_right_ideas"
+		textureFile = "gfx/interface/goals/NCH/right_ideas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_god_left_ideas"
+		textureFile = "gfx/interface/goals/NCH/left_ideas.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_first_constitution"
+		textureFile = "gfx/interface/goals/NCH/first_constitution.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_harmonic_solidarity"
+		textureFile = "gfx/interface/goals/NCH/harmonic_solidarity.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_project_phoenix"
+		textureFile = "gfx/interface/goals/NCH/project_phoenix.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_skales_skiliper"
+		textureFile = "gfx/interface/goals/NCH/skales_skiliper.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_status_quo"
+		textureFile = "gfx/interface/goals/NCH/status_quo.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_we_are_not_alone"
+		textureFile = "gfx/interface/goals/NCH/we_are_not_alone.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_river_opportunity"
+		textureFile = "gfx/interface/goals/NCH/river_opportunity.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_peace_existing"
+		textureFile = "gfx/interface/goals/NCH/peace_existing.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_develop_trade"
+		textureFile = "gfx/interface/goals/NCH/develop_trade.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_dal_more_visit"
+		textureFile = "gfx/interface/goals/NCH/dal_more_visit.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_spy_riverland"
+		textureFile = "gfx/interface/goals/NCH/spy_riverland.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_visit_farbrook"
+		textureFile = "gfx/interface/goals/NCH/visit_farbrook.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_operation_patriots"
+		textureFile = "gfx/interface/goals/NCH/operation_patriots.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_burocration_deal"
+		textureFile = "gfx/interface/goals/NCH/burocration_deal.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_three_in_pairs"
+		textureFile = "gfx/interface/goals/NCH/three_in_pairs.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_homeland_problems"
+		textureFile = "gfx/interface/goals/NCH/homeland_problems.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blitz"
+		textureFile = "gfx/interface/goals/NCH/blitz.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_motherland"
+		textureFile = "gfx/interface/goals/NCH/motherland.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_light_harmony"
+		textureFile = "gfx/interface/goals/NCH/light_harmony.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_use_chrysalis"
+		textureFile = "gfx/interface/goals/NCH/use_chrysalis.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_equestrian_phylpsophi"
+		textureFile = "gfx/interface/goals/NCH/equestrian_phylpsophi.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_unsuckspested_guest"
+		textureFile = "gfx/interface/goals/NCH/unsuckspested_guest.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_east_wonderbolts"
+		textureFile = "gfx/interface/goals/NCH/east_wonderbolts.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_our_values"
+		textureFile = "gfx/interface/goals/NCH/our_values.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_our_rules"
+		textureFile = "gfx/interface/goals/NCH/our_rules.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_equestrian_defense"
+		textureFile = "gfx/interface/goals/NCH/equestrian_defense.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_neighborhood"
+		textureFile = "gfx/interface/goals/NCH/neighborhood.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_offer_friendship"
+		textureFile = "gfx/interface/goals/NCH/offer_friendship.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_old_friend"
+		textureFile = "gfx/interface/goals/NCH/old_friend.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_get_bennefits"
+		textureFile = "gfx/interface/goals/NCH/get_bennefits.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_not_same"
+		textureFile = "gfx/interface/goals/NCH/not_same.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_we_are_same"
+		textureFile = "gfx/interface/goals/NCH/we_are_same.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_hills_puppet"
+		textureFile = "gfx/interface/goals/NCH/hills_puppet.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_basuc_geopolitic"
+		textureFile = "gfx/interface/goals/NCH/basuc_geopolitic.png"
+	}
 
 
+	spriteType = {
+		name = "GFX_goal_industrial_sabotage"
+		textureFile = "gfx/interface/goals/NCH/industrial_sabotage.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_nch_nine_stars"
+		textureFile = "gfx/interface/goals/NCH/nine_stars.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_yosip_strategy"
+		textureFile = "gfx/interface/goals/NCH/yosip_strategy.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_operation_rigging_river"
+		textureFile = "gfx/interface/goals/NCH/operation_rigging_river.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_dreams_of_riverlands"
+		textureFile = "gfx/interface/goals/NCH/dreams_of_riverlands.png"
+	}
 
+	spriteType = {
+		name = "GFX_goal_economic_union"
+		textureFile = "gfx/interface/goals/NCH/economic_union.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_consencus"
+		textureFile = "gfx/interface/goals/NCH/blosmport_consencus.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_language_question"
+		textureFile = "gfx/interface/goals/NCH/language_question.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_vittenburg_process"
+		textureFile = "gfx/interface/goals/NCH/vittenburg_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_vittenburg_process"
+		textureFile = "gfx/interface/goals/NCH/vittenburg_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_river_senate"
+		textureFile = "gfx/interface/goals/NCH/river_senate.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_high_rulling"
+		textureFile = "gfx/interface/goals/NCH/high_rulling.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_river_training"
+		textureFile = "gfx/interface/goals/NCH/river_training.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_godbye_dispair"
+		textureFile = "gfx/interface/goals/NCH/godbye_dispair.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_declaration_right_creatures"
+		textureFile = "gfx/interface/goals/NCH/declaration_right_creatures.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_first_vote"
+		textureFile = "gfx/interface/goals/NCH/first_vote.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_release_one_big_dream"
+		textureFile = "gfx/interface/goals/NCH/release_one_big_dream.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_great_party"
+		textureFile = "gfx/interface/goals/NCH/great_party.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_thorax_connection"
+		textureFile = "gfx/interface/goals/NCH/thorax_connection.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_teach_eagle"
+		textureFile = "gfx/interface/goals/NCH/teach_eagle.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_spyomania"
+		textureFile = "gfx/interface/goals/NCH/spyomania.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_queen_of_ditrisium"
+		textureFile = "gfx/interface/goals/NCH/queen_of_ditrisium.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_wait_a_moment"
+		textureFile = "gfx/interface/goals/NCH/wait_a_moment.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_old_blood"
+		textureFile = "gfx/interface/goals/NCH/old_blood.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_nine_stars_methods"
+		textureFile = "gfx/interface/goals/NCH/nine_stars_methods.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_secret_colobaration"
+		textureFile = "gfx/interface/goals/NCH/secret_colobaration.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_unforgotten_night"
+		textureFile = "gfx/interface/goals/NCH/unforgotten_night.png"
+	}
 
 
 
@@ -506,4 +994,70 @@ spriteTypes = {
 		name = "GFX_goal_railway_stg"
 		texturefile = "gfx/interface/goals/STG/goal_railway_stg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_unreal"
+		textureFile = "gfx/interface/goals/NCH/unreal.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_burning_fury"
+		textureFile = "gfx/interface/goals/NCH/burning_fury.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_care_refudginers"
+		textureFile = "gfx/interface/goals/NCH/care_refudginers.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_judgement_occupation"
+		textureFile = "gfx/interface/goals/NCH/judgement_occupation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_vendetta"
+		textureFile = "gfx/interface/goals/NCH/vendetta.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_stabilization_society"
+		textureFile = "gfx/interface/goals/NCH/stabilization_society.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_happy_ending"
+		textureFile = "gfx/interface/goals/NCH/happy_ending.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_emergency_delegation"
+		textureFile = "gfx/interface/goals/NCH/emergency_delegation.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_continue_delegation"
+		textureFile = "gfx/interface/goals/NCH/continue_delegation.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_nimbusian_process"
+		textureFile = "gfx/interface/goals/NCH/nimbusian_process.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_faction_connection"
+		textureFile = "gfx/interface/goals/NCH/faction_connection.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_going_peace"
+		textureFile = "gfx/interface/goals/NCH/going_peace.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_blosmport_conference"
+		textureFile = "gfx/interface/goals/NCH/blosmport_conference.png"
+	}
+
 }

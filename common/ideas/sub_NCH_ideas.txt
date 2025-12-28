@@ -1,6 +1,49 @@
 ideas = {
-	country = {
+		industrial_concern = {
+			NCH_resource_concern = {
+				picture = NCH_resource_concern
+				allowed = {
+					original_tag = NCH
+				}
+				available = {
+					original_tag = NCH
+				}
 
+				research_bonus = {
+					excavation_tech = 0.10
+				}
+				modifier = {
+					resource_gain_efficiency = 0.10
+					local_resources_factor = 0.03
+				}
+				traits = { mining_company }
+			}
+
+			NCH_blosmport_yards_concern = {
+				picture = NCH_yards_concern
+				cost = 200
+				allowed = {
+					original_tag = NCH
+				}
+				available = {
+					original_tag = NCH
+					owns_state = 670
+				}
+
+				research_bonus = {
+					ship_modules_tech = 0.10
+					naval_equipment = 0.15
+				}
+				modifier = {
+					industrial_capacity_dockyard = 0.075
+					production_speed_dockyard_factor = 0.05
+					political_power_cost = -0.05
+				}
+				traits = { industrial_concern }
+			}
+		}
+
+	country = {
 		### REDUX ###
 		## ECONOMIC TYPE ##
 		NCH_economic_status_protect = {
@@ -69,9 +112,9 @@ ideas = {
 		# 	}
 		# }
 
-		NCH_economic_hehemony_ork = {
+		# NCH_economic_hehemony_ork = {
 
-		}
+		# }
 
 		NCH_riv_search_base = {
 			picture = riv_search_base
@@ -317,6 +360,38 @@ ideas = {
 				production_cost_max_destroyer = 1000
 			}
 		}
+		NCH_9_stars_diversions = {
+			picture = political_violence
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.05
+				supply_factor = -0.07
+			}
+		}
+
+		NCH_volonteurs = {
+			picture = volunteers_send
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_factor = 0.25
+			}
+		}
 
 		NCH_air_stagnation = {
 			picture = air_stagnation
@@ -332,13 +407,13 @@ ideas = {
 			research_bonus = {
 				air_equipment = -0.25
 				air_doctrine = -0.1
-				heavy_air = -0.2
-				light_air = -0.2
+				#heavy_air = -0.2
+				#light_air = -0.2
 			}
 
 			modifier = {
 				experience_gain_air = -0.02
-				production_cost_max_cv_small_plane_airframe = -0.2
+				country_resource_cost_aluminium = 2
 				
 			}
 		}
@@ -378,6 +453,94 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.1
 				political_power_gain = 0.1
+			}
+		}
+
+		NCH_humanitary_crisis_1 = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.08
+				stability_weekly = -0.001
+				fascism_drift = 0.002
+				weekly_manpower = 2000
+			}
+		}
+
+		NCH_humanitary_crisis_2 = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.025
+				consumer_goods_factor = 0.12
+				#stability_weekly = -0.001
+				fascism_drift = 0.001
+				weekly_manpower = 3000
+			}
+		}
+
+		NCH_war_mission_EQS = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				infantry_tech = 0.07
+				magical_tech = 0.15
+				armor = 0.05
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				command_power_gain = 0.1
+				political_advisor_cost_factor = -0.08
+			}
+		}
+
+		NCH_Gytha_triumpf = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = 0.07
+				political_power_gain = 0.25
+				resistance_activity = -0.075
+				resistance_damage_to_garrison = -0.15
+				army_attack_factor = 0.15
+				surrender_limit = 1
+			}
+		}
+
+		NCH_veterans = {
+			picture = x
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_org = 0.08
+				army_attack_factor = 0.07
+				fascism_drift = 0.001
 			}
 		}
 
@@ -571,7 +734,7 @@ ideas = {
 		}
 
 		NCH_nine_stars = {
-			picture = nine_starrs
+			picture = nine_stars
 			allowed = {
 				always = yes
 			}
@@ -686,7 +849,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.075
 				stability_weekly = 0.003
-				democratic_drift = 0.02
+				fascism_drift = 0.02
 			}
 		}
 
@@ -760,6 +923,7 @@ ideas = {
 				war_support_weekly = 0.003
 				consumer_goods_factor = 0.3
 				political_power_factor = -0.25
+				monthly_population = -0.25
 				communism_drift = 0.03
 				recruitable_population_factor = -0.05
 				power_balance_weekly = -0.002
@@ -814,10 +978,9 @@ ideas = {
 				production_speed_buildings_factor = 0.075
 				research_speed_factor = 0.05
 				local_resources_factor = -0.15
-				political_power_gain = -0.25
+				political_power_gain = -0.15
 				consumer_goods_factor = 0.15
 				trade_laws_cost_factor = 1.75
-				cannot_change_trade_laws = yes
 			}
 		}
 
@@ -888,7 +1051,7 @@ ideas = {
 		}
 
 		NCH_wonderbolts = {
-			picture = GFX_unknow
+			picture = EQC_sturdy_sails_co
 			allowed = {
 				always = yes
 			}
@@ -909,7 +1072,7 @@ ideas = {
 		}
 
 		NCH_school_of_friendship = {
-			picture = GFX_unknow
+			picture = HIP_SIR_SNA_grateful
 			allowed = {
 				always = yes
 			}
@@ -969,7 +1132,7 @@ ideas = {
 		}
 
 		NCH_help_with_industrialization = {
-			picture = GFX_unknow
+			picture = KIS_factory_investment
 			allowed = {
 				always = yes
 			}
@@ -1172,84 +1335,125 @@ ideas = {
 		}
 
 		## Air Forces ##
-		GAF_supreme_tac={
 
-			picture = GFX_unknow
+		NCH_night_bombers = {
+			picture = night_bombers
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 
 			modifier = {
-				#SCHOOL#
-				air_manpower_requirement_factor = -0.3
-				air_accidents_factor = -0.3
-				air_chief_cost_factor = -0.25
-				#PROD
-				production_cost_max_fighter_equipment_1 = -0.2
-				air_equipment_upgrade_xp_cost = -0.4
-				production_lack_of_resource_penalty_factor = -0.35
-				#LEADERS_TAC
-				air_range_factor = 0.2
-				experience_gain_bomber_combat_factor = 0.3
-				air_fuel_consumption_factor = -0.15
-				air_ace_generation_chance_factor = 0.2
-				air_defence_factor = 0.25
-				air_strategic_bomber_bombing_factor = 0.20
-				experience_gain_CAS_combat_factor = 0.3
-				air_close_air_support_org_damage_factor = 0.15
-				air_cas_efficiency = 0.1
-				experience_gain_air_factor = 0.25
-				air_accidents_factor = -0.15
+				air_bombing_targetting = 0.15
+				air_night_penalty = -0.15
+			}
+
+			research_bonus = {
+				medium_air = 0.05
+				#air_equipment = 0.1
 			}
 		}
-		GAF_supreme_fig={
 
-			picture = GFX_unknow
+		NCH_native_air_spirit = {
+			picture = native_aircraft
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				air_equipment = -0.1
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = 0.075 instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = 0.075 instant = yes
+				}
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				air_mission_efficiency = 0.08
+				air_spirit_category_type_cost_factor = -0.05
+
+				air_range_factor = -0.075
+				air_agility_factor = 0.1
+			}
+		}
+
+		NCH_foreign_air_spirit = {
+			picture = foregine_aircraft
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			modifier = {
+				air_mission_efficiency = -0.09
+				air_equipment_research_speed = -0.05
+
+				air_range_factor = 0.1
+				air_agility_factor = -0.05
+
+				license_air_equipment_purchase_cost = -0.25
+				license_purchase_cost = -0.1
+				license_production_speed = 0.1
+			}
+		}
+
+		NCH_swarms_hive = {
+			picture = swarms_hive
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+					instant = yes
+				}
+			}
+		}
+
+		NCH_investment_for_air = {
+			picture = air_investment
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 
 			modifier = {
-				#SCHOOL#
-				air_manpower_requirement_factor = -0.3
-				air_accidents_factor = -0.3
-				air_chief_cost_factor = -0.25
-				#PROD
-				production_cost_max_fighter_equipment_1 = -0.2
-				air_equipment_upgrade_xp_cost = -0.4
-				production_lack_of_resource_penalty_factor = -0.35
-				#LEADERS_TAC
-				experience_gain_fighter_combat_factor = 0.3
-				air_ace_generation_chance_factor = 0.2
-				air_defence_factor = 0.2
-				air_fighter_efficiency = 0.1
-				air_mission_efficiency = 0.1
-				air_power_projection_factor = 0.3
-				air_air_superiority_agility_factor = 0.1
-				air_close_air_support_org_damage_factor = 0.1
-				air_cas_efficiency = 0.1
-				experience_gain_air_factor = 0.25
-				air_accidents_factor = -0.15
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.1
 			}
-		}
-		GAF_does_not_exists={
 
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_air_factor = -0.3
+			research_bonus = {
+				air_doctrine = 0.05
+				air_equipment = 0.1
 			}
 		}
 
-		## air schools ##
 		NCH_air_school_1={
-			picture = GFX_unknow
+			picture = GFX_idea_KIS_continuous_air_research_idea
 			allowed = {
 				always = yes
 			}
@@ -1261,252 +1465,6 @@ ideas = {
 				air_chief_cost_factor = -0.05
 			}
 		}
-
-		NCH_air_school_2={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_manpower_requirement_factor = -0.15
-				air_accidents_factor = -0.15
-				air_chief_cost_factor = -0.1
-			}
-		}
-
-		NCH_air_school_3={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_manpower_requirement_factor = -0.2
-				air_accidents_factor = -0.2
-				air_chief_cost_factor = -0.15
-			}
-		}
-
-		NCH_air_school_4={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_manpower_requirement_factor = -0.25
-				air_accidents_factor = -0.25
-				air_chief_cost_factor = -0.2
-			}
-		}
-
-		NCH_air_school_5={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_manpower_requirement_factor = -0.3
-				air_accidents_factor = -0.3
-				air_chief_cost_factor = -0.25
-			}
-		}
-
-		## air poduction ##
-
-		NCH_air_production_1={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				production_cost_max_fighter_equipment_1 = -0.05
-				production_lack_of_resource_penalty_factor = -0.05
-				air_equipment_upgrade_xp_cost = -0.1
-			}
-		}
-
-		NCH_air_production_2={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			
-
-			modifier = {
-				production_lack_of_resource_penalty_factor = -0.15
-				air_equipment_upgrade_xp_cost = -0.25
-			}
-		}
-
-		NCH_air_production_3={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				production_cost_max_fighter_equipment_1 = -0.15
-				production_lack_of_resource_penalty_factor = -0.3
-				air_equipment_upgrade_xp_cost = -0.3
-			}
-		}
-
-		NCH_air_production_4={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				production_cost_max_fighter_equipment_1 = -0.2
-				air_equipment_upgrade_xp_cost = -0.4
-				production_lack_of_resource_penalty_factor = -0.35
-			}
-		}
-
-		## Leaders ##
-
-		NCH_GAF_masters_1={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_air_factor = 0.1
-			}
-		}
-
-		NCH_GAF_masters_2={
-						picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_air_factor = 0.2
-				air_accidents_factor = -0.1
-			}
-		}
-
-		NCH_GAF_masters_3={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_air_factor = 0.25
-				air_accidents_factor = -0.15
-			}
-		}
-		NCH_GAF_masters_fighters={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_fighter_combat_factor = 0.3
-				air_ace_generation_chance_factor = 0.1
-				air_defence_factor = 0.1
-				air_fighter_efficiency = 0.1
-				air_mission_efficiency = 0.1
-				air_power_projection_factor = 0.3
-				air_power_projection_factor = 0.1
-			}
-		}
-		NCH_GAF_masters_CAS={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_CAS_combat_factor = 0.3
-				air_ace_generation_chance_factor = 0.1
-				air_defence_factor = 0.1
-				air_close_air_support_org_damage_factor = 0.1
-				air_cas_efficiency = 0.1
-			}
-		}
-		NCH_GAF_masters_tactical={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_range_factor = 0.2
-				experience_gain_bomber_combat_factor = 0.3
-				air_fuel_consumption_factor = -0.15
-				air_ace_generation_chance_factor = 0.1
-				air_defence_factor = 0.15
-				air_strategic_bomber_bombing_factor = 0.20
-				
-			}
-		}
-		NCH_GAF_masters_4_tac ={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				air_range_factor = 0.2
-				experience_gain_bomber_combat_factor = 0.3
-				air_fuel_consumption_factor = -0.15
-				air_ace_generation_chance_factor = 0.2
-				air_defence_factor = 0.25
-				air_strategic_bomber_bombing_factor = 0.20
-				experience_gain_CAS_combat_factor = 0.3
-				air_close_air_support_org_damage_factor = 0.15
-				air_cas_efficiency = 0.1
-				experience_gain_air_factor = 0.25
-				air_accidents_factor = -0.15
-			}
-		}
-		NCH_GAF_masters_4_fig ={
-			picture = GFX_unknow
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_fighter_combat_factor = 0.3
-				air_ace_generation_chance_factor = 0.2
-				air_defence_factor = 0.2
-				air_fighter_efficiency = 0.1
-				air_mission_efficiency = 0.1
-				air_power_projection_factor = 0.3
-				air_air_superiority_agility_factor = 0.1
-				air_close_air_support_org_damage_factor = 0.1
-				air_cas_efficiency = 0.1
-				experience_gain_air_factor = 0.25
-				air_accidents_factor = -0.15
-			}
-		}
-
 
 		## NAVY ##
 		NCH_navy_forces = {
@@ -1788,7 +1746,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-
+				defence = 0.05
+				offence = 0.05
+				army_attack_factor = 0.05
 			}
 		}
 
@@ -1939,5 +1899,58 @@ ideas = {
 			}
 		}
 
+		NCH_autonomy_debuff = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.2
+				resistance_activity = 0.15
+				resistance_damage_to_garrison = 0.3
+			}
+		}
+
+		REB_pacification_debuff = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.1
+				consumer_goods_factor = 0.45
+				political_power_cost = 0.25
+				resistance_activity = 0.15
+			}
+		}
+
+		NCH_demon_hegemony = {
+			picture = GFX_unkmow
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = -0.075
+			}
+		}
+		
 	}
 }

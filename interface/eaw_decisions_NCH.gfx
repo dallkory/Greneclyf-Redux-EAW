@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_decision_typography_propaganda"
+		texturefile = "gfx/interface/decisions/typography_propaganda.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_fed_war_found"
+		texturefile = "gfx/interface/decisions/decision_category_form_river_federation_picture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_chn_queens_tower"
+		texturefile = "gfx/interface/decisions/decision_category_chn_queens_tower.dds"
+	}
+
+}
+
+

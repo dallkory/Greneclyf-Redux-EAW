@@ -7,8 +7,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_NCH_yards_concern"
+		textureFile = "gfx/interface/ideas/NCH/yards_concern.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NCH_resource_concern"
+		textureFile = "gfx/interface/ideas/NCH/resource_concern.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_Basalt_Shaw_Idea"
 		textureFile = "gfx/interface/ideas/NCH/Basalt_Shaw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NCH_obsidian_crystals"
+		texturefile = "gfx/interface/ideas/NCH/obsidian_trade.dds"
 	}
 
 	spriteType = {
@@ -19,17 +34,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_overpopulation"
-		textureFile = "gfx/interface/ideas/NCH/overpopulation.dds"
+		textureFile = "gfx/interface/ideas/NCH/overpopulation.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_luddities"
-		textureFile = "gfx/interface/ideas/NCH/luddities.dds"
+		textureFile = "gfx/interface/ideas/NCH/luddites.tga"
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_stagnation"
-		textureFile = "gfx/interface/ideas/NCH/navy_stagnation.dds"
+		textureFile = "gfx/interface/ideas/NCH/shipstagnation.tga"
 	}
 
 	spriteType = {
@@ -229,7 +244,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_air_stagnation"
-		textureFile = "gfx/interface/ideas/NCH/air_stagnation.tga"
+		textureFile = "gfx/interface/ideas/NCH/planestagnation.tga"
 	}
 
 	spriteType = {
@@ -302,11 +317,55 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/NCH/idea_severe_famine5.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_night_bombers"
+		textureFile = "gfx/interface/ideas/NCH/night_bombers.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_air_investment"
+		textureFile = "gfx/interface/ideas/NCH/air_investment.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foregine_aircraft"
+		textureFile = "gfx/interface/ideas/NCH/foregine_aircraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_native_aircraft"
+		textureFile = "gfx/interface/ideas/NCH/native_aircraft.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EQC_sturdy_sails_co"
+		textureFile = "gfx/interface/ideas/NCH/EQC_sturdy_sails_co.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HIP_SIR_SNA_grateful"
+		textureFile = "gfx/interface/ideas/NCH/idea_HIP_SIR_SNA_grateful.tga"
+	} 
+	spriteType = {
+		name = "GFX_idea_KIS_factory_investment"
+		textureFile = "gfx/interface/ideas/NCH/KIS_factory_investment.tga"
+	} 
+	spriteType = {
+		name = "GFX_idea_KIS_continuous_air_research_idea"
+		textureFile = "gfx/interface/ideas/NCH/KIS_continuous_air_research_idea.tga"
+	} 
 
 
-idea_severe_famine.dds
 
-idea_severe_famine5.dds
+	spriteType = {
+		name = "GFX_idea_swarms_hive"
+		textureFile = "gfx/interface/ideas/NCH/swarms_hive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_volunteers_send"
+		textureFile = "gfx/interface/ideas/NCH/volunteers_send.dds"
+	}
+
 
 
 

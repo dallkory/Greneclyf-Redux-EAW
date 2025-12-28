@@ -60,9 +60,12 @@ leader_traits = {
 	anti_crisis_manager = {
 		random = no
 		recruitable_population_factor = 0.05
-		production_speed_buildings_factor = 0.1
+		production_speed_buildings_factor = 0.075
 		production_factory_max_efficiency_factor = 0.05
-		party_popularity_stability_factor = 0.1
+		party_popularity_stability_factor = 0.3
+		political_power_gain = 0.05
+
+		power_of_balance_weakly = 0.02
 	}
 
 	higher_judge_oiren = {
@@ -91,6 +94,7 @@ leader_traits = {
 			factor = 0.5
 		}
 	}
+	
 	NCH_political_power_in_senate_hoofs = {
 		random = no
 		political_power_gain = -0.5
@@ -129,5 +133,13 @@ leader_traits = {
 		ai_will_do = {
 			factor = 0.5
 		}
+	}
+
+	Herald_of_truth = {
+		random = no
+		stability_factor = 0.03
+		political_power_gain = 0.05
+		resistance_target = -0.08
+		research_speed_factor = -0.025
 	}
 }

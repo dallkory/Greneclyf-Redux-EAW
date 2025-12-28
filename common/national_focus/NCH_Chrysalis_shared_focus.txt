@@ -1,74 +1,139 @@
 Shared_focus = {
 	id = NCH_hive
-	icon = GFX_goal_unknown
-	cost = 1
+	icon = GFX_goal_great_party
+	cost = 0
 	x = 13
 	y = 2
 
-	available = {
+	bypass = {
 		or = {
 			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+		}
+	}
+
+	available = {
+		not = {
+			has_country_leader = NCH_Svirl_chosen_leader
+		}
+		or = {
+			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
 			has_country_flag = NCH_queen_hive_abmitions
-			has_completed_focus = NCH_time_to_look_further
+			#has_completed_focus = NCH_time_to_look_further
+			has_war_with = CHN
 		}
 	}
 	allow_branch = {
 		or = {
+			has_country_flag = NCH_debug_vision
 			has_country_flag = NCH_queen_hive_abmitions
-			has_completed_focus = NCH_time_to_look_further
 			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+			has_war_with = CHN
 		}
+	}
+
+	completion_reward = {
+		
 	}
 }
 
 Shared_focus = {
 	id = NCH_pressure_chrusalis
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_thorax_connection
+	cost = 5
 	prerequisite = {
 		focus = NCH_hive
 	}
 	x = 8
 	y = 3
 
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.2
+			days = 0
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_spy_everywhere
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_spyomania
+	cost = 4
 	prerequisite = {
 		focus = NCH_pressure_chrusalis
 	}
 	x = 7
 	y = 4
 
+	available = {
+		has_completed_focus = NCH_Queen_Ditrisium
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_spy_everywhere_tt
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_take_a_equipment
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_wait_a_moment
+	cost = 4
 	prerequisite = {
 		focus = NCH_spy_everywhere
+	}
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
 	}
 	x = 6
 	y = 5
 
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_seek_support
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_teach_eagle
+	cost = 5
 	prerequisite = {
 		focus = NCH_hive
 	}
 	x = 10
 	y = 3
 
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.1
+			days = 0
+		}	
+	}
 }
 Shared_focus = {
 	id = NCH_Queen_Ditrisium
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_queen_of_ditrisium
+	cost = 5
 	prerequisite = {
 		focus = NCH_seek_support
 	}
@@ -78,11 +143,27 @@ Shared_focus = {
 	x = 9
 	y = 4
 
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.3
+			days = 0
+		}
+
+		CHN = {
+			country_event = {
+				id = greneclyf_hive.4
+				days = 0
+			}
+		}
+
+		custom_effect_tooltip = NCH_run_with_time
+	}
 }
+
 Shared_focus = {
 	id = NCH_equipment_suppporter
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_old_blood
+	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Ditrisium
 	}
@@ -92,83 +173,156 @@ Shared_focus = {
 	x = 8
 	y = 5
 
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_old_guard_reb
+		set_country_flag = NCH_old_guard
+		add_command_power = 30
+
+		REB = {
+			add_equipment_to_stockpile = {
+				type = magical_equipment
+				amount = 4000
+			}
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_give_hope
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_secret_colobaration
+	cost = 7
 	prerequisite = {
 		focus = NCH_equipment_suppporter
-	}
-	prerequisite = {
 		focus = NCH_take_a_equipment
 	}
+
 	x = 7
 	y = 6
 
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_industrial_help_REB
+
+		REB = {
+			
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_idea_of_harmony_in_hives
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_nine_stars_methods
+	cost = 8
 	prerequisite = {
 		focus = NCH_Queen_Ditrisium
 	}
 	x = 10
 	y = 5
 
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	# #
+	completion_reward = {
+		custom_effect_tooltip = NCH_9_stars_methods_tt
+		set_country_flag = NCH_9_stars_methods
+	}
 }
+
 Shared_focus = {
 	id = NCH_fangs_dug
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_unforgotten_night
+	cost = 7
 	prerequisite = {
 		focus = NCH_equipment_suppporter
-	}
-	prerequisite = {
 		focus = NCH_idea_of_harmony_in_hives
 	}
+
 	x = 9
 	y = 6
 
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		country_event = greneclyf_hive.7
+	}
 }
+
 Shared_focus = {
 	id = NCH_rethinking_history
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_unreal
+	cost = 5
 	prerequisite = {
 		focus = NCH_hive
 	}
 	x = 13
 	y = 3
 
+	available = {
+		not = {
+			exists = CHN
+		}
+		CHN = {
+			all_core_state = {
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_ideas = NCH_humanitary_crisis_1
+	}
 }
+
 Shared_focus = {
 	id = NCH_accept_refugees
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_care_refudginers
+	cost = 5
 	prerequisite = {
 		focus = NCH_rethinking_history
 	}
 	x = 12
 	y = 4
 
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NCH_humanitary_crisis_1
+			add_idea = NCH_humanitary_crisis_2
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_loyal_elite
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_burning_fury
+	cost = 5
 	prerequisite = {
 		focus = NCH_rethinking_history
 	}
 	x = 14
 	y = 4
 
+	completion_reward = {
+		country_event = greneclyf_hive.14
+	}
 }
+
 Shared_focus = {
 	id = NCH_our_legarl_right
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_judgement_occupation
+	cost = 5
 	prerequisite = {
 		focus = NCH_accept_refugees
 	}
@@ -178,44 +332,177 @@ Shared_focus = {
 	x = 13
 	y = 5
 
+	completion_reward = {
+		country_event = greneclyf_hive.16
+		add_named_threat = {
+			threat = 5
+			name = NCH_CHN_intervetion
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_claim_by = NCH
+		}
+
+		if = {
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					add_opinion_modifier = {
+					target = NCH
+						modifier = large_decrease
+					}
+				}
+			}	
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_all_or_nothing
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_vendetta
+	cost = 5
 	prerequisite = {
 		focus = NCH_our_legarl_right
 	}
 	x = 13
 	y = 6
 
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = CHN
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+			create_wargoal = {
+				target = THIS
+				type = annex_everything
+			}
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_unity_summit
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_emergency_delegation
+	cost = 5
 	prerequisite = {
 		focus = NCH_hive
 	}
 	x = 17
 	y = 3
 
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+		or = {
+			EQS = {
+				has_war_with = CHN
+			}
+
+			is_in_faction_with = EQS
+
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					or = {
+						original_tag = EQS
+						is_puppet_of = EQS
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_opinion_modifier = {
+			target = EQS
+			modifier = large_increase
+		}
+		add_timed_idea = {
+			idea = NCH_war_mission_EQS
+			days = 120
+		}
+
+		EQS = {
+			add_timed_idea = {
+				idea = NCH_war_mission_EQS
+				days = 120
+			}
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_start_negotiations
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_continue_delegation
+	cost = 5
 	prerequisite = {
 		focus = NCH_unity_summit
 	}
 	x = 17
 	y = 4
 
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+
+			CHN  = {
+				has_government = democratic 
+			}
+
+			CHN  = {
+				has_war_with = NCH
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				EQS = {
+					has_government = democratic
+				}
+				has_opinion = {
+					target = EQS
+					value > 49
+				}
+			}
+			#set_country_flag = NCH_EQS_peace
+		}
+
+		if = {
+			limit = {
+				has_opinion = {
+					target = EQS
+					value < 49
+				}
+			}
+			add_opinion_modifier = {
+				target = EQS
+				modifier = large_decrease
+			}
+			#set_country_flag = NCH_EQS_decrease
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_all_wars_ends
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_nimbusian_process
+	cost = 5
 	prerequisite = {
 		focus = NCH_start_negotiations
 	}
@@ -225,11 +512,33 @@ Shared_focus = {
 	x = 16
 	y = 5
 
+	#available = {
+	#	has_country_flag = NCH_EQS_decrease
+	#}
+
+	available = {
+		country_exists = CHN
+		or = {
+			CHN  = {
+				has_government = democratic
+			}
+			CHN = {
+				is_puppet_of = EQS
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.19
+		}
+	}
 }
+
 Shared_focus = {
 	id = NCH_menace_chrysalis
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_faction_connection
+	cost = 5
 	prerequisite = {
 		focus = NCH_start_negotiations
 	}
@@ -239,38 +548,167 @@ Shared_focus = {
 	x = 18
 	y = 5
 
+	#available = {
+	#	has_country_flag = NCH_EQS_peace
+	#}
+
+	available = {
+		country_exists = EQS
+		EQS  = {
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_hive.17
+			}
+		}
+	}
 }
 
 Shared_focus = {
 	id = NCH_after_war_plans
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_blosmport_conference
+	cost = 5
 	prerequisite = {
 		focus = NCH_menace_chrysalis
 	}
 	x = 18
 	y = 6
 
+	bypass = {
+		has_country_flag = NCH_EQS_no_peace
+	}
+
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+		}
+	}
+
 	completion_reward = {
-		
+		country_event = {
+			id = greneclyf_hive.18
+		}
 	}
 }
+
 Shared_focus = {
 	id = NCH_collective_management
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_going_peace
+	cost = 5
 	prerequisite = {
 		focus = NCH_all_wars_ends
 	}
 	x = 16
 	y = 6
 
+	available = {
+
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					EQS = {
+						NOT = {
+							any_state = {
+								is_core_of = CHN
+								NOT = { is_controlled_by = EQS }
+							}
+						}
+					}
+					CHN = { is_subject_of = EQS }
+				}
+			}
+
+			if = {
+				limit = { NOT = { country_exists = REB } }
+				EQS = { release = REB }
+			}
+
+			hidden_effect = {
+				REB = {
+					set_cosmetic_tag = REB_Puppet
+					create_country_leader = {
+						name = NCH_Helvia
+						picture = GFX_NCH_Adler
+						ideology = conservatism
+
+						traits = {
+							Warrior_democratic
+						}
+					}
+				}
+
+				REB = {
+					every_state = {
+						limit = {
+							is_core_of = CHN
+						}
+						add_core_of = REB
+					}
+				}
+
+				REB = {
+					transfer_state = 252
+					transfer_state = 304
+					transfer_state = 309
+					transfer_state = 303
+					transfer_state = 305
+					transfer_state = 261
+					transfer_state = 306
+					transfer_state = 313
+					transfer_state = 312
+					transfer_state = 314
+					transfer_state = 264
+
+					set_capital = 252
+				}
+
+				REB = {
+					add_state_core = 252
+					add_state_core = 304
+					add_state_core = 309
+					add_state_core = 303
+					add_state_core = 305
+					add_state_core = 261
+					add_state_core = 306
+					add_state_core = 313
+					add_state_core = 312
+					add_state_core = 314
+					add_state_core = 264
+				}
+			}
+
+			NCH = {
+				set_autonomy = { target = REB autonomy_state = autonomy_puppet }
+				add_timed_idea = {
+					idea = NCH_autonomy_debuff
+					days = 210
+				}
+			}
+
+			REB = {
+				add_timed_idea = {
+					idea = REB_pacification_debuff
+					days = 365
+				}
+			}
+		}
+
+	}
 }
 
 Shared_focus = {
 	id = NCH_burnings_they_hearts
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_stabilization_society
+	cost = 5
 	prerequisite = {
 		focus = NCH_collective_management
 		focus = NCH_after_war_plans
@@ -281,16 +719,105 @@ Shared_focus = {
 	x = 13
 	y = 7
 
+	available = {
+		CHN = {
+			all_core_state = {
+				OR = {
+					is_controlled_by = NCH
+					controller = {
+						is_subject_of = NCH
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
+
+		if = {
+			limit = {
+				has_ideas = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
+
+		if = {
+			limit = {
+				REB  = {
+					is_puppet_of = NCH
+				}
+			}
+
+			country_event = greneclyf_hive.13
+		}
+
+	}
 }
 
 Shared_focus = {
 	id = NCH_union_hives
-	icon = GFX_goal_unknown
-	cost = 10
+	icon = GFX_goal_happy_ending
+	cost = 5
 	prerequisite = {
 		focus = NCH_burnings_they_hearts
 	}
 	x = 13
 	y = 8
 
+	available = {
+		not = {
+			has_country_leader = NCH_Svirl_chosen_leader
+		}
+		CHN = {
+			all_core_state = {
+				OR = {
+					is_controlled_by = NCH
+					controller = {
+						is_subject_of = NCH
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = NCH_fangs_dug
+			}
+			country_event = greneclyf_hive.20
+		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_all_or_nothing
+			}
+			country_event = greneclyf_hive.21
+		}
+
+		if = {
+			limit = {
+				or = {
+					has_completed_focus = NCH_collective_management
+					has_completed_focus = NCH_after_war_plans
+				}
+			}
+			country_event = greneclyf_hive.22
+		}
+
+		add_ideas = NCH_Gytha_triumpf
+		custom_effect_tooltip = NCH_Gytha_triumpf
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_core_of = NCH
+		}	
+	}
 }

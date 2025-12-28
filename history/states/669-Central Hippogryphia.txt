@@ -25,5 +25,6 @@ state={
 	
 	resources={
 		tungsten = 6.0
+		coal = 31
 	}
 }

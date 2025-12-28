@@ -12,7 +12,7 @@ focus_tree = {
 	#cancel_if_invalid = yes
     #continue_if_invalid = no
     #available_if_capitulated = no
-
+	
 	shared_focus = NCH_beginning_of_crisis
 	shared_focus = NCH_hive
 	shared_focus = NCH_Queen_Gytha_Patch
@@ -63,7 +63,7 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
-			custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
+			#custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
 			country_event = {
 			days = 0
 			id = greneclyf_base.2
@@ -281,7 +281,7 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-			custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
+			#custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
 			every_country = {
 				limit = {
 					is_riverlands_country = yes

@@ -25,4 +25,9 @@ spriteTypes = {
 		name = "GFX_NCH_riverswirl"
 		textureFile = "gfx/leaders/NCH/Riverswirl.tga"
 	}
+
+	spriteType = {
+		name = "GFX_NCH_Adler"
+		textureFile = "gfx/leaders/NCH/Helvia.tga"
+	}
 }

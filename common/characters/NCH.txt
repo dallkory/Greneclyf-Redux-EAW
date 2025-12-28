@@ -3,7 +3,6 @@ characters={
 	### REDUX ###
 
 	# New Leaders #
-
 	NCH_queen_gytha = {
 		name=NCH_queen_gytha
 		portraits={
@@ -139,7 +138,8 @@ characters={
 		advisor = {
 			available = {
 				has_government = democratic
-				has_completed_focus = NCH_beacon_harmony_in_the_east
+				#has_completed_focus = NCH_beacon_harmony_in_the_east
+				has_country_flag = NCH_trade_and_support_CHN
 			}
 
 			slot = political_advisor
@@ -153,19 +153,19 @@ characters={
 			}
 		}
 
-		corps_commander={
-			desc = "NCH_desc_Adler"
-			traits={ 
-				changeling_race_trait ranger infantry_leader
-			}
+		# corps_commander={
+		# 	desc = "NCH_desc_Adler"
+		# 	traits={ 
+		# 		changeling_race_trait ranger infantry_leader
+		# 	}
 
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# 	skill=2
+		# 	attack_skill=2
+		# 	defense_skill=2
+		# 	planning_skill=3
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 
 	NCH_kianit_oir = {
@@ -189,6 +189,30 @@ characters={
 			}
 			traits = {
 				anti_crisis_manager
+			}
+		}
+	}
+
+	NCH_Gagat = {
+		name = Gagat
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/NCH/Gagat.tga"
+			}
+		}
+
+		advisor = {
+			available = {
+				has_completed_focus = NCH_typography
+			}
+
+			slot = political_advisor
+			idea_token = Gagat_it
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				Herald_of_truth
 			}
 		}
 	}
@@ -244,11 +268,66 @@ characters={
 		}
 	}
 
+	NCH_scientist_Retgir={
+		name = Retgir
+		#desc = Retgir_desc
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Retgir.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Retgir.tga"
+			}
+		}
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+			}
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	NCH_scientist_Zoris={
+		name = Zoris
+		#desc = Zoris_desc
+		portraits={
+			army={
+				large="gfx/leaders/NCH/Zoris.tga"
+				small="gfx/interface/ideas/Advisors/NCH/Zoris.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = NCH_zoris_it
+			ledger = army
+			cost = 100
+			removal_cost = -1
+			allowed = {
+				original_tag = NCH
+			}
+			research_bonus = {
+				rocketry = 0.1
+			}
+			traits = { rocket_scientist }     
+		}
+
+		scientist = {
+			traits = {
+				scientist_trait_bright 
+			}
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
 	NCH_scientist_celarl={
-        name=Celarl
-		desc = Celarl_desc
+        name = Celarl
+		#desc = Celarl_desc
         portraits={
             army={
+				large="gfx/leaders/NCH/Celarl.tga"
                 small="gfx/interface/ideas/Advisors/NCH/Celarl.tga"
             }
         }
@@ -266,7 +345,7 @@ characters={
             }
 
             traits = { nuclear_scientist }
-    		desc = Celarl_desc      
+    		#desc = Celarl_desc      
 			on_add = {
 				is_hired_as_advisor = yes
 				country_event = {
@@ -278,13 +357,11 @@ characters={
 
 		scientist = {
 			traits = {
-				scientist_trait_bright 
 				scientist_trait_genius 
-				scientist_trait_brilliant_theorist 
 				scientist_trait_fast_learner 
-			} # TODO GTD balance
+			} 
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 3
 			}
 
 			visible = {
@@ -454,10 +531,45 @@ characters={
 	}
 
 	# Advisors #
+	NCH_Foiki = {
+ 		name = Foiki
+            portraits={
+                navy={
+                    large="gfx/leaders/NCH/Foiki_Renh.tga"
+                    small="gfx/interface/ideas/Advisors/NCH/Foiki.tga"
+                }
+            }
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Hart
+			cost = 100
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				#has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				alt_navy_fleet_logistics_2
+				#navy_chief_decisive_battle_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		navy_leader = {
+			traits = { changeling_race_trait superior_tactician }			
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=1
+		}
+	}
 
 	# Admirals #
 	 NCH_admiral_hart={
-        #name=NCH_Hart
         name=Hart
             portraits={
                 navy={
@@ -465,27 +577,26 @@ characters={
                     small="gfx/interface/ideas/Advisors/NCH/Hart.dds"
                 }
             }
-			advisor={
-                slot = navy_chief
-                idea_token = NCH_Hart
-                cost = 200
-                allowed = {
-                    original_tag = NCH
-                }
-                available = {
-                    has_country_flag = NCH_navy_advisor_flag
-                }
-                traits = {
-                    navy_chief_decisive_battle_3
-                }
-                ai_will_do = {
-                    factor = 1
-                }
-            }
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Hart
+			cost = 200
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				navy_chief_decisive_battle_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
     }
 
 	NCH_admiral_lorri={
-        #name=NCH_Lorri
         name=Lorri
             portraits={
                 navy={
@@ -493,24 +604,23 @@ characters={
                     small="gfx/interface/ideas/Advisors/NCH/Lorri.tga"
                 }
             }
-			advisor={
-                slot = navy_chief
-                idea_token = NCH_Lorri
-                cost = 150
-                allowed = {
-                    original_tag = NCH
-                }
-                available = {
-                    has_country_flag = NCH_navy_advisor_flag
-                }
-                traits = {
-                    navy_chief_commerce_raiding_3
-                }
-                ai_will_do = {
-                    factor = 0.4
-                }
-            }
-
+		advisor={
+			slot = navy_chief
+			idea_token = NCH_Lorri
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_country_flag = NCH_navy_advisor_flag
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			ai_will_do = {
+				factor = 0.4
+			}
+		}
     }
 
 	 # Generals #
@@ -647,7 +757,7 @@ characters={
 				original_tag = NCH
 			}
 			available = {
-				has_country_flag = NCH_Moronlan_Legacy
+				has_completed_focus = NCH_inspire_by_example
 			}
 
 			traits = {
@@ -747,6 +857,7 @@ characters={
 
 	# Air chiefs #
 	NCH_Farris_Fork={
+		name = Faris_Fork
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -763,7 +874,7 @@ characters={
 				has_country_flag = NCH_air_advisor_flag
 			}
 			traits = {
-				air_chief_ground_support_3
+				air_chief_ground_support_2
 			}
 			ai_will_do = {
 				factor = 1
@@ -771,6 +882,7 @@ characters={
 		}
 	}
 	NCH_Harris_Perk={
+		name = Harris_Perk
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -795,6 +907,7 @@ characters={
 		}
 	}
 	NCH_Nowel_Dark={
+		name = Nowel_Dark
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/NCH/Farris.tga"
@@ -819,7 +932,7 @@ characters={
 		}
 	}
 
-   	 # Submod #
+   	# Submod #
     
 	NCH_oiren_of_oir={
 		name=NCH_oiren_of_oir
@@ -1071,4 +1184,5 @@ characters={
 			}
 		}
 	}
+
 }

@@ -1,4 +1,4 @@
-version="1.0"
+version="1.2" # Her Majesty #
 tags={
 	"Events"
 	"Graphics"
@@ -10,5 +10,5 @@ dependencies={
 
 picture="thumbnail.png"
 name="Greneclyf Redux | Equestria At War"
-supported_version="1.15.2"
+supported_version="1.17.*"
 remote_file_id="3330541761"

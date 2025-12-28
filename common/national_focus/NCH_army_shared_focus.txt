@@ -6,9 +6,9 @@ shared_focus = {
 	y = 2
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		#has_country_flag = NCH_army_forces_allow
 		has_completed_focus = NCH_time_to_look_further
 	}
@@ -39,9 +39,9 @@ shared_focus = {
 	y = 3
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -67,9 +67,9 @@ shared_focus = {
 	y = 4
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -107,9 +107,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_completed_focus = NCH_assing_new_command
 		has_country_flag = NCH_battleship_chose
 	}
@@ -147,9 +147,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_completed_focus = NCH_assing_new_command
 		has_country_flag = NCH_silent_hunters_chose
 	}
@@ -183,9 +183,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -210,9 +210,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -240,9 +240,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -686,9 +686,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -739,9 +739,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -790,9 +790,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -816,24 +816,25 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_naval_institute
 
-		random_core_state = {
-			limit = {
-				state = 670
-			}
-			add_building_construction = {
-				province = 5188
-				type = naval_facility
-				level = 1
+			670 = {
+				add_building_construction = {
+					province = 5188
+					type = naval_facility
+					level = 1
 				}
+			}
+
+			add_breakthrough_progress = {
+				value = 0.25
+				specialization = specialization_naval
 			}
 		}
 	}
@@ -853,9 +854,9 @@ shared_focus = {
 	y = 4
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -879,9 +880,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -916,9 +917,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		any_controlled_state_is_coastal = yes
 	}
 
@@ -942,9 +943,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -964,9 +965,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1006,9 +1007,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		FROM = {
 			if = {
 				limit = {
@@ -1023,18 +1024,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_ideas = NCH_torpedo_attack 
+		#add_ideas = NCH_torpedo_attack 
 
-		if = {
-			limit = {
-				not = { has_dlc = "Man the Guns" }
-			}
-			set_technology = { torpedo_cruiser = 1 }
-		}
+		# if = {
+		# 	limit = {
+		# 		not = { has_dlc = "Man the Guns" }
+		# 	}
+		# 	set_technology = { torpedo_cruiser = 1 }
+		# }
 
-		else = {
-			set_technology = { torpedo_cruiser_mtg = 1 }
-		}
+		#else = {
+		#	set_technology = { torpedo_cruiser_mtg = 1 }
+		#}
 
 		if = {
 			limit = {
@@ -1044,6 +1045,7 @@ shared_focus = {
 		}
 
 		else = {
+			set_technology = { torpedo_cruiser_mtg = 1 }
 			set_technology = {
 				mega_carrier = 1
 			}
@@ -1057,7 +1059,7 @@ shared_focus = {
 				name = sp_mega_carrier_eq_bonus_strength
 				bonus = {
 					mega_carrier = {
-						build_cost_ic = 0.05
+						build_cost_ic = 0.075
 						max_strength = 0.1	
 						instant = yes		 
 					}
@@ -1084,13 +1086,13 @@ shared_focus = {
 	y = 8
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_our_navy_strategy
+		#custom_effect_tooltip = NCH_our_navy_strategy
 		set_country_flag = NCH_sea_future
 		
 		# NOT WORKING WHY #
@@ -1099,7 +1101,15 @@ shared_focus = {
 			remove_idea = NCH_naval_academy_establish
 			remove_idea = NCH_break_ice_idea
 		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_experomental_developments
+				has_completed_focus = NCH_Blosmport_navy_institute
+				has_completed_focus = NCH_domestic_development
+			}
 			add_ideas = NCH_navy_forces
+		}
 	}
 }
 
@@ -1113,10 +1123,10 @@ shared_focus = {
 	y = 3
 
 	available = {
-		has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		has_war_support > 0.45
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		#has_completed_focus = NCH_suppression_of_unrest
 	}
 
@@ -1126,6 +1136,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 25
+		set_country_flag = NCH_generals_flag
 		#remove_ideas = NCH_idyllic_society
 
 		add_doctrine_cost_reduction = {
@@ -1157,9 +1168,9 @@ shared_focus = {
 
 	available = {
 		#has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_professional_army_chosen
 	}
 
@@ -1188,9 +1199,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1231,9 +1242,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 	
 	completion_reward = {
@@ -1266,9 +1277,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1290,9 +1301,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1365,9 +1376,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1397,9 +1408,9 @@ shared_focus = {
 
 	available = {
 		#has_war_support > 0.35
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_regular_army_chosen
 	}
 
@@ -1429,9 +1440,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1455,15 +1466,16 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
 		 669 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
+			province = 5131
 			type = land_facility
 			level = 1
 			}
@@ -1490,9 +1502,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_blizkrieg_chose
 	}
 
@@ -1515,9 +1527,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 		has_country_flag = NCH_motorize_chose
 	}
 
@@ -1537,9 +1549,9 @@ shared_focus = {
 	y = 5
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1588,9 +1600,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1621,9 +1633,9 @@ shared_focus = {
 	y = 6
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1649,9 +1661,9 @@ shared_focus = {
 	y = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1691,9 +1703,9 @@ shared_focus = {
 	y = 8
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
@@ -1736,22 +1748,51 @@ shared_focus = {
 ### AIR FORCES ###
 shared_focus = {
 	id = NCH_and_in_the_air
-	icon = GFX_goal_unknown
+	icon = GFX_goal_birth_air_forces
 	cost = 5
 	prerequisite = {
 		focus = NCH_rule_greneclyf
 	}
-	x = 77
+	x = 76
 	y = 3
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			or = {
+				has_tech = iw_small_airframe
+				has_tech = iw_large_airframe
+				has_tech = iw_medium_airframe
+			}
+		}
+
+		if = {
+			limit = {
+				not = { has_dlc = "By Blood Alone" }
+			}
+			or = {
+				has_tech = early_bomber
+				has_tech = early_fighter
+				has_tech = strategic_bomber1
+			}
 		}
 	}
 
 	completion_reward = {
 		air_experience = 25
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe
+			amount = 25
+			producer = NCH
+		}
+
+
 		add_tech_bonus = {
 			name = army_upgrades
 			bonus = 0.5
@@ -1763,198 +1804,169 @@ shared_focus = {
 
 shared_focus = {
 	id = NCH_flying_school 
-	icon = GFX_goal_unknown
+	icon = GFX_goal_flying_school
 	cost = 5
+
+	x = 73
+	y = 4
+
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
 		air_experience = 25
-		add_tech_bonus = {
-			name = army_upgrades
-			bonus = 0.3
-			uses = 2
-			category = air_equipment
-		}
 		#Открывает советника на доктрину
 		add_ideas = NCH_air_school_1
 	}
-
-	x = 73
-	y = 4
-
 }
 
 shared_focus = {
 	id = NCH_radar_development
-	icon = GFX_goal_unknown
+	icon = GFX_goal_radar_station
 	cost = 7
+
+	x = 72
+	y = 5
+
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
 			technology = radio
-			bonus = 0.7
+			bonus = 0.5
 			uses = 1
 		}
 		
-		add_tech_bonus = {
-			name = x
-			category = radar_tech
-			bonus = 0.5
-			uses = 2
-		}
-
-		random_owned_state = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = arms_factory
-			level = 1
-			}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.25
 		}
 	}
-	x = 72
-	y = 5
-
 }
 
 shared_focus = {
 	id = NCH_build_new_airbases
-	icon = GFX_goal_unknown
+	icon = GFX_goal_rocket_stantion
 	cost = 7
 
+	x = 74
+	y = 5
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_completed_focus = NCH_rocket_science
 	}
 
 	prerequisite = {
 		focus = NCH_flying_school 
 	}
+	
 	completion_reward = {
-		random_core_state = {
-			add_building_construction = {
-				type = air_base
-				level = 1
-			}
+		add_breakthrough_progress = {
+			value = 0.25
+			specialization = specialization_air
 		}
-		random_owned_state = {
-			add_building_construction = {
-				type = air_base
-				level = 1
-			}
-		}
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-			}
-		}
-		NCH_air_school_buff_effect = yes
 
+		add_tech_bonus = {
+			name = x
+			category = rocketry
+			bonus = 0.4
+			uses = 3
+		}
 	}
-	x = 74
-	y = 5
-
 }
 
 shared_focus = {
 	id = NCH_defense_island
-	icon = GFX_goal_unknown
+	icon = GFX_goal_iron_dome
 	cost = 7
 
+	x = 74
+	y = 6
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+
+		has_tech = interwar_antiair
 	}
 
 	prerequisite = {
 		focus = NCH_build_new_airbases
 	}
-	completion_reward = {
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		random_core_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-			}
-		}
-		NCH_air_school_buff_effect = yes
-	}
-	x = 74
-	y = 6
 
+	completion_reward = {
+		670 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+			}
+		}
+
+		669 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+	}
 }
 
 shared_focus = {
 	id = NCH_night_training
-	icon = GFX_goal_unknown
+	icon = GFX_goal_night_bomb
 	cost = 7
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
+
+	x = 72
+	y = 6
 
 	prerequisite = {
 		focus = NCH_radar_development
 	}
-	completion_reward = {
-		add_ideas = air_night1
-		army_experience = 30
-		NCH_air_school_buff_effect = yes
-	}
-	x = 72
-	y = 6
 
+	completion_reward = {
+		add_ideas = NCH_night_bombers
+		#army_experience = 30
+	}
 }
 
 shared_focus = {
 	id = NCH_flying_like_butterfly
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wind_air
 	cost = 5
 
+	x = 74
+	y = 7
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -1966,34 +1978,35 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			category = air_doctrine
-			bonus = 0.7
-			uses = 1
+			bonus = 0.25
+			uses = 2
 		}
+
 		add_tech_bonus = {
-			name = x
-			category = air_doctrine
-			bonus = 0.5
-			uses = 1
+			name = army_upgrades
+			bonus = 0.3
+			uses = 2
+			category = air_equipment
 		}
 		set_country_flag = NCH_air_advisor_flag
 		#Открывает советника
-		NCH_air_school_buff_effect = yes
+		
 
 	}
-	x = 74
-	y = 7
-
 }
 
 shared_focus = {
 	id = NCH_who_else_but_us
-	icon = GFX_goal_unknown
+	icon = GFX_goal_raprots_herd
 	cost = 10
 
+	x = 76
+	y = 4	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2018,29 +2031,28 @@ shared_focus = {
 			uses = 2
 		}
 	}
-	x = 77
-	y = 4
-
 }
 
 shared_focus = {
 	id = NCH_aisling_air_institute
-	icon = GFX_goal_unknown
+	icon = GFX_goal_aisling_facility
 	cost = 15
 
+	x = 79
+	y = 4	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_and_in_the_air
 	}
-	x = 81
-	y = 4
 
 	completion_reward = {
+		remove_ideas = NCH_air_stagnation
 		1209={
 			add_building_construction = {
 				type = air_facility
@@ -2049,24 +2061,31 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = air_base
-				level = 2
+				level = 1
 			}
-			add_ideas = air_facility1
 		}
-		add_ideas = NCH_air_production_1
-		add_ideas = NCH_GAF_masters_1
+
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+		}
 	}
 }
 
 shared_focus = {
 	id = NCH_domestic_parts
-	icon = GFX_goal_unknown
+	icon = GFX_goal_massive_aircraft
 	cost = 5
 
+	x = 77
+	y = 5
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2074,50 +2093,39 @@ shared_focus = {
 	}
 	completion_reward = {
 		NCH_air_production_buff_effect = yes
-		1209 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-			type = arms_factory
-			level = 2
+		random_core_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
 		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-		}
-		
 	}
-
-	}
-	x = 78
-	y = 5
-
 }
 
 shared_focus = {
 	id = NCH_rocket_science
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_zenit
 	cost = 5
 
+	x = 76
+	y = 6	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_domestic_parts
 	}
 	completion_reward = {
-
-		NCH_air_production_buff_effect = yes
-
-
-		add_tech_bonus = {
-			name = x
-			category = rocketry
-			bonus = 0.4
-			uses = 3
+		add_breakthrough_progress = {
+			value = 0.75
+			specialization = specialization_air
 		}
+
 		669={
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -2127,19 +2135,20 @@ shared_focus = {
 			}
 		}
 	}
-	x = 77
-	y = 6
-
 }
+
 shared_focus = {
 	id = NCH_hotter_thousands_suns
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_atom_phenix
 	cost = 5
 
+	x = 78
+	y = 6	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2150,21 +2159,8 @@ shared_focus = {
 		add_tech_bonus = {
 			name = x
 			category = nuclear
-			bonus = 3
+			bonus = 1
 			uses = 1
-		}
-
-		country_event = {
-			id = greneclyf_forces.2
-			days = 0
-		}
-
-		random_owned_state = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			}
 		}
 
 		country_event = {
@@ -2172,191 +2168,146 @@ shared_focus = {
 			days = 0
 		}
 	}
-	x = 79
-	y = 6
-
 }
 
 shared_focus = {
 	id = NCH_experimental_developments
-	icon = GFX_goal_unknown
+	icon = GFX_goal_air_investment
 	cost = 10
 
+	x = 77
+	y = 7
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_rocket_science
-	}
-	prerequisite = {
 		focus = NCH_hotter_thousands_suns
 	}
-	completion_reward = {
 
-		NCH_air_production_buff_effect = yes
-		
-		add_tech_bonus = {
-			name = x
-			category = rocketry
-			bonus = 0.35
-			uses = 2
-		}
-		add_tech_bonus = {
-			name = x
-			category = cat_paratroopers_doctrine
-			bonus = 0.35
-			uses = 2
-		}
-		add_tech_bonus = {
-			name = x
-			technology = jet_engines
-			bonus = 0.35
-			uses = 2
-		}
+	completion_reward = {
+		add_ideas = NCH_investment_for_air
+
 		modify_building_resources = {
 			building = industrial_complex
 			resource = aluminium
 			amount = 1
 		}
 	}
-	x = 78
-	y = 7
 }
 
 shared_focus = {
-	id = NCH_tactical_aviation
-	icon = GFX_goal_unknown
+	id = NCH_native_development
+	icon = GFX_goal_native_aircraft
 	cost = 7
 
+	x = 79
+	y = 5
+
+	mutually_exclusive = {
+		focus = NCH_foregine_development
+	}
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
-	mutually_exclusive = {
-		focus = NCH_figher_aircraft
-	}
+
 	completion_reward = {
-		add_tech_bonus = {
-			name = x
-			category = tactical_bomber
-			uses = 2
-			bonus = 0.5
-		}
-
-		add_ideas = NCH_GAF_masters_tactical
-
-		NCH_GAF_masters_buff_effect = yes
+		add_ideas = NCH_native_air_spirit
 	}
+}
+
+shared_focus = {
+	id = NCH_foregine_development
+	icon = GFX_goal_foregine_aircraft
+	cost = 7
+
 	x = 81
 	y = 5
 
-}
-shared_focus = {
-	id = NCH_figher_aircraft
-	icon = GFX_goal_unknown
-	cost = 7
+	mutually_exclusive = {
+		focus = NCH_native_development
+	}
 
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
 		focus = NCH_aisling_air_institute
 	}
-	mutually_exclusive = {
-		focus = NCH_tactical_aviation
-	}
-	completion_reward = {
-			add_tech_bonus = {
-				name = x
-				category = light_fighter
-				uses = 2
-				bonus = 0.7
-			}
-			add_ideas = NCH_GAF_masters_fighters
-			NCH_GAF_masters_buff_effect = yes
-	}
-	x = 83
-	y = 5
 
+	completion_reward = {
+		add_ideas = NCH_foreign_air_spirit
+
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_equipment_subsidy = {
+				cic = 1000
+				equipment_type = small_plane_airframe
+				seller_tags = { EQS RCT CRY HIP MCW }
+			}
+		}
+	}
 }
+
 
 shared_focus = {
 	id = NCH_naval_bomber_project
-	icon = GFX_goal_unknown
+	icon = GFX_goal_project_catcher
 	cost = 10
 
+	x = 80
+	y = 6	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
-		focus = NCH_tactical_aviation
-		focus = NCH_figher_aircraft
+		focus = NCH_native_development
+		focus = NCH_foregine_development
 	}
+
 	completion_reward = {
 		add_tech_bonus = {
 			name = x
-			category = naval_bomber
+			category = cat_torpedoes
 			uses = 2
-			bonus = 0.6
-		}
-
-		NCH_GAF_masters_buff_effect = yes
-	}
-	x = 81
-	y = 6
-
-}
-shared_focus = {
-	id = NCH_air_support
-	icon = GFX_goal_unknown
-	cost = 10
-
-	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
+			bonus = 0.5
 		}
 	}
 
-	prerequisite = {
-		focus = NCH_figher_aircraft
-		focus = NCH_tactical_aviation
-	}
-	completion_reward = {
-		add_tech_bonus = {
-			name = x
-			category = cas_bomber
-			uses = 2
-			bonus = 0.7
-		}
-		add_ideas = NCH_GAF_masters_CAS
 }
-	x = 83
-	y = 6
 
-}
 shared_focus = {
 	id = NCH_sorry_as_bee
-	icon = GFX_goal_unknown
+	icon = GFX_goal_shadows_cloud
 	cost = 10
 
+	x = 80
+	y = 7	
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2423,20 +2374,20 @@ shared_focus = {
 			}
 		}
 	}
-	x = 81
-	y = 7
-
 }
 
 shared_focus = {
 	id = NCH_angry_hive
-	icon = GFX_goal_unknown
+	icon = GFX_goal_wasps_swarm
 	cost = 10
 
+	x = 77
+	y = 8
+
 	available = {
-		not = {
-			has_country_flag = NCH_great_hunger_started
-		}
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
 	}
 
 	prerequisite = {
@@ -2454,61 +2405,13 @@ shared_focus = {
 			can_use_kamikaze_pilots = yes
 		}
 
-		custom_effect_tooltip = give_bonuses_after_all_focuses_tt
+		add_ideas = NCH_swarms_hive
 
-		if = {
-			limit = {has_idea = NCH_GAF_masters_4_fig
-		}
-		hidden_effect={
-			remove_ideas = NCH_air_production_4
-			remove_ideas = NCH_GAF_masters_fighters
-			remove_ideas = NCH_air_school_5
-			set_technology = {
-				improved_small_airframe = 1
-			}
-			
-			complete_special_project = sp:sp_rocket_interceptor
-		}
-		add_ideas = GAF_supreme_fig
-		air_experience = 150
-	}
-	else_if={
-		limit = {has_idea = NCH_GAF_masters_4_tac
-	}
-	hidden_effect={
-		remove_ideas = NCH_air_production_4
-		remove_ideas = NCH_GAF_masters_4_tac
-		remove_ideas = NCH_air_school_5
-
-		sp:sp_air_mothership_aircraft = {
-			add_equipment_bonus = {
-				name = sp_air_mothership_strength
-				bonus = {
-					mothership_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
-						air_defence = 0.1
-						air_attack = 0.1
-						build_cost_ic = 0.1
-					}
-				}
-			}
-		}
-
-		#complete_special_project = sp:sp_air_mothership_aircraft
-
-		set_technology = {
-			improved_medium_airframe = 1
+		add_breakthrough_progress = {
+			value = 1
+			specialization = specialization_air
 		}
 	}
-	swap_ideas = {
-	remove_idea = NCH_GAF_masters_4_tac
-	add_idea = GAF_supreme_tac
-	}
-
-	air_experience = 150
-	}
-}
-	x = 77
-	y = 8
 }
 
 

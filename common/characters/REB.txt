@@ -1,0 +1,33 @@
+characters = {
+	REB_Adler = {
+		name = NCH_Adler
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Adler.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Adler.tga"
+			}
+		}
+
+		country_leader={
+			desc=""
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = { Warrior_democratic }
+			id=-1
+		}
+
+		corps_commander={
+			desc = "NCH_desc_Adler"
+			traits={ 
+				changeling_race_trait ranger infantry_leader
+			}
+
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}
