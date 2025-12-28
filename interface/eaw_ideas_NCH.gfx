@@ -353,9 +353,6 @@ spriteTypes = {
 		name = "GFX_idea_KIS_continuous_air_research_idea"
 		textureFile = "gfx/interface/ideas/NCH/KIS_continuous_air_research_idea.tga"
 	} 
-
-
-
 	spriteType = {
 		name = "GFX_idea_swarms_hive"
 		textureFile = "gfx/interface/ideas/NCH/swarms_hive.dds"
@@ -365,6 +362,21 @@ spriteTypes = {
 		name = "GFX_idea_volunteers_send"
 		textureFile = "gfx/interface/ideas/NCH/volunteers_send.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_project_phoenix_economic"
+		textureFile = "gfx/interface/ideas/NCH/project_phoenix.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_idea_harmonic_solidarity_economic"
+		textureFile = "gfx/interface/ideas/NCH/harmonic_solidarity.dds"
+		noOfFrames = 1
+	}
+
+
+
 
 
 

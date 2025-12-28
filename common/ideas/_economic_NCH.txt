@@ -1,10 +1,10 @@
 ideas = {
-	
 	economy = {
 		law = yes
 		use_list_view = no
 
 		harmonic_solidarity = {
+			picture = harmonic_solidarity_economic
 			allowed = {
 				always = no
 			}
@@ -34,6 +34,7 @@ ideas = {
 				line_change_production_efficiency_factor    = 0.10
 				max_fuel_factor                             = -0.15
 				fuel_gain_factor                            = -0.20
+				factory_energy_consumption = 0.075
 			}
 
 			allowed_to_remove = {
@@ -46,6 +47,7 @@ ideas = {
 		}
 
 		project_phoenix = {
+			picture = project_phoenix_economic
 			allowed = {
 				always = no
 			}
@@ -71,6 +73,7 @@ ideas = {
 				research_speed_factor                          = -0.03  
 				surrender_limit                                = 0.05   
 				max_fuel_factor                             = 0.1
+				factory_energy_consumption = -0.05
 			}
 
 			allowed_to_remove = {

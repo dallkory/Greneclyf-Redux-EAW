@@ -227,7 +227,7 @@ characters={
 
 		advisor = {
 			available = {
-				has_country_flag = NCH_cardinal_chosed
+				has_completed_focus = NCH_first_constitution 
 			}
 
 			slot = political_advisor

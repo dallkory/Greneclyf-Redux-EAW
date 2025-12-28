@@ -420,7 +420,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_save_clans_system
 	icon = GFX_goal_status_quo
-	cost = 0
+	cost = 3
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
@@ -445,7 +445,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_hereditary_monarchy
 	icon = GFX_goal_skales_skiliper
-	cost = 0
+	cost = 3
 	prerequisite = {
 		focus = NCH_to_the_new_order
 	}
