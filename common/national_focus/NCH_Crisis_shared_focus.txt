@@ -565,9 +565,9 @@ Shared_focus = {
 				}
 				
 				start_civil_war = {
-					ruling_party = communism
-					ideology = ROOT
-					size = civil_war_size_var
+					ruling_party = democratic
+					ideology = communism
+					size = 0.6
 				}
 
 				NCH_cader_sclerite = {
