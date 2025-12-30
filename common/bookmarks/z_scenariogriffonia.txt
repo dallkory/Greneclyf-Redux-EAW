@@ -67,12 +67,14 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				NCH_FBK_pact
-				NCH_idyllic_society
+				NCH_idyllic_society_1
+				NCH_luddites_1
+				NCH_Overpopulation
 			}
 			focuses = {
-				NCH_a_different_kind_of_changeling
-				NCH_crisis_of_faith
-				NCH_nuce_program_first_step
+				NCH_legacy
+				NCH_what_we_bring
+				NCH_hive
 			}
 		}
 		"RCT"={

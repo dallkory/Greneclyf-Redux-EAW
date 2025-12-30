@@ -723,12 +723,10 @@ greneclyf_base.1.d:0 "Gytha slowly leafed through last year’s reports and old 
 
 greneclyf_base.1.a:0 "‘I will be there. Tell her to bring that Hindian tea again.’"
 
-
 greneclyf_base.2.t:0 "The Convocation of the Eryahtas"
 greneclyf_base.2.d:0 "Both chambers of the representative parliament gathered within the ancient halls of Blosmport Abbey, just as they and their predecessors had done for over eight hundred years. Yet today’s session was unusual: every prefect, cardinal, officer, and bureaucrat present sensed the weight of unprecedented change. The shouts and aggressive disputes typical of the Abbey during sessions gave way to excited whispers, abruptly silenced by the sharp strike of Supreme Judge Oyren of Oir’s gavel.\n\n‘Order!’, she took a deep breath and continued in her commanding tone. ‘The First Convocation of the Eryahtas under the blessed reign of Her Majesty Gytha of Lemann is hereby declared open! The floor is granted to the monarch herself.’\n\nOyren fixed her expectant and stern gaze upon Gytha, and only the queen could perceive, within that expression, the gentleness and encouragement of a sworn sister urging her to begin.\n\n‘I… ahem, am honored to greet the representatives of all estates of our proud community under one roof for the first time. The age now dawning is the beginning of history’s making, for which the Glorious Enya sowed seeds throughout her life with the sweat and blood of our nation. The time has come to reap the fruits of her efforts and multiply them, without dishonoring the legacy of the previous queen — and for that, I and all of us will give our utmost,’ Gytha continued, her voice growing more emotional. ‘Much work lies ahead: bringing the Guard to a state worthy of the 11th century, providing work to our people whose livelihoods were taken by machines, poverty returning to our streets for the first time since the First Great Famine,’ — she pressed on — ‘even the Abbey itself! The pretors tear at one another over the correct interpretation of the Matron’s word; how did we come to this?!’\n\nThe queen met Oyren’s gaze once more, who subtly signaled the need to shift the direction of the speech.\n\n‘But… but there are also things that have worked flawlessly since Enya’s time — like Skyfall clocks. Our new legal system, whose Charter was written at the start of this century, and the introduction of the prefecture system, which has proven vastly more effective than the old feudal holdings. Today, as I expect, Prefect Carrion of our glorious capital will share his experience with the Eryahtas, after which other opinions and questions will be heard, so that together we may decide which path our country must walk. I thank you all sincerely.’\n\nThe assembled representatives greeted the queen with applause as she returned to her seat beside Oyren.\n\n‘You did well,’ the Supreme Judge whispered with a barely noticeable smile, before resuming her authoritative tone as tradition demanded. ‘Order! The floor is granted to Apex Carrion, Prefect of Blosmport.’\n\nA tall, imposing changeling of noble bearing adjusted his monocle as he stepped to the podium and answered in a loud, gravelly voice:"
 
 greneclyf_base.2.a:0 "‘Thank you for the opportunity, Your Majesty Gytha and Your Excellency Oyren.’"
-
 
 # Gytha Jorney #
 greneclyf_base.3.t:0 "The Beginning of the Journey"
@@ -1357,6 +1355,9 @@ greneclyf_hive.22.a:0 "…I don’t have time for this. Helvia needs my help."
 
 
 ### DECISIONS ###
+NCH_gov_rotation_category:0 "Elections"
+NCH_gov_rotation:0 "The Government will change its composition..."
+
 NCH_chrysalis_category:0 "The Great Party"
 NCH_chrysalis_category_desc:0 "Across the ocean, in the east, lies Equus — our homeland, torn apart by a conflict between two great powers, between our blood and our ideals. We cannot stand aside, silently witnessing murder and injustice. It is our duty to intervene."
 
@@ -1634,10 +1635,6 @@ NCH_obsidian_TRD:0 "Begin Obsidian Exports to Skyfall"
 NCH_obsidian_HIP:0 "Begin Obsidian Exports to Hippogriffia"
 NCH_obsidian_PNG:0 "Begin Obsidian Exports to the Penguins"
 NCH_obsidian_EQC:0 "Begin Obsidian Exports to the Equestrian Colonies"
-
-resources_for_navy_steel:0 "Добыча стали для флота"
-resources_for_navy_chromium:0 "Добыча хрома для флота"
-resources_for_navy_oil:0 "Добыча нефти для флота"
 
 resources_for_navy_steel:0 "Steel Extraction for the Navy"
 resources_for_navy_chromium:0 "Chromium Extraction for the Navy"

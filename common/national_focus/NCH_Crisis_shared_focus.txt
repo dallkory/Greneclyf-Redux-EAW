@@ -661,7 +661,7 @@ Shared_focus = {
 	completion_reward = {
 		country_event = {
 			id = greneclyf_base.17
-			days = 15
+			days = 0
 		}
 	}
 }
