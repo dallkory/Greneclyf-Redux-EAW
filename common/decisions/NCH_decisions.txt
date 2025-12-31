@@ -1161,7 +1161,7 @@ NCH_fed_found_category = {
 
 NCH_arctic_expedition_category = {
 	NCH_gytha_island = {
-		icon = x
+		icon = d
 		priority = 80
 
 		ai_will_do = {
@@ -1171,7 +1171,7 @@ NCH_arctic_expedition_category = {
 		state_target = yes
 		#target_array = NCH.arctic_targets
 
-		on_map_mode = map_only
+		# on_map_mode = map_only
 
 		allowed = {
 			any_controlled_state_is_coastal = yes
@@ -1947,7 +1947,7 @@ NCH_gov_rotation_category = {
 		icon = generic_politics
 		fire_only_once = no
 		#is_good = no
-		days_mission_timeout = 366
+		days_mission_timeout = 180
 
 		activation = {
 			has_completed_focus = NCH_to_the_new_order
@@ -1955,6 +1955,7 @@ NCH_gov_rotation_category = {
 		cancel_trigger = {
 			not = {
 				has_government = democratic
+				has_country_flag = NCH_gov_rotation_end_cf
 			}
 		}
 
@@ -2028,6 +2029,31 @@ NCH_gov_rotation_category = {
 			random_list = {
 				50 = { add_ideas = NCH_celarl_it } 
 				50 = { add_ideas = NCH_generic_military_theorist } 
+			}
+		}
+	}
+
+	NCH_gov_rotation_cancel = {
+		icon = generic_politics
+		fire_only_once = no
+		#is_good = no
+
+		available = {
+			has_country_flag = NCH_new_gov_election
+		}
+		
+		complete_effect = {
+			set_country_flag = NCH_gov_rotation_end_cf
+			add_stability = -0.5
+			add_political_power = -300
+			add_war_support = -0.25
+			add_popularity = {
+				ideology = fascism 
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.15
 			}
 		}
 	}

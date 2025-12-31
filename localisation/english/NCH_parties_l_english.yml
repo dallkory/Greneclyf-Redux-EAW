@@ -1,13 +1,13 @@
 ﻿l_english :
-  NCH_neutrality_party:0 "Oir Clan"
-  NCH_communism_party:0 "Conre on Nebri"
-  NCH_democratic_party:0 "Lemann Clan"
-  NCH_fascism_party:0 "Fine Grena" # Fine - Партия с Ирландского; хватит ломать нам локу обновами >:(
+NCH_neutrality_party:0 "Oir Clan"
+NCH_communism_party:0 "Conre on Nebri"
+NCH_democratic_party:0 "Lemann Clan"
+NCH_fascism_party:0 "Fine Grena"
 
-  NCH_democratic_party_lehman_long:0 "Social Harmonization"
-  NCH_democratic_party_lehman:0 "Social Harmonization"
+NCH_democratic_party_lehman_long:0 "Social Harmonization"
+NCH_democratic_party_lehman:0 "Social Harmonization"
 
-  NCH_democratic_party_electorate:0 "Harmonic Republicanism"
+NCH_democratic_party_electorate:0 "Harmonic Republicanism"
 
 
 

@@ -3294,6 +3294,7 @@ add_namespace = greneclyf_hive
 			}
 		}
 	}
+	# DECELINE #
 	country_event = {
 		id = greneclyf_obsidian.2
 		title = greneclyf_obsidian.2.t
@@ -3305,6 +3306,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_obsidian.2.a
 		}
 	}
+	# ACEPT #
 	country_event = {
 		id = greneclyf_obsidian.3
 		title = greneclyf_obsidian.3.t
@@ -3727,7 +3729,7 @@ add_namespace = greneclyf_hive
        	name = greneclyf_foregin.13.a		
 			country_event = {
 				id = greneclyf_foregin.14
-				days = 0
+				days = 1
 			}
 		}
 	}

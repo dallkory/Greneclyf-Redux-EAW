@@ -457,7 +457,7 @@ ideas = {
 		}
 
 		NCH_humanitary_crisis_1 = {
-			picture = x
+			picture = chaos_idea
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
@@ -474,7 +474,7 @@ ideas = {
 		}
 
 		NCH_humanitary_crisis_2 = {
-			picture = x
+			picture = chaos_idea
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
@@ -491,7 +491,7 @@ ideas = {
 		}
 
 		NCH_war_mission_EQS = {
-			picture = x
+			picture = EQS_changeling_spies
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
@@ -512,7 +512,7 @@ ideas = {
 		}
 
 		NCH_Gytha_triumpf = {
-			picture = x
+			picture = declaration_nations
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes
@@ -530,7 +530,7 @@ ideas = {
 		}
 
 		NCH_veterans = {
-			picture = x
+			picture = every_one_can_be_hero
 			allowed = { always = no }
 			allowed_civil_war = {
 				always = yes

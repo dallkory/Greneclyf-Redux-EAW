@@ -47,7 +47,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_agroindustrial_mobilization
 	icon = GFX_goal_agroindustrial_mobilization
-	cost = 10
+	cost = 8
 	prerequisite = {
 		focus = NCH_mre_cards
 	}

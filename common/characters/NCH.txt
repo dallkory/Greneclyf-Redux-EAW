@@ -346,13 +346,13 @@ characters={
 
             traits = { nuclear_scientist }
     		#desc = Celarl_desc      
-			on_add = {
-				is_hired_as_advisor = yes
-				country_event = {
-					id = greneclyf.511
-					days = 1
-				}
-			}      
+			# on_add = {
+			# 	is_hired_as_advisor = yes
+			# 	country_event = {
+			# 		id = greneclyf.511
+			# 		days = 1
+			# 	}
+			# }      
         }
 
 		scientist = {

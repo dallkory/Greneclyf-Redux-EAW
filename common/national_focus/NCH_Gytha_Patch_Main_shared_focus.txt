@@ -242,6 +242,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_stability = 0.05
+
 		remove_ideas = NCH_Overpopulation
 		add_ideas = NCH_Overpopulation_2
 	}
@@ -1360,6 +1361,14 @@ shared_focus = {
 	completion_reward = {
 		
 	}
+	select_effect = {
+		hidden_effect = {
+			country_event = { id = greneclyf_foregin.16 days = 15 }
+			country_event = { id = greneclyf_foregin.15 days = 37 }
+		}
+	}
+
+	
 }
 
 shared_focus = {
@@ -1421,13 +1430,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-
+	}
+	select_effect = {
+		hidden_effect = {
+			country_event = { id = greneclyf_foregin.13 days = 15 }
+			country_event = { id = greneclyf_foregin.15 days = 37 }
+		}
 	}
 }
 shared_focus = {
 	id = NCH_our_best_qualities
 	icon = GFX_goal_blitz
-	cost = 10
+	cost = 6
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
 	}
@@ -1461,6 +1475,17 @@ shared_focus = {
 		CHN = {
 			not = {
 				has_government = fascism
+			}
+		}
+	}
+
+	select_effect = {
+		hidden_effect = {
+			CHN  = {
+				country_event = { id = greneclyf_foregin.21 days = 15 }
+			}
+			EQS  = {
+				country_event = { id = greneclyf_foregin.21 days = 15 }
 			}
 		}
 	}
@@ -1869,7 +1894,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_shield_and_sword_harmony
 	icon = GFX_goal_our_rules
-	cost = 10
+	cost = 8
 
 
 	prerequisite = {
@@ -1916,7 +1941,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_equestria_support
 	icon = GFX_goal_equestrian_defense
-	cost = 10
+	cost = 8
 	prerequisite = {
 		focus = NCH_friendship_delegation
 	}
