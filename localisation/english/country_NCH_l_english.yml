@@ -1357,6 +1357,19 @@ greneclyf_hive.22.d:0 "Gytha reread yet another telegram from Ditrysium. Helvia 
 
 greneclyf_hive.22.a:0 "... I don’t have time for this. Helvia needs my help."
 
+### Obsidian trade ###
+
+greneclyf_obsidian.2.t:0 "Our ambassadors return not just empty-handed - they return insulted."
+
+greneclyf_obsidian.2.d:0 "Their finance minister stated that he "sees no strategic value in fragile trinkets," while military advisors whispered something about "unreliable supplies from an unstable region." This crude display of arrogance clearly shows how we are perceived abroad — as provincial supplicants, not equal partners.\n\nA tomb-like silence reigns in the Royal Palace, broken only by the angry chime of crystal ornaments. Our reserves will remain unused, and our modernization plans — frozen. But at least now we know for sure who our friend is, and who is merely looking for weaknesses in our defenses. But who, if not Greneclyf, understands that today's adversaries are tomorrow's partners?"
+
+greneclyf_obsidian.2.a:0 "Damn it."
+
+greneclyf_obsidian.3.t:0 "Trade Agreement Approved"
+
+greneclyf_obsidian.3.d:0 "Our diplomats have returned from their long journey with radiant smiles and a thick portfolio of documents. The negotiations, which lasted for several weeks, have finally been crowned with success. The government of $COUNTRY$ saw mutual benefit in our proposal.\n\nStarting today, regular shipments of first-grade crystal obsidian will commence by sea. In return, steel, magical crystals, or grain (depending on the partner country) will flow into our storages. This treaty is not just an economic exchange. It is a bridge built between our peoples. May the cold gleam of our stone be warmed in the fire of their forges, and may their technology strengthen the radiance of our spires!"
+
+greneclyf_obsidian.3.a:0 "The Queen has already given the order: 'Let the crystals flow like a river!' The era of Greneclyf's isolation is coming to an end!""
 
 ### DECISIONS ###
 NCH_gov_rotation_category:0 "Elections"
