@@ -1826,7 +1826,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				land_organization = 0.10
+				division_recovery_rate = 0.08
+				army_morale = 0.05
 
+				army_org_factor = 0.05
+				planning_speed = 0.10
+				supply_consumption_factor = -0.05
 			}
 		}
 

@@ -639,8 +639,8 @@ NCH_pressure_chrusalis_desc:0 "Thorax has long waged an underground struggle aga
 NCH_spy_everywhere:0 "Spy Mania"
 NCH_spy_everywhere_desc:0 "Chrysalis could not have expected that a second front would open against her—one that is secret. Our operatives can cause her no small amount of trouble deep within her own rear, striking the dictator where it hurts."
 
-NCH_Queen_Ditrysium:0 "The Queen of Ditrysium"
-NCH_Queen_Ditrysium_desc:0 "Helvia...  a beautiful rose caught in the jaws of Chrysalis’ war machine. She represents a chance for a great future for the Hives. The President already has direct contact with her, and now we must discuss the details of overthrowing tyranny."
+NCH_Queen_Ditrisium:0 "The Queen of Ditrysium"
+NCH_Queen_Ditrisium_desc:0 "Helvia...  a beautiful rose caught in the jaws of Chrysalis’ war machine. She represents a chance for a great future for the Hives. The President already has direct contact with her, and now we must discuss the details of overthrowing tyranny."
 
 NCH_equipment_suppporter:0 "Old Blood"
 NCH_equipment_suppporter_desc:0 "Certain high-ranking officials and aristocrats connected to Helvia have secretly expressed their desire to personally take up arms against Chrysalis. Some have even sworn personal loyalty to the Queen of Ditrysium, nostalgic for the era before unification. We will use this situation wisely."
@@ -1507,6 +1507,7 @@ NCH_lay_down_LNG_Gytha:0 "§3The pride of the fleet, the Hatcher, will be launch
 NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
 ### IDEAS ###
+NCH_veterans:0 "Veterans"
 NCH_political_violence:0 "Political Violence"
 NCH_retaking_saor:0 "Recovery of Saor"
 NCH_9_stars_diversions:0 "Underground activities of harmonic agents"

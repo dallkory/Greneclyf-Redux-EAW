@@ -587,6 +587,9 @@ Shared_focus = {
 			not = {
 				country_exists = CHN
 			}
+			CHN = {
+				is_puppet_of = EQS
+			}
 		}
 	}
 
