@@ -1,0 +1,121 @@
+debug_general = {
+	unlock_presidential = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = NCH
+		}
+
+		#custom_cost_trigger = {
+		#	has_political_power > 1
+		#}
+		#days_remove = 60
+
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NCH_presidentpor_unlocked
+		}
+	}
+	
+	unlock_manic = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = NCH
+		}
+
+		#custom_cost_trigger = {
+		#	has_political_power > 1
+		#}
+		#days_remove = 60
+
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NCH_manicpor_unlocked
+		}
+	}
+	force_traditional = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = NCH
+		}
+
+		#custom_cost_trigger = {
+		#	has_political_power > 1
+		#}
+		#days_remove = 60
+
+		fire_only_once = no
+		complete_effect = {
+			set_variable = {
+				NCH_queen_gytha_portrait = 1
+			}
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Starter_Gytha"
+					}
+				}
+			}
+		}
+	}
+	force_manic = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = NCH
+		}
+
+		#custom_cost_trigger = {
+		#	has_political_power > 1
+		#}
+		#days_remove = 60
+
+		fire_only_once = no
+		complete_effect = {
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
+			}
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
+				}
+			}
+		}
+	}
+	force_presidential = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = NCH
+		}
+
+		#custom_cost_trigger = {
+		#	has_political_power > 1
+		#}
+		#days_remove = 60
+
+		fire_only_once = no
+		complete_effect = {
+			set_variable = {
+				NCH_queen_gytha_portrait = 2
+			}
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_President_Gytha"
+					}
+				}
+			}
+		}
+	}
+	
+}

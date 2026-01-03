@@ -1,0 +1,18 @@
+﻿l_english:
+ SELECT_PORTRAIT:0 "Select a Portrait"
+ old_portrait:0 "Traditional"
+ presidential_portrait:0 "§3Presidential§!"
+
+ PORTRAIT_TOOLTIP:0 "Change Portrait"
+ PORTRAIT_TOOLTIP_DELAYED:0 "Cosmetically switch between the Queen's Portraits"
+
+ PORTRAIT_MANIC_TOOLTIP:0 "[GETPORTRAIT_MANIC_TOOLTIP]"
+ PORTRAIT_MANIC_TOOLTIP_DELAYED:0 "[GETPORTRAIT_MANIC_TOOLTIP_DELAYED]"
+ manic_portrait:0 "§4Mare of Steel§!"
+ portrait_locked:0 "§tLOCKED§!"
+ manic_portrait_del:0 "§Linsert brief portrait description§!"
+ manic_portrait_del_locked:0 "§YUnlocks After insert event/focus§!"
+ 
+ PORTRAIT_PRES_TOOLTIP_DELAYED:0 "[GETPORTRAIT_PRES_TOOLTIP_DELAYED]"
+ pres_portrait_del:0 "§Linsert brief portrait description§!"
+ pres_portrait_del_locked:0 "§YUnlocks After insert event/focus§!"

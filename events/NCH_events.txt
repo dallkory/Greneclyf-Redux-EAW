@@ -9,7 +9,7 @@ add_namespace = greneclyf_daylight
 add_namespace = greneclyf_hive
 
 
-	## hive ##
+## hive ##
 	# Sparkle #
 	country_event = {
 		id = greneclyf_hive.1
@@ -1031,6 +1031,7 @@ add_namespace = greneclyf_hive
 
 				REB = {
 					set_cosmetic_tag = REB_Puppet
+					
 					create_country_leader = {
 						name = NCH_Helvia
 						picture = GFX_NCH_Adler
@@ -2123,12 +2124,13 @@ add_namespace = greneclyf_hive
 		}
 	}
 
+## Pre crisis ##
 	# LEGACY #
 	country_event = {
 		id = greneclyf_base.1
 		title = greneclyf_base.1.t
 		desc = greneclyf_base.1.d
-		picture = GFX_unknow
+		picture = GFX_event_legacy
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2155,7 +2157,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.2
 		title = greneclyf_base.2.t
 		desc = greneclyf_base.2.d
-		picture = GFX_unknow
+		picture = GFX_event_oirechtas
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2172,7 +2174,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.3
 		title = greneclyf_base.3.t
 		desc = greneclyf_base.3.d
-		picture = GFX_unknow
+		picture = GFX_event_gytha_jorney
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2242,7 +2244,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.4
 		title = greneclyf_base.4.t
 		desc = greneclyf_base.4.d
-		picture = GFX_unknow
+		picture = GFX_event_gytha_jorney
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2262,7 +2264,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.5
 		title = greneclyf_base.5.t
 		desc = greneclyf_base.5.d
-		picture = GFX_unknow
+		picture = GFX_event_gytha_jorney
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2282,7 +2284,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.26
 		title = greneclyf_base.26.t
 		desc = greneclyf_base.26.d
-		picture = GFX_unknow
+		picture = GFX_event_gytha_jorney
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2302,7 +2304,7 @@ add_namespace = greneclyf_hive
 			id = greneclyf_base.261
 			title = greneclyf_base.261.t
 			desc = greneclyf_base.261.d
-			picture = GFX_unknow
+			picture = GFX_event_gytha_jorney
 			is_triggered_only = yes
 			fire_only_once = yes
 	
@@ -2322,7 +2324,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.6
 		title = greneclyf_base.6.t
 		desc = greneclyf_base.6.d
-		picture = GFX_unknow
+		picture = GFX_event_event_way_to_home
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2418,7 +2420,7 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	### HUNGER STARTED ###
+### HUNGER STARTED ###
 	## ALL IS FINE ##
 	country_event = {
 		id = greneclyf_base.9
@@ -2577,9 +2579,9 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	### HUNGER DEFEAT ###
+### HUNGER DEFEAT ###
 
-	### CRISIS ###
+### CRISIS ###
 	# Meet with trade emissars #
 	country_event = {
 		id = greneclyf_base.15
@@ -2955,7 +2957,7 @@ add_namespace = greneclyf_hive
 
 	
 
-	## WITCHES ##
+## WITCHES ##
 	# BLUE MAIL #
 	country_event = {
 		id = greneclyf_base.34
@@ -3091,7 +3093,7 @@ add_namespace = greneclyf_hive
 
 
 
-	### FORCES ###
+### FORCES ###
 	# Navy 
 	country_event = {
 		id = greneclyf_forces.4
@@ -3249,7 +3251,7 @@ add_namespace = greneclyf_hive
 	}
 
 
-	### OBS ###
+### OBS ###
 	country_event = {
 		id = greneclyf_obsidian.1
 		title = greneclyf_obsidian.1.t
@@ -3323,8 +3325,8 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	####### MAIN GYTHA #######
-	### MAIN PATCH - FOREGIEN PATCH ###
+####### MAIN GYTHA #######
+### MAIN PATCH - FOREGIEN PATCH ###
 
 	# VISIT #
 	country_event = {
@@ -3716,7 +3718,7 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	### EQS ###
+### EQS ###
 	# HOT DELIGATION #
 	country_event = {
 		id = greneclyf_foregin.13
@@ -3762,7 +3764,7 @@ add_namespace = greneclyf_hive
 		}
 	}	
 
-	### CHN ###
+### CHN ###
 	# DELEGATION TO CHN #
 	country_event = {
 		id = greneclyf_foregin.16
@@ -4079,8 +4081,7 @@ add_namespace = greneclyf_hive
 		}
 	}	
 	
-	## Main patch - Core ##
-
+## Main patch - Core ##
 	# Realpolitik #
 	country_event = {
 		id = greneclyf_core.1
@@ -4119,7 +4120,6 @@ add_namespace = greneclyf_hive
 				}
 			}
 		}
-
 
 		# Reject #
 		option = {
@@ -5074,7 +5074,7 @@ add_namespace = greneclyf_hive
 
 		# GYTHA #
 		option = {
-			custom_effect_tooltip = NCH_elect_gytha_chose
+			# custom_effect_tooltip = NCH_elect_gytha_chose
 			name = greneclyf_core.117.a
 
 			add_political_power = 100
@@ -5083,20 +5083,48 @@ add_namespace = greneclyf_hive
 				remove_country_leader_role = yes
 			}
 
-			create_country_leader = {
-				name = NCH_Gytha_iron_lady
-				picture = GFX_NCH_Steel_Gytha
-				traits = {
-					The_Steel_lady
+			set_country_flag = NCH_manicpor_unlocked
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
+			}
+
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
 				}
-				ideology = conservatism
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_naive_reformer
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_naive_reformer
+						add = steel_lady
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_god_chosen_queen
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_god_chosen_queen
+						add = steel_lady
+					}
+				}
 			}
 		}
 
 		# RIVER SVYRL #
 		option = {
 			name = greneclyf_core.117.b
-			custom_effect_tooltip = NCH_elect_svirl_chose
+			# custom_effect_tooltip = NCH_elect_svirl_chose
 			set_nationality = RCT
 
 			add_stability = -0.6
@@ -5173,9 +5201,9 @@ add_namespace = greneclyf_hive
 
 
 
-	### END MAIN PATCH ###
+### END MAIN PATCH ###
 
-	### ARCTIC ###
+### ARCTIC ###
 	# Expedition #
 	country_event = {
 		id = greneclyf_arctic.1
@@ -5234,3 +5262,4 @@ add_namespace = greneclyf_hive
 		
 		}
 	}
+##	

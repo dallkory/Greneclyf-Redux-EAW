@@ -171,6 +171,10 @@ add_tech_bonus = {
 	technology = tech_changeling_a2
 }
 
+set_variable = {
+    NCH_queen_gytha_portrait = 1
+}
+
 add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.73

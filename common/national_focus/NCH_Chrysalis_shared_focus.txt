@@ -9,6 +9,7 @@ Shared_focus = {
 		or = {
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
+			has_completed_focus = NCH_shield_and_sword_harmony
 		}
 	}
 
@@ -17,6 +18,7 @@ Shared_focus = {
 			has_country_leader = NCH_Svirl_chosen_leader
 		}
 		or = {
+			has_completed_focus = NCH_shield_and_sword_harmony
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
 			has_country_flag = NCH_queen_hive_abmitions
@@ -30,6 +32,7 @@ Shared_focus = {
 			has_country_flag = NCH_queen_hive_abmitions
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
+			has_completed_focus = NCH_shield_and_sword_harmony
 			has_war_with = CHN
 		}
 	}
@@ -130,6 +133,7 @@ Shared_focus = {
 		}	
 	}
 }
+
 Shared_focus = {
 	id = NCH_Queen_Ditrisium
 	icon = GFX_goal_queen_of_ditrisium
@@ -142,6 +146,10 @@ Shared_focus = {
 	}
 	x = 9
 	y = 4
+
+	available = {
+		has_government = democratic
+	}
 
 	completion_reward = {
 		country_event = {
@@ -157,6 +165,7 @@ Shared_focus = {
 		}
 
 		custom_effect_tooltip = NCH_run_with_time
+		activate_mission = NCH_chrysalis_resistance_mission
 	}
 }
 

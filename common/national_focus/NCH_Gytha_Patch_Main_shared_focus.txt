@@ -11,14 +11,14 @@
 shared_focus = {
 	id = NCH_Queen_Gytha_Patch
 	icon = GFX_goal_after_storm
-	cost = 0
+	cost = 1
 	x = 33
 	y = 15
 
 	available = {
 		or = {
 		has_government = democratic
-		has_country_flag = NCH_crisis_end
+		# has_country_flag = NCH_crisis_end
 		has_completed_focus = NCH_final_crisis
 		}
 	}
@@ -31,7 +31,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		#add_stability = 0.15
+		custom_effect_tooltip = NCH_gytha_president_open
+		add_stability = 0.15
+
+		set_country_flag = NCH_presidentpor_unlocked
 	}
 }
 
@@ -1917,6 +1920,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		add_war_support = 0.1		
 		if = {
 			limit = {
@@ -2871,6 +2875,8 @@ shared_focus = {
 	y = 25
 
 	completion_reward = {
+		custom_effect_tooltip = NCH_gytha_maniac_open
+		set_country_flag = NCH_manicpor_unlocked
 		set_country_flag = NCH_fed_found
 
 		country_event = {

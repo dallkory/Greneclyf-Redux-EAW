@@ -1,0 +1,16 @@
+
+debug_general = {
+	priority = 1000
+	icon = GFX_decision_EMP_icon
+	picture = GFX_decision_EMP_logo
+	
+	allowed = {
+		original_tag = NCH
+		is_debug = yes
+	}
+	
+	
+	#visible = {
+	#	has_government = democratic
+	#}
+}

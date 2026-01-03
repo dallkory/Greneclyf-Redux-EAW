@@ -2,10 +2,30 @@ spriteTypes = {
 
 	### REDUX ###
 	spriteType = {
-		name = "GFX_event_"
-		textureFile = "gfx/event_picture/"
+		name = "GFX_event_legacy"
+		textureFile = "gfx/event_picture/sadbugs.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_legacy"
+		textureFile = "gfx/event_picture/sadbugs.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_oirechtas"
+		textureFile = "gfx/event_picture/queenhall.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_gytha_jorney"
+		textureFile = "gfx/event_picture/event_jorney.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_event_way_to_home"
+		textureFile = "gfx/event_picture/event_way_to_home.tga"
 	}
 
 
-	
+
 }

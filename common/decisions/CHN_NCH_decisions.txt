@@ -20,7 +20,7 @@ CHN_NCH_resistance = {
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = NCH_chrysalis_resistance_mission
-				days = -30
+				days = 35
 			}
 		}
 	}

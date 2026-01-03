@@ -7,6 +7,8 @@ NCH_Gytha_iron_lady:0 "Steel Lady Gytha"
 NCH_oiren_of_oir:0 "Oiren of Oir"
 NCH_cader_sclerite:0 "Cader Sclerite"
 
+NCH_Helvia:0 "Queen Helvia"
+
 NCH_riv_senate:0 "Temporary Senate of the River Coalition"
 
 Arctic_wastland:0 "Arctic Wasteland"
@@ -1439,6 +1441,10 @@ NCH_arctic_cost_tooltip:0 "The expedition to the island will cost us 1,200 worke
 
 # FRACTION #
 NCH_fraction_neighborhood:0 "Llira Front"
+
+### TOOL TIPS AND COUNTRY FLAGS ###
+NCH_gytha_president_open:0 "§3Allows you to change Queen Gytha's portrait to the presidential one§!"
+NCH_gytha_maniac_open:0 "§4Allows you to change Queen Gytha's portrait to the Iron Lady§!"
 
 NCH_early_military_position:0 "§RWARNING: TAKING THIS FOCUS TOO EARLY WILL LEAD TO IRREVERSIBLE CONSEQUENCES§\n\n \n"
 

@@ -1,0 +1,172 @@
+scripted_gui = {
+   slp = { 
+     window_name = "slp_container"
+ 
+       context_type = player_context
+	   parent_window_token = politics_tab
+ 
+       visible = {
+            #OR = {
+				tag = NCH	
+			#}
+        }
+ 
+        effects = {
+            slp_icon_click = {
+				if = {
+					limit = {
+						AND = {
+							TAG = NCH
+							has_country_leader = {
+								ruling_only = yes
+								character = NCH_queen_gytha
+							}
+							#NOT = {
+							#	has_country_flag = CHE_machine_start
+							#}
+						}
+						NOT = {
+							has_country_flag = NCH_contianer_open
+						}
+					}
+					set_country_flag = NCH_contianer_open
+				}
+				else_if = {
+					limit = {
+						has_country_flag = NCH_contianer_open
+					}
+					clr_country_flag = NCH_contianer_open
+				}
+				
+            }
+        }
+        triggers = {
+			slp_icon_click_enabled = {
+				always = yes
+			}
+        }
+    }
+	
+	
+	portraitchange_gui_panel_window = {
+		context_type = player_context
+
+		window_name = "portraitchange_gui_panel_window"
+		parent_window_token = politics_tab
+
+		visible = {
+			#OR = {
+				tag = NCH
+			#}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+	
+	### Gytha ###
+	slp_menu_NCH = {
+		context_type = player_context
+		parent_window_name = "portraitchange_gui_panel_window_instance"
+		
+		window_name = "slp_menu_NCH_container"
+		
+		visible = {
+			has_country_flag = NCH_contianer_open
+		}
+		
+		effects = {
+            slp_NCH_close_click = {
+                clr_country_flag = NCH_contianer_open
+            }
+			leader_frame1_NCH_click = { #Starter
+				set_variable = {
+					NCH_queen_gytha_portrait = 1
+				}
+				NCH_queen_gytha = {
+					set_portraits = {
+						civilian = {
+							large = "GFX_NCH_Starter_Gytha"
+						}
+					}
+				}
+			}
+			leader_frame2_NCH_click = { #Presidential
+				set_variable = {
+					NCH_queen_gytha_portrait = 2
+				}
+				NCH_queen_gytha = {
+					set_portraits = {
+						civilian = {
+							large = "GFX_NCH_President_Gytha"
+						}
+					}
+				}
+				
+			}
+			leader_frame3_NCH_click = { #Manic
+				set_variable = {
+					NCH_queen_gytha_portrait = 3
+				}
+				NCH_queen_gytha = {
+					set_portraits = {
+						civilian = {
+							large = "GFX_NCH_Steel_Gytha"
+						}
+					}
+				}
+			}
+		}
+		
+		ai_enabled = {
+			tag = GER
+		}
+		
+		ai_NCHck = {
+			NCHck_variable = { ROOT.ger_port_2 < 0.99 }
+			NCHck_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_NCHck = {
+            NCHck_variable = { ger_port_2 < 0.99 }
+        }
+		
+        triggers = {
+			slp_NCH_close_enabled = {
+				always = yes
+			}
+			leader_frame1_NCH_click_enabled = {
+				NOT = {
+					check_variable = {
+						NCH_queen_gytha_portrait = 1
+					}
+				}
+			}
+			leader_frame2_NCH_click_enabled = {
+				AND = {
+					has_country_flag = NCH_presidentpor_unlocked
+					NOT = {
+						check_variable = {
+							NCH_queen_gytha_portrait = 2
+						}
+					}
+				}
+			}
+			leader_frame3_NCH_click_enabled = {
+				AND = {
+					has_country_flag = NCH_manicpor_unlocked
+					NOT = {
+						check_variable = {
+							NCH_queen_gytha_portrait = 3
+						}
+					}
+				}
+			}
+        }
+	}
+	
+}

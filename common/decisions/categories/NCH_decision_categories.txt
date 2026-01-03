@@ -127,9 +127,9 @@ NCH_change_portrait_category = {
 		original_tag = NCH
 	}
 	priority = {
-		base = 100
+		base = 0
 	}
-	
+
 	visible = {
 		has_government = democratic
 	}
@@ -198,7 +198,7 @@ NCH_crisis_category = {
 	}
 }
 NCH_obsidian_category = {
-	icon = changeling_category_icon
+	icon = GFX_decision_category_obsidian_trade
 	allowed = {
 		original_tag = NCH
 	}

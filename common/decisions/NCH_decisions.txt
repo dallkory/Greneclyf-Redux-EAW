@@ -63,16 +63,46 @@ NCH_debug_decision = {
 		#	has_country_flag = NCH_fed_found
 		#}
 		complete_effect = {
-			remove_country_leader_role = yes
+			#remove_country_leader_role = yes
+			set_country_flag = NCH_manicpor_unlocked
+			set_country_flag = NCH_presidentpor_unlocked
 
-			create_country_leader = {
-				name = NCH_Gytha_iron_lady
-				picture = GFX_NCH_Steel_Gytha
-				traits = {
-					The_Steel_lady
-				}
-				ideology = conservatism
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
 			}
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_naive_reformer
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_naive_reformer
+						add = steel_lady
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_god_chosen_queen
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_god_chosen_queen
+						add = steel_lady
+					}
+				}
+			}
+
+			
 
 			NCH = {
 				every_state = {
@@ -214,22 +244,32 @@ NCH_debug_decision = {
 NCH_chrysalis_category = {
 	NCH_chrysalis_resistance_mission = {
 		priority = 1
-		icon = x
-		is_good = no
+		icon = GFX_decision_great_party_mission
+		is_good = yes
 		fire_only_once = yes
 
+		days_remove = 0
 		days_mission_timeout = 90
+
 		activation = {
+			always = no
+		}
+
+		available = {
 			or = {
-				has_completed_focus = NCH_Queen_Ditrisium
-				#has_country_flag = NCH_debug_vision
+				CHN = {
+					is_puppet_of = NCH
+				}
+				CHN = {
+					exists = no
+				}
 			}
 		}
 
 		cancel_trigger = {
-			not = {
-				has_government = democratic
-				is_puppet = no
+			or = {
+				not = { has_government = democratic }
+				is_puppet = yes
 			}
 		}
 
@@ -296,7 +336,7 @@ NCH_chrysalis_category = {
 
 	NCH_chn_high_class = {
 		icon = d
-		cost = 200
+		cost = 100
 		days_remove = 30
 
 		visible = {
@@ -310,11 +350,11 @@ NCH_chrysalis_category = {
 		on_map_mode = map_and_decisions_view
 
 		available = {
-			has_political_power > 199
+			has_political_power > 99
 		}
 
 		modifier = {
-			civilian_factory_use = 10
+			civilian_factory_use = 7
 			political_power_cost = 0.17
 		}
 
@@ -342,7 +382,11 @@ NCH_chrysalis_category = {
 		}
 
 		complete_effect = {
-			add_political_power = -200
+			add_political_power = -100
+			add_days_mission_timeout = {
+				mission = NCH_chrysalis_resistance_mission
+				days = -15
+			}
 		}
 	}
 
@@ -730,6 +774,7 @@ NCH_fed_found_category = {
 		}
 
 		complete_effect = {
+			set_country_flag = NCH_manicpor_unlocked
 			set_country_flag = NCH_war_fed_found
 			hidden_effect = {
 					if = {
@@ -972,13 +1017,41 @@ NCH_fed_found_category = {
 			NCH = {
 				set_cosmetic_tag = NCH_River
 			}
+			
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
+			}
 
-			remove_country_leader_role = yes
-			create_country_leader = {
-				name = NCH_Gytha_iron_lady
-				picture = GFX_NCH_Steel_Gytha
-				traits = { The_Steel_lady }
-				ideology = conservatism
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_naive_reformer
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_naive_reformer
+						add = steel_lady
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_god_chosen_queen
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_god_chosen_queen
+						add = steel_lady
+					}
+				}
 			}
 		}
 	}
@@ -1060,6 +1133,7 @@ NCH_fed_found_category = {
 		}
 
 		complete_effect = {
+			set_country_flag = NCH_manicpor_unlocked
 			set_country_flag = NCH_peace_fed_found
 			hidden_effect = {
 
@@ -1141,18 +1215,45 @@ NCH_fed_found_category = {
 					}
 				}
 			}
-			
 
 			NCH = {
 				set_cosmetic_tag = NCH_River
 			}
 
-			remove_country_leader_role = yes
-			create_country_leader = {
-				name = NCH_Gytha_iron_lady
-				picture = GFX_NCH_Steel_Gytha
-				traits = { The_Steel_lady }
-				ideology = conservatism
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
+			}
+
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_naive_reformer
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_naive_reformer
+						add = steel_lady
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_god_chosen_queen
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_god_chosen_queen
+						add = steel_lady
+					}
+				}
 			}
 		}
 	}
@@ -2040,6 +2141,10 @@ NCH_gov_rotation_category = {
 
 		available = {
 			has_country_flag = NCH_new_gov_election
+		}
+
+		visible = {
+			has_completed_focus = NCH_to_the_new_order
 		}
 		
 		complete_effect = {

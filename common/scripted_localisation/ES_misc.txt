@@ -1,0 +1,55 @@
+defined_text = { # Manic tooltip
+	name = GETPORTRAIT_MANIC_TOOLTIP
+	
+	text = {
+		trigger = {
+			has_country_flag = NCH_manicpor_unlocked
+		}
+		localization_key = manic_portrait
+	}
+	text = {
+		localization_key = portrait_locked
+	}
+}
+
+defined_text = { # Manic tooltip delayed
+	name = GETPORTRAIT_MANIC_TOOLTIP_DELAYED
+	
+	text = {
+		trigger = {
+			has_country_flag = NCH_manicpor_unlocked
+		}
+		localization_key = manic_portrait_del
+	}
+	text = {
+		localization_key = manic_portrait_del_locked
+	}
+}
+
+defined_text = { # pres tooltip
+	name = GETPORTRAIT_PRES_TOOLTIP
+	
+	text = {
+		trigger = {
+			has_country_flag = NCH_presidentpor_unlocked
+		}
+		localization_key = presidential_portrait
+	}
+	text = {
+		localization_key = portrait_locked
+	}
+}
+
+defined_text = { # pres tooltip delayed
+	name = GETPORTRAIT_PRES_TOOLTIP_DELAYED
+	
+	text = {
+		trigger = {
+			has_country_flag = NCH_presidentpor_unlocked
+		}
+		localization_key = pres_portrait_del
+	}
+	text = {
+		localization_key = pres_portrait_del_locked
+	}
+}

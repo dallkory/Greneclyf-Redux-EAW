@@ -1,0 +1,32 @@
+spriteTypes = {
+	#GUI#
+	
+	spriteType = {
+		name = "GFX_portrait_select_icon"
+		textureFile = "gfx/interface/scripted_gui/portrait_select/portrait_select_icon.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_NCH_Starter_Gytha"
+		textureFile = "gfx/leaders/NCH/Queen.tga"
+	}
+	spriteType = {
+		name = "GFX_NCH_President_Gytha"
+		textureFile = "gfx/leaders/NCH/President_Gytha.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_NCH_Starter_Gytha_frame"
+		textureFile = "gfx/interface/scripted_gui/portrait_select/gytha_queen.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_NCH_Manic_Gytha_frame"
+		textureFile = "gfx/interface/scripted_gui/portrait_select/gytha_manic.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_NCH_President_Gytha_Frame"
+		textureFile = "gfx/interface/scripted_gui/portrait_select/gytha_president.tga"
+	}
+}

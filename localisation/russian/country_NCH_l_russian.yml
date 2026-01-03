@@ -7,6 +7,8 @@ NCH_Gytha_iron_lady:0 "Стальная леди Гита"
 NCH_oiren_of_oir:0 "Королева Ойрен"
 NCH_cader_sclerite:0 "Кейдер Сциерите"
 
+NCH_Helvia:0 "Королева Хельвия"
+
 NCH_riv_senate:0 "Временное правительство Речной Коалиции"
 
 Arctic_wastland:0 "Пустошь"
@@ -1507,6 +1509,9 @@ NCH_arctic_cost_tooltip:0 "Экспедиция на остров обойдёт
 NCH_fraction_neighborhood:0 "Фронт Ллира"
 
 ### TOOL TIPS AND COUNTRY FLAGS ###
+NCH_gytha_president_open:0 "§3Позволяет изменить портрет королевы Гиты на президеентский§!"
+NCH_gytha_maniac_open:0 "§4Позволяет изменить портрет королевы Гиты на Стальную леди§!"
+
 NCH_early_military_position:0 "§RВНИМАНИЕ, ВЗЯТИЕ ЭТОГО ФОКУСА СЛИШКОМ РАНО ПРИВЕДЕТ К НЕПОПРАВИМЫМ ПОСЛЕДСТВИЯМ§\n\n\n"
 
 NCH_hunger_defeat:0 "§RГолод был побеждён§!"

@@ -30,5 +30,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/goverment_rotations.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_category_obsidian_trade"
+		texturefile = "gfx/interface/decisions/obsidian_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_great_party_mission"
+		texturefile = "gfx/interface/decisions/decision_revolt.dds"
+	}
 }
 

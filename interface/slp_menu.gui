@@ -1,0 +1,2467 @@
+guiTypes = {
+	containerWindowType = {
+		name = "slp_container"
+		position = { x = -200 y = -245 }
+		
+		buttonType = {
+			name ="slp_icon"
+			spriteType = "GFX_portrait_select_icon"
+			position = { x= 345 y = 470 }
+			Orientation = "UPPER_LEFT"
+			
+			pdx_tooltip = "PORTRAIT_TOOLTIP"
+			pdx_tooltip_delayed = "PORTRAIT_TOOLTIP_DELAYED"
+		}
+	}
+	
+	containerWindowType = {
+		name = "portraitchange_gui_panel_window"
+		position = { x = 545 y = 0 }
+		size = { width=382 height=1040 }
+
+		background = {
+			name = "background"
+			spriteType = "GFX_tiled_window_transparent_transparent"
+		}
+	}
+	
+	### Tremor ###
+	containerWindowType = {
+		name = "slp_menu_NCH_container"
+		#position = {x=-545 y=4}
+		size = { width=382 height=440 }
+		clipping = no
+		position = { x= -400 y = 0 }
+		show_position = { x= 0 y = 0 }
+		show_animation_type = accelerated 
+		hide_animation_type = decelerated
+		
+		animation_time = 400
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_w_close"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_NCH_headline"
+			position = {x=133 y=22}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "slp_NCH_grid"
+			position = { x = 0 y = 45 }
+			size = { width=382 height=575 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_plain_bg"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_NCH"
+				spriteType = "GFX_NCH_Starter_Gytha_frame"
+				position = { x = 12 y = 20 }
+				pdx_tooltip = old_portrait
+				pdx_tooltip_delayed = old_portrait_delayed
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_NCH_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "old_portrait"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = old_portrait
+				pdx_tooltip_delayed = old_portrait_delayed
+			}
+			
+			buttonType = {
+				name = "leader_frame2_NCH"
+				spriteType = "GFX_NCH_President_Gytha_Frame"
+				position = { x = 198 y = 20 }
+				pdx_tooltip = PORTRAIT_PRES_TOOLTIP
+				pdx_tooltip_delayed = PORTRAIT_PRES_TOOLTIP_DELAYED
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_NCH_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "presidential_portrait"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = PORTRAIT_PRES_TOOLTIP
+				pdx_tooltip_delayed = PORTRAIT_PRES_TOOLTIP_DELAYED
+			}
+			
+			buttonType = {
+				name = "leader_frame3_NCH"
+				spriteType = "GFX_NCH_Manic_Gytha_frame"
+				position = { x = 12 y = 300 }
+				pdx_tooltip = PORTRAIT_MANIC_TOOLTIP
+				pdx_tooltip_delayed = PORTRAIT_MANIC_TOOLTIP_DELAYED
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_NCH_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "manic_portrait"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = PORTRAIT_MANIC_TOOLTIP
+				pdx_tooltip_delayed = PORTRAIT_MANIC_TOOLTIP_DELAYED
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_NCH_close"
+			position = { x = -45 y = 11 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Baldwin ###
+	containerWindowType = {
+		name = "slp_menu_ENG_1_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ENG_1_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ENG_1_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_ENG1"
+				spriteType = "GFX_pol_leader_frame_baldwin1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_name"
+				position = { x = 18 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame1_ENG2"
+				spriteType = "GFX_pol_leader_frame_baldwin3"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ENG2_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame1_ENG3"
+				spriteType = "GFX_pol_leader_frame_baldwin2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_ENG_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame1_ENG4"
+				spriteType = "GFX_pol_leader_frame_baldwin4"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_ENG_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ENG_1_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Chamberlain ###
+	containerWindowType = {
+		name = "slp_menu_ENG_2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ENG_2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ENG_2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame2_ENG1"
+				spriteType = "GFX_pol_leader_frame_chamberlain1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_name"
+				position = { x = 18 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_ENG2"
+				spriteType = "GFX_pol_leader_frame_chamberlain3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ENG2_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_ENG3"
+				spriteType = "GFX_pol_leader_frame_chamberlain2"
+				position = { x = 198 y = 20 }
+			} 
+			
+			instantTextboxType = {
+				name = "leader_frame3_ENG_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ENG_2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Churchill ###
+	containerWindowType = {
+		name = "slp_menu_ENG_3_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ENG_3_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ENG_3_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame3_ENG1"
+				spriteType = "GFX_pol_leader_frame_churchill1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_name"
+				position = { x = 18 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame3_ENG2"
+				spriteType = "GFX_pol_leader_frame_churchill3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ENG3_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_ENG3"
+				spriteType = "GFX_pol_leader_frame_churchill2"
+				position = { x = 198 y = 20 }
+			} 
+			
+			instantTextboxType = {
+				name = "leader_frame3_ENG_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ENG_3_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Roosevelt ###
+	containerWindowType = {
+		name = "slp_menu_USA_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_USA_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_USA_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_USA"
+				spriteType = "GFX_pol_leader_frame_roosevelt1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_GER_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_USA"
+				spriteType = "GFX_pol_leader_frame_roosevelt3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_USA_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_USA"
+				spriteType = "GFX_pol_leader_frame_roosevelt2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_USA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_USA"
+				spriteType = "GFX_pol_leader_frame_roosevelt4"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_USA_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_USA_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Truman ###
+	containerWindowType = {
+		name = "slp_menu_USA_2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_USA_2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_USA_2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_USA_2"
+				spriteType = "GFX_pol_leader_frame_truman1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_USA_2_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_USA_2"
+				spriteType = "GFX_pol_leader_frame_truman3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_USA_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_USA_2"
+				spriteType = "GFX_pol_leader_frame_truman2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_USA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_USA_2"
+				spriteType = "GFX_pol_leader_frame_truman4"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_USA_2_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_USA_2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Landon ###
+	containerWindowType = {
+		name = "slp_menu_USA_3_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_USA_3_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_USA_3_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_USA_3"
+				spriteType = "GFX_pol_leader_frame_landon1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_USA_3_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_USA_3"
+				spriteType = "GFX_pol_leader_frame_landon3"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_USA_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_USA_3"
+				spriteType = "GFX_pol_leader_frame_landon2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_USA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_USA_3"
+				spriteType = "GFX_pol_leader_frame_landon4"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_USA_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_USA_3_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Stalin ###
+	containerWindowType = {
+		name = "slp_menu_SOV_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_SOV_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_SOV_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_SOV"
+				spriteType = "GFX_pol_leader_frame_stalin1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_SOV_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_SOV"
+				spriteType = "GFX_pol_leader_frame_stalin3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_SOV_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_SOV"
+				spriteType = "GFX_pol_leader_frame_stalin2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_USA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_SOV"
+				spriteType = "GFX_pol_leader_frame_stalin4"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_SOV_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_SOV_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Mussolini ###
+	containerWindowType = {
+		name = "slp_menu_ITA_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ITA_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ITA_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_ITA"
+				spriteType = "GFX_pol_leader_frame_mussolini1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ITA_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_ITA"
+				spriteType = "GFX_pol_leader_frame_mussolini3"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_ITA_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_ITA"
+				spriteType = "GFX_pol_leader_frame_mussolini2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_ITA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_ITA"
+				spriteType = "GFX_pol_leader_frame_mussolini4"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_ITA_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ITA_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Hirohito ###
+	containerWindowType = {
+		name = "slp_menu_JAP_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_JAP_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_JAP_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_JAP"
+				spriteType = "GFX_pol_leader_frame_hirohito1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_JAP_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_JAP"
+				spriteType = "GFX_pol_leader_frame_hirohito3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_JAP_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_hirohito2"
+				name = "leader_frame3_JAP"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_JAP_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_JAP_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Daladier ###
+	containerWindowType = {
+		name = "slp_menu_FRA_container"
+		position = {x=-540 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_FRA_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_FRA_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_FRA"
+				spriteType = "GFX_pol_leader_frame_daladier1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_FRA_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_FRA"
+				spriteType = "GFX_pol_leader_frame_daladier3"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_FRA_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_daladier2"
+				name = "leader_frame3_FRA"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_FRA_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_FRA"
+				spriteType = "GFX_pol_leader_frame_daladier4"
+				position = { x = 12 y = 300	 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_FRA_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_FRA_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### de Gaulle ###
+	containerWindowType = {
+		name = "slp_menu_FRA_2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_FRA_2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_FRA_2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_FRA_2"
+				spriteType = "GFX_pol_leader_frame_gaulle1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_FRA_2_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_FRA_2"
+				spriteType = "GFX_pol_leader_frame_gaulle3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_FRA_2_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_gaulle2"
+				name = "leader_frame3_FRA_2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_FRA_2_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_FRA_2_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Mosley ###
+	containerWindowType = {
+		name = "slp_menu_ENG_fascist_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ENG_fascist_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ENG_fascist_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_ENG_fascist"
+				spriteType = "GFX_pol_leader_frame_mosley1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ENG_fascist_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_ENG_fascist"
+				spriteType = "GFX_pol_leader_frame_mosley3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_ENG_fascist_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_mosley2"
+				name = "leader_frame3_ENG_fascist"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_ENG_fascist_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ENG_fascist_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Edward VIII ###
+	containerWindowType = {
+		name = "slp_menu_ENG_king_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_ENG_king_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_ENG_king_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_ENG_king"
+				spriteType = "GFX_pol_leader_frame_edward1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_ENG_king_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_ENG_king"
+				spriteType = "GFX_pol_leader_frame_edward3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_ENG_king_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_edward2"
+				name = "leader_frame3_ENG_king"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_ENG_king_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_ENG_king"
+				spriteType = "GFX_pol_leader_frame_edward4"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_SOV_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_ENG_king_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	containerWindowType = {
+		name = "slp_menu_GER_king_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_GER_king_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_GER_king_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_GER_king"
+				spriteType = "GFX_pol_leader_frame_wilhelm1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_GER_king_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = { 
+				name = "leader_frame2_GER_king"
+				spriteType = "GFX_pol_leader_frame_wilhelm2"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_GER_king_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_wilhelm3"
+				name = "leader_frame3_GER_king"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_GER_king_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_GER_king"
+				spriteType = "GFX_pol_leader_frame_wilhelm4"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_SOV_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_GER_king_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Victoira & Wilhelm III ###
+	containerWindowType = {
+		name = "slp_menu_GER_king_heir_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_GER_king_heir_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_GER_king_heir_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_GER_wilhelm"
+				spriteType = "GFX_pol_leader_frame_wilhelm2_1"
+				position = { x = 12 y = 20 }
+			}
+			buttonType = {
+				name = "leader_frame1_GER_victoria"
+				spriteType = "GFX_pol_leader_frame_victoria1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_GER_king_heir_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_GER_wilhelm"
+				spriteType = "GFX_pol_leader_frame_wilhelm2_3"
+				position = { x = 12 y = 300 }
+			}
+			buttonType = {
+				name = "leader_frame2_GER_victoria"
+				spriteType = "GFX_pol_leader_frame_victoria3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_GER_king_heir_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_wilhelm2_2"
+				name = "leader_frame3_GER_wilhelm"
+				position = { x = 198 y = 20 }
+			}
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_victoria2"
+				name = "leader_frame3_GER_victoria"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_GER_king_heir_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_GER_king_heir_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### ATATURK ###
+	containerWindowType = {
+		name = "slp_menu_TUR_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_TUR_king_heir_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_TUR_king_heir_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_TUR_ataturk"
+				spriteType = "GFX_pol_leader_frame_ataturk1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_TUR_king_heir_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_TUR_ataturk"
+				spriteType = "GFX_pol_leader_frame_ataturk3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_TUR_king_heir_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Alternate 2"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_ataturk2"
+				name = "leader_frame3_TUR_ataturk"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_TUR_king_heir_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate 1"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				spriteType = "GFX_pol_leader_frame_ataturk4"
+				name = "leader_frame4_TUR_ataturk"
+				position = { x = 198 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_TUR_king_heir_name"
+				position = { x = 210 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_TUR_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Ismet ###
+	containerWindowType = {
+		name = "slp_menu_TUR2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_TUR_king_heir_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_TUR_king_heir_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_TUR_ismet"
+				spriteType = "GFX_pol_leader_frame_ismet1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_TUR_king_heir_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_TUR_ismet"
+				spriteType = "GFX_pol_leader_frame_ismet3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_TUR_king_heir_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_TUR_ismet"
+				spriteType = "GFX_pol_leader_frame_ismet2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_TUR_king_heir_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_TUR2_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "slp_menu_POL_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_POL_king_heir_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_POL_king_heir_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_POL"
+				spriteType = "GFX_pol_leader_frame_ignancy1"
+				position = { x = 12 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_POL_name"
+				position = { x = 20 y = 245 }
+				font = "hoi_18mbs"
+				text = "Generic"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_POL"
+				spriteType = "GFX_pol_leader_frame_ignancy3"
+				position = { x = 12 y = 300 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_POL_name"
+				position = { x = 20 y = 525 }
+				font = "hoi_18mbs"
+				text = "Black & White"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_POL"
+				spriteType = "GFX_pol_leader_frame_ignancy2"
+				position = { x = 198 y = 20 }
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_POL_king_heir_name"
+				position = { x = 210 y = 245 }
+				font = "hoi_18mbs"
+				text = "Alternate"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_POL_close"
+			position = { x = -50 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

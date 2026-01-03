@@ -1,0 +1,18 @@
+﻿l_russian:
+ SELECT_PORTRAIT:0 "Выбрать портрет"
+ old_portrait:0 "Традиционный"
+ presidential_portrait:0 "§3Президентский§!"
+
+ PORTRAIT_TOOLTIP:0 "Сменить портрет"
+ PORTRAIT_TOOLTIP_DELAYED:0 "Косметический переключатель портретов"
+
+ PORTRAIT_MANIC_TOOLTIP:0 "[GETPORTRAIT_MANIC_TOOLTIP]"
+ PORTRAIT_MANIC_TOOLTIP_DELAYED: "[GETPORTRAIT_MANIC_TOOLTIP_DELAYED]"
+ manic_portrait: "§4Стальная леди§!"
+ portrait_locked:0 "§tЗакрыто§!"
+ manic_portrait_del:0 "§Linsert brief portrait description§!"
+ manic_portrait_del_locked:0 "§YБудет открыто по ивенту / фокусу§!"
+ 
+ PORTRAIT_PRES_TOOLTIP_DELAYED:0 "[GETPORTRAIT_PRES_TOOLTIP_DELAYED]"
+ pres_portrait_del:0 "§Linsert brief portrait description§!"
+ pres_portrait_del_locked:0 "§YБудет открыто по ивенту / фокусу§!"
