@@ -2275,6 +2275,113 @@ NCH_celarl_laboratory = {
 		}
 	}
 
+	NCH_change_portrait_category = {
+		NCH_Gytha_vanila_portait_to_steel_lady = {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_queen_gytha
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_Steel_Gytha
+				}
+			}
+		}
+
+		NCH_Gytha_vanila_portait_to_president= {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_queen_gytha
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_President_Gytha
+				}
+			}
+		}
+
+		NCH_Gytha_vanila_portait_to_vanila = {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_queen_gytha
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_Queen_Gytha
+				}
+			}
+		}
+
+		
+		
+		NCH_Gytha_steel_lady_portrait_to_vanila = {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_Gytha_iron_lady
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_Queen_Gytha
+				}
+			}
+		}
+
+		NCH_Gytha_steel_lady_portrait_to_president = {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_Gytha_iron_lady
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_President_Gytha
+				}
+			}
+		}
+
+		NCH_Gytha_steel_lady_portrait_to_steel_lady = {
+			icon = generic_politics
+			days_re_enable = 1
+
+			visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = NCH_Gytha_iron_lady
+				}
+			}
+			complete_effect = {
+				set_country_leader_portrait = {
+       				portrait = GFX_NCH_Steel_Gytha
+				}
+			}
+		}
+	}
+
+
 	# NCH_submarine_category = {
 	# 	NCH_remove_submarine = {
 	# 		icon = GFX_decision_infiltrate_state

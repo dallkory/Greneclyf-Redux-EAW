@@ -182,7 +182,23 @@ Shared_focus = {
 		set_country_flag = NCH_old_guard
 		add_command_power = 30
 
+		NCH = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -11000
+			}
+			add_equipment_to_stockpile = {
+				type = magical_equipment
+				amount = -4000
+			}
+		}
+
 		REB = {
+			add_manpower = 25000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 11000
+			}
 			add_equipment_to_stockpile = {
 				type = magical_equipment
 				amount = 4000

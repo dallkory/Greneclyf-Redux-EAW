@@ -1424,8 +1424,18 @@ greneclyf_obsidian.3.d:0 "Наши дипломаты вернулись из д
 greneclyf_obsidian.3.a:0 "Королева уже отдала приказ: Пусть кристаллы текут рекой!. Эра изоляции Гринклифа подходит к концу!"
 
 ### DECISIONS ###
+NCH_change_portrait_category:0 "Смена портрета королевы"
+NCH_Gytha_vanila_portait_to_steel_lady:0 "Сменить портрет на Гиту-стальную леди"
+NCH_Gytha_vanila_portait_to_president:0 "Сменить портрет на Гиту-президента"
+NCH_Gytha_vanila_portait_to_vanila:0 "Вернуть портрет наивной"
+
+NCH_Gytha_steel_lady_portrait_to_vanila:0 "Сменить портрет на наивную Гиту"
+NCH_Gytha_steel_lady_portrait_to_president:0 "Сменить портрет на Гиту-президента"
+NCH_Gytha_steel_lady_portrait_to_steel_lady:0 "Вернуть портрет Гиты-стальной леди"
+
 NCH_new_gov_election:0 "Королева утвердила ротацию в правительстве"
 NCH_gov_rotation_cancel:0 "Отмена правительственной ротации"
+NCH_gov_rotation_category_desc:0 "Королева повелела проводить регулярную ротацию правительств при помощи случайной жеребьёвки. Это решение не позволит недобросовестным чиновникам засиживаться на своих местах, а также позволит держать оппозиционные фракции коммунистов и правых под контролем не давая им слишком много власти"
 NCH_arctic_expedition_category:0 "Экспедиция в Арктику"
 
 NCH_gov_rotation_category:0 "Правительственные выборы"

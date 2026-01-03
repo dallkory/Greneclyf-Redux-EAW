@@ -10,7 +10,7 @@ NCH_debug_decision = {
 }
 
 NCH_chrysalis_category = {
-	icon = GFX_unkmow
+	icon = GFX_decision_category_great_party
 	picture = GFX_decision_category_chn_queens_tower
 
 	priority = {
@@ -27,7 +27,7 @@ NCH_arctic_expedition_category = {
 }
 
 NCH_fed_found_category = {
-	icon = GFX_unkmow
+	icon = GFX_decision_category_form_river_federation
 	picture = GFX_decision_fed_war_found
 
 	priority = {
@@ -45,6 +45,7 @@ NCH_boost_harmony_river = {
 
 NCH_gov_rotation_category = {
 	icon = GFX_decision_category_eaw_vote
+	picture = GFX_decision_category_goverment_rotations
 
 	priority = {
 		base = 154
@@ -117,6 +118,20 @@ NCH_hunger_bop_category = {
 		has_power_balance = {
 			id = NCH_hunger_bop
 		}
+	}
+}
+
+NCH_change_portrait_category = {
+	icon = GFX
+	allowed = {
+		original_tag = NCH
+	}
+	priority = {
+		base = 100
+	}
+	
+	visible = {
+		has_government = democratic
 	}
 }
 
