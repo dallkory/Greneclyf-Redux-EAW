@@ -2324,7 +2324,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.6
 		title = greneclyf_base.6.t
 		desc = greneclyf_base.6.d
-		picture = GFX_event_event_way_to_home
+		picture = GFX_event_way_to_home
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2343,7 +2343,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.7
 		title = greneclyf_base.7.t
 		desc = greneclyf_base.7.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2358,7 +2358,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.700
 		title = greneclyf_base.700.t
 		desc = greneclyf_base.700.d
-		picture = GFX_unknow
+		picture = GFX_event_typography
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2375,7 +2375,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.8
 		title = greneclyf_base.8.t
 		desc = greneclyf_base.8.d
-		picture = GFX_unknow
+		picture = GFX_event_gitovka
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2426,7 +2426,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.9
 		title = greneclyf_base.9.t
 		desc = greneclyf_base.9.d
-		picture = GFX_unknow
+		picture = GFX_event_letter_from_vixit
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2446,7 +2446,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.32
 		title = greneclyf_base.32.t
 		desc = greneclyf_base.32.d
-		picture = GFX_unknow
+		picture = GFX_event_letter_from_vixit
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2464,27 +2464,27 @@ add_namespace = greneclyf_hive
 	}
 	
 
-	# CELARL LABORATORY #
-	country_event = {
-		id = greneclyf_base.18
-		title = greneclyf_base.18.t
-		desc = greneclyf_base.18.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # CELARL LABORATORY #
+	# country_event = {
+	# 	id = greneclyf_base.18
+	# 	title = greneclyf_base.18.t
+	# 	desc = greneclyf_base.18.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.18.a
-			set_country_flag = NCH_celarl_laboratory_opend
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_base.18.a
+	# 		set_country_flag = NCH_celarl_laboratory_opend
+	# 	}
+	# }
 
 	# HUNGER STARTS #
 	country_event = {
 		id = greneclyf_base.10
 		title = greneclyf_base.10.t
 		desc = greneclyf_base.10.d
-		picture = GFX_unknow
+		picture = GFX_event_equalitylovetolerance
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2519,65 +2519,65 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# unloyal elite #
-	country_event = {
-		id = greneclyf_base.11
-		title = greneclyf_base.11.t
-		desc = greneclyf_base.11.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # unloyal elite #
+	# country_event = {
+	# 	id = greneclyf_base.11
+	# 	title = greneclyf_base.11.t
+	# 	desc = greneclyf_base.11.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.11.a
+	# 	option = {
+	# 		name = greneclyf_base.11.a
 
-		}
-	}
+	# 	}
+	# }
 
-	# food limit #
-	country_event = {
-		id = greneclyf_base.12
-		title = greneclyf_base.12.t
-		desc = greneclyf_base.12.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # food limit #
+	# country_event = {
+	# 	id = greneclyf_base.12
+	# 	title = greneclyf_base.12.t
+	# 	desc = greneclyf_base.12.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.12.a
+	# 	option = {
+	# 		name = greneclyf_base.12.a
 
-		}
-	}
+	# 	}
+	# }
 
-	# unemployed #
-	country_event = {
-		id = greneclyf_base.13
-		title = greneclyf_base.13.t
-		desc = greneclyf_base.13.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # unemployed #
+	# country_event = {
+	# 	id = greneclyf_base.13
+	# 	title = greneclyf_base.13.t
+	# 	desc = greneclyf_base.13.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.13.a
+	# 	option = {
+	# 		name = greneclyf_base.13.a
 
-		}
-	}
+	# 	}
+	# }
 
-	# hunger defeat #
-	country_event = {
-		id = greneclyf_base.14
-		title = greneclyf_base.14.t
-		desc = greneclyf_base.14.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # hunger defeat #
+	# country_event = {
+	# 	id = greneclyf_base.14
+	# 	title = greneclyf_base.14.t
+	# 	desc = greneclyf_base.14.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.14.a
-			set_country_flag = NCH_hunger_defeat
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_base.14.a
+	# 		set_country_flag = NCH_hunger_defeat
+	# 	}
+	# }
 
 ### HUNGER DEFEAT ###
 
@@ -2587,7 +2587,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.15
 		title = greneclyf_base.15.t
 		desc = greneclyf_base.15.d
-		picture = GFX_unknow
+		picture = GFX_event_queenhall
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2601,7 +2601,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.16
 		title = greneclyf_base.16.t
 		desc = greneclyf_base.16.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2615,7 +2615,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.17
 		title = greneclyf_base.17.t
 		desc = greneclyf_base.17.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2651,7 +2651,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.21
 		title = greneclyf_base.21.t
 		desc = greneclyf_base.21.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 		option = {
@@ -2669,7 +2669,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.22
 		title = greneclyf_base.22.t
 		desc = greneclyf_base.22.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2693,7 +2693,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.23
 		title = greneclyf_base.23.t
 		desc = greneclyf_base.23.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2722,7 +2722,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.24
 		title = greneclyf_base.24.t
 		desc = greneclyf_base.24.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2743,7 +2743,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.40
 		title = greneclyf_base.40.t
 		desc = greneclyf_base.40.d
-		picture = GFX_unknow
+		picture = GFX_event_new_great_packts
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2762,7 +2762,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.41
 		title = greneclyf_base.41.t
 		desc = greneclyf_base.41.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2797,7 +2797,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.19
 		title = greneclyf_base.19.t
 		desc = greneclyf_base.19.d
-		picture = GFX_unknow
+		picture = GFX_event_legacy
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2816,7 +2816,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.20
 		title = greneclyf_base.20.t
 		desc = greneclyf_base.20.d
-		picture = GFX_unknow
+		picture = GFX_event_consummers
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2853,7 +2853,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.25
 		title = greneclyf_base.25.t
 		desc = greneclyf_base.25.d
-		picture = GFX_unknow
+		picture = GFX_event_under_amella
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2867,7 +2867,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.27
 		title = greneclyf_base.27.t
 		desc = greneclyf_base.27.d
-		picture = GFX_unknow
+		picture = GFX_event_typography
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2883,7 +2883,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.28
 		title = greneclyf_base.28.t
 		desc = greneclyf_base.28.d
-		picture = GFX_unknow
+		picture = GFX_event_church_support
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2899,7 +2899,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.29
 		title = greneclyf_base.29.t
 		desc = greneclyf_base.29.d
-		picture = GFX_unknow
+		picture = GFX_event_typography
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2912,40 +2912,40 @@ add_namespace = greneclyf_hive
 
 	## ##
 	# SOLDIERS RISING #
-	country_event = {
-		id = greneclyf_base.30
-		title = greneclyf_base.30.t
-		desc = greneclyf_base.30.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# country_event = {
+	# 	id = greneclyf_base.30
+	# 	title = greneclyf_base.30.t
+	# 	desc = greneclyf_base.30.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.30.a
+	# 	option = {
+	# 		name = greneclyf_base.30.a
 
-		}
-	}
+	# 	}
+	# }
 
 	# BLOOD IN THE STREETS #
-	country_event = {
-		id = greneclyf_base.31
-		title = greneclyf_base.31.t
-		desc = greneclyf_base.31.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# country_event = {
+	# 	id = greneclyf_base.31
+	# 	title = greneclyf_base.31.t
+	# 	desc = greneclyf_base.31.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_base.31.a
+	# 	option = {
+	# 		name = greneclyf_base.31.a
 
-		}
-	}
+	# 	}
+	# }
 
 	country_event = {
 		id = greneclyf_base.33
 		title = greneclyf_base.33.t
 		desc = greneclyf_base.33.d
-		picture = GFX_unknow
+		picture = GFX_event_island_sunrise
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2963,7 +2963,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.34
 		title = greneclyf_base.34.t
 		desc = greneclyf_base.34.d
-		picture = GFX_unknow
+		picture = GFX_event_letter_from_vixit
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2981,7 +2981,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.35
 		title = greneclyf_base.35.t
 		desc = greneclyf_base.35.d
-		picture = GFX_unknow
+		picture = GFX_event_finds
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -2989,7 +2989,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_base.35.a
 			country_event = {
 				id = greneclyf_base.36
-				days = 1
+				days = 5
 			}
 		}
 	}
@@ -2999,7 +2999,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.36
 		title = greneclyf_base.36.t
 		desc = greneclyf_base.36.d
-		picture = GFX_unknow
+		picture = GFX_event_finds
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3007,7 +3007,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_base.36.a
 			country_event = {
 				id = greneclyf_base.37
-				days = 0
+				days = 2
 			}
 		}
 	}
@@ -3017,7 +3017,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.37
 		title = greneclyf_base.37.t
 		desc = greneclyf_base.37.d
-		picture = GFX_unknow
+		picture = GFX_event_finds
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3025,7 +3025,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_base.37.a
 			country_event = {
 				id = greneclyf_base.38
-				days = 0
+				days = 3
 			}
 		}
 	}
@@ -3035,7 +3035,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.38
 		title = greneclyf_base.38.t
 		desc = greneclyf_base.38.d
-		picture = GFX_unknow
+		picture = GFX_event_finds
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3054,7 +3054,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_base.39
 		title = greneclyf_base.39.t
 		desc = greneclyf_base.39.d
-		picture = GFX_unknow
+		picture = GFX_event_finds
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3090,16 +3090,13 @@ add_namespace = greneclyf_hive
 	}
 
 	
-
-
-
 ### FORCES ###
 	# Navy 
 	country_event = {
 		id = greneclyf_forces.4
 		title = greneclyf_forces.4.t
 		desc = greneclyf_forces.4.d
-		picture = GFX_unknow
+		picture = GFX_event_ship
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3109,7 +3106,7 @@ add_namespace = greneclyf_hive
 		}
 
 		option = {
-			name = greneclyf_forces.4.a
+			name = greneclyf_forces.4.b
 			set_country_flag = NCH_silent_hunters_chose
 		}
 	}
@@ -3119,7 +3116,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_forces.5
 		title = greneclyf_forces.5.t
 		desc = greneclyf_forces.5.d
-		picture = GFX_unknow
+		picture = GFX_event_army_conference
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3139,7 +3136,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_forces.6
 		title = greneclyf_forces.6.t
 		desc = greneclyf_forces.6.d
-		picture = GFX_unknow
+		picture = GFX_event_violator
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3153,7 +3150,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_forces.7
 		title = greneclyf_forces.7.t
 		desc = greneclyf_forces.7.d
-		picture = GFX_unknow
+		picture = GFX_event_violator
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3167,7 +3164,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_forces.8
 		title = greneclyf_forces.8.t
 		desc = greneclyf_forces.8.d
-		picture = GFX_unknow
+		picture = GFX_event_Mount_jaggers
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3200,7 +3197,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_forces.10
 		title = greneclyf_forces.10.t
 		desc = greneclyf_forces.10.d
-		picture = GFX_unknow
+		picture = GFX_event_project_phoenix
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3209,39 +3206,39 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# Best of the best #
-	country_event = {
-		id = greneclyf_forces.1
-		title = greneclyf_forces.1.t
-		desc = greneclyf_forces.1.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # Best of the best #
+	# country_event = {
+	# 	id = greneclyf_forces.1
+	# 	title = greneclyf_forces.1.t
+	# 	desc = greneclyf_forces.1.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_forces.1.a
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_forces.1.a
+	# 	}
+	# }
 
-	country_event = {
-		id = greneclyf_forces.2
-		title = greneclyf_forces.2.t
-		desc = greneclyf_forces.2.d
-		picture = GFX_unkmow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# country_event = {
+	# 	id = greneclyf_forces.2
+	# 	title = greneclyf_forces.2.t
+	# 	desc = greneclyf_forces.2.d
+	# 	picture = GFX_unkmow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_forces.2.a
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_forces.2.a
+	# 	}
+	# }
 
 	### CHANGE ###
 	country_event = {
 		id = greneclyf_forces.3
 		title = greneclyf_forces.3.t
 		desc = greneclyf_forces.3.d
-		picture = GFX_unknow
+		picture = GFX_event_arctic
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -3256,7 +3253,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_obsidian.1
 		title = greneclyf_obsidian.1.t
 		desc = greneclyf_obsidian.1.d
-		picture = GFX_unknow
+		picture = GFX_event_obsidian
 		is_triggered_only = yes
 
 		# ACCEPT #
@@ -3301,7 +3298,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_obsidian.2
 		title = greneclyf_obsidian.2.t
 		desc = greneclyf_obsidian.2.d
-		picture = GFX_unknow
+		picture = GFX_event_obsidian
 		is_triggered_only = yes
 
 		option = {
@@ -3313,7 +3310,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_obsidian.3
 		title = greneclyf_obsidian.3.t
 		desc = greneclyf_obsidian.3.d
-		picture = GFX_unknow
+		picture = GFX_event_obsidian
 		is_triggered_only = yes
 
 		option = {
@@ -3333,7 +3330,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.1
 		title = greneclyf_foregin.1.t
 		desc = greneclyf_foregin.1.d
-		picture = GFX_unknow
+		picture = GFX_event_visit_to_hills_pony
 		is_triggered_only = yes
 
 		option = {
@@ -3357,7 +3354,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.2
 		title = greneclyf_foregin.2.t
 		desc = greneclyf_foregin.2.d
-		picture = GFX_unknow
+		picture = GFX_event_visit_to_hills_pony
 		is_triggered_only = yes
 
 		# READY #
@@ -3410,7 +3407,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.3
 		title = greneclyf_foregin.3.t
 		desc = greneclyf_foregin.3.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		immediate = {
@@ -3526,7 +3523,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.4
 		title = greneclyf_foregin.4.t
 		desc = greneclyf_foregin.4.d
-		picture = GFX_unknow
+		picture = GFX_event_oirechtas
 		is_triggered_only = yes
 
 		option = {
@@ -3542,7 +3539,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.5
 		title = greneclyf_foregin.5.t
 		desc = greneclyf_foregin.5.d
-		picture = GFX_unknow
+		picture = GFX_event_peacful_neighborhood
 		is_triggered_only = yes
 
 		option = {
@@ -3560,7 +3557,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.6
 		title = greneclyf_foregin.6.t
 		desc = greneclyf_foregin.6.d
-		picture = GFX_unknow
+		picture = GFX_event_peacful_neighborhood
 		is_triggered_only = yes
 
 		option = {
@@ -3578,7 +3575,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.7
 		title = greneclyf_foregin.7.t
 		desc = greneclyf_foregin.7.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		option = {
@@ -3606,7 +3603,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.8
 		title = greneclyf_foregin.8.t
 		desc = greneclyf_foregin.8.d
-		picture = GFX_unknow
+		picture = GFX_event_under_amella
 		is_triggered_only = yes
 
 		option = {
@@ -3652,7 +3649,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.9
 		title = greneclyf_foregin.9.t
 		desc = greneclyf_foregin.9.d
-		picture = GFX_unknow
+		picture = GFX_event_backbanburg
 		is_triggered_only = yes
 
 		option = {
@@ -3666,7 +3663,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.10
 		title = greneclyf_foregin.10.t
 		desc = greneclyf_foregin.10.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		option = {
@@ -3695,7 +3692,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.11
 		title = greneclyf_foregin.11.t
 		desc = greneclyf_foregin.11.d
-		picture = GFX_unknow
+		picture = GFX_event_crimson_house
 		is_triggered_only = yes
 
 		option = {
@@ -3709,7 +3706,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.12
 		title = greneclyf_foregin.12.t
 		desc = greneclyf_foregin.12.d
-		picture = GFX_unknow
+		picture = GFX_event_way_to_home
 		is_triggered_only = yes
 
 		option = {
@@ -3724,7 +3721,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.13
 		title = greneclyf_foregin.13.t
 		desc = greneclyf_foregin.13.d
-		picture = GFX_unknow
+		picture = GFX_event_warm_welcome
 		is_triggered_only = yes
 
 		option = {
@@ -3741,7 +3738,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.14
 		title = greneclyf_foregin.14.t
 		desc = greneclyf_foregin.14.d
-		picture = GFX_unknow
+		picture = GFX_event_after_lection
 		is_triggered_only = yes
 
 		option = {
@@ -3755,7 +3752,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.15
 		title = greneclyf_foregin.15.t
 		desc = greneclyf_foregin.15.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		option = {
@@ -3770,7 +3767,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.16
 		title = greneclyf_foregin.16.t
 		desc = greneclyf_foregin.16.d
-		picture = GFX_unknow
+		picture = GFX_event_delegation_CHN
 		is_triggered_only = yes
 
 		option = {
@@ -3787,7 +3784,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.17
 		title = greneclyf_foregin.17.t
 		desc = greneclyf_foregin.17.d
-		picture = GFX_unknow
+		picture = GFX_event_delegation_CHN
 		is_triggered_only = yes
 
 		option = {
@@ -3804,7 +3801,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.18
 		title = greneclyf_foregin.18.t
 		desc = greneclyf_foregin.18.d
-		picture = GFX_unknow
+		picture = GFX_event_queen_im_high_castle
 		is_triggered_only = yes
 
 		option = {
@@ -3821,7 +3818,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.19
 		title = greneclyf_foregin.19.t
 		desc = greneclyf_foregin.19.d
-		picture = GFX_unknow
+		picture = GFX_event_under_amella
 		is_triggered_only = yes
 
 		option = {
@@ -3838,7 +3835,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.20
 		title = greneclyf_foregin.20.t
 		desc = greneclyf_foregin.20.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		option = {
@@ -3853,7 +3850,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.21
 		title = greneclyf_foregin.21.t
 		desc = greneclyf_foregin.21.d
-		picture = GFX_unknow
+		picture = GFX_event_blitz
 		is_triggered_only = yes
 
 		option = {
@@ -3886,7 +3883,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.22
 		title = greneclyf_foregin.22.t
 		desc = greneclyf_foregin.22.d
-		picture = GFX_unknow
+		picture = GFX_event_trade_CHN
 		is_triggered_only = yes
 
 		# accept #
@@ -3951,7 +3948,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.23
 		title = greneclyf_foregin.23.t
 		desc = greneclyf_foregin.23.d
-		picture = GFX_unknow
+		picture = GFX_event_deceline_trade_CHN
 		is_triggered_only = yes
 
 		option = {
@@ -3965,7 +3962,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.24
 		title = greneclyf_foregin.24.t
 		desc = greneclyf_foregin.24.d
-		picture = GFX_unknow
+		picture = GFX_event_delegation_CHN
 		is_triggered_only = yes
 
 		option = {
@@ -3979,7 +3976,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.25
 		title = greneclyf_foregin.25.t
 		desc = greneclyf_foregin.25.d
-		picture = GFX_unknow
+		picture = GFX_event_rainbow_dash
 		is_triggered_only = yes
 
 		option = {
@@ -3995,7 +3992,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.26
 		title = greneclyf_foregin.26.t
 		desc = greneclyf_foregin.26.d
-		picture = GFX_unknow
+		picture = GFX_event_under_amella
 		is_triggered_only = yes
 
 		option = {
@@ -4046,7 +4043,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.27
 		title = greneclyf_foregin.27.t
 		desc = greneclyf_foregin.27.d
-		picture = GFX_unknow
+		picture = GFX_event_deceline_trade_EQS
 		is_triggered_only = yes
 
 		option = {
@@ -4060,7 +4057,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_foregin.28
 		title = greneclyf_foregin.28.t
 		desc = greneclyf_foregin.28.d
-		picture = GFX_unknow
+		picture = GFX_event_find_support_EQS
 		is_triggered_only = yes
 
 		option = {
@@ -4087,12 +4084,11 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.1
 		title = greneclyf_core.1.t
 		desc = greneclyf_core.1.d
-		picture = GFX_unknow
+		picture = GFX_event_realpolitik
 		is_triggered_only = yes
 
 		option = {
        	name = greneclyf_core.1.a		
-
 		}
 	}
 
@@ -4101,7 +4097,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.2
 		title = greneclyf_core.2.t
 		desc = greneclyf_core.2.d
-		picture = GFX_unknow
+		picture = GFX_event_river_found
 		is_triggered_only = yes
 
 		# Accept #
@@ -4153,7 +4149,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.3
 		title = greneclyf_core.3.t
 		desc = greneclyf_core.3.d
-		picture = GFX_unknow
+		picture = GFX_event_river_found
 		is_triggered_only = yes
 
 		option = {
@@ -4171,7 +4167,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.4
 		title = greneclyf_core.4.t
 		desc = greneclyf_core.4.d
-		picture = GFX_unknow
+		picture = GFX_event_event_spy_227
 		is_triggered_only = yes
 
 		option = {
@@ -4325,7 +4321,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.5
 		title = greneclyf_core.5.t
 		desc = greneclyf_core.5.d
-		picture = GFX_unknow
+		picture = GFX_event_army_conference
 		is_triggered_only = yes
 
 		option = {
@@ -4339,7 +4335,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.6
 		title = greneclyf_core.6.t
 		desc = greneclyf_core.6.d
-		picture = GFX_unknow
+		picture = GFX_event_bee_productivity
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -4395,7 +4391,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.7
 		title = greneclyf_core.7.t
 		desc = greneclyf_core.7.d
-		picture = GFX_unknow
+		picture = GFX_event_saor
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -4440,7 +4436,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.8
 		title = greneclyf_core.8.t
 		desc = greneclyf_core.8.d
-		picture = GFX_unknow
+		picture = GFX_event_church_support
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -4455,7 +4451,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.9
 		title = greneclyf_core.9.t
 		desc = greneclyf_core.9.d
-		picture = GFX_unknow
+		picture = GFX_event_first_constitutuion
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -4489,7 +4485,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.10
 		title = greneclyf_core.10.t
 		desc = greneclyf_core.10.d
-		picture = GFX_unknow
+		picture = GFX_event_crimson_house
 		is_triggered_only = yes
 		fire_only_once = yes
 
@@ -4498,26 +4494,26 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# Ubi mel, ibi apes
-	country_event = {
-		id = greneclyf_core.11
-		title = greneclyf_core.11.t
-		desc = greneclyf_core.11.d
-		picture = GFX_unknow
-		is_triggered_only = yes
-		fire_only_once = yes
+	# # Ubi mel, ibi apes
+	# country_event = {
+	# 	id = greneclyf_core.11
+	# 	title = greneclyf_core.11.t
+	# 	desc = greneclyf_core.11.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
+	# 	fire_only_once = yes
 
-		option = {
-			name = greneclyf_core.11.a
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_core.11.a
+	# 	}
+	# }
 
 	# Blosmport econom org #
 	country_event = {
 		id = greneclyf_core.100
 		title = greneclyf_core.100.t
 		desc = greneclyf_core.100.d
-		picture = GFX_unknow
+		picture = GFX_event_new_great_packts
 		is_triggered_only = yes
 
 		# accept #
@@ -4578,7 +4574,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.101
 		title = greneclyf_core.101.t
 		desc = greneclyf_core.101.d
-		picture = GFX_unknow
+		picture = GFX_event_peacful_neighborhood
 		is_triggered_only = yes
 
 		immediate = {
@@ -4589,7 +4585,7 @@ add_namespace = greneclyf_hive
 		}
 
 		option = {
-			name = greneclyf_base.101.a
+			name = greneclyf_core.101.a
 			#set_country_flag = NCH_neg_blosmport_economic
 		}
 	}
@@ -4599,7 +4595,7 @@ add_namespace = greneclyf_hive
 		id = greneclyf_core.102
 		title = greneclyf_core.102.t
 		desc = greneclyf_core.102.d
-		picture = GFX_unknow
+		picture = GFX_event_consummers
 		is_triggered_only = yes
 
 		option = {
@@ -4624,11 +4620,11 @@ add_namespace = greneclyf_hive
 		option = {
 			name = greneclyf_core.103.a
 			add_ideas = NCH_bos_riv
-			NCH = {
-				country_event = {
-					id = greneclyf_core.104
-				}
-			}
+			# NCH = {
+			# 	country_event = {
+			# 		id = greneclyf_core.104
+			# 	}
+			# }
 
 			ai_chance = {
 				base = 2
@@ -4673,21 +4669,21 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# TAG accept #
-	country_event = {
-		id = greneclyf_core.104
-		title = greneclyf_core.104.t
-		desc = greneclyf_core.104.d
-		picture = GFX_unknow
-		is_triggered_only = yes
+	# # TAG accept #
+	# country_event = {
+	# 	id = greneclyf_core.104
+	# 	title = greneclyf_core.104.t
+	# 	desc = greneclyf_core.104.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
 
-		option = {
-			name = greneclyf_base.104.a
-			#set_country_flag = NCH_bos_command
+	# 	option = {
+	# 		name = greneclyf_base.104.a
+	# 		#set_country_flag = NCH_bos_command
 
-			#add_ideas = NCH_bos_riv
-		}
-	}
+	# 		#add_ideas = NCH_bos_riv
+	# 	}
+	# }
 
 	# TAG deceline - BOS #
 	country_event = {
@@ -4744,11 +4740,11 @@ add_namespace = greneclyf_hive
 		option = {
 			name = greneclyf_core.106.b
 
-			NCH = {
-				country_event = {
-					id = greneclyf_core.108
-				}
-			}
+			# NCH = {
+			# 	country_event = {
+			# 		id = greneclyf_core.108
+			# 	}
+			# }
 
 			ai_chance = {
 				base = 3
@@ -4784,23 +4780,23 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# TAG deceline - senate #
-	country_event = {
-		id = greneclyf_core.108
-		title = greneclyf_core.108.t
-		desc = greneclyf_core.108.d
-		picture = GFX_unknow
-		is_triggered_only = yes
+	# # TAG deceline - senate #
+	# country_event = {
+	# 	id = greneclyf_core.108
+	# 	title = greneclyf_core.108.t
+	# 	desc = greneclyf_core.108.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
 
-		option = {
-			name = greneclyf_core.108.a
+	# 	option = {
+	# 		name = greneclyf_core.108.a
 
-			add_opinion_modifier = {
-				target = NCH
-				modifier = small_decrease
-			}
-		}
-	}
+	# 		add_opinion_modifier = {
+	# 			target = NCH
+	# 			modifier = small_decrease
+	# 		}
+	# 	}
+	# }
 
 	# LANQUAGE Q #
 	country_event = {

@@ -1136,6 +1136,12 @@ greneclyf_core.6.d:0 "Celarl waited calmly until the deputies had taken their se
 
 greneclyf_core.6.a:0 "By a narrow margin, the project was approved."
 
+greneclyf_core.100.t:0 "The Future of the BCO"
+greneclyf_core.100.d:0 "Greneclyf has put forward an initiative to establish the Blossmport Organization of Cooperation — a supranational mechanism for coordinating security and investigative structures within the River Coalition. The project envisions deep integration of security services, continuous and comprehensive exchange of operational and intelligence information, and the development of unified standards for responding to threats. If implemented, no terrorist or saboteur will be able to operate unnoticed, as information about them will be shared among all members of the organization. At the same time, participation in the BCO implies a partial limitation of national sovereignty in the field of internal security and strengthens Greneclyf’s role as the coordinator of the new bloc."
+ 
+greneclyf_core.100.a:0 "Join the Blossmport Organization of Cooperation"
+greneclyf_core.100.b:0 "Refuse to participate in the organization"
+
 greneclyf_arctic.1.t:0 "Fishing"
 greneclyf_arctic.1.d:0 "A low fog hung over the chilly beach as Rudy and Charoite stood over Tinax’s grave. A few days earlier, malnourished and fatigued, Tinax had started coughing as they were on another unsuccessful fishing trip.  It was just a few days ago that Tinax had finally convinced Rudy to devote his life to the Matrona.  Now, their faces showed nothing anymore—their hunger and fatigue couldn’t even muster an expression of sorrow for their comrade. \n\n In the morning they moored at a rocky island to bury their companion. Rudy cast a glance at their last remaining fellow traveler—old Kerne, who, even during the burial, kept trying to fish in dead water. \n\n Charoite trudged toward him without a sound. Though he couldn’t put it into words, a desire was forming in his head to drown Kerne: the old stallion’s increasingly crazed obsession with fishing stirred an irresistible rage within him. \n\n He stepped beside the hunched figure and raised a stone—then noticed something remarkable, a bite.  For the first time in weeks something had taken the bait. With experienced precision, Kerne hauled in a large salmon, whose head Charoite crushed immediately. The three built a fire in silence, ravaged the fish, and finally found the strength to speak. \n\n “We have to tell the others, the hive needs food.” Rudy said, stirring the coals. \n\n Kerne only nodded silently, while Charoite grimaced. “If only we knew where we were. We just sailed north...”\n\n The old stallion nodded again, grumbling something unintelligible. \n\n “Let’s...  pray, for Tinax...” Rudy said, touching the cross of Matrona’s Church on his neck. \n\n After catching enough fish for several days’ travel and returning to Llir, the fishermen told of miracles in the northern icefields, of oceans full of enormous fish.  This brought a shine of hope, and prompted the authorities to take an interest in developing the region."
 
@@ -1443,7 +1449,7 @@ NCH_arctic_cost_tooltip:0 "The expedition to the island will cost us 1,200 worke
 NCH_fraction_neighborhood:0 "Llira Front"
 
 ### TOOL TIPS AND COUNTRY FLAGS ###
-NCH_gytha_president_open:0 "§3Allows you to change Queen Gytha's portrait to the presidential one§!"
+NCH_gytha_president_open:0 "§6Allows you to change Queen Gytha's portrait to the presidential one§!"
 NCH_gytha_maniac_open:0 "§4Allows you to change Queen Gytha's portrait to the Iron Lady§!"
 
 NCH_early_military_position:0 "§RWARNING: TAKING THIS FOCUS TOO EARLY WILL LEAD TO IRREVERSIBLE CONSEQUENCES§\n\n \n"

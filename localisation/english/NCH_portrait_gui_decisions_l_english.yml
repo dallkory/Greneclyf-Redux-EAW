@@ -1,10 +1,10 @@
 ﻿l_english:
  SELECT_PORTRAIT:0 "Select a Portrait"
- old_portrait:0 "Traditional"
- presidential_portrait:0 "§3Presidential§!"
-
- PORTRAIT_TOOLTIP:0 "Change Portrait"
- PORTRAIT_TOOLTIP_DELAYED:0 "Cosmetically switch between the Queen's Portraits"
+ old_portrait:0 "§1Traditional§!"
+ presidential_portrait:0 "§6Presidential§!"
+ PORTRAIT_PRES_TOOLTIP: "[GETPORTRAIT_PRES_TOOLTIP]"
+ PORTRAIT_TOOLTIP: "Change Portrait"
+ PORTRAIT_TOOLTIP_DELAYED: "Cosmetically switch between the Queen's Portraits"
 
  PORTRAIT_MANIC_TOOLTIP:0 "[GETPORTRAIT_MANIC_TOOLTIP]"
  PORTRAIT_MANIC_TOOLTIP_DELAYED:0 "[GETPORTRAIT_MANIC_TOOLTIP_DELAYED]"

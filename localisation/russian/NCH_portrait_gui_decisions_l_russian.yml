@@ -1,8 +1,8 @@
 ﻿l_russian:
  SELECT_PORTRAIT:0 "Выбрать портрет"
- old_portrait:0 "Традиционный"
+ old_portrait:0 "§1Традиционный§!"
  presidential_portrait:0 "§3Президентский§!"
-
+ PORTRAIT_PRES_TOOLTIP: "[GETPORTRAIT_PRES_TOOLTIP]"
  PORTRAIT_TOOLTIP:0 "Сменить портрет"
  PORTRAIT_TOOLTIP_DELAYED:0 "Косметический переключатель портретов"
 

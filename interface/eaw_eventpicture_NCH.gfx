@@ -22,10 +22,201 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_event_event_way_to_home"
+		name = "GFX_event_way_to_home"
 		textureFile = "gfx/event_picture/event_way_to_home.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_event_spy_227"
+		textureFile = "gfx/event_picture/event_changeling_approved_stamp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_gitovka"
+		textureFile = "gfx/event_picture/event_gitovka.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_typography"
+		textureFile = "gfx/event_picture/event_changeling_newscaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_delegation_CHN"
+		textureFile = "gfx/event_picture/event_swarm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_letter_from_vixit"
+		textureFile = "gfx/event_picture/event_letter_from_vixit.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_equalitylovetolerance"
+		textureFile = "gfx/event_picture/equalitylovetolerance.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_queenhall"
+		textureFile = "gfx/event_picture/queenhall.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_saor"
+		textureFile = "gfx/event_picture/saor.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_new_great_packts"
+		textureFile = "gfx/event_picture/new_great_packts.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_consummers"
+		textureFile = "gfx/event_picture/changelings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_under_amella"
+		textureFile = "gfx/event_picture/homelivingroomn.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_church_support"
+		textureFile = "gfx/event_picture/church_support.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_island_sunrise"
+		textureFile = "gfx/event_picture/island_sunrise.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_finds"
+		textureFile = "gfx/event_picture/finds.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_ship"
+		textureFile = "gfx/event_picture/ship.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_army_conference"
+		textureFile = "gfx/event_picture/army_conference.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_violator"
+		textureFile = "gfx/event_picture/event_bazooka_team.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_Mount_jaggers"
+		textureFile = "gfx/event_picture/event_gytha.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_project_phoenix"
+		textureFile = "gfx/event_picture/project_phoenix.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_arctic"
+		textureFile = "gfx/event_picture/arctic_event.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_obsidian"
+		textureFile = "gfx/event_picture/event_cave.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_visit_to_hills_pony"
+		textureFile = "gfx/event_picture/event_forest_spritely.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_peacful_neighborhood"
+		textureFile = "gfx/event_picture/event_river_swirl.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_backbanburg"
+		textureFile = "gfx/event_picture/event_shore.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_crimson_house"
+		textureFile = "gfx/event_picture/housepiano.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_warm_welcome"
+		textureFile = "gfx/event_picture/event_ponyville.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_after_lection"
+		textureFile = "gfx/event_picture/equalitylovetolerance.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_queen_im_high_castle"
+		textureFile = "gfx/event_picture/event_stormlands_castle1.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_blitz"
+		textureFile = "gfx/event_picture/news.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_trade_CHN"
+		textureFile = "gfx/event_picture/event_colthage_city.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_deceline_trade_CHN"
+		textureFile = "gfx/event_picture/deceline_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_rainbow_dash"
+		textureFile = "gfx/event_picture/event_crystaller_building.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_deceline_trade_EQS"
+		textureFile = "gfx/event_picture/event_celestia_poster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_find_support_EQS"
+		textureFile = "gfx/event_picture/event_canterlot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_realpolitik"
+		textureFile = "gfx/event_picture/event_changeling_crystaller.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_river_found"
+		textureFile = "gfx/event_picture/event_river_coalition_summit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_bee_productivity"
+		textureFile = "gfx/event_picture/hive.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_first_constitutuion"
+		textureFile = "gfx/event_picture/vote_pony.tga"
 	}
 
 
 
 }
+
