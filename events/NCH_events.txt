@@ -4519,12 +4519,16 @@ add_namespace = greneclyf_hive
 		# accept #
 		option = {
 			name = greneclyf_core.100.a
-
-			NCH = {
-				country_event = {
-					id = greneclyf_core.101
-				}
+			add_timed_idea = {
+				idea = NCH_blosmport_economic_consequences
+				days = 180
 			}
+
+			# NCH = {
+			# 	country_event = {
+			# 		id = greneclyf_core.101
+			# 	}
+			# }
 
 			ai_chance = {
 				base = 2
@@ -4570,25 +4574,25 @@ add_namespace = greneclyf_hive
 	}
 
 	# TAG accept #
-	country_event = {
-		id = greneclyf_core.101
-		title = greneclyf_core.101.t
-		desc = greneclyf_core.101.d
-		picture = GFX_event_peacful_neighborhood
-		is_triggered_only = yes
+	# country_event = {
+	# 	id = greneclyf_core.101
+	# 	title = greneclyf_core.101.t
+	# 	desc = greneclyf_core.101.d
+	# 	picture = GFX_event_peacful_neighborhood
+	# 	is_triggered_only = yes
 
-		immediate = {
-			add_timed_idea = {
-				idea = NCH_blosmport_economic_consequences
-				days = 180
-			}
-		}
+	# 	# immediate = {
+	# 	# 	add_timed_idea = {
+	# 	# 		idea = NCH_blosmport_economic_consequences
+	# 	# 		days = 180
+	# 	# 	}
+	# 	# }
 
-		option = {
-			name = greneclyf_core.101.a
-			#set_country_flag = NCH_neg_blosmport_economic
-		}
-	}
+	# 	option = {
+	# 		name = greneclyf_core.101.a
+	# 		#set_country_flag = NCH_neg_blosmport_economic
+	# 	}
+	# }
 
 	# TAG deceline #
 	country_event = {
@@ -4810,11 +4814,11 @@ add_namespace = greneclyf_hive
 		option = {
 			name = greneclyf_core.109.a
 			add_ideas = NCH_riv_volounters
-			NCH = {
-				country_event = {
-					id = greneclyf_core.110
-				}
-			}
+			# NCH = {
+			# 	country_event = {
+			# 		id = greneclyf_core.110
+			# 	}
+			# }
 
 			ai_chance = {
 				base = 2
@@ -4860,22 +4864,22 @@ add_namespace = greneclyf_hive
 	}
 
 	# TAG accept - lanq #
-	country_event = {
-		id = greneclyf_core.110
-		title = greneclyf_core.110.t
-		desc = greneclyf_core.110.d
-		picture = GFX_unknow
-		is_triggered_only = yes
+	# country_event = {
+	# 	id = greneclyf_core.110
+	# 	title = greneclyf_core.110.t
+	# 	desc = greneclyf_core.110.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
 
-		option = {
-			name = greneclyf_base.110.a
-			#set_country_flag = NCH_bos_command
+	# 	option = {
+	# 		name = greneclyf_base.110.a
+	# 		#set_country_flag = NCH_bos_command
 
-			#add_ideas = NCH_bos_riv
-		}
-	}
+	# 		#add_ideas = NCH_bos_riv
+	# 	}
+	# }
 
-	# TAG deceline - lanq #
+	# # TAG deceline - lanq #
 	country_event = {
 		id = greneclyf_core.111
 		title = greneclyf_core.111.t
@@ -4905,11 +4909,11 @@ add_namespace = greneclyf_hive
 		option = {
 			name = greneclyf_core.112.a
 			add_ideas = NCH_riv_volounters
-			NCH = {
-				country_event = {
-					id = greneclyf_core.113
-				}
-			}
+			# NCH = {
+			# 	country_event = {
+			# 		id = greneclyf_core.113
+			# 	}
+			# }
 
 			ai_chance = {
 				base = 2
@@ -4954,23 +4958,23 @@ add_namespace = greneclyf_hive
 		}
 	}
 
-	# TAG accept - lanq #
-	country_event = {
-		id = greneclyf_core.113
-		title = greneclyf_core.113.t
-		desc = greneclyf_core.113.d
-		picture = GFX_unknow
-		is_triggered_only = yes
+	# TAG accept - science #
+	# country_event = {
+	# 	id = greneclyf_core.113
+	# 	title = greneclyf_core.113.t
+	# 	desc = greneclyf_core.113.d
+	# 	picture = GFX_unknow
+	# 	is_triggered_only = yes
 
-		option = {
-			name = greneclyf_base.113.a
-			#set_country_flag = NCH_bos_command
+	# 	option = {
+	# 		name = greneclyf_base.113.a
+	# 		#set_country_flag = NCH_bos_command
 
-			#add_ideas = NCH_bos_riv
-		}
-	}
+	# 		#add_ideas = NCH_bos_riv
+	# 	}
+	# }
 
-	# TAG deceline - lanq #
+	# TAG deceline - science #
 	country_event = {
 		id = greneclyf_core.114
 		title = greneclyf_core.114.t

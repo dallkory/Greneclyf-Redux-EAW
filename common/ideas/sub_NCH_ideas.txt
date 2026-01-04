@@ -223,11 +223,11 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.1
-				consumer_goods_factor = 0.15
+				stability_factor = -0.05
+				consumer_goods_factor = 0.12
 				political_power_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.075
-				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.095
+				industrial_capacity_factory = 0.075
 				trade_opinion_factor = 0.2
 				resource_gain_efficiency = 0.03
 			}

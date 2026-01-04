@@ -2336,6 +2336,24 @@ shared_focus = {
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
+
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.100
+					days = 35
+				}
+			}
+		}
+	}
 	
 	completion_reward = {
 		#custom_effect_tooltip = NCH_ecnomic_tt
@@ -2347,17 +2365,6 @@ shared_focus = {
 		#country_event = {
 		#	id = greneclyf_core.104
 		#}
-
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				is_in_faction_with = NCH
-			}
-			country_event = {
-				id = greneclyf_core.100
-				days = 10
-			}
-		}
 	}
 }
 
@@ -2375,20 +2382,28 @@ shared_focus = {
 		has_country_flag = NCH_war_fed_found
 	}
 
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.103
+					days = 35
+				}
+			}
+		}
+	}
+
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
 		#add_ideas = NCH_bos_riv
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				is_in_faction_with = NCH
-			}
-			country_event = {
-				id = greneclyf_core.103
-				days = 10
-			}
-		}
 	}
 }
 
@@ -2473,20 +2488,27 @@ shared_focus = {
 		has_country_flag = NCH_war_fed_found
 	}
 
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.109
+					days = 35
+				}
+			}
+		}
+	}
+
 	completion_reward = {
 		add_stability = 0.075
 		add_political_power = 50
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				is_in_faction_with = NCH
-			}
-			country_event = {
-				id = greneclyf_core.109
-				days = 10
-			}
-		}
-
 	}
 }
 
@@ -2504,23 +2526,29 @@ shared_focus = {
 		has_country_flag = NCH_war_fed_found
 	}
 
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.112
+					days = 35
+				}
+			}
+		}
+	}
+
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
 
 		add_ideas = proper_science_base
-
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				is_in_faction_with = NCH
-			}
-			country_event = {
-				id = greneclyf_core.112
-				days = 20
-			}
-			#add_ideas = NCH_riv_search_base
-		}
 	}
 }
 
@@ -2542,19 +2570,26 @@ shared_focus = {
 	x = 31
 	y = 22
 
-	completion_reward = {
-		add_stability = -0.05
-
-		every_country = {
-			limit = {
-				is_riverlands_country = yes
-				is_in_faction_with = NCH
-			}
-			country_event = {
-				id = greneclyf_core.106
-				days = 7
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.106
+					days = 35
+				}
 			}
 		}
+	}
+
+	completion_reward = {
+		add_stability = -0.05
 	}
 }
 
@@ -2672,7 +2707,7 @@ shared_focus = {
 			# call of unity - puppet #
 			country_event = {
 				id = greneclyf_core.115
-				days = 35
+				days = 0
 			}
 		}
 
@@ -2711,23 +2746,6 @@ shared_focus = {
 		}
 	}
 }
-
-#shared_focus = {
-#	id = NCH_first_president
-#	icon = GFX_goal_unknown
-#	cost = 10
-#
-#	prerequisite = {
-#		focus = NCH_river_science_program
-#	}
-#
-#	x = 35
-#	y = 23
-#
-#	completion_reward = {
-#		
-#	}
-#}
 
 shared_focus = {
 	id = NCH_inity_as_the_highest_good
@@ -2855,7 +2873,7 @@ shared_focus = {
 
 		create_country_leader = {
 			name = NCH_riv_senate
-			picture = GFX_NCH_riverswirl
+			picture = GFX_NCH_riv_senate
 			traits = {
 				NCH_political_power_in_senate_hoofs
 			}

@@ -14,7 +14,7 @@ spriteTypes = {
 		name = "GFX_NCH_President_Gytha"
 		textureFile = "gfx/leaders/NCH/President_Gytha.tga"
 	}
-	
+
 	spriteType = {
 		name = "GFX_NCH_Starter_Gytha_frame"
 		textureFile = "gfx/interface/scripted_gui/portrait_select/gytha_queen.tga"
