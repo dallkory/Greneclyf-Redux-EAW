@@ -734,7 +734,7 @@ ideas = {
 		}
 
 		NCH_nine_stars = {
-			picture = nine_stars
+			picture = nine_starrs
 			allowed = {
 				always = yes
 			}

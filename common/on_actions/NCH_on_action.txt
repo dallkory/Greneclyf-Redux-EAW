@@ -9,6 +9,65 @@ on_actions = {
         effect = {
 			# REDUX #
 
+			# START HIVES WAR #
+			if = {
+				limit = {
+					has_war_with = CHN
+					REB = {
+						is_subject_of = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_hive.10
+					major = yes
+					days = 0
+				}
+			}
+
+			# DEFEAT HIVES WAR #
+			if = {
+				limit = {
+					has_war_with = CHN
+					REB = {
+						is_subject_of = NCH
+					}
+					REB = {
+						is_captured = yes
+					}
+				}
+				country_event = {
+					id = greneclyf_hive.11
+					major = yes
+					days = 0
+				}
+			}
+			
+			# SUCSESS HIVES WAR #
+			if = {
+				limit = {
+					has_war_with = CHN
+					REB = {
+						is_subject_of = NCH
+					}
+					or = {
+						CHN = {
+							is_captured = yes
+						}
+						REB = {
+							owns_state = 251
+						}
+						NCH = {
+							owns_state = 251
+						}
+					}
+				}
+				country_event = {
+					id = greneclyf_hive.12
+					major = yes
+					days = 0
+				}
+			}
+
 			if = {
 				limit = {
 					has_completed_focus = NCH_colony_development

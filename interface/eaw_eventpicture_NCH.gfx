@@ -216,7 +216,85 @@ spriteTypes = {
 		textureFile = "gfx/event_picture/vote_pony.tga"
 	}
 
+	spriteType = {
+		name = "GFX_event_blosmport_eco_org"
+		textureFile = "gfx/event_picture/event_crystal_university.dds"
+	}
 
+	spriteType = {
+		name = "GFX_event_call_of_unity"
+		textureFile = "gfx/event_picture/event_pony_soldiers_sunset.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_war_institutue"
+		textureFile = "gfx/event_picture/HIP_tank_m1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_something_specioal_db_1"
+		textureFile = "gfx/event_picture/event_devastation_nature1.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_golden_rose"
+		textureFile = "gfx/event_picture/event_changeling_crystaller.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_great_party"
+		textureFile = "gfx/event_picture/event_changeling_spies.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_resistance_weak"
+		textureFile = "gfx/event_picture/event_chrysalis_and_gytha.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_powder_night"
+		textureFile = "gfx/event_picture/propaganda.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_news_civil_war_hives"
+		textureFile = "gfx/event_picture/the_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_news_civil_war_hives_defeat"
+		textureFile = "gfx/event_picture/news_griffon_soldier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_news_civil_war_hive_sucsess"
+		textureFile = "gfx/event_picture/news_eaw_soldier_logo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_kaiserine"
+		textureFile = "gfx/event_picture/Helvia.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_voices"
+		textureFile = "gfx/event_picture/vesalipolis.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_aliacne_unity"
+		textureFile = "gfx/event_picture/event_exu_news.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_hehemony_demons"
+		textureFile = "gfx/event_picture/vesalipolis2.tga"
+	}
+
+	spriteType = {
+		name = "GFX_event_peace_in_our_time"
+		textureFile = "gfx/event_picture/news.tga"
+	}
 
 }
 

@@ -121,20 +121,26 @@ NCH_hunger_bop_category = {
 	}
 }
 
-NCH_change_portrait_category = {
-	icon = GFX
+NCH_obsidian_category = {
+	icon = GFX_decision_category_obsidian_trade
 	allowed = {
 		original_tag = NCH
 	}
-	priority = {
-		base = 0
-	}
-
-	visible = {
-		has_government = democratic
-	}
 }
 
+# NCH_change_portrait_category = {
+# 	icon = GFX
+# 	allowed = {
+# 		original_tag = NCH
+# 	}
+# 	priority = {
+# 		base = 0
+# 	}
+
+# 	visible = {
+# 		has_government = democratic
+# 	}
+# }
 
 # Submod
 NCH_nuke_category = {
@@ -147,59 +153,3 @@ NCH_nuke_category = {
 	}
 }
 
-NCH_submarine_category = {
-	allowed = {
-		original_tag = NCH
-	}
-	priority = {
-		base = 100
-	}
-}
-NCH_trading_category = {
-	allowed = {
-		original_tag = NCH
-	}
-	priority = {
-		base = 100
-	}
-}
-NCH_marriages = {
-	icon = changeling_category_icon
-	allowed = {
-		original_tag = NCH
-	}
-	priority = {
-		base = 100
-	}
-}
-Remove_NCH_trade_category = {
-	allowed = {
-		original_tag = LCT
-		original_tag = RCT
-		original_tag = BAK
-		original_tag = NIM
-		original_tag = GRI
-		original_tag = EQS
-		original_tag = FBK
-
-	}
-	priority = {
-		base = 100
-	}
-}
-NCH_crisis_category = {
-	icon = changeling_category_icon
-	allowed = {
-		original_tag = NCH
-
-	}
-	priority = {
-		base = 100
-	}
-}
-NCH_obsidian_category = {
-	icon = GFX_decision_category_obsidian_trade
-	allowed = {
-		original_tag = NCH
-	}
-}
