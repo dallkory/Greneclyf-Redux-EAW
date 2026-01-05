@@ -1,12 +1,347 @@
-music_station = "eaw"
+music_station = "GF"
 
 music = {
-	song = "Radiarc_Carry_On"
+	song = "AilaRain"
+
 	chance = {
-		factor = 1
+		factor = 3
+	}
+}
+music = {
+	song = "AilaSadness"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "AilaTwilight"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "ApTwin21"
+	chance = {
+		factor = 1.4
 		modifier = {
-			factor = 100
+			factor = 3
 			original_tag = NCH
 		}
+	}
+}
+music = {
+	song = "BBIMeantIt"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "BBItWasAlwaysThatEasy"
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_government = democratic
+		}
+	}
+}
+music = {
+	song = "BBOurHappyEnding"
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_government = democratic
+		}
+	}
+}
+music = {
+	song = "BBTheApotheosis"
+
+	chance = {
+		modifier = {
+			factor = 0.001
+			has_war = no
+		}
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "BBTheCage"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "BBTheGreyFire"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "BBTogetherAgain"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "BlackSoulsrabbithole"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "CDAEulenlieder"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "CDOrrery"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "CICADA3000"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "CICMNHR"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "CITrainRide"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "daiFestival"
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+		modifier = {
+			factor = 0.01
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "daiWhiteShadow"
+
+	chance = {
+		factor = 2.5
+	}
+}
+music = {
+	song = "DBSadAngel"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "FNDragonfire"
+
+	chance = {
+		modifier = {
+			factor = 2.5
+			has_war = no
+		}
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "FNHerNightmare"
+
+	chance = {
+		modifier = {
+			factor = 2.5
+			has_war = no
+		}
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "FNPearlWhiteEyes"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "FNThroughAnInfiniteDreamscape"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "FNUnsung"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "FourLeafStudiosConcord"
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_government = democratic
+		}
+	}
+}
+music = {
+	song = "KoOtaniSongOfDream"
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0.01
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "KoOtaniToga"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "MattBorghiEdgeofaFrozenStream"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "NobodysNailMachineImproperSubdivision"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "PhilippeCharronBattle01"
+
+	chance = {
+		modifier = {
+			factor = 0.01
+			has_war = no
+		}
+		modifier = {
+			factor = 10
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "PhilippeCharronIngame06"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "PhilippeCharronIngame10"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "PhilippeCharronIngame11"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "SeaPowerTheCryptozoologists"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "Radiarc_Carry_On"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "SeaPowerTheInsulindianMiracle"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "SeaPowerZAUM"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "ShadeEternalDolls"
+
+	chance = {
+		modifier = {
+			factor = 2.5
+			has_war = no
+		}
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "UlysseTreeofLife"
+
+	chance = {
+		factor = 3
+	}
+}
+music = {
+	song = "YukiKajiuraFateful2"
+
+	chance = {
+		factor = 3
 	}
 }

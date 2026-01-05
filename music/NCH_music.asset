@@ -1,0 +1,250 @@
+###sample_text
+music = {
+	name = "AilaRain"
+	file = "AilaRain.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "AilaSadness"
+	file = "AilaSadness.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "AilaTwilight"
+	file = "AilaTwilight.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "ApTwin21"
+	file = "ApTwin21.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBIMeantIt"
+	file = "BBIMeantIt.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBItWasAlwaysThatEasy"
+	file = "BBItWasAlwaysThatEasy.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBOurHappyEnding"
+	file = "BBOurHappyEnding.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBTheApotheosis"
+	file = "BBTheApotheosis.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBTheCage"
+	file = "BBTheCage.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBTheGreyFire"
+	file = "BBTheGreyFire.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BBTogetherAgain"
+	file = "BBTogetherAgain.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "BlackSoulsrabbithole"
+	file = "BlackSoulsrabbithole.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "CDAEulenlieder"
+	file = "CDAEulenlieder.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "CDOrrery"
+	file = "CDOrrery.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "CICADA3000"
+	file = "CICADA3000.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "CICMNHR"
+	file = "CICMNHR.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "CITrainRide"
+	file = "CITrainRide.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "daiFestival"
+	file = "daiFestival.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "daiWhiteShadow"
+	file = "daiWhiteShadow.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "DBSadAngel"
+	file = "DBSadAngel.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FNDragonfire"
+	file = "FNDragonfire.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FNHerNightmare"
+	file = "FNHerNightmare.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FNPearlWhiteEyes"
+	file = "FNPearlWhiteEyes.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FNThroughAnInfiniteDreamscape"
+	file = "FNThroughAnInfiniteDreamscape.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FNUnsung"
+	file = "FNUnsung.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "FourLeafStudiosConcord"
+	file = "FourLeafStudiosConcord.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "KoOtaniSongOfDream"
+	file = "KoOtaniSongOfDream.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "KoOtaniToga"
+	file = "KoOtaniToga.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "MattBorghiEdgeofaFrozenStream"
+	file = "MattBorghiEdgeofaFrozenStream.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "NobodysNailMachineImproperSubdivision"
+	file = "NobodysNailMachineImproperSubdivision.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "PhilippeCharronBattle01"
+	file = "PhilippeCharronBattle01.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "PhilippeCharronIngame06"
+	file = "PhilippeCharronIngame06.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "PhilippeCharronIngame10"
+	file = "PhilippeCharronIngame10.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "PhilippeCharronIngame11"
+	file = "PhilippeCharronIngame11.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "SeaPowerTheCryptozoologists"
+	file = "SeaPowerTheCryptozoologists.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Radiarc_Carry_On"
+	file = "Radiarc_Carry_On.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "SeaPowerTheInsulindianMiracle"
+	file = "SeaPowerTheInsulindianMiracle.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "SeaPowerZAUM"
+	file = "SeaPowerZAUM.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "ShadeEternalDolls"
+	file = "ShadeEternalDolls.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "UlysseTreeofLife"
+	file = "UlysseTreeofLife.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "YukiKajiuraFateful2"
+	file = "YukiKajiuraFateful2.ogg"
+	volume = 0.9
+}
+
+
+
+

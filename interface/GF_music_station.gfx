@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_greneclyf_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/greneclyf_album_art.dds"
+		noOfFrames = 2
+	}
+}
