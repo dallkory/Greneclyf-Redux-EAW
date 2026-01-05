@@ -90,8 +90,8 @@ add_namespace = greneclyf_hive
 				set_demilitarized_zone = yes
 			}
 
-			hidden_effect = {
-				
+			country_event = {
+				id = greneclyf_hive.6
 			}
 		}
 	}

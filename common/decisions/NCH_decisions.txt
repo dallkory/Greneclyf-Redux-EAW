@@ -277,7 +277,6 @@ NCH_chrysalis_category = {
 			CHN = {
 				country_event = {
 					id = greneclyf_hive.6
-					days = 0
 				}
 			}
 		}
@@ -286,8 +285,7 @@ NCH_chrysalis_category = {
 			set_country_flag = NCH_chrysalis_reb
 			CHN = {
 				country_event = {
-					id = greneclyf_hive.6
-					days = 0
+					id = greneclyf_hive.5
 				}
 			}
 		}

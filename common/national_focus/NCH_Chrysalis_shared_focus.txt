@@ -149,6 +149,9 @@ Shared_focus = {
 
 	available = {
 		has_government = democratic
+		CHN = {
+			has_government = fascism
+		}
 	}
 
 	completion_reward = {
@@ -840,7 +843,7 @@ Shared_focus = {
 		}
 
 		add_ideas = NCH_Gytha_triumpf
-		custom_effect_tooltip = NCH_Gytha_triumpf
+		# custom_effect_tooltip = NCH_Gytha_triumpf
 		every_state = {
 			limit = {
 				is_core_of = CHN
