@@ -1203,6 +1203,10 @@ greneclyf_core.115.d:0 "Hope has gripped the minds and hearts of the Eastern peo
 greneclyf_core.115.a:0 "Together we can make this dream a reality!"
 greneclyf_core.115.b:0 "They are driven by despair..."
 
+greneclyf_core.116:0 "Despair..."
+greneclyf_core.116:0 "However, not everyone shares this great dream. Some see it as nothing more than an illusion born from despair in the face of external threats and internal problems. They believe attempts to create a federation are doomed to fail due to deep differences between peoples, competition for resources, and historical grievances. For them, the idea of unity seems like a utopia, unattainable in the complex and multifaceted world of the East."
+greneclyf_core.116.a:0 "We will not let them destroy our dream!"
+
 ## ARCTIC ##
 # Арктика найдена ##### не нужно, нарратив по фокусам есть. Я могу добавить, но резона нуль – перегруз будет текстом
 greneclyf_arctic.1.t:0 "Fishing"
@@ -1594,6 +1598,7 @@ NCH_lay_down_LNG_Gytha:0 "§3The pride of the fleet, the Hatcher, will be launch
 NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
 ### IDEAS ###
+NCH_bos_riv:0 "Blosmport Organization of Cooperation"
 NCH_veterans:0 "Veterans"
 NCH_political_violence:0 "Political Violence"
 NCH_retaking_saor:0 "Recovery of Saor"

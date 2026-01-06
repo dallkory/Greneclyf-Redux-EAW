@@ -679,6 +679,8 @@ NCH_fed_found_category = {
 			or = {
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_dreems_of_more
+				has_war_with = RCT
+				controls_state = 619
 			}
 
 			not = {
@@ -1071,6 +1073,8 @@ NCH_fed_found_category = {
 			not = {
 				has_country_flag = NCH_war_fed_found
 				has_country_flag = NCH_peace_fed_found
+				has_war_with = RCT
+				controls_state = 619
 			}
 		}
 
