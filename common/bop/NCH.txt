@@ -15,10 +15,6 @@ NCH_hunger_bop = {
 		}
 		on_activate = {
 			set_country_flag = NCH_hunger_defeat
-			country_event = {
-				id = d
-				days = 0
-			}
 		}
 	}
 

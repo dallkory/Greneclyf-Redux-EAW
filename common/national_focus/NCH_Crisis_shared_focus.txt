@@ -593,7 +593,12 @@ Shared_focus = {
 	y = 12
 
 	available = {
-		has_country_flag = NCH_bop_just_finished
+		or = {
+			has_country_flag = NCH_hunger_defeat
+			has_country_flag = NCH_bop_just_finished
+			has_country_flag = NCH_bop_end
+			has_country_flag = NCH_bop_never_more
+		}
 	}
 
 	completion_reward = {
