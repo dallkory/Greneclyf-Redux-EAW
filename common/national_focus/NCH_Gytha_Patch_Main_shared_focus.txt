@@ -715,7 +715,6 @@ shared_focus = {
 			days = 0
 		}
 
-
 		set_variable = {
 			var = NCH_var_boost
 			value = 0
