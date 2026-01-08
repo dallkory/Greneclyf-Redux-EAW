@@ -2517,6 +2517,15 @@ add_namespace = greneclyf_hive
 		}
 
 		option = {
+			ai_weight = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						is_ai = yes
+						add = 0
+					}
+				}
+			}
 			name = greneclyf_base.10.b
 			hidden_effect = {
 				country_event = country_capitulated.1
@@ -4413,11 +4422,11 @@ add_namespace = greneclyf_hive
 			add_state_core = 1210
 
 			1210 = {
-				set_state_name = "Yliss"
+				set_state_name = "Ulysses"
 			}
 			set_province_name = {
 				id = 10775
-				name = "Yliss"
+				name = "Ulysses"
 			}
 
 			1210 = {

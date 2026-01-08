@@ -1346,7 +1346,7 @@ shared_focus = {
 	x = 48
 	y = 18
 
-	cancel_if_invalid = no
+	cancel_if_invalid = yes
 
 	available = {
 		country_exists = CHN
@@ -1415,7 +1415,7 @@ shared_focus = {
 	x = 50
 	y = 18
 
-	cancel_if_invalid = no
+	cancel_if_invalid = yes
 
 	available = {
 		EQS = { 
@@ -1453,7 +1453,7 @@ shared_focus = {
 	x = 49
 	y = 19
 
-	cancel_if_invalid = no
+	cancel_if_invalid = yes
 
 	available = {
 		CHN = {
