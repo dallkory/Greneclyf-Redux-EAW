@@ -9,7 +9,7 @@ actually_fix_weapon_techs = yes
 
 set_convoys = 1
 
-recruit_character= AWP_leader
+#recruit_character= AWP_leader
 
 set_popularities = {
 	democratic = 25

@@ -17,17 +17,10 @@ state={
 
 		victory_points = { 20422 1 }
 
-		add_resource = {
-			type = chromium
-			amount = 7
-		}
-		add_resource = {
-			type = oil
-			amount = 15
-		}
-		add_resource = {
-			type = tungsten
-			amount = 6
+		resources={
+			chromium=7
+			oil = 15
+			tungsten = 6
 		}
 	}
 	manpower= 175869

@@ -29,7 +29,7 @@ NCH_reichswaffen_organization = {
 	}
 	visible = { 
 		owner = {
-			has_country_flag = NCH_griffon_rifles_flag 
+			# has_country_flag = NCH_griffon_rifles_flag 
 		}
 	}
 	available = { 
@@ -48,11 +48,12 @@ NCH_greda_organization = {
 		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
-	visible = { 
-		original_tag = NCH
-	}
 	available = { 
-		original_tag = NCH
+		owner = {
+			if = {
+				limit = { original_tag = NCH }
+			}
+		}
 	}
 	include = generic_artillery_organization
 }

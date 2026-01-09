@@ -13,8 +13,8 @@ ideas = {
 					excavation_tech = 0.10
 				}
 				modifier = {
-					resource_gain_efficiency = 0.10
-					local_resources_factor = 0.03
+					local_resources_factor = 0.10
+					local_resources_coal_factor = 0.03
 				}
 				traits = { mining_company }
 			}
@@ -57,11 +57,10 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
-				resource_gain_efficiency = 0.05
+				local_resources_factor = 0.05
 				trade_opinion_factor = -0.30 
 				consumer_goods_factor = -0.075
 				research_speed_factor = -0.05
-				trade_opinion_factor = -0.25
 
 				fascism_drift = 0.001
 			}
@@ -229,7 +228,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.095
 				industrial_capacity_factory = 0.075
 				trade_opinion_factor = 0.2
-				resource_gain_efficiency = 0.03
+				local_resources_factor = 0.03
 			}
 		}
 
@@ -246,7 +245,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = -0.2
-				local_manpower_factor = 0.05
+				local_manpower = 0.05
 				non_core_manpower = 0.055
 				stability_factor = 0.05
 				political_power_factor = -0.05
@@ -302,7 +301,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.075
 				industrial_capacity_factory = 0.05
 				trade_opinion_factor = 0.3
-				resource_gain_efficiency = 0.05
+				local_resources_factor = 0.05
 
 				war_support_factor = -0.05
 				drift_defence_factor = 0.15
@@ -356,8 +355,6 @@ ideas = {
 				production_cost_max_ship_hull_cruiser = 3200
 				production_cost_max_ship_hull_heavy = 6500
 				production_cost_max_ship_hull_carrier = 7000
-				production_cost_max_ship_hull_fleet_submarine = 500
-				production_cost_max_destroyer = 1000
 			}
 		}
 		NCH_9_stars_diversions = {
@@ -834,7 +831,7 @@ ideas = {
 				research_speed_factor = 0.05
 				monthly_population = 0.15  
 				stability_factor = -0.05
-				construction_speed_factor = 0.05  
+				production_speed_buildings_factor = 0.05  
 				consumer_goods_factor = 0.1
 			}
 		}
@@ -1018,12 +1015,6 @@ ideas = {
 				consumer_goods_factor = -0.15
 				power_balance_weekly = 0.005
 
-				random_owned_state = {
-					add_building_construction ={
-						type = industrial_complex
-						value = 4
-					}
-				}
 			}
 		}
 
@@ -1218,7 +1209,6 @@ ideas = {
 				communism_drift = 0.01
 				democratic_drift = 0.03
 
-				build_cost_ic = -0.02
 				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = 0.15
 				trade_opinion_factor = 0.15
@@ -1245,10 +1235,10 @@ ideas = {
 				political_power_gain = 0.05
 				defence = 0.05
 
-				foreign_subversive_activities = -0.25
-				ideology_attack = -0.10
+				foreign_subversive_activites = -0.25
+				drift_defence_factor = 0.10
 				resistance_target = -0.05
-				research_speed = -0.05
+				research_speed_factor = -0.05
 				consumer_goods_factor = 0.1
 			}	
 		}
@@ -1399,16 +1389,17 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
+			research_bonus = {
+				air_equipment = 0.05
+			}
 
 			modifier = {
 				air_mission_efficiency = -0.09
-				air_equipment_research_speed = -0.05
 
 				air_range_factor = 0.1
 				air_agility_factor = -0.05
 
-				license_air_equipment_purchase_cost = -0.25
-				license_purchase_cost = -0.1
+				license_purchase_cost = -0.15
 				license_production_speed = 0.1
 			}
 		}
@@ -1502,8 +1493,6 @@ ideas = {
 
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 4500
-				production_cost_max_ship_hull_fleet_submarine = 800
-				production_cost_max_destroyer = 1300
 				production_cost_max_ship_hull_heavy = 9000
 				navy_fuel_consumption_factor = -0.05
 				industrial_capacity_dockyard = 0.1
@@ -1611,13 +1600,6 @@ ideas = {
 					armor_value = 0.025
 					anti_air_attack = 0.03
 					build_cost_ic = 0.1
-					instant = yes
-				}
-				heavy_cruiser = {
-					defense = 0.05
-					armor_value = 0.03
-					surface_visibility = -0.05
-					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -1826,8 +1808,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				land_organization = 0.10
-				division_recovery_rate = 0.08
+				army_org = 0.10
+				army_morale_factor = 0.08
 				army_morale = 0.05
 
 				army_org_factor = 0.05

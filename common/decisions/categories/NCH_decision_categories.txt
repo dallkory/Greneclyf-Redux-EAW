@@ -56,8 +56,10 @@ NCH_river_of_op_category = {
 	icon = GFX_political
 	
 	visible = {
+		or = {
 		has_completed_focus = NCH_not_so_united
 		has_country_flag = NCH_debug
+		}
 	}
 	priority = {
 		base = 152

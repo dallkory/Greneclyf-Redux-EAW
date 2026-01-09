@@ -106,69 +106,21 @@ NCH_debug_decision = {
 
 			NCH = {
 				every_state = {
-					if = {
-						limit = {
-							owner = RCT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = NIM
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = DMT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = BAK
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = DEP
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = LCT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = WIT
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FRE
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FBK
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = FIR
-						}
-						add_core_of = NCH
-					}
-					if = {
-						limit = {
-							owner = WAT
+					limit = {
+						owner = {
+							OR = {
+								tag = RCT
+								tag = NIM
+								tag = DMT
+								tag = BAK
+								tag = DEP
+								tag = LCT
+								tag = WIT
+								tag = FRE
+								tag = FBK
+								tag = FIR
+								tag = WAT
+							}
 						}
 						add_core_of = NCH
 					}
@@ -943,69 +895,21 @@ NCH_fed_found_category = {
 
 				NCH = {
 					every_state = {
-						if = {
-							limit = {
-								is_core_of = RCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = NIM
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DMT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								owner = BAK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DEP
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = LCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WIT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FRE
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FBK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FIR
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WAT
+						limit = {
+							owner = {
+								OR = {
+									tag = RCT
+									tag = NIM
+									tag = DMT
+									tag = BAK
+									tag = DEP
+									tag = LCT
+									tag = WIT
+									tag = FRE
+									tag = FBK
+									tag = FIR
+									tag = WAT
+								}
 							}
 							add_core_of = NCH
 						}
@@ -1669,12 +1573,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				DMT = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					DMT = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}
@@ -1701,12 +1606,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				BAK = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					BAK = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}
@@ -1733,12 +1639,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				FRE = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					FRE = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}
@@ -1768,7 +1675,6 @@ NCH_river_of_op_category = {
 		visible = {
 			has_country_flag = NCH_debug
 			and = {
-				has_completed_focus = NCH_not_so_united
 				WIT = {
 					not = {
 						has_government = democratic
@@ -1798,12 +1704,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				RCT = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					RCT = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}
@@ -1830,12 +1737,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				NIM = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					NIM = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}
@@ -1862,12 +1770,13 @@ NCH_river_of_op_category = {
 		days_remove = 50
 
 		visible = {
-			has_country_flag = NCH_debug
-			and = {
-				has_completed_focus = NCH_not_so_united
-				LCT = {
-					not = {
-						has_government = democratic
+			or = {
+				has_country_flag = NCH_debug
+				and = {
+					LCT = {
+						not = {
+							has_government = democratic
+						}
 					}
 				}
 			}

@@ -511,6 +511,12 @@ Shared_focus = {
 			idea = NCH_zone_of_sin
 			days = 120
 		}
+		random_owned_state = {
+			add_building_construction ={
+				type = industrial_complex
+				value = 2
+			}
+		}
 
 		1210 = {
 			set_state_name = "SAOR"

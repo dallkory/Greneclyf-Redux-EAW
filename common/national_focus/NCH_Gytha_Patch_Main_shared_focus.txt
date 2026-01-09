@@ -733,7 +733,7 @@ shared_focus = {
 			RCT = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -747,7 +747,7 @@ shared_focus = {
 			BAK = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -761,7 +761,7 @@ shared_focus = {
 			DMT = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -775,7 +775,7 @@ shared_focus = {
 			NIM = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -789,7 +789,7 @@ shared_focus = {
 			DEP = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -803,7 +803,7 @@ shared_focus = {
 			LCT = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -817,7 +817,7 @@ shared_focus = {
 			FRE = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {
@@ -831,7 +831,7 @@ shared_focus = {
 			WIT = {
 				if = {
 					limit = {
-						is_exists = yes
+						exists = yes
 					}
 					capital_scope = {
 						add_to_array = {

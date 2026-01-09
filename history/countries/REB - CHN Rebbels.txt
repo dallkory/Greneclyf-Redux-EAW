@@ -53,7 +53,7 @@ add_opinion_modifier = { target = NCH modifier = besties }
 set_stability = 0.15
 set_war_support = 0.65
 
-recruit_character = NCH_Adler
+#recruit_character = NCH_Adler #You're gonna have to transfer him from NCH, or make a new character with his stats, you can't have the same character in 2 places at once
 
 set_rule = {
 	can_generate_female_aces = yes

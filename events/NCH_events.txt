@@ -4005,11 +4005,13 @@ add_namespace = greneclyf_hive
 		is_triggered_only = yes
 
 		option = {
-		NCH = {
+			NCH = {
 			set_country_flag = NCH_EQS_accept_trade
-		}
-		set_country_flag = NCH_EQS_accept_trade
-       	name = greneclyf_foregin.26.a		
+			}
+			EQS = {
+				set_country_flag = NCH_EQS_accept_trade
+			}
+       		name = greneclyf_foregin.26.a		
 			ai_chance = {
 				base = 0.7
 				modifier = {
@@ -5094,9 +5096,6 @@ add_namespace = greneclyf_hive
 
 			add_political_power = 100
 
-			NCH = {
-				remove_country_leader_role = yes
-			}
 
 			set_country_flag = NCH_manicpor_unlocked
 			set_variable = {
@@ -5147,8 +5146,12 @@ add_namespace = greneclyf_hive
 			add_political_power = -300
 
 			NCH = {
-				remove_country_leader_role = yes
+				remove_country_leader_role = {
+					character = NCH_queen_gytha
+					ideology = conservatism
+				}
 			}
+
 			create_country_leader = {
 				name = NCH_Svirl_chosen_leader
 				picture = GFX_NCH_riverswirl
