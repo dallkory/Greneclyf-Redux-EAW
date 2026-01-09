@@ -1323,9 +1323,9 @@ NCH_arctic_expedition_category = {
 				transfer_state_to = NCH
 				hidden_effect = {
 					remove_core_of = AWT
-					add_victory_points = {
-						value = 1
-					}
+					# add_victory_points = {
+					# 	value = 1
+					# }
 				}
 				add_core_of = NCH
 
@@ -1335,20 +1335,26 @@ NCH_arctic_expedition_category = {
 				set_state_flag = NCH_arctic_found_colony
 			}
 
-			hidden_effect = {
-				ROOT = {
-					add_political_power = -30
-					add_manpower = -1200 
-					#add_equipment_to_stockpile = { type = convoy amount = -4 } 
-				}
-			}
+			# hidden_effect = {
+			# 	NCH = {
+			# 		add_political_power = -30
+			# 		add_manpower = -1200 
+			# 		#add_equipment_to_stockpile = { type = convoy amount = -25 } 
+			# 	}
+			# }
 		}
 
 		complete_effect = {
-			set_country_flag = NCH_arctic_found_colony
-			
+			FROM = {
+				if = {
+					limit = { not = { has_state_flag = NCH_arctic_vp_added } }
+					add_victory_points = { value = 1 }
+					set_state_flag = NCH_arctic_vp_added
+				}
+			}
 			add_equipment_to_stockpile = { type = convoy amount = -25 } 
-			
+			add_political_power = -30
+			add_manpower = -1200 
 		}
 		
 		# cancel_trigger = {

@@ -2690,15 +2690,18 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_base.22.a
-
 			country_event = {
 				id = greneclyf_base.23
-				days = 50
+				days = 10
 			}
 		}
 
 		option = {
 			name = greneclyf_base.22.b
+			country_event = {
+				id = greneclyf_base.24
+				days = 10
+			}
 		}
 	}
 
@@ -2719,14 +2722,6 @@ add_namespace = greneclyf_hive
 			add_power_balance_value = {
 				id = NCH_hunger_bop
 				value = 0.05
-			}
-		}
-
-		option = {
-			name = greneclyf_base.23.b
-			country_event = {
-				id = greneclyf_base.24
-				days = 30
 			}
 		}
 	}
@@ -4010,6 +4005,9 @@ add_namespace = greneclyf_hive
 		is_triggered_only = yes
 
 		option = {
+		NCH = {
+			set_country_flag = NCH_EQS_accept_trade
+		}
 		set_country_flag = NCH_EQS_accept_trade
        	name = greneclyf_foregin.26.a		
 			ai_chance = {
@@ -4116,7 +4114,10 @@ add_namespace = greneclyf_hive
 
 		# Accept #
 		option = {
-       		name = greneclyf_core.3.a		
+       		name = greneclyf_core.3.a	
+			NCH = {
+				add_ideas = RIV_member_state	
+			}
 			ai_chance = {
 				base = 0.3
 				modifier = {
@@ -5148,7 +5149,6 @@ add_namespace = greneclyf_hive
 			NCH = {
 				remove_country_leader_role = yes
 			}
-
 			create_country_leader = {
 				name = NCH_Svirl_chosen_leader
 				picture = GFX_NCH_riverswirl

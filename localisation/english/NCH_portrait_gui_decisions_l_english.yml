@@ -11,8 +11,9 @@
  manic_portrait:0 "§4Mare of Steel§!"
  portrait_locked:0 "§tLOCKED§!"
  manic_portrait_del:0 "§LAs the head of the newly formed Federation, Queen Gytha has gained more power than any descendant of the royal family of Dithrysium has ever had. She has become the ruler not only of the changelings of Greneclyf, but also of the ponies of Eastern Griffonia. While this concentration of unlimited power may seem dangerous, who knows what the future holds? Queen Gytha's ambitions are growing, and she is determined to challenge Crystalis in order to unite the changeling hives under her rule. She is no longer the naive young lady you once knew; she has become a formidable force...§!"
- manic_portrait_del_locked:0 "§YUnlocks After insert event/focus§!"
- 
+ manic_portrait_del_locked:0 "§YUnlocked after the `First Federal Elections` focus, or upon forming the Federation by any means while Queen Gytha is in power§!"
+
  PORTRAIT_PRES_TOOLTIP_DELAYED:0 "[GETPORTRAIT_PRES_TOOLTIP_DELAYED]"
  pres_portrait_del:0 "§LThe trials that Queen Gytha has faced have undoubtedly strengthened her will and character. She has become more pragmatic and, at times, even harsh in her approach to her subjects, advisors, and the world. Her image has changed significantly since the crisis, and she seems to have aged a bit. She now faces new challenges and problems that need to be addressed. Whether they be resolved peacefully or through force...§!"
- pres_portrait_del_locked:0 "§YUnlocks After insert event/focus§!"
+ pres_portrait_del_locked:0 "§YUnlocked after completing the `After the Storm` focus§!"
+
