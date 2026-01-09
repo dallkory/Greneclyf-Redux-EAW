@@ -5096,10 +5096,21 @@ add_namespace = greneclyf_hive
 
 			add_political_power = 100
 
-
 			set_country_flag = NCH_manicpor_unlocked
 			set_variable = {
 				NCH_queen_gytha_portrait = 3
+			}
+
+			NCH = {
+				remove_country_leader_role = {
+					character = NCH_riv_senate
+					ideology = conservatism
+				}
+			}
+			create_country_leader = {
+				name = NCH_queen_gytha
+				picture = GFX_NCH_Steel_Gytha
+				ideology = conservatism
 			}
 
 			NCH_queen_gytha = {
@@ -5147,7 +5158,7 @@ add_namespace = greneclyf_hive
 
 			NCH = {
 				remove_country_leader_role = {
-					character = NCH_queen_gytha
+					character = NCH_riv_senate
 					ideology = conservatism
 				}
 			}
