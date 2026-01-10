@@ -2042,7 +2042,7 @@ add_namespace = greneclyf_hive
 			name = greneclyf_hive.19.a
 			add_timed_idea = {
 				idea = NCH_demon_hegemony
-				duration = 210
+				days = 210
 			}
 			add_opinion_modifier = {
 				target = EQS
@@ -5021,11 +5021,11 @@ add_namespace = greneclyf_hive
 			name = greneclyf_core.115.a
 			add_stability = 0.03
 			add_political_power = 30
-			FROM = {
-				OVERLORD = {
-					tag = NCH
-				}
+
+			OVERLORD = {
+				tag = NCH
 			}
+
 
 			ai_chance = {
 				base = 1
@@ -5048,7 +5048,7 @@ add_namespace = greneclyf_hive
 			ai_chance = {
 				base = 2
 				modifier = {
-					factor = 0.8
+					factor = 0.7
 					not = {
 						has_country_flag = NCH_ready_to_integration_1
 						has_government = democratic

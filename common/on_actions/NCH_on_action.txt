@@ -12,11 +12,15 @@ on_actions = {
 			# START HIVES WAR #
 			if = {
 				limit = {
+					not = {
+						set_country_flag = NCH_hives_war_news_start
+					}
 					has_war_with = CHN
 					REB = {
 						is_subject_of = NCH
 					}
 				}
+				set_country_flag = NCH_hives_war_news_start
 				country_event = {
 					id = greneclyf_hive.10
 					major = yes
@@ -27,14 +31,18 @@ on_actions = {
 			# DEFEAT HIVES WAR #
 			if = {
 				limit = {
+					not = {
+						set_country_flag = NCH_hives_war_news_defeat
+					}
 					has_war_with = CHN
 					REB = {
 						is_subject_of = NCH
 					}
 					REB = {
-						is_captured = yes
+						has_capitulated = yes
 					}
 				}
+				set_country_flag = NCH_hives_war_news_defeat
 				country_event = {
 					id = greneclyf_hive.11
 					major = yes
@@ -45,13 +53,16 @@ on_actions = {
 			# SUCSESS HIVES WAR #
 			if = {
 				limit = {
+					not = {
+						set_country_flag = NCH_hives_war_news_win
+					}
 					has_war_with = CHN
 					REB = {
 						is_subject_of = NCH
 					}
 					or = {
 						CHN = {
-							is_captured = yes
+							has_capitulated = yes
 						}
 						REB = {
 							owns_state = 251
@@ -61,6 +72,7 @@ on_actions = {
 						}
 					}
 				}
+				set_country_flag = NCH_hives_war_news_win
 				country_event = {
 					id = greneclyf_hive.12
 					major = yes
@@ -179,7 +191,7 @@ on_actions = {
 					limit = {
 						is_riverlands_country = yes
 						is_in_faction_with = NCH
-						has_idea = NCH_riv_volounters
+						# has_idea = NCH_riv_volounters
 					}
 					NCH = {
 						add_ideas = NCH_riv_volounters
@@ -221,7 +233,10 @@ on_actions = {
 						has_idea = NCH_blosmport_economic_consequences
 					}
 					NCH = {
-						add_ideas = NCH_blosmport_economic_consequences
+						add_timed_idea = {
+							idea = NCH_blosmport_economic_consequences
+							days = 180
+						}
 					}
 				}
 			}

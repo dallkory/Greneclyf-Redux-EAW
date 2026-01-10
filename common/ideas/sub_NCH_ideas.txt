@@ -68,7 +68,7 @@ ideas = {
 
 		## ##
 		NCH_democratic_propaganda_1 = {
-			picture =d
+			picture = political_violence
 			allowed = {
 				always = no
 			}
@@ -90,26 +90,26 @@ ideas = {
 			}
 		}
 
-		# #NCH_riv_volounters = {
-		# 	picture = x
-		# 	allowed = {
-		# 		always = no
-		# 	}
-		# 	allowed_civil_war = {
-		# 		always = yes
-		# 	}
-		# 	available = {
-		# 		is_riverlands_country = yes
-		# 		is_in_faction_with = NCH
-		# 	}
-		# 	removal_cost = -1
+		NCH_riv_volounters = {
+			picture = FRE_help
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
 
-		# 	modifier = {
-		# 		weekly_manpower = 200
-		# 		production_speed_buildings_factor = 0.05
-		# 		production_factory_max_efficiency_factor = 0.05
-		# 	}
-		# }
+			modifier = {
+				weekly_manpower = 100
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 
 		# NCH_economic_hehemony_ork = {
 
@@ -567,7 +567,7 @@ ideas = {
 
 
 		NCH_9_stars_no_lr = {
-			picture = x
+			picture = hard_training
 
 			allowed = {
 				always = no
@@ -586,7 +586,7 @@ ideas = {
 		}
 
 		NCH_9_stars_lr = {
-			picture = x
+			picture = political_violence
 
 			allowed = {
 				always = no
