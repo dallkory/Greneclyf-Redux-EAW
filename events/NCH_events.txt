@@ -4906,10 +4906,11 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_core.111.a
-
-			add_opinion_modifier = {
-				target = NCH
-				modifier = small_decrease
+			FROM = {
+				add_opinion_modifier = {
+					target = NCH
+					modifier = small_decrease
+				}
 			}
 		}
 	}
@@ -5001,10 +5002,11 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_core.114.a
-
-			add_opinion_modifier = {
-				target = NCH
-				modifier = small_decrease
+			FROM = {
+				add_opinion_modifier = {
+					target = NCH
+					modifier = small_decrease
+				}
 			}
 		}
 	}
@@ -5025,7 +5027,6 @@ add_namespace = greneclyf_hive
 			OVERLORD = {
 				tag = NCH
 			}
-
 
 			ai_chance = {
 				base = 1
