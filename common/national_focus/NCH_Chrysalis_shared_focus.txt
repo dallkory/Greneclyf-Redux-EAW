@@ -310,8 +310,22 @@ Shared_focus = {
 
 	available = {
 		not = {
-			country_exists = CHN
+			or = {
+				REB = {
+					is_puppet_of = NCH
+				}
+				CHN = {
+					is_puppet_of = NCH
+				}
+				CHN = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+			}
 		}
+
 		CHN = {
 			all_core_state = {
 				not = {
