@@ -50,7 +50,7 @@ Shared_focus = {
 Shared_focus = {
 	id = NCH_colony_development
 	icon = GFX_goal_arccity
-	cost = 2
+	cost = 1
 	prerequisite = {
 		focus = NCH_land_behind_seas
 	}
@@ -65,7 +65,7 @@ Shared_focus = {
 	completion_reward = {
 		#add_ideas = NCH_arctic_conquest
 		custom_effect_tooltip = NCH_arctic_special_citues 
-
+		add_political_power = 30
 	}
 }
 
@@ -281,10 +281,10 @@ Shared_focus = {
 			}
 		}
 		
-		add_victory_points = {
-			province = 10891
-			value = 1
-		}
+		# add_victory_points = {
+		# 	province = 10891
+		# 	value = 1
+		# }
 		build_railway = {
 			level = 1
 

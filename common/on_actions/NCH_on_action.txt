@@ -86,6 +86,9 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1234
 					}
 					add_victory_points = {
@@ -101,6 +104,9 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1215
 					}
 					add_victory_points = {
@@ -116,6 +122,9 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1245
 					}
 					add_victory_points = {
@@ -131,6 +140,9 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1236
 					}
 					add_victory_points = {
@@ -146,6 +158,9 @@ on_actions = {
 				
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1227
 					}
 					add_victory_points = {
