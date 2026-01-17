@@ -4117,6 +4117,9 @@ add_namespace = greneclyf_hive
 		# Accept #
 		option = {
        		name = greneclyf_core.3.a	
+			NCH = {
+				leave_faction = yes
+			}
 			add_to_faction = NCH
 			NCH = {
 				add_ideas = RIV_member_state	
