@@ -2495,6 +2495,11 @@ add_namespace = greneclyf_hive
 
 		option = {
 			name = greneclyf_base.10.a
+
+			ai_chance = {
+				base = 100
+			}
+
 			set_country_flag = NCH_greet_future
 			set_country_flag = NCH_great_hunger_started
 
@@ -2517,14 +2522,8 @@ add_namespace = greneclyf_hive
 		}
 
 		option = {
-			ai_weight = {
-				ai_will_do = {
-					base = 0
-					modifier = {
-						is_ai = yes
-						add = 0
-					}
-				}
+			ai_chance = {
+				base = 0
 			}
 			name = greneclyf_base.10.b
 			hidden_effect = {
