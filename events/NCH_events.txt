@@ -4133,9 +4133,9 @@ add_namespace = greneclyf_hive
 			}
 
 			ai_chance = {
-				base = 0.3
+				factor = 30
 				modifier = {
-					factor = 0.7
+					factor = 20
 					has_government = democratic
 
 					has_opinion = {
@@ -4149,6 +4149,19 @@ add_namespace = greneclyf_hive
 		# Reject #
 		option = {
        		name = greneclyf_core.2.b	
+			ai_chance = {
+				factor = 70
+				modifier = {
+					factor = 30
+					has_government = democratic
+
+					has_opinion = {
+    					target = NCH
+    					value < 50
+					}
+				}
+			}
+
 			NCH = {
 				set_country_flag = NCH_riv_deceline
 			}	
