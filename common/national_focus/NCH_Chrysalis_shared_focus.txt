@@ -350,6 +350,12 @@ Shared_focus = {
 
 	available = {
 		not = {
+			CHN = {
+				country_exists = yes
+				has_government = fascism
+			}
+		}
+		not = {
 			or = {
 				REB = {
 					is_puppet_of = NCH
@@ -358,6 +364,12 @@ Shared_focus = {
 					is_puppet_of = NCH
 				}
 				CHN = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+				REB = {
 					all_core_state = {
 						is_controlled_by = NCH
 						is_controlled_by = REB
