@@ -33,7 +33,7 @@ Shared_focus = {
 		hidden_effect = {
 			country_event = {
 				id = greneclyf_arctic.2
-				days = 217
+				days = 218
 				random_days = 100
 			}
 		}
