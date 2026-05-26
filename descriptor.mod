@@ -10,7 +10,6 @@ dependencies={
 picture="thumbnail.png"
 name="Greneclyf Redux | Equestria At War"
 
-replace_path="map/strategicregions"
-replace_path="map/supplyareas"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3330541760"
+
