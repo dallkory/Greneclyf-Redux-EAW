@@ -38,6 +38,7 @@ characters={
 	}
 
 	# Advisors #
+
 	# Oiren judge #
 
 	NCH_Oiren_Judge = {
@@ -94,6 +95,7 @@ characters={
 		}
 	}
 
+	# Caider #
 	NCH_Caider = {
 		name = Cader_Scierite
 		portraits = {
@@ -167,6 +169,37 @@ characters={
 		# 	legacy_id=-1
 		# }
 	}
+
+	# Sunrise Moonshadow #
+
+	NCH_Sunrise_Moonshadow = {
+		name = Sunrise_Moonshadow
+		portraits = {
+			army = {
+				large="gfx/leaders/NCH/Sunrise_Moonshadow.tga"
+				small = "gfx/interface/ideas/Advisors/NCH/Sunrise_Moonshadow.tga"
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = NCH_general_1
+			cost = 100
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = NCH_equestria_support
+			}
+			traits = {
+				army_chief_offensive_2 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 
 	NCH_kianit_oir = {
 		name = kianit_oir

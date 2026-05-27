@@ -51,6 +51,7 @@ Furrelion:0 "Фуррелион"
 Realta_Dearg:0 "Рельта Дерг"
 Zaliack:0 "Залилак"
 Moronlan:0 "Эйфекс Кэррион"
+Sunrise_Moonshadow:0 "Санрайз Муншедоу"
 Marelay:0 "Марелей"
 Hailman:0 "Хейльман"
 Coilholt:0 "Койхольт"
@@ -718,6 +719,8 @@ NCH_new_stats_lorri:0 "§gУровень§!: §Y4§!, (£trait_attack §Y5§!, �
 
 NCH_Merelay:0 "Марелей"
 NCH_Marelay_stats:0 "§gУровень§!: §Y2§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§gЧерты§!: §C$infantry_leader$§!, §C$hill_fighter$§!\n\n"
+
+NCH_Sunrise_Moonshadow_stats:0 "§gУровень§!: §Y4§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y3§!, £trait_logistics §Y5§!)\n§gЧерты§!: §C$infantry_leader$§! §C$logistics_expert$§! §C$loyalist$§!\n\n"
 
 
 ### Industrial ###
