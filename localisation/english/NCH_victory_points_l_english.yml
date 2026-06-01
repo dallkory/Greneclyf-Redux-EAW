@@ -1,21 +1,21 @@
 ﻿l_english:
-# GRENECLYF #
-VICTORY_POINTS_5230:0 "Llyr"
-VICTORY_POINTS_10775:0 "Port Ulliss"
-VICTORY_POINTS_10891:0 "Korhart"
+  # GRENECLYF #
+  VICTORY_POINTS_5230:0 "Llyr"
+  VICTORY_POINTS_10775:0 "Port Ulliss"
+  VICTORY_POINTS_10891:0 "Korhart"
 
-# ARCTIC #
-VICTORY_POINTS_20346:0 "Little Hope"
-VICTORY_POINTS_20358:0 "Port Markart"
-VICTORY_POINTS_20324:0 "Haisvik Station"
-VICTORY_POINTS_20352:0 "Station Ficeroy"
-VICTORY_POINTS_20321:0 "Vik 417"
-VICTORY_POINTS_20314:0 "Meteo Station Snoharkart"
+  # ARCTIC #
+  VICTORY_POINTS_20346:0 "Little Hope"
+  VICTORY_POINTS_20358:0 "Port Markart"
+  VICTORY_POINTS_20324:0 "Haisvik Station"
+  VICTORY_POINTS_20352:0 "Station Ficeroy"
+  VICTORY_POINTS_20321:0 "Vik 417"
+  VICTORY_POINTS_20314:0 "Meteo Station Snoharkart"
 
-SAOR:0 "Saor"
-Yliss:0 "Ulliss"
+  SAOR:0 "Saor"
+  Yliss:0 "Ulliss"
 
-# HAWAI #
-VICTORY_POINTS_20422:0 "Ponya'ilulu"
+  # HAWAI #
+  VICTORY_POINTS_20422:0 "Ponya'ilulu"
 
 
