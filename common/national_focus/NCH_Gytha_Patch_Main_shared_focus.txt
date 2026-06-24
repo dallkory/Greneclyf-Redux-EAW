@@ -2916,6 +2916,7 @@ shared_focus = {
 		custom_effect_tooltip = NCH_gytha_maniac_open
 		set_country_flag = NCH_manicpor_unlocked
 		set_country_flag = NCH_fed_found
+		set_country_flag = NCH_queen_hive_abmitions
 
 		country_event = {
 			id = greneclyf_core.117

@@ -1,6 +1,7 @@
 capital = 670
 
-oob = "NCH_1007"
+set_oob = "NCH_1007"
+
 set_research_slots = 3
 
 set_country_flag = has_custom_advisors
