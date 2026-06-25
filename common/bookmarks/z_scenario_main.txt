@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1007.1.1.12
 		picture = "GFX_bookmark_equus"
-		default_country = "NCH"
+		default_country = "CHN"
 		default = yes
 
 		filters = { label }

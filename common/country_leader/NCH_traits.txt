@@ -65,7 +65,7 @@ leader_traits = {
 		party_popularity_stability_factor = 0.3
 		political_power_gain = 0.05
 
-		power_balance_weekly = 0.02
+		power_balance_weekly = 0.005
 	}
 
 	higher_judge_oiren = {
