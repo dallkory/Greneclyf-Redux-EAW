@@ -298,6 +298,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_Oiren_Ministr"
+		textureFile = "gfx/interface/ideas/NCH/Oiren_Ministr.tga"
+	}
+
+	spriteType = {
 		name = "GFX_idea_unity_of_faith"
 		textureFile = "gfx/interface/ideas/NCH/unity_of_faith.tga"
 	}

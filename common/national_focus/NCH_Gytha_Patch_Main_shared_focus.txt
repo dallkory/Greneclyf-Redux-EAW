@@ -305,6 +305,7 @@ shared_focus = {
 	y = 18
 
 	completion_reward = {
+		add_ideas = NCH_unity_of_faith
 		country_event = {
 			id = greneclyf_core.8
 			days = 0
@@ -462,6 +463,11 @@ shared_focus = {
 	completion_reward = {
 		#set_politics = { ruling_party = democratic }#
 		add_political_power = 50
+
+		country_event = {
+			id = greneclyf_core.118
+			days = 0
+		}
 
 		set_party_name = {
 			ideology = democratic

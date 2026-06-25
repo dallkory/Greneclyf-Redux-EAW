@@ -1260,6 +1260,25 @@ ideas = {
 			}	
 		}
 
+		NCH_Oiren_Ministr = {
+			picture = Oiren_Ministr
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				opinino_change_factor = 0.25
+				resistance_target = -0.1
+				compliance_growth = 0.035
+			}
+		}
+
 		NCH_unity_of_faith = {
 			picture = unity_of_faith
 			allowed = {

@@ -10,14 +10,13 @@ Shared_focus = {
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
 			has_completed_focus = NCH_shield_and_sword_harmony
+			has_country_flag = NCH_queen_hive_abmitions
+			has_war_with = CHN
 		}
 	}
 
 	available = {
-		has_country_leader = {
-			character = NCH_queen_gytha
-			ruling_only = yes
-		}
+		has_rulling_party = democratic
 
 		or = {
 			has_completed_focus = NCH_shield_and_sword_harmony

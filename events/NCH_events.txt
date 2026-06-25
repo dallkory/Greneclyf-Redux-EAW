@@ -5255,6 +5255,20 @@ add_namespace = greneclyf_hive
 		}
 	}
 
+	# MINISTR OIREN #
+	country_event = {
+		id = greneclyf_core.118
+		title = greneclyf_core.118.t
+		desc = greneclyf_core.118.d
+		picture = GFX_event_under_amella
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_core.118.a
+			add_ideas = NCH_Oiren_Ministr
+		}
+	}
+
 
 
 ### END MAIN PATCH ###

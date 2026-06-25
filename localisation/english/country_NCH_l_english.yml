@@ -1044,6 +1044,12 @@
   greneclyf_core.117.a:0 "‘Time waits for no one.’"
   greneclyf_core.117.b:0 "§RSomething happened during the road, leading to the unforeseen consequences§"
 
+  greneclyf_core.118.t:0 "Yes, Minister!"
+  greneclyf_core.118.d:0 "Oiren winced, her eye twitching nervously. The only sound she could manage was a faint:\n\n«...Huh?»\n\n«Well, yes. Who else could handle it better than you?» the queen replied casually.\n\n«Gytha, Gytha, Gytha—GYTHA! That's impossible! I'm the Chief Justice! I represent the legislative branch!»\n\n«And I say it's entirely possible,» Gytha chuckled. «You're not just the Chief Justice—you're also the Mother of the Constitution, Oiren of Óir. If anyone deserves this position, it's clearly you, not some prefect like that braggart Carrion.»\n\nGytha stepped forward and looked into her eyes gently.\n\n«Please, Oirie. I need you.»\n\nOiren took a deep breath, then let it out slowly... Then she threw her head back, howled at the ceiling, and collapsed face-first onto the table.\n\n«Wonderful... I certainly wasn't prepared to become the official second-most important person in the realm, carrying both the legislative branch and now part of the executive branch on my shoulders. What next? Are you going to hand me your crown as well?» she muttered sarcastically, fixing Gytha with a weary stare.\n\nThe queen laughed.\n\n«Maybe. Though more likely to your children.»\n\nOiren froze. For a brief moment, her cheeks seemed to turn pink. Then, with a dull thud, she buried her face in her hooves once again."
+
+  greneclyf_core.118.a:0 "Ah, how poetic this all turned out, Oirie!"
+
+
   greneclyf_core.7.t:0 "Royal Flush"
   greneclyf_core.7.d:0 "Sweet Sprinkle read aloud the Kingdom’s official demand before the United River Company’s Board of Directors: to buy out the Saor Special Economic Zone at a very generous price.\n\nThe directors were furious. The room boiled with arguments until one of the board members, a representative from Deponya, noticed the sly smirk on Sweet Sprinkle’s face.\n\n’Madam Administrator, why are you smiling like that? You’re about to lose your job.’\n\nSweet only smiled wider. ‘Am I? Gentlecolts, I’m pleased to inform you that under a unique clause in the Saor acquisition agreement, I receive special privileges from the Crown: citizenship and a position in the government.’\n\nThe room froze. A few jaws dropped, others scoffed in disbelief.\n\n’What’s more,’ – she narrowed her eyes – ‘I suggest you reread the original contract for the establishment of the SEZ. Specifically the amended clause stating that, in the event of a buyout proposal from Greneclyf, you are legally obligated to accept. In return, you receive long-term dividend compensation.’\n\nSilence fell.\n\n’So I kindly ask that you end this charade, sign the damn paper, and stop wasting our time.’\n\nShe stood up, hooves gently tapping the floor: ‘Oh, and please accept my resignation. I no longer work as a URC broker.’"
   greneclyf_core.7.a:0 "‘Ta-ta, gentleponies!’"
@@ -1483,6 +1489,8 @@
   NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
   ### IDEAS ###
+  NCH_Oiren_Ministr:0 "Prime Minister Oiren"
+  NCH_unity_of_faith:0 "Unity of Faith"
   NCH_bos_riv:0 "The Blosmport Cooperation Organization"
   NCH_veterans:0 "Veterans"
   NCH_political_violence:0 "Political Violence"
