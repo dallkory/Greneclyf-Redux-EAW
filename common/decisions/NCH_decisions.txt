@@ -210,7 +210,7 @@ NCH_chrysalis_category = {
 		available = {
 			or = {
 				CHN = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				CHN = {
 					exists = no

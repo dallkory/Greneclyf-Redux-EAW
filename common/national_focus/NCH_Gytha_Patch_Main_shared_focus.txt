@@ -2277,7 +2277,7 @@ shared_focus = {
 			has_idea = RIV_member_state
 			619 = {
 				controller = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 			}
 			owns_state = 619
@@ -2722,7 +2722,7 @@ shared_focus = {
 					original_tag = NCH
 				}
 				not = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				is_riverlands_country = yes
 				# is_in_faction_with = NCH
@@ -2737,7 +2737,7 @@ shared_focus = {
 		every_country = {
 			limit = {
 				not = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				is_riverlands_country = yes
 				# is_in_faction_with = NCH

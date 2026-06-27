@@ -357,10 +357,10 @@ Shared_focus = {
 		not = {
 			or = {
 				REB = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				CHN = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				CHN = {
 					all_core_state = {
@@ -529,7 +529,7 @@ Shared_focus = {
 				controller = {
 					or = {
 						original_tag = EQS
-						is_puppet_of = EQS
+						is_subject_of = EQS
 					}
 				}
 			}
@@ -635,7 +635,7 @@ Shared_focus = {
 				has_government = democratic
 			}
 			CHN = {
-				is_puppet_of = EQS
+				is_subject_of = EQS
 			}
 		}
 	}
@@ -700,7 +700,7 @@ Shared_focus = {
 				country_exists = CHN
 			}
 			CHN = {
-				is_puppet_of = EQS
+				is_subject_of = EQS
 			}
 		}
 	}
@@ -866,7 +866,7 @@ Shared_focus = {
 		if = {
 			limit = {
 				REB  = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 			}
 
