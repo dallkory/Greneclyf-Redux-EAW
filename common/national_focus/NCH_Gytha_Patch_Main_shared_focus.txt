@@ -1449,7 +1449,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_our_best_qualities
 	icon = GFX_goal_blitz
-	cost = 6
+	cost = 1
 	prerequisite = {
 		focus = NCH_emvassy_to_equestria
 	}
@@ -1902,7 +1902,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_shield_and_sword_harmony
 	icon = GFX_goal_our_rules
-	cost = 8
+	cost = 5
 
 
 	prerequisite = {
@@ -1950,7 +1950,7 @@ shared_focus = {
 shared_focus = {
 	id = NCH_equestria_support
 	icon = GFX_goal_equestrian_defense
-	cost = 8
+	cost = 5
 	prerequisite = {
 		focus = NCH_friendship_delegation
 	}
@@ -1979,7 +1979,7 @@ shared_focus = {
 		add_corps_commander_role = {
 			character = NCH_Sunrise_Moonshadow
 			#desc = "Sunrise_Moonshadow"
-			traits={pony_race_trait media_personality career_officer panzer_expert}
+			traits={pony_race_trait media_personality career_officer panzer_leader panzer_expert}
 			skill=4
 			attack_skill=4
 			defense_skill=2
