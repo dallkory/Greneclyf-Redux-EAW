@@ -122,7 +122,7 @@ focus_tree = {
 		y = 4
 		
 		completion_reward = {
-			1209={
+			1253={
 				add_victory_points = {
 					province = 5230
 					value = 5

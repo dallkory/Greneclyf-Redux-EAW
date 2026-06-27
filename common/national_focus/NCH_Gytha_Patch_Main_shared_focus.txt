@@ -103,7 +103,7 @@ shared_focus = {
 		NCH = {
 			or = {
 				controls_state = 668
-				controls_state = 1209
+				controls_state = 1253
 			}
 		}
 	}
@@ -145,21 +145,21 @@ shared_focus = {
 		if = {
 			limit = {
 				NCH = {
-					controls_state = 1209
+					controls_state = 1253
 				}
 			}
-			1209 = {
+			1253 = {
 				add_manpower = 20000
 			}
 
-			1209 = {
+			1253 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
 
-			1209 = {
+			1253 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -194,7 +194,7 @@ shared_focus = {
 		669 = {
 			add_manpower = 15000
 		}
-		1209 = {
+		1253 = {
 			add_manpower = 10000
 		}
 		668 = {

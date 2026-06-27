@@ -6,7 +6,7 @@ state={
 	10987 2174 13086 12994 8217 5230 9099
 	}
 
-	manpower=491209	#1947099#
+	manpower=491253	#1947099#
 	state_category=town
 	buildings_max_level_factor=1.00
 
