@@ -3750,7 +3750,10 @@ add_namespace = greneclyf_hive
 
 		option = {
        	name = greneclyf_foregin.14.a		
-		
+		country_event = {
+			id = greneclyf_foregin.15
+			days = 10
+			}
 		}
 	}	
 
@@ -3815,7 +3818,7 @@ add_namespace = greneclyf_hive
        	name = greneclyf_foregin.18.a		
 			country_event = {
 				id = greneclyf_foregin.19
-				days = 10
+				days = 5
 			}	
 		}
 	}
@@ -4668,6 +4671,7 @@ add_namespace = greneclyf_hive
 		option = {
 			name = greneclyf_core.103.a
 			add_ideas = NCH_bos_riv
+			add_ideas = NCH_riv_volounters
 			# NCH = {
 			# 	country_event = {
 			# 		id = greneclyf_core.104
@@ -4821,7 +4825,7 @@ add_namespace = greneclyf_hive
 		is_triggered_only = yes
 
 		option = {
-			name = greneclyf_base.107.a
+			name = greneclyf_core.107.a
 			#set_country_flag = NCH_bos_command
 
 			#add_ideas = NCH_bos_riv
@@ -4857,7 +4861,7 @@ add_namespace = greneclyf_hive
 		# accept #
 		option = {
 			name = greneclyf_core.109.a
-			add_ideas = NCH_riv_volounters
+			add_ideas = NCH_riv_lanquage
 			# NCH = {
 			# 	country_event = {
 			# 		id = greneclyf_core.110
@@ -4953,7 +4957,7 @@ add_namespace = greneclyf_hive
 		# accept #
 		option = {
 			name = greneclyf_core.112.a
-			add_ideas = NCH_riv_volounters
+			add_ideas = NCH_riv_search_base
 			# NCH = {
 			# 	country_event = {
 			# 		id = greneclyf_core.113

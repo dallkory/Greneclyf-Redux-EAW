@@ -106,8 +106,9 @@ ideas = {
 
 			modifier = {
 				weekly_manpower = 100
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -157,6 +158,30 @@ ideas = {
 				justify_war_goal_time = 0.15
 				democratic_drift = 0.001
 				trade_opinion_factor = 0.15
+			}
+		}
+
+		NCH_riv_lanquage = {
+			picture = FEZ_doing_by_book
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+			}
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.03
+				stability_weekly = 0.005
+				political_power_factor = 0.05
+				compliance_gain_add = 0.02
+				division_recovery_rate = 0.05
+				recruitable_population_factor = 0.075
 			}
 		}
 

@@ -1489,6 +1489,8 @@
   NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
   ### IDEAS ###
+  NCH_riv_lanquage:0 "The Riverlands Language"
+  NCH_riv_volounters:0 "Volunteers of the Riverlands"
   NCH_Oiren_Ministr:0 "Prime Minister Oiren"
   NCH_unity_of_faith:0 "Unity of Faith"
   NCH_bos_riv:0 "The Blosmport Cooperation Organization"
@@ -1611,6 +1613,7 @@
 
 
   ### MODIFIERS ###
+  NCH_trade_with_riverlands_prey:0 "Victim of Imposed Trade"
   NCH_new_hillspony:0 "Trade with the Hill Ponies"
   NCH_urbanization_modifier:0 "Urbanization in the Regions"
   NCH_trade_with_Riverlands_prey:0 "Victim of Imposed Trade"

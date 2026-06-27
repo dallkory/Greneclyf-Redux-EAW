@@ -10,6 +10,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_category_form_river_federation_picture.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_decision_pawn.tga"
+		texturefile = "gfx/interface/decisions/pawn.tga"
+	}
+
+	spriteType = {
+		name = "GFX_decision_nine_stars_op"
+		texturefile = "gfx/interface/decisions/total_operatives.dds"
+	}
+
 	spriteType = {
 		name = "GFX_decision_category_chn_queens_tower"
 		texturefile = "gfx/interface/decisions/decision_category_chn_queens_tower.dds"
