@@ -457,6 +457,16 @@ on_actions = {
 				remove_ideas = NCH_break_ice_idea
 			}
 			
+			if = {
+				limit = {
+					AWT = {
+						is_in_faction = yes
+					}
+				}
+				AWT = {
+					leave_faction = yes
+				}
+			}
 
 			# SUBMOD EXAMPLE #
 

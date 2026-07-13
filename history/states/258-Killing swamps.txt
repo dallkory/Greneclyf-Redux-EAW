@@ -1,0 +1,25 @@
+state={
+	id=258
+	name="STATE_258"
+	resources={
+		oil=4
+	}
+	provinces={
+		30 3026 3153 6045 6179 9158 9223 11648 
+	}
+	history={
+		owner = CHN
+		add_core_of = CHN
+
+		victory_points = { 9158 10 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+		}
+	}
+	manpower=692118
+	buildings_max_level_factor=2
+	state_category=town
+	local_supplies=0
+}

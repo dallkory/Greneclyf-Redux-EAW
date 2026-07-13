@@ -1525,7 +1525,8 @@ NCH_sabotage_chrysalis:0 "Саботаж на военных производс�
 
 NCH_fed_found_category:0 "Создание Федерации-Конкордата Ост-Грифонии"
 NCH_war_fed_found_dec:0 "Объеденить Федерацию военным путём"
-NCH_peace_fed_found_dec:0 "Объеденить Федерацию мирным путём"
+NCH_peace_fed_found_dec:0 "Частичное объединение речных земель"
+NCH_truly_peace_fed_found_dec:0 "Объединение Федерации мирным путём"
 
 resources_for_navy_steel:0 "Добыть сталь для флота"
 resources_for_navy_chromium:0 "Добыть хром для флота"

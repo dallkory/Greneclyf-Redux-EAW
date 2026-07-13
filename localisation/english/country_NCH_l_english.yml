@@ -1353,8 +1353,8 @@
   NCH_sabotage_chrysalis:0 "Sabotage Military Production"
 
   NCH_fed_found_category:0 "Formation of the Ost-Griffonian Federation-Concordat"
-  NCH_war_fed_found_dec:0 "Unite the Federation by Military Means"
-  NCH_peace_fed_found_dec:0 "Unite the Federation by Peaceful Means"
+  NCH_peace_fed_found_dec:0 "Partial Unification of River Lands"
+  NCH_truly_peace_fed_found_dec:0 "Unite the Federation by Peaceful Means"
 
   resources_for_navy_steel:0 "Acquire Steel for the Navy"
   resources_for_navy_chromium:0 "Acquire Chromium for the Navy"
