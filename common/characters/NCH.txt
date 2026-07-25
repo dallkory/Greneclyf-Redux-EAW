@@ -39,8 +39,29 @@ characters={
 
 	# Advisors #
 
-	# Oiren judge #
+	# Thorax #
+	NCH_Thorax = {
+		name = Thorax
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/Advisors/NCH/Thorax.tga"
+			}
+		}
 
+		advisor = {
+			slot = political_advisor
+			idea_token = NCH_Thorax_it
+			cost = 150
+			allowed = {
+				original_tag = NCH
+			}
+			traits = {
+				Political_analyst
+			}
+		}
+	}
+
+	# Oiren judge #
 	NCH_Oiren_Judge = {
 		name = Oiren_Judge
 		portraits = {

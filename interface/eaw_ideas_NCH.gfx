@@ -2,9 +2,16 @@ spriteTypes = {
 
 	### REDUX ###
 
+	# CCN #
 	spriteType = {
 		name = "GFX_idea_CCN_flame_hearts"
 		textureFile = "gfx/interface/ideas/CCN/flame_hearts.dds"
+	}
+
+	# NCH #
+	spriteType = {
+		name = "GFX_idea_Chrystalgia"
+		textureFile = "gfx/interface/ideas/NCH/Chrystalgia.tga"
 	}
 
 	spriteType = {

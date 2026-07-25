@@ -1,3 +1,4 @@
+# REDUX #
 NCH_River = {
 	color = rgb { 37 38 88 }
 	color_ui = rgb { 134 128 221 }
@@ -6,6 +7,12 @@ REB_Puppet = {
 	color = rgb { 37 38 88 }
 	color_ui = rgb { 134 128 221 }
 }
+NCH_Hive_Union = {
+	color = rgb { 128 128 192 }
+	color_ui = rgb { 128 128 192 }
+}
+
+## ## ##
 FAT_Monarchy = {
 	color = rgb { 104 107 156 }
 	color_ui = rgb { 104 107 156 }
@@ -2858,7 +2865,4 @@ YAN_AF_2025 = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 255 179 96 }
 }
-NCH_Hive_Union = {
-	color = rgb { 128 128 192 }
-	color_ui = rgb { 128 128 192 }
-}
+

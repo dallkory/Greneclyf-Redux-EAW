@@ -64,8 +64,8 @@
   Nowel_Dark:0 "Nowel Dark"
   Cader_Scierite:0 "Cader Scierite"
 
-
   # Traits #
+  Political_analyst:0 "Voice of Reconciliation"
   The_Steel_lady:0 "Steel Will"
   The_naive_reformer:0 "Naive Reformer"
   The_god_chosen_queen:0 "The Queen of the People"
@@ -1312,6 +1312,14 @@
   greneclyf_hive.22.d:0 "Gytha double-checked another telegram from Ditrysium. It was from Helvia – proposing to open branches of several construction companies to support the continued rebuilding of the principality.\n\nThe president had spoken to her before. The Queen of Ditrysium was clearly grateful to Gytha for not triggering the uprising plan, for not forcing her kin to slaughter one another. Though she clearly mourned the lost unity of the changeling lands. With peace now reigning, Gytha was beginning to wonder if much had really changed...\n\nShe dismissed her guards and stepped close to the bars. The same green-tinged mane. The emerald eyes. The elegant long neck. And that unmistakable air of superiority.\n\n’...’\n\n’Nothing to say, is there?’\n\nThe figure on the other side turned her head slightly, fixing her gaze on the president.\n\n’I spent a long time wondering why you didn’t kill me. I thought you were soft,’ she said at last, grinning with a glint of madness in her eye. ‘But I’ve figured it out. I finally understood when I saw your Federation. You’re not soft. Oh no. Far from it. Between the two of us, you are the more terrifying, Leamhan.\n\nI was clumsy. I united them with fear and parades. But you? You made them believe. You became their icon. You brainwashed not just ponies, but every breathing creature in your magnificently disgusting project. They fear me for a reason. But you? You’re feared only by those who truly understand your power. Maybe that’s what you want from me too,’ she laughed, her eyes seeming to pulse with manic light. ‘I hate you for tearing my world apart, but I can’t help but admire what you’ve built. Maybe it’s turning into obsession. You’re brilliant, Gytha. You have given them the idea that changelings will rule them and they will be happy about it.’\n\nGytha’s face twisted. ‘We are not alike. Why am I even wasting my time on a deranged old hag? I don’t know why I didn’t hand you over to the Equestrians. But it doesn’t matter now. Enjoy your eternal vacation.’\n\nThe president turned and left the prison, the echoing laughter of that proud madmare still lingering in her mind. The same mare who once welcomed her into her country – the very country she later helped destroy. Were they truly alike, even just a little? Is that what Oiren meant, all those months ago..?"
   greneclyf_hive.22.a:0 "‘...I don’t have time for this. Helvia needs me.’"
 
+  # Unity of Blood #
+  greneclyf_hive.23.t:0 "Unity of Blood"
+  greneclyf_hive.23.d:0 "After the fall of the Chrysalis Regime, Gytha proclaimed the creation of a new union. For the first time in a thousand years, our kind have truly been united, overcoming the miles of water and ice that once divided us.\n\nBut an obvious question now stands before us: where shall the capital of our confederation be?\n\nThe deputies of the Oireachtas argue that the new union was born from the victory of the former colony. Its capital should remain where its return began; if nothing else, it is the simplest solution.\n\nAnother compelling proposal was put forward by officials of the former Chrysalis Regime. Vesalipolis served as the capital of the first united continental lands of the changelings. Besides carrying enormous symbolic weight, such a choice would solve many of the problems associated with relocating the administrative apparatus to Greneclyf, while the city itself lies at the very heart of our kind's lands. Not everyone despises the Chrysalis Regime, whereas many still regard us with caution. Perhaps there is some merit to this proposal.\n\nThe most unusual suggestion came from the nobles of Clann Óir: to declare our Old Homeland, Ditrysium, the capital. Centuries ago, the Leamhan and Óir were driven from this very place, and returning to the city that has grown so greatly in the meantime would mark our people's final return Home.\n\nAfter several days of debate, brawls in the assembly halls, and the exposure of an attempted bribe, the occupation government has finally reached its decision..."
+
+  greneclyf_hive.23.a:0 "By a narrow margin, Blosmport was chosen as the capital."
+  greneclyf_hive.23.b:0 "The voices of the former Chrysalis officials rang louder than the rest."
+  greneclyf_hive.23.c:0 "We have reunited our kind. Our capital must stand where our exile began."
+
 
   ### Obsidian trade ###
 
@@ -1490,6 +1498,8 @@
   NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
   ### IDEAS ###
+  NCH_Chrystalgia:0 "Chrystalgia"
+  CCN_flame_hearts:0 "Flame Hearts"
   NCH_riv_lanquage:0 "The Riverlands Language"
   NCH_riv_volounters:0 "Volunteers of the Riverlands"
   NCH_Oiren_Ministr:0 "Prime Minister Oiren"

@@ -1,6 +1,16 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_decision_category_nch_hive_united"
+		texturefile = "gfx/interface/decisions/decision_category_nch_hive_united.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_hive_united"
+		texturefile = "gfx/interface/decisions/military_love_requisition.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_decision_typography_propaganda"
 		texturefile = "gfx/interface/decisions/typography_propaganda.dds"
 	}

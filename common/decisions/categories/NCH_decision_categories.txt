@@ -11,7 +11,11 @@ NCH_debug_decision = {
 
 NCH_Hive_Union_category = {
 	icon = GFX_decision_category_generic_democracy
-	#picture = GFX_decision_category_hive_union
+	picture = GFX_decision_category_nch_hive_united
+
+	allowed = {
+		original_tag = NCH
+	}
 
 	priority = {
 		base = 135
@@ -22,6 +26,10 @@ NCH_chrysalis_category = {
 	icon = GFX_decision_category_great_party
 	picture = GFX_decision_category_chn_queens_tower
 
+	allowed = {
+		original_tag = NCH
+	}
+
 	priority = {
 		base = 155
 	}
@@ -29,6 +37,10 @@ NCH_chrysalis_category = {
 
 NCH_arctic_expedition_category = {
 	icon = GFX_unkmow
+
+	allowed = {
+		original_tag = NCH
+	}
 
 	priority = {
 		base = 147
@@ -39,6 +51,10 @@ NCH_fed_found_category = {
 	icon = GFX_decision_category_form_river_federation
 	picture = GFX_decision_fed_war_found
 
+	allowed = {
+		original_tag = NCH
+	}
+
 	priority = {
 		base = 153
 	}
@@ -46,6 +62,10 @@ NCH_fed_found_category = {
 
 NCH_boost_harmony_river = {
 	icon = GFX_decision_category_generic_democracy
+
+	allowed = {
+		original_tag = NCH
+	}
 
 	priority = {
 		base = 146
@@ -56,6 +76,10 @@ NCH_gov_rotation_category = {
 	icon = GFX_decision_category_eaw_vote
 	picture = GFX_decision_category_goverment_rotations
 
+	allowed = {
+		original_tag = NCH
+	}
+
 	priority = {
 		base = 154
 	}
@@ -63,6 +87,10 @@ NCH_gov_rotation_category = {
 
 NCH_river_of_op_category = {
 	icon = GFX_political
+
+	allowed = {
+		original_tag = NCH
+	}
 	
 	visible = {
 		or = {
@@ -79,6 +107,10 @@ NCH_typography_category = {
 	icon = GFX_news
 	picture = GFX_decision_typography_propaganda
 	
+	allowed = {
+		original_tag = NCH
+	}
+
 	visible = {
 		has_country_flag = NCH_typography_create
 	}

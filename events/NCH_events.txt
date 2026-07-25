@@ -2111,6 +2111,43 @@ add_namespace = greneclyf_hive
 		}
 	}
 
+	# UNITED HIVE CAPITAL #
+	country_event = {
+		id = greneclyf_hive.23
+		title = greneclyf_hive.23.t
+		desc = greneclyf_hive.23.d
+		picture = GFX_event_equalitylovetolerance
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		# Blosmport #
+		option = {
+			name = greneclyf_hive.23.a
+			set_capital = {
+			state = 670
+			remember_old_capital = no
+			}
+		}
+
+		# Vesaliopolis #
+		option = {
+			name = greneclyf_hive.23.b
+			set_capital = {
+			state = 251
+			remember_old_capital = no
+			}
+		}
+
+		# Ditrusium #
+		option = {
+			name = greneclyf_hive.23.b
+			set_capital = {
+			state = 252
+			remember_old_capital = no
+			}
+		}
+	}
+
 	# Somethging special #
 	country_event = {
 		id = greneclyf_daylight.1
