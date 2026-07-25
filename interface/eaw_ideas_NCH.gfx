@@ -1,6 +1,12 @@
 spriteTypes = {
 
 	### REDUX ###
+
+	spriteType = {
+		name = "GFX_idea_CCN_flame_hearts"
+		textureFile = "gfx/interface/ideas/CCN/flame_hearts.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_NCH_changeling_submarine"
 		textureFile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"

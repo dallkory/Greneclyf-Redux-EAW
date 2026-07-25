@@ -1,18 +1,11 @@
-## REDUX ##
 NCH_River = {
 	color = rgb { 37 38 88 }
 	color_ui = rgb { 134 128 221 }
 }
-
 REB_Puppet = {
 	color = rgb { 37 38 88 }
 	color_ui = rgb { 134 128 221 }
 }
-## ## ##
-
-
-
-
 FAT_Monarchy = {
 	color = rgb { 104 107 156 }
 	color_ui = rgb { 104 107 156 }
@@ -365,7 +358,7 @@ OLE_NEU = {
 	color = rgb { 111 140 155 }
 	color_ui = rgb { 111 140 155 }
 }
-OLE_DEM= {
+OLE_DEM = {
 	color = rgb { 188 221 238 }
 	color_ui = rgb { 188 221 238 }
 }
@@ -381,8 +374,6 @@ EQSBUF_DEM = {
 	color = rgb { 158 242 117 }
 	color_ui = rgb { 158 242 117 }
 }
-
-
 PLB_scyfling = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 128 128 128 }
@@ -400,7 +391,7 @@ PLB_confederation_2 = {
 	color_ui = rgb { 247 208 158 }
 }
 PLB_northern_republic = {
-    color = rgb { 247 208 158 }
+	color = rgb { 247 208 158 }
 	color_ui = rgb { 247 208 158 }
 }
 PLB_polaria = {
@@ -413,34 +404,28 @@ PLB_CHN_occupation_authority = {
 }
 PLB_GRF_owlbears = {
 	color = rgb { 177 149 124 }
-	color_ui = rgb { 64 37 11}
+	color_ui = rgb { 64 37 11 }
 }
-
 PLB_polar_queendom = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
 }
-
 PLB_high_kingdom = {
 	color = rgb { 230 205 255 }
 	color_ui = rgb { 230 205 255 }
 }
-
 PLB_clan_svartpels = {
 	color = rgb { 84 51 37 }
 	color_ui = rgb { 84 51 37 }
 }
-
 PLB_clan_coalition = {
 	color = rgb { 66 68 106 }
 	color_ui = rgb { 66 68 106 }
 }
-
 PLB_ice_bear = {
 	color = rgb { 204 0 0 }
-	color_ui = rgb { 7 27 84 } #blue in the center of the flag
+	color_ui = rgb { 7 27 84 }
 }
-
 PLB_city = {
 	color = rgb { 33 46 63 }
 	color_ui = rgb { 33 46 63 }
@@ -449,7 +434,6 @@ PLB_wastes = {
 	color = rgb { 55 95 157 }
 	color_ui = rgb { 55 95 157 }
 }
-
 PLB_schizo = {
 	color = rgb { 204 204 255 }
 	color_ui = rgb { 204 204 255 }
@@ -458,52 +442,42 @@ PLB_schizo_puppet = {
 	color = rgb { 60 64 86 }
 	color_ui = rgb { 60 64 86 }
 }
-
 PLB_soryth = {
-	color = rgb { 151 255 255}
-	color_ui = rgb { 151 255 255}
+	color = rgb { 151 255 255 }
+	color_ui = rgb { 151 255 255 }
 }
-
 PLB_crusade = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 PLB_wild_hunt = {
 	color = rgb { 62 97 88 }
 	color_ui = rgb { 62 97 88 }
 }
-
 PLB_realm_of_beasts = {
 	color = rgb { 94 63 140 }
 	color_ui = rgb { 94 63 140 }
 }
-
 PLB_woodland = {
 	color = rgb { 62 97 88 }
 	color_ui = rgb { 62 97 88 }
 }
-
 HAU_PLB_puppet = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 PLB_NTR_crusade = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 PLB_FAT_crusade = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 PLB_AET_crusade = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 HERZ_PLB_occupation = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
@@ -520,17 +494,14 @@ BRZ_PLB_occupationt = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 ANG_PLB_occupation = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 BRZ_PLB_occupation = {
 	color = rgb { 87 104 170 }
 	color_ui = rgb { 87 104 170 }
 }
-
 CHN_vraks_puppet = {
 	color = rgb { 145 17 19 }
 	color_ui = rgb { 145 17 19 }
@@ -539,10 +510,6 @@ CCN_triune_puppet = {
 	color = rgb { 192 192 192 }
 	color_ui = rgb { 192 192 192 }
 }
-
-
-
-####### NLR PUPPETS #############
 OLE_NLR = {
 	color = rgb { 41 37 110 }
 	color_ui = rgb { 41 37 110 }
@@ -581,11 +548,11 @@ YAK_NLR = {
 }
 JAK_NLR = {
 	color = rgb { 41 37 110 }
-	color_ui = rgb {41 37 110 }
+	color_ui = rgb { 41 37 110 }
 }
 PLB_NLR = {
 	color = rgb { 41 37 110 }
-	color_ui = rgb {41 37 110 }
+	color_ui = rgb { 41 37 110 }
 }
 PNG_NLR = {
 	color = rgb { 41 37 110 }
@@ -615,7 +582,6 @@ PCB_NLR = {
 	color = rgb { 41 37 110 }
 	color_ui = rgb { 41 37 110 }
 }
-####### SOL PUPPETS #############
 OLE_SOL = {
 	color = rgb { 237 234 186 }
 	color_ui = rgb { 237 234 186 }
@@ -650,15 +616,15 @@ YAK_SOL = {
 }
 JAK_SOL = {
 	color = rgb { 133 156 114 }
-	color_ui = rgb {133 156 114 }
+	color_ui = rgb { 133 156 114 }
 }
 JAK_SOL_severyana = {
 	color = rgb { 255 224 129 }
-	color_ui = rgb {255 224 129 }
+	color_ui = rgb { 255 224 129 }
 }
 PLB_SOL = {
 	color = rgb { 129 132 100 }
-	color_ui = rgb {129 132 100 }
+	color_ui = rgb { 129 132 100 }
 }
 PNG_SOL = {
 	color = rgb { 158 152 124 }
@@ -688,7 +654,6 @@ PCB_SOL = {
 	color = rgb { 166 140 65 }
 	color_ui = rgb { 166 140 65 }
 }
-####### TEM PUPPETS #############
 OLE_TEM = {
 	color = rgb { 193 190 139 }
 	color_ui = rgb { 193 190 139 }
@@ -733,7 +698,6 @@ DRG_TEM = {
 	color = rgb { 193 190 139 }
 	color_ui = rgb { 193 190 139 }
 }
-####### GRIFFON CONTINENT #######
 GRW_ARMY = {
 	color = rgb { 255 51 51 }
 	color_ui = rgb { 255 51 51 }
@@ -780,7 +744,7 @@ GRI_SUBJECT = {
 }
 GRI_APRILFOOLS = {
 	color = rgb { 255 182 0 }
-	color_ui = rgb { 255 182 0  }
+	color_ui = rgb { 255 182 0 }
 }
 FAT_APRILFOOLS = {
 	color = rgb { 136 8 8 }
@@ -795,11 +759,11 @@ FAL_empire = {
 	color_ui = rgb { 82 82 105 }
 }
 GRIF_REPUBLIC = {
-	color = rgb { 212 123 64  }
+	color = rgb { 212 123 64 }
 	color_ui = rgb { 212 123 64 }
 }
 GRIF_REPUBLIC = {
-	color = rgb { 212 123 64  }
+	color = rgb { 212 123 64 }
 	color_ui = rgb { 212 123 64 }
 }
 GRIF_AQUILIEA = {
@@ -934,7 +898,7 @@ EQC_equalists = {
 	color = rgb { 196 99 99 }
 	color_ui = rgb { 196 99 99 }
 }
-EQC_EQS= {
+EQC_EQS = {
 	color = rgb { 142 232 153 }
 	color_ui = rgb { 142 232 153 }
 }
@@ -1051,20 +1015,20 @@ FBK_GRI = {
 	color_ui = rgb { 229 138 47 }
 }
 ROU_heartland = {
-    color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 ANG_heartland = {
-    color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 ANG_heartland_kingdom = {
-    color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 ANG_black_empire = {
 	color = rgb { 51 26 0 }
-    color_ui = rgb { 51 26 0 }
+	color_ui = rgb { 51 26 0 }
 }
 VANEESR = {
 	color = rgb { 200 3 62 }
@@ -1111,8 +1075,8 @@ RCT_USSR = {
 	color_ui = rgb { 205 0 0 }
 }
 RCT_democratic_socialist_republic = {
-	color = rgb { 255 92 78}
-	color_ui = rgb { 255 92 78}
+	color = rgb { 255 92 78 }
+	color_ui = rgb { 255 92 78 }
 }
 LNS_bandits = {
 	color = rgb { 128 128 128 }
@@ -1239,48 +1203,48 @@ FRE_GRU_company = {
 	color_ui = rgb { 111 136 167 }
 }
 GRU_order = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 GRU_kingdom = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 BAR_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 WIT_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 GRY_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 NIM_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 RCT_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 DMT_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 LCT_GRU_puppet = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 170  10  10 }
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
 }
 MIT_MEGALI = {
- color = rgb { 0 38 99 }
- color_ui = rgb { 0 38 99 }
+	color = rgb { 0 38 99 }
+	color_ui = rgb { 0 38 99 }
 }
 YAN_FEA = {
-    color = rgb { 203 138 74 }
-    color_ui = rgb { 255 179 96 }
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 255 179 96 }
 }
 SCS_royalist = {
 	color = rgb { 135 135 135 }
@@ -1288,10 +1252,10 @@ SCS_royalist = {
 }
 SCS_old_flag = {
 	color = rgb { 135 135 135 }
-	color_ui = rgb { 135 135 135 }	
+	color_ui = rgb { 135 135 135 }
 }
 LSP_technocracy = {
-	color = rgb { 204 144 149 } 
+	color = rgb { 204 144 149 }
 	color_ui = rgb { 204 144 149 }
 }
 CHN_changelingia = {
@@ -1310,7 +1274,7 @@ PYT_GRI_puppet = {
 	color = rgb { 229 138 47 }
 	color_ui = rgb { 229 138 47 }
 }
-FAW_VED_puppet= {
+FAW_VED_puppet = {
 	color = rgb { 87 164 113 }
 	color_ui = rgb { 87 164 113 }
 }
@@ -1435,12 +1399,12 @@ DED_APN_scourge = {
 	color_ui = rgb { 80 5 5 }
 }
 PYT_heartland = {
-    color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 PYT_heartland_2 = {
-    color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 PYT_EMPIRE_COMMIE = {
 	color = rgb { 83 0 0 }
@@ -1492,7 +1456,7 @@ TRD_skyfall_union = {
 }
 YAL_herzland = {
 	color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 YAL_grover_empire = {
 	color = rgb { 229 138 47 }
@@ -1504,14 +1468,14 @@ KAT_kingdom = {
 }
 KAT_herzland_republic = {
 	color = rgb { 0 51 102 }
-	color_ui = rgb { 0 51 102 } 
+	color_ui = rgb { 0 51 102 }
 }
 KAT_herzland_religious_socialism = {
 	color = rgb { 234 32 32 }
 	color_ui = rgb { 234 32 32 }
 }
 KAT_herzlandtreue = {
-	color = rgb { 76 48	7 }
+	color = rgb { 76 48 7 }
 	color_ui = rgb { 76 48 7 }
 }
 RCT_freistaat = {
@@ -1548,11 +1512,11 @@ YAL_Grover_Lord_of_Yale = {
 }
 YAL_herzland_kingdom_name = {
 	color = rgb { 0 51 102 }
-    color_ui = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 EVI_commonwealth = {
 	color = rgb { 186 242 2 }
-    color_ui = rgb { 186 242 2 }
+	color_ui = rgb { 186 242 2 }
 }
 EVI_commonwealth_RIV = {
 	color = rgb { 58 190 95 }
@@ -1656,7 +1620,7 @@ CTH_technocracy_cosmetic = {
 }
 DMT_BAK_puppet_tag = {
 	color = rgb { 56 67 139 }
-    color_ui = rgb { 56 67 139 }
+	color_ui = rgb { 56 67 139 }
 }
 WIT_high_kingdom_tag = {
 	color = rgb { 143 12 125 }
@@ -1871,12 +1835,10 @@ KIC_soldiers_rising_fire = {
 	color_ui = rgb { 174 58 8 }
 }
 KIR_sycee = {
-	#color = rgb { 98 175 183 }
 	color = rgb { 88 180 172 }
 	color_ui = rgb { 88 180 172 }
 }
 KIR_akag = {
-	#color = rgb { 216 60 2 }
 	color = rgb { 220 121 12 }
 	color_ui = rgb { 220 121 12 }
 }
@@ -2309,11 +2271,11 @@ WIN_libertalia = {
 	color_ui = rgb { 255 220 0 }
 }
 DED_VMP = {
-  color = rgb { 249 26 93 }
+	color = rgb { 249 26 93 }
 	color_ui = rgb { 249 26 93 }
 }
 DED_VAM = {
-  color = rgb { 249 26 93 }
+	color = rgb { 249 26 93 }
 	color_ui = rgb { 249 26 93 }
 }
 FLO_JER_subject = {
@@ -2369,8 +2331,8 @@ MCW_posada = {
 	color_ui = rgb { 15 21 54 }
 }
 WNG_posada = {
-	color = rgb  { 129 0 187}
-	color_ui = rgb  { 129 0 187}
+	color = rgb { 129 0 187 }
+	color_ui = rgb { 129 0 187 }
 }
 HIP_cultist = {
 	color = rgb { 0 99 169 }
@@ -2401,8 +2363,8 @@ HIP_united_society_2 = {
 	color_ui = rgb { 22 84 153 }
 }
 HIP_nzf = {
-	color = rgb { 17 198 186}
-	color_ui = rgb { 17 198 186}
+	color = rgb { 17 198 186 }
+	color_ui = rgb { 17 198 186 }
 }
 HIP_GNU = {
 	color = rgb { 15 175 200 }
@@ -2496,47 +2458,38 @@ FRN_karthinia_aquileia = {
 	color = rgb { 86 0 156 }
 	color_ui = rgb { 86 0 156 }
 }
-
 JER_HEL_ANARCHY = {
 	color = rgb { 38 92 47 }
 	color_ui = rgb { 38 92 47 }
 }
-
 JER_HEL_CONFED = {
 	color = rgb { 38 127 47 }
 	color_ui = rgb { 38 92 47 }
 }
-
 JER_HEL_GOMMIE = {
 	color = rgb { 117 12 27 }
 	color_ui = rgb { 117 12 27 }
 }
-
 JER_HEL_PRELATURE = {
 	color = rgb { 112 136 125 }
 	color_ui = rgb { 112 136 125 }
 }
-
 JER_HEL_REPUBLIC = {
 	color = rgb { 84 90 122 }
 	color_ui = rgb { 84 104 122 }
 }
-
 JER_HEL_SHRIEVALTY = {
 	color = rgb { 29 121 96 }
 	color_ui = rgb { 29 121 96 }
 }
-
 GRI_HEL_ARCHONATE = {
 	color = rgb { 177 129 61 }
 	color_ui = rgb { 177 129 61 }
 }
-
 GRI_HEL_ANARCHY = {
 	color = rgb { 96 59 43 }
 	color_ui = rgb { 96 59 43 }
 }
-
 GRI_HEL_REPUBLIC = {
 	color = rgb { 236 194 115 }
 	color_ui = rgb { 236 194 115 }
@@ -2550,7 +2503,7 @@ GRI_HEL_GOMMIE2 = {
 	color_ui = rgb { 147 63 43 }
 }
 GRI_HEL_CONFED = {
-	color = rgb {  231 177 60 }
+	color = rgb { 231 177 60 }
 	color_ui = rgb { 231 177 60 }
 }
 GRI_HEL_SHRIEVALTY = {
@@ -2585,27 +2538,27 @@ FAL_Falcoria = {
 	color = rgb { 20 80 150 }
 	color_ui = rgb { 20 80 150 }
 }
-EQC_FAL_protectorate = { 
+EQC_FAL_protectorate = {
 	color = rgb { 20 80 150 }
 	color_ui = rgb { 20 80 150 }
 }
-BAL_GLORY_TO_ARSTOTZKA = { 
+BAL_GLORY_TO_ARSTOTZKA = {
 	color = rgb { 125 21 71 }
 	color_ui = rgb { 125 21 71 }
 }
-BAL_COMPLETE_ANARCHY = { 
+BAL_COMPLETE_ANARCHY = {
 	color = rgb { 230 21 71 }
 	color_ui = rgb { 230 21 71 }
 }
-BAL_SCS_worst_timeline_tag = { 
+BAL_SCS_worst_timeline_tag = {
 	color = rgb { 125 21 71 }
 	color_ui = rgb { 125 21 71 }
 }
-BAL_SCS_anarchy_tag = { 
+BAL_SCS_anarchy_tag = {
 	color = rgb { 230 21 71 }
 	color_ui = rgb { 230 21 71 }
 }
-BAL_EQS_worst_timeline_tag = { 
+BAL_EQS_worst_timeline_tag = {
 	color = rgb { 125 21 71 }
 	color_ui = rgb { 125 21 71 }
 }
@@ -2711,27 +2664,27 @@ HIP_monsoc_kingdom = {
 }
 CTH_MZN_CW = {
 	color = rgb { 110 164 183 }
-    color_ui = rgb { 110 164 183 }
+	color_ui = rgb { 110 164 183 }
 }
 CTH_MZN_POST_CW = {
 	color = rgb { 130 180 190 }
-    color_ui = rgb { 130 180 190 }
+	color_ui = rgb { 130 180 190 }
 }
 ZAR_Zarantian_confederation = {
 	color = rgb { 242 169 60 }
-    color_ui = rgb { 242 169 60 }
+	color_ui = rgb { 242 169 60 }
 }
 ZAR_Zarantian_empire = {
 	color = rgb { 206 85 5 }
-    color_ui = rgb { 206 85 5 }
+	color_ui = rgb { 206 85 5 }
 }
 ZAR_WORM_ending = {
 	color = rgb { 0 0 0 }
-    color_ui = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 CTL_HIN_V = {
 	color = rgb { 15 40 125 }
-    color_ui = rgb { 15 40 125 }
+	color_ui = rgb { 15 40 125 }
 }
 CES_resistance_begin = {
 	color = rgb { 166 208 53 }
@@ -2751,47 +2704,47 @@ CES_shadow_realm_final_cosmetic = {
 }
 PLB_exuvia_changelingia = {
 	color = rgb { 13 157 199 }
-    color_ui = rgb { 13 157 199 }
+	color_ui = rgb { 13 157 199 }
 }
 PLB_exu_equus = {
 	color = rgb { 240 240 240 }
-    color_ui = rgb { 240 240 240 }
+	color_ui = rgb { 240 240 240 }
 }
 ABY_empire = {
 	color = rgb { 0 62 130 }
-    color_ui = rgb { 0 62 130 }
+	color_ui = rgb { 0 62 130 }
 }
 ABY_empire_2 = {
 	color = rgb { 0 32 159 }
-    color_ui = rgb { 0 32 159 }
+	color_ui = rgb { 0 32 159 }
 }
 ABY_bitchdom = {
 	color = rgb { 184 28 103 }
-    color_ui = rgb { 184 28 103 }
+	color_ui = rgb { 184 28 103 }
 }
 ABY_slave_revolt_cosmetic = {
 	color = rgb { 0 32 159 }
-    color_ui = rgb { 0 32 159 }
+	color_ui = rgb { 0 32 159 }
 }
 ABY_patriotic_revolt = {
 	color = rgb { 56 120 191 }
-    color_ui = rgb { 56 120 191 }
+	color_ui = rgb { 56 120 191 }
 }
 ABY_new_donkeystan = {
 	color = rgb { 157 157 227 }
-    color_ui = rgb { 157 157 227 }
+	color_ui = rgb { 157 157 227 }
 }
 ABY_compromise_flag = {
 	color = rgb { 0 32 159 }
-    color_ui = rgb { 0 32 159 }
+	color_ui = rgb { 0 32 159 }
 }
 ABY_republican_flag = {
 	color = rgb { 0 32 159 }
-    color_ui = rgb { 0 32 159 }
+	color_ui = rgb { 0 32 159 }
 }
 ABY_socialist_flag = {
 	color = rgb { 0 32 159 }
-    color_ui = rgb { 0 32 159 }
+	color_ui = rgb { 0 32 159 }
 }
 ABY_monsoc_cosmetic = {
 	color = rgb { 56 120 191 }
@@ -2807,11 +2760,11 @@ ABY_five_race_union = {
 }
 Riseia_formable = {
 	color = rgb { 132 10 41 }
-    color_ui = rgb { 132 10 41 }
+	color_ui = rgb { 132 10 41 }
 }
 Deerkind_formable = {
 	color = rgb { 90 130 255 }
-    color_ui = rgb { 90 130 255 }
+	color_ui = rgb { 90 130 255 }
 }
 CTL_CME = {
 	color = rgb { 119 119 255 }
@@ -2904,4 +2857,8 @@ DEL_AF_wasteland = {
 YAN_AF_2025 = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 255 179 96 }
+}
+NCH_Hive_Union = {
+	color = rgb { 128 128 192 }
+	color_ui = rgb { 128 128 192 }
 }

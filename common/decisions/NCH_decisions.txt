@@ -193,6 +193,27 @@ NCH_debug_decision = {
 	}
 }
 
+NCH_Hive_Union_category = {
+	NCH_United_Hives = {
+		priority = 1
+		icon = GFX_decision_great_party_mission
+		ai_will_do = {
+			base = 1
+		}
+
+		visiable = {
+			or = {
+				debug = yes
+				has_war_with = CHN
+				not = {
+					country_exists = CHN
+				}
+				has_completed_focus = NCH_
+			}
+		}
+	}
+}
+
 NCH_chrysalis_category = {
 	NCH_chrysalis_resistance_mission = {
 		priority = 1
