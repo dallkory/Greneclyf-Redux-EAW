@@ -201,15 +201,50 @@ NCH_Hive_Union_category = {
 			base = 1
 		}
 
-		visiable = {
-			or = {
-				debug = yes
-				has_war_with = CHN
-				not = {
-					country_exists = CHN
+		# visiable = {
+		# 	or = {
+		# 		debug = yes
+		# 		has_war_with = CHN
+		# 		not = {
+		# 			country_exists = CHN
+		# 		}
+		# 		has_completed_focus = NCH_Hive
+		# 	}
+		# }
+
+		avaliable = {
+			every_state = {
+				CHN = {
+					is_controlled_by = NCH
 				}
-				has_completed_focus = NCH_
 			}
+			has_country_leader = {
+				character = NCH_queen_gytha
+				ruling_only = yes
+			}
+		}
+
+		#on_map_mode = map_and_decisions_view
+
+		#state_target = yes
+		# targets = {
+			
+		# }
+
+		complete_effect = {
+			set_cosmetic_tag = NCH_Hive_Union
+			add_ideas = CCN_flame_hearts
+
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				add_core_of = NCH
+			}
+
+			# country_event = {
+			# 	id = greneclyf_hive.7
+			# }
 		}
 	}
 }
