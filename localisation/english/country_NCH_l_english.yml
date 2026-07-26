@@ -1339,6 +1339,12 @@
 
 
   ### DECISIONS ###
+  NCH_Hive_Union_category:0 "Proclaim the Changeling Confederative Union"
+  NCH_Hive_Union_category_desc:0 "Well, in the end, we control something we never planned to own a couple of decades ago: the Old Country. Arrogant queens, dictators, militaries – there has been no shortage of them throughout the centuries... And now, at last, what was once a colony of exiles has united the Hives for the second time in history. This is a unique opportunity: to spread matronism, study history, and build a state based on checks and balances rather than the carrot and the stick... We cannot afford to let such an opportunity slip away!"
+  NCH_United_Hives:0 "Unite the Hives"
+  NCH_United_hives_desc:0 "Convincing our brothers that we are no worse than Chrysalis and that we are capable of ruling them without falling back into pre-Chrysalis fragmentation and serfdom will not be easy..."
+
+
   NCH_change_portrait_category:0 "Change the portrait of the Queen"
   NCH_Gytha_vanila_portait_to_steel_lady:0 "Change the portrait to the Arrogant Gytha"
   NCH_Gytha_vanila_portait_to_president:0 "Change the portrait to the President Leamhan"
@@ -1364,6 +1370,7 @@
   NCH_sabotage_chrysalis:0 "Sabotage Military Production"
 
   NCH_fed_found_category:0 "Formation of the Ost-Griffonian Federation-Concordat"
+  NCH_war_fed_found_dec:0 "Establish the Federation by Military Means"
   NCH_peace_fed_found_dec:0 "Partial Unification of River Lands"
   NCH_truly_peace_fed_found_dec:0 "Unite the Federation by Peaceful Means"
 

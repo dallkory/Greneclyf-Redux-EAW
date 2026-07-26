@@ -102,29 +102,23 @@ NCH_debug_decision = {
 				}
 			}
 
-			
-
-			NCH = {
-				every_state = {
-					limit = {
-						owner = {
-							OR = {
-								tag = RCT
-								tag = NIM
-								tag = DMT
-								tag = BAK
-								tag = DEP
-								tag = LCT
-								tag = WIT
-								tag = FRE
-								tag = FBK
-								tag = FIR
-								tag = WAT
-							}
-						}
-						add_core_of = NCH
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RCT
+						is_core_of = NIM
+						is_core_of = DMT
+						is_core_of = BAK
+						is_core_of = DEP
+						is_core_of = LCT
+						is_core_of = WIT
+						is_core_of = FRE
+						is_core_of = FBK
+						is_core_of = FIR
+						is_core_of = WAT
 					}
 				}
+				add_core_of = NCH
 			}
 
 			NCH = {
@@ -203,9 +197,9 @@ NCH_Hive_Union_category = {
 		}
 		fire_only_once = yes
 
-		visiable = {
+		visible = {
 			or = {
-				debug = yes
+				is_debug = yes
 				has_war_with = CHN
 				not = {
 					country_exists = CHN
@@ -741,6 +735,7 @@ NCH_fed_found_category = {
 		
 		visible = {
 			or = {
+				is_debug = yes
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_dreems_of_more
 				has_war_with = RCT
@@ -1005,27 +1000,23 @@ NCH_fed_found_category = {
 					}
 				}
 
-				NCH = {
-					every_state = {
-						limit = {
-							owner = {
-								OR = {
-									tag = RCT
-									tag = NIM
-									tag = DMT
-									tag = BAK
-									tag = DEP
-									tag = LCT
-									tag = WIT
-									tag = FRE
-									tag = FBK
-									tag = FIR
-									tag = WAT
-								}
-							}
-							add_core_of = NCH
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
 						}
 					}
+					add_core_of = NCH
 				}
 			}
 			
@@ -1082,6 +1073,7 @@ NCH_fed_found_category = {
 		
 		visible = {
 			or = {
+				is_debug = yes
 				has_country_flag = NCH_debug_vision
 				has_country_flag = NCH_peace_fed_ambitions
 				controls_state = 619
@@ -1163,75 +1155,23 @@ NCH_fed_found_category = {
 					target = RCT
 				}
 
-				NCH = {
-					every_state = {
-						if = {
-							limit = {
-								is_core_of = RCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = NIM
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DMT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = BAK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DEP
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = LCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WIT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FRE
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FBK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FIR
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WAT
-							}
-							add_core_of = NCH
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
 						}
 					}
+					add_core_of = NCH
 				}
 			}
 
@@ -1287,6 +1227,7 @@ NCH_fed_found_category = {
 		
 		visible = {
 			or = {
+				is_debug = yes
 				has_country_flag = NCH_debug_vision
 				has_country_flag = NCH_peace_fed_ambitions
 				controls_state = 619
@@ -1398,75 +1339,23 @@ NCH_fed_found_category = {
 					}
 				}
 
-				NCH = {
-					every_state = {
-						if = {
-							limit = {
-								is_core_of = RCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = NIM
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DMT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = BAK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DEP
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = LCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WIT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FRE
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FBK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FIR
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WAT
-							}
-							add_core_of = NCH
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
 						}
 					}
+					add_core_of = NCH
 				}
 			}
 
