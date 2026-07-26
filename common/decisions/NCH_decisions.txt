@@ -203,16 +203,16 @@ NCH_Hive_Union_category = {
 		}
 		fire_only_once = yes
 
-		# visiable = {
-		# 	or = {
-		# 		debug = yes
-		# 		has_war_with = CHN
-		# 		not = {
-		# 			country_exists = CHN
-		# 		}
-		# 		has_completed_focus = NCH_Hive
-		# 	}
-		# }
+		visiable = {
+			or = {
+				debug = yes
+				has_war_with = CHN
+				not = {
+					country_exists = CHN
+				}
+				has_completed_focus = NCH_Hive
+			}
+		}
 
 		available = {
 			original_tag = NCH

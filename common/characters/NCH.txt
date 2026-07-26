@@ -41,7 +41,7 @@ characters={
 
 	# Thorax #
 	NCH_Thorax = {
-		name = Thorax
+		name = NCH_Thorax
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/Advisors/NCH/Thorax.tga"

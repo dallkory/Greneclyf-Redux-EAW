@@ -26,6 +26,7 @@
 
 
   # Characters #
+  NCH_Thorax:0 "Mr. Thorax"
   Oiren_Judge:0 "Lady Justice Oiren"
   Basalt_Shaw:0 "Basalt Shaw"
   Caider:0 "Cader Scierite"
@@ -65,7 +66,8 @@
   Cader_Scierite:0 "Cader Scierite"
 
   # Traits #
-  Political_analyst:0 "Voice of Reconciliation"
+  Political_analyst:0 "Political Analyst"
+
   The_Steel_lady:0 "Steel Will"
   The_naive_reformer:0 "Naive Reformer"
   The_god_chosen_queen:0 "The Queen of the People"
