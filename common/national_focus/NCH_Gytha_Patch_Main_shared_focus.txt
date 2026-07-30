@@ -1,44 +1,27 @@
-
-#id = greneclyf
-#country = {
-#	factor = 0
-#	modifier = {
-#		add = 10
-#		tag = NCH
-#	}
-#}
-
 shared_focus = {
 	id = NCH_Queen_Gytha_Patch
 	icon = GFX_goal_after_storm
 	cost = 1
 	x = 33
 	y = 15
-
 	available = {
 		or = {
-		has_government = democratic
-		# has_country_flag = NCH_crisis_end
-		has_completed_focus = NCH_final_crisis
+			has_government = democratic
+			has_completed_focus = NCH_final_crisis
 		}
 	}
-	
 	allow_branch = {
 		or = {
 			has_country_flag = NCH_crisis_end
 			has_completed_focus = NCH_final_crisis
 		}
 	}
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_gytha_president_open
 		add_stability = 0.15
-
 		set_country_flag = NCH_presidentpor_unlocked
 	}
 }
-
-### LOCAL POLITICS ###
 shared_focus = {
 	id = NCH_reforms_after_storm
 	icon = GFX_goal_enya_way
@@ -48,17 +31,13 @@ shared_focus = {
 	}
 	x = 22
 	y = 16
-
 	completion_reward = {
-		#add_political_power = 50
-
 		country_event = {
 			id = greneclyf_base.34
 			days = 0
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_patch_to_prosperty
 	icon = GFX_goal_queen_orders
@@ -68,12 +47,10 @@ shared_focus = {
 	}
 	x = 19
 	y = 17
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_patch_to_prosperty_tt
 	}
 }
-
 shared_focus = {
 	id = NCH_education_reform
 	icon = GFX_goal_eradication_illiteracy
@@ -83,12 +60,10 @@ shared_focus = {
 	}
 	x = 17
 	y = 18
-
 	completion_reward = {
 		add_ideas = no_lack_of_scientists
 	}
 }
-
 shared_focus = {
 	id = NCH_civil_rights_reform
 	icon = GFX_goal_north_south
@@ -98,7 +73,6 @@ shared_focus = {
 	}
 	x = 15
 	y = 19
-
 	available = {
 		NCH = {
 			or = {
@@ -107,7 +81,6 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		if = {
 			limit = {
@@ -118,14 +91,12 @@ shared_focus = {
 			668 = {
 				add_manpower = 20000
 			}
-
 			668 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-
 			668 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -134,14 +105,12 @@ shared_focus = {
 				}
 			}
 		}
-
 		669 = {
 			add_building_construction = {
 				type = dam
 				level = 1
 			}
 		}
-
 		if = {
 			limit = {
 				NCH = {
@@ -151,14 +120,12 @@ shared_focus = {
 			1253 = {
 				add_manpower = 20000
 			}
-
 			1253 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-
 			1253 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -169,7 +136,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_health_care_reform
 	icon = GFX_goal_health_care
@@ -179,15 +145,12 @@ shared_focus = {
 	}
 	x = 19
 	y = 18
-
 	completion_reward = {
 		add_stability = 0.05
-
 		add_timed_idea = {
 			idea = NCH_all_medecine_help
 			days = 180
 		}
-
 		670 = {
 			add_manpower = 25000
 		}
@@ -205,7 +168,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_blosmport_hive
 	icon = GFX_goal_open_institutue
@@ -218,18 +180,15 @@ shared_focus = {
 	}
 	x = 17
 	y = 19
-
 	completion_reward = {
 		add_timed_idea = {
 			idea = NCH_rise_science
 			days = 150
 		}
 		add_ideas = big_science_base
-		
 		add_research_slot = 1
 	}
 }
-
 shared_focus = {
 	id = NCH_birth_control
 	icon = GFX_goal_birth_control
@@ -242,15 +201,12 @@ shared_focus = {
 	}
 	x = 19
 	y = 19
-
 	completion_reward = {
 		add_stability = 0.05
-
 		remove_ideas = NCH_Overpopulation
 		add_ideas = NCH_Overpopulation_2
 	}
 }
-
 shared_focus = {
 	id = NCH_new_instituts
 	icon = GFX_goal_cult_progress
@@ -259,18 +215,15 @@ shared_focus = {
 		focus = NCH_civil_rights_reform
 		focus = NCH_blosmport_hive
 	}
-
 	mutually_exclusive = {
 		focus = NCH_traditional_way_of_life
 	}
 	x = 16
 	y = 20
-
 	completion_reward = {
 		add_ideas = NCH_cult_of_progress
 	}
 }
-
 shared_focus = {
 	id = NCH_traditional_way_of_life
 	icon = GFX_goal_cult_tradition
@@ -279,20 +232,15 @@ shared_focus = {
 		focus = NCH_blosmport_hive
 		focus = NCH_birth_control
 	}
-
 	mutually_exclusive = {
 		focus = NCH_new_instituts
 	}
-
 	x = 18
 	y = 20
-
 	completion_reward = {
 		add_ideas = NCH_cult_of_traditions
 	}
 }
-
-# CENTRAL #
 shared_focus = {
 	id = NCH_first_constitution
 	icon = GFX_goal_end_schism
@@ -303,7 +251,6 @@ shared_focus = {
 	}
 	x = 22
 	y = 18
-
 	completion_reward = {
 		add_ideas = NCH_unity_of_faith
 		country_event = {
@@ -312,7 +259,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_from_chaos
 	icon = GFX_goal_god_chosen_queen
@@ -322,11 +268,9 @@ shared_focus = {
 	}
 	x = 22
 	y = 19
-
 	available = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
 	}
-
 	completion_reward = {
 		swap_ruler_traits = {
 			remove = The_naive_reformer
@@ -334,7 +278,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_form_new_govermant
 	icon = GFX_goal_god_right_ideas
@@ -344,7 +287,6 @@ shared_focus = {
 	}
 	x = 21
 	y = 20
-
 	completion_reward = {
 		NCH = {
 			random_core_state = {
@@ -355,14 +297,12 @@ shared_focus = {
 				}
 			}
 		}
-
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_reflecting_the_past
 	icon = GFX_goal_god_left_ideas
@@ -372,7 +312,6 @@ shared_focus = {
 	}
 	x = 23
 	y = 20
-
 	completion_reward = {
 		NCH = {
 			random_core_state = {
@@ -383,14 +322,12 @@ shared_focus = {
 				}
 			}
 		}
-		
 		add_popularity = {
 			ideology = communism
 			popularity = 0.1
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_to_the_new_order
 	icon = GFX_goal_first_constitution
@@ -399,10 +336,8 @@ shared_focus = {
 		focus = NCH_form_new_govermant
 		focus = NCH_reflecting_the_past
 	}
-
 	x = 22
 	y = 21
-
 	completion_reward = {
 		add_political_power = 150
 		custom_effect_tooltip = NCH_new_goverment_system_tt
@@ -411,17 +346,10 @@ shared_focus = {
 			can_guarantee_other_ideologies = yes
 			can_only_justify_war_on_threat_country = no
 		}
-
 		set_country_flag = NCH_new_goverment_system_cf
-
 		activate_mission = NCH_gov_rotation
-
-		# country_event = {
-		# 	id = greneclyf_core.1
-		# }
 	}
 }
-
 shared_focus = {
 	id = NCH_save_clans_system
 	icon = GFX_goal_status_quo
@@ -434,11 +362,8 @@ shared_focus = {
 	}
 	x = 21
 	y = 22
-
 	completion_reward = {
-		#set_politics = { ruling_party = democratic }#
 		add_political_power = 50
-
 		set_party_name = {
 			ideology = democratic
 			long_name = NCH_democratic_party_lehman_long
@@ -446,7 +371,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_hereditary_monarchy
 	icon = GFX_goal_skales_skiliper
@@ -459,16 +383,12 @@ shared_focus = {
 	}
 	x = 23
 	y = 22
-
 	completion_reward = {
-		#set_politics = { ruling_party = democratic }#
 		add_political_power = 50
-
 		country_event = {
 			id = greneclyf_core.118
 			days = 0
 		}
-
 		set_party_name = {
 			ideology = democratic
 			long_name = NCH_democratic_party_electorate
@@ -476,9 +396,6 @@ shared_focus = {
 		}
 	}
 }
-
-
-# LEFT #
 shared_focus = {
 	id = NCH_economic_revival
 	icon = GFX_goal_economic_rise
@@ -488,23 +405,18 @@ shared_focus = {
 	}
 	x = 25
 	y = 17
-
 	available = {
 		has_completed_focus = NCH_patch_to_prosperty
 	}
-
 	completion_reward = {
-		#add_political_power = 50
 		add_stability = 0.05
 		add_political_power = -100
-
 		add_timed_idea = {
 			idea = NCH_economic_boom
 			days = 720
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_bee_productivity
 	icon = GFX_goal_project_apis
@@ -514,12 +426,10 @@ shared_focus = {
 	}
 	x = 25
 	y = 18
-
 	completion_reward = {
 		country_event = greneclyf_core.6
 	}
 }
-
 shared_focus = {
 	id = NCH_businesses_do_not_stand_idle
 	icon = GFX_goal_return_saor
@@ -529,21 +439,18 @@ shared_focus = {
 	}
 	x = 27
 	y = 18
-
 	available = {
 		has_completed_focus = NCH_health_care_reform
 		not = {
 			has_idea = NCH_all_medecine_help
 		}
 	}
-
 	completion_reward = {
 		country_event = {
 			id = greneclyf_core.7
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_brood_of_working_drones
 	icon = GFX_goal_underground_cities
@@ -556,10 +463,7 @@ shared_focus = {
 	}
 	x = 25
 	y = 19
-
-	# UNDERGROUND CITIES #
 	completion_reward = {
-		#custom_effect_tooltip = NCH_underground_build
 		every_core_state = {
 			add_state_modifier = {
 				modifier = {
@@ -569,26 +473,8 @@ shared_focus = {
 				}
 			}
 		}
-
-		#add_offsite_building = {
-		#	type = arms_factory
-		#	level = 2
-		#}
-		#add_offsite_building = {
-		#	type = industrial_complex
-		#	level = 2
-		#}
-
-		#set_variable = { var = NCH_underground_cost  value = 50 }
-		#set_variable = { var = NCH_underground_slots value = 10 }
-
-		#add_to_variable = { var = NCH_underground_civ value = 2 }
-		#add_to_variable = { var = NCH_underground_civ_remove value = -2 }
-		#add_to_variable = { var = NCH_underground_build  value = 2}
-		#add_to_variable = { var = NCH_underground_buildings value = 4}
 	}
 }
-
 shared_focus = {
 	id = NCH_gaining_economic_power
 	icon = GFX_goal_support_middle_class
@@ -601,9 +487,7 @@ shared_focus = {
 	}
 	x = 29
 	y = 19
-
 	completion_reward = {
-
 		NCH = {
 			random_core_state = {
 				add_extra_state_shared_building_slots = 2
@@ -612,7 +496,6 @@ shared_focus = {
 					level = 2
 				}
 			}
-
 			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -623,7 +506,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_ensure_full_employment
 	icon = GFX_goal_hoof_market
@@ -636,18 +518,15 @@ shared_focus = {
 	}
 	x = 27
 	y = 19
-
 	completion_reward = {
 		swap_ideas = {
 			remove_idea = outdated_industry
 			add_idea = modern_society
 		}
-
 		add_stability = 0.05
 		add_political_power = 50
 	}
 }
-
 shared_focus = {
 	id = NCH_economics_of_friendship
 	icon = GFX_goal_harmonic_solidarity
@@ -656,20 +535,16 @@ shared_focus = {
 		focus = NCH_brood_of_working_drones
 		focus = NCH_gaining_economic_power
 	}
-
 	mutually_exclusive = {
 		focus = NCH_mobilizing_the_economy
 	}
 	x = 26
 	y = 20
-
 	completion_reward = {
 		add_ideas = harmonic_solidarity
-
 		remove_ideas = NCH_economic_status_protect
 	}
 }
-
 shared_focus = {
 	id = NCH_mobilizing_the_economy
 	icon = GFX_goal_project_phoenix
@@ -678,22 +553,16 @@ shared_focus = {
 		focus = NCH_ensure_full_employment
 		focus = NCH_gaining_economic_power
 	}
-
 	mutually_exclusive = {
 		focus = NCH_economics_of_friendship
 	}
 	x = 28
 	y = 20
-
 	completion_reward = {
 		add_ideas = project_phoenix
-
 		remove_ideas = NCH_economic_status_protect
 	}
 }
-
-### MAIN PATCH ###
-
 shared_focus = {
 	id = NCH_dreems_of_more
 	icon = GFX_goal_basuc_geopolitic
@@ -703,38 +572,23 @@ shared_focus = {
 	}
 	x = 33
 	y = 16
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-	
 	available = {
 		is_puppet = no
 		has_completed_focus = NCH_cit_thrpugh_the_bureaurcracy
-		#has_completed_focus = NCH_businesses_do_not_stand_idle
 	}
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_boost_harmony_tt
 		country_event = {
 			id = greneclyf_core.1
 			days = 0
 		}
-
 		set_variable = {
 			var = NCH_var_boost
 			value = 0
 		}
-
-		# RCT
-		# BAK
-		# DMT
-		# NIM
-		# DEP
-		# LCT
-		# FRE
-		# WIT
-
 		hidden_effect = {
 			RCT = {
 				if = {
@@ -749,7 +603,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			BAK = {
 				if = {
 					limit = {
@@ -763,7 +616,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			DMT = {
 				if = {
 					limit = {
@@ -777,7 +629,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			NIM = {
 				if = {
 					limit = {
@@ -791,7 +642,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			DEP = {
 				if = {
 					limit = {
@@ -805,7 +655,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			LCT = {
 				if = {
 					limit = {
@@ -819,7 +668,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			FRE = {
 				if = {
 					limit = {
@@ -833,7 +681,6 @@ shared_focus = {
 					}
 				}
 			}
-
 			WIT = {
 				if = {
 					limit = {
@@ -847,12 +694,9 @@ shared_focus = {
 					}
 				}
 			}
-
-
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_friends_and_allies
 	icon = GFX_goal_nch_nine_stars
@@ -862,16 +706,12 @@ shared_focus = {
 	}
 	x = 34
 	y = 17
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
-
-			
 			check_variable = {
 				which = NCH_var_boost
 				value = 5
@@ -879,10 +719,7 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
-		#custom_effect_tooltip = NCH_nine_stars_tt
-
 		if = {
 			limit = {
 				has_dlc = "La Resistance"
@@ -903,7 +740,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_agents_stand_by
 	icon = GFX_goal_industrial_sabotage
@@ -913,15 +749,12 @@ shared_focus = {
 	}
 	x = 32
 	y = 17
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = NCH_var_boost_tt
-
 			check_variable = {
 				which = NCH_var_boost
 				value = 5
@@ -929,20 +762,17 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
-		# DECISION Industrial < 50% harmony #
 		add_political_power = -100
 		add_command_power = -50
 		add_equipment_to_stockpile = {
-  		type = infantry_equipment
-  		amount = -2000
+			type = infantry_equipment
+			amount = -2000
 		}
 		add_equipment_to_stockpile = {
-  		type = support_equipment
-  		amount = -500
-		}	
-
+			type = support_equipment
+			amount = -500
+		}
 		every_country = {
 			limit = {
 				is_riverlands_country_tag = yes
@@ -953,26 +783,23 @@ shared_focus = {
 			add_stability = -0.075
 			add_war_support = -0.1
 			add_political_power = -75
-
 			every_owned_state = {
 				damage_building = {
-				type = industrial_complex
-				damage = 3
-				}
-
-				damage_building = {
-				type = arms_factory   
-				damage = 2
+					type = industrial_complex
+					damage = 3
 				}
 				damage_building = {
-				type = infrastructure
-				damage = 2
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
 				}
 			}
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_we_are_not_alone
 	icon = GFX_goal_we_are_not_alone
@@ -982,19 +809,11 @@ shared_focus = {
 	}
 	x = 44
 	y = 16
-
-	available = {
-		#has_completed_focus = NCH_patch_to_prosperty
-	}
-	
+	available = {}
 	completion_reward = {
-		# add_stability = 0.05
-		# add_political_power = 25
-
 		add_ideas = NCH_volonteurs
 	}
 }
-
 shared_focus = {
 	id = NCH_river_pf_opportunity
 	icon = GFX_goal_river_opportunity
@@ -1004,11 +823,9 @@ shared_focus = {
 	}
 	x = 40
 	y = 17
-
 	available = {
 		has_completed_focus = NCH_businesses_do_not_stand_idle
 	}
-
 	completion_reward = {
 		add_political_power = 50
 		add_popularity = {
@@ -1017,7 +834,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_trade_development
 	icon = GFX_goal_develop_trade
@@ -1027,7 +843,6 @@ shared_focus = {
 	}
 	x = 38
 	y = 18
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_trade_with_riverlands_tt
 		every_country = {
@@ -1039,7 +854,6 @@ shared_focus = {
 				modifier = NCH_trade_with_riverlands_opportunity
 			}
 		}
-
 		NCH = {
 			limit = {
 				and = {
@@ -1059,7 +873,6 @@ shared_focus = {
 				}
 			}
 		}
-
 		every_country = {
 			limit = {
 				and = {
@@ -1083,7 +896,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_visit_to_riverlands
 	icon = GFX_goal_dal_more_visit
@@ -1093,13 +905,11 @@ shared_focus = {
 	}
 	x = 37
 	y = 19
-
 	bypass = {
 		not = {
 			country_exists = FRE
 		}
 	}
-
 	completion_reward = {
 		country_event = {
 			id = greneclyf_foregin.8
@@ -1107,7 +917,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_neighborhood
 	icon = GFX_goal_neighborhood
@@ -1117,35 +926,29 @@ shared_focus = {
 	}
 	x = 44
 	y = 17
-
 	available = {
-		has_completed_focus = NCH_peaceful_coexistence	
+		has_completed_focus = NCH_peaceful_coexistence
 		OR = {
 			country_exists = FBK
 			country_exists = WAT
 			country_exists = FIR
 		}
 	}
-
 	completion_reward = {
-		#add_political_power = 50
 		add_opinion_modifier = {
 			target = WAT
 			modifier = NCH_new_hillspony
 		}
-
 		add_opinion_modifier = {
 			target = FIR
 			modifier = NCH_new_hillspony
 		}
-
 		add_opinion_modifier = {
 			target = FBK
 			modifier = NCH_new_hillspony
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_another_visit
 	icon = GFX_goal_old_friend
@@ -1155,7 +958,6 @@ shared_focus = {
 	}
 	x = 43
 	y = 18
-	
 	bypass = {
 		or = {
 			not = {
@@ -1163,7 +965,6 @@ shared_focus = {
 				country_exists = WAT
 				country_exists = FIR
 			}
-
 			not = {
 				WAT = {
 					has_government = communism
@@ -1171,9 +972,7 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
-		# WAT INTEGRATION #
 		if = {
 			limit = {
 				WAT = {
@@ -1202,7 +1001,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_pacts_exchange_for_support
 	icon = GFX_goal_offer_friendship
@@ -1212,7 +1010,6 @@ shared_focus = {
 	}
 	x = 45
 	y = 18
-
 	available = {
 		OR = {
 			country_exists = FBK
@@ -1220,23 +1017,19 @@ shared_focus = {
 			country_exists = FIR
 		}
 	}
-
 	completion_reward = {
-
-		FBK  = {
+		FBK = {
 			country_event = {
 				id = greneclyf_foregin.2
 				days = 0
 			}
 		}
-
 		WAT = {
 			country_event = {
 				id = greneclyf_foregin.2
 				days = 0
 			}
 		}
-
 		FIR = {
 			country_event = {
 				id = greneclyf_foregin.2
@@ -1245,7 +1038,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_long_cooperation
 	icon = GFX_goal_get_bennefits
@@ -1258,11 +1050,9 @@ shared_focus = {
 	}
 	x = 44
 	y = 19
-
 	available = {
 		has_completed_focus = NCH_pacts_exchange_for_support
 	}
-
 	bypass = {
 		or = {
 			not = {
@@ -1272,7 +1062,6 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		country_event = {
 			id = greneclyf_foregin.3
@@ -1280,7 +1069,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_not_so_different
 	icon = GFX_goal_we_are_same
@@ -1290,7 +1078,6 @@ shared_focus = {
 	}
 	x = 45
 	y = 20
-
 	available = {
 		or = {
 			FBK = {
@@ -1310,13 +1097,11 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_political_power = 100
 		add_stability = 0.05
 	}
 }
-
 shared_focus = {
 	id = NCH_their_light_beckons_us
 	icon = GFX_goal_homeland_problems
@@ -1326,14 +1111,12 @@ shared_focus = {
 	}
 	x = 48
 	y = 17
-
 	available = {
 		or = {
 			country_exists = EQS
 			country_exists = CHN
 		}
 	}
-
 	completion_reward = {
 		country_event = {
 			id = greneclyf_foregin.12
@@ -1341,7 +1124,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_emvassy_to_equestria
 	icon = GFX_goal_motherland
@@ -1351,13 +1133,10 @@ shared_focus = {
 	}
 	x = 48
 	y = 18
-
 	cancel_if_invalid = yes
-
 	available = {
 		country_exists = CHN
 	}
-
 	bypass = {
 		CHN = {
 			not = {
@@ -1365,20 +1144,20 @@ shared_focus = {
 			}
 		}
 	}
-
-	completion_reward = {
-		
-	}
+	completion_reward = {}
 	select_effect = {
 		hidden_effect = {
-			country_event = { id = greneclyf_foregin.16 days = 15 }
-			country_event = { id = greneclyf_foregin.15 days = 37 }
+			country_event = {
+				id = greneclyf_foregin.16
+				days = 15
+			}
+			country_event = {
+				id = greneclyf_foregin.15
+				days = 37
+			}
 		}
 	}
-
-	
 }
-
 shared_focus = {
 	id = NCH_beacon_harmony_in_the_east
 	icon = GFX_goal_use_chrysalis
@@ -1388,14 +1167,12 @@ shared_focus = {
 	}
 	x = 47
 	y = 19
-
 	available = {
 		country_exists = CHN
 		CHN = {
-			has_government = fascism 
+			has_government = fascism
 		}
 	}
-
 	completion_reward = {
 		add_tech_bonus = {
 			name = race_tech_bonus
@@ -1420,15 +1197,12 @@ shared_focus = {
 	}
 	x = 50
 	y = 18
-
 	cancel_if_invalid = yes
-
 	available = {
-		EQS = { 
+		EQS = {
 			has_government = democratic
 		}
 	}
-
 	bypass = {
 		EQS = {
 			not = {
@@ -1436,13 +1210,17 @@ shared_focus = {
 			}
 		}
 	}
-
-	completion_reward = {
-	}
+	completion_reward = {}
 	select_effect = {
 		hidden_effect = {
-			country_event = { id = greneclyf_foregin.13 days = 15 }
-			country_event = { id = greneclyf_foregin.15 days = 37 }
+			country_event = {
+				id = greneclyf_foregin.13
+				days = 15
+			}
+			country_event = {
+				id = greneclyf_foregin.15
+				days = 37
+			}
 		}
 	}
 }
@@ -1458,24 +1236,20 @@ shared_focus = {
 	}
 	x = 49
 	y = 19
-
 	cancel_if_invalid = yes
-
 	available = {
 		CHN = {
-			has_government = fascism 
+			has_government = fascism
 		}
 		EQS = {
 			has_government = democratic
 		}
-
 		Not = {
 			CHN = {
 				has_war_with = EQS
 			}
 		}
 	}
-
 	bypass = {
 		CHN = {
 			has_war_with = EQS
@@ -1486,18 +1260,22 @@ shared_focus = {
 			}
 		}
 	}
-
 	select_effect = {
 		hidden_effect = {
-			CHN  = {
-				country_event = { id = greneclyf_foregin.21 days = 15 }
+			CHN = {
+				country_event = {
+					id = greneclyf_foregin.21
+					days = 15
+				}
 			}
-			EQS  = {
-				country_event = { id = greneclyf_foregin.21 days = 15 }
+			EQS = {
+				country_event = {
+					id = greneclyf_foregin.21
+					days = 15
+				}
 			}
 		}
 	}
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_help_great_war
 		if = {
@@ -1505,17 +1283,16 @@ shared_focus = {
 				and = {
 					EQS = {
 						has_country_flag = NCH_peacful_diplomatic_accept
-					}		
+					}
 					CHN = {
 						has_country_flag = NCH_peacful_diplomatic_accept
-					}			
+					}
 				}
 			}
-
 			CHN = {
 				diplomatic_relation = {
-				country = EQS
-				relation = non_aggression_pact
+					country = EQS
+					relation = non_aggression_pact
 				}
 			}
 		}
@@ -1529,20 +1306,16 @@ shared_focus = {
 		focus = NCH_beacon_harmony_in_the_east
 		focus = NCH_our_best_qualities
 	}
-
 	prerequisite = {
 		focus = NCH_beacon_harmony_in_the_east
 	}
-
 	x = 48
 	y = 20
-
 	available = {
 		not = {
 			has_war_with = CHN
 		}
 	}
-	
 	completion_reward = {
 		country_event = {
 			id = greneclyf_foregin.24
@@ -1550,7 +1323,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_harmpony_in_every_heart
 	icon = GFX_goal_equestrian_phylpsophi
@@ -1560,13 +1332,11 @@ shared_focus = {
 	}
 	x = 51
 	y = 19
-
 	available = {
 		EQS = {
 			has_government = democratic
 		}
 	}
-
 	bypass = {
 		or = {
 			not = {
@@ -1579,7 +1349,6 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_manpower = 100
 		add_ideas = NCH_school_of_friendship
@@ -1597,81 +1366,78 @@ shared_focus = {
 		focus = NCH_our_best_qualities
 		focus = NCH_harmpony_in_every_heart
 	}
-
 	x = 50
 	y = 20
-
 	available = {
 		country_exists = EQS
 		EQS = {
 			has_government = democratic
 		}
 	}
-
 	completion_reward = {
 		add_ideas = NCH_wonderbolts
-			if = {
-         	   limit = {
-         	       has_dlc = "By Blood Alone"
-          	  }
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1.0
-					uses = 1
-					category = light_air
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "DASH.112"
+				type = small_plane_airframe_1
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					engine_type_slot = engine_1_1x
+					special_type_slot_1 = empty
 				}
 			}
-			else = {
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1.0
-					uses = 1
-					category = light_fighter
-				}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				amount = 22
+				variant_name = "KLAB.168"
+				producer = NCH
 			}
-		
-			if = {
-				limit = {
+		}
+		if = {
+			limit = {
+				NOT = {
 					has_dlc = "By Blood Alone"
 				}
-				create_equipment_variant = {
-					name = "DASH.112"
-					type = small_plane_airframe_1
-					modules = {
-						fixed_main_weapon_slot = light_mg_2x
-						engine_type_slot = engine_1_1x
-						special_type_slot_1 = empty
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					amount = 22
-					variant_name = "KLAB.168"
-					producer = NCH
-				}
 			}
-
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				set_technology = { cv_early_fighter = 1 }
-				set_technology = { cv_fighter1 = 1 }
-				add_equipment_to_stockpile = {
-					type = cv_fighter_equipment_1
-					amount = 22
-				}
+			set_technology = {
+				cv_early_fighter = 1
 			}
-
+			set_technology = {
+				cv_fighter1 = 1
+			}
+			add_equipment_to_stockpile = {
+				type = cv_fighter_equipment_1
+				amount = 22
+			}
+		}
 		country_event = {
 			id = greneclyf_foregin.25
 			days = 0
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_our_values
 	icon = GFX_goal_our_values
@@ -1681,14 +1447,12 @@ shared_focus = {
 	}
 	x = 52
 	y = 20
-
 	available = {
 		country_exists = EQS
 		EQS = {
 			has_government = democratic
 		}
 	}
-
 	completion_reward = {
 		EQS = {
 			country_event = {
@@ -1698,7 +1462,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_light_f_fire_in_their_hearts
 	icon = GFX_goal_yosip_strategy
@@ -1707,19 +1470,12 @@ shared_focus = {
 		focus = NCH_agents_stand_by
 		focus = NCH_friends_and_allies
 	}
-
 	x = 33
 	y = 18
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
-	available = {
-		#country_exists = FRE
-		#has_completed_focus = NCH_finding_allies_in_coalition
-	}
-
+	available = {}
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -1732,7 +1488,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_operation_raging_river
 	icon = GFX_goal_operation_rigging_river
@@ -1742,15 +1497,12 @@ shared_focus = {
 	}
 	x = 33
 	y = 19
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	available = {
 		has_completed_focus = NCH_finding_allies_in_coalition
 	}
-
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -1765,7 +1517,6 @@ shared_focus = {
 				id = greneclyf_core.2
 			}
 		}
-
 		if = {
 			FRE = {
 				exists = yes
@@ -1776,7 +1527,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_peaceful_coexistence
 	icon = GFX_goal_peace_existing
@@ -1786,24 +1536,55 @@ shared_focus = {
 	}
 	x = 40
 	y = 18
-
 	available = {
 		has_war = no
 		or = {
-			has_opinion = { target = FBK value > 25 }
-			has_opinion = { target = WAT value > 25 }
-			has_opinion = { target = FIR value > 25 }
-			has_opinion = { target = BAK value > 25 }
-			has_opinion = { target = DMT value > 25 }
-			has_opinion = { target = DEP value > 25 }
-			has_opinion = { target = NUM value > 25 }
-			has_opinion = { target = RCT value > 25 }
-			has_opinion = { target = FRE value > 25 }
-			has_opinion = { target = WIT value > 25 }
-			has_opinion = { target = LCT value > 25 }
+			has_opinion = {
+				target = FBK
+				value > 25
+			}
+			has_opinion = {
+				target = WAT
+				value > 25
+			}
+			has_opinion = {
+				target = FIR
+				value > 25
+			}
+			has_opinion = {
+				target = BAK
+				value > 25
+			}
+			has_opinion = {
+				target = DMT
+				value > 25
+			}
+			has_opinion = {
+				target = DEP
+				value > 25
+			}
+			has_opinion = {
+				target = NUM
+				value > 25
+			}
+			has_opinion = {
+				target = RCT
+				value > 25
+			}
+			has_opinion = {
+				target = FRE
+				value > 25
+			}
+			has_opinion = {
+				target = WIT
+				value > 25
+			}
+			has_opinion = {
+				target = LCT
+				value > 25
+			}
 		}
 	}
-
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -1823,7 +1604,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_scout_the_situation
 	icon = GFX_goal_spy_riverland
@@ -1836,8 +1616,6 @@ shared_focus = {
 	}
 	x = 39
 	y = 19
-
-
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -1853,14 +1631,12 @@ shared_focus = {
 				modifier = large_decrease
 			}
 		}
-
 		country_event = {
 			id = greneclyf_foregin.5
 			days = 0
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_open_up_the_shopping_districts
 	icon = GFX_goal_visit_farbrook
@@ -1870,9 +1646,8 @@ shared_focus = {
 	}
 	x = 41
 	y = 19
-
 	completion_reward = {
-	custom_effect_tooltip = NCH_trade_with_riverlands_tt
+		custom_effect_tooltip = NCH_trade_with_riverlands_tt
 		every_country = {
 			limit = {
 				and = {
@@ -1903,42 +1678,34 @@ shared_focus = {
 	id = NCH_shield_and_sword_harmony
 	icon = GFX_goal_our_rules
 	cost = 5
-
-
 	prerequisite = {
 		focus = NCH_lessons_in_friendship
 	}
-
 	prerequisite = {
 		focus = NCH_friendship_delegation
 		focus = NCH_our_values
 	}
-
 	x = 49
 	y = 21
-
 	available = {
 		country_exists = CHN
 		CHN = {
 			has_government = fascism
 		}
 	}
-
 	completion_reward = {
 		mark_focus_tree_layout_dirty = yes
-		add_war_support = 0.1		
+		add_war_support = 0.1
 		if = {
 			limit = {
 				has_idea = NCH_trade_and_support_CHN
 			}
 			remove_ideas = NCH_trade_and_support_CHN
 		}
-
 		add_opinion_modifier = {
 			target = CHN
 			modifier = large_decrease
 		}
-
 		CHN = {
 			252 = {
 				add_claim_by = NCH
@@ -1946,7 +1713,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_equestria_support
 	icon = GFX_goal_equestrian_defense
@@ -1959,7 +1725,6 @@ shared_focus = {
 	}
 	x = 51
 	y = 21
-
 	available = {
 		country_exists = EQS
 		EQS = {
@@ -1967,7 +1732,6 @@ shared_focus = {
 		}
 		has_country_flag = NCH_EQS_accept_trade
 	}
-
 	completion_reward = {
 		EQS = {
 			country_event = {
@@ -1975,16 +1739,14 @@ shared_focus = {
 				days = 0
 			}
 		}
-
 		add_corps_commander_role = {
 			character = NCH_Sunrise_Moonshadow
-			#desc = "Sunrise_Moonshadow"
-			traits={pony_race_trait media_personality career_officer panzer_leader panzer_expert}
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=5
+			traits = { pony_race_trait media_personality career_officer panzer_leader panzer_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
 		}
 		custom_effect_tooltip = NCH_Sunrise_Moonshadow_stats
 	}
@@ -1998,10 +1760,8 @@ shared_focus = {
 	}
 	x = 43
 	y = 20
-
 	available = {
 		and = {
-			# FBK #
 			or = {
 				and = {
 					owns_state = 569
@@ -2023,8 +1783,6 @@ shared_focus = {
 					}
 				}
 			}
-
-			# WAT #
 			or = {
 				and = {
 					owns_state = 641
@@ -2042,8 +1800,6 @@ shared_focus = {
 					}
 				}
 			}
-
-			# FIR #
 			or = {
 				and = {
 					owns_state = 604
@@ -2069,7 +1825,6 @@ shared_focus = {
 			}
 		}
 	}
-
 	bypass = {
 		or = {
 			not = {
@@ -2079,14 +1834,12 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		NTR = {
 			add_manpower = 40000
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_new_great_agreement
 	icon = GFX_goal_hills_puppet
@@ -2095,37 +1848,39 @@ shared_focus = {
 		focus = NCH_bring_them_harmony
 		focus = NCH_not_so_different
 	}
-
 	x = 44
 	y = 21
-
 	available = {
 		or = {
 			has_completed_focus = NCH_bring_them_harmony
 			has_completed_focus = NCH_not_so_different
 		}
 	}
-
 	completion_reward = {
-		set_rule = { can_create_factions = yes }
+		set_rule = {
+			can_create_factions = yes
+		}
 		if = {
 			limit = {
 				is_in_faction = no
 			}
 			create_faction = NCH_fraction_neighborhood
 		}
-
 		country_event = {
 			id = greneclyf_foregin.4
 			days = 0
 		}
-
-		FBK = { add_to_ROOT_potential_cores = yes }
-		FIR = { add_to_ROOT_potential_cores = yes }
-		WAT = { add_to_ROOT_potential_cores = yes }
+		FBK = {
+			add_to_ROOT_potential_cores = yes
+		}
+		FIR = {
+			add_to_ROOT_potential_cores = yes
+		}
+		WAT = {
+			add_to_ROOT_potential_cores = yes
+		}
 	}
 }
-
 shared_focus = {
 	id = NCH_cit_thrpugh_the_bureaurcracy
 	icon = GFX_goal_burocration_deal
@@ -2138,13 +1893,10 @@ shared_focus = {
 	}
 	x = 40
 	y = 20
-
 	available = {
 		is_puppet = no
 	}
-
 	completion_reward = {
-		#add_political_power = 50
 		every_country = {
 			limit = {
 				and = {
@@ -2157,7 +1909,6 @@ shared_focus = {
 					has_government = democratic
 				}
 			}
-
 			diplomatic_relation = {
 				country = NCH
 				relation = guarantee
@@ -2165,7 +1916,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_embed_agents_in_goverments
 	icon = GFX_goal_operation_patriots
@@ -2178,7 +1928,6 @@ shared_focus = {
 	}
 	x = 38
 	y = 20
-
 	completion_reward = {
 		country_event = {
 			id = greneclyf_foregin.10
@@ -2186,14 +1935,10 @@ shared_focus = {
 		}
 	}
 }
-
-
-
 shared_focus = {
 	id = NCH_finding_allies_in_coalition
 	icon = GFX_goal_three_in_pairs
 	cost = 5
-
 	prerequisite = {
 		focus = NCH_cit_thrpugh_the_bureaurcracy
 	}
@@ -2202,17 +1947,14 @@ shared_focus = {
 	}
 	x = 39
 	y = 21
-
 	available = {
 		country_exists = FRE
 	}
-
 	bypass = {
 		not = {
 			country_exists = FRE
 		}
 	}
-
 	completion_reward = {
 		remove_ideas = NCH_new_great_pact
 		if = {
@@ -2227,12 +1969,10 @@ shared_focus = {
 			every_country = {
 				end_puppet = FRE
 			}
-
 			FRE = {
 				add_to_faction = DEP
 			}
 		}
-
 		if = {
 			limit = {
 				and = {
@@ -2248,17 +1988,12 @@ shared_focus = {
 				relation = guarantee
 			}
 		}
-
 		country_event = {
 			id = greneclyf_foregin.11
 			days = 0
 		}
 	}
 }
-
-
-# Support industry #
-
 shared_focus = {
 	id = NCH_what_we_bring
 	icon = GFX_goal_dreams_of_riverlands
@@ -2266,10 +2001,8 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_operation_raging_river
 	}
-
 	x = 33
 	y = 20
-
 	available = {
 		is_puppet = no
 		has_war = no
@@ -2283,19 +2016,15 @@ shared_focus = {
 			owns_state = 619
 		}
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_ecnomic_tt
-
 		set_country_flag = NCH_peace_fed_ambitions
 		country_event = {
 			id = greneclyf_core.5
 		}
-
 		if = {
 			limit = {
 				has_country_flag = NCH_riv_deceline
@@ -2312,8 +2041,6 @@ shared_focus = {
 				}
 			}
 		}
-	
-		# Hehe player baka #
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2328,7 +2055,6 @@ shared_focus = {
 						exists = RCT
 					}
 				}
-				
 				release_autonomy = {
 					target = RCT
 					freedom_level = 0.5
@@ -2339,7 +2065,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_economic_community
 	icon = GFX_goal_economic_union
@@ -2349,11 +2074,9 @@ shared_focus = {
 	}
 	x = 30
 	y = 21
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	select_effect = {
 		hidden_effect = {
 			every_country = {
@@ -2371,20 +2094,12 @@ shared_focus = {
 			}
 		}
 	}
-	
 	completion_reward = {
-		#custom_effect_tooltip = NCH_ecnomic_tt
 		add_stability = -0.03
 		add_political_power = -50
-
 		add_ideas = modern_society
-
-		#country_event = {
-		#	id = greneclyf_core.104
-		#}
 	}
 }
-
 shared_focus = {
 	id = NCH_a_sample_of_unity
 	icon = GFX_goal_blosmport_consencus
@@ -2394,11 +2109,9 @@ shared_focus = {
 	}
 	x = 32
 	y = 21
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	select_effect = {
 		hidden_effect = {
 			every_country = {
@@ -2416,14 +2129,11 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
-		#add_ideas = NCH_bos_riv
 	}
 }
-
 shared_focus = {
 	id = NCH_bring_together
 	icon = GFX_goal_river_training
@@ -2433,7 +2143,6 @@ shared_focus = {
 	}
 	x = 33
 	y = 22
-
 	completion_reward = {
 		army_experience = 35
 		add_doctrine_cost_reduction = {
@@ -2442,7 +2151,6 @@ shared_focus = {
 			uses = 2
 			category = land_doctrine
 		}
-
 		add_equipment_to_stockpile = {
 			type = artillery_equipment
 			amount = -200
@@ -2455,7 +2163,6 @@ shared_focus = {
 			type = infantry_equipment
 			amount = -2000
 		}
-
 		every_country = {
 			limit = {
 				is_riverlands_country = yes
@@ -2464,15 +2171,14 @@ shared_focus = {
 			}
 			army_experience = 35
 			add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 2
-			category = land_doctrine
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
-
 			add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = -200
+				type = artillery_equipment
+				amount = -200
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
@@ -2482,7 +2188,6 @@ shared_focus = {
 				type = infantry_equipment
 				amount = -2000
 			}
-
 			add_opinion_modifier = {
 				target = NCH
 				modifier = medium_increase
@@ -2490,7 +2195,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_example_for_ponies
 	icon = GFX_goal_language_question
@@ -2500,11 +2204,9 @@ shared_focus = {
 	}
 	x = 34
 	y = 21
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	select_effect = {
 		hidden_effect = {
 			every_country = {
@@ -2522,13 +2224,11 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_stability = 0.075
 		add_political_power = 50
 	}
 }
-
 shared_focus = {
 	id = NCH_general_institutions
 	icon = GFX_goal_vittenburg_process
@@ -2538,11 +2238,9 @@ shared_focus = {
 	}
 	x = 36
 	y = 21
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	select_effect = {
 		hidden_effect = {
 			every_country = {
@@ -2560,15 +2258,12 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_stability = -0.03
 		add_political_power = -50
-
 		add_ideas = proper_science_base
 	}
 }
-
 shared_focus = {
 	id = NCH_racial_differences
 	icon = GFX_goal_river_senate
@@ -2579,14 +2274,11 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_economic_community
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	x = 31
 	y = 22
-
 	select_effect = {
 		hidden_effect = {
 			every_country = {
@@ -2604,33 +2296,26 @@ shared_focus = {
 			}
 		}
 	}
-
 	completion_reward = {
 		add_stability = -0.05
 	}
 }
-
 shared_focus = {
 	id = NCH_make_us_stronger
 	icon = GFX_goal_declaration_right_creatures
 	cost = 10
-
 	prerequisite = {
 		focus = NCH_river_science_program
 	}
-
 	prerequisite = {
 		focus = NCH_bring_together
 		focus = NCH_river_science_program
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	x = 34
 	y = 23
-
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -2648,7 +2333,6 @@ shared_focus = {
 				popularity = 0.15
 			}
 		}
-
 		every_country = {
 			limit = {
 				is_riverlands_country = yes
@@ -2656,16 +2340,12 @@ shared_focus = {
 				has_idea = NCH_riv_volounters
 				has_idea = NCH_riv_search_base
 			}
-			remove_ideas = {
-				NCH_riv_volounters
-				NCH_riv_search_base
-			}
+			remove_ideas = { NCH_riv_volounters NCH_riv_search_base }
 			add_ideas = NCH_declaration_nations
 			set_country_flag = NCH_ready_to_integration_2
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_river_science_program
 	icon = GFX_goal_high_rulling
@@ -2676,20 +2356,15 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_general_institutions
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-	
 	x = 35
 	y = 22
-
 	completion_reward = {
 		add_ideas = NCH_riv_autonomy_states
 	}
 }
-
-
 shared_focus = {
 	id = NCH_what_we_strive_for
 	icon = GFX_goal_godbye_dispair
@@ -2701,20 +2376,16 @@ shared_focus = {
 		focus = NCH_bring_together
 		focus = NCH_racial_differences
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
 	available = {
 		not = {
 			has_idea = NCH_blosmport_economic_consequences
 		}
 	}
-
 	x = 32
 	y = 23
-
 	completion_reward = {
 		every_country = {
 			limit = {
@@ -2725,22 +2396,18 @@ shared_focus = {
 					is_subject_of = NCH
 				}
 				is_riverlands_country = yes
-				# is_in_faction_with = NCH
 			}
-			# call of unity - puppet #
 			country_event = {
 				id = greneclyf_core.115
 				days = 0
 			}
 		}
-
 		every_country = {
 			limit = {
 				not = {
 					is_subject_of = NCH
 				}
 				is_riverlands_country = yes
-				# is_in_faction_with = NCH
 				has_government = democratic
 				not = {
 					tag = NCH
@@ -2753,7 +2420,6 @@ shared_focus = {
 				popularity = 0.15
 			}
 		}
-
 		every_country = {
 			limit = {
 				is_riverlands_country = yes
@@ -2762,17 +2428,12 @@ shared_focus = {
 				has_idea = NCH_blosmport_economic_org
 				has_idea = NCH_riv_senate
 			}
-			remove_ideas = {
-				NCH_blosmport_economic_org
-				NCH_bos_riv
-				NCH_riv_senate
-			}
+			remove_ideas = { NCH_blosmport_economic_org NCH_bos_riv NCH_riv_senate }
 			add_ideas = NCH_goodbye_despair
 			set_country_flag = NCH_ready_to_integration_1
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_inity_as_the_highest_good
 	icon = GFX_goal_release_one_big_dream
@@ -2786,12 +2447,9 @@ shared_focus = {
 	prerequisite = {
 		focus = NCH_make_us_stronger
 	}
-
 	bypass = {
 		has_country_flag = NCH_war_fed_found
 	}
-
-	# NEED TO CHANGE #
 	available = {
 		or = {
 			or = {
@@ -2800,7 +2458,6 @@ shared_focus = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = NCH_one_more_dream
-
 				AND = {
 					RCT = {
 						all_core_state = {
@@ -2886,28 +2543,20 @@ shared_focus = {
 			}
 		}
 	}
-
-
 	x = 33
 	y = 24
-
 	completion_reward = {
-		#set_country_flag = NCH_fed_found
 		NCH = {
 			remove_country_leader_role = yes
 		}
-
 		create_country_leader = {
 			name = NCH_riv_senate
 			picture = GFX_NCH_riv_senate
-			traits = {
-				NCH_political_power_in_senate_hoofs
-			}
+			traits = { NCH_political_power_in_senate_hoofs }
 			ideology = conservatism
 		}
 	}
 }
-
 shared_focus = {
 	id = NCH_adopt_consitution
 	icon = GFX_goal_first_vote
@@ -2917,19 +2566,15 @@ shared_focus = {
 	}
 	x = 33
 	y = 25
-
 	completion_reward = {
 		custom_effect_tooltip = NCH_gytha_maniac_open
 		set_country_flag = NCH_manicpor_unlocked
 		set_country_flag = NCH_fed_found
 		set_country_flag = NCH_queen_hive_abmitions
-
 		country_event = {
 			id = greneclyf_core.117
 		}
-
 		set_cosmetic_tag = NCH_River
-
 		hidden_effect = {
 			every_state = {
 				if = {
