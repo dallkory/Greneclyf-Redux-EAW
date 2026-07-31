@@ -86,12 +86,15 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1234
 					}
-					add_victory_points = {
-						province = 20358
-						value = 1
-					}
+					# add_victory_points = {
+					# 	province = 20358
+					# 	value = 1
+					# }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -101,12 +104,15 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1215
 					}
-					add_victory_points = {
-						province = 20324
-						value = 1
-					}
+					# add_victory_points = {
+					# 	province = 20324
+					# 	value = 1
+					# }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -116,12 +122,15 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1245
 					}
-					add_victory_points = {
-						province = 20352
-						value = 1
-					}
+					# add_victory_points = {
+					# 	province = 20352
+					# 	value = 1
+					# }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -131,12 +140,15 @@ on_actions = {
 
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1236
 					}
-					add_victory_points = {
-						province = 20321
-						value = 1
-					}
+					# add_victory_points = {
+					# 	province = 20321
+					# 	value = 1
+					# }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -146,12 +158,15 @@ on_actions = {
 				
 				if = {
 					limit = {
+						not = {
+							has_state_flag = NCH_arctic_vp_added
+						}
 						owns_state = 1227
 					}
-					add_victory_points = {
-						province = 20314
-						value = 1
-					}
+					# add_victory_points = {
+					# 	province = 20314
+					# 	value = 1
+					# }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -442,6 +457,16 @@ on_actions = {
 				remove_ideas = NCH_break_ice_idea
 			}
 			
+			if = {
+				limit = {
+					AWT = {
+						is_in_faction = yes
+					}
+				}
+				AWT = {
+					leave_faction = yes
+				}
+			}
 
 			# SUBMOD EXAMPLE #
 

@@ -10,14 +10,13 @@ Shared_focus = {
 			has_completed_focus = NCH_equestria_support
 			has_completed_focus = NCH_adopt_consitution
 			has_completed_focus = NCH_shield_and_sword_harmony
+			has_country_flag = NCH_queen_hive_abmitions
+			has_war_with = CHN
 		}
 	}
 
 	available = {
-		has_country_leader = {
-			character = NCH_queen_gytha
-			ruling_only = yes
-		}
+		has_rulling_party = democratic
 
 		or = {
 			has_completed_focus = NCH_shield_and_sword_harmony
@@ -56,6 +55,10 @@ Shared_focus = {
 
 	available = {
 		has_completed_focus = NCH_adopt_consitution
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
 	}
 
 	completion_reward = {
@@ -78,6 +81,10 @@ Shared_focus = {
 
 	available = {
 		has_completed_focus = NCH_Queen_Ditrisium
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
 	}
 
 	completion_reward = {
@@ -101,6 +108,13 @@ Shared_focus = {
 	}
 	x = 6
 	y = 5
+
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
 
 	bypass = {
 		has_country_flag = NCH_chrysalis_reb
@@ -126,6 +140,10 @@ Shared_focus = {
 
 	available = {
 		has_completed_focus = NCH_adopt_consitution
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
 	}
 
 	completion_reward = {
@@ -156,6 +174,7 @@ Shared_focus = {
 		}
 		CHN = {
 			has_government = fascism
+			exists = yes	
 		}
 	}
 
@@ -189,6 +208,8 @@ Shared_focus = {
 	}
 	x = 8
 	y = 5
+
+	
 
 	bypass = {
 		has_country_flag = NCH_chrysalis_reb
@@ -236,6 +257,13 @@ Shared_focus = {
 	x = 7
 	y = 6
 
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
 	bypass = {
 		has_country_flag = NCH_chrysalis_reb
 	}
@@ -258,6 +286,13 @@ Shared_focus = {
 	}
 	x = 10
 	y = 5
+
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
 
 	bypass = {
 		has_country_flag = NCH_chrysalis_reb
@@ -287,6 +322,10 @@ Shared_focus = {
 			character = NCH_queen_gytha
 			ruling_only = yes
 		}
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
 	}
 
 	bypass = {
@@ -310,8 +349,34 @@ Shared_focus = {
 
 	available = {
 		not = {
-			country_exists = CHN
+			CHN = {
+				country_exists = yes
+				has_government = fascism
+			}
 		}
+		not = {
+			or = {
+				REB = {
+					is_subject_of = NCH
+				}
+				CHN = {
+					is_subject_of = NCH
+				}
+				CHN = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+				REB = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+			}
+		}
+
 		CHN = {
 			all_core_state = {
 				not = {
@@ -464,7 +529,7 @@ Shared_focus = {
 				controller = {
 					or = {
 						original_tag = EQS
-						is_puppet_of = EQS
+						is_subject_of = EQS
 					}
 				}
 			}
@@ -570,7 +635,7 @@ Shared_focus = {
 				has_government = democratic
 			}
 			CHN = {
-				is_puppet_of = EQS
+				is_subject_of = EQS
 			}
 		}
 	}
@@ -635,7 +700,7 @@ Shared_focus = {
 				country_exists = CHN
 			}
 			CHN = {
-				is_puppet_of = EQS
+				is_subject_of = EQS
 			}
 		}
 	}
@@ -643,6 +708,7 @@ Shared_focus = {
 	completion_reward = {
 		country_event = {
 			id = greneclyf_hive.18
+			days = 0
 		}
 	}
 }
@@ -800,7 +866,7 @@ Shared_focus = {
 		if = {
 			limit = {
 				REB  = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 			}
 
@@ -842,14 +908,18 @@ Shared_focus = {
 			limit = {
 				has_completed_focus = NCH_fangs_dug
 			}
-			country_event = greneclyf_hive.20
+			country_event = {
+				id = greneclyf_hive.20
+			}
 		}
 
 		if = {
 			limit = {
 				has_completed_focus = NCH_all_or_nothing
 			}
-			country_event = greneclyf_hive.21
+			country_event = {
+				id = greneclyf_hive.21
+			}
 		}
 
 		if = {
@@ -859,7 +929,9 @@ Shared_focus = {
 					has_completed_focus = NCH_after_war_plans
 				}
 			}
-			country_event = greneclyf_hive.22
+			country_event = {
+				id = greneclyf_hive.22
+			}
 		}
 
 		add_ideas = NCH_Gytha_triumpf

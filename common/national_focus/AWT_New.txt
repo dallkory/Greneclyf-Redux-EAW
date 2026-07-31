@@ -1,0 +1,13 @@
+focus_tree = {
+    id = arctic_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AWT
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 150 y = 1300 }
+}

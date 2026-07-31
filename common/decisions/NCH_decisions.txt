@@ -102,29 +102,23 @@ NCH_debug_decision = {
 				}
 			}
 
-			
-
-			NCH = {
-				every_state = {
-					limit = {
-						owner = {
-							OR = {
-								tag = RCT
-								tag = NIM
-								tag = DMT
-								tag = BAK
-								tag = DEP
-								tag = LCT
-								tag = WIT
-								tag = FRE
-								tag = FBK
-								tag = FIR
-								tag = WAT
-							}
-						}
-						add_core_of = NCH
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RCT
+						is_core_of = NIM
+						is_core_of = DMT
+						is_core_of = BAK
+						is_core_of = DEP
+						is_core_of = LCT
+						is_core_of = WIT
+						is_core_of = FRE
+						is_core_of = FBK
+						is_core_of = FIR
+						is_core_of = WAT
 					}
 				}
+				add_core_of = NCH
 			}
 
 			NCH = {
@@ -193,6 +187,118 @@ NCH_debug_decision = {
 	}
 }
 
+NCH_Hive_Union_category = {
+	NCH_United_Hives = {
+		priority = 1
+		icon = GFX_decision_hive_united
+		desc = NCH_United_hives_desc
+		ai_will_do = {
+			base = 1
+		}
+		fire_only_once = yes
+
+		visible = {
+			or = {
+				is_debug = yes
+				has_war_with = CHN
+				not = {
+					country_exists = CHN
+				}
+				has_completed_focus = NCH_Hive
+			}
+		}
+
+		available = {
+			original_tag = NCH
+			CHN = {
+				all_core_state = {
+					is_controlled_by = NCH
+				}
+			}
+
+			has_country_leader = {
+				character = NCH_queen_gytha
+				ruling_only = yes
+			}
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+				state = 246
+				state = 247
+				state = 248
+				state = 249
+				state = 250
+				state = 251
+				state = 252
+				state = 258
+				state = 259
+				state = 260
+				state = 261
+				state = 262
+				state = 264
+				state = 291
+				state = 303
+				state = 304
+				state = 305
+				state = 306
+				state = 307
+				state = 308
+				state = 309
+				state = 310
+				state = 311
+				state = 312
+				state = 313
+				state = 314
+				state = 315
+				state = 316
+				state = 319
+				state = 320
+				state = 321
+				state = 322
+				state = 323
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NCH_Hive_Union
+			add_ideas = CCN_flame_hearts
+			add_ideas = NCH_Chrystalgia
+
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				add_core_of = NCH
+			}
+
+			country_event = {
+				id = greneclyf_hive.23
+			}
+
+			# add_advisor_role = {
+			# 	character = NCH_Thorax
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		idea_token = NCH_Thorax_it
+			# 		cost = 150
+			# 		allowed = {
+			# 			original_tag = NCH
+			# 		}
+			# 		traits = {
+			# 			political_analyst
+			# 		}
+			# 	}
+			# }
+			recruit_character = NCH_Thorax
+
+		}
+	}
+}
+
 NCH_chrysalis_category = {
 	NCH_chrysalis_resistance_mission = {
 		priority = 1
@@ -210,7 +316,7 @@ NCH_chrysalis_category = {
 		available = {
 			or = {
 				CHN = {
-					is_puppet_of = NCH
+					is_subject_of = NCH
 				}
 				CHN = {
 					exists = no
@@ -629,6 +735,7 @@ NCH_fed_found_category = {
 		
 		visible = {
 			or = {
+				is_debug = yes
 				has_country_flag = NCH_debug_vision
 				has_completed_focus = NCH_dreems_of_more
 				has_war_with = RCT
@@ -893,27 +1000,23 @@ NCH_fed_found_category = {
 					}
 				}
 
-				NCH = {
-					every_state = {
-						limit = {
-							owner = {
-								OR = {
-									tag = RCT
-									tag = NIM
-									tag = DMT
-									tag = BAK
-									tag = DEP
-									tag = LCT
-									tag = WIT
-									tag = FRE
-									tag = FBK
-									tag = FIR
-									tag = WAT
-								}
-							}
-							add_core_of = NCH
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
 						}
 					}
+					add_core_of = NCH
 				}
 			}
 			
@@ -970,8 +1073,10 @@ NCH_fed_found_category = {
 		
 		visible = {
 			or = {
+				is_debug = yes
 				has_country_flag = NCH_debug_vision
 				has_country_flag = NCH_peace_fed_ambitions
+				controls_state = 619
 			}
 
 			not = {
@@ -1050,75 +1155,207 @@ NCH_fed_found_category = {
 					target = RCT
 				}
 
-				NCH = {
-					every_state = {
-						if = {
-							limit = {
-								is_core_of = RCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = NIM
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DMT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = BAK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = DEP
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = LCT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WIT
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FRE
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FBK
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = FIR
-							}
-							add_core_of = NCH
-						}
-						if = {
-							limit = {
-								is_core_of = WAT
-							}
-							add_core_of = NCH
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
 						}
 					}
+					add_core_of = NCH
+				}
+			}
+
+			NCH = {
+				set_cosmetic_tag = NCH_River
+			}
+
+			set_variable = {
+				NCH_queen_gytha_portrait = 3
+			}
+
+			NCH_queen_gytha = {
+				set_portraits = {
+					civilian = {
+						large = "GFX_NCH_Steel_Gytha"
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_naive_reformer
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_naive_reformer
+						add = steel_lady
+					}
+				}
+
+				if = {
+					limit = {
+						NCH_queen_gytha = {
+							has_trait = The_god_chosen_queen
+						}
+					}
+					swap_ruler_traits = {
+						remove = The_god_chosen_queen
+						add = steel_lady
+					}
+				}
+			}
+		}
+	}
+
+	NCH_truly_peace_fed_found_dec = {
+		#icon = x
+		ai_will_do = {
+			base = 1
+		}
+		fire_only_once = yes
+		#on_map_mode = map_only
+		
+		visible = {
+			or = {
+				is_debug = yes
+				has_country_flag = NCH_debug_vision
+				has_country_flag = NCH_peace_fed_ambitions
+				controls_state = 619
+			}
+
+			not = {
+				has_country_flag = NCH_war_fed_found
+				has_country_flag = NCH_peace_fed_found
+				has_war_with = RCT
+				controls_state = 619
+			}
+		}
+
+		available = {
+			has_complted_focus = NCH_inity_as_the_highest_good
+			or = {
+				or = {
+					RCT = {
+						is_subject_of = NCH
+					}
+					NCH = {
+						controls_state = 619
+						controls_state  = 620
+						controls_state  = 577
+						controls_state  = 646
+						controls_state  = 682
+					}
+				}
+
+				any_country = {
+					is_riverlands_country = yes
+					has_government = democratic
+					is_in_faction_with = NCH
+					has_idea = NCH_bos_riv
+					has_idea = NCH_riv_senate
+					has_idea = NCH_riv_volounters
+					has_idea = NCH_riv_lanquage
+					has_idea = NCH_riv_search_base
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 681
+				state = 580
+				state = 621
+				state = 618
+				state = 452
+				state = 622
+				state = 645
+				state = 587
+				state = 649
+				state = 648
+				state = 438
+				state = 461
+				state = 638
+				state = 647
+				state = 637
+				state = 635
+				state = 619
+				state = 682
+				state = 620
+				state = 577
+				state = 646
+				state = 586
+				state = 544
+				state = 491
+				state = 543
+				state = 627
+				state = 629
+				state = 628
+				state = 617
+				state = 616
+				state = 614
+				state = 615
+				state = 550
+				state = 551
+				state = 387
+				state = 499
+				state = 560
+				state = 541
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = NCH_manicpor_unlocked
+			set_country_flag = NCH_peace_fed_found
+			hidden_effect = {
+
+				if = {
+					limit = {
+						every_country = {
+							is_riverlands_country = yes
+							has_government = democratic
+							is_in_faction_with = NCH
+							has_idea = NCH_bos_riv
+							has_idea = NCH_riv_senate
+							has_idea = NCH_riv_volounters
+							has_idea = NCH_riv_lanquage
+							has_idea = NCH_riv_search_base
+						}
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV 
+							transfer_troops = yes
+						}
+					}
+				}
+
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = RCT
+							is_core_of = NIM
+							is_core_of = DMT
+							is_core_of = BAK
+							is_core_of = DEP
+							is_core_of = LCT
+							is_core_of = WIT
+							is_core_of = FRE
+							is_core_of = FBK
+							is_core_of = FIR
+							is_core_of = WAT
+						}
+					}
+					add_core_of = NCH
 				}
 			}
 
@@ -1281,7 +1518,7 @@ NCH_arctic_expedition_category = {
 
 NCH_boost_harmony_river = {
 	NCH_overlay_riv_dem_boost = {
-		icon = x
+		icon = nine_stars_op
 		priority = 80
 		
 		ai_will_do = {
@@ -1323,25 +1560,27 @@ NCH_boost_harmony_river = {
 		}
 
 		complete_effect = {
-			FROM = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.05
-				}	
-				add_stability = -0.05
+			from = {
+				owner = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = -0.05
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = -0.05
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = -0.05
+					}	
+					add_stability = -0.05
 
-				set_country_flag = NCH_boost
-				add_timed_idea = {
-					idea = NCH_boost_exp
-					days = 30
+					set_country_flag = NCH_boost
+					add_timed_idea = {
+						idea = NCH_boost_exp
+						days = 30
+					}
 				}
 			}
 
@@ -1355,7 +1594,7 @@ NCH_boost_harmony_river = {
 		cancel_trigger = {
 			FROM = {
 				OR = {
-					OWNER = {
+					owner = {
 						OR = {
 							exists = no
 							has_capitulated = yes

@@ -12,6 +12,18 @@
 
 leader_traits = {
 
+	Political_analyst = {
+		random = no
+		political_power_gain = -0.05
+		non_core_manpower = 0.05
+
+		max_command_power = 35
+
+		intel_network_gain = 0.25
+		compliance_gain_add = 0.03
+		justify_war_goal_time = -0.25
+	}
+
 	The_Steel_lady = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
@@ -65,7 +77,7 @@ leader_traits = {
 		party_popularity_stability_factor = 0.3
 		political_power_gain = 0.05
 
-		power_balance_weekly = 0.02
+		power_balance_weekly = 0.005
 	}
 
 	higher_judge_oiren = {

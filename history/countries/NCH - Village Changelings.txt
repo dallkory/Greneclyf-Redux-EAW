@@ -1,6 +1,7 @@
 capital = 670
 
-oob = "NCH_1007"
+set_oob = "NCH_1007"
+
 set_research_slots = 3
 
 set_country_flag = has_custom_advisors
@@ -211,6 +212,7 @@ recruit_character = NCH_Foiki
 recruit_character = NCH_scientist_Retgir
 recruit_character = NCH_scientist_Zoris
 recruit_character = NCH_Gagat
+recruit_character = NCH_Sunrise_Moonshadow
 
 # leaders #
 recruit_character = NCH_queen_gytha

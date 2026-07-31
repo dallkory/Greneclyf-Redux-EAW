@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		CCN_flame_hearts = {
+			picture = CCN_flame_hearts
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#recruitable_population_factor = 0.015
+				conscription = 0.025
+				democratic_drift = 0.02
+				research_speed_factor = 0.05
+				army_attack_factor = 0.075
+				surrender_limit = 1
+			}
+		}
+
+	}
+}

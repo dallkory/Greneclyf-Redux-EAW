@@ -2033,7 +2033,7 @@ shared_focus = {
 
 	completion_reward = {
 		remove_ideas = NCH_air_stagnation
-		1209={
+		1253={
 			add_building_construction = {
 				type = air_facility
 				level = 1
