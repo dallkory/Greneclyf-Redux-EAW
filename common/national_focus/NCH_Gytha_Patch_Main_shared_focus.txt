@@ -1259,6 +1259,11 @@ shared_focus = {
 				has_government = fascism
 			}
 		}
+		EQS = {
+			not = {
+				has_government = democratic
+			}
+		}
 	}
 	select_effect = {
 		hidden_effect = {

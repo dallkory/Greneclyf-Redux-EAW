@@ -1507,6 +1507,8 @@
   NCH_valha_hired:0 "§3Architect Valha will join our government.§!"
 
   ### IDEAS ###
+  NCH_Blitz:0 "Greneclyf's Peacekeeping Mission"
+  NCH_Blitz_desc:0 "Thanks to Greneclyf's diplomatic mission and its mediation between the warring sides, a temporary peace has been reached. Yet no one knows how long it will endure. Beneath the surface, both sides continue to prepare for war, waiting for the first opportunity to betray the other once the agreement expires. It is merely a postponement... not a resolution."
   NCH_Chrystalgia:0 "Chrystalgia"
   NCH_Chrystalgia:0 "The Chrysalis regime was revolutionary for the Hives. It marked the first time all the warring kingdoms were united under a single banner, while the Queen's fascist policies emancipated the former serfs, freeing them and rallying the nation. It is completely unsurprising that not everyone is ready to accept the new authority, but we must not pressure the dissenters if we wish to avoid a coup."
   CCN_flame_hearts:0 "Flame Hearts"
