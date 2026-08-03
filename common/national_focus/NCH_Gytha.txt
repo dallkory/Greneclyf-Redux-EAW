@@ -4644,11 +4644,25 @@ Shared_focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = NCH_early_military_position
+		# DISPAIR #
+
+
+		# OR # 
+
+
+		# GOOD #
 		country_event = {
 			id = greneclyf_base.29
 			days = 0
 		}
+
+		NCH_cader_sclerite = {
+			set_nationality = STC
+			remove_advisor_role = {
+				slot = political_advisor
+				demote_leader = yes	
+			}
+		} 
 
 		hidden_effect = {
 			if = {
@@ -4665,15 +4679,10 @@ Shared_focus = {
 					size = 0.6
 				}
 
-				NCH_cader_sclerite = {
-					set_nationality = REB
-					remove_advisor_role = {
-					slot = political_advisor
-					demote_leader = yes	
-					}
-				} 
+				
 			}
 		}
+		custom_effect_tooltip = NCH_early_military_position
 	}
 }
 
