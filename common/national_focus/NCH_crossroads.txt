@@ -1,0 +1,233 @@
+focus_tree = {
+	id = NCH_crossroads
+	default = no
+
+	country = {
+		factor = 0
+	}
+
+	initial_show_position = {
+		x = 33
+		y = 0
+	}
+
+	continuous_focus_position = { x = 150 y = 1300 }
+
+	# Starting point
+	focus = {
+		id = NCH_emergency_convocation
+		icon = GFX_goal_generic_major_war
+		x = 33
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 1 }
+	}
+
+	# The two measures adopted after the convocation
+	focus = {
+		id = NCH_save_and_preserve
+		icon = GFX_goal_generic_propaganda
+		x = 32
+		y = 1
+		cost = 10
+		prerequisite = { focus = NCH_emergency_convocation }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_ad_acta
+		icon = GFX_goal_generic_propaganda
+		x = 34
+		y = 1
+		cost = 10
+		prerequisite = { focus = NCH_emergency_convocation }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_keep_your_word
+		icon = GFX_goal_generic_national_unity
+		x = 33
+		y = 2
+		cost = 10
+		prerequisite = { focus = NCH_save_and_preserve }
+		prerequisite = { focus = NCH_ad_acta }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_what_is_ours_by_right
+		icon = GFX_goal_generic_national_unity
+		x = 33
+		y = 3
+		cost = 10
+		prerequisite = { focus = NCH_keep_your_word }
+		ai_will_do = { factor = 1 }
+	}
+
+	# Left branch
+	focus = {
+		id = NCH_worldly_plague
+		icon = GFX_goal_generic_demand_territory
+		x = 29
+		y = 4
+		cost = 10
+		prerequisite = { focus = NCH_what_is_ours_by_right }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_philistines
+		icon = GFX_goal_generic_attack_allies
+		x = 28
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_worldly_plague }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_rootless_tribe
+		icon = GFX_goal_generic_attack_allies
+		x = 30
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_worldly_plague }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_healing
+		icon = GFX_goal_generic_national_unity
+		x = 29
+		y = 6
+		cost = 10
+		prerequisite = { focus = NCH_philistines }
+		prerequisite = { focus = NCH_rootless_tribe }
+		ai_will_do = { factor = 1 }
+	}
+
+	# Centre branch
+	focus = {
+		id = NCH_moat
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 33
+		y = 4
+		cost = 10
+		prerequisite = { focus = NCH_what_is_ours_by_right }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_fruit_of_knowledge
+		icon = GFX_goal_generic_scientific_exchange
+		x = 32
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_moat }
+		mutually_exclusive = { focus = NCH_blood_and_soil }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_blood_and_soil
+		icon = GFX_goal_generic_demand_territory
+		x = 34
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_moat }
+		mutually_exclusive = { focus = NCH_fruit_of_knowledge }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_genesis
+		icon = GFX_goal_generic_national_unity
+		x = 33
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = NCH_fruit_of_knowledge
+			focus = NCH_blood_and_soil
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	# Right branch
+	focus = {
+		id = NCH_poison_and_dagger
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 37
+		y = 4
+		cost = 10
+		prerequisite = { focus = NCH_what_is_ours_by_right }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_iscariot
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 36
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_poison_and_dagger }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_exegesis
+		icon = GFX_goal_generic_propaganda
+		x = 38
+		y = 5
+		cost = 10
+		prerequisite = { focus = NCH_poison_and_dagger }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_bury_the_past
+		icon = GFX_goal_generic_national_unity
+		x = 37
+		y = 6
+		cost = 10
+		prerequisite = { focus = NCH_iscariot }
+		prerequisite = { focus = NCH_exegesis }
+		ai_will_do = { factor = 1 }
+	}
+
+	# All three paths reunite here
+	focus = {
+		id = NCH_exodus
+		icon = GFX_goal_generic_national_unity
+		x = 33
+		y = 7
+		cost = 10
+		prerequisite = { focus = NCH_healing }
+		prerequisite = { focus = NCH_genesis }
+		prerequisite = { focus = NCH_bury_the_past }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_reason
+		icon = GFX_goal_generic_scientific_exchange
+		x = 32
+		y = 8
+		cost = 10
+		prerequisite = { focus = NCH_exodus }
+		mutually_exclusive = { focus = NCH_faith }
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = NCH_faith
+		icon = GFX_goal_generic_national_unity
+		x = 34
+		y = 8
+		cost = 10
+		prerequisite = { focus = NCH_exodus }
+		mutually_exclusive = { focus = NCH_reason }
+		ai_will_do = { factor = 1 }
+	}
+}
+

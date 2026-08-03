@@ -1,0 +1,7466 @@
+
+focus_tree = {
+	id = greneclyf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NCH
+		}
+	}
+
+	#cancel_if_invalid = yes
+    #continue_if_invalid = no
+    #available_if_capitulated = no
+	
+	shared_focus = NCH_beginning_of_crisis
+	shared_focus = NCH_hive
+	shared_focus = NCH_Queen_Gytha_Patch
+	shared_focus = NCH_rule_greneclyf
+	shared_focus = NCH_land_behind_seas
+
+	default = no
+	continuous_focus_position = { x = 150 y = 1300 }
+
+	# PRE CRISIS BRANCH #
+	focus = {
+		id = NCH_legacy
+		icon = GFX_goal_enyas_legacy
+
+		cost = 1
+		x = 33
+		y = 2
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_base.1
+				}
+			}
+			set_country_flag = NCH_Jorney_not_started
+		}
+	}	
+
+	focus = {
+		id = NCH_parliament_convocation
+		icon = GFX_goal_Summoning_of_the_Oireachtas
+	
+		cost = 2
+		prerequisite = {
+			focus = NCH_legacy
+		}
+
+			available = {
+				NOT = {
+					has_country_flag = NCH_Jorney_started
+				}
+			}
+
+		x = 35
+		y = 3
+
+		completion_reward = {
+			#custom_effect_tooltip = NCH_queen_jorney_finished_or_not_started
+			country_event = {
+			days = 0
+			id = greneclyf_base.2
+			}
+		}
+	}
+
+
+	focus = {
+		id = NCH_divided_house
+		icon = GFX_goal_House_Divided
+		cost = 2
+		prerequisite = {
+			focus = NCH_legacy
+		}
+		x = 31
+		y = 3
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_base.3
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_Spy_experience
+		icon = GFX_goal_Study_the_Recent_Experiences
+		cost = 5
+		prerequisite = {
+			focus = NCH_divided_house
+		}
+		x = 30
+		y = 4
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_base.7
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_new_housing
+		icon = GFX_goal_new_housing
+		cost = 5
+		prerequisite = {
+			focus = NCH_divided_house
+		}
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 33
+		y = 4
+		
+		completion_reward = {
+			1253={
+				add_victory_points = {
+					province = 5230
+					value = 5
+				}
+
+			}
+			country_event = {
+				id = greneclyf_base.8
+				days = 0
+			}
+
+			add_timed_idea = {
+				idea = NCH_urbanization_idea
+				days = 210
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_lift_the_veil
+		icon = GFX_goal_Open_the_veil
+		cost = 5
+		prerequisite = {
+			focus = NCH_parliament_convocation
+		}
+		x = 36
+		y = 4
+
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_opinion_modifier = {
+				target = FBK
+				modifier = NCH_cold_trade
+			}
+
+			random_core_state = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = NCH_find_they_job
+		icon = GFX_goal_Find_Them_Work
+		cost = 5
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 29
+		y = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = lack_of_scientists
+				add_idea = lack_of_scientists1
+			}
+
+			swap_ideas = {
+				remove_idea = NCH_luddites_1
+				add_idea = NCH_luddites_2
+			}
+
+			random_state = {
+				limit = {
+					is_owned_by = NCH
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	# Agitprom #
+	focus = {
+		id = NCH_typography
+		icon = GFX_goal_The_Establishment_of_the_State_Printing_House
+		cost = 5
+		prerequisite = {
+			focus = NCH_Spy_experience
+		}
+		x = 31
+		y = 5
+
+		completion_reward = {
+			country_event = {
+				id = greneclyf_base.700
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_learn_from_mistakes
+		icon = GFX_goal_You_learn_from_mistakes
+		cost = 5
+		prerequisite = {
+			focus = NCH_new_housing
+		}
+		x = 33
+		y = 5
+
+		completion_reward = {
+			add_political_power = 50
+			add_timed_idea = {
+				idea = NCH_rise_nation_movement
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_Esteblish_trade_guild
+		icon = GFX_goal_Found_a_Trade_Guild
+		cost = 5
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 35
+		y = 5
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = civilian_economy
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 25 
+			}
+
+			670 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_take_look_around
+		icon = GFX_goal_Take_a_look_around
+		cost = 5
+		prerequisite = {
+			focus = NCH_lift_the_veil
+		}
+		x = 37
+		y = 5
+		
+		completion_reward = {
+			#custom_effect_tooltip = NCH_trade_with_riverlands_ttip	
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					#modifier = NCH_trade_with_riverlands
+					modifier = trading
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NCH_time_to_look_further
+		icon = GFX_goal_Looking_Beyond
+		cost = 8
+		
+
+		prerequisite = {
+			focus = NCH_learn_from_mistakes
+		}
+		prerequisite = {
+			focus = NCH_Esteblish_trade_guild
+		}
+		prerequisite = {
+			focus = NCH_typography
+		}
+		prerequisite = {
+			focus = NCH_find_they_job
+		}
+		prerequisite = {
+			focus = NCH_take_look_around
+		}
+		x = 33
+		y = 6
+
+		completion_reward = {
+			add_ideas = outdated_industry
+			country_event = {
+				id = greneclyf_base.9
+				days = 0
+			}
+			custom_effect_tooltip = NCH_army_development
+			mark_focus_tree_layout_dirty = yes
+
+			hidden_effect = {
+				country_event = {
+					id = greneclyf_arctic.1
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# ============================================================================
+# MERGED FROM: NCH_army_shared_focus.txt
+# ============================================================================
+shared_focus = {
+	id = NCH_rule_greneclyf
+	icon = GFX_goal_rule_greneclyf
+	cost = 3
+	x = 64
+	y = 2
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		#has_country_flag = NCH_army_forces_allow
+		has_completed_focus = NCH_time_to_look_further
+	}
+	allow_branch = {
+		or = {
+		has_completed_focus = NCH_time_to_look_further
+		has_country_flag = NCH_army_forces_allow
+		}
+	}
+	
+	completion_reward = {
+		add_timed_idea = {
+			idea = NCH_rethinking_forces
+			days = 120
+		}
+	}
+}
+
+## NAVY ##
+shared_focus = {
+	id = NCH_at_seas
+	icon = GFX_goal_on_the_seas
+	cost = 5
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+	x = 51
+	y = 3
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		navy_experience = 25
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = naval_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_expand_blosmport_yards
+	icon = GFX_goal_expand_blosmport_yards
+	cost = 10
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 47
+	y = 4
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_fleet_stagnation
+
+		add_timed_idea = {
+			idea = NCH_blosmporn_dockyards
+			days = 270
+		}
+
+		670 = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_hard_armor
+	icon = GFX_goal_hard_armor
+	cost = 5
+	prerequisite = {
+		focus = NCH_expand_blosmport_yards
+	}
+	mutually_exclusive = {
+		focus = NCH_silent_hunters
+	}
+	x = 46
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_battleship_chose
+	}
+
+	completion_reward = {
+		set_country_flag = NCH_armor_priority
+
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = cat_fleet_in_being
+		}
+
+		add_tech_bonus = {
+			name = battleship_tech
+			bonus = 1
+			uses = 1
+			category = bb_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_silent_hunters
+	icon = GFX_goal_torpedor
+	cost = 5
+	prerequisite = {
+		focus = NCH_expand_blosmport_yards
+	}
+	mutually_exclusive = {
+		focus = NCH_hard_armor
+	}
+	x = 48
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_completed_focus = NCH_assing_new_command
+		has_country_flag = NCH_silent_hunters_chose
+	}
+
+	completion_reward = {
+		set_country_flag = NCH_silent_priority
+		add_doctrine_cost_reduction = {
+			name = cat_trade_interdiction
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_trade_interdiction
+		}
+
+		add_tech_bonus = {
+			name = submarine_tech
+			bonus = 1
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_Greneclyf_pride
+	icon = GFX_goal_kraken_east
+	cost = 8
+	prerequisite = {
+		focus = NCH_hard_armor
+	}
+	x = 46
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_battleships_cruaiser_bonus
+		
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 2
+			category = naval_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_sharks_ice_waters
+	icon = GFX_goal_sharks_ice_waters
+	cost = 8
+	prerequisite = {
+		focus = NCH_silent_hunters
+	}
+	x = 48
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_submarines_bonus
+
+		add_tech_bonus = {
+			name = submarine_tech
+			bonus = 1
+			ahead_reduction = 2
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_experomental_developments
+	icon = GFX_goal_massive_production
+	cost = 10
+	prerequisite = {
+		focus = NCH_Greneclyf_pride
+		focus = NCH_sharks_ice_waters
+	}
+	x = 47
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_unique_naval_experomental
+	
+		if = {
+			limit = {
+				has_completed_focus = NCH_hard_armor					
+			}
+			add_ideas = NCH_grand_fleet 
+			
+			if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						heavy_cruiser_1 = 1
+						light_cruiser_1 = 1
+						destroyer_1 = 1
+						destroyer_2 = 1
+
+						ship_shields_1 = 1
+						secondary_battery_1 = 1
+						ship_armor_cruiser_1 = 1
+						ship_torpedo_1 = 1
+						ship_depth_charge_1 = 1
+					}
+
+				# BATTLESHIPS #
+					add_equipment_production = {
+						equipment = { 
+							version_name = "LnG Gytha"
+							type = ship_hull_heavy_1
+							creator = NCH
+						}
+						name = "LnG Oiren"
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+	
+					add_equipment_production = {
+						equipment = { 
+							version_name = "LnG Gytha"
+							type = ship_hull_heavy_1
+							creator = NCH
+						}
+						name = "LnG Basalt"
+						requested_factories = 5
+						progress = 0.6
+						amount = 1
+					}
+				##
+				# Craisers #
+				create_equipment_variant = {
+					name = "Cineál 9"
+					type = heavy_cruiser_1
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						mid_1_custom_slot = ship_torpedo_1
+						mid_2_custom_slot = ship_torpedo_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+
+						rear_1_custom_slot = ship_medium_battery_1
+						rear_2_custom_slot = dp_light_battery_1
+					}
+				}
+	
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 9"
+						type = heavy_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Korry"
+					requested_factories = 5
+					progress = 0.65
+					amount = 1
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 9"
+						type = heavy_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Vega"
+					requested_factories = 5
+					progress = 0.65
+					amount = 1
+				}
+
+
+				create_equipment_variant = {
+					name = "Cineál 7"
+					type = light_cruiser_1
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						mid_1_custom_slot = ship_torpedo_1
+						mid_2_custom_slot = ship_torpedo_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+
+						rear_0_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_light_medium_battery_1
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 7"
+						type = light_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Judge"
+					requested_factories = 5
+					progress = 0.7
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 7"
+						type = light_cruiser_1
+						creator = NCH
+					}
+					name = "LnG Brave"
+					requested_factories = 5
+					progress = 0.7
+					amount = 1
+				}
+				
+
+				create_equipment_variant = {
+					name = "Cineál 3"
+					type = destroyer_2
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = ship_torpedo_1
+
+						mid_1_custom_slot = ship_depth_charge_1
+						rear_1_custom_slot = empty
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Gerda"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Bugsmere"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Hive"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Legend"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Cineál 3"
+						type = destroyer_2
+						creator = NCH
+					}
+					name = "LnG Sun"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+			}
+
+			# NO DLC#
+			else = {
+
+
+
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+
+		# SUBMARINES #
+		if = {
+			limit = {
+				has_completed_focus = NCH_silent_hunters					
+			}
+			add_ideas = NCH_submarine_fleet
+	
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+
+				set_technology = {
+					cruiser_submarines = 1
+					early_submarine = 1
+				}
+				
+				create_equipment_variant = {
+					name = "Siorc uiscí oighreata"
+					type = ship_hull_cruiser_submarine
+					allow_without_tech = yes
+					name_group = NCH_BB_HISTORICAL
+					parent_version = 0
+	
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+						front_1_custom_slot = ship_torpedo_sub_1
+						mid_1_custom_slot = empty
+						rear_1_custom_slot = ship_torpedo_sub_1
+
+						#fixed_ship_engine_slot = sub_ship_engine_1
+						#fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						#front_1_custom_slot = ship_extra_fuel_tank
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Tyrann"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Icepeak"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Snowball"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Dark"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Hero"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Bee"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Icebreaker"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Arktur"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Lier"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Free Bird"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Fury"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO Great"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						version_name = "Siorc uiscí oighreata"
+						type = ship_hull_cruiser_submarine
+						creator = NCH
+					}
+					name = "SuO First"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
+	
+				# NO DLC#
+				else = {
+					set_technology = {
+					cruiser_submarines_nomtg = 1
+					}
+
+
+
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_assing_new_command
+	icon = GFX_goal_exnavy_academy
+	cost = 8
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 51
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_forces.4
+			days = 0
+		}
+		set_country_flag = NCH_navy_advisor_flag
+
+		custom_effect_tooltip = available_chief_of_navy
+		add_naval_commander_role = {
+			character = NCH_admiral_hart
+			desc = "NCH_Desc_Hart"
+			traits = {  changeling_race_trait superior_tactician ironside }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=4
+		}
+		custom_effect_tooltip = NCH_new_stats_hart
+
+		custom_effect_tooltip = available_chief_of_navy
+		add_naval_commander_role={
+			character = NCH_admiral_lorri
+			desc = "NCH_desc_Lorri"
+			traits = {
+				changeling_race_trait seawolf
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+		custom_effect_tooltip = NCH_new_stats_lorri
+	}
+}
+
+shared_focus = {
+	id = NCH_marine_corp
+	icon = GFX_goal_marine
+	cost = 5
+	prerequisite = {
+		focus = NCH_assing_new_command
+	}
+	x = 50
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		research_bonus = {
+			name = marine_bonus
+			bonus = 1.0
+			uses = 2
+			category = tp_tech
+		}
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_doctrine_cost_reduction = {
+				name = special_forces_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_marines_doctrine
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_naval_academy
+	icon = GFX_goal_navy_departaiment
+	cost = 5
+	prerequisite = {
+		focus = NCH_assing_new_command
+	}
+	x = 52
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		navy_experience = 50
+		add_ideas = NCH_naval_academy_establish
+	}
+}
+
+shared_focus = {
+	id = NCH_Blosmport_navy_institute
+	icon = GFX_goal_blosmport_facility
+	cost = 15
+	prerequisite = {
+		focus = NCH_marine_corp
+	}
+	prerequisite = {
+		focus = NCH_naval_academy
+	}
+	x = 51
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+
+			670 = {
+				add_building_construction = {
+					province = 5188
+					type = naval_facility
+					level = 1
+				}
+			}
+
+			add_breakthrough_progress = {
+				value = 0.25
+				specialization = specialization_naval
+			}
+		}
+	}
+
+
+
+
+
+shared_focus = {
+	id = NCH_security_trade
+	icon = GFX_goal_security_trade
+	cost = 10
+	prerequisite = {
+		focus = NCH_at_seas
+	}
+	x = 55
+	y = 4
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+
+		country_event = {
+			id = greneclyf_forces.3
+			days = 0
+		}
+	}
+}
+
+############
+shared_focus = {
+	id = NCH_break_ice
+	icon = GFX_goal_break_ice
+	cost = 5
+	prerequisite = {
+		focus = NCH_security_trade
+	}
+	x = 54
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_break_ice_idea
+		set_country_flag = NCH_break_the_ice_research
+
+		add
+
+		add_equipment_bonus = {
+			name = sp_mega_carrier_eq_bonus_strength
+			bonus = {
+				ship_hull_mega_carrier = {
+					build_cost_ic = -0.15
+					max_strength = 0.05
+					instant = yes
+				}
+			}
+		}		
+	}
+}
+############
+
+
+shared_focus = {
+	id = NCH_merchant_navy
+	icon = GFX_goal_trade_fleet
+	cost = 5
+	prerequisite = {
+		focus = NCH_security_trade
+	}
+	x = 56
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		any_controlled_state_is_coastal = yes
+	}
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_resources_for_fleet
+	icon = GFX_goal_resources_for_fleet
+	cost = 5
+	prerequisite = {
+		focus = NCH_break_ice
+		focus = NCH_merchant_navy
+	}
+	x = 54
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_resources_for_forces_decisions
+	}
+}
+
+shared_focus = {
+	id = NCH_investing_in_shipbuildings
+	icon = GFX_goal_investment_shipbyilding
+	cost = 5
+	prerequisite = {
+		focus = NCH_break_ice
+		focus = NCH_merchant_navy
+	}
+	x = 56
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_domestic_development
+	icon = GFX_goal_project_borei
+	cost = 10
+	prerequisite = {
+		focus = NCH_resources_for_fleet
+		focus = NCH_investing_in_shipbuildings
+	}
+	x = 55
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}  
+				has_tech = basic_ship_hull_cruiser
+			}
+			else = {
+				has_tech = basic_light_cruiser
+			}
+		}
+	}
+
+	completion_reward = {
+		#add_ideas = NCH_torpedo_attack 
+
+		# if = {
+		# 	limit = {
+		# 		not = { has_dlc = "Man the Guns" }
+		# 	}
+		# 	set_technology = { torpedo_cruiser = 1 }
+		# }
+
+		#else = {
+		#	set_technology = { torpedo_cruiser_mtg = 1 }
+		#}
+
+		if = {
+			limit = {
+              no = { has_dlc = "Man the Guns" }
+            }
+			complete_special_project = sp:sp_naval_ice_carrier
+		}
+
+		else = {
+			set_technology = { torpedo_cruiser_mtg = 1 }
+			set_technology = {
+				mega_carrier = 1
+			}
+		}		
+
+		#complete_special_project = sp:sp_naval_ice_carrier
+
+
+		sp:sp_naval_ice_carrier={
+			add_equipment_bonus = {
+				name = sp_mega_carrier_eq_bonus_strength
+				bonus = {
+					mega_carrier = {
+						build_cost_ic = 0.075
+						max_strength = 0.1	
+						instant = yes		 
+					}
+				}
+			}	
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_our_future_at_sea
+	icon = GFX_goal_rule_greneclyf_seas
+	cost = 10
+	prerequisite = {
+		focus = NCH_experomental_developments
+	}
+	prerequisite = {
+		focus = NCH_domestic_development
+	}
+	prerequisite = {
+		focus = NCH_Blosmport_navy_institute
+	}
+	x = 51
+	y = 8
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		#custom_effect_tooltip = NCH_our_navy_strategy
+		set_country_flag = NCH_sea_future
+		
+		# NOT WORKING WHY #
+		hidden_effect = {
+			remove_idea = NCH_expand_blosmport_dockyards
+			remove_idea = NCH_naval_academy_establish
+			remove_idea = NCH_break_ice_idea
+		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_experomental_developments
+				has_completed_focus = NCH_Blosmport_navy_institute
+				has_completed_focus = NCH_domestic_development
+			}
+			add_ideas = NCH_navy_forces
+		}
+	}
+}
+
+
+## ARMY ##
+shared_focus = {
+	id = NCH_on_land
+	icon = GFX_goal_gurd_future
+	cost = 8
+	x = 64
+	y = 3
+
+	available = {
+		has_war_support > 0.45
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		#has_completed_focus = NCH_suppression_of_unrest
+	}
+
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+
+	completion_reward = {
+		army_experience = 25
+		set_country_flag = NCH_generals_flag
+		#remove_ideas = NCH_idyllic_society
+
+		add_doctrine_cost_reduction = {
+			name = navdoc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+
+		country_event = {
+			id = greneclyf_forces.5
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_auxiliary_battalions
+	icon = GFX_goal_elite_doctrine
+	cost = 5
+	prerequisite = {
+		focus = NCH_on_land
+	}
+	mutually_exclusive = {
+		focus = NCH_priorize_integrity
+	}
+	x = 62
+	y = 4
+
+	available = {
+		#has_war_support > 0.35
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_country_flag = NCH_professional_army_chosen
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
+		army_experience = 25
+		set_country_flag = NCH_left_land_forces
+
+		add_tech_bonus = {
+			name = special_forces_bonus
+			category = jager_tech
+			bonus = 0.15
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_inspire_by_example
+	icon = GFX_goal_army_meritocracy
+	cost = 5
+	prerequisite = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 60
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_corps_commander_role = {
+			character = NCH_Merelay
+			desc = "NCH_Merelay"
+			traits={changeling_race_trait infantry_leader hill_fighter}
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+		   } 
+		   custom_effect_tooltip = NCH_Marelay_stats
+
+		add_corps_commander_role = {
+		   character = NCH_Zaliack
+		   desc = "NCH_Merelay"
+		   traits={ changeling_race_trait winter_specialist }
+		   skill=3
+		   attack_skill=2
+		   defense_skill=4
+		   planning_skill=2
+		   logistics_skill=3
+		   }
+		   custom_effect_tooltip = NCH_Marelay_stats
+	}
+}
+
+shared_focus = {
+	id = NCH_anyone_can_be_hero
+	icon = GFX_goal_war_dogs
+	cost = 5
+	prerequisite = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 62
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+	
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = x
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_racial_specforce_doctrine
+		}
+		add_ideas = NCH_land_forces_everyone_can_be_hero
+
+		country_event = {
+			id = greneclyf_forces.7
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_greuling_workouts
+	icon = GFX_goal_extreme_training
+	cost = 5
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+	}
+	prerequisite = {
+		focus = NCH_inspire_by_example
+	}
+	x = 61
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_greuling_training
+	}
+}
+
+shared_focus = {
+	id = NCH_best_of_the_best
+	icon = GFX_goal_best_of_the_best
+	cost = 5
+	prerequisite = {
+		focus = NCH_inspire_by_example
+	}
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+	}
+	x = 59
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		#country_event = {
+		#	id = greneclyf_forces.1
+		#	days = 0
+		#}
+
+		division_template = {
+			name = "Changeling Veterans Brigade"
+			division_names_group = CHN_ALTINF_01
+			template_counter = 37
+			is_locked = yes
+			template_counter = 108
+			regiments = {
+				jager = { x = 0 y = 0 }
+				jager = { x = 0 y = 1 }
+				jager = { x = 0 y = 2 }
+				jager = { x = 0 y = 3 }
+				jager = { x = 1 y = 0 }
+				jager = { x = 1 y = 1 }
+				jager = { x = 1 y = 2 }
+				jager = { x = 1 y = 3 }
+				jager = { x = 2 y = 0 }
+				jager = { x = 2 y = 1 }
+				jager = { x = 2 y = 2 }
+				jager = { x = 2 y = 3 }
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+			}
+			support = {
+				infiltrator_company = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				engineer = { x = 0 y = 2 }
+				artillery = { x = 0 y = 3 }
+			}
+			priority = 2
+		}
+
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Hive Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Hiills Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Moon Sky Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+		random_owned_controlled_state = {
+			create_unit = { division = "name = \"Icebreaker Changeling Brigade\" division_template = \"Changeling Veterans Brigade\" start_experience_factor = 0.85"
+			owner = NCH }
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_faith_in_queen
+	icon = GFX_goal_faith_in_the_queen
+	cost = 10
+	prerequisite = {
+		focus = NCH_best_of_the_best
+	}
+	prerequisite = {
+		focus = NCH_greuling_workouts
+	}
+	x = 60
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_war_support = 0.15
+
+		add_ideas = NCH_faith_in_queen_idea
+
+		country_event = {
+			id = greneclyf_forces.8
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_priorize_integrity
+	icon = GFX_goal_karyon_doctrine
+	cost = 5
+	prerequisite = {
+		focus = NCH_on_land
+	}
+	mutually_exclusive = {
+		focus = NCH_auxiliary_battalions
+	}
+	x = 66
+	y = 4
+
+	available = {
+		#has_war_support > 0.35
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_country_flag = NCH_regular_army_chosen
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_idyllic_society_1
+		set_country_flag = NCH_right_land_forces
+		add_manpower = 20000
+		army_experience = 25
+
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_discipline_is_key_to_order
+	icon = GFX_goal_political_comisars
+	cost = 5
+	prerequisite = {
+		focus = NCH_priorize_integrity
+	}
+	x = 66
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_discipline_key
+		country_event = {
+			id = greneclyf_forces.6
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_bugsmere_war_institute
+	icon = GFX_goal_war_facility
+	cost = 15
+	prerequisite = {
+		focus = NCH_anyone_can_be_hero
+		focus = NCH_discipline_is_key_to_order
+	}
+	x = 64
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		 669 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			province = 5131
+			type = land_facility
+			level = 1
+			}
+		}
+
+		country_event = {
+			id = greneclyf_forces.9
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_greneclyf_tanks
+	icon = GFX_goal_wgreneclyf_tanks
+	cost = 10
+	prerequisite = {
+		focus = NCH_bugsmere_war_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_mechanization_of_brigades
+	}
+	x = 63
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_country_flag = NCH_blizkrieg_chose
+	}
+
+	completion_reward = {
+		add_ideas = NCH_new_tank_idea
+	}
+}
+
+shared_focus = {
+	id = NCH_mechanization_of_brigades
+	icon = GFX_goal_greneclyf_motor
+	cost = 10
+	prerequisite = {
+		focus = NCH_bugsmere_war_institute
+	}
+	mutually_exclusive = {
+		focus = NCH_greneclyf_tanks
+	}
+	x = 65
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_country_flag = NCH_motorize_chose
+	}
+
+	completion_reward = {
+		add_ideas = NCH_mech_brigads
+	}
+}
+
+shared_focus = {
+	id = NCH_pass_law_on_consctiption
+	icon = GFX_goal_conscription_NCH
+	cost = 5
+	prerequisite = {
+		focus = NCH_priorize_integrity
+	}
+	x = 68
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_manpower = 40000
+
+		if = {
+			limit = { has_idea = volunteer_only }
+			add_ideas = { limited_conscription }
+		}
+		else_if = {
+			limit = { has_idea = limited_conscription }
+			add_ideas = { extensive_conscription }
+		}
+		else_if = {
+			limit = { has_idea = extensive_conscription }
+			add_ideas = { service_by_requirement }
+		}
+		else_if = {
+			limit = { has_idea = service_by_requirement }
+			add_ideas = { all_adult_serve }
+		}
+		else_if = {
+			limit = { has_idea = all_adult_serve }
+			add_ideas = { scraping_the_barrel }
+		}
+		else = {
+			add_ideas = { volunteer_only }
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_queen_of_the_fields
+	icon = GFX_goal_project_vasilisk
+	cost = 5
+	prerequisite = {
+		focus = NCH_discipline_is_key_to_order
+	}
+	prerequisite = {
+		focus = NCH_pass_law_on_consctiption
+	}
+	mutually_exclusive = {
+		focus = NCH_goddes_of_war
+	}
+	x = 67
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_artillery_fields
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 400
+			producer = NCH
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_goddes_of_war
+	icon = GFX_goal_project_hydra
+	cost = 5
+	prerequisite = {
+		focus = NCH_discipline_is_key_to_order
+	}
+	prerequisite = {
+		focus = NCH_pass_law_on_consctiption
+	}
+	mutually_exclusive = {
+		focus = NCH_queen_of_the_fields
+	}
+	x = 69
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_ideas = NCH_goddes_war_inf 
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4000
+			producer = NCH
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_expamd_production
+	icon = GFX_goal_weopan_production_massive
+	cost = 10
+	prerequisite = {
+		focus = NCH_queen_of_the_fields
+		focus = NCH_goddes_of_war
+	}
+	x = 68
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		random_state = {
+			limit = {
+				is_owned_by = NCH
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_greneclyf_school_of_war
+	icon = GFX_goal_greneclyf_school_of_war
+	cost = 10
+	prerequisite = {
+		focus = NCH_faith_in_queen
+		focus = NCH_expamd_production
+	}
+	x = 64
+	y = 8
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = NCH_left_land_forces
+			}
+			add_ideas = NCH_hero_land_forces
+		}
+	
+		else_if = {
+			limit = { 
+				has_country_flag = NCH_right_land_forces 
+			}
+		add_ideas = NCH_org_land_forces
+		}
+	}
+}	
+
+### AIR FORCES ###
+shared_focus = {
+	id = NCH_and_in_the_air
+	icon = GFX_goal_birth_air_forces
+	cost = 5
+	prerequisite = {
+		focus = NCH_rule_greneclyf
+	}
+	x = 76
+	y = 3
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			or = {
+				has_tech = iw_small_airframe
+				has_tech = iw_large_airframe
+				has_tech = iw_medium_airframe
+			}
+		}
+
+		if = {
+			limit = {
+				not = { has_dlc = "By Blood Alone" }
+			}
+			or = {
+				has_tech = early_bomber
+				has_tech = early_fighter
+				has_tech = strategic_bomber1
+			}
+		}
+	}
+
+	completion_reward = {
+		air_experience = 25
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe
+			amount = 25
+			producer = NCH
+		}
+
+
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.5
+			uses = 2
+			category = air_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_flying_school 
+	icon = GFX_goal_flying_school
+	cost = 5
+
+	x = 73
+	y = 4
+
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		air_experience = 25
+		#Открывает советника на доктрину
+		add_ideas = NCH_air_school_1
+	}
+}
+
+shared_focus = {
+	id = NCH_radar_development
+	icon = GFX_goal_radar_station
+	cost = 7
+
+	x = 72
+	y = 5
+
+	prerequisite = {
+		focus = NCH_flying_school 
+	}
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			technology = radio
+			bonus = 0.5
+			uses = 1
+		}
+		
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.25
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_build_new_airbases
+	icon = GFX_goal_rocket_stantion
+	cost = 7
+
+	x = 74
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+		has_completed_focus = NCH_rocket_science
+	}
+
+	prerequisite = {
+		focus = NCH_flying_school 
+	}
+	
+	completion_reward = {
+		add_breakthrough_progress = {
+			value = 0.25
+			specialization = specialization_air
+		}
+
+		add_tech_bonus = {
+			name = x
+			category = rocketry
+			bonus = 0.4
+			uses = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_defense_island
+	icon = GFX_goal_iron_dome
+	cost = 7
+
+	x = 74
+	y = 6
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+
+		has_tech = interwar_antiair
+	}
+
+	prerequisite = {
+		focus = NCH_build_new_airbases
+	}
+
+	completion_reward = {
+		670 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+			}
+		}
+
+		669 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_night_training
+	icon = GFX_goal_night_bomb
+	cost = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	x = 72
+	y = 6
+
+	prerequisite = {
+		focus = NCH_radar_development
+	}
+
+	completion_reward = {
+		add_ideas = NCH_night_bombers
+		#army_experience = 30
+	}
+}
+
+shared_focus = {
+	id = NCH_flying_like_butterfly
+	icon = GFX_goal_wind_air
+	cost = 5
+
+	x = 74
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_night_training
+		focus = NCH_defense_island
+	}
+	completion_reward = {
+        set_country_flag = NCH_air_advisor_flag
+		add_tech_bonus = {
+			name = x
+			category = air_doctrine
+			bonus = 0.25
+			uses = 2
+		}
+
+		add_tech_bonus = {
+			name = army_upgrades
+			bonus = 0.3
+			uses = 2
+			category = air_equipment
+		}
+		set_country_flag = NCH_air_advisor_flag
+		#Открывает советника
+		
+
+	}
+}
+
+shared_focus = {
+	id = NCH_who_else_but_us
+	icon = GFX_goal_raprots_herd
+	cost = 10
+
+	x = 76
+	y = 4	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+	completion_reward = {
+
+		set_country_flag = NCH_air_advisor_flag_airborn
+
+		recruit_character = NCH_Harris_Perk
+
+		add_tech_bonus = {
+			name = x
+			technology = paratroopers
+			bonus = 0.7
+			uses = 1
+		}
+		add_tech_bonus = {
+			name = x
+			technology = special_forces_paratroopers
+			bonus = 0.5
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_aisling_air_institute
+	icon = GFX_goal_aisling_facility
+	cost = 15
+
+	x = 79
+	y = 4	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_and_in_the_air
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_air_stagnation
+		1253={
+			add_building_construction = {
+				type = air_facility
+				level = 1
+				province = 5230
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+			}
+		}
+
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_domestic_parts
+	icon = GFX_goal_massive_aircraft
+	cost = 5
+
+	x = 77
+	y = 5
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+	completion_reward = {
+		NCH_air_production_buff_effect = yes
+		random_core_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_rocket_science
+	icon = GFX_goal_project_zenit
+	cost = 5
+
+	x = 76
+	y = 6	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_domestic_parts
+	}
+	completion_reward = {
+		add_breakthrough_progress = {
+			value = 0.75
+			specialization = specialization_air
+		}
+
+		669={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = rocket_site
+				level = 2
+				province = 10952
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_hotter_thousands_suns
+	icon = GFX_goal_project_atom_phenix
+	cost = 5
+
+	x = 78
+	y = 6	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_domestic_parts
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			category = nuclear
+			bonus = 1
+			uses = 1
+		}
+
+		country_event = {
+			id = greneclyf_forces.10
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_experimental_developments
+	icon = GFX_goal_air_investment
+	cost = 10
+
+	x = 77
+	y = 7
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_rocket_science
+		focus = NCH_hotter_thousands_suns
+	}
+
+	completion_reward = {
+		add_ideas = NCH_investment_for_air
+
+		modify_building_resources = {
+			building = industrial_complex
+			resource = aluminium
+			amount = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_native_development
+	icon = GFX_goal_native_aircraft
+	cost = 7
+
+	x = 79
+	y = 5
+
+	mutually_exclusive = {
+		focus = NCH_foregine_development
+	}
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+
+	completion_reward = {
+		add_ideas = NCH_native_air_spirit
+	}
+}
+
+shared_focus = {
+	id = NCH_foregine_development
+	icon = GFX_goal_foregine_aircraft
+	cost = 7
+
+	x = 81
+	y = 5
+
+	mutually_exclusive = {
+		focus = NCH_native_development
+	}
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_aisling_air_institute
+	}
+
+	completion_reward = {
+		add_ideas = NCH_foreign_air_spirit
+
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_equipment_subsidy = {
+				cic = 1000
+				equipment_type = small_plane_airframe
+				seller_tags = { EQS RCT CRY HIP MCW }
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = NCH_naval_bomber_project
+	icon = GFX_goal_project_catcher
+	cost = 10
+
+	x = 80
+	y = 6	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_native_development
+		focus = NCH_foregine_development
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = x
+			category = cat_torpedoes
+			uses = 2
+			bonus = 0.5
+		}
+	}
+
+}
+
+shared_focus = {
+	id = NCH_sorry_as_bee
+	icon = GFX_goal_shadows_cloud
+	cost = 10
+
+	x = 80
+	y = 7	
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_air_support
+	}
+	prerequisite = {
+		focus = NCH_naval_bomber_project
+	}
+	completion_reward = {
+
+		set_country_flag = NCH_air_advisor_flag_fighter
+
+		recruit_character = NCH_Nowel_Dark
+
+		air_experience = 50
+
+		add_tech_bonus = {
+			name = 1
+			category = air_doctrine
+			uses = 2
+			bonus = 0.5
+		}
+		add_timed_idea = {
+			idea = air_crew_surveys_spirit
+			days = 120
+		}
+		if = {
+			limit = {
+				has_completed_focus = NCH_tactical_aviation
+				has_idea = NCH_GAF_masters_CAS
+			}
+				remove_ideas = NCH_GAF_masters_tactical
+				remove_ideas = NCH_GAF_masters_CAS
+
+			swap_ideas = {
+				remove_idea = NCH_GAF_masters_3
+				add_idea = NCH_GAF_masters_4_tac
+			}
+			add_ace = {
+				name = bomber
+				surname = Ace
+				callsign = Green
+				type = bomber_genius
+			}
+			else_if = {
+				limit = { 
+					has_completed_focus = NCH_figher_aircraft
+					has_idea = NCH_GAF_masters_CAS
+				}
+
+				remove_ideas = NCH_GAF_masters_fighters
+				remove_ideas = NCH_GAF_masters_CAS
+
+				swap_ideas = {
+					remove_idea = NCH_GAF_masters_3
+					add_idea = NCH_GAF_masters_4_fig
+				}
+				add_ace = {
+					name = Fighter
+					surname = Ace
+					callsign = Green
+					type = fighter_genius
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NCH_angry_hive
+	icon = GFX_goal_wasps_swarm
+	cost = 10
+
+	x = 77
+	y = 8
+
+	available = {
+		# not = {
+		# 	has_country_flag = NCH_great_hunger_started
+		# }
+	}
+
+	prerequisite = {
+		focus = NCH_experimental_developments
+	}
+	prerequisite = {
+		focus = NCH_flying_like_butterfly
+	}
+	prerequisite = {
+		focus = NCH_sorry_as_bee
+	}
+
+	completion_reward = {
+		set_rule = {
+			can_use_kamikaze_pilots = yes
+		}
+
+		add_ideas = NCH_swarms_hive
+
+		add_breakthrough_progress = {
+			value = 1
+			specialization = specialization_air
+		}
+	}
+}
+
+
+
+
+# ============================================================================
+# MERGED FROM: NCH_artcic_expedition.txt
+# ============================================================================
+
+Shared_focus = {
+	id = NCH_land_behind_seas
+	icon = GFX_goal_terraink
+	cost = 5
+
+	allow_branch = {
+		has_country_flag = NCH_island_found
+	}
+
+	x = 51
+	y = 10
+
+	available = {
+		has_country_flag = NCH_island_found
+		NCH = {
+			owns_state = 1242
+		}
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_arctic_found_tt
+		set_variable = {
+			name = NCH.arctic_targets
+		}
+
+		1234 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1215 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1245 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1236 = { add_to_array = { array = NCH.arctic_targets value = this } }
+		1227 = { add_to_array = { array = NCH.arctic_targets value = this } }
+
+		hidden_effect = {
+			country_event = {
+				id = greneclyf_arctic.2
+				days = 218
+				random_days = 100
+			}
+		}
+	}
+}
+
+#1242
+#1234
+#1215
+#1245
+#1236
+#1227
+
+Shared_focus = {
+	id = NCH_colony_development
+	icon = GFX_goal_arccity
+	cost = 1
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+
+	x = 51
+	y = 11
+
+	available = {
+		#has_completed_focus = NCH_break_ice
+	}
+
+	completion_reward = {
+		#add_ideas = NCH_arctic_conquest
+		custom_effect_tooltip = NCH_arctic_special_citues 
+		add_political_power = 30
+	}
+}
+
+# MILITATY #
+Shared_focus = {
+	id = NCH_militarization_north
+	icon = GFX_goal_artmilitarization
+	cost = 4
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+	
+	x = 48
+	y = 11
+
+	available = {
+		#has_completed_focus = NCH_break_ice
+	}
+
+	completion_reward = {
+		add_ideas = NCH_arctic_conquest
+
+	}
+}
+
+Shared_focus = {
+	id = NCH_dockyards_for_navy
+	icon = GFX_goal_fuelfleet
+	cost = 5
+	prerequisite = {
+		focus = NCH_militarization_north
+	}
+	
+	x = 47
+	y = 12
+
+	completion_reward = {
+		add_ideas = NCH_arctic_fleet
+		if = {
+			limit = {
+				owns_state = 1227
+			}
+			1227 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1236
+			}
+			1236 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1245
+			}
+			1245 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1242
+			}
+			1242 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1215
+			}
+			1215 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1234
+			}
+			1234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_army_base_behind_homeland
+	icon = GFX_goal_exppoligon
+	cost = 5
+	prerequisite = {
+		focus = NCH_militarization_north
+	}
+
+	available = {
+		has_completed_focus = NCH_build_new_airbases
+	}
+	
+	x = 49
+	y = 12
+
+	completion_reward = {
+		add_ideas = NCH_arctic_rocket
+
+		if = {
+			limit = {
+				owns_state = 1227
+			}
+			1227 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1245
+			}
+			1245 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1242
+			}
+			1242 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 1215
+			}
+			1215 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+				}
+			}
+		}
+	}
+}
+
+# ECOMONIC #
+
+Shared_focus = {
+	id = NCH_economic_development_in_ice
+	icon = GFX_goal_newtradeway
+	cost = 4
+	prerequisite = {
+		focus = NCH_land_behind_seas
+	}
+	
+	x = 54
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_break_ice
+	}
+	
+	completion_reward = {
+		668 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = 10891
+			}
+		}
+		
+		# add_victory_points = {
+		# 	province = 10891
+		# 	value = 1
+		# }
+		build_railway = {
+			level = 1
+
+			start_province = 10891
+			target_province = 5131
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_resorurces_digging
+	icon = GFX_goal_geosurvey
+	cost = 5
+	prerequisite = {
+		focus = NCH_economic_development_in_ice
+	}
+	
+	x = 53
+	y = 12
+
+	available = {
+		owns_state = 1234
+		owns_state = 1236
+	}
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -400
+		}
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = -25
+		}
+
+		1234 = {
+			add_resource = {
+				type = chromium
+				amount = 15
+			}
+			add_resource = {
+				type = coal
+				amount = 4
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+			add_manpower = 10000
+		}
+
+		1236 = {
+			add_resource = {
+				type = chromium
+				amount = 36
+			}
+			add_resource = {
+				type = coal
+				amount = 4
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			add_manpower = 15000
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_trade_in_snow
+	icon = GFX_goal_marineresources
+	cost = 5
+	prerequisite = {
+		focus = NCH_economic_development_in_ice
+	}
+	
+	x = 55
+	y = 12
+
+	available = {
+		owns_state = 1234
+		owns_state = 1236
+	}
+
+	completion_reward = {
+		1234 = {
+			add_resource = {
+				type = oil
+				amount = 7
+			}
+			add_manpower = 2500
+		}
+
+		1215 = {
+			add_resource = {
+				type = oil
+				amount = 13
+			}
+			add_manpower = 2500
+		}
+	}
+}
+
+# ============================================================================
+# MERGED FROM: NCH_Chrysalis_shared_focus.txt
+# ============================================================================
+Shared_focus = {
+	id = NCH_hive
+	icon = GFX_goal_great_party
+	cost = 0
+	x = 13
+	y = 2
+
+	bypass = {
+		or = {
+			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+			has_completed_focus = NCH_shield_and_sword_harmony
+			has_country_flag = NCH_queen_hive_abmitions
+			has_war_with = CHN
+		}
+	}
+
+	available = {
+		has_rulling_party = democratic
+
+		or = {
+			has_completed_focus = NCH_shield_and_sword_harmony
+			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+			has_country_flag = NCH_queen_hive_abmitions
+			#has_completed_focus = NCH_time_to_look_further
+			has_war_with = CHN
+		}
+	}
+	allow_branch = {
+		or = {
+			has_country_flag = NCH_debug_vision
+			has_country_flag = NCH_queen_hive_abmitions
+			has_completed_focus = NCH_equestria_support
+			has_completed_focus = NCH_adopt_consitution
+			has_completed_focus = NCH_shield_and_sword_harmony
+			has_war_with = CHN
+		}
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+Shared_focus = {
+	id = NCH_pressure_chrusalis
+	icon = GFX_goal_thorax_connection
+	cost = 5
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 8
+	y = 3
+
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.2
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_spy_everywhere
+	icon = GFX_goal_spyomania
+	cost = 4
+	prerequisite = {
+		focus = NCH_pressure_chrusalis
+	}
+	x = 7
+	y = 4
+
+	available = {
+		has_completed_focus = NCH_Queen_Ditrisium
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_spy_everywhere_tt
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_take_a_equipment
+	icon = GFX_goal_wait_a_moment
+	cost = 4
+	prerequisite = {
+		focus = NCH_spy_everywhere
+	}
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
+	}
+	x = 6
+	y = 5
+
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		add_days_mission_timeout = {
+			mission = NCH_chrysalis_resistance_mission
+			days = 40
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_seek_support
+	icon = GFX_goal_teach_eagle
+	cost = 5
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 10
+	y = 3
+
+	available = {
+		has_completed_focus = NCH_adopt_consitution
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.1
+			days = 0
+		}	
+	}
+}
+
+Shared_focus = {
+	id = NCH_Queen_Ditrisium
+	icon = GFX_goal_queen_of_ditrisium
+	cost = 5
+	prerequisite = {
+		focus = NCH_seek_support
+	}
+	prerequisite = {
+		focus = NCH_pressure_chrusalis
+	}
+	x = 9
+	y = 4
+
+	available = {
+		has_country_leader = {
+			character = NCH_queen_gytha
+			ruling_only = yes
+		}
+		CHN = {
+			has_government = fascism
+			exists = yes	
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.3
+			days = 0
+		}
+
+		CHN = {
+			country_event = {
+				id = greneclyf_hive.4
+				days = 0
+			}
+		}
+
+		custom_effect_tooltip = NCH_run_with_time
+		activate_mission = NCH_chrysalis_resistance_mission
+	}
+}
+
+Shared_focus = {
+	id = NCH_equipment_suppporter
+	icon = GFX_goal_old_blood
+	cost = 8
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
+	}
+	prerequisite = {
+		focus = NCH_spy_everywhere
+	}
+	x = 8
+	y = 5
+
+	
+
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_old_guard_reb
+		set_country_flag = NCH_old_guard
+		add_command_power = 30
+
+		NCH = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -11000
+			}
+			add_equipment_to_stockpile = {
+				type = magical_equipment
+				amount = -4000
+			}
+		}
+
+		REB = {
+			add_manpower = 25000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 11000
+			}
+			add_equipment_to_stockpile = {
+				type = magical_equipment
+				amount = 4000
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_give_hope
+	icon = GFX_goal_secret_colobaration
+	cost = 7
+	prerequisite = {
+		focus = NCH_equipment_suppporter
+		focus = NCH_take_a_equipment
+	}
+
+	x = 7
+	y = 6
+
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_industrial_help_REB
+
+		REB = {
+			
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_idea_of_harmony_in_hives
+	icon = GFX_goal_nine_stars_methods
+	cost = 8
+	prerequisite = {
+		focus = NCH_Queen_Ditrisium
+	}
+	x = 10
+	y = 5
+
+	available = {
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	# #
+	completion_reward = {
+		custom_effect_tooltip = NCH_9_stars_methods_tt
+		set_country_flag = NCH_9_stars_methods
+	}
+}
+
+Shared_focus = {
+	id = NCH_fangs_dug
+	icon = GFX_goal_unforgotten_night
+	cost = 7
+	prerequisite = {
+		focus = NCH_equipment_suppporter
+		focus = NCH_idea_of_harmony_in_hives
+	}
+
+	x = 9
+	y = 6
+
+	available = {
+		has_country_leader = {
+			character = NCH_queen_gytha
+			ruling_only = yes
+		}
+		CHN = {
+			has_government = fascism
+			exists = yes
+		}
+	}
+
+	bypass = {
+		has_country_flag = NCH_chrysalis_reb
+	}
+
+	completion_reward = {
+		country_event = greneclyf_hive.7
+	}
+}
+
+Shared_focus = {
+	id = NCH_rethinking_history
+	icon = GFX_goal_unreal
+	cost = 5
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 13
+	y = 3
+
+	available = {
+		not = {
+			CHN = {
+				country_exists = yes
+				has_government = fascism
+			}
+		}
+		not = {
+			or = {
+				REB = {
+					is_subject_of = NCH
+				}
+				CHN = {
+					is_subject_of = NCH
+				}
+				CHN = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+				REB = {
+					all_core_state = {
+						is_controlled_by = NCH
+						is_controlled_by = REB
+					}
+				}
+			}
+		}
+
+		CHN = {
+			all_core_state = {
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_ideas = NCH_humanitary_crisis_1
+	}
+}
+
+Shared_focus = {
+	id = NCH_accept_refugees
+	icon = GFX_goal_care_refudginers
+	cost = 5
+	prerequisite = {
+		focus = NCH_rethinking_history
+	}
+	x = 12
+	y = 4
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NCH_humanitary_crisis_1
+			add_idea = NCH_humanitary_crisis_2
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_loyal_elite
+	icon = GFX_goal_burning_fury
+	cost = 5
+	prerequisite = {
+		focus = NCH_rethinking_history
+	}
+	x = 14
+	y = 4
+
+	completion_reward = {
+		country_event = greneclyf_hive.14
+	}
+}
+
+Shared_focus = {
+	id = NCH_our_legarl_right
+	icon = GFX_goal_judgement_occupation
+	cost = 5
+	prerequisite = {
+		focus = NCH_accept_refugees
+	}
+	prerequisite = {
+		focus = NCH_loyal_elite
+	}
+	x = 13
+	y = 5
+
+	completion_reward = {
+		country_event = greneclyf_hive.16
+		add_named_threat = {
+			threat = 5
+			name = NCH_CHN_intervetion
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_claim_by = NCH
+		}
+
+		if = {
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					add_opinion_modifier = {
+					target = NCH
+						modifier = large_decrease
+					}
+				}
+			}	
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_all_or_nothing
+	icon = GFX_goal_vendetta
+	cost = 5
+	prerequisite = {
+		focus = NCH_our_legarl_right
+	}
+	x = 13
+	y = 6
+
+	available = {
+		has_country_leader = {
+			character = NCH_queen_gytha
+			ruling_only = yes
+		}
+	}
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = CHN
+				not = {
+					is_controlled_by = CHN
+				}
+			}
+			create_wargoal = {
+				target = THIS
+				type = annex_everything
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_unity_summit
+	icon = GFX_goal_emergency_delegation
+	cost = 5
+	prerequisite = {
+		focus = NCH_hive
+	}
+	x = 17
+	y = 3
+
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+		or = {
+			EQS = {
+				has_war_with = CHN
+			}
+
+			is_in_faction_with = EQS
+
+			every_state = {
+				limit = {
+					is_core_of = CHN
+				}
+				controller = {
+					or = {
+						original_tag = EQS
+						is_subject_of = EQS
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		add_opinion_modifier = {
+			target = EQS
+			modifier = large_increase
+		}
+		add_timed_idea = {
+			idea = NCH_war_mission_EQS
+			days = 120
+		}
+
+		EQS = {
+			add_timed_idea = {
+				idea = NCH_war_mission_EQS
+				days = 120
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_start_negotiations
+	icon = GFX_goal_continue_delegation
+	cost = 5
+	prerequisite = {
+		focus = NCH_unity_summit
+	}
+	x = 17
+	y = 4
+
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+
+			CHN  = {
+				has_government = democratic 
+			}
+
+			CHN  = {
+				has_war_with = NCH
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				EQS = {
+					has_government = democratic
+				}
+				has_opinion = {
+					target = EQS
+					value > 49
+				}
+			}
+			#set_country_flag = NCH_EQS_peace
+		}
+
+		if = {
+			limit = {
+				has_opinion = {
+					target = EQS
+					value < 49
+				}
+			}
+			add_opinion_modifier = {
+				target = EQS
+				modifier = large_decrease
+			}
+			#set_country_flag = NCH_EQS_decrease
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_all_wars_ends
+	icon = GFX_goal_nimbusian_process
+	cost = 5
+	prerequisite = {
+		focus = NCH_start_negotiations
+	}
+	mutually_exclusive = {
+		focus = NCH_menace_chrysalis
+	}
+	x = 16
+	y = 5
+
+	#available = {
+	#	has_country_flag = NCH_EQS_decrease
+	#}
+
+	available = {
+		country_exists = CHN
+		or = {
+			CHN  = {
+				has_government = democratic
+			}
+			CHN = {
+				is_subject_of = EQS
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.19
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_menace_chrysalis
+	icon = GFX_goal_faction_connection
+	cost = 5
+	prerequisite = {
+		focus = NCH_start_negotiations
+	}
+	mutually_exclusive = {
+		focus = NCH_all_wars_ends
+	}
+	x = 18
+	y = 5
+
+	#available = {
+	#	has_country_flag = NCH_EQS_peace
+	#}
+
+	available = {
+		country_exists = EQS
+		EQS  = {
+			has_government = democratic
+		}
+	}
+
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_hive.17
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_after_war_plans
+	icon = GFX_goal_blosmport_conference
+	cost = 5
+	prerequisite = {
+		focus = NCH_menace_chrysalis
+	}
+	x = 18
+	y = 6
+
+	bypass = {
+		has_country_flag = NCH_EQS_no_peace
+	}
+
+	available = {
+		or = {
+			not = {
+				country_exists = CHN
+			}
+			CHN = {
+				is_subject_of = EQS
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_hive.18
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_collective_management
+	icon = GFX_goal_going_peace
+	cost = 5
+	prerequisite = {
+		focus = NCH_all_wars_ends
+	}
+	x = 16
+	y = 6
+
+	available = {
+
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					EQS = {
+						NOT = {
+							any_state = {
+								is_core_of = CHN
+								NOT = { is_controlled_by = EQS }
+							}
+						}
+					}
+					CHN = { is_subject_of = EQS }
+				}
+			}
+
+			if = {
+				limit = { NOT = { country_exists = REB } }
+				EQS = { release = REB }
+			}
+
+			hidden_effect = {
+				REB = {
+					set_cosmetic_tag = REB_Puppet
+					create_country_leader = {
+						name = NCH_Helvia
+						picture = GFX_NCH_Adler
+						ideology = conservatism
+
+						traits = {
+							Warrior_democratic
+						}
+					}
+				}
+
+				REB = {
+					every_state = {
+						limit = {
+							is_core_of = CHN
+						}
+						add_core_of = REB
+					}
+				}
+
+				REB = {
+					transfer_state = 252
+					transfer_state = 304
+					transfer_state = 309
+					transfer_state = 303
+					transfer_state = 305
+					transfer_state = 261
+					transfer_state = 306
+					transfer_state = 313
+					transfer_state = 312
+					transfer_state = 314
+					transfer_state = 264
+
+					set_capital = 252
+				}
+
+				REB = {
+					add_state_core = 252
+					add_state_core = 304
+					add_state_core = 309
+					add_state_core = 303
+					add_state_core = 305
+					add_state_core = 261
+					add_state_core = 306
+					add_state_core = 313
+					add_state_core = 312
+					add_state_core = 314
+					add_state_core = 264
+				}
+			}
+
+			NCH = {
+				set_autonomy = { target = REB autonomy_state = autonomy_puppet }
+				add_timed_idea = {
+					idea = NCH_autonomy_debuff
+					days = 210
+				}
+			}
+
+			REB = {
+				add_timed_idea = {
+					idea = REB_pacification_debuff
+					days = 365
+				}
+			}
+		}
+
+	}
+}
+
+Shared_focus = {
+	id = NCH_burnings_they_hearts
+	icon = GFX_goal_stabilization_society
+	cost = 5
+	prerequisite = {
+		focus = NCH_collective_management
+		focus = NCH_after_war_plans
+		focus = NCH_all_or_nothing
+		focus = NCH_fangs_dug
+		focus = NCH_give_hope
+	}
+	x = 13
+	y = 7
+
+	available = {
+		CHN = {
+			all_core_state = {
+				OR = {
+					is_controlled_by = NCH
+					controller = {
+						is_subject_of = NCH
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
+
+		if = {
+			limit = {
+				has_ideas = NCH_humanitary_crisis_2
+			}
+			remove_ideas = NCH_humanitary_crisis_2
+		}
+
+		if = {
+			limit = {
+				REB  = {
+					is_subject_of = NCH
+				}
+			}
+
+			country_event = greneclyf_hive.13
+		}
+
+	}
+}
+
+Shared_focus = {
+	id = NCH_union_hives
+	icon = GFX_goal_happy_ending
+	cost = 5
+	prerequisite = {
+		focus = NCH_burnings_they_hearts
+	}
+	x = 13
+	y = 8
+
+	available = {
+		has_country_leader = {
+			character = NCH_queen_gytha
+			ruling_only = yes
+		}
+		CHN = {
+			all_core_state = {
+				OR = {
+					is_controlled_by = NCH
+					controller = {
+						is_subject_of = NCH
+					}
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = NCH_fangs_dug
+			}
+			country_event = {
+				id = greneclyf_hive.20
+			}
+		}
+
+		if = {
+			limit = {
+				has_completed_focus = NCH_all_or_nothing
+			}
+			country_event = {
+				id = greneclyf_hive.21
+			}
+		}
+
+		if = {
+			limit = {
+				or = {
+					has_completed_focus = NCH_collective_management
+					has_completed_focus = NCH_after_war_plans
+				}
+			}
+			country_event = {
+				id = greneclyf_hive.22
+			}
+		}
+
+		add_ideas = NCH_Gytha_triumpf
+		# custom_effect_tooltip = NCH_Gytha_triumpf
+		every_state = {
+			limit = {
+				is_core_of = CHN
+			}
+			add_core_of = NCH
+		}	
+	}
+}
+
+# ============================================================================
+# MERGED FROM: NCH_Crisis_shared_focus.txt
+# ============================================================================
+Shared_focus = {
+	id = NCH_beginning_of_crisis
+	icon = GFX_goal_begining_crisis
+	cost = 0
+	x = 33
+	y = 8
+
+	available = {
+		or = {
+			has_country_flag = NCH_hunger_starts
+			#has_completed_focus = NCH_time_to_look_further
+		}
+	}
+	bypass = {
+		has_country_flag = NCH_hunger_starts
+	}
+	allow_branch = {
+		or = {
+		has_country_flag = NCH_hunger_starts
+		#has_completed_focus = NCH_time_to_look_further
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_mre_cards
+	icon = GFX_goal_mre_cards
+	cost = 5
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 27
+	y = 9
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = NCH_mre_cards_help
+			days = 90
+		}
+
+		custom_effect_tooltip = NCH_starts_mre_help
+	}
+}
+
+Shared_focus = {
+	id = NCH_agroindustrial_mobilization
+	icon = GFX_goal_agroindustrial_mobilization
+	cost = 5
+	prerequisite = {
+		focus = NCH_mre_cards
+	}
+	x = 26
+	y = 10
+
+	completion_reward = {
+
+		country_event = {
+			id = greneclyf_base.19
+			days = 0
+		}
+
+		1253 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_agroindustrial_programs
+	icon = GFX_goal_lux_program
+	cost = 3
+	prerequisite = {
+		focus = NCH_agroindustrial_mobilization
+	}
+	x = 24
+	y = 11
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+
+		country_event = {
+			id = greneclyf_base.20
+			days = 0
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.075
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_limit_external_trade
+	icon = GFX_goal_obsidian_trade
+	cost = 5
+	prerequisite = {
+		focus = NCH_mre_cards
+	}
+	x = 28
+	y = 10
+
+	completion_reward = {
+
+		custom_effect_tooltip = NCH_start_obsisian_export_tt
+
+		668 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = magical_quarry
+				level = 1
+			}
+		}
+
+		set_country_flag = NCH_obsidian_export
+
+       hidden_effect = {
+		add_ideas = obsidian_trade_power_1
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 2
+			category = construction_tech
+		}
+	   }
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_industrial_cooperatives
+	icon = GFX_goal_enya_institute
+	cost = 8
+	prerequisite = {
+		focus = NCH_agroindustrial_mobilization
+	}
+	prerequisite = {
+		focus = NCH_limit_external_trade
+	}
+	x = 27
+	y = 11
+
+	completion_reward = {
+		add_research_slot = 1
+		add_ideas = lack_of_scientists2
+
+		remove_ideas = {
+			NCH_luddites_2
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_modernization_industry
+	icon = GFX_goal_gold_standart
+	cost = 3
+	prerequisite = {
+		focus = NCH_limit_external_trade
+	}
+	x = 30
+	y = 11
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = -0.1
+
+		add_timed_idea = {
+			idea = NCH_golden_standart_cancel
+			days = 120
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_domestic_consumption
+	icon = GFX_goal_new_packts
+	cost = 5
+	prerequisite = {
+		focus = NCH_agroindustrial_programs
+	}
+	prerequisite = {
+		focus = NCH_modernization_industry
+	}
+	prerequisite = {
+		focus = NCH_industrial_cooperatives
+	}
+	x = 27
+	y = 12
+
+	available = {
+		has_completed_focus = NCH_overvise_great_packt
+	}
+
+	completion_reward = {
+		remove_ideas = NCH_massive_unemployed
+
+		if = {
+			limit = {
+				has_idea = civilian_economy
+				NOT = { has_idea = low_economic_mobilisation }
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = low_economic_mobilisation
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.1
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_emergacy_plan
+	icon = GFX_goal_emegrency_plan
+	cost = 2
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 33
+	y = 9
+
+	available = {
+		has_completed_focus = NCH_mre_cards
+	}
+
+	completion_reward = {
+		add_political_power = -100
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = NCH_emergecy_plan_idea
+			days = 90
+		}
+
+		if = {
+			limit = {
+				has_idea = civilian_economy
+				NOT = { has_idea = low_economic_mobilisation }
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = low_economic_mobilisation
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+				NOT = { has_idea = partial_economic_mobilisation }
+				NOT = { has_idea = war_economy }
+				NOT = { has_idea = total_economic_mobilisation }
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_consolidation_political
+	icon = GFX_goal_church
+	cost = 5
+	prerequisite = {
+		focus = NCH_emergacy_plan
+	}
+	x = 32
+	y = 10
+
+	available = {
+		
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.075
+		country_event = {
+			id = greneclyf_base.28
+			days = 0
+		}
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_call_for_unity
+	icon = GFX_goal_propaganda
+	cost = 5
+	prerequisite = {
+		focus = NCH_emergacy_plan
+	}
+	x = 34
+	y = 10
+
+	available = {
+		
+	}
+
+	completion_reward = {
+		add_political_power = 30
+		add_stability = 0.05
+		country_event = {
+			id = greneclyf_base.27
+			days = 0
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+	}
+}
+
+
+Shared_focus = {
+	id = NCH_to_neighbors
+	icon = GFX_goal_hide_and_seek
+	cost = 1
+	prerequisite = {
+		focus = NCH_beginning_of_crisis
+	}
+	x = 39
+	y = 9
+
+	available = {
+		has_completed_focus = NCH_mre_cards
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 25
+
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 25
+			}
+			
+		custom_effect_tooltip = NCH_end_hide_and_seek_tt
+	}
+}
+
+Shared_focus = {
+	id = NCH_every_friend
+	icon = GFX_goal_farbrook_help
+	cost = 2
+	prerequisite = {
+		focus = NCH_to_neighbors
+	}
+	x = 37
+	y = 10
+
+	bypass = {
+		FBK = {
+			not = {
+				has_government = democratic
+			}
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 30
+
+		add_opinion_modifier = {
+			target = FBK
+			modifier = NCH_FBK_friends
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_hoof_of_help
+	icon = GFX_goal_hoof_of_help
+	cost = 5
+	prerequisite = {
+		focus = NCH_every_friend
+	}
+	x = 36
+	y = 11
+
+	bypass = {
+		NOT = {
+			OR = {
+				country_exists = FBK
+				country_exists = FIR
+				country_exists = WAT
+			}
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 40
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.05
+		}
+
+		#custom_effect_tooltip = NCH_start_friendship_with_pony_hills
+	}
+}
+
+Shared_focus = {
+	id = NCH_some_love
+	icon = GFX_goal_some_love
+	cost = 3
+	prerequisite = {
+		focus = NCH_every_friend
+	}
+	x = 38
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_army_concessions
+	}
+
+	bypass = {
+		Not = {
+			country_exists = FBK
+		}
+		FBK = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_base.25
+			days = 0
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.035
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_reguest_of_help
+	icon = GFX_goal_riverlands_help
+	cost = 2
+	prerequisite = {
+		focus = NCH_to_neighbors
+	}
+	x = 41
+	y = 10
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_base.15
+			days = 0
+		}			
+
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = NCH_trade_with_riverlands_prey
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_army_concessions
+	icon = GFX_goal_saor
+	cost = 8
+	prerequisite = {
+		focus = NCH_reguest_of_help
+	}
+	x = 40
+	y = 11
+
+	completion_reward = {
+		add_political_power = 35
+
+		add_timed_idea = {
+			idea = NCH_zone_of_sin
+			days = 120
+		}
+		random_owned_state = {
+			add_building_construction ={
+				type = industrial_complex
+				value = 2
+			}
+		}
+
+		1210 = {
+			set_state_name = "SAOR"
+		}
+		set_province_name = {
+			id = 10775
+			name = "SAOR"
+		}
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.075
+		}
+
+		country_event = {
+			id = greneclyf_base.16
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_clans_of_Greneclyf
+	icon = GFX_goal_warlaw
+	cost = 5
+	prerequisite = {
+		focus = NCH_consolidation_political
+	}
+	prerequisite = {
+		focus = NCH_call_for_unity
+	}
+	x = 33
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_domestic_consumption
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = NCH_early_military_position
+		country_event = {
+			id = greneclyf_base.29
+			days = 0
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					or = {
+						has_country_flag = NCH_bop_medium_crisis
+						has_country_flag = NCH_bop_start_crisis
+					}
+				}
+				
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = communism
+					size = 0.6
+				}
+
+				NCH_cader_sclerite = {
+					set_nationality = REB
+					remove_advisor_role = {
+					slot = political_advisor
+					demote_leader = yes	
+					}
+				} 
+			}
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_suppression_of_unrest
+	icon = GFX_goal_arest
+	cost = 5
+	prerequisite = {
+		focus = NCH_clans_of_Greneclyf
+	}
+	x = 33
+	y = 12
+
+	available = {
+		or = {
+			has_country_flag = NCH_hunger_defeat
+			has_country_flag = NCH_bop_just_finished
+			has_country_flag = NCH_bop_end
+			has_country_flag = NCH_bop_never_more
+		}
+	}
+
+	completion_reward = {
+		add_manpower = -2000
+		add_war_support = 0.05
+		add_stability = 0.05
+		remove_ideas = NCH_protests_on_street
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.075
+		}
+
+		country_event = {
+			id = greneclyf_base.41
+		}
+
+	}
+}
+
+Shared_focus = {
+	id = NCH_final_crisis
+	icon = GFX_goal_clearsky
+	cost = 8
+	prerequisite = {
+		focus = NCH_suppression_of_unrest
+	}
+	prerequisite = {
+		focus = NCH_suppression_of_unrest
+	}
+	x = 33
+	y = 13
+
+	available = {
+		has_country_flag = NCH_hunger_defeat
+		not = {
+			has_war = yes
+		}
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_base.33
+			days = 0
+		}
+
+		mark_focus_tree_layout_dirty = yes
+	}
+	
+}
+
+Shared_focus = {
+	id = NCH_concessions_for_help
+	icon = GFX_goal_saor_policy
+	cost = 5
+	prerequisite = {
+		focus = NCH_reguest_of_help
+	}
+	x = 42
+	y = 11
+
+	available = {
+		has_completed_focus = NCH_army_concessions
+	}
+
+	completion_reward = {
+		country_event = {
+			id = greneclyf_base.17
+			days = 0
+		}
+	}
+}
+
+Shared_focus = {
+	id = NCH_overvise_great_packt
+	icon = GFX_goal_domestic_consumption_NCH
+	cost = 5
+	prerequisite = {
+		focus = NCH_hoof_of_help
+	}
+	prerequisite = {
+		focus = NCH_some_love
+	}
+	prerequisite = {
+		focus = NCH_army_concessions
+	}
+	prerequisite = {
+		focus = NCH_concessions_for_help
+	}
+	x = 39
+	y = 12
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NCH_FBK_pact
+			add_idea = NCH_new_great_pact
+		}
+		remove_ideas = NCH_food_shortage
+
+		add_power_balance_value = {
+			id = NCH_hunger_bop
+			value = 0.15
+		}
+
+		country_event = {
+			id = greneclyf_base.40
+		}
+	}
+}
+
+# ============================================================================
+# MERGED FROM: NCH_Gytha_Patch_Main_shared_focus.txt
+# ============================================================================
+shared_focus = {
+	id = NCH_Queen_Gytha_Patch
+	icon = GFX_goal_after_storm
+	cost = 1
+	x = 33
+	y = 15
+	available = {
+		or = {
+			has_government = democratic
+			has_completed_focus = NCH_final_crisis
+		}
+	}
+	allow_branch = {
+		or = {
+			has_country_flag = NCH_crisis_end
+			has_completed_focus = NCH_final_crisis
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = NCH_gytha_president_open
+		add_stability = 0.15
+		set_country_flag = NCH_presidentpor_unlocked
+	}
+}
+shared_focus = {
+	id = NCH_reforms_after_storm
+	icon = GFX_goal_enya_way
+	cost = 1
+	prerequisite = {
+		focus = NCH_Queen_Gytha_Patch
+	}
+	x = 22
+	y = 16
+	completion_reward = {
+		country_event = {
+			id = greneclyf_base.34
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_patch_to_prosperty
+	icon = GFX_goal_queen_orders
+	cost = 2
+	prerequisite = {
+		focus = NCH_reforms_after_storm
+	}
+	x = 19
+	y = 17
+	completion_reward = {
+		custom_effect_tooltip = NCH_patch_to_prosperty_tt
+	}
+}
+shared_focus = {
+	id = NCH_education_reform
+	icon = GFX_goal_eradication_illiteracy
+	cost = 5
+	prerequisite = {
+		focus = NCH_patch_to_prosperty
+	}
+	x = 17
+	y = 18
+	completion_reward = {
+		add_ideas = no_lack_of_scientists
+	}
+}
+shared_focus = {
+	id = NCH_civil_rights_reform
+	icon = GFX_goal_north_south
+	cost = 5
+	prerequisite = {
+		focus = NCH_education_reform
+	}
+	x = 15
+	y = 19
+	available = {
+		NCH = {
+			or = {
+				controls_state = 668
+				controls_state = 1253
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NCH = {
+					controls_state = 668
+				}
+			}
+			668 = {
+				add_manpower = 20000
+			}
+			668 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			668 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		669 = {
+			add_building_construction = {
+				type = dam
+				level = 1
+			}
+		}
+		if = {
+			limit = {
+				NCH = {
+					controls_state = 1253
+				}
+			}
+			1253 = {
+				add_manpower = 20000
+			}
+			1253 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			1253 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_health_care_reform
+	icon = GFX_goal_health_care
+	cost = 5
+	prerequisite = {
+		focus = NCH_patch_to_prosperty
+	}
+	x = 19
+	y = 18
+	completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = NCH_all_medecine_help
+			days = 180
+		}
+		670 = {
+			add_manpower = 25000
+		}
+		669 = {
+			add_manpower = 15000
+		}
+		1253 = {
+			add_manpower = 10000
+		}
+		668 = {
+			add_manpower = 10000
+		}
+		1210 = {
+			add_manpower = 5000
+		}
+	}
+}
+shared_focus = {
+	id = NCH_blosmport_hive
+	icon = GFX_goal_open_institutue
+	cost = 5
+	prerequisite = {
+		focus = NCH_education_reform
+	}
+	prerequisite = {
+		focus = NCH_health_care_reform
+	}
+	x = 17
+	y = 19
+	completion_reward = {
+		add_timed_idea = {
+			idea = NCH_rise_science
+			days = 150
+		}
+		add_ideas = big_science_base
+		add_research_slot = 1
+	}
+}
+shared_focus = {
+	id = NCH_birth_control
+	icon = GFX_goal_birth_control
+	cost = 5
+	prerequisite = {
+		focus = NCH_health_care_reform
+	}
+	prerequisite = {
+		focus = NCH_education_reform
+	}
+	x = 19
+	y = 19
+	completion_reward = {
+		add_stability = 0.05
+		remove_ideas = NCH_Overpopulation
+		add_ideas = NCH_Overpopulation_2
+	}
+}
+shared_focus = {
+	id = NCH_new_instituts
+	icon = GFX_goal_cult_progress
+	cost = 8
+	prerequisite = {
+		focus = NCH_civil_rights_reform
+		focus = NCH_blosmport_hive
+	}
+	mutually_exclusive = {
+		focus = NCH_traditional_way_of_life
+	}
+	x = 16
+	y = 20
+	completion_reward = {
+		add_ideas = NCH_cult_of_progress
+	}
+}
+shared_focus = {
+	id = NCH_traditional_way_of_life
+	icon = GFX_goal_cult_tradition
+	cost = 8
+	prerequisite = {
+		focus = NCH_blosmport_hive
+		focus = NCH_birth_control
+	}
+	mutually_exclusive = {
+		focus = NCH_new_instituts
+	}
+	x = 18
+	y = 20
+	completion_reward = {
+		add_ideas = NCH_cult_of_traditions
+	}
+}
+shared_focus = {
+	id = NCH_first_constitution
+	icon = GFX_goal_end_schism
+	cost = 2
+	prerequisite = {
+		focus = NCH_patch_to_prosperty
+		focus = NCH_economic_revival
+	}
+	x = 22
+	y = 18
+	completion_reward = {
+		add_ideas = NCH_unity_of_faith
+		country_event = {
+			id = greneclyf_core.8
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_from_chaos
+	icon = GFX_goal_god_chosen_queen
+	cost = 5
+	prerequisite = {
+		focus = NCH_first_constitution
+	}
+	x = 22
+	y = 19
+	available = {
+		has_completed_focus = NCH_businesses_do_not_stand_idle
+	}
+	completion_reward = {
+		swap_ruler_traits = {
+			remove = The_naive_reformer
+			add = The_god_chosen_queen
+		}
+	}
+}
+shared_focus = {
+	id = NCH_form_new_govermant
+	icon = GFX_goal_god_right_ideas
+	cost = 5
+	prerequisite = {
+		focus = NCH_from_chaos
+	}
+	x = 21
+	y = 20
+	completion_reward = {
+		NCH = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+shared_focus = {
+	id = NCH_reflecting_the_past
+	icon = GFX_goal_god_left_ideas
+	cost = 5
+	prerequisite = {
+		focus = NCH_from_chaos
+	}
+	x = 23
+	y = 20
+	completion_reward = {
+		NCH = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+}
+shared_focus = {
+	id = NCH_to_the_new_order
+	icon = GFX_goal_first_constitution
+	cost = 5
+	prerequisite = {
+		focus = NCH_form_new_govermant
+		focus = NCH_reflecting_the_past
+	}
+	x = 22
+	y = 21
+	completion_reward = {
+		add_political_power = 150
+		custom_effect_tooltip = NCH_new_goverment_system_tt
+		set_rule = {
+			can_declare_war_on_same_ideology = yes
+			can_guarantee_other_ideologies = yes
+			can_only_justify_war_on_threat_country = no
+		}
+		set_country_flag = NCH_new_goverment_system_cf
+		activate_mission = NCH_gov_rotation
+	}
+}
+shared_focus = {
+	id = NCH_save_clans_system
+	icon = GFX_goal_status_quo
+	cost = 3
+	prerequisite = {
+		focus = NCH_to_the_new_order
+	}
+	mutually_exclusive = {
+		focus = NCH_hereditary_monarchy
+	}
+	x = 21
+	y = 22
+	completion_reward = {
+		add_political_power = 50
+		set_party_name = {
+			ideology = democratic
+			long_name = NCH_democratic_party_lehman_long
+			name = NCH_democratic_party
+		}
+	}
+}
+shared_focus = {
+	id = NCH_hereditary_monarchy
+	icon = GFX_goal_skales_skiliper
+	cost = 3
+	prerequisite = {
+		focus = NCH_to_the_new_order
+	}
+	mutually_exclusive = {
+		focus = NCH_save_clans_system
+	}
+	x = 23
+	y = 22
+	completion_reward = {
+		add_political_power = 50
+		country_event = {
+			id = greneclyf_core.118
+			days = 0
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = NCH_democratic_party_electorate
+			name = NCH_democratic_party
+		}
+	}
+}
+shared_focus = {
+	id = NCH_economic_revival
+	icon = GFX_goal_economic_rise
+	cost = 8
+	prerequisite = {
+		focus = NCH_reforms_after_storm
+	}
+	x = 25
+	y = 17
+	available = {
+		has_completed_focus = NCH_patch_to_prosperty
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = -100
+		add_timed_idea = {
+			idea = NCH_economic_boom
+			days = 720
+		}
+	}
+}
+shared_focus = {
+	id = NCH_bee_productivity
+	icon = GFX_goal_project_apis
+	cost = 5
+	prerequisite = {
+		focus = NCH_economic_revival
+	}
+	x = 25
+	y = 18
+	completion_reward = {
+		country_event = greneclyf_core.6
+	}
+}
+shared_focus = {
+	id = NCH_businesses_do_not_stand_idle
+	icon = GFX_goal_return_saor
+	cost = 5
+	prerequisite = {
+		focus = NCH_economic_revival
+	}
+	x = 27
+	y = 18
+	available = {
+		has_completed_focus = NCH_health_care_reform
+		not = {
+			has_idea = NCH_all_medecine_help
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = greneclyf_core.7
+		}
+	}
+}
+shared_focus = {
+	id = NCH_brood_of_working_drones
+	icon = GFX_goal_underground_cities
+	cost = 5
+	prerequisite = {
+		focus = NCH_bee_productivity
+	}
+	prerequisite = {
+		focus = NCH_businesses_do_not_stand_idle
+	}
+	x = 25
+	y = 19
+	completion_reward = {
+		every_core_state = {
+			add_state_modifier = {
+				modifier = {
+					local_building_slots_factor = 0.35
+					local_manpower = 0.15
+					local_supplies = 0.075
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_gaining_economic_power
+	icon = GFX_goal_support_middle_class
+	cost = 5
+	prerequisite = {
+		focus = NCH_businesses_do_not_stand_idle
+	}
+	prerequisite = {
+		focus = NCH_bee_productivity
+	}
+	x = 29
+	y = 19
+	completion_reward = {
+		NCH = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_ensure_full_employment
+	icon = GFX_goal_hoof_market
+	cost = 5
+	prerequisite = {
+		focus = NCH_businesses_do_not_stand_idle
+	}
+	prerequisite = {
+		focus = NCH_bee_productivity
+	}
+	x = 27
+	y = 19
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = outdated_industry
+			add_idea = modern_society
+		}
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = NCH_economics_of_friendship
+	icon = GFX_goal_harmonic_solidarity
+	cost = 8
+	prerequisite = {
+		focus = NCH_brood_of_working_drones
+		focus = NCH_gaining_economic_power
+	}
+	mutually_exclusive = {
+		focus = NCH_mobilizing_the_economy
+	}
+	x = 26
+	y = 20
+	completion_reward = {
+		add_ideas = harmonic_solidarity
+		remove_ideas = NCH_economic_status_protect
+	}
+}
+shared_focus = {
+	id = NCH_mobilizing_the_economy
+	icon = GFX_goal_project_phoenix
+	cost = 8
+	prerequisite = {
+		focus = NCH_ensure_full_employment
+		focus = NCH_gaining_economic_power
+	}
+	mutually_exclusive = {
+		focus = NCH_economics_of_friendship
+	}
+	x = 28
+	y = 20
+	completion_reward = {
+		add_ideas = project_phoenix
+		remove_ideas = NCH_economic_status_protect
+	}
+}
+shared_focus = {
+	id = NCH_dreems_of_more
+	icon = GFX_goal_basuc_geopolitic
+	cost = 8
+	prerequisite = {
+		focus = NCH_Queen_Gytha_Patch
+	}
+	x = 33
+	y = 16
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		is_puppet = no
+		has_completed_focus = NCH_cit_thrpugh_the_bureaurcracy
+	}
+	completion_reward = {
+		custom_effect_tooltip = NCH_boost_harmony_tt
+		country_event = {
+			id = greneclyf_core.1
+			days = 0
+		}
+		set_variable = {
+			var = NCH_var_boost
+			value = 0
+		}
+		hidden_effect = {
+			RCT = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			BAK = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			DMT = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			NIM = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			DEP = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			LCT = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			FRE = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+			WIT = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					capital_scope = {
+						add_to_array = {
+							array = NCH.boost_targets
+							value = THIS
+						}
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_friends_and_allies
+	icon = GFX_goal_nch_nine_stars
+	cost = 5
+	prerequisite = {
+		focus = NCH_dreems_of_more
+	}
+	x = 34
+	y = 17
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = NCH_var_boost_tt
+			check_variable = {
+				which = NCH_var_boost
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "9 stars"
+					icon = "GFX_intelligence_agency_logo_generic_2"
+				}
+			}
+			add_ideas = NCH_9_stars_lr
+		}
+		else = {
+			add_ideas = NCH_9_stars_no_lr
+		}
+	}
+}
+shared_focus = {
+	id = NCH_agents_stand_by
+	icon = GFX_goal_industrial_sabotage
+	cost = 5
+	prerequisite = {
+		focus = NCH_dreems_of_more
+	}
+	x = 32
+	y = 17
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = NCH_var_boost_tt
+			check_variable = {
+				which = NCH_var_boost
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	completion_reward = {
+		add_political_power = -100
+		add_command_power = -50
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -500
+		}
+		every_country = {
+			limit = {
+				is_riverlands_country_tag = yes
+				check_variable = {
+					party_popularity@democratic < 0.5
+				}
+			}
+			add_stability = -0.075
+			add_war_support = -0.1
+			add_political_power = -75
+			every_owned_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 3
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_we_are_not_alone
+	icon = GFX_goal_we_are_not_alone
+	cost = 2
+	prerequisite = {
+		focus = NCH_Queen_Gytha_Patch
+	}
+	x = 44
+	y = 16
+	available = {}
+	completion_reward = {
+		add_ideas = NCH_volonteurs
+	}
+}
+shared_focus = {
+	id = NCH_river_pf_opportunity
+	icon = GFX_goal_river_opportunity
+	cost = 3
+	prerequisite = {
+		focus = NCH_we_are_not_alone
+	}
+	x = 40
+	y = 17
+	available = {
+		has_completed_focus = NCH_businesses_do_not_stand_idle
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+	}
+}
+shared_focus = {
+	id = NCH_trade_development
+	icon = GFX_goal_develop_trade
+	cost = 5
+	prerequisite = {
+		focus = NCH_river_pf_opportunity
+	}
+	x = 38
+	y = 18
+	completion_reward = {
+		custom_effect_tooltip = NCH_trade_with_riverlands_tt
+		every_country = {
+			limit = {
+				is_riverlands_country_tag = yes
+			}
+			add_opinion_modifier = {
+				target = from
+				modifier = NCH_trade_with_riverlands_opportunity
+			}
+		}
+		NCH = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			every_core_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources = 0.10
+						local_building_slots_factor = 0.05
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			every_core_state = {
+				capital_scope = {
+					add_state_modifier = {
+						modifier = {
+							local_resources = 0.10
+							local_building_slots_factor = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_visit_to_riverlands
+	icon = GFX_goal_dal_more_visit
+	cost = 5
+	prerequisite = {
+		focus = NCH_trade_development
+	}
+	x = 37
+	y = 19
+	bypass = {
+		not = {
+			country_exists = FRE
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.8
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_neighborhood
+	icon = GFX_goal_neighborhood
+	cost = 8
+	prerequisite = {
+		focus = NCH_we_are_not_alone
+	}
+	x = 44
+	y = 17
+	available = {
+		has_completed_focus = NCH_peaceful_coexistence
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = WAT
+			modifier = NCH_new_hillspony
+		}
+		add_opinion_modifier = {
+			target = FIR
+			modifier = NCH_new_hillspony
+		}
+		add_opinion_modifier = {
+			target = FBK
+			modifier = NCH_new_hillspony
+		}
+	}
+}
+shared_focus = {
+	id = NCH_another_visit
+	icon = GFX_goal_old_friend
+	cost = 5
+	prerequisite = {
+		focus = NCH_neighborhood
+	}
+	x = 43
+	y = 18
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+			not = {
+				WAT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				WAT = {
+					has_government = communism
+				}
+			}
+			set_country_flag = WIT_agreement_our_friendship
+			country_event = {
+				id = greneclyf_foregin.1
+				days = 0
+			}
+		}
+		if = {
+			limit = {
+				WAT = {
+					not = {
+						has_government = communism
+					}
+				}
+			}
+			custom_effect_tooltip = WIT_not_commie
+			add_opinion_modifier = {
+				target = WAT
+				modifier = small_decrease
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_pacts_exchange_for_support
+	icon = GFX_goal_offer_friendship
+	cost = 5
+	prerequisite = {
+		focus = NCH_neighborhood
+	}
+	x = 45
+	y = 18
+	available = {
+		OR = {
+			country_exists = FBK
+			country_exists = WAT
+			country_exists = FIR
+		}
+	}
+	completion_reward = {
+		FBK = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+		WAT = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+		FIR = {
+			country_event = {
+				id = greneclyf_foregin.2
+				days = 0
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_long_cooperation
+	icon = GFX_goal_get_bennefits
+	cost = 7
+	prerequisite = {
+		focus = NCH_another_visit
+	}
+	prerequisite = {
+		focus = NCH_pacts_exchange_for_support
+	}
+	x = 44
+	y = 19
+	available = {
+		has_completed_focus = NCH_pacts_exchange_for_support
+	}
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.3
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_not_so_different
+	icon = GFX_goal_we_are_same
+	cost = 5
+	prerequisite = {
+		focus = NCH_long_cooperation
+	}
+	x = 45
+	y = 20
+	available = {
+		or = {
+			FBK = {
+				OVERLORD = {
+					tag = NCH
+				}
+			}
+			FIR = {
+				OVERLORD = {
+					tag = NCH
+				}
+			}
+			WAT = {
+				OVERLORD = {
+					tag = NCH
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = NCH_their_light_beckons_us
+	icon = GFX_goal_homeland_problems
+	cost = 3
+	prerequisite = {
+		focus = NCH_we_are_not_alone
+	}
+	x = 48
+	y = 17
+	available = {
+		or = {
+			country_exists = EQS
+			country_exists = CHN
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.12
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_emvassy_to_equestria
+	icon = GFX_goal_motherland
+	cost = 7
+	prerequisite = {
+		focus = NCH_their_light_beckons_us
+	}
+	x = 48
+	y = 18
+	cancel_if_invalid = yes
+	available = {
+		country_exists = CHN
+	}
+	bypass = {
+		CHN = {
+			not = {
+				has_government = fascism
+			}
+		}
+	}
+	completion_reward = {}
+	select_effect = {
+		hidden_effect = {
+			country_event = {
+				id = greneclyf_foregin.16
+				days = 15
+			}
+			country_event = {
+				id = greneclyf_foregin.15
+				days = 37
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_beacon_harmony_in_the_east
+	icon = GFX_goal_use_chrysalis
+	cost = 3
+	prerequisite = {
+		focus = NCH_emvassy_to_equestria
+	}
+	x = 47
+	y = 19
+	available = {
+		country_exists = CHN
+		CHN = {
+			has_government = fascism
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = race_tech_bonus
+			bonus = 1.0
+			uses = 2
+			category = race_tech
+		}
+		CHN = {
+			country_event = {
+				id = greneclyf_foregin.22
+				days = 0
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_princess_in_a_high_castle
+	icon = GFX_goal_light_harmony
+	cost = 7
+	prerequisite = {
+		focus = NCH_their_light_beckons_us
+	}
+	x = 50
+	y = 18
+	cancel_if_invalid = yes
+	available = {
+		EQS = {
+			has_government = democratic
+		}
+	}
+	bypass = {
+		EQS = {
+			not = {
+				has_government = democratic
+			}
+		}
+	}
+	completion_reward = {}
+	select_effect = {
+		hidden_effect = {
+			country_event = {
+				id = greneclyf_foregin.13
+				days = 15
+			}
+			country_event = {
+				id = greneclyf_foregin.15
+				days = 37
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_our_best_qualities
+	icon = GFX_goal_blitz
+	cost = 1
+	prerequisite = {
+		focus = NCH_emvassy_to_equestria
+	}
+	prerequisite = {
+		focus = NCH_princess_in_a_high_castle
+	}
+	x = 49
+	y = 19
+	cancel_if_invalid = yes
+	available = {
+		CHN = {
+			has_government = fascism
+		}
+		EQS = {
+			has_government = democratic
+		}
+		Not = {
+			CHN = {
+				has_war_with = EQS
+			}
+		}
+	}
+	bypass = {
+		CHN = {
+			has_war_with = EQS
+		}
+		CHN = {
+			not = {
+				has_government = fascism
+			}
+		}
+		EQS = {
+			not = {
+				has_government = democratic
+			}
+		}
+	}
+	select_effect = {
+		hidden_effect = {
+			CHN = {
+				country_event = {
+					id = greneclyf_foregin.21
+					days = 15
+				}
+			}
+			EQS = {
+				country_event = {
+					id = greneclyf_foregin.21
+					days = 15
+				}
+			}
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = NCH_help_great_war
+		if = {
+			limit = {
+				and = {
+					EQS = {
+						has_country_flag = NCH_peacful_diplomatic_accept
+					}
+					CHN = {
+						has_country_flag = NCH_peacful_diplomatic_accept
+					}
+				}
+			}
+			CHN = {
+				diplomatic_relation = {
+					country = EQS
+					relation = non_aggression_pact
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_lessons_in_friendship
+	icon = GFX_goal_unsuckspested_guest
+	cost = 6
+	prerequisite = {
+		focus = NCH_beacon_harmony_in_the_east
+		focus = NCH_our_best_qualities
+	}
+	prerequisite = {
+		focus = NCH_beacon_harmony_in_the_east
+	}
+	x = 48
+	y = 20
+	available = {
+		not = {
+			has_war_with = CHN
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.24
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_harmpony_in_every_heart
+	icon = GFX_goal_equestrian_phylpsophi
+	cost = 3
+	prerequisite = {
+		focus = NCH_princess_in_a_high_castle
+	}
+	x = 51
+	y = 19
+	available = {
+		EQS = {
+			has_government = democratic
+		}
+	}
+	bypass = {
+		or = {
+			not = {
+				country_exists = EQS
+			}
+			EQS = {
+				not = {
+					has_government = democratic
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_manpower = 100
+		add_ideas = NCH_school_of_friendship
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+	}
+}
+shared_focus = {
+	id = NCH_friendship_delegation
+	icon = GFX_goal_east_wonderbolts
+	cost = 6
+	prerequisite = {
+		focus = NCH_our_best_qualities
+		focus = NCH_harmpony_in_every_heart
+	}
+	x = 50
+	y = 20
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+	}
+	completion_reward = {
+		add_ideas = NCH_wonderbolts
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "DASH.112"
+				type = small_plane_airframe_1
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					engine_type_slot = engine_1_1x
+					special_type_slot_1 = empty
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				amount = 22
+				variant_name = "KLAB.168"
+				producer = NCH
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
+			set_technology = {
+				cv_early_fighter = 1
+			}
+			set_technology = {
+				cv_fighter1 = 1
+			}
+			add_equipment_to_stockpile = {
+				type = cv_fighter_equipment_1
+				amount = 22
+			}
+		}
+		country_event = {
+			id = greneclyf_foregin.25
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_our_values
+	icon = GFX_goal_our_values
+	cost = 6
+	prerequisite = {
+		focus = NCH_harmpony_in_every_heart
+	}
+	x = 52
+	y = 20
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+	}
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_foregin.26
+				days = 0
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_light_f_fire_in_their_hearts
+	icon = GFX_goal_yosip_strategy
+	cost = 5
+	prerequisite = {
+		focus = NCH_agents_stand_by
+		focus = NCH_friends_and_allies
+	}
+	x = 33
+	y = 18
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {}
+	completion_reward = {
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+			}
+			add_timed_idea = {
+				idea = NCH_democratic_propaganda_1
+				days = 210
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_operation_raging_river
+	icon = GFX_goal_operation_rigging_river
+	cost = 10
+	prerequisite = {
+		focus = NCH_light_f_fire_in_their_hearts
+	}
+	x = 33
+	y = 19
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		has_completed_focus = NCH_finding_allies_in_coalition
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction = yes
+				is_faction_leader = yes
+				not = {
+					tag = NCH
+				}
+			}
+			country_event = {
+				id = greneclyf_core.2
+			}
+		}
+		if = {
+			FRE = {
+				exists = yes
+			}
+			NCH = {
+				release_puppet = FRE
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_peaceful_coexistence
+	icon = GFX_goal_peace_existing
+	cost = 2
+	prerequisite = {
+		focus = NCH_river_pf_opportunity
+	}
+	x = 40
+	y = 18
+	available = {
+		has_war = no
+		or = {
+			has_opinion = {
+				target = FBK
+				value > 25
+			}
+			has_opinion = {
+				target = WAT
+				value > 25
+			}
+			has_opinion = {
+				target = FIR
+				value > 25
+			}
+			has_opinion = {
+				target = BAK
+				value > 25
+			}
+			has_opinion = {
+				target = DMT
+				value > 25
+			}
+			has_opinion = {
+				target = DEP
+				value > 25
+			}
+			has_opinion = {
+				target = NUM
+				value > 25
+			}
+			has_opinion = {
+				target = RCT
+				value > 25
+			}
+			has_opinion = {
+				target = FRE
+				value > 25
+			}
+			has_opinion = {
+				target = WIT
+				value > 25
+			}
+			has_opinion = {
+				target = LCT
+				value > 25
+			}
+		}
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			diplomatic_relation = {
+				country = NCH
+				relation = non_aggression_pact
+				active = no
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_scout_the_situation
+	icon = GFX_goal_spy_riverland
+	cost = 5
+	prerequisite = {
+		focus = NCH_trade_development
+	}
+	prerequisite = {
+		focus = NCH_peaceful_coexistence
+	}
+	x = 39
+	y = 19
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					not = {
+						has_government = democratic
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = large_decrease
+			}
+		}
+		country_event = {
+			id = greneclyf_foregin.5
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_open_up_the_shopping_districts
+	icon = GFX_goal_visit_farbrook
+	cost = 5
+	prerequisite = {
+		focus = NCH_peaceful_coexistence
+	}
+	x = 41
+	y = 19
+	completion_reward = {
+		custom_effect_tooltip = NCH_trade_with_riverlands_tt
+		every_country = {
+			limit = {
+				and = {
+					is_riverlands_country_tag = yes
+					has_opinion = {
+						target = FROM
+						value > 25
+					}
+				}
+			}
+			diplomatic_relation = {
+				country = NCH
+				relation = docking_rights
+				active = yes
+			}
+			NCH = {
+				navy_experience = 35
+				add_timed_idea = {
+					idea = NCH_free_trade
+					days = 180
+				}
+			}
+			navy_experience = 35
+		}
+	}
+}
+shared_focus = {
+	id = NCH_shield_and_sword_harmony
+	icon = GFX_goal_our_rules
+	cost = 5
+	prerequisite = {
+		focus = NCH_lessons_in_friendship
+	}
+	prerequisite = {
+		focus = NCH_friendship_delegation
+		focus = NCH_our_values
+	}
+	x = 49
+	y = 21
+	available = {
+		country_exists = CHN
+		CHN = {
+			has_government = fascism
+		}
+	}
+	completion_reward = {
+		mark_focus_tree_layout_dirty = yes
+		add_war_support = 0.1
+		if = {
+			limit = {
+				has_idea = NCH_trade_and_support_CHN
+			}
+			remove_ideas = NCH_trade_and_support_CHN
+		}
+		add_opinion_modifier = {
+			target = CHN
+			modifier = large_decrease
+		}
+		CHN = {
+			252 = {
+				add_claim_by = NCH
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_equestria_support
+	icon = GFX_goal_equestrian_defense
+	cost = 5
+	prerequisite = {
+		focus = NCH_friendship_delegation
+	}
+	prerequisite = {
+		focus = NCH_our_values
+	}
+	x = 51
+	y = 21
+	available = {
+		country_exists = EQS
+		EQS = {
+			has_government = democratic
+		}
+		has_country_flag = NCH_EQS_accept_trade
+	}
+	completion_reward = {
+		EQS = {
+			country_event = {
+				id = greneclyf_foregin.28
+				days = 0
+			}
+		}
+		add_corps_commander_role = {
+			character = NCH_Sunrise_Moonshadow
+			traits = { pony_race_trait media_personality career_officer panzer_leader panzer_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+		}
+		custom_effect_tooltip = NCH_Sunrise_Moonshadow_stats
+	}
+}
+shared_focus = {
+	id = NCH_bring_them_harmony
+	icon = GFX_goal_not_same
+	cost = 5
+	prerequisite = {
+		focus = NCH_long_cooperation
+	}
+	x = 43
+	y = 20
+	available = {
+		and = {
+			or = {
+				and = {
+					owns_state = 569
+					controls_state = 569
+					owns_state = 639
+					controls_state = 639
+					owns_state = 572
+					controls_state = 572
+					owns_state = 571
+					controls_state = 571
+					owns_state = 455
+					controls_state = 455
+					owns_state = 603
+					controls_state = 603
+				}
+				FBK = {
+					overlord = {
+						tag = NCH
+					}
+				}
+			}
+			or = {
+				and = {
+					owns_state = 641
+					controls_state = 641
+					owns_state = 643
+					controls_state = 643
+					owns_state = 642
+					controls_state = 642
+					owns_state = 640
+					controls_state = 640
+				}
+				WAT = {
+					overlord = {
+						tag = NCH
+					}
+				}
+			}
+			or = {
+				and = {
+					owns_state = 604
+					controls_state = 604
+					owns_state = 644
+					controls_state = 644
+					owns_state = 454
+					controls_state = 454
+					owns_state = 636
+					controls_state = 636
+					owns_state = 478
+					controls_state = 478
+					owns_state = 650
+					controls_state = 650
+					owns_state = 453
+					controls_state = 453
+				}
+				FIR = {
+					overlord = {
+						tag = NCH
+					}
+				}
+			}
+		}
+	}
+	bypass = {
+		or = {
+			not = {
+				country_exists = FBK
+				country_exists = WAT
+				country_exists = FIR
+			}
+		}
+	}
+	completion_reward = {
+		NTR = {
+			add_manpower = 40000
+		}
+	}
+}
+shared_focus = {
+	id = NCH_new_great_agreement
+	icon = GFX_goal_hills_puppet
+	cost = 10
+	prerequisite = {
+		focus = NCH_bring_them_harmony
+		focus = NCH_not_so_different
+	}
+	x = 44
+	y = 21
+	available = {
+		or = {
+			has_completed_focus = NCH_bring_them_harmony
+			has_completed_focus = NCH_not_so_different
+		}
+	}
+	completion_reward = {
+		set_rule = {
+			can_create_factions = yes
+		}
+		if = {
+			limit = {
+				is_in_faction = no
+			}
+			create_faction = NCH_fraction_neighborhood
+		}
+		country_event = {
+			id = greneclyf_foregin.4
+			days = 0
+		}
+		FBK = {
+			add_to_ROOT_potential_cores = yes
+		}
+		FIR = {
+			add_to_ROOT_potential_cores = yes
+		}
+		WAT = {
+			add_to_ROOT_potential_cores = yes
+		}
+	}
+}
+shared_focus = {
+	id = NCH_cit_thrpugh_the_bureaurcracy
+	icon = GFX_goal_burocration_deal
+	cost = 5
+	prerequisite = {
+		focus = NCH_open_up_the_shopping_districts
+	}
+	prerequisite = {
+		focus = NCH_scout_the_situation
+	}
+	x = 40
+	y = 20
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				and = {
+					and = {
+						is_riverlands_country_tag = yes
+						not = {
+							original_tag = FRE
+						}
+					}
+					has_government = democratic
+				}
+			}
+			diplomatic_relation = {
+				country = NCH
+				relation = guarantee
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_embed_agents_in_goverments
+	icon = GFX_goal_operation_patriots
+	cost = 5
+	prerequisite = {
+		focus = NCH_visit_to_riverlands
+	}
+	prerequisite = {
+		focus = NCH_scout_the_situation
+	}
+	x = 38
+	y = 20
+	completion_reward = {
+		country_event = {
+			id = greneclyf_foregin.10
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_finding_allies_in_coalition
+	icon = GFX_goal_three_in_pairs
+	cost = 5
+	prerequisite = {
+		focus = NCH_cit_thrpugh_the_bureaurcracy
+	}
+	prerequisite = {
+		focus = NCH_embed_agents_in_goverments
+	}
+	x = 39
+	y = 21
+	available = {
+		country_exists = FRE
+	}
+	bypass = {
+		not = {
+			country_exists = FRE
+		}
+	}
+	completion_reward = {
+		remove_ideas = NCH_new_great_pact
+		if = {
+			limit = {
+				and = {
+					country_exists = FRE
+					FRE = {
+						is_puppet = yes
+					}
+				}
+			}
+			every_country = {
+				end_puppet = FRE
+			}
+			FRE = {
+				add_to_faction = DEP
+			}
+		}
+		if = {
+			limit = {
+				and = {
+					country_exists = FRE
+					FRE = {
+						is_puppet = no
+					}
+				}
+			}
+			set_country_flag = NCH_FRE_friendship
+			diplomatic_relation = {
+				country = FRE
+				relation = guarantee
+			}
+		}
+		country_event = {
+			id = greneclyf_foregin.11
+			days = 0
+		}
+	}
+}
+shared_focus = {
+	id = NCH_what_we_bring
+	icon = GFX_goal_dreams_of_riverlands
+	cost = 2
+	prerequisite = {
+		focus = NCH_operation_raging_river
+	}
+	x = 33
+	y = 20
+	available = {
+		is_puppet = no
+		has_war = no
+		or = {
+			has_idea = RIV_member_state
+			619 = {
+				controller = {
+					is_subject_of = NCH
+				}
+			}
+			owns_state = 619
+		}
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	completion_reward = {
+		custom_effect_tooltip = NCH_ecnomic_tt
+		set_country_flag = NCH_peace_fed_ambitions
+		country_event = {
+			id = greneclyf_core.5
+		}
+		if = {
+			limit = {
+				has_country_flag = NCH_riv_deceline
+			}
+			add_ideas = RIV_member_state
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				FROM = {
+					add_to_faction = NCH
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					or = {
+						owns_state = 619
+						owns_state = 620
+						owns_state = 682
+						owns_state = 577
+						owns_state = 646
+					}
+					not = {
+						exists = RCT
+					}
+				}
+				release_autonomy = {
+					target = RCT
+					freedom_level = 0.5
+					autonomy_state = autonomy_dominion
+					release_non_owned_controlled = no
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_economic_community
+	icon = GFX_goal_economic_union
+	cost = 10
+	prerequisite = {
+		focus = NCH_what_we_bring
+	}
+	x = 30
+	y = 21
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.100
+					days = 35
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = -0.03
+		add_political_power = -50
+		add_ideas = modern_society
+	}
+}
+shared_focus = {
+	id = NCH_a_sample_of_unity
+	icon = GFX_goal_blosmport_consencus
+	cost = 10
+	prerequisite = {
+		focus = NCH_what_we_bring
+	}
+	x = 32
+	y = 21
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.103
+					days = 35
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = -0.03
+		add_political_power = -50
+	}
+}
+shared_focus = {
+	id = NCH_bring_together
+	icon = GFX_goal_river_training
+	cost = 5
+	prerequisite = {
+		focus = NCH_what_we_bring
+	}
+	x = 33
+	y = 22
+	completion_reward = {
+		army_experience = 35
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -200
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -400
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				has_war = no
+				is_in_faction_with = NCH
+			}
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -400
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+			add_opinion_modifier = {
+				target = NCH
+				modifier = medium_increase
+			}
+		}
+	}
+}
+shared_focus = {
+	id = NCH_example_for_ponies
+	icon = GFX_goal_language_question
+	cost = 10
+	prerequisite = {
+		focus = NCH_what_we_bring
+	}
+	x = 34
+	y = 21
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.109
+					days = 35
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = 0.075
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = NCH_general_institutions
+	icon = GFX_goal_vittenburg_process
+	cost = 10
+	prerequisite = {
+		focus = NCH_what_we_bring
+	}
+	x = 36
+	y = 21
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.112
+					days = 35
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = -0.03
+		add_political_power = -50
+		add_ideas = proper_science_base
+	}
+}
+shared_focus = {
+	id = NCH_racial_differences
+	icon = GFX_goal_river_senate
+	cost = 10
+	prerequisite = {
+		focus = NCH_a_sample_of_unity
+	}
+	prerequisite = {
+		focus = NCH_economic_community
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	x = 31
+	y = 22
+	select_effect = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_riverlands_country = yes
+					is_in_faction_with = NCH
+					not = {
+						original_tag = NCH
+					}
+				}
+				country_event = {
+					id = greneclyf_core.106
+					days = 35
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = -0.05
+	}
+}
+shared_focus = {
+	id = NCH_make_us_stronger
+	icon = GFX_goal_declaration_right_creatures
+	cost = 10
+	prerequisite = {
+		focus = NCH_river_science_program
+	}
+	prerequisite = {
+		focus = NCH_bring_together
+		focus = NCH_river_science_program
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	x = 34
+	y = 23
+	completion_reward = {
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_government = democratic
+				not = {
+					tag = NCH
+				}
+			}
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_idea = NCH_riv_volounters
+				has_idea = NCH_riv_search_base
+			}
+			remove_ideas = { NCH_riv_volounters NCH_riv_search_base }
+			add_ideas = NCH_declaration_nations
+			set_country_flag = NCH_ready_to_integration_2
+		}
+	}
+}
+shared_focus = {
+	id = NCH_river_science_program
+	icon = GFX_goal_high_rulling
+	cost = 10
+	prerequisite = {
+		focus = NCH_example_for_ponies
+	}
+	prerequisite = {
+		focus = NCH_general_institutions
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	x = 35
+	y = 22
+	completion_reward = {
+		add_ideas = NCH_riv_autonomy_states
+	}
+}
+shared_focus = {
+	id = NCH_what_we_strive_for
+	icon = GFX_goal_godbye_dispair
+	cost = 10
+	prerequisite = {
+		focus = NCH_racial_differences
+	}
+	prerequisite = {
+		focus = NCH_bring_together
+		focus = NCH_racial_differences
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		not = {
+			has_idea = NCH_blosmport_economic_consequences
+		}
+	}
+	x = 32
+	y = 23
+	completion_reward = {
+		every_country = {
+			limit = {
+				not = {
+					original_tag = NCH
+				}
+				not = {
+					is_subject_of = NCH
+				}
+				is_riverlands_country = yes
+			}
+			country_event = {
+				id = greneclyf_core.115
+				days = 0
+			}
+		}
+		every_country = {
+			limit = {
+				not = {
+					is_subject_of = NCH
+				}
+				is_riverlands_country = yes
+				has_government = democratic
+				not = {
+					tag = NCH
+				}
+			}
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+		every_country = {
+			limit = {
+				is_riverlands_country = yes
+				is_in_faction_with = NCH
+				has_idea = NCH_bos_riv
+				has_idea = NCH_blosmport_economic_org
+				has_idea = NCH_riv_senate
+			}
+			remove_ideas = { NCH_blosmport_economic_org NCH_bos_riv NCH_riv_senate }
+			add_ideas = NCH_goodbye_despair
+			set_country_flag = NCH_ready_to_integration_1
+		}
+	}
+}
+shared_focus = {
+	id = NCH_inity_as_the_highest_good
+	icon = GFX_goal_release_one_big_dream
+	cost = 10
+	prerequisite = {
+		focus = NCH_first_president
+	}
+	prerequisite = {
+		focus = NCH_what_we_strive_for
+	}
+	prerequisite = {
+		focus = NCH_make_us_stronger
+	}
+	bypass = {
+		has_country_flag = NCH_war_fed_found
+	}
+	available = {
+		or = {
+			or = {
+				has_country_flag = NCH_peace_fed_found
+				has_country_flag = NCH_war_fed_found
+			}
+			custom_trigger_tooltip = {
+				tooltip = NCH_one_more_dream
+				AND = {
+					RCT = {
+						all_core_state = {
+							OR = {
+								is_controlled_by = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					LTC = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					BAK = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					NIM = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					DEP = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					FRE = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					WIT = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+					DMT = {
+						all_core_state = {
+							OR = {
+								controller = NCH
+								controller = {
+									is_subject_of = NCH
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	x = 33
+	y = 24
+	completion_reward = {
+		NCH = {
+			remove_country_leader_role = yes
+		}
+		create_country_leader = {
+			name = NCH_riv_senate
+			picture = GFX_NCH_riv_senate
+			traits = { NCH_political_power_in_senate_hoofs }
+			ideology = conservatism
+		}
+	}
+}
+shared_focus = {
+	id = NCH_adopt_consitution
+	icon = GFX_goal_first_vote
+	cost = 14.4
+	prerequisite = {
+		focus = NCH_inity_as_the_highest_good
+	}
+	x = 33
+	y = 25
+	completion_reward = {
+		custom_effect_tooltip = NCH_gytha_maniac_open
+		set_country_flag = NCH_manicpor_unlocked
+		set_country_flag = NCH_fed_found
+		set_country_flag = NCH_queen_hive_abmitions
+		country_event = {
+			id = greneclyf_core.117
+		}
+		set_cosmetic_tag = NCH_River
+		hidden_effect = {
+			every_state = {
+				if = {
+					limit = {
+						is_core_of = RCT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = NIM
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = DMT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = BAK
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = DEP
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = LCT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = WIT
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FRE
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FBK
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = FIR
+					}
+					add_core_of = NCH
+				}
+				if = {
+					limit = {
+						is_core_of = WAT
+					}
+					add_core_of = NCH
+				}
+			}
+		}
+	}
+}
+
+
+
+	
