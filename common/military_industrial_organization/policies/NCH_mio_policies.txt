@@ -1,0 +1,174 @@
+
+
+# Bugsmere Industrial Concern
+NCH_mio_policy_state_construction_board = {
+	name = NCH_mio_policy_state_construction_board
+	icon = GFX_mio_policy_vertical_integration
+	allowed = {
+		is_military_industrial_organization = NCH_bugsmere_industry_manufacturer_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_state_construction_board_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_construction_speed value = 0.05 }
+				add_to_variable = { var = NCH_industry_mio_infrastructure_construction value = 0.10 }
+				add_dynamic_modifier = { modifier = NCH_industry_mio_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_construction_speed value = -0.05 }
+				add_to_variable = { var = NCH_industry_mio_infrastructure_construction value = -0.10 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}
+
+NCH_mio_policy_production_rationalization = {
+	name = NCH_mio_policy_production_rationalization
+	icon = GFX_mio_policy_assembly_line_optimisers
+	allowed = {
+		is_military_industrial_organization = NCH_bugsmere_industry_manufacturer_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_production_rationalization_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_factory_output value = 0.05 }
+				add_to_variable = { var = NCH_industry_mio_max_efficiency value = 0.03 }
+				add_dynamic_modifier = { modifier = NCH_industry_mio_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_factory_output value = -0.05 }
+				add_to_variable = { var = NCH_industry_mio_max_efficiency value = -0.03 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}
+
+NCH_mio_policy_resource_accounting = {
+	name = NCH_mio_policy_resource_accounting
+	icon = GFX_mio_policy_ruthless_contracts
+	allowed = {
+		is_military_industrial_organization = NCH_bugsmere_industry_manufacturer_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_resource_accounting_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_resource_gain value = 0.10 }
+				add_to_variable = { var = NCH_industry_mio_resource_penalty value = -0.05 }
+				add_dynamic_modifier = { modifier = NCH_industry_mio_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_industry_mio_resource_gain value = -0.10 }
+				add_to_variable = { var = NCH_industry_mio_resource_penalty value = 0.05 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}
+
+
+# Eithne Royal Institute
+NCH_mio_policy_academic_commissions = {
+	name = NCH_mio_policy_academic_commissions
+	icon = GFX_mio_policy_experimental_development_teams
+	allowed = {
+		is_military_industrial_organization = NCH_enya_royal_institute_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_academic_commissions_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_research_speed value = 0.03 }
+				add_to_variable = { var = NCH_enya_mio_breakthrough_bonus value = 0.05 }
+				add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_research_speed value = -0.03 }
+				add_to_variable = { var = NCH_enya_mio_breakthrough_bonus value = -0.05 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}
+
+NCH_mio_policy_royal_cipher_directorate = {
+	name = NCH_mio_policy_royal_cipher_directorate
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = {
+		is_military_industrial_organization = NCH_enya_royal_institute_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_royal_cipher_directorate_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_encryption value = 0.10 }
+				add_to_variable = { var = NCH_enya_mio_decryption value = 0.10 }
+				add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_encryption value = -0.10 }
+				add_to_variable = { var = NCH_enya_mio_decryption value = -0.10 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}
+
+NCH_mio_policy_special_programmes_bureau = {
+	name = NCH_mio_policy_special_programmes_bureau
+	icon = GFX_mio_policy_propulsion_experimenters
+	allowed = {
+		is_military_industrial_organization = NCH_enya_royal_institute_organization
+	}
+	available = { has_mio_size > 5 }
+	on_add = {
+		custom_effect_tooltip = NCH_mio_policy_special_programmes_bureau_tt
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_special_project_speed value = 0.10 }
+				add_to_variable = { var = NCH_enya_mio_nuclear_warfare_speed value = 0.05 }
+				add_to_variable = { var = NCH_enya_mio_rocket_project_speed value = 0.05 }
+				add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+			}
+		}
+	}
+	on_remove = {
+		hidden_effect = {
+			FROM = {
+				add_to_variable = { var = NCH_enya_mio_special_project_speed value = -0.10 }
+				add_to_variable = { var = NCH_enya_mio_nuclear_warfare_speed value = -0.05 }
+				add_to_variable = { var = NCH_enya_mio_rocket_project_speed value = -0.05 }
+			}
+		}
+	}
+	ai_will_do = { factor = 1 }
+}

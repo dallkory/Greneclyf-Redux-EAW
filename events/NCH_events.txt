@@ -1,4 +1,5 @@
-﻿add_namespace = greneclyf_base
+﻿# Gytha #
+add_namespace = greneclyf_base
 add_namespace = greneclyf_forces
 #add_namespace = greneclyf_crisis
 add_namespace = greneclyf_obsidian
@@ -7,6 +8,14 @@ add_namespace = greneclyf_arctic
 add_namespace = greneclyf_core
 add_namespace = greneclyf_daylight
 add_namespace = greneclyf_hive
+
+# Branching # 
+add_namespace = greneclyf_dispair
+
+# Selenia #
+add_namespace = greneclyf_saintway
+
+# Oiren #
 
 
 ## hive ##
@@ -5389,3 +5398,21 @@ add_namespace = greneclyf_hive
 		}
 	}
 ##	##  ##  ##  ##  ##  ##  ##  ##
+### BRANCING ###
+	# The Red Gate #
+	country_event = {
+		id = greneclyf_dispair.1
+		title = greneclyf_dispair.1.t
+		desc = greneclyf_dispair.1.d
+		picture = GFX_Unknown
+		is_triggered_only = yes
+
+		option = {
+			name = greneclyf_dispair.1.a
+			set_country_flag = NCH_Gytha_Hunger_Fail
+			load_focus_tree = {
+				tree = NCH_crossroads
+				keep_completed = yes
+			}
+		}
+	}

@@ -1,0 +1,97 @@
+﻿l_russian:
+ # Industrial concern #
+ NCH_bugsmere_industry_manufacturer:0 "Промышленный концерн Багсмера"
+ NCH_bugsmere_industry_manufacturer_organization:0 "Промышленный концерн Багсмера"
+ NCH_mio_header_industrial_development:0 "Промышленная политика"
+ NCH_mio_header_resource_policy:0 "Добыча и использование ресурсов"
+
+ NCH_industry_initial_trait_standardized_practice:0 "Стандартизированная производственная практика"
+ NCH_industry_trait_technical_standardization:0 "Техническая стандартизация"
+ NCH_industry_trait_industrial_program:0 "Промышленная программа Багсмера"
+ NCH_industry_trait_civilian_contracts:0 "Гражданские контракты"
+ NCH_industry_trait_military_contracts:0 "Военные контракты"
+ NCH_industry_trait_construction_trusts:0 "Сеть строительных трестов"
+ NCH_industry_trait_assembly_lines:0 "Унифицированные сборочные линии"
+ NCH_industry_trait_integrated_complex:0 "Единый промышленный комплекс"
+ NCH_industry_trait_geological_service:0 "Геологическая служба Багсмера"
+ NCH_industry_trait_expand_deposits:0 "Расширение месторождений"
+ NCH_industry_trait_resource_economy:0 "Рациональное использование сырья"
+ NCH_industry_trait_mechanized_extraction:0 "Механизация добывающей промышленности"
+ NCH_industry_trait_recycling:0 "Переработка вторичного сырья"
+ NCH_industry_trait_resource_independence:0 "Сырьевая самостоятельность"
+
+ NCH_industry_trait_industrial_program_tt:0 "Скорость строительства: §G+3.00%§!"
+ NCH_industry_trait_civilian_contracts_tt:0 "Добавляет §Y1§! ячейку для строительства и §Y1 фабрику§! в регионе §Y$STATE_668$§!."
+ NCH_industry_trait_military_contracts_tt:0 "Добавляет §Y1§! ячейку для строительства и §Y1 военный завод§! в регионе §Y$STATE_668$§!."
+ NCH_industry_trait_construction_trusts_tt:0 "Скорость строительства фабрик: §G+10.00%§!\nСкорость строительства инфраструктуры: §G+10.00%§!"
+ NCH_industry_trait_assembly_lines_tt:0 "Скорость строительства военных заводов: §G+10.00%§!\nОбъём заводского производства: §G+3.00%§!"
+ NCH_industry_trait_integrated_complex_tt:0 "Скорость строительства: §G+5.00%§!\nПредел эффективности производства: §G+3.00%§!"
+ NCH_industry_trait_geological_service_tt:0 "Эффективность добычи ресурсов: §G+5.00%§!"
+ NCH_industry_trait_expand_deposits_tt:0 "Добавляет §Y4 ед. нефти§! и §Y1 ед. кристаллов§! в регионе §Y$STATE_668$§!."
+ NCH_industry_trait_resource_economy_tt:0 "Штраф производства от недостатка ресурсов: §G-10.00%§!"
+ NCH_industry_trait_mechanized_extraction_tt:0 "Эффективность добычи ресурсов: §G+10.00%§!\nСкорость строительства инфраструктуры: §G+10.00%§!"
+ NCH_industry_trait_recycling_tt:0 "Штраф производства от недостатка ресурсов: §G-5.00%§!\nПрирост эффективности производства: §G+3.00%§!"
+ NCH_industry_trait_resource_independence_tt:0 "Эффективность добычи ресурсов: §G+5.00%§!\nШтраф производства от недостатка ресурсов: §G-5.00%§!"
+
+ NCH_industry_mio_dynamic_modifier:0 "Промышленный концерн Треста Багсмера"
+ NCH_industry_mio_dynamic_modifier_desc:0 "Финансово-промышленный конкломерат улья Багсмере позволит нам форсировать развитие промышленности, а также ускорить темпы нашей индустриализации. Вкладывая средства в развитие Треста мы определим вектор развития нашей экономики"
+
+
+ # Electric concern #
+ NCH_royal_university:0 "Королевский институт имени Эньи"
+ NCH_generic_electronics_organization:0 "Королевский институт имени Эньи"
+ NCH_enya_institute_dynamic_modifier:0 "Научные программы института Эньи"
+ NCH_enya_institute_dynamic_modifier_desc:0 "Совокупность вычислительных, криптологических, атомных и ракетных программ Королевского института имени Эньи. Состав модификатора изменяется по мере развития военно-промышленной организации."
+
+ NCH_enya_mio_header_computing:0 "Вычислительные науки"
+ NCH_enya_mio_header_cryptology:0 "Криптология"
+ NCH_enya_mio_header_nuclear:0 "Атомная  физика и ракетостроение"
+ NCH_enya_mio_header_rocketry:0 ""
+
+ NCH_enya_initial_trait_royal_charter:0 "Королевская учредительная грамота"
+ NCH_enya_trait_unified_scientific_council:0 "Объединённый научный совет"
+
+ NCH_enya_trait_methodological_bureau:0 "Методическое бюро"
+ NCH_enya_trait_methodological_bureau_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  £research_speed_texticon  Темп исследований: §G+2,00%§!"
+ NCH_enya_trait_computing_centre:0 "Центральная вычислительная палата"
+ NCH_enya_trait_computing_centre_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  £research_speed_texticon  Темп исследований: §G+3,00%§!\n  Вероятность научного прорыва: §G+5,00%§!"
+
+ NCH_enya_trait_cipher_school:0 "Королевская школа шифров"
+ NCH_enya_trait_cipher_school_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Шифрование: §G+10,00%§!"
+ NCH_enya_trait_signals_analysis_service:0 "Служба анализа сообщений"
+ NCH_enya_trait_signals_analysis_service_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Дешифрование: §G+15,00%§!"
+
+ NCH_enya_trait_advanced_physics_department:0 "Кафедра современной физики"
+ NCH_enya_trait_advanced_physics_department_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп особых проектов по атомной специализации: §G+10,00%§!"
+ NCH_enya_trait_isotope_laboratory:0 "Лаборатория разделения изотопов"
+ NCH_enya_trait_isotope_laboratory_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп особых проектов атомного вооружения: §G+10,00%§!\n  Производство атомных зарядов: §G+10,00%§!\n  Скорость строительства центра ядерных исследований: §G+10,00%§!\n  Скорость строительства атомных реакторов: §G+10,00%§!"
+
+ NCH_enya_trait_propulsion_laboratory:0 "Лаборатория реактивного движения"
+ NCH_enya_trait_propulsion_laboratory_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп ракетных особых проектов: §G+10,00%§!"
+ NCH_enya_trait_guidance_systems_bureau:0 "Бюро систем наведения"
+ NCH_enya_trait_guidance_systems_bureau_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Урон ракет: §G+10,00%§!\n  Скорость строительства ракетных полигонов: §G+10,00%§!"
+
+ NCH_enya_trait_interdepartmental_commission:0 "Межкафедральная комиссия"
+ NCH_enya_trait_interdepartmental_commission_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп всех особых проектов: §G+5,00%§!"
+
+ NCH_enya_trait_academic_autonomy:0 "Академическое самоуправление"
+ NCH_enya_trait_academic_autonomy_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  £research_speed_texticon  Темп исследований: §G+3,00%§!\n  Вероятность научного прорыва: §G+5,00%§!"
+ NCH_enya_trait_directed_programmes:0 "Управление целевых программ"
+ NCH_enya_trait_directed_programmes_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп всех особых проектов: §G+10,00%§!\n  Темп особых проектов атомного вооружения: §G+5,00%§!\n  Темп ракетных особых проектов: §G+5,00%§!"
+
+ # Politics MIO #
+ NCH_mio_policy_state_construction_board:0 "Управление государственных строек"
+ NCH_mio_policy_state_construction_board_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Скорость строительства: §G+5,00%§!\n  Скорость строительства инфраструктуры: §G+10,00%§!"
+ NCH_mio_policy_production_rationalization:0 "Рационализация производства"
+ NCH_mio_policy_production_rationalization_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Производительность военных заводов: §G+5,00%§!\n  Предел эффективности производства: §G+3,00%§!"
+ NCH_mio_policy_resource_accounting:0 "Управление материального учёта"
+ NCH_mio_policy_resource_accounting_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Прирост местных ресурсов: §G+10,00%§!\n  Штраф за нехватку ресурсов: §G−5,00%§!"
+
+ NCH_mio_policy_academic_commissions:0 "Академические комиссии"
+ NCH_mio_policy_academic_commissions_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  £research_speed_texticon  Темп исследований: §G+3,00%§!\n  Вероятность научного прорыва: §G+5,00%§!"
+ NCH_mio_policy_royal_cipher_directorate:0 "Королевское управление шифров"
+ NCH_mio_policy_royal_cipher_directorate_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Шифрование: §G+10,00%§!\n  Дешифрование: §G+10,00%§!"
+ NCH_mio_policy_special_programmes_bureau:0 "Бюро особых программ"
+ NCH_mio_policy_special_programmes_bureau_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп всех особых проектов: §G+10,00%§!\n  Темп проектов атомного вооружения: §G+5,00%§!\n  Темп ракетных проектов: §G+5,00%§!"
+
+
