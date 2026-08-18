@@ -3,7 +3,30 @@ NCH_bugsmere_industry_manufacturer_organization = {
 	include = NCH_generic_industry_organization
 
 	name = NCH_bugsmere_industry_manufacturer
-	icon = GFX_idea_NCH_generic_tank_manufacturer
+	icon = GFX_idea_Bugsmere_Concern
+	allowed = {
+		can_form_river_fed = yes
+		has_dlc = "Arms Against Tyranny"
+	}
+	visible = {
+		owner = {
+			OR = {
+				original_tag = NCH
+			}
+		}
+	}
+	available = {
+		owner = {
+			original_tag = NCH
+		}
+	}
+}
+
+NCH_royal_university = {
+	include = NCH_generic_electronics_organization
+
+	name = NCH_royal_university
+	icon = GFX_idea_NCH_royal_institutue
 	allowed = {
 		can_form_river_fed = yes
 		has_dlc = "Arms Against Tyranny"

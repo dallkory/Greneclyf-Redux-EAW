@@ -306,3 +306,292 @@ NCH_generic_industry_organization = {
 		}
 	}
 }
+
+
+NCH_generic_electronics_organization = {
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = { always = no }
+
+	# Ordinary technologies from the electronics folder.
+	# Nuclear and rocket categories also contain the gateway technologies
+	# for the corresponding Special Projects introduced with Gotterdammerung.
+	research_categories = {
+		electronics
+		computing_tech
+		encryption_tech
+		decryption_tech
+		radar_tech
+		nuclear
+		rocketry
+	}
+	research_bonus = 0.05
+	task_capacity = 1
+
+	tree_header_text = { text = NCH_enya_mio_header_computing x = 1 }
+	tree_header_text = { text = NCH_enya_mio_header_cryptology x = 4 }
+	tree_header_text = { text = NCH_enya_mio_header_nuclear x = 7 }
+	tree_header_text = { text = NCH_enya_mio_header_rocketry x = 10 }
+
+	initial_trait = {
+		name = NCH_enya_initial_trait_royal_charter
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.02
+		}
+	}
+
+	# Common foundation
+	trait = {
+		token = NCH_enya_trait_unified_scientific_council
+		name = NCH_enya_trait_unified_scientific_council
+		icon = GFX_generic_mio_department_icon_support_technology
+		position = { x = 4 y = 0 }
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.10
+			military_industrial_organization_size_up_requirement = -0.05
+		}
+	}
+
+	# I. COMPUTING AND GENERAL RESEARCH
+	trait = {
+		token = NCH_enya_trait_methodological_bureau
+		name = NCH_enya_trait_methodological_bureau
+		icon = GFX_generic_mio_department_icon_support_technology
+		position = { x = 1 y = 1 }
+		any_parent = { NCH_enya_trait_unified_scientific_council }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_methodological_bureau_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_research_speed value = 0.02 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	trait = {
+		token = NCH_enya_trait_computing_centre
+		name = NCH_enya_trait_computing_centre
+		icon = GFX_generic_mio_department_icon_support_line_efficiency
+		position = { x = 1 y = 2 }
+		any_parent = { NCH_enya_trait_methodological_bureau }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_computing_centre_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_research_speed value = 0.03 }
+					add_to_variable = { var = NCH_enya_mio_breakthrough_bonus value = 0.05 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	# II. CRYPTOLOGY
+	trait = {
+		token = NCH_enya_trait_cipher_school
+		name = NCH_enya_trait_cipher_school
+		icon = GFX_generic_mio_trait_icon_night_penalty
+		position = { x = 3 y = 1 }
+		any_parent = { NCH_enya_trait_unified_scientific_council }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_cipher_school_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_encryption value = 0.10 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	trait = {
+		token = NCH_enya_trait_signals_analysis_service
+		name = NCH_enya_trait_signals_analysis_service
+		icon = GFX_generic_mio_trait_icon_detection
+		position = { x = 3 y = 2 }
+		any_parent = { NCH_enya_trait_cipher_school }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_signals_analysis_service_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_decryption value = 0.15 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	# III. NUCLEAR PHYSICS
+	trait = {
+		token = NCH_enya_trait_advanced_physics_department
+		name = NCH_enya_trait_advanced_physics_department
+		icon = GFX_generic_mio_trait_icon_unique
+		position = { x = 5 y = 1 }
+		any_parent = { NCH_enya_trait_unified_scientific_council }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_advanced_physics_department_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_nuclear_specialization_speed value = 0.10 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	trait = {
+		token = NCH_enya_trait_isotope_laboratory
+		name = NCH_enya_trait_isotope_laboratory
+		icon = GFX_generic_mio_department_icon_facilities
+		position = { x = 5 y = 2 }
+		any_parent = { NCH_enya_trait_advanced_physics_department }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_isotope_laboratory_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_nuclear_warfare_speed value = 0.10 }
+					add_to_variable = { var = NCH_enya_mio_nuclear_production value = 0.10 }
+					add_to_variable = { var = NCH_enya_mio_nuclear_facility_construction value = 0.10 }
+					add_to_variable = { var = NCH_enya_mio_nuclear_reactor_construction value = 0.10 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	# IV. ROCKETRY
+	trait = {
+		token = NCH_enya_trait_propulsion_laboratory
+		name = NCH_enya_trait_propulsion_laboratory
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x = 7 y = 1 }
+		any_parent = { NCH_enya_trait_unified_scientific_council }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_propulsion_laboratory_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_rocket_project_speed value = 0.10 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	trait = {
+		token = NCH_enya_trait_guidance_systems_bureau
+		name = NCH_enya_trait_guidance_systems_bureau
+		icon = GFX_generic_mio_trait_icon_strategic_attack
+		position = { x = 7 y = 2 }
+		any_parent = { NCH_enya_trait_propulsion_laboratory }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_guidance_systems_bureau_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_rocket_attack value = 0.10 }
+					add_to_variable = { var = NCH_enya_mio_rocket_site_construction value = 0.10 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	# Common synthesis
+	trait = {
+		token = NCH_enya_trait_interdepartmental_commission
+		name = NCH_enya_trait_interdepartmental_commission
+		icon = GFX_generic_mio_department_icon_support_conversion
+		position = { x = 4 y = 3 }
+		all_parents = {
+			NCH_enya_trait_computing_centre
+			NCH_enya_trait_signals_analysis_service
+			NCH_enya_trait_isotope_laboratory
+			NCH_enya_trait_guidance_systems_bureau
+		}
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_interdepartmental_commission_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_special_project_speed value = 0.05 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	# FINAL CHOICE #
+	trait = {
+		token = NCH_enya_trait_academic_autonomy
+		name = NCH_enya_trait_academic_autonomy
+		icon = GFX_generic_mio_department_icon_support_technology
+		special_trait_background = yes
+		position = { x = 3 y = 4 }
+		any_parent = { NCH_enya_trait_interdepartmental_commission }
+		mutually_exclusive = { NCH_enya_trait_directed_programmes }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_academic_autonomy_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_research_speed value = 0.03 }
+					add_to_variable = { var = NCH_enya_mio_breakthrough_bonus value = 0.05 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+
+	trait = {
+		token = NCH_enya_trait_directed_programmes
+		name = NCH_enya_trait_directed_programmes
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = { x = 5 y = 4 }
+		any_parent = { NCH_enya_trait_interdepartmental_commission }
+		mutually_exclusive = { NCH_enya_trait_academic_autonomy }
+		on_complete = {
+			custom_effect_tooltip = NCH_enya_trait_directed_programmes_tt
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { var = NCH_enya_mio_special_project_speed value = 0.10 }
+					add_to_variable = { var = NCH_enya_mio_nuclear_warfare_speed value = 0.05 }
+					add_to_variable = { var = NCH_enya_mio_rocket_project_speed value = 0.05 }
+					add_dynamic_modifier = { modifier = NCH_enya_institute_dynamic_modifier }
+				}
+			}
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.01
+		}
+	}
+}
+

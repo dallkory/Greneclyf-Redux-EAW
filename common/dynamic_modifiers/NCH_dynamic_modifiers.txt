@@ -14,3 +14,32 @@ NCH_industry_mio_dynamic_modifier = {
 	local_resources_factor = NCH_industry_mio_resource_gain
 	production_lack_of_resource_penalty_factor = NCH_industry_mio_resource_penalty
 }
+
+NCH_enya_institute_dynamic_modifier = {
+	icon = GFX_idea_generic_electronics_concern_1
+	enable = {
+		original_tag = NCH
+	}
+
+	# General research
+	research_speed_factor = NCH_enya_mio_research_speed
+	scientist_breakthrough_bonus_factor = NCH_enya_mio_breakthrough_bonus
+	special_project_speed_factor = NCH_enya_mio_special_project_speed
+
+	# Cryptology
+	encryption_factor = NCH_enya_mio_encryption
+	decryption_factor = NCH_enya_mio_decryption
+
+	# Nuclear programm
+	specialization_nuclear_speed_factor = NCH_enya_mio_nuclear_specialization_speed
+	sp_tag_nuclear_warfare_speed_factor = NCH_enya_mio_nuclear_warfare_speed
+	nuclear_production_factor = NCH_enya_mio_nuclear_production
+	production_speed_nuclear_facility_factor = NCH_enya_mio_nuclear_facility_construction
+	production_speed_nuclear_reactor_factor = NCH_enya_mio_nuclear_reactor_construction
+
+	# Rocket programm
+	sp_tag_rocket_speed_factor = NCH_enya_mio_rocket_project_speed
+	rocket_attack_factor = NCH_enya_mio_rocket_attack
+	production_speed_rocket_site_factor = NCH_enya_mio_rocket_site_construction
+}
+

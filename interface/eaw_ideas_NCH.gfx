@@ -9,6 +9,17 @@ spriteTypes = {
 	}
 
 	# NCH #
+
+	spriteType = {
+		name = "GFX_idea_NCH_royal_institutue"
+		textureFile = "gfx/interface/ideas/NCH/NCH_royal_institutue.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Bugsmere_Concern"
+		textureFile = "gfx/interface/ideas/NCH/NCH_Bugsmere_Concern.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_blitz"
 		textureFile = "gfx/interface/ideas/NCH/NCH_blitz.dds"
