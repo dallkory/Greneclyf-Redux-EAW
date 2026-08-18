@@ -79,3 +79,19 @@
  NCH_enya_trait_directed_programmes:0 "Управление целевых программ"
  NCH_enya_trait_directed_programmes_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп всех особых проектов: §G+10,00%§!\n  Темп особых проектов атомного вооружения: §G+5,00%§!\n  Темп ракетных особых проектов: §G+5,00%§!"
 
+ # Politics MIO #
+ NCH_mio_policy_state_construction_board:0 "Управление государственных строек"
+ NCH_mio_policy_state_construction_board_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Скорость строительства: §G+5,00%§!\n  Скорость строительства инфраструктуры: §G+10,00%§!"
+ NCH_mio_policy_production_rationalization:0 "Рационализация производства"
+ NCH_mio_policy_production_rationalization_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Производительность военных заводов: §G+5,00%§!\n  Предел эффективности производства: §G+3,00%§!"
+ NCH_mio_policy_resource_accounting:0 "Управление материального учёта"
+ NCH_mio_policy_resource_accounting_tt:0 "Изменяет §YПромышленную программу концерна Багсмера§!:\n  Прирост местных ресурсов: §G+10,00%§!\n  Штраф за нехватку ресурсов: §G−5,00%§!"
+
+ NCH_mio_policy_academic_commissions:0 "Академические комиссии"
+ NCH_mio_policy_academic_commissions_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  £research_speed_texticon  Темп исследований: §G+3,00%§!\n  Вероятность научного прорыва: §G+5,00%§!"
+ NCH_mio_policy_royal_cipher_directorate:0 "Королевское управление шифров"
+ NCH_mio_policy_royal_cipher_directorate_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Шифрование: §G+10,00%§!\n  Дешифрование: §G+10,00%§!"
+ NCH_mio_policy_special_programmes_bureau:0 "Бюро особых программ"
+ NCH_mio_policy_special_programmes_bureau_tt:0 "Изменяет §YНаучные программы института Эньи§!:\n  Темп всех особых проектов: §G+10,00%§!\n  Темп проектов атомного вооружения: §G+5,00%§!\n  Темп ракетных проектов: §G+5,00%§!"
+
+
