@@ -1,47 +1,5 @@
 ideas = {
-		industrial_concern = {
-			NCH_resource_concern = {
-				picture = NCH_resource_concern
-				allowed = {
-					original_tag = NCH
-				}
-				available = {
-					original_tag = NCH
-				}
-
-				research_bonus = {
-					excavation_tech = 0.10
-				}
-				modifier = {
-					local_resources_factor = 0.10
-					local_resources_coal_factor = 0.03
-				}
-				traits = { mining_company }
-			}
-
-			NCH_blosmport_yards_concern = {
-				picture = NCH_yards_concern
-				cost = 200
-				allowed = {
-					original_tag = NCH
-				}
-				available = {
-					original_tag = NCH
-					owns_state = 670
-				}
-
-				research_bonus = {
-					ship_modules_tech = 0.10
-					naval_equipment = 0.15
-				}
-				modifier = {
-					industrial_capacity_dockyard = 0.075
-					production_speed_dockyard_factor = 0.05
-					political_power_cost = -0.05
-				}
-				traits = { industrial_concern }
-			}
-		}
+		
 
 	country = {
 		### REDUX ###

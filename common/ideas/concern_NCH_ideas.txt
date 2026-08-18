@@ -1,0 +1,93 @@
+ideas = {
+	country = {
+		NCH_industry_mio_industrial_program_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.03 }
+		}
+
+		NCH_industry_mio_construction_trusts_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		NCH_industry_mio_assembly_lines_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		NCH_industry_mio_integrated_complex_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+
+		NCH_industry_mio_geological_service_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { local_resources_factor = 0.05 }
+		}
+
+		NCH_industry_mio_resource_economy_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { production_lack_of_resource_penalty_factor = -0.10 }
+		}
+
+		NCH_industry_mio_mechanized_extraction_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		NCH_industry_mio_recycling_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+
+		NCH_industry_mio_resource_independence_bonus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+	}
+}

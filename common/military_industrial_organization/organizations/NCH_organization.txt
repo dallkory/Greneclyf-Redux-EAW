@@ -1,8 +1,36 @@
+### REDUX ###
+NCH_bugsmere_industry_manufacturer_organization = {
+	include = NCH_generic_industry_organization
+
+	name = NCH_bugsmere_industry_manufacturer
+	icon = GFX_idea_NCH_generic_tank_manufacturer
+	allowed = {
+		can_form_river_fed = yes
+		has_dlc = "Arms Against Tyranny"
+	}
+	visible = {
+		owner = {
+			OR = {
+				original_tag = NCH
+			}
+		}
+	}
+	available = {
+		owner = {
+			original_tag = NCH
+		}
+	}
+}
+
+
+### #### #### ###
+
 NCH_generic_infantry_equipment_manufacturer_organization = {
 	name = NCH_generic_infantry_equipment_manufacturer
 	icon = GFX_idea_NCH_generic_gun
 
 	allowed = {
+		can_form_river_fed = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {
@@ -14,7 +42,9 @@ NCH_generic_infantry_equipment_manufacturer_organization = {
 		}
 	}
 	available = {
-		allways = yes
+		owner = {
+			original_tag = NCH
+		}
 	}
 	include = generic_infantry_equipment_organization
 }
@@ -29,12 +59,26 @@ NCH_reichswaffen_organization = {
 	}
 	visible = { 
 		owner = {
-			# has_country_flag = NCH_griffon_rifles_flag 
+			original_tag = NCH
 		}
 	}
 	available = { 
 		owner = {
-			has_country_flag = NCH_griffon_rifles_flag 
+			original_tag = NCH
+		}
+		NCH = {
+			has_opinion = {
+				target = GRI
+				value > 24
+			}
+		}
+		not = {
+			or = {
+				has_war_with = GRI
+				not = {
+					country_exists = GRI
+				}
+			}
 		}
 	}
 	include = generic_infantry_equipment_organization
@@ -48,11 +92,14 @@ NCH_greda_organization = {
 		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
+	visible = { 
+		owner = {
+			original_tag = NCH
+		}
+	}
 	available = { 
 		owner = {
-			if = {
-				limit = { original_tag = NCH }
-			}
+			original_tag = NCH
 		}
 	}
 	include = generic_artillery_organization
@@ -64,22 +111,16 @@ NCH_longchlois_organization = {
 
 	allowed = {
 		can_form_river_fed = yes
+		original_tag = NCH
 	}
 	visible = {
 		owner = {
-			OR = {
-				original_tag = NCH
-				AND = {
-					has_country_flag = RIV_annexed_NCH
-				}
-			}
+			original_tag = NCH
 		}
 	}
 	available = {
 		owner = {
-			if = {
-				limit = { original_tag = NCH }
-			}
+			original_tag = NCH
 		}
 	}
 	include = generic_escort_ship_organization
@@ -88,12 +129,14 @@ NCH_generic_light_aircraft_manufacturer_organization = {
 	name = NCH_generic_light_aircraft_manufacturer
 	icon = GFX_idea_NCH_generic_light_aircraft_manufacturer
 	allowed = {
+		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {
 		owner = {
 			OR = {
 				original_tag = NCH
+				has_country_flag = RIV_annexed_NCH
 			}
 		}
 	}
@@ -102,6 +145,7 @@ NCH_generic_light_aircraft_manufacturer_organization = {
 			hidden_trigger = {
 				OR = {
 					original_tag = NCH
+					has_country_flag = RIV_annexed_NCH
 				}
 			}
 		}
@@ -113,7 +157,7 @@ NCH_generic_medium_aircraft_manufacturer_organization = {
 	name = NCH_generic_medium_aircraft_manufacturer
 	icon = GFX_idea_NCH_generic_medium_aircraft_manufacturer
 	allowed = {
-		can_form_river_fed = yes
+		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {
@@ -141,7 +185,7 @@ NCH_generic_heavy_aircraft_manufacturer_organization = {
 	name = NCH_generic_heavy_aircraft_manufacturer
 	icon = GFX_idea_NCH_generic_heavy_aircraft_manufacturer
 	allowed = {
-		can_form_river_fed = yes
+		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {
@@ -169,7 +213,7 @@ NCH_generic_naval_aircraft_manufacturer_organization = {
 	name = NCH_generic_naval_aircraft_manufacturer
 	icon = GFX_idea_NCH_generic_naval_aircraft_manufacturer
 	allowed = {
-		can_form_river_fed = yes
+		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {
@@ -196,7 +240,7 @@ NCH_generic_tank_manufacturer_organization = {
 	name = NCH_generic_tank_manufacturer
 	icon = GFX_idea_NCH_generic_tank_manufacturer
 	allowed = {
-		can_form_river_fed = yes
+		original_tag = NCH
 		has_dlc = "Arms Against Tyranny"
 	}
 	visible = {

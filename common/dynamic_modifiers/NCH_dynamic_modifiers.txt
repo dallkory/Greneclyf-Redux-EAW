@@ -1,0 +1,16 @@
+NCH_industry_mio_dynamic_modifier = {
+	icon = GFX_idea_generic_industrial_concern_1
+	enable = {
+		original_tag = NCH
+	}
+
+	production_speed_buildings_factor = NCH_industry_mio_construction_speed
+	production_speed_industrial_complex_factor = NCH_industry_mio_civilian_construction
+	production_speed_arms_factory_factor = NCH_industry_mio_military_construction
+	production_speed_infrastructure_factor = NCH_industry_mio_infrastructure_construction
+	industrial_capacity_factory = NCH_industry_mio_factory_output
+	production_factory_max_efficiency_factor = NCH_industry_mio_max_efficiency
+	production_factory_efficiency_gain_factor = NCH_industry_mio_efficiency_gain
+	local_resources_factor = NCH_industry_mio_resource_gain
+	production_lack_of_resource_penalty_factor = NCH_industry_mio_resource_penalty
+}
